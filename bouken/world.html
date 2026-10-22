@@ -35,6 +35,7 @@ body{max-width:none;padding:8px 10px}.world-header{display:flex;justify-content:
   b.onclick=()=>{b.disabled=true;let result,achievement;
    if(!persist(()=>{result=BoukenEvents.resolve(save,w,i,facilities,characters,items);achievement=BoukenProgress.recordMilestones(save,w);})){b.disabled=false;return;}
    render();visitModal.close();const label=result.type==='companion'?'仲間':'収集品';selected.textContent=result.success?`${facility.name}で${label}「${result.name}」を獲得！${result.first?'（初めての獲得）':'（2回目以降）'}`:`${facility.name}で${label}「${result.name}」を発見！ でも今回は獲得できなかった。`;
+   if(result.extra)selected.textContent+=` さらに「${result.extra.name}」も獲得！${result.extra.first?'（初めての獲得）':''}`;
    if(achievement.newlyComplete)selected.textContent+=' 完全クリア達成！';notify(selected.textContent);
   };visitActions.append(b);visitModal.showModal();
  }
