@@ -39,7 +39,7 @@ body{max-width:none;padding:8px 10px}.world-header{display:flex;justify-content:
    if(achievement.newlyComplete)selected.textContent+=' 完全クリア達成！';notify(selected.textContent);
   };visitActions.append(b);visitModal.showModal();
  }
- function tap(i){if(pending){selected.textContent="まず算数に答えるか、やめるを押してください。";return;}actions.replaceChildren();const state=BoukenExplore.visible(w,i);if(BoukenExplore.canExplore(w,i)){ask(i);return;}if(state==='explored'){if(i!==playerIndex()){if(!persist(()=>BoukenExplore.move(w,i)))return;render();}notify(`(${i%w.width+1},${Math.floor(i/w.width)+1}) ${tmap[w.terrain[i]].name} に移動しました。`);if(w.facility[i])showVisit(i);return;}selected.textContent=state==='revealed'?'透視済みですが、まだ隣接する開拓済みマスがありません。':'未発見のマスです。開拓済みのマスと上下左右で接するマスから開拓してください。';}
+ function tap(i){if(pending){notify("まず算数に答えるか、やめるを押してください。");return;}actions.replaceChildren();const state=BoukenExplore.visible(w,i);if(BoukenExplore.canExplore(w,i)){ask(i);return;}if(state==='explored'){if(i!==playerIndex()){if(!persist(()=>BoukenExplore.move(w,i)))return;render();}notify(`(${i%w.width+1},${Math.floor(i/w.width)+1}) ${tmap[w.terrain[i]].name} に移動しました。`);if(w.facility[i])showVisit(i);return;}notify(state==='revealed'?'透視済みですが、まだ隣接する開拓済みマスがありません。':'未発見のマスです。開拓済みのマスと上下左右で接するマスから開拓してください。');}
  if(!Number.isInteger(w.lastExploredIndex))w.lastExploredIndex=w.startIndex;if(BoukenBuffs.level(w,'B01')&&!w.b01VisionInitialized){persist(()=>{BoukenBuffs.revealNear(w);w.b01VisionInitialized=true;});}render();requestAnimationFrame(()=>{adjustMapHeight();centerMapOnPlayer();});
  }catch(e){info.textContent='読み込みエラー：'+e.message;console.error(e);}})();
 </script></body></html>
