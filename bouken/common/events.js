@@ -15,14 +15,26 @@ window.BoukenEvents=Object.freeze({
    candidates=pool==='all'?characters:characters.filter(c=>c.areas&&c.areas[pool]===1);
   }else candidates=items;
   if(!candidates.length)throw Error('抽選候補がありません');
-  const chosen=candidates[Math.min(candidates.length-1,Math.floor(random()*candidates.length))];
-  const success=random()<.6;
+  const level=id=>Math.max(0,Math.min(3,Number((w.partyBuffsSnapshot||[]).find(s=>s.id===id)?.level||0)));
+  let chosen;
+  if(type==='collection'){
+   const c04=[0,4,14,24][level('C04')];
+   const groupBonuses=new Map();for(let n=5;n<=28;n++){const lv=level('C'+String(n).padStart(2,'0'));if(lv)groupBonuses.set(String(n-4).padStart(2,'0'),[0,5,10,30][lv]);}
+   chosen=this.weighted(candidates.map(item=>({value:item,weight:(1+(!save.items?.[item.id]?c04:0))*(1+(groupBonuses.get(item.groupId)||0))})),random);
+  }else chosen=candidates[Math.min(candidates.length-1,Math.floor(random()*candidates.length))];
+  const c02=type==='collection'?[0,.35,1,3][level('C02')]:0;
+  const success=random()<(0.6+c02)/(1+c02);
   const inventory=type==='companion'?(save.characters=save.characters||{}):(save.items=save.items||{});
   const key=String(chosen.id),previous=Number(inventory[key]||0);
   if(success)inventory[key]=previous+1;
+  let extra=null;
+  if(success&&type==='collection'&&random()<[0,.05,.10,.15][level('C03')]){
+   const others=candidates.filter(item=>item.id!==chosen.id);
+   if(others.length){const item=this.weighted(others.map(item=>({value:item,weight:(1+(!save.items?.[item.id]?[0,4,14,24][level('C04')]:0))*(1+([0,5,10,30][level('C'+String(Number(item.groupId)+4).padStart(2,'0'))]||0))})),random);const extraKey=String(item.id),was=Number(inventory[extraKey]||0);inventory[extraKey]=was+1;extra={id:item.id,name:item.name,first:was===0};}
+  }
   w.visitedFacilities[i]=true;
   w.eventResults=w.eventResults||{};
-  const result={type,pool,id:chosen.id,name:chosen.name,success,first:success&&previous===0};
+  const result={type,pool,id:chosen.id,name:chosen.name,success,first:success&&previous===0,extra};
   w.eventResults[i]=result;
   return result;
  }
