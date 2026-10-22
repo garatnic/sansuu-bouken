@@ -1,0 +1,30 @@
+{
+  "formatVersion": 1,
+  "masterFiles": {
+    "characters": "characters.json",
+    "skills": "skills.json",
+    "collection_groups": "collection_groups.json",
+    "collection_subgroups": "collection_subgroups.json",
+    "collection_items": "collection_items.json",
+    "collection_reward_types": "collection_reward_types.json",
+    "collection_rewards": "collection_rewards.json",
+    "achievements": "achievements.json",
+    "terrains": "terrains.json",
+    "facilities": "facilities.json",
+    "world_facility_counts": "world_facility_counts.json"
+  },
+  "counts": {
+    "characters": 927,
+    "skills": 68,
+    "collection_groups": 24,
+    "collection_subgroups": 96,
+    "collection_items": 480,
+    "collection_reward_types": 6,
+    "collection_rewards": 96,
+    "achievements": 120,
+    "terrains": 7,
+    "facilities": 8,
+    "world_facility_counts": 4
+  },
+  "notes": "Only JSON files under data/ are runtime masters. Source CSV retained in siyou/source_csv for audit; do not load at runtime."
+}

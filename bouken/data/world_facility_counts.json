@@ -1,0 +1,22 @@
+[
+  {
+    "width": 5,
+    "height": 5,
+    "facilityCount": 1
+  },
+  {
+    "width": 10,
+    "height": 10,
+    "facilityCount": 3
+  },
+  {
+    "width": 20,
+    "height": 20,
+    "facilityCount": 13
+  },
+  {
+    "width": 30,
+    "height": 30,
+    "facilityCount": 30
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "T01",
+    "name": "草原",
+    "traversable": true,
+    "explorable": true
+  },
+  {
+    "id": "T02",
+    "name": "森林",
+    "traversable": true,
+    "explorable": true
+  },
+  {
+    "id": "T03",
+    "name": "山岳",
+    "traversable": true,
+    "explorable": true
+  },
+  {
+    "id": "T04",
+    "name": "砂漠",
+    "traversable": true,
+    "explorable": true
+  },
+  {
+    "id": "T05",
+    "name": "海",
+    "traversable": true,
+    "explorable": true
+  },
+  {
+    "id": "T06",
+    "name": "雪原",
+    "traversable": true,
+    "explorable": true
+  },
+  {
+    "id": "T07",
+    "name": "毒の沼地",
+    "traversable": true,
+    "explorable": true
+  }
+]

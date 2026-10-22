@@ -1,0 +1,3362 @@
+[
+  {
+    "id": 1,
+    "groupId": "01",
+    "subgroupId": "01-1",
+    "slot": 1,
+    "name": "赤竜の指輪"
+  },
+  {
+    "id": 2,
+    "groupId": "01",
+    "subgroupId": "01-1",
+    "slot": 2,
+    "name": "月光の指輪"
+  },
+  {
+    "id": 3,
+    "groupId": "01",
+    "subgroupId": "01-1",
+    "slot": 3,
+    "name": "古王の指輪"
+  },
+  {
+    "id": 4,
+    "groupId": "01",
+    "subgroupId": "01-1",
+    "slot": 4,
+    "name": "星屑の指輪"
+  },
+  {
+    "id": 5,
+    "groupId": "01",
+    "subgroupId": "01-1",
+    "slot": 5,
+    "name": "潮騒の指輪"
+  },
+  {
+    "id": 6,
+    "groupId": "01",
+    "subgroupId": "01-2",
+    "slot": 1,
+    "name": "人魚の首飾り"
+  },
+  {
+    "id": 7,
+    "groupId": "01",
+    "subgroupId": "01-2",
+    "slot": 2,
+    "name": "太陽石の首飾り"
+  },
+  {
+    "id": 8,
+    "groupId": "01",
+    "subgroupId": "01-2",
+    "slot": 3,
+    "name": "妖精の首飾り"
+  },
+  {
+    "id": 9,
+    "groupId": "01",
+    "subgroupId": "01-2",
+    "slot": 4,
+    "name": "深海真珠の首飾り"
+  },
+  {
+    "id": 10,
+    "groupId": "01",
+    "subgroupId": "01-2",
+    "slot": 5,
+    "name": "流星の首飾り"
+  },
+  {
+    "id": 11,
+    "groupId": "01",
+    "subgroupId": "01-3",
+    "slot": 1,
+    "name": "雷紋の腕輪"
+  },
+  {
+    "id": 12,
+    "groupId": "01",
+    "subgroupId": "01-3",
+    "slot": 2,
+    "name": "珊瑚の腕輪"
+  },
+  {
+    "id": 13,
+    "groupId": "01",
+    "subgroupId": "01-3",
+    "slot": 3,
+    "name": "黄金樹の腕輪"
+  },
+  {
+    "id": 14,
+    "groupId": "01",
+    "subgroupId": "01-3",
+    "slot": 4,
+    "name": "氷晶の腕輪"
+  },
+  {
+    "id": 15,
+    "groupId": "01",
+    "subgroupId": "01-3",
+    "slot": 5,
+    "name": "守護者の腕輪"
+  },
+  {
+    "id": 16,
+    "groupId": "01",
+    "subgroupId": "01-4",
+    "slot": 1,
+    "name": "桜花の髪飾り"
+  },
+  {
+    "id": 17,
+    "groupId": "01",
+    "subgroupId": "01-4",
+    "slot": 2,
+    "name": "孔雀羽の髪飾り"
+  },
+  {
+    "id": 18,
+    "groupId": "01",
+    "subgroupId": "01-4",
+    "slot": 3,
+    "name": "月桂冠"
+  },
+  {
+    "id": 19,
+    "groupId": "01",
+    "subgroupId": "01-4",
+    "slot": 4,
+    "name": "水晶のかんざし"
+  },
+  {
+    "id": 20,
+    "groupId": "01",
+    "subgroupId": "01-4",
+    "slot": 5,
+    "name": "星飾りのティアラ"
+  },
+  {
+    "id": 21,
+    "groupId": "02",
+    "subgroupId": "02-1",
+    "slot": 1,
+    "name": "ティラノサウルスの牙化石"
+  },
+  {
+    "id": 22,
+    "groupId": "02",
+    "subgroupId": "02-1",
+    "slot": 2,
+    "name": "トリケラトプスの角化石"
+  },
+  {
+    "id": 23,
+    "groupId": "02",
+    "subgroupId": "02-1",
+    "slot": 3,
+    "name": "ステゴサウルスの背板化石"
+  },
+  {
+    "id": 24,
+    "groupId": "02",
+    "subgroupId": "02-1",
+    "slot": 4,
+    "name": "ヴェロキラプトルの爪化石"
+  },
+  {
+    "id": 25,
+    "groupId": "02",
+    "subgroupId": "02-1",
+    "slot": 5,
+    "name": "ブラキオサウルスの椎骨化石"
+  },
+  {
+    "id": 26,
+    "groupId": "02",
+    "subgroupId": "02-2",
+    "slot": 1,
+    "name": "アンモナイトの化石"
+  },
+  {
+    "id": 27,
+    "groupId": "02",
+    "subgroupId": "02-2",
+    "slot": 2,
+    "name": "三葉虫の化石"
+  },
+  {
+    "id": 28,
+    "groupId": "02",
+    "subgroupId": "02-2",
+    "slot": 3,
+    "name": "古代サメの歯化石"
+  },
+  {
+    "id": 29,
+    "groupId": "02",
+    "subgroupId": "02-2",
+    "slot": 4,
+    "name": "首長竜の肋骨化石"
+  },
+  {
+    "id": 30,
+    "groupId": "02",
+    "subgroupId": "02-2",
+    "slot": 5,
+    "name": "古代ウミユリの化石"
+  },
+  {
+    "id": 31,
+    "groupId": "02",
+    "subgroupId": "02-3",
+    "slot": 1,
+    "name": "黒曜石の石斧"
+  },
+  {
+    "id": 32,
+    "groupId": "02",
+    "subgroupId": "02-3",
+    "slot": 2,
+    "name": "星形の石鏃"
+  },
+  {
+    "id": 33,
+    "groupId": "02",
+    "subgroupId": "02-3",
+    "slot": 3,
+    "name": "磨製石槍"
+  },
+  {
+    "id": 34,
+    "groupId": "02",
+    "subgroupId": "02-3",
+    "slot": 4,
+    "name": "石製の釣り針"
+  },
+  {
+    "id": 35,
+    "groupId": "02",
+    "subgroupId": "02-3",
+    "slot": 5,
+    "name": "石の円盤刃"
+  },
+  {
+    "id": 36,
+    "groupId": "02",
+    "subgroupId": "02-4",
+    "slot": 1,
+    "name": "渦巻文の土器"
+  },
+  {
+    "id": 37,
+    "groupId": "02",
+    "subgroupId": "02-4",
+    "slot": 2,
+    "name": "鳥形の土偶"
+  },
+  {
+    "id": 38,
+    "groupId": "02",
+    "subgroupId": "02-4",
+    "slot": 3,
+    "name": "彩色された水差し"
+  },
+  {
+    "id": 39,
+    "groupId": "02",
+    "subgroupId": "02-4",
+    "slot": 4,
+    "name": "獣面の土器"
+  },
+  {
+    "id": 40,
+    "groupId": "02",
+    "subgroupId": "02-4",
+    "slot": 5,
+    "name": "月紋の香炉土器"
+  },
+  {
+    "id": 41,
+    "groupId": "03",
+    "subgroupId": "03-1",
+    "slot": 1,
+    "name": "星紋の長剣"
+  },
+  {
+    "id": 42,
+    "groupId": "03",
+    "subgroupId": "03-1",
+    "slot": 2,
+    "name": "黒鉄の大剣"
+  },
+  {
+    "id": 43,
+    "groupId": "03",
+    "subgroupId": "03-1",
+    "slot": 3,
+    "name": "竜骨の細剣"
+  },
+  {
+    "id": 44,
+    "groupId": "03",
+    "subgroupId": "03-1",
+    "slot": 4,
+    "name": "紅蓮の曲剣"
+  },
+  {
+    "id": 45,
+    "groupId": "03",
+    "subgroupId": "03-1",
+    "slot": 5,
+    "name": "王家の儀礼剣"
+  },
+  {
+    "id": 46,
+    "groupId": "03",
+    "subgroupId": "03-2",
+    "slot": 1,
+    "name": "雷鳴の長槍"
+  },
+  {
+    "id": 47,
+    "groupId": "03",
+    "subgroupId": "03-2",
+    "slot": 2,
+    "name": "三叉の海槍"
+  },
+  {
+    "id": 48,
+    "groupId": "03",
+    "subgroupId": "03-2",
+    "slot": 3,
+    "name": "月牙の槍"
+  },
+  {
+    "id": 49,
+    "groupId": "03",
+    "subgroupId": "03-2",
+    "slot": 4,
+    "name": "氷柱の槍"
+  },
+  {
+    "id": 50,
+    "groupId": "03",
+    "subgroupId": "03-2",
+    "slot": 5,
+    "name": "黄金の儀礼槍"
+  },
+  {
+    "id": 51,
+    "groupId": "03",
+    "subgroupId": "03-3",
+    "slot": 1,
+    "name": "巨人の戦斧"
+  },
+  {
+    "id": 52,
+    "groupId": "03",
+    "subgroupId": "03-3",
+    "slot": 2,
+    "name": "双刃の斧"
+  },
+  {
+    "id": 53,
+    "groupId": "03",
+    "subgroupId": "03-3",
+    "slot": 3,
+    "name": "樹霊の手斧"
+  },
+  {
+    "id": 54,
+    "groupId": "03",
+    "subgroupId": "03-3",
+    "slot": 4,
+    "name": "火山鉄の斧"
+  },
+  {
+    "id": 55,
+    "groupId": "03",
+    "subgroupId": "03-3",
+    "slot": 5,
+    "name": "王墓の儀礼斧"
+  },
+  {
+    "id": 56,
+    "groupId": "03",
+    "subgroupId": "03-4",
+    "slot": 1,
+    "name": "森人の長弓"
+  },
+  {
+    "id": 57,
+    "groupId": "03",
+    "subgroupId": "03-4",
+    "slot": 2,
+    "name": "黒檀の短弓"
+  },
+  {
+    "id": 58,
+    "groupId": "03",
+    "subgroupId": "03-4",
+    "slot": 3,
+    "name": "月影の弓"
+  },
+  {
+    "id": 59,
+    "groupId": "03",
+    "subgroupId": "03-4",
+    "slot": 4,
+    "name": "竜角の複合弓"
+  },
+  {
+    "id": 60,
+    "groupId": "03",
+    "subgroupId": "03-4",
+    "slot": 5,
+    "name": "虹弦の儀礼弓"
+  },
+  {
+    "id": 61,
+    "groupId": "04",
+    "subgroupId": "04-1",
+    "slot": 1,
+    "name": "獅子頭の兜"
+  },
+  {
+    "id": 62,
+    "groupId": "04",
+    "subgroupId": "04-1",
+    "slot": 2,
+    "name": "竜鱗の兜"
+  },
+  {
+    "id": 63,
+    "groupId": "04",
+    "subgroupId": "04-1",
+    "slot": 3,
+    "name": "月角の騎士兜"
+  },
+  {
+    "id": 64,
+    "groupId": "04",
+    "subgroupId": "04-1",
+    "slot": 4,
+    "name": "鷲羽の兜"
+  },
+  {
+    "id": 65,
+    "groupId": "04",
+    "subgroupId": "04-1",
+    "slot": 5,
+    "name": "氷晶の兜"
+  },
+  {
+    "id": 66,
+    "groupId": "04",
+    "subgroupId": "04-2",
+    "slot": 1,
+    "name": "黄金騎士の鎧"
+  },
+  {
+    "id": 67,
+    "groupId": "04",
+    "subgroupId": "04-2",
+    "slot": 2,
+    "name": "黒曜の胸甲"
+  },
+  {
+    "id": 68,
+    "groupId": "04",
+    "subgroupId": "04-2",
+    "slot": 3,
+    "name": "竜皮の鎧"
+  },
+  {
+    "id": 69,
+    "groupId": "04",
+    "subgroupId": "04-2",
+    "slot": 4,
+    "name": "海王の鱗鎧"
+  },
+  {
+    "id": 70,
+    "groupId": "04",
+    "subgroupId": "04-2",
+    "slot": 5,
+    "name": "砂漠王の革鎧"
+  },
+  {
+    "id": 71,
+    "groupId": "04",
+    "subgroupId": "04-3",
+    "slot": 1,
+    "name": "太陽紋の盾"
+  },
+  {
+    "id": 72,
+    "groupId": "04",
+    "subgroupId": "04-3",
+    "slot": 2,
+    "name": "古木の大盾"
+  },
+  {
+    "id": 73,
+    "groupId": "04",
+    "subgroupId": "04-3",
+    "slot": 3,
+    "name": "竜翼の盾"
+  },
+  {
+    "id": 74,
+    "groupId": "04",
+    "subgroupId": "04-3",
+    "slot": 4,
+    "name": "氷壁の盾"
+  },
+  {
+    "id": 75,
+    "groupId": "04",
+    "subgroupId": "04-3",
+    "slot": 5,
+    "name": "王家の紋章盾"
+  },
+  {
+    "id": 76,
+    "groupId": "04",
+    "subgroupId": "04-4",
+    "slot": 1,
+    "name": "獣爪の籠手"
+  },
+  {
+    "id": 77,
+    "groupId": "04",
+    "subgroupId": "04-4",
+    "slot": 2,
+    "name": "雷石の籠手"
+  },
+  {
+    "id": 78,
+    "groupId": "04",
+    "subgroupId": "04-4",
+    "slot": 3,
+    "name": "巨人革の籠手"
+  },
+  {
+    "id": 79,
+    "groupId": "04",
+    "subgroupId": "04-4",
+    "slot": 4,
+    "name": "古代騎士の籠手"
+  },
+  {
+    "id": 80,
+    "groupId": "04",
+    "subgroupId": "04-4",
+    "slot": 5,
+    "name": "深緑の籠手"
+  },
+  {
+    "id": 81,
+    "groupId": "05",
+    "subgroupId": "05-1",
+    "slot": 1,
+    "name": "星詠みの杖"
+  },
+  {
+    "id": 82,
+    "groupId": "05",
+    "subgroupId": "05-1",
+    "slot": 2,
+    "name": "炎芯の杖"
+  },
+  {
+    "id": 83,
+    "groupId": "05",
+    "subgroupId": "05-1",
+    "slot": 3,
+    "name": "潮流の杖"
+  },
+  {
+    "id": 84,
+    "groupId": "05",
+    "subgroupId": "05-1",
+    "slot": 4,
+    "name": "雷雲の杖"
+  },
+  {
+    "id": 85,
+    "groupId": "05",
+    "subgroupId": "05-1",
+    "slot": 5,
+    "name": "花冠の杖"
+  },
+  {
+    "id": 86,
+    "groupId": "05",
+    "subgroupId": "05-2",
+    "slot": 1,
+    "name": "夜空の魔法球"
+  },
+  {
+    "id": 87,
+    "groupId": "05",
+    "subgroupId": "05-2",
+    "slot": 2,
+    "name": "風鳴りの魔法球"
+  },
+  {
+    "id": 88,
+    "groupId": "05",
+    "subgroupId": "05-2",
+    "slot": 3,
+    "name": "記憶の魔法球"
+  },
+  {
+    "id": 89,
+    "groupId": "05",
+    "subgroupId": "05-2",
+    "slot": 4,
+    "name": "雪光の魔法球"
+  },
+  {
+    "id": 90,
+    "groupId": "05",
+    "subgroupId": "05-2",
+    "slot": 5,
+    "name": "幻影の魔法球"
+  },
+  {
+    "id": 91,
+    "groupId": "05",
+    "subgroupId": "05-3",
+    "slot": 1,
+    "name": "守りの護符"
+  },
+  {
+    "id": 92,
+    "groupId": "05",
+    "subgroupId": "05-3",
+    "slot": 2,
+    "name": "旅路の護符"
+  },
+  {
+    "id": 93,
+    "groupId": "05",
+    "subgroupId": "05-3",
+    "slot": 3,
+    "name": "厄除けの護符"
+  },
+  {
+    "id": 94,
+    "groupId": "05",
+    "subgroupId": "05-3",
+    "slot": 4,
+    "name": "星占いの護符"
+  },
+  {
+    "id": 95,
+    "groupId": "05",
+    "subgroupId": "05-3",
+    "slot": 5,
+    "name": "森精の護符"
+  },
+  {
+    "id": 96,
+    "groupId": "05",
+    "subgroupId": "05-4",
+    "slot": 1,
+    "name": "自動点灯の魔灯"
+  },
+  {
+    "id": 97,
+    "groupId": "05",
+    "subgroupId": "05-4",
+    "slot": 2,
+    "name": "雨雲発生器"
+  },
+  {
+    "id": 98,
+    "groupId": "05",
+    "subgroupId": "05-4",
+    "slot": 3,
+    "name": "小型転移盤"
+  },
+  {
+    "id": 99,
+    "groupId": "05",
+    "subgroupId": "05-4",
+    "slot": 4,
+    "name": "風向き変換器"
+  },
+  {
+    "id": 100,
+    "groupId": "05",
+    "subgroupId": "05-4",
+    "slot": 5,
+    "name": "魔力蓄積炉"
+  },
+  {
+    "id": 101,
+    "groupId": "06",
+    "subgroupId": "06-1",
+    "slot": 1,
+    "name": "初代賢者の魔導書"
+  },
+  {
+    "id": 102,
+    "groupId": "06",
+    "subgroupId": "06-1",
+    "slot": 2,
+    "name": "七色魔法の書"
+  },
+  {
+    "id": 103,
+    "groupId": "06",
+    "subgroupId": "06-1",
+    "slot": 3,
+    "name": "月影の呪文集"
+  },
+  {
+    "id": 104,
+    "groupId": "06",
+    "subgroupId": "06-1",
+    "slot": 4,
+    "name": "星辰の秘術書"
+  },
+  {
+    "id": 105,
+    "groupId": "06",
+    "subgroupId": "06-1",
+    "slot": 5,
+    "name": "精霊契約の書"
+  },
+  {
+    "id": 106,
+    "groupId": "06",
+    "subgroupId": "06-2",
+    "slot": 1,
+    "name": "海洋交易年代記"
+  },
+  {
+    "id": 107,
+    "groupId": "06",
+    "subgroupId": "06-2",
+    "slot": 2,
+    "name": "古都興亡録"
+  },
+  {
+    "id": 108,
+    "groupId": "06",
+    "subgroupId": "06-2",
+    "slot": 3,
+    "name": "五王国の系譜"
+  },
+  {
+    "id": 109,
+    "groupId": "06",
+    "subgroupId": "06-2",
+    "slot": 4,
+    "name": "竜騎士戦記"
+  },
+  {
+    "id": 110,
+    "groupId": "06",
+    "subgroupId": "06-2",
+    "slot": 5,
+    "name": "大陸統一史"
+  },
+  {
+    "id": 111,
+    "groupId": "06",
+    "subgroupId": "06-3",
+    "slot": 1,
+    "name": "幻獣大図鑑"
+  },
+  {
+    "id": 112,
+    "groupId": "06",
+    "subgroupId": "06-3",
+    "slot": 2,
+    "name": "世界樹植物図鑑"
+  },
+  {
+    "id": 113,
+    "groupId": "06",
+    "subgroupId": "06-3",
+    "slot": 3,
+    "name": "深海生物図鑑"
+  },
+  {
+    "id": 114,
+    "groupId": "06",
+    "subgroupId": "06-3",
+    "slot": 4,
+    "name": "天空鳥類図鑑"
+  },
+  {
+    "id": 115,
+    "groupId": "06",
+    "subgroupId": "06-3",
+    "slot": 5,
+    "name": "魔法キノコ図鑑"
+  },
+  {
+    "id": 116,
+    "groupId": "06",
+    "subgroupId": "06-4",
+    "slot": 1,
+    "name": "沈没船の航海日誌"
+  },
+  {
+    "id": 117,
+    "groupId": "06",
+    "subgroupId": "06-4",
+    "slot": 2,
+    "name": "王室の密約書"
+  },
+  {
+    "id": 118,
+    "groupId": "06",
+    "subgroupId": "06-4",
+    "slot": 3,
+    "name": "封印された手紙"
+  },
+  {
+    "id": 119,
+    "groupId": "06",
+    "subgroupId": "06-4",
+    "slot": 4,
+    "name": "古代文字の巻物"
+  },
+  {
+    "id": 120,
+    "groupId": "06",
+    "subgroupId": "06-4",
+    "slot": 5,
+    "name": "修道院の写本"
+  },
+  {
+    "id": 121,
+    "groupId": "07",
+    "subgroupId": "07-1",
+    "slot": 1,
+    "name": "月下の湖畔"
+  },
+  {
+    "id": 122,
+    "groupId": "07",
+    "subgroupId": "07-1",
+    "slot": 2,
+    "name": "竜の眠る山"
+  },
+  {
+    "id": 123,
+    "groupId": "07",
+    "subgroupId": "07-1",
+    "slot": 3,
+    "name": "花咲く古城"
+  },
+  {
+    "id": 124,
+    "groupId": "07",
+    "subgroupId": "07-1",
+    "slot": 4,
+    "name": "星降る砂漠"
+  },
+  {
+    "id": 125,
+    "groupId": "07",
+    "subgroupId": "07-1",
+    "slot": 5,
+    "name": "虹のかかる谷"
+  },
+  {
+    "id": 126,
+    "groupId": "07",
+    "subgroupId": "07-2",
+    "slot": 1,
+    "name": "眠る女神の石像"
+  },
+  {
+    "id": 127,
+    "groupId": "07",
+    "subgroupId": "07-2",
+    "slot": 2,
+    "name": "青銅の勇者像"
+  },
+  {
+    "id": 128,
+    "groupId": "07",
+    "subgroupId": "07-2",
+    "slot": 3,
+    "name": "翼ある獅子像"
+  },
+  {
+    "id": 129,
+    "groupId": "07",
+    "subgroupId": "07-2",
+    "slot": 4,
+    "name": "古木の精霊像"
+  },
+  {
+    "id": 130,
+    "groupId": "07",
+    "subgroupId": "07-2",
+    "slot": 5,
+    "name": "黒曜の守護像"
+  },
+  {
+    "id": 131,
+    "groupId": "07",
+    "subgroupId": "07-3",
+    "slot": 1,
+    "name": "竜骨の竪琴"
+  },
+  {
+    "id": 132,
+    "groupId": "07",
+    "subgroupId": "07-3",
+    "slot": 2,
+    "name": "銀管の横笛"
+  },
+  {
+    "id": 133,
+    "groupId": "07",
+    "subgroupId": "07-3",
+    "slot": 3,
+    "name": "雷鳴の太鼓"
+  },
+  {
+    "id": 134,
+    "groupId": "07",
+    "subgroupId": "07-3",
+    "slot": 4,
+    "name": "珊瑚の角笛"
+  },
+  {
+    "id": 135,
+    "groupId": "07",
+    "subgroupId": "07-3",
+    "slot": 5,
+    "name": "古王のリュート "
+  },
+  {
+    "id": 136,
+    "groupId": "07",
+    "subgroupId": "07-4",
+    "slot": 1,
+    "name": "百年物の銀燭台"
+  },
+  {
+    "id": 137,
+    "groupId": "07",
+    "subgroupId": "07-4",
+    "slot": 2,
+    "name": "古王家の手鏡"
+  },
+  {
+    "id": 138,
+    "groupId": "07",
+    "subgroupId": "07-4",
+    "slot": 3,
+    "name": "象嵌の香炉"
+  },
+  {
+    "id": 139,
+    "groupId": "07",
+    "subgroupId": "07-4",
+    "slot": 4,
+    "name": "金縁の茶器"
+  },
+  {
+    "id": 140,
+    "groupId": "07",
+    "subgroupId": "07-4",
+    "slot": 5,
+    "name": "琥珀細工の花瓶"
+  },
+  {
+    "id": 141,
+    "groupId": "08",
+    "subgroupId": "08-1",
+    "slot": 1,
+    "name": "月糸のタペストリー"
+  },
+  {
+    "id": 142,
+    "groupId": "08",
+    "subgroupId": "08-1",
+    "slot": 2,
+    "name": "金糸の祭礼布"
+  },
+  {
+    "id": 143,
+    "groupId": "08",
+    "subgroupId": "08-1",
+    "slot": 3,
+    "name": "星紋の錦織"
+  },
+  {
+    "id": 144,
+    "groupId": "08",
+    "subgroupId": "08-1",
+    "slot": 4,
+    "name": "虹染めの絹布"
+  },
+  {
+    "id": 145,
+    "groupId": "08",
+    "subgroupId": "08-1",
+    "slot": 5,
+    "name": "竜紋の綴れ織り"
+  },
+  {
+    "id": 146,
+    "groupId": "08",
+    "subgroupId": "08-2",
+    "slot": 1,
+    "name": "七色のガラス杯"
+  },
+  {
+    "id": 147,
+    "groupId": "08",
+    "subgroupId": "08-2",
+    "slot": 2,
+    "name": "星屑のガラス球"
+  },
+  {
+    "id": 148,
+    "groupId": "08",
+    "subgroupId": "08-2",
+    "slot": 3,
+    "name": "青玻璃の花瓶"
+  },
+  {
+    "id": 149,
+    "groupId": "08",
+    "subgroupId": "08-2",
+    "slot": 4,
+    "name": "虹光のステンドグラス"
+  },
+  {
+    "id": 150,
+    "groupId": "08",
+    "subgroupId": "08-2",
+    "slot": 5,
+    "name": "硝子の小鳥"
+  },
+  {
+    "id": 151,
+    "groupId": "08",
+    "subgroupId": "08-3",
+    "slot": 1,
+    "name": "世界樹の飾り櫛"
+  },
+  {
+    "id": 152,
+    "groupId": "08",
+    "subgroupId": "08-3",
+    "slot": 2,
+    "name": "黒檀の鳥笛"
+  },
+  {
+    "id": 153,
+    "groupId": "08",
+    "subgroupId": "08-3",
+    "slot": 3,
+    "name": "千年杉の彫刻皿"
+  },
+  {
+    "id": 154,
+    "groupId": "08",
+    "subgroupId": "08-3",
+    "slot": 4,
+    "name": "楓の寄木細工"
+  },
+  {
+    "id": 155,
+    "groupId": "08",
+    "subgroupId": "08-3",
+    "slot": 5,
+    "name": "竜樹の木杯"
+  },
+  {
+    "id": 156,
+    "groupId": "08",
+    "subgroupId": "08-4",
+    "slot": 1,
+    "name": "銀線細工の杯"
+  },
+  {
+    "id": 157,
+    "groupId": "08",
+    "subgroupId": "08-4",
+    "slot": 2,
+    "name": "黄金の透かし彫り皿"
+  },
+  {
+    "id": 158,
+    "groupId": "08",
+    "subgroupId": "08-4",
+    "slot": 3,
+    "name": "青銅の香炉"
+  },
+  {
+    "id": 159,
+    "groupId": "08",
+    "subgroupId": "08-4",
+    "slot": 4,
+    "name": "星鉄の小箱"
+  },
+  {
+    "id": 160,
+    "groupId": "08",
+    "subgroupId": "08-4",
+    "slot": 5,
+    "name": "真鍮の天球模型"
+  },
+  {
+    "id": 161,
+    "groupId": "09",
+    "subgroupId": "09-1",
+    "slot": 1,
+    "name": "星砂の砂時計"
+  },
+  {
+    "id": 162,
+    "groupId": "09",
+    "subgroupId": "09-1",
+    "slot": 2,
+    "name": "月相を刻む置時計"
+  },
+  {
+    "id": 163,
+    "groupId": "09",
+    "subgroupId": "09-1",
+    "slot": 3,
+    "name": "水滴式の古時計"
+  },
+  {
+    "id": 164,
+    "groupId": "09",
+    "subgroupId": "09-1",
+    "slot": 4,
+    "name": "鐘鳴りの置時計"
+  },
+  {
+    "id": 165,
+    "groupId": "09",
+    "subgroupId": "09-1",
+    "slot": 5,
+    "name": "影針の日時計"
+  },
+  {
+    "id": 166,
+    "groupId": "09",
+    "subgroupId": "09-2",
+    "slot": 1,
+    "name": "王家の懐中時計"
+  },
+  {
+    "id": 167,
+    "groupId": "09",
+    "subgroupId": "09-2",
+    "slot": 2,
+    "name": "自動巻きの魔時計"
+  },
+  {
+    "id": 168,
+    "groupId": "09",
+    "subgroupId": "09-2",
+    "slot": 3,
+    "name": "星刻の腕時計"
+  },
+  {
+    "id": 169,
+    "groupId": "09",
+    "subgroupId": "09-2",
+    "slot": 4,
+    "name": "逆回りの時計"
+  },
+  {
+    "id": 170,
+    "groupId": "09",
+    "subgroupId": "09-2",
+    "slot": 5,
+    "name": "潮汐時計"
+  },
+  {
+    "id": 171,
+    "groupId": "09",
+    "subgroupId": "09-3",
+    "slot": 1,
+    "name": "黄金の城門鍵"
+  },
+  {
+    "id": 172,
+    "groupId": "09",
+    "subgroupId": "09-3",
+    "slot": 2,
+    "name": "竜頭の宝箱鍵"
+  },
+  {
+    "id": 173,
+    "groupId": "09",
+    "subgroupId": "09-3",
+    "slot": 3,
+    "name": "水晶の小鍵"
+  },
+  {
+    "id": 174,
+    "groupId": "09",
+    "subgroupId": "09-3",
+    "slot": 4,
+    "name": "七歯の古代鍵"
+  },
+  {
+    "id": 175,
+    "groupId": "09",
+    "subgroupId": "09-3",
+    "slot": 5,
+    "name": "月紋花形の神殿鍵"
+  },
+  {
+    "id": 176,
+    "groupId": "09",
+    "subgroupId": "09-4",
+    "slot": 1,
+    "name": "三重仕掛けの錠"
+  },
+  {
+    "id": 177,
+    "groupId": "09",
+    "subgroupId": "09-4",
+    "slot": 2,
+    "name": "音階式の錠"
+  },
+  {
+    "id": 178,
+    "groupId": "09",
+    "subgroupId": "09-4",
+    "slot": 3,
+    "name": "鏡合わせの錠"
+  },
+  {
+    "id": 179,
+    "groupId": "09",
+    "subgroupId": "09-4",
+    "slot": 4,
+    "name": "星座合わせの錠"
+  },
+  {
+    "id": 180,
+    "groupId": "09",
+    "subgroupId": "09-4",
+    "slot": 5,
+    "name": "回転文字の封印錠錠"
+  },
+  {
+    "id": 181,
+    "groupId": "10",
+    "subgroupId": "10-1",
+    "slot": 1,
+    "name": "真珠針の羅針盤"
+  },
+  {
+    "id": 182,
+    "groupId": "10",
+    "subgroupId": "10-1",
+    "slot": 2,
+    "name": "失われた海図"
+  },
+  {
+    "id": 183,
+    "groupId": "10",
+    "subgroupId": "10-1",
+    "slot": 3,
+    "name": "珊瑚の測深具"
+  },
+  {
+    "id": 184,
+    "groupId": "10",
+    "subgroupId": "10-1",
+    "slot": 4,
+    "name": "風向計付き船鐘"
+  },
+  {
+    "id": 185,
+    "groupId": "10",
+    "subgroupId": "10-1",
+    "slot": 5,
+    "name": "潮流記録板"
+  },
+  {
+    "id": 186,
+    "groupId": "10",
+    "subgroupId": "10-2",
+    "slot": 1,
+    "name": "古代の測量鎖"
+  },
+  {
+    "id": 187,
+    "groupId": "10",
+    "subgroupId": "10-2",
+    "slot": 2,
+    "name": "洞窟探査灯"
+  },
+  {
+    "id": 188,
+    "groupId": "10",
+    "subgroupId": "10-2",
+    "slot": 3,
+    "name": "秘境の方位盤"
+  },
+  {
+    "id": 189,
+    "groupId": "10",
+    "subgroupId": "10-2",
+    "slot": 4,
+    "name": "星座入り野営地図"
+  },
+  {
+    "id": 190,
+    "groupId": "10",
+    "subgroupId": "10-2",
+    "slot": 5,
+    "name": "霧を透かす双眼鏡"
+  },
+  {
+    "id": 191,
+    "groupId": "10",
+    "subgroupId": "10-3",
+    "slot": 1,
+    "name": "歯車式の計算機"
+  },
+  {
+    "id": 192,
+    "groupId": "10",
+    "subgroupId": "10-3",
+    "slot": 2,
+    "name": "ぜんまい鳥"
+  },
+  {
+    "id": 193,
+    "groupId": "10",
+    "subgroupId": "10-3",
+    "slot": 3,
+    "name": "小型羽ばたき機"
+  },
+  {
+    "id": 194,
+    "groupId": "10",
+    "subgroupId": "10-3",
+    "slot": 4,
+    "name": "自動演奏箱"
+  },
+  {
+    "id": 195,
+    "groupId": "10",
+    "subgroupId": "10-3",
+    "slot": 5,
+    "name": "歩行する木馬"
+  },
+  {
+    "id": 196,
+    "groupId": "10",
+    "subgroupId": "10-4",
+    "slot": 1,
+    "name": "黄金の万年筆"
+  },
+  {
+    "id": 197,
+    "groupId": "10",
+    "subgroupId": "10-4",
+    "slot": 2,
+    "name": "羽根軸の筆"
+  },
+  {
+    "id": 198,
+    "groupId": "10",
+    "subgroupId": "10-4",
+    "slot": 3,
+    "name": "水晶の硯"
+  },
+  {
+    "id": 199,
+    "groupId": "10",
+    "subgroupId": "10-4",
+    "slot": 4,
+    "name": "星図用の定規"
+  },
+  {
+    "id": 200,
+    "groupId": "10",
+    "subgroupId": "10-4",
+    "slot": 5,
+    "name": "虹色のインク瓶"
+  },
+  {
+    "id": 201,
+    "groupId": "11",
+    "subgroupId": "11-1",
+    "slot": 1,
+    "name": "虹玻璃の薬瓶"
+  },
+  {
+    "id": 202,
+    "groupId": "11",
+    "subgroupId": "11-1",
+    "slot": 2,
+    "name": "月銀の蒸留器"
+  },
+  {
+    "id": 203,
+    "groupId": "11",
+    "subgroupId": "11-1",
+    "slot": 3,
+    "name": "星鉄の坩堝"
+  },
+  {
+    "id": 204,
+    "groupId": "11",
+    "subgroupId": "11-1",
+    "slot": 4,
+    "name": "七管式の実験台"
+  },
+  {
+    "id": 205,
+    "groupId": "11",
+    "subgroupId": "11-1",
+    "slot": 5,
+    "name": "霧集めの漏斗"
+  },
+  {
+    "id": 206,
+    "groupId": "11",
+    "subgroupId": "11-2",
+    "slot": 1,
+    "name": "月光草"
+  },
+  {
+    "id": 207,
+    "groupId": "11",
+    "subgroupId": "11-2",
+    "slot": 2,
+    "name": "銀露花"
+  },
+  {
+    "id": 208,
+    "groupId": "11",
+    "subgroupId": "11-2",
+    "slot": 3,
+    "name": "火吹き苔"
+  },
+  {
+    "id": 209,
+    "groupId": "11",
+    "subgroupId": "11-2",
+    "slot": 4,
+    "name": "霜降り薬草"
+  },
+  {
+    "id": 210,
+    "groupId": "11",
+    "subgroupId": "11-2",
+    "slot": 5,
+    "name": "虹葉草"
+  },
+  {
+    "id": 211,
+    "groupId": "11",
+    "subgroupId": "11-3",
+    "slot": 1,
+    "name": "青光りの木の実"
+  },
+  {
+    "id": 212,
+    "groupId": "11",
+    "subgroupId": "11-3",
+    "slot": 2,
+    "name": "炎粒の果実"
+  },
+  {
+    "id": 213,
+    "groupId": "11",
+    "subgroupId": "11-3",
+    "slot": 3,
+    "name": "夢見茸"
+  },
+  {
+    "id": 214,
+    "groupId": "11",
+    "subgroupId": "11-3",
+    "slot": 4,
+    "name": "金色の胞子茸"
+  },
+  {
+    "id": 215,
+    "groupId": "11",
+    "subgroupId": "11-3",
+    "slot": 5,
+    "name": "氷蜜の実"
+  },
+  {
+    "id": 216,
+    "groupId": "11",
+    "subgroupId": "11-4",
+    "slot": 1,
+    "name": "竜血石の粉"
+  },
+  {
+    "id": 217,
+    "groupId": "11",
+    "subgroupId": "11-4",
+    "slot": 2,
+    "name": "世界樹の根片"
+  },
+  {
+    "id": 218,
+    "groupId": "11",
+    "subgroupId": "11-4",
+    "slot": 3,
+    "name": "精霊砂"
+  },
+  {
+    "id": 219,
+    "groupId": "11",
+    "subgroupId": "11-4",
+    "slot": 4,
+    "name": "雷晶の欠片"
+  },
+  {
+    "id": 220,
+    "groupId": "11",
+    "subgroupId": "11-4",
+    "slot": 5,
+    "name": "月銀の触媒液"
+  },
+  {
+    "id": 221,
+    "groupId": "12",
+    "subgroupId": "12-1",
+    "slot": 1,
+    "name": "千年杉の年輪標本"
+  },
+  {
+    "id": 222,
+    "groupId": "12",
+    "subgroupId": "12-1",
+    "slot": 2,
+    "name": "虹楓の葉標本"
+  },
+  {
+    "id": 223,
+    "groupId": "12",
+    "subgroupId": "12-1",
+    "slot": 3,
+    "name": "竜樹の樹皮標本"
+  },
+  {
+    "id": 224,
+    "groupId": "12",
+    "subgroupId": "12-1",
+    "slot": 4,
+    "name": "月桂の枝標本"
+  },
+  {
+    "id": 225,
+    "groupId": "12",
+    "subgroupId": "12-1",
+    "slot": 5,
+    "name": "銀葉樹の種標本"
+  },
+  {
+    "id": 226,
+    "groupId": "12",
+    "subgroupId": "12-2",
+    "slot": 1,
+    "name": "虹羽蝶の標本"
+  },
+  {
+    "id": 227,
+    "groupId": "12",
+    "subgroupId": "12-2",
+    "slot": 2,
+    "name": "青炎甲虫の標本"
+  },
+  {
+    "id": 228,
+    "groupId": "12",
+    "subgroupId": "12-2",
+    "slot": 3,
+    "name": "晶トンボの標本"
+  },
+  {
+    "id": 229,
+    "groupId": "12",
+    "subgroupId": "12-2",
+    "slot": 4,
+    "name": "鋼角カブトの標本"
+  },
+  {
+    "id": 230,
+    "groupId": "12",
+    "subgroupId": "12-2",
+    "slot": 5,
+    "name": "砂漠カマキリの標本"
+  },
+  {
+    "id": 231,
+    "groupId": "12",
+    "subgroupId": "12-3",
+    "slot": 1,
+    "name": "雷鷲の尾羽"
+  },
+  {
+    "id": 232,
+    "groupId": "12",
+    "subgroupId": "12-3",
+    "slot": 2,
+    "name": "雪梟の羽"
+  },
+  {
+    "id": 233,
+    "groupId": "12",
+    "subgroupId": "12-3",
+    "slot": 3,
+    "name": "海燕の風切羽"
+  },
+  {
+    "id": 234,
+    "groupId": "12",
+    "subgroupId": "12-3",
+    "slot": 4,
+    "name": "紅鶴の羽"
+  },
+  {
+    "id": 235,
+    "groupId": "12",
+    "subgroupId": "12-3",
+    "slot": 5,
+    "name": "黄金雉の羽"
+  },
+  {
+    "id": 236,
+    "groupId": "12",
+    "subgroupId": "12-4",
+    "slot": 1,
+    "name": "大角鹿の落角"
+  },
+  {
+    "id": 237,
+    "groupId": "12",
+    "subgroupId": "12-4",
+    "slot": 2,
+    "name": "雪豹の抜け牙"
+  },
+  {
+    "id": 238,
+    "groupId": "12",
+    "subgroupId": "12-4",
+    "slot": 3,
+    "name": "古代亀の脱皮甲羅"
+  },
+  {
+    "id": 239,
+    "groupId": "12",
+    "subgroupId": "12-4",
+    "slot": 4,
+    "name": "砂漠蜥蜴の抜け殻"
+  },
+  {
+    "id": 240,
+    "groupId": "12",
+    "subgroupId": "12-4",
+    "slot": 5,
+    "name": "海獣のひげ"
+  },
+  {
+    "id": 241,
+    "groupId": "13",
+    "subgroupId": "13-1",
+    "slot": 1,
+    "name": "虹巻貝"
+  },
+  {
+    "id": 242,
+    "groupId": "13",
+    "subgroupId": "13-1",
+    "slot": 2,
+    "name": "月光サザエ"
+  },
+  {
+    "id": 243,
+    "groupId": "13",
+    "subgroupId": "13-1",
+    "slot": 3,
+    "name": "王冠ホラガイ"
+  },
+  {
+    "id": 244,
+    "groupId": "13",
+    "subgroupId": "13-1",
+    "slot": 4,
+    "name": "渦紋の二枚貝"
+  },
+  {
+    "id": 245,
+    "groupId": "13",
+    "subgroupId": "13-1",
+    "slot": 5,
+    "name": "星形の貝殻"
+  },
+  {
+    "id": 246,
+    "groupId": "13",
+    "subgroupId": "13-2",
+    "slot": 1,
+    "name": "紅枝珊瑚"
+  },
+  {
+    "id": 247,
+    "groupId": "13",
+    "subgroupId": "13-2",
+    "slot": 2,
+    "name": "青扇珊瑚"
+  },
+  {
+    "id": 248,
+    "groupId": "13",
+    "subgroupId": "13-2",
+    "slot": 3,
+    "name": "白鹿角珊瑚"
+  },
+  {
+    "id": 249,
+    "groupId": "13",
+    "subgroupId": "13-2",
+    "slot": 4,
+    "name": "金星珊瑚"
+  },
+  {
+    "id": 250,
+    "groupId": "13",
+    "subgroupId": "13-2",
+    "slot": 5,
+    "name": "紫花珊瑚"
+  },
+  {
+    "id": 251,
+    "groupId": "13",
+    "subgroupId": "13-3",
+    "slot": 1,
+    "name": "波磨きの流木"
+  },
+  {
+    "id": 252,
+    "groupId": "13",
+    "subgroupId": "13-3",
+    "slot": 2,
+    "name": "巨大な種子の漂着物"
+  },
+  {
+    "id": 253,
+    "groupId": "13",
+    "subgroupId": "13-3",
+    "slot": 3,
+    "name": "海鳥の巣材球"
+  },
+  {
+    "id": 254,
+    "groupId": "13",
+    "subgroupId": "13-3",
+    "slot": 4,
+    "name": "琥珀を含む流木"
+  },
+  {
+    "id": 255,
+    "groupId": "13",
+    "subgroupId": "13-3",
+    "slot": 5,
+    "name": "貝殻の寄せ玉"
+  },
+  {
+    "id": 256,
+    "groupId": "13",
+    "subgroupId": "13-4",
+    "slot": 1,
+    "name": "古代船の舵輪"
+  },
+  {
+    "id": 257,
+    "groupId": "13",
+    "subgroupId": "13-4",
+    "slot": 2,
+    "name": "異国文字の瓶"
+  },
+  {
+    "id": 258,
+    "groupId": "13",
+    "subgroupId": "13-4",
+    "slot": 3,
+    "name": "沈没船の船鐘"
+  },
+  {
+    "id": 259,
+    "groupId": "13",
+    "subgroupId": "13-4",
+    "slot": 4,
+    "name": "漂着した宝箱の蓋"
+  },
+  {
+    "id": 260,
+    "groupId": "13",
+    "subgroupId": "13-4",
+    "slot": 5,
+    "name": "謎の金属浮標"
+  },
+  {
+    "id": 261,
+    "groupId": "14",
+    "subgroupId": "14-1",
+    "slot": 1,
+    "name": "青炎鉱石"
+  },
+  {
+    "id": 262,
+    "groupId": "14",
+    "subgroupId": "14-1",
+    "slot": 2,
+    "name": "風晶鉱"
+  },
+  {
+    "id": 263,
+    "groupId": "14",
+    "subgroupId": "14-1",
+    "slot": 3,
+    "name": "霧銀鉱"
+  },
+  {
+    "id": 264,
+    "groupId": "14",
+    "subgroupId": "14-1",
+    "slot": 4,
+    "name": "虹熱鉱"
+  },
+  {
+    "id": 265,
+    "groupId": "14",
+    "subgroupId": "14-1",
+    "slot": 5,
+    "name": "影吸い鉱石"
+  },
+  {
+    "id": 266,
+    "groupId": "14",
+    "subgroupId": "14-2",
+    "slot": 1,
+    "name": "星鉄隕石"
+  },
+  {
+    "id": 267,
+    "groupId": "14",
+    "subgroupId": "14-2",
+    "slot": 2,
+    "name": "流星ガラス隕石"
+  },
+  {
+    "id": 268,
+    "groupId": "14",
+    "subgroupId": "14-2",
+    "slot": 3,
+    "name": "金粒を含む隕石"
+  },
+  {
+    "id": 269,
+    "groupId": "14",
+    "subgroupId": "14-2",
+    "slot": 4,
+    "name": "青光りの隕石"
+  },
+  {
+    "id": 270,
+    "groupId": "14",
+    "subgroupId": "14-2",
+    "slot": 5,
+    "name": "虹脈隕石"
+  },
+  {
+    "id": 271,
+    "groupId": "14",
+    "subgroupId": "14-3",
+    "slot": 1,
+    "name": "六角水晶"
+  },
+  {
+    "id": 272,
+    "groupId": "14",
+    "subgroupId": "14-3",
+    "slot": 2,
+    "name": "紫水晶の晶洞"
+  },
+  {
+    "id": 273,
+    "groupId": "14",
+    "subgroupId": "14-3",
+    "slot": 3,
+    "name": "氷柱石の結晶"
+  },
+  {
+    "id": 274,
+    "groupId": "14",
+    "subgroupId": "14-3",
+    "slot": 4,
+    "name": "蛍石の立方晶"
+  },
+  {
+    "id": 275,
+    "groupId": "14",
+    "subgroupId": "14-3",
+    "slot": 5,
+    "name": "方解石の双晶"
+  },
+  {
+    "id": 276,
+    "groupId": "14",
+    "subgroupId": "14-4",
+    "slot": 1,
+    "name": "深紅のルビー"
+  },
+  {
+    "id": 277,
+    "groupId": "14",
+    "subgroupId": "14-4",
+    "slot": 2,
+    "name": "蒼海のサファイア"
+  },
+  {
+    "id": 278,
+    "groupId": "14",
+    "subgroupId": "14-4",
+    "slot": 3,
+    "name": "翠緑のエメラルド"
+  },
+  {
+    "id": 279,
+    "groupId": "14",
+    "subgroupId": "14-4",
+    "slot": 4,
+    "name": "黄金のトパーズ"
+  },
+  {
+    "id": 280,
+    "groupId": "14",
+    "subgroupId": "14-4",
+    "slot": 5,
+    "name": "虹色のオパール"
+  },
+  {
+    "id": 281,
+    "groupId": "15",
+    "subgroupId": "15-1",
+    "slot": 1,
+    "name": "滅亡王国の銀貨"
+  },
+  {
+    "id": 282,
+    "groupId": "15",
+    "subgroupId": "15-1",
+    "slot": 2,
+    "name": "古帝国の金貨"
+  },
+  {
+    "id": 283,
+    "groupId": "15",
+    "subgroupId": "15-1",
+    "slot": 3,
+    "name": "最後の王の肖像貨"
+  },
+  {
+    "id": 284,
+    "groupId": "15",
+    "subgroupId": "15-1",
+    "slot": 4,
+    "name": "砂漠王朝の穴あき貨"
+  },
+  {
+    "id": 285,
+    "groupId": "15",
+    "subgroupId": "15-1",
+    "slot": 5,
+    "name": "戦時の代用貨"
+  },
+  {
+    "id": 286,
+    "groupId": "15",
+    "subgroupId": "15-2",
+    "slot": 1,
+    "name": "獅子王家の紋章盾章"
+  },
+  {
+    "id": 287,
+    "groupId": "15",
+    "subgroupId": "15-2",
+    "slot": 2,
+    "name": "古王国の大印章"
+  },
+  {
+    "id": 288,
+    "groupId": "15",
+    "subgroupId": "15-2",
+    "slot": 3,
+    "name": "失われた軍団旗"
+  },
+  {
+    "id": 289,
+    "groupId": "15",
+    "subgroupId": "15-2",
+    "slot": 4,
+    "name": "王都の市章"
+  },
+  {
+    "id": 290,
+    "groupId": "15",
+    "subgroupId": "15-2",
+    "slot": 5,
+    "name": "皇帝の封蝋印"
+  },
+  {
+    "id": 291,
+    "groupId": "15",
+    "subgroupId": "15-3",
+    "slot": 1,
+    "name": "最後の王冠"
+  },
+  {
+    "id": 292,
+    "groupId": "15",
+    "subgroupId": "15-3",
+    "slot": 2,
+    "name": "翡翠の王笏"
+  },
+  {
+    "id": 293,
+    "groupId": "15",
+    "subgroupId": "15-3",
+    "slot": 3,
+    "name": "王妃の宝石櫛"
+  },
+  {
+    "id": 294,
+    "groupId": "15",
+    "subgroupId": "15-3",
+    "slot": 4,
+    "name": "即位式の宝珠"
+  },
+  {
+    "id": 295,
+    "groupId": "15",
+    "subgroupId": "15-3",
+    "slot": 5,
+    "name": "黄金の玉座飾り"
+  },
+  {
+    "id": 296,
+    "groupId": "15",
+    "subgroupId": "15-4",
+    "slot": 1,
+    "name": "聖堂の銀杯"
+  },
+  {
+    "id": 297,
+    "groupId": "15",
+    "subgroupId": "15-4",
+    "slot": 2,
+    "name": "巡礼者の鈴"
+  },
+  {
+    "id": 298,
+    "groupId": "15",
+    "subgroupId": "15-4",
+    "slot": 3,
+    "name": "古聖者の数珠"
+  },
+  {
+    "id": 299,
+    "groupId": "15",
+    "subgroupId": "15-4",
+    "slot": 4,
+    "name": "封印神殿の聖箱"
+  },
+  {
+    "id": 300,
+    "groupId": "15",
+    "subgroupId": "15-4",
+    "slot": 5,
+    "name": "祈りの石板"
+  },
+  {
+    "id": 301,
+    "groupId": "16",
+    "subgroupId": "16-1",
+    "slot": 1,
+    "name": "春迎え祭の花冠"
+  },
+  {
+    "id": 302,
+    "groupId": "16",
+    "subgroupId": "16-1",
+    "slot": 2,
+    "name": "収穫祭の仮面"
+  },
+  {
+    "id": 303,
+    "groupId": "16",
+    "subgroupId": "16-1",
+    "slot": 3,
+    "name": "灯籠祭の提灯"
+  },
+  {
+    "id": 304,
+    "groupId": "16",
+    "subgroupId": "16-1",
+    "slot": 4,
+    "name": "雨乞い祭の鈴"
+  },
+  {
+    "id": 305,
+    "groupId": "16",
+    "subgroupId": "16-1",
+    "slot": 5,
+    "name": "火祭りの旗"
+  },
+  {
+    "id": 306,
+    "groupId": "16",
+    "subgroupId": "16-2",
+    "slot": 1,
+    "name": "砂漠の木偶人形"
+  },
+  {
+    "id": 307,
+    "groupId": "16",
+    "subgroupId": "16-2",
+    "slot": 2,
+    "name": "陶器の舞姫人形"
+  },
+  {
+    "id": 308,
+    "groupId": "16",
+    "subgroupId": "16-2",
+    "slot": 3,
+    "name": "港町の船乗り人形"
+  },
+  {
+    "id": 309,
+    "groupId": "16",
+    "subgroupId": "16-2",
+    "slot": 4,
+    "name": "雪国の毛糸人形"
+  },
+  {
+    "id": 310,
+    "groupId": "16",
+    "subgroupId": "16-2",
+    "slot": 5,
+    "name": "山村の藁人形"
+  },
+  {
+    "id": 311,
+    "groupId": "16",
+    "subgroupId": "16-3",
+    "slot": 1,
+    "name": "星回しの独楽"
+  },
+  {
+    "id": 312,
+    "groupId": "16",
+    "subgroupId": "16-3",
+    "slot": 2,
+    "name": "竜すごろく"
+  },
+  {
+    "id": 313,
+    "groupId": "16",
+    "subgroupId": "16-3",
+    "slot": 3,
+    "name": "風車の玩具"
+  },
+  {
+    "id": 314,
+    "groupId": "16",
+    "subgroupId": "16-3",
+    "slot": 4,
+    "name": "木製の跳ね馬"
+  },
+  {
+    "id": 315,
+    "groupId": "16",
+    "subgroupId": "16-3",
+    "slot": 5,
+    "name": "石玉の迷路箱"
+  },
+  {
+    "id": 316,
+    "groupId": "16",
+    "subgroupId": "16-4",
+    "slot": 1,
+    "name": "逆さ文字の土鈴"
+  },
+  {
+    "id": 317,
+    "groupId": "16",
+    "subgroupId": "16-4",
+    "slot": 2,
+    "name": "音を吸う石板"
+  },
+  {
+    "id": 318,
+    "groupId": "16",
+    "subgroupId": "16-4",
+    "slot": 3,
+    "name": "光る紋様の布"
+  },
+  {
+    "id": 319,
+    "groupId": "16",
+    "subgroupId": "16-4",
+    "slot": 4,
+    "name": "奇妙な歯車片"
+  },
+  {
+    "id": 320,
+    "groupId": "16",
+    "subgroupId": "16-4",
+    "slot": 5,
+    "name": "触ると冷たい木球"
+  },
+  {
+    "id": 321,
+    "groupId": "17",
+    "subgroupId": "17-1",
+    "slot": 1,
+    "name": "夜祭りの狐面"
+  },
+  {
+    "id": 322,
+    "groupId": "17",
+    "subgroupId": "17-1",
+    "slot": 2,
+    "name": "竜神の面"
+  },
+  {
+    "id": 323,
+    "groupId": "17",
+    "subgroupId": "17-1",
+    "slot": 3,
+    "name": "月影の舞踏面"
+  },
+  {
+    "id": 324,
+    "groupId": "17",
+    "subgroupId": "17-1",
+    "slot": 4,
+    "name": "眠りの仮面"
+  },
+  {
+    "id": 325,
+    "groupId": "17",
+    "subgroupId": "17-1",
+    "slot": 5,
+    "name": "笑う石仮面"
+  },
+  {
+    "id": 326,
+    "groupId": "17",
+    "subgroupId": "17-2",
+    "slot": 1,
+    "name": "底なしの香瓶"
+  },
+  {
+    "id": 327,
+    "groupId": "17",
+    "subgroupId": "17-2",
+    "slot": 2,
+    "name": "夢をしまう壺"
+  },
+  {
+    "id": 328,
+    "groupId": "17",
+    "subgroupId": "17-2",
+    "slot": 3,
+    "name": "声を閉じ込める筒"
+  },
+  {
+    "id": 329,
+    "groupId": "17",
+    "subgroupId": "17-2",
+    "slot": 4,
+    "name": "影を映す鏡箱"
+  },
+  {
+    "id": 330,
+    "groupId": "17",
+    "subgroupId": "17-2",
+    "slot": 5,
+    "name": "季節を保存する宝石箱"
+  },
+  {
+    "id": 331,
+    "groupId": "17",
+    "subgroupId": "17-3",
+    "slot": 1,
+    "name": "月香木"
+  },
+  {
+    "id": 332,
+    "groupId": "17",
+    "subgroupId": "17-3",
+    "slot": 2,
+    "name": "眠り花の香炉"
+  },
+  {
+    "id": 333,
+    "groupId": "17",
+    "subgroupId": "17-3",
+    "slot": 3,
+    "name": "雨上がりの香水瓶"
+  },
+  {
+    "id": 334,
+    "groupId": "17",
+    "subgroupId": "17-3",
+    "slot": 4,
+    "name": "七色の香料壺"
+  },
+  {
+    "id": 335,
+    "groupId": "17",
+    "subgroupId": "17-3",
+    "slot": 5,
+    "name": "星夜の薫香"
+  },
+  {
+    "id": 336,
+    "groupId": "17",
+    "subgroupId": "17-4",
+    "slot": 1,
+    "name": "文字が浮かぶ羽根ペン"
+  },
+  {
+    "id": 337,
+    "groupId": "17",
+    "subgroupId": "17-4",
+    "slot": 2,
+    "name": "歌う石笛"
+  },
+  {
+    "id": 338,
+    "groupId": "17",
+    "subgroupId": "17-4",
+    "slot": 3,
+    "name": "逆さに燃える蝋燭"
+  },
+  {
+    "id": 339,
+    "groupId": "17",
+    "subgroupId": "17-4",
+    "slot": 4,
+    "name": "姿を映さない鏡"
+  },
+  {
+    "id": 340,
+    "groupId": "17",
+    "subgroupId": "17-4",
+    "slot": 5,
+    "name": "音を集める貝"
+  },
+  {
+    "id": 341,
+    "groupId": "18",
+    "subgroupId": "18-1",
+    "slot": 1,
+    "name": "虹蜜のマカロン"
+  },
+  {
+    "id": 342,
+    "groupId": "18",
+    "subgroupId": "18-1",
+    "slot": 2,
+    "name": "星砂の飴玉"
+  },
+  {
+    "id": 343,
+    "groupId": "18",
+    "subgroupId": "18-1",
+    "slot": 3,
+    "name": "月光の焼き菓子"
+  },
+  {
+    "id": 344,
+    "groupId": "18",
+    "subgroupId": "18-1",
+    "slot": 4,
+    "name": "王宮の千層ケーキ"
+  },
+  {
+    "id": 345,
+    "groupId": "18",
+    "subgroupId": "18-1",
+    "slot": 5,
+    "name": "氷花の砂糖菓子"
+  },
+  {
+    "id": 346,
+    "groupId": "18",
+    "subgroupId": "18-2",
+    "slot": 1,
+    "name": "夜空色の果実水"
+  },
+  {
+    "id": 347,
+    "groupId": "18",
+    "subgroupId": "18-2",
+    "slot": 2,
+    "name": "虹泡のソーダ"
+  },
+  {
+    "id": 348,
+    "groupId": "18",
+    "subgroupId": "18-2",
+    "slot": 3,
+    "name": "月露の茶"
+  },
+  {
+    "id": 349,
+    "groupId": "18",
+    "subgroupId": "18-2",
+    "slot": 4,
+    "name": "火竜の温かい果汁"
+  },
+  {
+    "id": 350,
+    "groupId": "18",
+    "subgroupId": "18-2",
+    "slot": 5,
+    "name": "氷精のミルク"
+  },
+  {
+    "id": 351,
+    "groupId": "18",
+    "subgroupId": "18-3",
+    "slot": 1,
+    "name": "七色の夢実"
+  },
+  {
+    "id": 352,
+    "groupId": "18",
+    "subgroupId": "18-3",
+    "slot": 2,
+    "name": "月光葡萄"
+  },
+  {
+    "id": 353,
+    "groupId": "18",
+    "subgroupId": "18-3",
+    "slot": 3,
+    "name": "星蜜桃"
+  },
+  {
+    "id": 354,
+    "groupId": "18",
+    "subgroupId": "18-3",
+    "slot": 4,
+    "name": "黄金の不老果"
+  },
+  {
+    "id": 355,
+    "groupId": "18",
+    "subgroupId": "18-3",
+    "slot": 5,
+    "name": "氷晶ベリー"
+  },
+  {
+    "id": 356,
+    "groupId": "18",
+    "subgroupId": "18-4",
+    "slot": 1,
+    "name": "マンドラゴラの若葉漬け"
+  },
+  {
+    "id": 357,
+    "groupId": "18",
+    "subgroupId": "18-4",
+    "slot": 2,
+    "name": "火トカゲの香辛焼き"
+  },
+  {
+    "id": 358,
+    "groupId": "18",
+    "subgroupId": "18-4",
+    "slot": 3,
+    "name": "きのこ魔物の干し茸"
+  },
+  {
+    "id": 359,
+    "groupId": "18",
+    "subgroupId": "18-4",
+    "slot": 4,
+    "name": "スライムのゼリー菓子"
+  },
+  {
+    "id": 360,
+    "groupId": "18",
+    "subgroupId": "18-4",
+    "slot": 5,
+    "name": "氷角獣の保存肉"
+  },
+  {
+    "id": 361,
+    "groupId": "19",
+    "subgroupId": "19-1",
+    "slot": 1,
+    "name": "王家の帆船模型"
+  },
+  {
+    "id": 362,
+    "groupId": "19",
+    "subgroupId": "19-1",
+    "slot": 2,
+    "name": "古代戦車模型"
+  },
+  {
+    "id": 363,
+    "groupId": "19",
+    "subgroupId": "19-1",
+    "slot": 3,
+    "name": "空飛ぶ馬車模型"
+  },
+  {
+    "id": 364,
+    "groupId": "19",
+    "subgroupId": "19-1",
+    "slot": 4,
+    "name": "深海潜航艇模型"
+  },
+  {
+    "id": 365,
+    "groupId": "19",
+    "subgroupId": "19-1",
+    "slot": 5,
+    "name": "蒸気機関車模型"
+  },
+  {
+    "id": 366,
+    "groupId": "19",
+    "subgroupId": "19-2",
+    "slot": 1,
+    "name": "白亜の古城模型"
+  },
+  {
+    "id": 367,
+    "groupId": "19",
+    "subgroupId": "19-2",
+    "slot": 2,
+    "name": "天空の神殿模型"
+  },
+  {
+    "id": 368,
+    "groupId": "19",
+    "subgroupId": "19-2",
+    "slot": 3,
+    "name": "海辺の灯台模型"
+  },
+  {
+    "id": 369,
+    "groupId": "19",
+    "subgroupId": "19-2",
+    "slot": 4,
+    "name": "砂漠の宮殿模型"
+  },
+  {
+    "id": 370,
+    "groupId": "19",
+    "subgroupId": "19-2",
+    "slot": 5,
+    "name": "山岳の砦模型"
+  },
+  {
+    "id": 371,
+    "groupId": "19",
+    "subgroupId": "19-3",
+    "slot": 1,
+    "name": "二つの月の天球模型"
+  },
+  {
+    "id": 372,
+    "groupId": "19",
+    "subgroupId": "19-3",
+    "slot": 2,
+    "name": "星雲の立体模型"
+  },
+  {
+    "id": 373,
+    "groupId": "19",
+    "subgroupId": "19-3",
+    "slot": 3,
+    "name": "海底世界模型"
+  },
+  {
+    "id": 374,
+    "groupId": "19",
+    "subgroupId": "19-3",
+    "slot": 4,
+    "name": "浮遊島の地形模型"
+  },
+  {
+    "id": 375,
+    "groupId": "19",
+    "subgroupId": "19-3",
+    "slot": 5,
+    "name": "地下世界の断面模型"
+  },
+  {
+    "id": 376,
+    "groupId": "19",
+    "subgroupId": "19-4",
+    "slot": 1,
+    "name": "赤竜の骨格模型"
+  },
+  {
+    "id": 377,
+    "groupId": "19",
+    "subgroupId": "19-4",
+    "slot": 2,
+    "name": "巨人ゴーレム模型"
+  },
+  {
+    "id": 378,
+    "groupId": "19",
+    "subgroupId": "19-4",
+    "slot": 3,
+    "name": "羽蛇の模型"
+  },
+  {
+    "id": 379,
+    "groupId": "19",
+    "subgroupId": "19-4",
+    "slot": 4,
+    "name": "一角獣の模型"
+  },
+  {
+    "id": 380,
+    "groupId": "19",
+    "subgroupId": "19-4",
+    "slot": 5,
+    "name": "水晶スライム模型"
+  },
+  {
+    "id": 381,
+    "groupId": "20",
+    "subgroupId": "20-1",
+    "slot": 1,
+    "name": "裏世界の銀貨"
+  },
+  {
+    "id": 382,
+    "groupId": "20",
+    "subgroupId": "20-1",
+    "slot": 2,
+    "name": "文字のない金貨"
+  },
+  {
+    "id": 383,
+    "groupId": "20",
+    "subgroupId": "20-1",
+    "slot": 3,
+    "name": "透明な硬貨"
+  },
+  {
+    "id": 384,
+    "groupId": "20",
+    "subgroupId": "20-1",
+    "slot": 4,
+    "name": "六角形の銅貨"
+  },
+  {
+    "id": 385,
+    "groupId": "20",
+    "subgroupId": "20-1",
+    "slot": 5,
+    "name": "浮遊する小銭"
+  },
+  {
+    "id": 386,
+    "groupId": "20",
+    "subgroupId": "20-2",
+    "slot": 1,
+    "name": "光糸の伝声器"
+  },
+  {
+    "id": 387,
+    "groupId": "20",
+    "subgroupId": "20-2",
+    "slot": 2,
+    "name": "記憶を映す水晶端末"
+  },
+  {
+    "id": 388,
+    "groupId": "20",
+    "subgroupId": "20-2",
+    "slot": 3,
+    "name": "異界の無線箱"
+  },
+  {
+    "id": 389,
+    "groupId": "20",
+    "subgroupId": "20-2",
+    "slot": 4,
+    "name": "夢通信の耳飾り"
+  },
+  {
+    "id": 390,
+    "groupId": "20",
+    "subgroupId": "20-2",
+    "slot": 5,
+    "name": "星間信号盤"
+  },
+  {
+    "id": 391,
+    "groupId": "20",
+    "subgroupId": "20-3",
+    "slot": 1,
+    "name": "逆さ虹のブローチ"
+  },
+  {
+    "id": 392,
+    "groupId": "20",
+    "subgroupId": "20-3",
+    "slot": 2,
+    "name": "空色の王冠"
+  },
+  {
+    "id": 393,
+    "groupId": "20",
+    "subgroupId": "20-3",
+    "slot": 3,
+    "name": "浮遊する腕輪"
+  },
+  {
+    "id": 394,
+    "groupId": "20",
+    "subgroupId": "20-3",
+    "slot": 4,
+    "name": "影縫いの首飾り"
+  },
+  {
+    "id": 395,
+    "groupId": "20",
+    "subgroupId": "20-3",
+    "slot": 5,
+    "name": "裏月の指輪"
+  },
+  {
+    "id": 396,
+    "groupId": "20",
+    "subgroupId": "20-4",
+    "slot": 1,
+    "name": "用途不明の七輪歯車"
+  },
+  {
+    "id": 397,
+    "groupId": "20",
+    "subgroupId": "20-4",
+    "slot": 2,
+    "name": "無音で回る円盤"
+  },
+  {
+    "id": 398,
+    "groupId": "20",
+    "subgroupId": "20-4",
+    "slot": 3,
+    "name": "重力を曲げる箱"
+  },
+  {
+    "id": 399,
+    "groupId": "20",
+    "subgroupId": "20-4",
+    "slot": 4,
+    "name": "空中に字を書く棒"
+  },
+  {
+    "id": 400,
+    "groupId": "20",
+    "subgroupId": "20-4",
+    "slot": 5,
+    "name": "空間を折る定規"
+  },
+  {
+    "id": 401,
+    "groupId": "21",
+    "subgroupId": "21-1",
+    "slot": 1,
+    "name": "赤竜の逆鱗"
+  },
+  {
+    "id": 402,
+    "groupId": "21",
+    "subgroupId": "21-1",
+    "slot": 2,
+    "name": "海蛇の青鱗"
+  },
+  {
+    "id": 403,
+    "groupId": "21",
+    "subgroupId": "21-1",
+    "slot": 3,
+    "name": "雷蜥蜴の鱗"
+  },
+  {
+    "id": 404,
+    "groupId": "21",
+    "subgroupId": "21-1",
+    "slot": 4,
+    "name": "水晶竜の透明鱗"
+  },
+  {
+    "id": 405,
+    "groupId": "21",
+    "subgroupId": "21-1",
+    "slot": 5,
+    "name": "砂竜の黄金鱗"
+  },
+  {
+    "id": 406,
+    "groupId": "21",
+    "subgroupId": "21-2",
+    "slot": 1,
+    "name": "鉄甲虫の甲殻"
+  },
+  {
+    "id": 407,
+    "groupId": "21",
+    "subgroupId": "21-2",
+    "slot": 2,
+    "name": "溶岩蟹の甲殻"
+  },
+  {
+    "id": 408,
+    "groupId": "21",
+    "subgroupId": "21-2",
+    "slot": 3,
+    "name": "水晶亀の甲羅片"
+  },
+  {
+    "id": 409,
+    "groupId": "21",
+    "subgroupId": "21-2",
+    "slot": 4,
+    "name": "深海魔獣の外殻"
+  },
+  {
+    "id": 410,
+    "groupId": "21",
+    "subgroupId": "21-2",
+    "slot": 5,
+    "name": "古代甲獣の背甲"
+  },
+  {
+    "id": 411,
+    "groupId": "21",
+    "subgroupId": "21-3",
+    "slot": 1,
+    "name": "火鳥の尾羽"
+  },
+  {
+    "id": 412,
+    "groupId": "21",
+    "subgroupId": "21-3",
+    "slot": 2,
+    "name": "氷梟魔物の羽毛"
+  },
+  {
+    "id": 413,
+    "groupId": "21",
+    "subgroupId": "21-3",
+    "slot": 3,
+    "name": "虹翼獣の綿羽"
+  },
+  {
+    "id": 414,
+    "groupId": "21",
+    "subgroupId": "21-3",
+    "slot": 4,
+    "name": "雷鷲魔物の翼羽"
+  },
+  {
+    "id": 415,
+    "groupId": "21",
+    "subgroupId": "21-3",
+    "slot": 5,
+    "name": "影鴉の黒羽"
+  },
+  {
+    "id": 416,
+    "groupId": "21",
+    "subgroupId": "21-4",
+    "slot": 1,
+    "name": "炎魔の魔力核"
+  },
+  {
+    "id": 417,
+    "groupId": "21",
+    "subgroupId": "21-4",
+    "slot": 2,
+    "name": "氷霊獣の魔核"
+  },
+  {
+    "id": 418,
+    "groupId": "21",
+    "subgroupId": "21-4",
+    "slot": 3,
+    "name": "雷獣の蓄電核"
+  },
+  {
+    "id": 419,
+    "groupId": "21",
+    "subgroupId": "21-4",
+    "slot": 4,
+    "name": "森魔物の生命核"
+  },
+  {
+    "id": 420,
+    "groupId": "21",
+    "subgroupId": "21-4",
+    "slot": 5,
+    "name": "影獣の暗黒核"
+  },
+  {
+    "id": 421,
+    "groupId": "22",
+    "subgroupId": "22-1",
+    "slot": 1,
+    "name": "赤熱の精霊石"
+  },
+  {
+    "id": 422,
+    "groupId": "22",
+    "subgroupId": "22-1",
+    "slot": 2,
+    "name": "火守りの鈴"
+  },
+  {
+    "id": 423,
+    "groupId": "22",
+    "subgroupId": "22-1",
+    "slot": 3,
+    "name": "燃え尽きない灰"
+  },
+  {
+    "id": 424,
+    "groupId": "22",
+    "subgroupId": "22-1",
+    "slot": 4,
+    "name": "焔文字の石板"
+  },
+  {
+    "id": 425,
+    "groupId": "22",
+    "subgroupId": "22-1",
+    "slot": 5,
+    "name": "夕焼けの灯芯"
+  },
+  {
+    "id": 426,
+    "groupId": "22",
+    "subgroupId": "22-2",
+    "slot": 1,
+    "name": "水精霊の涙"
+  },
+  {
+    "id": 427,
+    "groupId": "22",
+    "subgroupId": "22-2",
+    "slot": 2,
+    "name": "枯れない泉の小瓶"
+  },
+  {
+    "id": 428,
+    "groupId": "22",
+    "subgroupId": "22-2",
+    "slot": 3,
+    "name": "海の精霊の鈴"
+  },
+  {
+    "id": 429,
+    "groupId": "22",
+    "subgroupId": "22-2",
+    "slot": 4,
+    "name": "水鏡の欠片"
+  },
+  {
+    "id": 430,
+    "groupId": "22",
+    "subgroupId": "22-2",
+    "slot": 5,
+    "name": "潮満ちの珠"
+  },
+  {
+    "id": 431,
+    "groupId": "22",
+    "subgroupId": "22-3",
+    "slot": 1,
+    "name": "風精霊の羽根"
+  },
+  {
+    "id": 432,
+    "groupId": "22",
+    "subgroupId": "22-3",
+    "slot": 2,
+    "name": "追い風の風車"
+  },
+  {
+    "id": 433,
+    "groupId": "22",
+    "subgroupId": "22-3",
+    "slot": 3,
+    "name": "そよぎの鈴"
+  },
+  {
+    "id": 434,
+    "groupId": "22",
+    "subgroupId": "22-3",
+    "slot": 4,
+    "name": "風を包む袋"
+  },
+  {
+    "id": 435,
+    "groupId": "22",
+    "subgroupId": "22-3",
+    "slot": 5,
+    "name": "空鳴りの笛"
+  },
+  {
+    "id": 436,
+    "groupId": "22",
+    "subgroupId": "22-4",
+    "slot": 1,
+    "name": "土精霊の種石"
+  },
+  {
+    "id": 437,
+    "groupId": "22",
+    "subgroupId": "22-4",
+    "slot": 2,
+    "name": "山鳴りの鈴"
+  },
+  {
+    "id": 438,
+    "groupId": "22",
+    "subgroupId": "22-4",
+    "slot": 3,
+    "name": "芽吹きの土瓶"
+  },
+  {
+    "id": 439,
+    "groupId": "22",
+    "subgroupId": "22-4",
+    "slot": 4,
+    "name": "大地の紋章石"
+  },
+  {
+    "id": 440,
+    "groupId": "22",
+    "subgroupId": "22-4",
+    "slot": 5,
+    "name": "豊穣の土玉"
+  },
+  {
+    "id": 441,
+    "groupId": "23",
+    "subgroupId": "23-1",
+    "slot": 1,
+    "name": "夜明けの宝珠"
+  },
+  {
+    "id": 442,
+    "groupId": "23",
+    "subgroupId": "23-1",
+    "slot": 2,
+    "name": "千年王の宝珠"
+  },
+  {
+    "id": 443,
+    "groupId": "23",
+    "subgroupId": "23-1",
+    "slot": 3,
+    "name": "天穹の宝珠"
+  },
+  {
+    "id": 444,
+    "groupId": "23",
+    "subgroupId": "23-1",
+    "slot": 4,
+    "name": "星海の宝珠"
+  },
+  {
+    "id": 445,
+    "groupId": "23",
+    "subgroupId": "23-1",
+    "slot": 5,
+    "name": "時の宝珠"
+  },
+  {
+    "id": 446,
+    "groupId": "23",
+    "subgroupId": "23-2",
+    "slot": 1,
+    "name": "不滅の聖杯"
+  },
+  {
+    "id": 447,
+    "groupId": "23",
+    "subgroupId": "23-2",
+    "slot": 2,
+    "name": "竜王の酒器"
+  },
+  {
+    "id": 448,
+    "groupId": "23",
+    "subgroupId": "23-2",
+    "slot": 3,
+    "name": "月の女神の水差し"
+  },
+  {
+    "id": 449,
+    "groupId": "23",
+    "subgroupId": "23-2",
+    "slot": 4,
+    "name": "永遠の灯皿"
+  },
+  {
+    "id": 450,
+    "groupId": "23",
+    "subgroupId": "23-2",
+    "slot": 5,
+    "name": "七王の香炉"
+  },
+  {
+    "id": 451,
+    "groupId": "23",
+    "subgroupId": "23-3",
+    "slot": 1,
+    "name": "天界の道標石板"
+  },
+  {
+    "id": 452,
+    "groupId": "23",
+    "subgroupId": "23-3",
+    "slot": 2,
+    "name": "未来を刻む石板"
+  },
+  {
+    "id": 453,
+    "groupId": "23",
+    "subgroupId": "23-3",
+    "slot": 3,
+    "name": "世界の始まりの石板"
+  },
+  {
+    "id": 454,
+    "groupId": "23",
+    "subgroupId": "23-3",
+    "slot": 4,
+    "name": "封印王の石板"
+  },
+  {
+    "id": 455,
+    "groupId": "23",
+    "subgroupId": "23-3",
+    "slot": 5,
+    "name": "星座の予言石板"
+  },
+  {
+    "id": 456,
+    "groupId": "23",
+    "subgroupId": "23-4",
+    "slot": 1,
+    "name": "世界の夜明けの欠片"
+  },
+  {
+    "id": 457,
+    "groupId": "23",
+    "subgroupId": "23-4",
+    "slot": 2,
+    "name": "海の記憶の欠片"
+  },
+  {
+    "id": 458,
+    "groupId": "23",
+    "subgroupId": "23-4",
+    "slot": 3,
+    "name": "時の狭間の石片"
+  },
+  {
+    "id": 459,
+    "groupId": "23",
+    "subgroupId": "23-4",
+    "slot": 4,
+    "name": "大地の心臓片"
+  },
+  {
+    "id": 460,
+    "groupId": "23",
+    "subgroupId": "23-4",
+    "slot": 5,
+    "name": "夢世界のかけら"
+  },
+  {
+    "id": 461,
+    "groupId": "24",
+    "subgroupId": "24-1",
+    "slot": 1,
+    "name": "「雲海を見下ろす天空峰」の絵画"
+  },
+  {
+    "id": 462,
+    "groupId": "24",
+    "subgroupId": "24-1",
+    "slot": 2,
+    "name": "「千の滝を望む高台」の写真"
+  },
+  {
+    "id": 463,
+    "groupId": "24",
+    "subgroupId": "24-1",
+    "slot": 3,
+    "name": "「星降る天文台跡」の絵画"
+  },
+  {
+    "id": 464,
+    "groupId": "24",
+    "subgroupId": "24-1",
+    "slot": 4,
+    "name": "「虹の架かる大峡谷」の写真"
+  },
+  {
+    "id": 465,
+    "groupId": "24",
+    "subgroupId": "24-1",
+    "slot": 5,
+    "name": "「朝日を受ける白い断崖」の絵画"
+  },
+  {
+    "id": 466,
+    "groupId": "24",
+    "subgroupId": "24-2",
+    "slot": 1,
+    "name": "「光るキノコの地下森」の絵画"
+  },
+  {
+    "id": 467,
+    "groupId": "24",
+    "subgroupId": "24-2",
+    "slot": 2,
+    "name": "「水晶の鍾乳洞」の写真"
+  },
+  {
+    "id": 468,
+    "groupId": "24",
+    "subgroupId": "24-2",
+    "slot": 3,
+    "name": "「七色の温泉谷」の絵画"
+  },
+  {
+    "id": 469,
+    "groupId": "24",
+    "subgroupId": "24-2",
+    "slot": 4,
+    "name": "「千年樹の森」の写真"
+  },
+  {
+    "id": 470,
+    "groupId": "24",
+    "subgroupId": "24-2",
+    "slot": 5,
+    "name": "「青く輝く氷穴」の絵画"
+  },
+  {
+    "id": 471,
+    "groupId": "24",
+    "subgroupId": "24-3",
+    "slot": 1,
+    "name": "「石畳の古王都」の絵画"
+  },
+  {
+    "id": 472,
+    "groupId": "24",
+    "subgroupId": "24-3",
+    "slot": 2,
+    "name": "「水路の商人街」の写真"
+  },
+  {
+    "id": 473,
+    "groupId": "24",
+    "subgroupId": "24-3",
+    "slot": 3,
+    "name": "「白壁の山岳集落」の絵画"
+  },
+  {
+    "id": 474,
+    "groupId": "24",
+    "subgroupId": "24-3",
+    "slot": 4,
+    "name": "「赤屋根の港町」の写真"
+  },
+  {
+    "id": 475,
+    "groupId": "24",
+    "subgroupId": "24-3",
+    "slot": 5,
+    "name": "「砂漠の階段都市」の絵画"
+  },
+  {
+    "id": 476,
+    "groupId": "24",
+    "subgroupId": "24-4",
+    "slot": 1,
+    "name": "「海底に沈む神殿」の絵画"
+  },
+  {
+    "id": 477,
+    "groupId": "24",
+    "subgroupId": "24-4",
+    "slot": 2,
+    "name": "「珊瑚に包まれた沈没城」の写真"
+  },
+  {
+    "id": 478,
+    "groupId": "24",
+    "subgroupId": "24-4",
+    "slot": 3,
+    "name": "「波間の双子島」の絵画"
+  },
+  {
+    "id": 479,
+    "groupId": "24",
+    "subgroupId": "24-4",
+    "slot": 4,
+    "name": "「孤島の白い灯台」の写真"
+  },
+  {
+    "id": 480,
+    "groupId": "24",
+    "subgroupId": "24-4",
+    "slot": 5,
+    "name": "「海中の石柱群」の絵画"
+  }
+]

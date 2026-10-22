@@ -1,0 +1,482 @@
+[
+  {
+    "subgroupId": "01-1",
+    "rewardId": 1,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "01-2",
+    "rewardId": 2,
+    "amountText": "+1マス"
+  },
+  {
+    "subgroupId": "01-3",
+    "rewardId": 3,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "01-4",
+    "rewardId": 4,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "02-1",
+    "rewardId": 5,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "02-2",
+    "rewardId": 6,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "02-3",
+    "rewardId": 1,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "02-4",
+    "rewardId": 2,
+    "amountText": "+1マス"
+  },
+  {
+    "subgroupId": "03-1",
+    "rewardId": 3,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "03-2",
+    "rewardId": 4,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "03-3",
+    "rewardId": 5,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "03-4",
+    "rewardId": 6,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "04-1",
+    "rewardId": 1,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "04-2",
+    "rewardId": 2,
+    "amountText": "+1マス"
+  },
+  {
+    "subgroupId": "04-3",
+    "rewardId": 3,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "04-4",
+    "rewardId": 4,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "05-1",
+    "rewardId": 5,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "05-2",
+    "rewardId": 6,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "05-3",
+    "rewardId": 1,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "05-4",
+    "rewardId": 2,
+    "amountText": "+1マス"
+  },
+  {
+    "subgroupId": "06-1",
+    "rewardId": 3,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "06-2",
+    "rewardId": 4,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "06-3",
+    "rewardId": 5,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "06-4",
+    "rewardId": 6,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "07-1",
+    "rewardId": 1,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "07-2",
+    "rewardId": 2,
+    "amountText": "+1マス"
+  },
+  {
+    "subgroupId": "07-3",
+    "rewardId": 3,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "07-4",
+    "rewardId": 4,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "08-1",
+    "rewardId": 5,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "08-2",
+    "rewardId": 6,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "08-3",
+    "rewardId": 1,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "08-4",
+    "rewardId": 2,
+    "amountText": "+1マス"
+  },
+  {
+    "subgroupId": "09-1",
+    "rewardId": 3,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "09-2",
+    "rewardId": 4,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "09-3",
+    "rewardId": 5,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "09-4",
+    "rewardId": 6,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "10-1",
+    "rewardId": 1,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "10-2",
+    "rewardId": 2,
+    "amountText": "+1マス"
+  },
+  {
+    "subgroupId": "10-3",
+    "rewardId": 3,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "10-4",
+    "rewardId": 4,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "11-1",
+    "rewardId": 5,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "11-2",
+    "rewardId": 6,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "11-3",
+    "rewardId": 1,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "11-4",
+    "rewardId": 2,
+    "amountText": "+1マス"
+  },
+  {
+    "subgroupId": "12-1",
+    "rewardId": 3,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "12-2",
+    "rewardId": 4,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "12-3",
+    "rewardId": 5,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "12-4",
+    "rewardId": 6,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "13-1",
+    "rewardId": 1,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "13-2",
+    "rewardId": 2,
+    "amountText": "+1マス"
+  },
+  {
+    "subgroupId": "13-3",
+    "rewardId": 3,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "13-4",
+    "rewardId": 4,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "14-1",
+    "rewardId": 5,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "14-2",
+    "rewardId": 6,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "14-3",
+    "rewardId": 1,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "14-4",
+    "rewardId": 2,
+    "amountText": "+1マス"
+  },
+  {
+    "subgroupId": "15-1",
+    "rewardId": 3,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "15-2",
+    "rewardId": 4,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "15-3",
+    "rewardId": 5,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "15-4",
+    "rewardId": 6,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "16-1",
+    "rewardId": 1,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "16-2",
+    "rewardId": 2,
+    "amountText": "+1マス"
+  },
+  {
+    "subgroupId": "16-3",
+    "rewardId": 3,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "16-4",
+    "rewardId": 4,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "17-1",
+    "rewardId": 5,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "17-2",
+    "rewardId": 6,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "17-3",
+    "rewardId": 1,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "17-4",
+    "rewardId": 2,
+    "amountText": "+1マス"
+  },
+  {
+    "subgroupId": "18-1",
+    "rewardId": 3,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "18-2",
+    "rewardId": 4,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "18-3",
+    "rewardId": 5,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "18-4",
+    "rewardId": 6,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "19-1",
+    "rewardId": 1,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "19-2",
+    "rewardId": 2,
+    "amountText": "+1マス"
+  },
+  {
+    "subgroupId": "19-3",
+    "rewardId": 3,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "19-4",
+    "rewardId": 4,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "20-1",
+    "rewardId": 5,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "20-2",
+    "rewardId": 6,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "20-3",
+    "rewardId": 1,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "20-4",
+    "rewardId": 2,
+    "amountText": "+1マス"
+  },
+  {
+    "subgroupId": "21-1",
+    "rewardId": 3,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "21-2",
+    "rewardId": 4,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "21-3",
+    "rewardId": 5,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "21-4",
+    "rewardId": 6,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "22-1",
+    "rewardId": 1,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "22-2",
+    "rewardId": 2,
+    "amountText": "+1マス"
+  },
+  {
+    "subgroupId": "22-3",
+    "rewardId": 3,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "22-4",
+    "rewardId": 4,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "23-1",
+    "rewardId": 5,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "23-2",
+    "rewardId": 6,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "23-3",
+    "rewardId": 1,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "23-4",
+    "rewardId": 2,
+    "amountText": "+1マス"
+  },
+  {
+    "subgroupId": "24-1",
+    "rewardId": 3,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "24-2",
+    "rewardId": 4,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "24-3",
+    "rewardId": 5,
+    "amountText": "+0.2ポイント"
+  },
+  {
+    "subgroupId": "24-4",
+    "rewardId": 6,
+    "amountText": "+0.2ポイント"
+  }
+]

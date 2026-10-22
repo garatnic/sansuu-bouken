@@ -1,0 +1,166 @@
+[
+  {
+    "id": "F01",
+    "name": "町",
+    "generationWeightPercent": 13,
+    "allowedTerrainIds": [
+      "T01",
+      "T02",
+      "T04",
+      "T06"
+    ],
+    "eventWeightsPercent": {
+      "companion": 50,
+      "collection": 50
+    },
+    "companionPoolWeightsPercent": {
+      "human": 90,
+      "monster": 10
+    }
+  },
+  {
+    "id": "F02",
+    "name": "城・砦",
+    "generationWeightPercent": 9,
+    "allowedTerrainIds": [
+      "T01",
+      "T02",
+      "T03",
+      "T04",
+      "T06"
+    ],
+    "eventWeightsPercent": {
+      "companion": 50,
+      "collection": 50
+    },
+    "companionPoolWeightsPercent": {
+      "human": 90,
+      "monster": 10
+    }
+  },
+  {
+    "id": "F03",
+    "name": "墓地",
+    "generationWeightPercent": 16,
+    "allowedTerrainIds": [
+      "T01",
+      "T02",
+      "T03",
+      "T04",
+      "T06",
+      "T07"
+    ],
+    "eventWeightsPercent": {
+      "companion": 50,
+      "collection": 50
+    },
+    "companionPoolWeightsPercent": {
+      "human": 10,
+      "monster": 90
+    }
+  },
+  {
+    "id": "F04",
+    "name": "ダンジョン",
+    "generationWeightPercent": 16,
+    "allowedTerrainIds": [
+      "T01",
+      "T02",
+      "T03",
+      "T04",
+      "T06",
+      "T07"
+    ],
+    "eventWeightsPercent": {
+      "companion": 50,
+      "collection": 50
+    },
+    "companionPoolWeightsPercent": {
+      "human": 10,
+      "monster": 90
+    }
+  },
+  {
+    "id": "F05",
+    "name": "洞窟",
+    "generationWeightPercent": 16,
+    "allowedTerrainIds": [
+      "T01",
+      "T02",
+      "T03",
+      "T04",
+      "T06",
+      "T07"
+    ],
+    "eventWeightsPercent": {
+      "companion": 40,
+      "collection": 60
+    },
+    "companionPoolWeightsPercent": {
+      "human": 10,
+      "danger": 90
+    }
+  },
+  {
+    "id": "F06",
+    "name": "遺跡",
+    "generationWeightPercent": 10,
+    "allowedTerrainIds": [
+      "T01",
+      "T02",
+      "T03",
+      "T04",
+      "T05",
+      "T06",
+      "T07"
+    ],
+    "eventWeightsPercent": {
+      "companion": 30,
+      "collection": 70
+    },
+    "companionPoolWeightsPercent": {
+      "human": 10,
+      "danger": 90
+    }
+  },
+  {
+    "id": "F07",
+    "name": "塔",
+    "generationWeightPercent": 10,
+    "allowedTerrainIds": [
+      "T01",
+      "T02",
+      "T03",
+      "T04",
+      "T05",
+      "T06",
+      "T07"
+    ],
+    "eventWeightsPercent": {
+      "companion": 40,
+      "collection": 60
+    },
+    "companionPoolWeightsPercent": {
+      "human": 10,
+      "danger": 90
+    }
+  },
+  {
+    "id": "F08",
+    "name": "小屋",
+    "generationWeightPercent": 10,
+    "allowedTerrainIds": [
+      "T01",
+      "T02",
+      "T03",
+      "T04",
+      "T06",
+      "T07"
+    ],
+    "eventWeightsPercent": {
+      "companion": 80,
+      "collection": 20
+    },
+    "companionPoolMode": "all_uniform"
+  }
+]

@@ -1,0 +1,49 @@
+﻿# 実績・称号用カウンタ／保存・判定設計
+更新日：2026-10-17　todo 24　実装前設計
+正本：称号名・条件は「称号120件マスター.csv」、意味は「実績・称号120件仕様.txt」。本書は実装用のカウンタ一覧。キー名は推奨例でありAPI確定ではない。
+
+## 永続累計（数値）
+totalExploredTiles：開始拠点を除く全ワールド新規開拓数。No.001～010。
+totalCorrectAnswers：正解した問題数（1問につき最大+1）。No.011～020。
+worldsStarted：出発回数。No.120。
+worldsFullyExplored：全域開拓成立ワールド数（1ワールド1回）。No.021～025。
+worldsFacilitiesCleared：施設制覇成立ワールド数（1ワールド1回）。No.056～059。
+worldsPerfectlyCleared：完全クリア成立ワールド数（1ワールド1回）。No.026～030。
+exploredBySize：5x5,10x10,20x20,30x30ごとの全域開拓回数。No.031～034,038,040。
+perfectBySize：同サイズごとの完全クリア回数。No.035～037,039,040。
+facilityEventsByType：town,castle,graveyard,dungeon,cave,ruins,tower,hutの8カウンタ。No.041～050。No.050は全要素>=100。
+facilityEventsTotal：施設イベント累計処理数（上記8カウンタ合計から算出可能）。No.041,051～055,060。
+recruitSuccesses：施設勧誘成功回数（重複含む）。No.071～077。
+recruitFailures：施設勧誘失敗回数。No.078～079。
+itemAcquisitions：収集品獲得累計個数（重複含む）。No.116。
+duplicateRecruitmentCount：勧誘成功時に既登録だったキャラの累計回数。No.117。
+recruitmentsByCharacterId：同じキャラの施設勧誘成功回数（ID→回数）。No.118。
+
+## 永続図鑑・フラグ
+registeredCharacterIds：登録済みキャラID集合（既存図鑑を利用）。No.061～070,115。
+registeredItemIds：登録済み収集品ID集合（既存図鑑を利用）。No.081～100,113～114。
+achievementsUnlocked：達成済みID集合（全120件、一度獲得したら取り消さない）。No.101～119のイベント型条件も保持。
+※獲得済み称号を一覧で見るための別装備欄・効果欄は不要。
+
+## ワールド中の一時状態
+worldRevealedUniqueCount：そのワールドで新たに透視された未開拓セル数。No.110。ワールド帰還で破棄。
+worldFullyExploredFlag／worldFacilitiesClearedFlag／worldPerfectFlag：重複加算防止。全域開拓報酬の付与済みフラグとは別に扱う。
+currentQuestionWrongSelections：現在の1問で無効化した誤答の種類数。No.119。正解・次の問題で初期化。
+currentActionNewExploredCount：1回の開拓処理で新規開拓したセル数。No.108～109。開拓イベントのまとまりの定義は実装時に明記。
+
+## イベントで判定するフラグ（達成時にachievementsUnlockedへ登録）
+出発時のパーティー人数1～5：No.101～105。
+透視初成功：No.106。自動追加開拓初成功：No.107。
+途中帰還（チュートリアル除外）：No.111。
+全域開拓後の未処理施設イベント訪問：No.112。
+小グループの登録種類数が4に到達：No.113。
+登録品479→480：No.114。登録仲間926→927：No.115。
+小屋で施設勧誘成功：No.080。
+
+## 更新原則
+・すべての記録をワールド帰還で消さない。チュートリアルも累計に含める（開始拠点は例外）。
+・イベント成功判定と施設処理回数の加算は別。施設の再訪問では加算しない。
+・同じ新規開拓セルは二重計上しない。透視のみでは開拓数に加算しない。
+・同一ワールドのクリア判定は一度だけ加算する。完全クリア後も帰還は手動。
+・記録更新と実績解除は同じ保存トランザクション相当の処理で行い、二重獲得を防ぐ。
+・localStorage保存にはschemaVersionを持たせ、破損・移行を想定する。詳細はtodo25の実装設計。

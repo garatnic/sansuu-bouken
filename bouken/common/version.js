@@ -1,0 +1,1 @@
+window.BoukenVersion = 21;
