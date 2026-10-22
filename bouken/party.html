@@ -7,7 +7,7 @@
 <section class="panel"><div class="slots" id="slots"></div><div class="row" style="margin-top:10px"><span class="small" id="slotHint"></span><button id="remove" type="button">選択枠から外す</button></div></section>
 <h1>現在の効果</h1><section class="panel"><div id="effects" class="effects"></div></section>
 <h1>仲間たち</h1><section class="panel"><div class="filter"><button id="prev" aria-label="前のスキル">◀</button><strong id="skillName">すべて</strong><button id="next" aria-label="次のスキル">▶</button></div><p class="small" id="found"></p><input class="search" id="search" placeholder="なまえ・番号でさがす" aria-label="仲間を検索"><div class="grid" id="list"></div></section><p class="message" id="message" role="status"></p>
-<script src="common/skill-ui.js?v=23"></script><script src="common/version.js?v=23"></script><script src="common/schema.js?v=23"></script><script src="common/save.js?v=23"></script><script src="common/master.js?v=23"></script><script src="common/party.js?v=23"></script>
+<script src="common/skill-ui.js?v=27"></script><script src="common/version.js?v=27"></script><script src="common/schema.js?v=27"></script><script src="common/save.js?v=27"></script><script src="common/master.js?v=27"></script><script src="common/party.js?v=27"></script>
 <script>
 (async()=>{
 const $=id=>document.getElementById(id), msg=s=>$('message').textContent=s;
@@ -21,7 +21,8 @@ try{
  let party=BoukenParty.normalize(save.party,owned.map(c=>c.id),max);
  let slot=0,skillIndex=0;
  // 古い/不正な編成は表示だけ補正し、ユーザー操作まではセーブを書き換えない。
- const pic=(c)=>{const image=document.createElement('img');image.src='assets/characters/'+String(c.id).padStart(3,'0')+'.png';image.alt='';image.onerror=()=>{image.replaceWith(Object.assign(document.createElement('span'),{textContent:'👤'}))};return image};
+ // キャラクタースプライト導入まで画像リクエストを完全停止する。
+ const pic=()=>{const placeholder=document.createElement('span');placeholder.textContent='👤';placeholder.setAttribute('aria-hidden','true');return placeholder};
  function persist(next){const copy=JSON.parse(JSON.stringify(save));copy.party=next;save=BoukenSave.save(copy);party=next;msg('編成を保存しました');render()}
  function render(){
  $('partyCount').textContent=`（${party.filter(Boolean).length}/${max}）`;
