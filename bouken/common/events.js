@@ -14,9 +14,10 @@ window.BoukenEvents=Object.freeze({
   return candidates.map(c=>({value:c,weight:(Number(save.characters?.[c.id]||0)>0?1:1+unknownBonus)+(groups.has(String(c.groupId))?baseTotal*groupBonus/groupCounts.get(String(c.groupId)):0)}));
  },
  poolFor(f,random=Math.random){return f.companionPoolMode==='all_uniform'?'all':this.weighted(Object.entries(f.companionPoolWeightsPercent).map(([value,weight])=>({value,weight})),random);},
- resolve(save,w,i,facilities,characters,items,random=Math.random){
+ prepare(save,w,i,facilities,characters,items,random=Math.random){
   if(!w.explored[i]||!w.facility[i])throw Error('訪問できない施設です');
-  if(w.visitedFacilities[i])return {already:true,type:w.events[i]};
+  if(w.visitedFacilities[i])return null;
+  if(w.eventChoices?.[i])return w.eventChoices[i];
   const f=facilities.find(v=>v.id===w.facility[i]);if(!f)throw Error('施設データがありません');
   const type=w.events[i];if(type!=='companion'&&type!=='collection')throw Error('イベント種別が不正です');
   let pool=null,candidates;
@@ -28,13 +29,32 @@ window.BoukenEvents=Object.freeze({
   }else candidates=items;
   if(!candidates.length)throw Error('抽選候補がありません');
   const level=id=>this.level(w,id);
-  let chosen;
+  let entries;
   if(type==='collection'){
    const c04=[0,4,14,24][level('C04')];
    const groupBonuses=new Map();for(let n=5;n<=28;n++){const lv=level('C'+String(n).padStart(2,'0'));if(lv)groupBonuses.set(String(n-4).padStart(2,'0'),[0,5,10,30][lv]);}
-   chosen=this.weighted(candidates.map(item=>({value:item,weight:(1+(!save.items?.[item.id]?c04:0))*(1+(groupBonuses.get(item.groupId)||0))})),random);
-  }else chosen=this.weighted(this.companionWeights(save,w,candidates,characters),random);
-  const successBonus=[0,.35,1,3][level(type==='collection'?'C02':'D02')];
+   entries=candidates.map(item=>({value:item,weight:(1+(!save.items?.[item.id]?c04:0))*(1+(groupBonuses.get(item.groupId)||0))}));
+  }else entries=this.companionWeights(save,w,candidates,characters);
+  // Keep the original corrected weights while removing selected IDs (sampling without replacement).
+  const choiceLevel=level(type==='collection'?'F01':'F02');
+  const count=Math.min(candidates.length,choiceLevel?choiceLevel+1:1),ids=[];
+  while(ids.length<count){const chosen=this.weighted(entries,random);ids.push(chosen.id);entries=entries.filter(e=>String(e.value.id)!==String(chosen.id));}
+  const pending={type,pool,ids,requiresChoice:choiceLevel>0};
+  w.eventChoices=w.eventChoices||{};w.eventChoices[i]=pending;
+  return pending;
+ },
+ resolve(save,w,i,facilities,characters,items,random=Math.random,choiceId){
+  if(!w.explored[i]||!w.facility[i])throw Error('訪問できない施設です');
+  if(w.visitedFacilities[i])return {already:true,type:w.events[i]};
+  const pending=this.prepare(save,w,i,facilities,characters,items,random);
+  const {type,pool}=pending;
+  if(pending.requiresChoice&&choiceId===undefined)throw Error('候補を1つ選んでください');
+  const id=choiceId===undefined?pending.ids[0]:choiceId;
+  if(!pending.ids.some(value=>String(value)===String(id)))throw Error('表示された候補から選んでください');
+  const candidates=type==='collection'?items:(pool==='all'?characters:characters.filter(c=>c.areas&&c.areas[pool]===1));
+  const chosen=candidates.find(c=>String(c.id)===String(id));if(!chosen)throw Error('候補データがありません');
+  const level=id=>this.level(w,id);
+  const successBonus=[0,.35,1,3][level(type==='collection'?'C02':'D02')]+[0,.15,.35,.60][level('F03')];
   const successRate=(0.6+successBonus)/(1+successBonus);
   let success=random()<successRate,retried=false;
   const retryLevel=type==='companion'?level('D07'):0;
@@ -53,6 +73,8 @@ window.BoukenEvents=Object.freeze({
   w.eventResults=w.eventResults||{};
   const result={type,pool,id:chosen.id,name:chosen.name,success,retried,first:success&&previous===0,extra};
   w.eventResults[i]=result;
+  delete w.eventChoices[i];
   return result;
  }
 });
+
