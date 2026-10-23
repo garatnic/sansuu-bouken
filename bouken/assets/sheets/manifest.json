@@ -1,0 +1,79 @@
+{
+  "importedOn": "2026-10-23",
+  "status": "source-assets-only",
+  "assets": [
+    {
+      "name": "museum.png",
+      "width": 2600,
+      "height": 3120,
+      "bytes": 16235769,
+      "sha256": "41a7c7ce7e2207957abd42f725cf725566f2b6c6fa5dd360f2ecf15bb26946e4",
+      "parts": [
+        {
+          "file": "museum.png.part01",
+          "bytes": 6000000,
+          "sha": "0914a065eb3a1978a87790fdfe45f59c9aeef0cb"
+        },
+        {
+          "file": "museum.png.part02",
+          "bytes": 6000000,
+          "sha": "c42f6ee86c0aff6e72b39bd0f95a99610a85a94e"
+        },
+        {
+          "file": "museum.png.part03",
+          "bytes": 4235769,
+          "sha": "2d71a18b2a0842a6b980b8ea2abbc5021cd5cf8c"
+        }
+      ],
+      "alpha": true
+    },
+    {
+      "name": "character_sheet.png",
+      "width": 3840,
+      "height": 3968,
+      "bytes": 21802802,
+      "sha256": "d305785bf284d9b084c62f3f45458aee84c9220801eb12fee6fe49411831e090",
+      "parts": [
+        {
+          "file": "character_sheet.png.part01",
+          "bytes": 6000000,
+          "sha": "6a45d8cd1775e9e5737dc4c808fcecf58f0fe5a4"
+        },
+        {
+          "file": "character_sheet.png.part02",
+          "bytes": 6000000,
+          "sha": "e469906faf6192d57872e467efa8725eb6b6d858"
+        },
+        {
+          "file": "character_sheet.png.part03",
+          "bytes": 6000000,
+          "sha": "ee251dc52fbfe985db7b3ed04ab4f5338803b0c7"
+        },
+        {
+          "file": "character_sheet.png.part04",
+          "bytes": 3802802,
+          "sha": "5e2949731ad8c7f75689914f7a4ee8eaee1fd1b8"
+        }
+      ],
+      "alpha": true
+    },
+    {
+      "name": "event_tiles.png",
+      "width": 512,
+      "height": 64,
+      "bytes": 23358,
+      "sha256": "8b7abf1089d8c158604aa4e6e6df2710d91849786f5ad9218ba09575d4cfac2f",
+      "file": "event_tiles.png",
+      "alpha": true
+    },
+    {
+      "name": "field_tiles.png",
+      "width": 448,
+      "height": 64,
+      "bytes": 64114,
+      "sha256": "d8d3431910678b0ae0c5cb56892c64e0ff99d4657d67aa05ff6c573cd303f7c4",
+      "file": "field_tiles.png",
+      "alpha": false
+    }
+  ]
+}
