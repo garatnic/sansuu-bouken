@@ -1,6 +1,18 @@
 // ToDo 30: 施設イベント抽選・成功判定・累計所持数の単一責務。
 window.BoukenEvents=Object.freeze({
  weighted(entries,random=Math.random){const total=entries.reduce((n,e)=>n+e.weight,0);if(total<=0)throw Error('抽選重みが不正です');let r=random()*total;for(const e of entries){r-=e.weight;if(r<0)return e.value;}return entries[entries.length-1].value;},
+ level(w,id){return Math.max(0,Math.min(3,Number((w.partyBuffsSnapshot||[]).find(s=>s.id===id)?.level||0)));},
+ companionWeights(save,w,candidates,characters){
+  const unknownBonus=[0,8,29,48][this.level(w,'D05')];
+  const groupBonus=[0,.10,.25,.50][this.level(w,'D06')];
+  const byId=new Map(characters.map(c=>[String(c.id),c]));
+  const groups=new Set((w.partySnapshot||[]).map(id=>byId.get(String(id))?.groupId).filter(id=>id!==undefined&&id!==null).map(String));
+  const groupCounts=new Map();
+  for(const c of candidates){const id=String(c.groupId);groupCounts.set(id,(groupCounts.get(id)||0)+1);}
+  // W is the uniform candidate pool BEFORE either skill. Each matching group gets W*bonus.
+  const baseTotal=candidates.length;
+  return candidates.map(c=>({value:c,weight:(Number(save.characters?.[c.id]||0)>0?1:1+unknownBonus)+(groups.has(String(c.groupId))?baseTotal*groupBonus/groupCounts.get(String(c.groupId)):0)}));
+ },
  poolFor(f,random=Math.random){return f.companionPoolMode==='all_uniform'?'all':this.weighted(Object.entries(f.companionPoolWeightsPercent).map(([value,weight])=>({value,weight})),random);},
  resolve(save,w,i,facilities,characters,items,random=Math.random){
   if(!w.explored[i]||!w.facility[i])throw Error('訪問できない施設です');
@@ -15,15 +27,20 @@ window.BoukenEvents=Object.freeze({
    candidates=pool==='all'?characters:characters.filter(c=>c.areas&&c.areas[pool]===1);
   }else candidates=items;
   if(!candidates.length)throw Error('抽選候補がありません');
-  const level=id=>Math.max(0,Math.min(3,Number((w.partyBuffsSnapshot||[]).find(s=>s.id===id)?.level||0)));
+  const level=id=>this.level(w,id);
   let chosen;
   if(type==='collection'){
    const c04=[0,4,14,24][level('C04')];
    const groupBonuses=new Map();for(let n=5;n<=28;n++){const lv=level('C'+String(n).padStart(2,'0'));if(lv)groupBonuses.set(String(n-4).padStart(2,'0'),[0,5,10,30][lv]);}
    chosen=this.weighted(candidates.map(item=>({value:item,weight:(1+(!save.items?.[item.id]?c04:0))*(1+(groupBonuses.get(item.groupId)||0))})),random);
-  }else chosen=candidates[Math.min(candidates.length-1,Math.floor(random()*candidates.length))];
-  const c02=type==='collection'?[0,.35,1,3][level('C02')]:0;
-  const success=random()<(0.6+c02)/(1+c02);
+  }else chosen=this.weighted(this.companionWeights(save,w,candidates,characters),random);
+  const successBonus=[0,.35,1,3][level(type==='collection'?'C02':'D02')];
+  const successRate=(0.6+successBonus)/(1+successBonus);
+  let success=random()<successRate,retried=false;
+  const retryLevel=type==='companion'?level('D07'):0;
+  if(!success&&retryLevel&&random()<[0,.50,.77,1][retryLevel]){
+   retried=true;success=random()<successRate;
+  }
   const inventory=type==='companion'?(save.characters=save.characters||{}):(save.items=save.items||{});
   const key=String(chosen.id),previous=Number(inventory[key]||0);
   if(success)inventory[key]=previous+1;
@@ -34,7 +51,7 @@ window.BoukenEvents=Object.freeze({
   }
   w.visitedFacilities[i]=true;
   w.eventResults=w.eventResults||{};
-  const result={type,pool,id:chosen.id,name:chosen.name,success,first:success&&previous===0,extra};
+  const result={type,pool,id:chosen.id,name:chosen.name,success,retried,first:success&&previous===0,extra};
   w.eventResults[i]=result;
   return result;
  }
