@@ -28,7 +28,7 @@ window.BoukenEvents=Object.freeze({
   const key=String(chosen.id),previous=Number(inventory[key]||0);
   if(success)inventory[key]=previous+1;
   let extra=null;
-  if(success&&type==='collection'&&random()<[0,.05,.10,.15][level('C03')]){
+  if(success&&type==='collection'&&random()<[0,.25,.50,.75][level('C03')]){
    const others=candidates.filter(item=>item.id!==chosen.id);
    if(others.length){const item=this.weighted(others.map(item=>({value:item,weight:(1+(!save.items?.[item.id]?[0,4,14,24][level('C04')]:0))*(1+([0,5,10,30][level('C'+String(Number(item.groupId)+4).padStart(2,'0'))]||0))})),random);const extraKey=String(item.id),was=Number(inventory[extraKey]||0);inventory[extraKey]=was+1;extra={id:item.id,name:item.name,first:was===0};}
   }
