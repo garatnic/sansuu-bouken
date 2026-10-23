@@ -6,7 +6,7 @@
 <section class="panel"><div class="slots" id="slots"></div><div class="row" style="margin-top:10px"><span class="small" id="slotHint"></span><button id="remove" type="button">選択枠から外す</button></div></section>
 <h1>現在の効果</h1><section class="panel"><div id="effects" class="effects"></div></section>
 <div class="row"><h1>仲間たち</h1><button id="conditions" type="button">☷ じょうけん</button></div><section class="panel"><input class="search" id="search" placeholder="なまえ・番号でさがす" aria-label="仲間を検索"><p class="small" id="found"></p><p class="small" id="activeConditions"></p><div class="roster" id="list"></div></section><dialog id="conditionDialog" class="condition-dialog"><div class="row"><h2>じょうけん（AND条件）</h2><button id="closeConditions" type="button" class="light-button">×</button></div><p class="small">チェックしたスキルをすべて持つ仲間だけ表示します。</p><div id="conditionList" class="condition-list"></div><div class="condition-actions"><button id="clearConditions" type="button" class="light-button">すべて解除</button><button id="applyConditions" type="button">この条件で絞り込む</button></div></dialog><p class="message" id="message" role="status"></p>
-<script src="common/skill-ui.js?v=32"></script><script src="common/version.js?v=32"></script><script src="common/schema.js?v=32"></script><script src="common/save.js?v=32"></script><script src="common/master.js?v=32"></script><script src="common/party.js?v=32"></script>
+<script src="common/skill-ui.js?v=33"></script><script src="common/version.js?v=33"></script><script src="common/schema.js?v=33"></script><script src="common/save.js?v=33"></script><script src="common/master.js?v=33"></script><script src="common/party.js?v=33"></script>
 <script>
 (async()=>{
 const $=id=>document.getElementById(id), msg=s=>$('message').textContent=s;
