@@ -20,13 +20,35 @@ window.BoukenWorldGen=Object.freeze({
   const facility=Array(size).fill(null),events=Array(size).fill(null),eventPools=Array(size).fill(null);
   const level=id=>Math.max(0,Math.min(3,Number(partyBuffsSnapshot.find(s=>s.id===id)?.level||0)));
   const bonus=[0,1/4,2/3,3/2],collectionBonus=bonus[level('C01')],companionBonus=bonus[level('D01')];
-  for(let k=0;k<Math.min(setting.facilityCount,size-1);k++){
+  const baseFacilityCount=Math.min(setting.facilityCount,size-1);
+  const selectedFacilities=[];
+  for(let k=0;k<baseFacilityCount;k++){
    const f=weighted(facilities.map(v=>({value:v,weight:v.generationWeightPercent})));
+   selectedFacilities.push(f);
+   const placeFacility=f=>{
    let available=[];for(let i=0;i<size;i++)if(i!==startIndex&&!facility[i]&&f.allowedTerrainIds.includes(terrain[i]))available.push(i);
    if(!available.length){for(let i=0;i<size;i++)if(i!==startIndex&&!facility[i])available.push(i);if(!available.length)break;const chosen=available[Math.floor(Math.random()*available.length)];terrain[chosen]=f.allowedTerrainIds[Math.floor(Math.random()*f.allowedTerrainIds.length)];available=[chosen];}
    const pos=available[Math.floor(Math.random()*available.length)];facility[pos]=f.id;
    events[pos]=weighted([{value:'companion',weight:f.eventWeightsPercent.companion+100*companionBonus},{value:'collection',weight:f.eventWeightsPercent.collection+100*collectionBonus}]);
    if(events[pos]==='companion')eventPools[pos]=f.companionPoolMode==='all_uniform'?'all':weighted(Object.entries(f.companionPoolWeightsPercent).map(([value,weight])=>({value,weight}))); 
+   };
+   placeFacility(f);
+  }
+
+  // D03/D08/D09: 基本抽選後に対象グループ別に追加。追加施設は再計算対象にしない。
+  if(size!==25){
+   const groups=[{id:'D03',ids:['F01','F02']},{id:'D08',ids:['F03','F04']},{id:'D09',ids:['F05','F06','F07']}];
+   for(const group of groups){
+    const lv=level(group.id);if(!lv)continue;
+    const baseCount=selectedFacilities.filter(f=>group.ids.includes(f.id)).length;
+    const minimum=width===10&&height===10?1:lv;
+    const extra=Math.max(minimum,Math.ceil(baseCount*[0,.2,.4,.6][lv]));
+    const candidates=facilities.filter(f=>group.ids.includes(f.id));
+    for(let k=0;k<extra&&facility.some((v,i)=>i!==startIndex&&!v);k++){
+     const f=weighted(candidates.map(v=>({value:v,weight:v.generationWeightPercent})));
+     placeFacility(f);
+    }
+   }
   }
   const explored=Array(size).fill(false);explored[startIndex]=true;
   return {width,height,terrain,facility,events,eventPools,explored,revealed:Array(size).fill(false),visitedFacilities:Array(size).fill(false),player:start,startIndex,exploredCount:0,allExploredRewardClaimed:false,partySnapshot:[],createdAt:new Date().toISOString()};
