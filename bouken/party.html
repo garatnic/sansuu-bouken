@@ -42,8 +42,6 @@ try{
  appendPage();
  }
  function makeCard(c){const card=document.createElement('div');card.className='char-line'+(party.includes(c.id)?' picked':'');const avatar=document.createElement('div');avatar.className='char-avatar';avatar.append(pic(c));const info=document.createElement('div');info.className='char-info';const heading=document.createElement('div');heading.className='char-heading';const number=document.createElement('small');number.textContent='No.'+c.id;heading.append(number,document.createTextNode(c.name));info.append(heading);for(const sk of c.skills||[]){const def=names.get(sk.id)||sk.id;const line=document.createElement('div');line.className='char-skill '+sk.id[0].toLowerCase();const tag=document.createElement('span');tag.className='skill-tag';tag.textContent=sk.id+' '+def+' Lv'+sk.level;const summary=document.createElement('span');summary.className='skill-summary';summary.textContent=descriptions[sk.id]||'説明準備中';summary.title=descriptions[sk.id]||'';line.append(tag,summary);info.append(line)}const pick=document.createElement('button');pick.type='button';pick.className='pick-button';pick.textContent=party.includes(c.id)?'✓':'＋';pick.setAttribute('aria-label',c.name+'を編成');pick.onclick=()=>{if(party.includes(c.id)){slot=party.indexOf(c.id);render();return}const next=[...party];next[slot]=c.id;persist(next);slot=Math.min(max-1,slot+1)};card.append(avatar,info,pick);return card}
-
- }
  $('search').oninput=render;render();
 }catch(e){msg('読み込みに失敗しました: '+e.message);console.error(e)}
 })();
