@@ -5,10 +5,21 @@ window.BoukenTileImages=(()=>{
  let pending;
  function load(sheet){return new Promise(resolve=>{
   const image=new Image();sheet.image=image;
-  image.onload=()=>{sheet.ready=image.naturalWidth===sheet.count*64&&image.naturalHeight===64;resolve();};
+  image.onload=()=>{sheet.ready=image.naturalWidth===sheet.count*64&&image.naturalHeight===64;if(sheet.ready&&sheet===sheets.facility)sheet.tiles=Array.from({length:sheet.count},(_,i)=>glowTile(image,i));resolve();};
   image.onerror=()=>{sheet.ready=false;resolve();};
   image.src=new URL(sheet.file,base).href;
  });}
+ // Rasterize each facility glow once; keep terrain completely unchanged.
+ function glowTile(image,i){
+  const canvas=document.createElement('canvas');canvas.width=64;canvas.height=64;
+  const ctx=canvas.getContext('2d');if(!ctx)return null;
+  ctx.imageSmoothingEnabled=false;ctx.shadowColor='white';ctx.shadowBlur=4;ctx.shadowOffsetX=0;ctx.shadowOffsetY=0;
+  ctx.drawImage(image,i*64,0,64,64,0,0,64,64);
+  ctx.drawImage(image,i*64,0,64,64,0,0,64,64);
+  ctx.shadowBlur=0;ctx.shadowColor='transparent';
+  ctx.drawImage(image,i*64,0,64,64,0,0,64,64);
+  return canvas;
+ }
  function index(sheet,id){if(typeof id!=='string'||!new RegExp('^'+sheet.prefix+'0[1-9]$').test(id))return -1;const n=Number(id.slice(1))-1;return n<sheet.count?n:-1;}
  return Object.freeze({
   // Cache failures too: redraws must never create retries or network requests.
@@ -21,7 +32,7 @@ window.BoukenTileImages=(()=>{
    const ctx=canvas.getContext('2d');if(!ctx){cell.textContent=fallback;return;}
    ctx.imageSmoothingEnabled=false;
    if(hasTerrain)ctx.drawImage(terrain.image,ti*64,0,64,64,0,0,64,64);
-   if(hasFacility)ctx.drawImage(facility.image,fi*64,0,64,64,0,0,64,64);
+   if(hasFacility){const tile=facility.tiles?.[fi];if(tile)ctx.drawImage(tile,0,0);else ctx.drawImage(facility.image,fi*64,0,64,64,0,0,64,64);}
    cell.append(canvas);
    if(facilityId&&!hasFacility){const label=document.createElement('span');label.className='tile-fallback';label.textContent=fallback;cell.append(label);}
   }
