@@ -13,9 +13,8 @@ window.BoukenTileImages=(()=>{
  function glowTile(image,i){
   const canvas=document.createElement('canvas');canvas.width=64;canvas.height=64;
   const ctx=canvas.getContext('2d');if(!ctx)return null;
-  ctx.imageSmoothingEnabled=false;ctx.shadowColor='white';ctx.shadowBlur=4;ctx.shadowOffsetX=0;ctx.shadowOffsetY=0;
-  ctx.drawImage(image,i*64,0,64,64,0,0,64,64);
-  ctx.drawImage(image,i*64,0,64,64,0,0,64,64);
+  ctx.imageSmoothingEnabled=false;ctx.shadowColor='white';ctx.shadowBlur=8;ctx.shadowOffsetX=0;ctx.shadowOffsetY=0;
+  for(let pass=0;pass<4;pass++)ctx.drawImage(image,i*64,0,64,64,0,0,64,64);
   ctx.shadowBlur=0;ctx.shadowColor='transparent';
   ctx.drawImage(image,i*64,0,64,64,0,0,64,64);
   return canvas;
