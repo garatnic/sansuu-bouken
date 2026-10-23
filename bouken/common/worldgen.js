@@ -22,17 +22,17 @@ window.BoukenWorldGen=Object.freeze({
   const bonus=[0,1/4,2/3,3/2],collectionBonus=bonus[level('C01')],companionBonus=bonus[level('D01')];
   const baseFacilityCount=Math.min(setting.facilityCount,size-1);
   const selectedFacilities=[];
-  for(let k=0;k<baseFacilityCount;k++){
-   const f=weighted(facilities.map(v=>({value:v,weight:v.generationWeightPercent})));
-   selectedFacilities.push(f);
-   const placeFacility=f=>{
+  const placeFacility=f=>{
    let available=[];for(let i=0;i<size;i++)if(i!==startIndex&&!facility[i]&&f.allowedTerrainIds.includes(terrain[i]))available.push(i);
-   if(!available.length){for(let i=0;i<size;i++)if(i!==startIndex&&!facility[i])available.push(i);if(!available.length)break;const chosen=available[Math.floor(Math.random()*available.length)];terrain[chosen]=f.allowedTerrainIds[Math.floor(Math.random()*f.allowedTerrainIds.length)];available=[chosen];}
+   if(!available.length){for(let i=0;i<size;i++)if(i!==startIndex&&!facility[i])available.push(i);if(!available.length)return false;const chosen=available[Math.floor(Math.random()*available.length)];terrain[chosen]=f.allowedTerrainIds[Math.floor(Math.random()*f.allowedTerrainIds.length)];available=[chosen];}
    const pos=available[Math.floor(Math.random()*available.length)];facility[pos]=f.id;
    events[pos]=weighted([{value:'companion',weight:f.eventWeightsPercent.companion+100*companionBonus},{value:'collection',weight:f.eventWeightsPercent.collection+100*collectionBonus}]);
    if(events[pos]==='companion')eventPools[pos]=f.companionPoolMode==='all_uniform'?'all':weighted(Object.entries(f.companionPoolWeightsPercent).map(([value,weight])=>({value,weight}))); 
-   };
-   placeFacility(f);
+   return true;
+  };
+  for(let k=0;k<baseFacilityCount;k++){
+   const f=weighted(facilities.map(v=>({value:v,weight:v.generationWeightPercent})));
+   if(placeFacility(f))selectedFacilities.push(f);
   }
 
   // D03/D08/D09: 基本抽選後に対象グループ別に追加。追加施設は再計算対象にしない。
