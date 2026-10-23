@@ -1,0 +1,12 @@
+.character-detail-dialog{box-sizing:border-box;border:0;border-radius:15px;padding:20px;width:min(94vw,560px);max-height:90dvh;overflow:auto;background:#fff;color:#1e3327;box-shadow:0 12px 36px #0004;overflow-wrap:anywhere}
+.character-detail-dialog::backdrop{background:#0008}
+.character-detail-header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:start}
+.character-detail-portrait{text-align:center;padding-left:65px;min-width:0;font-size:80px}
+.character-detail-portrait .character-image{width:min(160px,100%);height:auto;aspect-ratio:1;image-rendering:pixelated}
+.character-detail-close{border:0;border-radius:9px;padding:10px 14px;background:#25704d;color:white;font:inherit;cursor:pointer}
+.character-detail-dialog h2{font-size:1.2rem;margin:16px 0}
+.character-detail-dialog h3{font-size:1rem;margin:0 0 8px}
+.character-detail-dialog p{font-size:1rem;line-height:1.7;white-space:pre-wrap;margin:8px 0}
+.character-detail-skills{display:grid;gap:22px;margin-top:24px}
+.character-detail-skill{min-width:0}
+@media(max-width:360px){.character-detail-dialog{padding:15px}.character-detail-portrait{padding-left:0}}
