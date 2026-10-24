@@ -641,79 +641,79 @@
   },
   {
     "id": 81,
-    "category": "博物館の収集品",
+    "category": "博物館のコレクション",
     "name": "はじめてのお宝",
-    "conditionText": "収集品を1種類登録",
+    "conditionText": "コレクションを1種類登録",
     "metric": "items",
     "target": 1
   },
   {
     "id": 82,
-    "category": "博物館の収集品",
+    "category": "博物館のコレクション",
     "name": "小さな収集家",
-    "conditionText": "収集品を10種類登録",
+    "conditionText": "コレクションを10種類登録",
     "metric": "items",
     "target": 10
   },
   {
     "id": 83,
-    "category": "博物館の収集品",
+    "category": "博物館のコレクション",
     "name": "宝物好き",
-    "conditionText": "収集品を50種類登録",
+    "conditionText": "コレクションを50種類登録",
     "metric": "items",
     "target": 50
   },
   {
     "id": 84,
-    "category": "博物館の収集品",
+    "category": "博物館のコレクション",
     "name": "博物館の常連",
-    "conditionText": "収集品を100種類登録",
+    "conditionText": "コレクションを100種類登録",
     "metric": "items",
     "target": 100
   },
   {
     "id": 85,
-    "category": "博物館の収集品",
-    "name": "収集品研究家",
-    "conditionText": "収集品を200種類登録",
+    "category": "博物館のコレクション",
+    "name": "コレクション研究家",
+    "conditionText": "コレクションを200種類登録",
     "metric": "items",
     "target": 200
   },
   {
     "id": 86,
-    "category": "博物館の収集品",
+    "category": "博物館のコレクション",
     "name": "お宝の達人",
-    "conditionText": "収集品を300種類登録",
+    "conditionText": "コレクションを300種類登録",
     "metric": "items",
     "target": 300
   },
   {
     "id": 87,
-    "category": "博物館の収集品",
+    "category": "博物館のコレクション",
     "name": "大収集家",
-    "conditionText": "収集品を400種類登録",
+    "conditionText": "コレクションを400種類登録",
     "metric": "items",
     "target": 400
   },
   {
     "id": 88,
-    "category": "博物館の収集品",
+    "category": "博物館のコレクション",
     "name": "完成目前",
-    "conditionText": "収集品を470種類登録",
+    "conditionText": "コレクションを470種類登録",
     "metric": "items",
     "target": 470
   },
   {
     "id": 89,
-    "category": "博物館の収集品",
+    "category": "博物館のコレクション",
     "name": "最後の一品",
-    "conditionText": "収集品を479種類登録",
+    "conditionText": "コレクションを479種類登録",
     "metric": "items",
     "target": 479
   },
   {
     "id": 90,
-    "category": "博物館の収集品",
+    "category": "博物館のコレクション",
     "name": "伝説の収集家",
     "conditionText": "480種類すべて登録",
     "metric": "items",
@@ -907,7 +907,7 @@
     "id": 114,
     "category": "珍記録・特別実績",
     "name": "奇跡の一品",
-    "conditionText": "未登録品が残り1種類の状態でその品を獲得",
+    "conditionText": "まだ手に入れていないコレクションが残り1種類の状態でその品を獲得",
     "metric": "items",
     "target": 480
   },
@@ -923,7 +923,7 @@
     "id": 116,
     "category": "珍記録・特別実績",
     "name": "お宝の山",
-    "conditionText": "収集品を重複込みで累計1,000個獲得",
+    "conditionText": "コレクションを重複込みで累計1,000個獲得",
     "metric": "itemTotal",
     "target": 1000
   },
