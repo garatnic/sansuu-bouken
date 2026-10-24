@@ -24,5 +24,11 @@ const root=path.resolve(__dirname,'..');
  let onLeft=false,p={left:140,right:190,top:50,bottom:100,width:50,height:50};
  const panel={hidden:false,classList:{remove(){},toggle(n,v){onLeft=v}},getBoundingClientRect:()=>({left:240,right:340,top:0,bottom:100})};
  const context={document:{getElementById:()=>panel},map:{children:[{getBoundingClientRect:()=>p}]},mapScroll:{getBoundingClientRect:()=>({left:0,right:400,top:0,bottom:400})},playerIndex:()=>0};vm.createContext(context);vm.runInContext(sense,context);context.positionSense();assert(onLeft,'retreats one tile before overlapping');p={...p,left:50,right:100};context.positionSense();assert(!onLeft,'returns when clear');p={...p,left:450,right:500};context.positionSense();assert(!onLeft,'offscreen player does not trigger retreat');
+ // Run the actual startup path: first render and layout must precede background loads.
+ const frames=[],sequence=[];
+ const preload=html.slice(html.indexOf(' function preloadEventImages()'),html.indexOf(' function eventPicture(type,id)'));
+ const boot=html.slice(html.indexOf(' if(!Number.isInteger(w.lastExploredIndex))'),html.indexOf(' }catch(e){info.textContent='));
+ const startup={w:{lastExploredIndex:0},BoukenBuffs:{level:()=>0},render:()=>sequence.push('render'),adjustMapHeight:()=>sequence.push('layout'),centerMapOnPlayer:()=>sequence.push('center'),requestAnimationFrame:fn=>frames.push(fn),BoukenCharacterImages:{init:()=>{sequence.push('characters');return new Promise(()=>{})}},BoukenItemImages:{init:()=>{sequence.push('items');return new Promise(()=>{})}}};
+ vm.createContext(startup);vm.runInContext(preload+boot,startup);assert.deepEqual(sequence,['render']);assert.equal(frames.length,1);frames.shift()();assert.deepEqual(sequence,['render','layout','center']);assert.equal(frames.length,1);frames.shift()();assert.deepEqual(sequence,['render','layout','center','characters','items']);assert.equal(frames.length,0);
  console.log('PASS: all 1407 image coordinates, success/failure and 1000 redraws each with one request, invalid IDs, 4-second timer, early retreat boundaries');
 })().catch(e=>{console.error(e);process.exitCode=1});
