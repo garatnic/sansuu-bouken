@@ -11,7 +11,8 @@
     "achievements": "achievements.json",
     "terrains": "terrains.json",
     "facilities": "facilities.json",
-    "world_facility_counts": "world_facility_counts.json"
+    "world_facility_counts": "world_facility_counts.json",
+    "character_groups": "character_groups.json"
   },
   "counts": {
     "characters": 927,
