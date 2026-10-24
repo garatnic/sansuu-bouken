@@ -2,7 +2,7 @@ const fs=require('fs'),vm=require('vm'),path=require('path'),assert=require('ass
 const root=path.resolve(__dirname,'..');const data=n=>JSON.parse(fs.readFileSync(path.join(root,'data',n+'.json')));
 const terrains=data('terrains'),facilities=data('facilities'),counts=data('world_facility_counts');
 let seed=1;const math=Object.create(Math);math.random=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296};
-function load(source){const c={window:{},Math:math};vm.runInNewContext(source,c);return c.window.BoukenWorldGen}
+function load(source){const c={};new Function('window','Math',source)(c,math);return c.BoukenWorldGen}
 const source=fs.readFileSync(path.join(root,'common/worldgen.js'),'utf8'),gen=load(source);
 function world(n,buffs=[],s=1){seed=s;return gen.generate(n,n,terrains,facilities,counts,buffs)}
 const buff=(id,level)=>({id,level});
