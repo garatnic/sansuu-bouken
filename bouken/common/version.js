@@ -1,1 +1,1 @@
-window.BoukenVersion = 64;
+window.BoukenVersion = 65;

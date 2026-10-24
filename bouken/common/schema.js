@@ -7,4 +7,4 @@ window.BoukenSchema=Object.freeze({
  },
  recordCharacterJoin(data,id){if(!Array.isArray(data.characterJoinOrder))data.characterJoinOrder=Object.keys(data.characters||{}).filter(k=>Number(data.characters[k])>0).map(Number).sort((a,b)=>a-b);if(!data.characterJoinOrder.some(x=>String(x)===String(id)))data.characterJoinOrder.push(Number(id));},
  normalizeSave(data){if(data.world?.partyBuffsSnapshot)data.world.partyBuffsSnapshot=this.normalizeBuffs(data.world.partyBuffsSnapshot);return data;},
- version:1,key:'bouken.save.v1',makeInitialSave(){return {schemaVersion:1,createdAt:new Date().toISOString(),updatedAt:null,world:null,characters:{},items:{},party:[],records:{},completedWorlds:0,worldsStarted:0,claimedCollectionRewards:[]};}});
+ version:1,key:'bouken.save.v1',makeInitialSave(){return {schemaVersion:1,createdAt:new Date().toISOString(),updatedAt:null,world:null,characters:{},items:{},party:[],records:{},completedWorlds:0,worldsStarted:0,claimedCollectionRewards:[],tutorialStory:{version:1,introDone:false,worldDone:false,firstExploreDone:false,firstRewardSeen:false,firstClearDone:false,secondRewardSeen:false,finalDone:false,complete:false}};}});
