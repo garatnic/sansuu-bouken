@@ -4,7 +4,7 @@
  const [items,rewards]=await Promise.all(['collection_items','collection_rewards'].map(n=>fetch(base+'data/'+n+'.json').then(r=>r.json())));BoukenCollection.configure(items,rewards);
  function seed(){const s=BoukenSchema.makeInitialSave();s.tutorialStory.complete=true;s.characters=Object.fromEntries(Array.from({length:47},(_,i)=>[i+1,1]));s.items={1:1,2:1,3:1,4:1,5:1};return s;}
  let noticeData=seed();window.BoukenSave={load:()=>structuredClone(noticeData),save:s=>{noticeData=structuredClone(s);output.textContent='通知保存後：'+JSON.stringify(BoukenHomeGrowthNotice.pending(noticeData));return structuredClone(noticeData);}};
- document.getElementById('notices').onclick=async()=>{noticeData=seed();await BoukenHomeGrowthNotice.show();};
+ document.getElementById('notices').onclick=async()=>{noticeData=seed();await BoukenHomeGrowthNotice.show({goMuseum:()=>museum(false)});};
  async function museum(claimed){window.BoukenPreviewData=seed();if(claimed)BoukenCollection.claim(window.BoukenPreviewData,'01-1');let html=await fetch(base+'collection.html').then(r=>r.text());html=html.replace('<meta charset="utf-8">','<base href="'+base+'"><meta charset="utf-8">').replace(/<script src="common\/save\.js[^\"]*"><\/script>/,'<script src="tests/progression-fixture-save.js"><\/script>');frame.srcdoc=html;output.textContent=claimed?'受取済みの1段階：+0.2ポイント':'未受取：ボーナス0段階';}
  document.getElementById('unclaimed').onclick=()=>museum(false);document.getElementById('claimed').onclick=()=>museum(true);document.getElementById('width').onchange=e=>frame.style.width=e.target.value+'px';window.addEventListener('message',e=>{if(e.source===frame.contentWindow&&e.data?.type==='fixture-save')output.textContent='博物館の仮データ保存：'+JSON.stringify(e.data.claimed);});await museum(false);
 })();
