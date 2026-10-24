@@ -186,3 +186,6 @@ data/skills.json の A12.name を「ラストスパート」に修正。ToDo32�
 ## ver.39のD系接続
 D02/D05/D06/D07を実装。D04以外のD系は実装済み（ver.39分は実機確認待ち）。重み補正・再判定・固定編成の計算詳細はsiyou/buffs.txtと施設イベント・キャラクター抽選仕様.txtを参照。セーブ削除不要。
 
+
+## ver.43 更新
+施設訪問の候補・成否結果へ仲間と収集品のシート画像を適用。各シートは初回必要時に読み込み、以後再利用。結果は閉じるまで保持。B07の早めの退避と一般通知4秒表示を同梱。仕様：siyou/施設イベント画像表示仕様.md。開発側検証：node bouken/tests/f-buffs.test.cjs、node bouken/tests/event-images.test.cjs。実機確認待ち。
