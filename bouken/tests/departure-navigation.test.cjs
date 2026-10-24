@@ -11,6 +11,6 @@ async function page(file,initial,{locked=false,failSave=false,failLoad=false}={}
  const regular=await page('worldcreate.html',{world:{width:10,height:10},worldsStarted:3});assert(!regular.node('resumeWorld').disabled);assert(!regular.node('create').disabled);assert.equal(regular.node('size').children[0].value,10);assert.equal(regular.writes,0);
  const failed=await page('worldcreate.html',{world:{width:5,height:5}},{locked:true,failSave:true});failed.node('resumeWorld').onclick();assert.equal(failed.ctx.location.href,'');assert(!failed.saved.resumed);assert(!failed.node('resumeWorld').disabled);assert(failed.node('resumeStatus').textContent.includes('full'));
  const stale=await page('worldcreate.html',{world:{width:5,height:5}},{locked:true});stale.replace({});stale.node('resumeWorld').onclick();assert.equal(stale.ctx.location.href,'');assert.equal(stale.writes,0);
- const home=await page('home.html',{world:{width:5,height:5}},{locked:true});assert.equal(home.node('depart').onclick,undefined);assert.equal(home.writes,0);assert(home.node('status').textContent.includes('冒険ワールドへ出発'));
+ const home=await page('home.html',{world:{width:5,height:5}},{locked:true});assert.equal(home.node('depart').onclick,undefined);assert.equal(home.writes,0);assert.equal(home.node('status').textContent,'');
  console.log('PASS: empty/regular/tutorial departure states, read-only entry, resume preserves world, fresh save recheck, save failure blocks navigation, unified home entry');
 })().catch(e=>{console.error(e);process.exitCode=1});
