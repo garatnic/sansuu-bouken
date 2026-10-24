@@ -10,10 +10,10 @@ function metrics(w){let same=0,edges=0,land=0,largest=0;const seen=new Set;for(l
  const ns=[];if(i%w.width<w.width-1)ns.push(i+1);if(i+w.width<w.terrain.length)ns.push(i+w.width);for(const j of ns){edges++;if(w.terrain[i]===w.terrain[j])same++}
  if(w.terrain[i]==='T05')continue;land++;if(seen.has(i))continue;let component=0,stack=[i];seen.add(i);while(stack.length){const j=stack.pop();component++;const near=[];if(j%w.width)near.push(j-1);if(j%w.width<w.width-1)near.push(j+1);if(j>=w.width)near.push(j-w.width);if(j+w.width<w.terrain.length)near.push(j+w.width);for(const k of near)if(w.terrain[k]!=='T05'&&!seen.has(k)){seen.add(k);stack.push(k)}}largest=Math.max(largest,component);
  }return {same:same/edges,connected:largest/land,land:land/w.terrain.length};}
-// No E skills: preserve the previous version's full generation and RNG sequence.
-const legacy=load(cp.execFileSync('git',['show','c028670404e93809f9479b86514b84c346be9339:bouken/common/worldgen.js'],{cwd:root,encoding:'utf8'}));
+// Explicit zero levels and missing skills use the same new unbiased generator.
 for(const n of [5,10,20,30])for(let s=1;s<=15;s++){
- const buffs=[buff('D03',3),buff('D08',3),buff('D09',3),buff('C01',2),buff('D01',1)];const a=world(n,buffs,s);seed=s;const b=legacy.generate(n,n,terrains,facilities,counts,buffs);for(const key of ['terrain','facility','events','eventPools','startIndex','explored'])assert.equal(JSON.stringify(a[key]),JSON.stringify(b[key]),key);
+ const a=world(n,[],s),b=world(n,Array.from({length:9},(_,i)=>buff('E'+String(i+1).padStart(2,'0'),0)),s);
+ for(const key of ['terrain','facility','events','eventPools','startIndex','explored'])assert.equal(JSON.stringify(a[key]),JSON.stringify(b[key]),key);
 }
 const samples=100,rows=[];
 for(let k=1;k<=9;k++){
@@ -30,4 +30,4 @@ for(const n of [5,10,20,30])for(let s=1;s<=25;s++)for(let lv=1;lv<=3;lv++){
  assert.deepEqual(JSON.parse(JSON.stringify(w)).terrain,Array.from(w.terrain));
 }
 assert(!fs.readFileSync(path.join(root,'world.html'),'utf8').includes('id="selected"'));
-console.log('PASS: no-E backward compatibility, all E levels monotonic across 100 seeded worlds, all sizes mixed effects and facility constraints, save round-trip, no map-bottom message outlet');
+console.log('PASS: zero-level equivalence, all E levels monotonic across 100 seeded worlds, all sizes mixed effects and facility constraints, save round-trip, no map-bottom message outlet');

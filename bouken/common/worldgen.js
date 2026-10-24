@@ -1,20 +1,23 @@
-// ToDo 26: 7地形・8施設の独立レイヤー。地形生成の分布は暫定実装。
+// Seven terrain types with spatially correlated, marginally uniform draws.
 window.BoukenWorldGen=Object.freeze({
  generate(width,height,terrains,facilities,counts,partyBuffsSnapshot=[]){
   const setting=counts.find(v=>v.width===width&&v.height===height);if(!setting)throw Error('未対応のワールドサイズ');
   const size=width*height, start={x:Math.floor(width/2),y:Math.floor(height/2)};
   const startIndex=start.y*width+start.x;
-  // 低解像度のランダム値を滑らかに補間して地形のまとまりを作る。正式な確率は未確定。
+  // Uniform lattice values provide local correlation. Never average random values used for roulette.
   const coarseW=Math.ceil(width/4)+2,coarseH=Math.ceil(height/4)+2;
   const noise=Array.from({length:coarseW*coarseH},()=>Math.random());
   const sample=(x,y)=>{let u=x/4,v=y/4,i=Math.floor(u),j=Math.floor(v),a=u-i,b=v-j;
    const at=(xx,yy)=>noise[Math.min(coarseH-1,yy)*coarseW+Math.min(coarseW-1,xx)];
    const smooth=t=>t*t*(3-2*t);a=smooth(a);b=smooth(b);
-   return (at(i,j)*(1-a)+at(i+1,j)*a)*(1-b)+(at(i,j+1)*(1-a)+at(i+1,j+1)*a)*b;
+   // Choose a corner using interpolation weights, rather than averaging its value.
+   // The selected corner remains uniform; weights depend only on position.
+   const xx=Math.random()<a?i+1:i,yy=Math.random()<b?j+1:j;
+   return at(xx,yy);
   };
   const ids=terrains.map(t=>t.id);
   const level=id=>Math.max(0,Math.min(3,Number(partyBuffsSnapshot.find(s=>s.id===id)?.level||0)));
-  const thresholds=[.11,.31,.49,.63,.76,.89,1]; // Existing baseline bands; actual shares also depend on spatial noise.
+  const thresholds=[.11,.31,.49,.63,.76,.89,1]; // Baseline probabilities, before skills and start/facility overrides.
   const baseWeights=thresholds.map((t,i)=>t-(thresholds[i-1]||0));
   const terrain=Array(size).fill(null);
   const adjacent=i=>{const x=i%width,y=Math.floor(i/width),out=[];if(x)out.push(i-1);if(x<width-1)out.push(i+1);if(y)out.push(i-width);if(y<height-1)out.push(i+width);return out;};
@@ -24,7 +27,9 @@ window.BoukenWorldGen=Object.freeze({
   const order=Array.from({length:size},(_,i)=>i);
   if(connection>1){terrain[startIndex]='T01';order.sort((a,b)=>Math.abs(a%width-start.x)+Math.abs(Math.floor(a/width)-start.y)-Math.abs(b%width-start.x)-Math.abs(Math.floor(b/width)-start.y));}
   for(const i of order){
-   const x=i%width,y=Math.floor(i/width),v=.85*sample(x,y)+.15*Math.random();
+   const x=i%width,y=Math.floor(i/width);
+   // Mixture, not weighted average: each branch has a uniform marginal.
+   const v=Math.random()<.85?sample(x,y):Math.random();
    if(i===startIndex&&connection>1)continue;
    const neighbors=adjacent(i).map(n=>terrain[n]).filter(Boolean),same=new Set(neighbors);
    const landNear=neighbors.some(id=>id!=='T05');
