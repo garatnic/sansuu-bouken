@@ -28,8 +28,8 @@ const root=path.resolve(__dirname,'..');
  const frames=[],sequence=[];
  const preload=html.slice(html.indexOf(' function preloadEventImages()'),html.indexOf(' function eventPicture(type,id,failed=false)'));
  const boot=html.slice(html.indexOf(' if(!Number.isInteger(w.lastExploredIndex))'),html.indexOf(' }catch(e){info.textContent='));
- const startup={w:{lastExploredIndex:0},BoukenBuffs:{level:()=>0},render:()=>sequence.push('render'),adjustMapHeight:()=>sequence.push('layout'),centerMapOnPlayer:()=>sequence.push('center'),requestAnimationFrame:fn=>frames.push(fn),BoukenCharacterImages:{init:()=>{sequence.push('characters');return new Promise(()=>{})}},BoukenItemImages:{init:()=>{sequence.push('items');return new Promise(()=>{})}}};
- vm.createContext(startup);vm.runInContext(preload+boot,startup);assert.deepEqual(sequence,['render']);assert.equal(frames.length,1);frames.shift()();assert.deepEqual(sequence,['render','layout','center']);assert.equal(frames.length,1);frames.shift()();assert.deepEqual(sequence,['render','layout','center','characters','items']);assert.equal(frames.length,0);
+ const startup={runTutorial:async()=>{},w:{lastExploredIndex:0},BoukenBuffs:{level:()=>0},render:()=>sequence.push('render'),adjustMapHeight:()=>sequence.push('layout'),centerMapOnPlayer:()=>sequence.push('center'),requestAnimationFrame:fn=>frames.push(fn),BoukenCharacterImages:{init:()=>{sequence.push('characters');return new Promise(()=>{})}},BoukenItemImages:{init:()=>{sequence.push('items');return new Promise(()=>{})}}};
+ vm.createContext(startup);await vm.runInContext('(async()=>{'+preload+boot+'})()',startup);assert.deepEqual(sequence,['render']);assert.equal(frames.length,1);frames.shift()();assert.deepEqual(sequence,['render','layout','center']);assert.equal(frames.length,1);frames.shift()();assert.deepEqual(sequence,['render','layout','center','characters','items']);assert.equal(frames.length,0);
  // A failed save rolls back state and announces it through the floating notification.
  const persistence=html.slice(html.indexOf(' function persist(mutator)'),html.indexOf(' function positionSense()'));
  const errors=[],state={save:{world:{value:1},characters:{}},w:{value:1},BoukenSave:{save(){throw Error('容量不足')}},notify:msg=>errors.push(msg)};
@@ -39,3 +39,4 @@ const root=path.resolve(__dirname,'..');
  vm.runInNewContext(notify+";notify('通知');",{toast:{classList:classes,matches:()=>false,showPopover(){opened++},hidePopover(){closed++}},toastTimer:undefined,clearTimeout(){},setTimeout(fn,ms){timer=fn;assert.equal(ms,4000)}});assert.equal(opened,1);timer();assert.equal(closed,1);
  console.log('PASS: all 1407 image coordinates, success/failure and 1000 redraws each with one request, invalid IDs, 4-second timer, early retreat boundaries');
 })().catch(e=>{console.error(e);process.exitCode=1});
+
