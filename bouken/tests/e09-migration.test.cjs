@@ -15,8 +15,22 @@ class Element{constructor(tag='div'){this.tag=tag;this.children=[];this.dataset=
  context.BoukenCharacterImages={init:async()=>true,picture:()=>new Element('canvas')};context.BoukenMaster={load:async n=>n==='characters'?chars:skills};context.BoukenSkillUI={render(){}};
  const html=fs.readFileSync(path.join(root,'party.html'),'utf8'),inline=[...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)].at(-1)[1];await vm.runInContext(inline,context);
  assert(!elements.get('message').textContent.includes('失敗'));const checks=elements.get('conditionList').querySelectorAll('input');assert.equal(checks.length,68);assert(!checks.some(c=>c.value==='E09'));assert(checks.some(c=>c.value==='E08'));
- assert(elements.get('remove').disabled);assert(!elements.get('slots').children.some(e=>e.className.includes('active')));assert.equal(elements.get('list').children.length,20);assert(elements.get('list').children[0].textContent.includes('No.600'));const unpicked=elements.get('list').children.find(e=>!e.className.includes('picked'));const unchanged=storage['bouken.save.v1'];unpicked.children[1].onclick();assert.equal(storage['bouken.save.v1'],unchanged);assert(elements.get('message').textContent.includes('先に')); assert(elements.get('activeConditions').textContent.includes('あたらしく'));
+ assert(elements.get('remove').disabled);assert(!elements.get('slots').children.some(e=>e.className.includes('active')));assert.equal(elements.get('list').children.length,20);assert(elements.get('list').children[0].textContent.includes('No.600'));const unpicked=elements.get('list').children.find(e=>!e.className.includes('picked'));const unchanged=storage['bouken.save.v1'];unpicked.children[1].onclick();assert.equal(storage['bouken.save.v1'],unchanged);assert(elements.get('message').textContent.includes('入れかえる枠')); assert(elements.get('activeConditions').textContent.includes('あたらしく'));
  elements.get('conditions').onclick();assert(checks.find(c=>c.value==='recent20').checked);elements.get('clearConditions').onclick();elements.get('applyConditions').onclick();
  for(const id of [600,610]){elements.get('search').value=String(id);elements.get('search').oninput();const list=elements.get('list');assert.equal(list.children.length,1);const details=list.children[0].children[0];assert.equal(details.children[1].children.length,3);details.onclick();const dialog=context.document.body.children.at(-1),sections=dialog.children.at(-1);assert.equal(sections.children.length,2);assert(sections.textContent.includes('E08'));assert(!sections.textContent.includes('E09'));dialog.close()}
+
+ // Actual party handlers: empty slots take priority, restoration uses the entry snapshot.
+ assert(!html.includes('slotHint'));assert(!html.includes('番の枠を選択中'));
+ const getParty=()=>JSON.parse(storage['bouken.save.v1']).party;
+ const entryParty=JSON.stringify(getParty());
+ elements.get('slots').children[0].onclick();elements.get('remove').onclick();assert.equal(getParty()[0],null);assert(!elements.get('restoreParty').disabled);
+ elements.get('slots').children[1].onclick();elements.get('search').value='1';elements.get('search').oninput();
+ const candidate=elements.get('list').children.find(e=>!e.className.includes('picked'));candidate.children[1].onclick();assert(getParty()[0]);assert.equal(getParty()[1],610);
+ elements.get('restoreParty').onclick();assert.equal(JSON.stringify(getParty()),entryParty);assert(elements.get('remove').disabled);assert(elements.get('restoreParty').disabled);
+ elements.get('slots').children[1].onclick();elements.get('list').children.find(e=>!e.className.includes('picked')).children[1].onclick();assert.equal(getParty()[0],600);assert.notEqual(getParty()[1],610);
+ const changed=JSON.stringify(getParty()),realSave=context.BoukenSave;
+ context.BoukenSave={...realSave,save(){throw Error('容量不足')}};elements.get('restoreParty').onclick();assert.equal(JSON.stringify(getParty()),changed);assert(elements.get('message').textContent.includes('保存できません'));
+ context.BoukenSave=realSave;elements.get('restoreParty').onclick();assert.equal(JSON.stringify(getParty()),entryParty);
+ console.log('PASS: vacant slot priority, full-party replacement, entry-state restore, failed-save recovery');
  console.log('PASS: 49 migrations, 927 totalCost sums, 600/610 two skills, legacy load/save idempotency and unchanged world, real party filter/roster/details UI');
 })().catch(e=>{console.error(e);process.exitCode=1});
