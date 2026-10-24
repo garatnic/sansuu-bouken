@@ -3,720 +3,960 @@
     "id": 1,
     "category": "開拓マス数",
     "name": "はじめての一歩",
-    "conditionText": "累計10マス開拓"
+    "conditionText": "累計10マス開拓",
+    "metric": "totalExplored",
+    "target": 10
   },
   {
     "id": 2,
     "category": "開拓マス数",
     "name": "駆け出し開拓者",
-    "conditionText": "累計100マス開拓"
+    "conditionText": "累計100マス開拓",
+    "metric": "totalExplored",
+    "target": 100
   },
   {
     "id": 3,
     "category": "開拓マス数",
     "name": "道を切り開く者",
-    "conditionText": "累計500マス開拓"
+    "conditionText": "累計500マス開拓",
+    "metric": "totalExplored",
+    "target": 500
   },
   {
     "id": 4,
     "category": "開拓マス数",
     "name": "大地の旅人",
-    "conditionText": "累計1,000マス開拓"
+    "conditionText": "累計1,000マス開拓",
+    "metric": "totalExplored",
+    "target": 1000
   },
   {
     "id": 5,
     "category": "開拓マス数",
     "name": "開拓の達人",
-    "conditionText": "累計3,000マス開拓"
+    "conditionText": "累計3,000マス開拓",
+    "metric": "totalExplored",
+    "target": 3000
   },
   {
     "id": 6,
     "category": "開拓マス数",
     "name": "地平線を越えて",
-    "conditionText": "累計5,000マス開拓"
+    "conditionText": "累計5,000マス開拓",
+    "metric": "totalExplored",
+    "target": 5000
   },
   {
     "id": 7,
     "category": "開拓マス数",
     "name": "地図を塗る者",
-    "conditionText": "累計10,000マス開拓"
+    "conditionText": "累計10,000マス開拓",
+    "metric": "totalExplored",
+    "target": 10000
   },
   {
     "id": 8,
     "category": "開拓マス数",
     "name": "世界の開拓者",
-    "conditionText": "累計30,000マス開拓"
+    "conditionText": "累計30,000マス開拓",
+    "metric": "totalExplored",
+    "target": 30000
   },
   {
     "id": 9,
     "category": "開拓マス数",
     "name": "大陸を拓く者",
-    "conditionText": "累計50,000マス開拓"
+    "conditionText": "累計50,000マス開拓",
+    "metric": "totalExplored",
+    "target": 50000
   },
   {
     "id": 10,
     "category": "開拓マス数",
     "name": "開拓王",
-    "conditionText": "累計100,000マス開拓"
+    "conditionText": "累計100,000マス開拓",
+    "metric": "totalExplored",
+    "target": 100000
   },
   {
     "id": 11,
     "category": "算数の正解数",
     "name": "算数見習い",
-    "conditionText": "累計10問正解"
+    "conditionText": "累計10問正解",
+    "metric": "correctAnswers",
+    "target": 10
   },
   {
     "id": 12,
     "category": "算数の正解数",
     "name": "計算好き",
-    "conditionText": "累計50問正解"
+    "conditionText": "累計50問正解",
+    "metric": "correctAnswers",
+    "target": 50
   },
   {
     "id": 13,
     "category": "算数の正解数",
     "name": "計算名人のたまご",
-    "conditionText": "累計100問正解"
+    "conditionText": "累計100問正解",
+    "metric": "correctAnswers",
+    "target": 100
   },
   {
     "id": 14,
     "category": "算数の正解数",
     "name": "ひらめき少年",
-    "conditionText": "累計300問正解"
+    "conditionText": "累計300問正解",
+    "metric": "correctAnswers",
+    "target": 300
   },
   {
     "id": 15,
     "category": "算数の正解数",
     "name": "数字の冒険者",
-    "conditionText": "累計500問正解"
+    "conditionText": "累計500問正解",
+    "metric": "correctAnswers",
+    "target": 500
   },
   {
     "id": 16,
     "category": "算数の正解数",
     "name": "計算名人",
-    "conditionText": "累計1,000問正解"
+    "conditionText": "累計1,000問正解",
+    "metric": "correctAnswers",
+    "target": 1000
   },
   {
     "id": 17,
     "category": "算数の正解数",
     "name": "数式の探究者",
-    "conditionText": "累計3,000問正解"
+    "conditionText": "累計3,000問正解",
+    "metric": "correctAnswers",
+    "target": 3000
   },
   {
     "id": 18,
     "category": "算数の正解数",
     "name": "数字の魔術師",
-    "conditionText": "累計5,000問正解"
+    "conditionText": "累計5,000問正解",
+    "metric": "correctAnswers",
+    "target": 5000
   },
   {
     "id": 19,
     "category": "算数の正解数",
     "name": "算数博士",
-    "conditionText": "累計10,000問正解"
+    "conditionText": "累計10,000問正解",
+    "metric": "correctAnswers",
+    "target": 10000
   },
   {
     "id": 20,
     "category": "算数の正解数",
     "name": "計算王",
-    "conditionText": "累計30,000問正解"
+    "conditionText": "累計30,000問正解",
+    "metric": "correctAnswers",
+    "target": 30000
   },
   {
     "id": 21,
     "category": "ワールド攻略",
     "name": "はじめての地図",
-    "conditionText": "初めて全域開拓"
+    "conditionText": "初めて全域開拓",
+    "metric": "worldsAllExplored",
+    "target": 1
   },
   {
     "id": 22,
     "category": "ワールド攻略",
     "name": "世界を歩いた者",
-    "conditionText": "全域開拓5回"
+    "conditionText": "全域開拓5回",
+    "metric": "worldsAllExplored",
+    "target": 5
   },
   {
     "id": 23,
     "category": "ワールド攻略",
     "name": "地図の完成者",
-    "conditionText": "全域開拓10回"
+    "conditionText": "全域開拓10回",
+    "metric": "worldsAllExplored",
+    "target": 10
   },
   {
     "id": 24,
     "category": "ワールド攻略",
     "name": "世界を知る者",
-    "conditionText": "全域開拓30回"
+    "conditionText": "全域開拓30回",
+    "metric": "worldsAllExplored",
+    "target": 30
   },
   {
     "id": 25,
     "category": "ワールド攻略",
     "name": "地図の支配者",
-    "conditionText": "全域開拓100回"
+    "conditionText": "全域開拓100回",
+    "metric": "worldsAllExplored",
+    "target": 100
   },
   {
     "id": 26,
     "category": "ワールド攻略",
     "name": "冒険の完走者",
-    "conditionText": "初めて完全クリア"
+    "conditionText": "初めて完全クリア",
+    "metric": "perfect",
+    "target": 1
   },
   {
     "id": 27,
     "category": "ワールド攻略",
     "name": "完璧な冒険者",
-    "conditionText": "完全クリア10回"
+    "conditionText": "完全クリア10回",
+    "metric": "perfect",
+    "target": 10
   },
   {
     "id": 28,
     "category": "ワールド攻略",
     "name": "世界の掃除屋",
-    "conditionText": "完全クリア30回"
+    "conditionText": "完全クリア30回",
+    "metric": "perfect",
+    "target": 30
   },
   {
     "id": 29,
     "category": "ワールド攻略",
     "name": "百世界の覇者",
-    "conditionText": "完全クリア100回"
+    "conditionText": "完全クリア100回",
+    "metric": "perfect",
+    "target": 100
   },
   {
     "id": 30,
     "category": "ワールド攻略",
     "name": "果てなき開拓者",
-    "conditionText": "完全クリア300回"
+    "conditionText": "完全クリア300回",
+    "metric": "perfect",
+    "target": 300
   },
   {
     "id": 31,
     "category": "マップサイズ攻略",
     "name": "小さな冒険の卒業生",
-    "conditionText": "5×5の全域開拓"
+    "conditionText": "5×5の全域開拓",
+    "metric": "allSize.5",
+    "target": 1
   },
   {
     "id": 32,
     "category": "マップサイズ攻略",
     "name": "はじめての遠征",
-    "conditionText": "10×10の全域開拓"
+    "conditionText": "10×10の全域開拓",
+    "metric": "allSize.10",
+    "target": 1
   },
   {
     "id": 33,
     "category": "マップサイズ攻略",
     "name": "広い世界へ",
-    "conditionText": "20×20の全域開拓"
+    "conditionText": "20×20の全域開拓",
+    "metric": "allSize.20",
+    "target": 1
   },
   {
     "id": 34,
     "category": "マップサイズ攻略",
     "name": "大世界の挑戦者",
-    "conditionText": "30×30の全域開拓"
+    "conditionText": "30×30の全域開拓",
+    "metric": "allSize.30",
+    "target": 1
   },
   {
     "id": 35,
     "category": "マップサイズ攻略",
     "name": "十字路の制覇者",
-    "conditionText": "10×10完全クリア"
+    "conditionText": "10×10完全クリア",
+    "metric": "perfectSize.10",
+    "target": 1
   },
   {
     "id": 36,
     "category": "マップサイズ攻略",
     "name": "中世界の覇者",
-    "conditionText": "20×20完全クリア"
+    "conditionText": "20×20完全クリア",
+    "metric": "perfectSize.20",
+    "target": 1
   },
   {
     "id": 37,
     "category": "マップサイズ攻略",
     "name": "大世界の覇者",
-    "conditionText": "30×30完全クリア"
+    "conditionText": "30×30完全クリア",
+    "metric": "perfectSize.30",
+    "target": 1
   },
   {
     "id": 38,
     "category": "マップサイズ攻略",
     "name": "大世界の常連",
-    "conditionText": "30×30全域開拓10回"
+    "conditionText": "30×30全域開拓10回",
+    "metric": "allSize.30",
+    "target": 10
   },
   {
     "id": 39,
     "category": "マップサイズ攻略",
     "name": "大世界の達人",
-    "conditionText": "30×30完全クリア10回"
+    "conditionText": "30×30完全クリア10回",
+    "metric": "perfectSize.30",
+    "target": 10
   },
   {
     "id": 40,
     "category": "マップサイズ攻略",
     "name": "三つの世界の王",
-    "conditionText": "通常3サイズすべて完全クリア"
+    "conditionText": "通常3サイズすべて完全クリア",
+    "metric": "allNormalPerfect",
+    "target": 3
   },
   {
     "id": 41,
     "category": "施設の訪問",
     "name": "はじめての訪問者",
-    "conditionText": "施設イベントを初めて処理"
+    "conditionText": "施設イベントを初めて処理",
+    "metric": "facilityTotal",
+    "target": 1
   },
   {
     "id": 42,
     "category": "施設の訪問",
     "name": "町の知り合い",
-    "conditionText": "町のイベント10回"
+    "conditionText": "町のイベント10回",
+    "metric": "facility.F01",
+    "target": 10
   },
   {
     "id": 43,
     "category": "施設の訪問",
     "name": "城の客人",
-    "conditionText": "城・砦のイベント10回"
+    "conditionText": "城・砦のイベント10回",
+    "metric": "facility.F02",
+    "target": 10
   },
   {
     "id": 44,
     "category": "施設の訪問",
     "name": "墓地の散策者",
-    "conditionText": "墓地のイベント10回"
+    "conditionText": "墓地のイベント10回",
+    "metric": "facility.F03",
+    "target": 10
   },
   {
     "id": 45,
     "category": "施設の訪問",
     "name": "地下探検家",
-    "conditionText": "ダンジョンのイベント10回"
+    "conditionText": "ダンジョンのイベント10回",
+    "metric": "facility.F04",
+    "target": 10
   },
   {
     "id": 46,
     "category": "施設の訪問",
     "name": "洞窟探検隊",
-    "conditionText": "洞窟のイベント10回"
+    "conditionText": "洞窟のイベント10回",
+    "metric": "facility.F05",
+    "target": 10
   },
   {
     "id": 47,
     "category": "施設の訪問",
     "name": "古代文明の友",
-    "conditionText": "遺跡のイベント10回"
+    "conditionText": "遺跡のイベント10回",
+    "metric": "facility.F06",
+    "target": 10
   },
   {
     "id": 48,
     "category": "施設の訪問",
     "name": "塔の観測者",
-    "conditionText": "塔のイベント10回"
+    "conditionText": "塔のイベント10回",
+    "metric": "facility.F07",
+    "target": 10
   },
   {
     "id": 49,
     "category": "施設の訪問",
     "name": "小屋の常連",
-    "conditionText": "小屋のイベント10回"
+    "conditionText": "小屋のイベント10回",
+    "metric": "facility.F08",
+    "target": 10
   },
   {
     "id": 50,
     "category": "施設の訪問",
     "name": "八施設の達人",
-    "conditionText": "全8種類の施設イベントを各100回"
+    "conditionText": "全8種類の施設イベントを各100回",
+    "metric": "minFacility",
+    "target": 100
   },
   {
     "id": 51,
     "category": "施設のやり込み",
     "name": "施設めぐり",
-    "conditionText": "施設イベント累計50回"
+    "conditionText": "施設イベント累計50回",
+    "metric": "facilityTotal",
+    "target": 50
   },
   {
     "id": 52,
     "category": "施設のやり込み",
     "name": "施設調査員",
-    "conditionText": "施設イベント累計100回"
+    "conditionText": "施設イベント累計100回",
+    "metric": "facilityTotal",
+    "target": 100
   },
   {
     "id": 53,
     "category": "施設のやり込み",
     "name": "施設研究家",
-    "conditionText": "施設イベント累計500回"
+    "conditionText": "施設イベント累計500回",
+    "metric": "facilityTotal",
+    "target": 500
   },
   {
     "id": 54,
     "category": "施設のやり込み",
     "name": "施設の達人",
-    "conditionText": "施設イベント累計1,000回"
+    "conditionText": "施設イベント累計1,000回",
+    "metric": "facilityTotal",
+    "target": 1000
   },
   {
     "id": 55,
     "category": "施設のやり込み",
     "name": "施設博士",
-    "conditionText": "施設イベント累計3,000回"
+    "conditionText": "施設イベント累計3,000回",
+    "metric": "facilityTotal",
+    "target": 3000
   },
   {
     "id": 56,
     "category": "施設のやり込み",
     "name": "一件落着",
-    "conditionText": "初めて施設制覇"
+    "conditionText": "初めて施設制覇",
+    "metric": "facilitiesCleared",
+    "target": 1
   },
   {
     "id": 57,
     "category": "施設のやり込み",
     "name": "お仕事完了",
-    "conditionText": "施設制覇10回"
+    "conditionText": "施設制覇10回",
+    "metric": "facilitiesCleared",
+    "target": 10
   },
   {
     "id": 58,
     "category": "施設のやり込み",
     "name": "施設制覇の名人",
-    "conditionText": "施設制覇50回"
+    "conditionText": "施設制覇50回",
+    "metric": "facilitiesCleared",
+    "target": 50
   },
   {
     "id": 59,
     "category": "施設のやり込み",
     "name": "全施設の案内人",
-    "conditionText": "施設制覇100回"
+    "conditionText": "施設制覇100回",
+    "metric": "facilitiesCleared",
+    "target": 100
   },
   {
     "id": 60,
     "category": "施設のやり込み",
     "name": "施設王",
-    "conditionText": "施設イベント累計10,000回"
+    "conditionText": "施設イベント累計10,000回",
+    "metric": "facilityTotal",
+    "target": 10000
   },
   {
     "id": 61,
     "category": "仲間図鑑の登録数",
     "name": "はじめての友達",
-    "conditionText": "仲間を1種類登録"
+    "conditionText": "仲間を1種類登録",
+    "metric": "characters",
+    "target": 1
   },
   {
     "id": 62,
     "category": "仲間図鑑の登録数",
     "name": "にぎやかな仲間たち",
-    "conditionText": "仲間を10種類登録"
+    "conditionText": "仲間を10種類登録",
+    "metric": "characters",
+    "target": 10
   },
   {
     "id": 63,
     "category": "仲間図鑑の登録数",
     "name": "友達いっぱい",
-    "conditionText": "仲間を47種類登録"
+    "conditionText": "仲間を47種類登録",
+    "metric": "characters",
+    "target": 47
   },
   {
     "id": 64,
     "category": "仲間図鑑の登録数",
     "name": "仲間の輪",
-    "conditionText": "仲間を100種類登録"
+    "conditionText": "仲間を100種類登録",
+    "metric": "characters",
+    "target": 100
   },
   {
     "id": 65,
     "category": "仲間図鑑の登録数",
     "name": "仲間を呼ぶ者",
-    "conditionText": "仲間を140種類登録"
+    "conditionText": "仲間を140種類登録",
+    "metric": "characters",
+    "target": 140
   },
   {
     "id": 66,
     "category": "仲間図鑑の登録数",
     "name": "大所帯のリーダー",
-    "conditionText": "仲間を279種類登録"
+    "conditionText": "仲間を279種類登録",
+    "metric": "characters",
+    "target": 279
   },
   {
     "id": 67,
     "category": "仲間図鑑の登録数",
     "name": "仲間の人気者",
-    "conditionText": "仲間を464種類登録"
+    "conditionText": "仲間を464種類登録",
+    "metric": "characters",
+    "target": 464
   },
   {
     "id": 68,
     "category": "仲間図鑑の登録数",
     "name": "友達の達人",
-    "conditionText": "仲間を600種類登録"
+    "conditionText": "仲間を600種類登録",
+    "metric": "characters",
+    "target": 600
   },
   {
     "id": 69,
     "category": "仲間図鑑の登録数",
     "name": "千人に迫る友",
-    "conditionText": "仲間を900種類登録"
+    "conditionText": "仲間を900種類登録",
+    "metric": "characters",
+    "target": 900
   },
   {
     "id": 70,
     "category": "仲間図鑑の登録数",
     "name": "みんなのギルドマスター",
-    "conditionText": "927種類すべて登録"
+    "conditionText": "927種類すべて登録",
+    "metric": "characters",
+    "target": 927
   },
   {
     "id": 71,
     "category": "仲間イベント・勧誘",
     "name": "はじめてのスカウト",
-    "conditionText": "施設で初めて勧誘成功"
+    "conditionText": "施設で初めて勧誘成功",
+    "metric": "recruitSuccesses",
+    "target": 1
   },
   {
     "id": 72,
     "category": "仲間イベント・勧誘",
     "name": "スカウト見習い",
-    "conditionText": "勧誘成功10回"
+    "conditionText": "勧誘成功10回",
+    "metric": "recruitSuccesses",
+    "target": 10
   },
   {
     "id": 73,
     "category": "仲間イベント・勧誘",
     "name": "仲間集めの旅人",
-    "conditionText": "勧誘成功50回"
+    "conditionText": "勧誘成功50回",
+    "metric": "recruitSuccesses",
+    "target": 50
   },
   {
     "id": 74,
     "category": "仲間イベント・勧誘",
     "name": "名スカウト",
-    "conditionText": "勧誘成功100回"
+    "conditionText": "勧誘成功100回",
+    "metric": "recruitSuccesses",
+    "target": 100
   },
   {
     "id": 75,
     "category": "仲間イベント・勧誘",
     "name": "仲間を呼ぶ声",
-    "conditionText": "勧誘成功300回"
+    "conditionText": "勧誘成功300回",
+    "metric": "recruitSuccesses",
+    "target": 300
   },
   {
     "id": 76,
     "category": "仲間イベント・勧誘",
     "name": "勧誘の達人",
-    "conditionText": "勧誘成功500回"
+    "conditionText": "勧誘成功500回",
+    "metric": "recruitSuccesses",
+    "target": 500
   },
   {
     "id": 77,
     "category": "仲間イベント・勧誘",
     "name": "勧誘王",
-    "conditionText": "勧誘成功1,000回"
+    "conditionText": "勧誘成功1,000回",
+    "metric": "recruitSuccesses",
+    "target": 1000
   },
   {
     "id": 78,
     "category": "仲間イベント・勧誘",
     "name": "あきらめない心",
-    "conditionText": "勧誘失敗10回"
+    "conditionText": "勧誘失敗10回",
+    "metric": "recruitFailures",
+    "target": 10
   },
   {
     "id": 79,
     "category": "仲間イベント・勧誘",
     "name": "七転び八起き",
-    "conditionText": "勧誘失敗100回"
+    "conditionText": "勧誘失敗100回",
+    "metric": "recruitFailures",
+    "target": 100
   },
   {
     "id": 80,
     "category": "仲間イベント・勧誘",
     "name": "運命の出会い",
-    "conditionText": "小屋で仲間を初めて獲得"
+    "conditionText": "小屋で仲間を初めて獲得",
+    "metric": "hutRecruit",
+    "target": 1
   },
   {
     "id": 81,
     "category": "博物館の収集品",
     "name": "はじめてのお宝",
-    "conditionText": "収集品を1種類登録"
+    "conditionText": "収集品を1種類登録",
+    "metric": "items",
+    "target": 1
   },
   {
     "id": 82,
     "category": "博物館の収集品",
     "name": "小さな収集家",
-    "conditionText": "収集品を10種類登録"
+    "conditionText": "収集品を10種類登録",
+    "metric": "items",
+    "target": 10
   },
   {
     "id": 83,
     "category": "博物館の収集品",
     "name": "宝物好き",
-    "conditionText": "収集品を50種類登録"
+    "conditionText": "収集品を50種類登録",
+    "metric": "items",
+    "target": 50
   },
   {
     "id": 84,
     "category": "博物館の収集品",
     "name": "博物館の常連",
-    "conditionText": "収集品を100種類登録"
+    "conditionText": "収集品を100種類登録",
+    "metric": "items",
+    "target": 100
   },
   {
     "id": 85,
     "category": "博物館の収集品",
     "name": "収集品研究家",
-    "conditionText": "収集品を200種類登録"
+    "conditionText": "収集品を200種類登録",
+    "metric": "items",
+    "target": 200
   },
   {
     "id": 86,
     "category": "博物館の収集品",
     "name": "お宝の達人",
-    "conditionText": "収集品を300種類登録"
+    "conditionText": "収集品を300種類登録",
+    "metric": "items",
+    "target": 300
   },
   {
     "id": 87,
     "category": "博物館の収集品",
     "name": "大収集家",
-    "conditionText": "収集品を400種類登録"
+    "conditionText": "収集品を400種類登録",
+    "metric": "items",
+    "target": 400
   },
   {
     "id": 88,
     "category": "博物館の収集品",
     "name": "完成目前",
-    "conditionText": "収集品を470種類登録"
+    "conditionText": "収集品を470種類登録",
+    "metric": "items",
+    "target": 470
   },
   {
     "id": 89,
     "category": "博物館の収集品",
     "name": "最後の一品",
-    "conditionText": "収集品を479種類登録"
+    "conditionText": "収集品を479種類登録",
+    "metric": "items",
+    "target": 479
   },
   {
     "id": 90,
     "category": "博物館の収集品",
     "name": "伝説の収集家",
-    "conditionText": "480種類すべて登録"
+    "conditionText": "480種類すべて登録",
+    "metric": "items",
+    "target": 480
   },
   {
     "id": 91,
     "category": "コレクション完成",
     "name": "はじめての展示",
-    "conditionText": "小グループ1組完成"
+    "conditionText": "小グループ1組完成",
+    "metric": "smallComplete",
+    "target": 1
   },
   {
     "id": 92,
     "category": "コレクション完成",
     "name": "展示室の住人",
-    "conditionText": "小グループ5組完成"
+    "conditionText": "小グループ5組完成",
+    "metric": "smallComplete",
+    "target": 5
   },
   {
     "id": 93,
     "category": "コレクション完成",
     "name": "展示の達人",
-    "conditionText": "小グループ10組完成"
+    "conditionText": "小グループ10組完成",
+    "metric": "smallComplete",
+    "target": 10
   },
   {
     "id": 94,
     "category": "コレクション完成",
     "name": "博物館の研究員",
-    "conditionText": "小グループ20組完成"
+    "conditionText": "小グループ20組完成",
+    "metric": "smallComplete",
+    "target": 20
   },
   {
     "id": 95,
     "category": "コレクション完成",
     "name": "展示の名人",
-    "conditionText": "小グループ40組完成"
+    "conditionText": "小グループ40組完成",
+    "metric": "smallComplete",
+    "target": 40
   },
   {
     "id": 96,
     "category": "コレクション完成",
     "name": "大展示会",
-    "conditionText": "小グループ60組完成"
+    "conditionText": "小グループ60組完成",
+    "metric": "smallComplete",
+    "target": 60
   },
   {
     "id": 97,
     "category": "コレクション完成",
     "name": "博物館の主",
-    "conditionText": "小グループ80組完成"
+    "conditionText": "小グループ80組完成",
+    "metric": "smallComplete",
+    "target": 80
   },
   {
     "id": 98,
     "category": "コレクション完成",
     "name": "全展示の完成者",
-    "conditionText": "小グループ96組完成"
+    "conditionText": "小グループ96組完成",
+    "metric": "smallComplete",
+    "target": 96
   },
   {
     "id": 99,
     "category": "コレクション完成",
     "name": "大展示室の完成者",
-    "conditionText": "大グループ1組完成"
+    "conditionText": "大グループ1組完成",
+    "metric": "largeComplete",
+    "target": 1
   },
   {
     "id": 100,
     "category": "コレクション完成",
     "name": "二十四の展示室",
-    "conditionText": "大グループ24組完成"
+    "conditionText": "大グループ24組完成",
+    "metric": "largeComplete",
+    "target": 24
   },
   {
     "id": 101,
     "category": "探索・バフ・パーティー",
     "name": "最初のチーム",
-    "conditionText": "初めて仲間を編成して出発"
+    "conditionText": "初めて仲間を編成して出発",
+    "metric": "party.1",
+    "target": 1
   },
   {
     "id": 102,
     "category": "探索・バフ・パーティー",
     "name": "ふたりの冒険",
-    "conditionText": "2人編成で出発"
+    "conditionText": "2人編成で出発",
+    "metric": "party.2",
+    "target": 1
   },
   {
     "id": 103,
     "category": "探索・バフ・パーティー",
     "name": "三人寄れば",
-    "conditionText": "3人編成で出発"
+    "conditionText": "3人編成で出発",
+    "metric": "party.3",
+    "target": 1
   },
   {
     "id": 104,
     "category": "探索・バフ・パーティー",
     "name": "四人の知恵",
-    "conditionText": "4人編成で出発"
+    "conditionText": "4人編成で出発",
+    "metric": "party.4",
+    "target": 1
   },
   {
     "id": 105,
     "category": "探索・バフ・パーティー",
     "name": "五人の遠征隊",
-    "conditionText": "5人編成で出発"
+    "conditionText": "5人編成で出発",
+    "metric": "party.5",
+    "target": 1
   },
   {
     "id": 106,
     "category": "探索・バフ・パーティー",
     "name": "ひろがる視界",
-    "conditionText": "透視によって初めてマスを公開"
+    "conditionText": "透視によって初めてマスを公開",
+    "metric": "vision",
+    "target": 1
   },
   {
     "id": 107,
     "category": "探索・バフ・パーティー",
     "name": "おまかせ開拓",
-    "conditionText": "自動追加開拓が初めて発動"
+    "conditionText": "自動追加開拓が初めて発動",
+    "metric": "auto",
+    "target": 1
   },
   {
     "id": 108,
     "category": "探索・バフ・パーティー",
     "name": "一気に開拓",
-    "conditionText": "1回の処理で5マス以上開拓"
+    "conditionText": "1回の処理で5マス以上開拓",
+    "metric": "maxAction",
+    "target": 5
   },
   {
     "id": 109,
     "category": "探索・バフ・パーティー",
     "name": "開拓の連鎖",
-    "conditionText": "1回の処理で10マス以上開拓"
+    "conditionText": "1回の処理で10マス以上開拓",
+    "metric": "maxAction",
+    "target": 10
   },
   {
     "id": 110,
     "category": "探索・バフ・パーティー",
     "name": "探索の達人",
-    "conditionText": "1ワールドで透視100マス以上"
+    "conditionText": "1ワールドで透視100マス以上",
+    "metric": "maxVision",
+    "target": 100
   },
   {
     "id": 111,
     "category": "珍記録・特別実績",
     "name": "おかえりなさい",
-    "conditionText": "ワールドを途中帰還"
+    "conditionText": "中断したワールドをホームの「つづきから」で初めて再開",
+    "metric": "resumed",
+    "target": 1
   },
   {
     "id": 112,
     "category": "珍記録・特別実績",
     "name": "寄り道名人",
-    "conditionText": "全域開拓後に施設を訪問"
+    "conditionText": "全域開拓後に施設を訪問",
+    "metric": "postExploreVisit",
+    "target": 1
   },
   {
     "id": 113,
     "category": "珍記録・特別実績",
     "name": "あとひとつ！",
-    "conditionText": "小グループが4/5になった"
+    "conditionText": "小グループが4/5になった",
+    "metric": "nearCollection",
+    "target": 1
   },
   {
     "id": 114,
     "category": "珍記録・特別実績",
     "name": "奇跡の一品",
-    "conditionText": "未登録品が残り1種類の状態でその品を獲得"
+    "conditionText": "未登録品が残り1種類の状態でその品を獲得",
+    "metric": "items",
+    "target": 480
   },
   {
     "id": 115,
     "category": "珍記録・特別実績",
     "name": "最後の友達",
-    "conditionText": "927種類目の仲間を獲得"
+    "conditionText": "927種類目の仲間を獲得",
+    "metric": "characters",
+    "target": 927
   },
   {
     "id": 116,
     "category": "珍記録・特別実績",
     "name": "お宝の山",
-    "conditionText": "収集品を重複込みで累計1,000個獲得"
+    "conditionText": "収集品を重複込みで累計1,000個獲得",
+    "metric": "itemTotal",
+    "target": 1000
   },
   {
     "id": 117,
     "category": "珍記録・特別実績",
     "name": "知り合いだらけ",
-    "conditionText": "登録済みキャラを累計100回勧誘"
+    "conditionText": "登録済みキャラを累計100回勧誘",
+    "metric": "duplicateRecruits",
+    "target": 100
   },
   {
     "id": 118,
     "category": "珍記録・特別実績",
     "name": "ふしぎな縁",
-    "conditionText": "同じキャラを施設から累計3回獲得"
+    "conditionText": "同じキャラを施設から累計3回獲得",
+    "metric": "sameRecruit",
+    "target": 3
   },
   {
     "id": 119,
     "category": "珍記録・特別実績",
     "name": "不屈の挑戦者",
-    "conditionText": "1問で誤答を3回選んでから正解"
+    "conditionText": "1問で誤答を3回選んでから正解",
+    "metric": "threeWrong",
+    "target": 1
   },
   {
     "id": 120,
     "category": "珍記録・特別実績",
     "name": "世界を渡り歩く者",
-    "conditionText": "累計100ワールドに出発"
+    "conditionText": "累計100ワールドに出発",
+    "metric": "departures",
+    "target": 100
   }
 ]
