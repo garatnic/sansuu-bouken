@@ -23,7 +23,7 @@ body{max-width:680px;padding:18px;background:#f5f8f4}
 .home-hero h1{color:#fff;text-shadow:0 0 3px #000,0 1px 5px #000,1px 1px 2px #000}
 .home-menu{gap:14px}
 .button-world{position:relative;isolation:isolate;background-image:none}
-.button-world::before{content:"";position:absolute;inset:0;z-index:-1;background:url('../assets/sheets/button_newworld.png') left center/cover no-repeat;transform:scale(1.25);transform-origin:left center;image-rendering:pixelated}
+.button-world::before{content:"";position:absolute;inset:0;z-index:-1;background:url('../assets/sheets/button_newworld.png') center/cover no-repeat;transform:scale(1.2);transform-origin:left center;image-rendering:pixelated}
 @media(max-width:500px){
  body{display:flex;flex-direction:column;height:100dvh;min-height:480px;padding:10px 12px max(10px,env(safe-area-inset-bottom))}
  .home-hero{flex:1;aspect-ratio:auto;min-height:110px;max-height:calc((100vw - 24px)*230/412);margin-bottom:12px}
