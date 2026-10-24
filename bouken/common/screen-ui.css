@@ -1,0 +1,27 @@
+/* Shared screen safeguards; dialog content remains scrollable. */
+[hidden]{display:none!important}
+.page-status{padding:12px 0;color:#53675b;font-size:14px;line-height:1.6}
+.page-status:empty{display:none}
+button:disabled,input:disabled,select:disabled{opacity:.55;cursor:default}
+.skill-dialog{box-sizing:border-box;padding:0!important;max-height:85dvh!important;overflow:auto;overflow-wrap:anywhere}
+.skill-dialog-header{position:sticky;top:0;z-index:3;display:flex;justify-content:space-between;align-items:flex-start;gap:10px;background:white;padding:16px 18px;border-bottom:1px solid #e5ecdf}
+.skill-dialog-header h2{margin:0;min-width:0;font-size:1.1rem}
+.skill-dialog-header .close-skill{flex:none;width:auto;margin:0;padding:10px 14px}
+.skill-dialog>.skill-dialog-body{margin:0;padding:18px;line-height:1.7}
+.skill-dialog .active-buffs-header{top:0;margin:0;padding:16px 18px}
+.skill-dialog>p,.skill-dialog>.skill-effect-list{margin:0;padding:14px 18px}
+.skill-effect-row span{min-width:0;overflow-wrap:anywhere}
+.skill-effect-row strong{flex:none;white-space:nowrap}
+.character-detail-header{position:sticky;top:-20px;z-index:3;background:white;padding-top:10px;padding-bottom:10px}
+.character-detail-portrait{padding-left:0}
+.character-detail-portrait .character-image{max-height:120px;width:120px}
+.dialog-head h2,.dialog-head h3{min-width:0;overflow-wrap:anywhere}
+.dialog-head>button{flex:none}
+.bonus-card>.row{flex-wrap:wrap}
+.bonus-card>.row h3{flex:1;min-width:180px;overflow-wrap:anywhere}
+.bonus-card .value{margin-left:auto}
+.museum-bonuses{display:grid;gap:9px;margin:12px 0 0;padding:0;list-style:none}
+.museum-bonuses li{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-bottom:1px solid #e5ecdf;padding:8px 0}
+.museum-bonuses li span{min-width:0;overflow-wrap:anywhere}
+.museum-bonuses li strong{flex:none;white-space:nowrap}
+@media(max-width:360px){.character-detail-header{top:-15px}.hero{flex-wrap:wrap}.hero>div{min-width:0}.hero h2{overflow-wrap:anywhere}}
