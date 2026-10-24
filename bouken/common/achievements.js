@@ -14,5 +14,7 @@ window.BoukenAchievements=(()=>{
  if(s.world){const n=s.world.achievementVisionCount||0;m.maxVision=Math.max(m.maxVision||0,n);if(n>0)m.vision=1;}return m;
  }
  function evaluate(s){if(!master.length)return [];const a=state(s),m=metrics(s);a.maxVision=Math.max(a.maxVision||0,m.maxVision||0);if(m.vision)a.vision=1;const unlocked=new Set(s.achievementsUnlocked||[]),added=[];for(const x of master)if(!unlocked.has(x.id)&&(m[x.metric]||0)>=x.target){unlocked.add(x.id);added.push(x.id);}s.achievementsUnlocked=[...unlocked].sort((a,b)=>a-b);return added;}
- return Object.freeze({init,state,event,action,departure,facility,metrics,evaluate});
+ function pendingNotices(s){const unlocked=new Set(s.achievementsUnlocked||[]),shown=new Set(s.achievementNoticesShown||[]);return master.filter(x=>unlocked.has(x.id)&&!shown.has(x.id));}
+ function markNoticesShown(s,ids){const valid=new Set((s.achievementsUnlocked||[]));s.achievementNoticesShown=[...new Set([...(s.achievementNoticesShown||[]),...ids.filter(id=>valid.has(id))])].sort((a,b)=>a-b);}
+ return Object.freeze({init,state,event,action,departure,facility,metrics,evaluate,pendingNotices,markNoticesShown});
 })();
