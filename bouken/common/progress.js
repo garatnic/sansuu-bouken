@@ -1,10 +1,13 @@
 // ToDo 29: 達成判定を一元化。拠点は開拓数に含めない。
 window.BoukenProgress=Object.freeze({
+ ordinal(save,w=save.world){return Number(w?.departureNumber)||Number(save.worldsStarted)||1;},
+ tutorialLocked(save){return !!save.world&&this.ordinal(save)<3&&!this.status(save.world).allExplored;},
+ reward(save,w,characters,rng=Math.random){if(w.explorationReward)return w.explorationReward;const n=this.ordinal(save,w),fixed=n===1?298:n===2?199:null;const unseen=characters.filter(c=>!Number(save.characters?.[c.id]||0));const pool=fixed?characters.filter(c=>c.id===fixed):(unseen.length?unseen:characters);if(!pool.length)throw Error('開拓報酬の仲間が見つかりません');const c=pool[Math.floor(rng()*pool.length)];save.characters=save.characters||{};const previous=Number(save.characters[c.id]||0);if(!previous)BoukenSchema.recordCharacterJoin(save,c.id);save.characters[c.id]=previous+1;w.explorationReward={type:'companion',id:c.id,name:c.name,success:true,first:!previous};return w.explorationReward;},
  status(w){const total=w.width*w.height-1;const opened=w.explored.reduce((n,v,i)=>n+(i!==w.startIndex&&!!v),0);const facilities=w.facility.reduce((n,v)=>n+(v?1:0),0);const completedFacilities=w.visitedFacilities.reduce((n,v,i)=>n+(v&&w.facility[i]?1:0),0);const allExplored=opened===total;const allFacilities=completedFacilities===facilities;return {opened,total,percent:total?Math.floor(opened/total*100):100,facilities,completedFacilities,allExplored,allFacilities,complete:allExplored&&allFacilities};},
  // ワールド内の一度限りの記録を更新。セーブと同じトランザクションで呼ぶ。
- recordExplore(save,w,opened=1){const s=this.status(w);w.exploredCount=s.opened;save.records=save.records||{};save.records.totalExplored=(save.records.totalExplored||0)+opened;save.records.correctAnswers=(save.records.correctAnswers||0)+1;return this.recordMilestones(save,w,s);},
- recordMilestones(save,w,s=this.status(w)){let newlyAllExplored=false,newlyComplete=false;
-  if(s.allExplored&&!w.allExploredRewardClaimed){w.allExploredRewardClaimed=true;save.records=save.records||{};save.records.worldsAllExplored=(save.records.worldsAllExplored||0)+1;newlyAllExplored=true;}
+ recordExplore(save,w,opened=1,characters=null){const s=this.status(w);w.exploredCount=s.opened;save.records=save.records||{};save.records.totalExplored=(save.records.totalExplored||0)+opened;save.records.correctAnswers=(save.records.correctAnswers||0)+1;return this.recordMilestones(save,w,s,characters);},
+ recordMilestones(save,w,s=this.status(w),characters=null){let newlyAllExplored=false,newlyComplete=false;
+  if(s.allExplored&&!w.allExploredRewardClaimed){w.allExploredRewardClaimed=true;save.records=save.records||{};save.records.worldsAllExplored=(save.records.worldsAllExplored||0)+1;newlyAllExplored=true;if(characters)this.reward(save,w,characters);}
   if(s.complete&&!w.completionRecorded){w.completionRecorded=true;save.completedWorlds=(save.completedWorlds||0)+1;newlyComplete=true;}
   return {newlyAllExplored,newlyComplete};}
 });
