@@ -9,6 +9,6 @@ body{max-width:680px;padding:18px;background:#f5f8f4}
 .button-world{background-image:url('../assets/sheets/button_newworld.png');background-size:100% 100%;image-rendering:pixelated}
 .button-party{background-image:url('../assets/sheets/button_party.png');background-size:155% auto;background-position:center 18%;image-rendering:pixelated}
 .button-characters{background-image:url('../assets/sheets/button_character.png');background-size:100% auto;background-position:center top;image-rendering:pixelated}
-.button-museum{background-image:url('../assets/sheets/button_museum.png');background-size:100% auto;background-position:center top;image-rendering:pixelated}
+.button-museum{background-image:url('../assets/sheets/button_museum.png');background-size:100% auto;background-position:center 10%;image-rendering:pixelated}
 .button-records{background-image:url('../assets/sheets/button_achieveme.jpg');background-size:100% auto;background-position:center 47%}
 @media(max-width:500px){body{padding:14px 12px}.home-menu{gap:20px}.image-button{height:clamp(76px,19vw,96px);border-radius:12px}.home-status{margin-bottom:15px}.page-heading h1{font-size:1.45rem}}
