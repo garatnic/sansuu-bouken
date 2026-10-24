@@ -6,5 +6,8 @@ window.BoukenSchema=Object.freeze({
   for(const s of buffs){if(s.id==='E08'||s.id==='E09'){if(!placed){const entry={...s,id:'E08',level:merged};if('cost' in entry)entry.cost=merged*2;out.push(entry);placed=true;}}else out.push(s);}return out;
  },
  recordCharacterJoin(data,id){if(!Array.isArray(data.characterJoinOrder))data.characterJoinOrder=Object.keys(data.characters||{}).filter(k=>Number(data.characters[k])>0).map(Number).sort((a,b)=>a-b);if(!data.characterJoinOrder.some(x=>String(x)===String(id)))data.characterJoinOrder.push(Number(id));},
- normalizeSave(data){if(data.world?.partyBuffsSnapshot)data.world.partyBuffsSnapshot=this.normalizeBuffs(data.world.partyBuffsSnapshot);return data;},
- version:1,key:'bouken.save.v1',makeInitialSave(){return {schemaVersion:1,createdAt:new Date().toISOString(),updatedAt:null,world:null,characters:{},items:{},party:[],records:{},completedWorlds:0,worldsStarted:0,claimedCollectionRewards:[],tutorialStory:{version:1,introDone:false,worldDone:false,firstExploreDone:false,firstRewardSeen:false,firstClearDone:false,secondRewardSeen:false,finalDone:false,complete:false}};}});
+ normalizeSave(data){
+  if(data.collectionClaimsVersion!==1){data.collectionClaimsVersion=1;data.collectionLegacyItems=Object.keys(data.items||{}).filter(id=>Number(data.items[id])>0);}
+  if(!data.homeGrowthNotices){const n=Object.values(data.characters||{}).filter(n=>Number(n)>0).length;data.homeGrowthNotices={partyCapacity:n>=464?5:n>=279?4:n>=140?3:n>=47?2:1,collections:null};}
+  if(data.world?.partyBuffsSnapshot)data.world.partyBuffsSnapshot=this.normalizeBuffs(data.world.partyBuffsSnapshot);return data;},
+ version:1,key:'bouken.save.v1',makeInitialSave(){return {schemaVersion:1,createdAt:new Date().toISOString(),updatedAt:null,world:null,characters:{},items:{},party:[],records:{},completedWorlds:0,worldsStarted:0,claimedCollectionRewards:[],collectionClaimsVersion:1,homeGrowthNotices:{partyCapacity:1,collections:[]},tutorialStory:{version:1,introDone:false,worldDone:false,firstExploreDone:false,firstRewardSeen:false,firstClearDone:false,secondRewardSeen:false,finalDone:false,complete:false}};}});
