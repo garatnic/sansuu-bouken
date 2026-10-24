@@ -57,6 +57,11 @@ for(const file of fs.readdirSync(root).filter(n=>n.endsWith('.html'))){const h=f
 console.log('PASS: F01/F02 all levels, shortage, weighted draws, persistence, invalid selections, single award, F03 64 boundaries, D07/C03, old save, actual visit UI handlers, inline syntax/cache');
 context.eventPicture=actualPicture;
 // Result-only grayscale follows final success; candidate and extra rewards remain in color.
-for(const type of ['companion','collection'])for(const success of [true,false]){context.showEventResult({type,id:1,name:'test',success,retried:true},'test');assert.equal(context.visitActions.children[0].children[0].style.filter,success?undefined:'grayscale(1)');}
+for(const type of ['companion','collection'])for(const success of [true,false]){context.showEventResult({type,id:1,name:'test',success,retried:true},'test');assert.equal(context.visitActions.children[0].children[0].style.filter,success?undefined:'grayscale(1)');assert.equal(context.visitActions.children[0].children[0].style.opacity,success?undefined:'.5');}
 context.showEventResult({type:'collection',id:1,name:'test',success:true,extra:{id:2,name:'extra'}},'test');assert.equal(context.visitActions.children[1].children[0].style.filter,undefined);assert.equal(context.eventPicture('companion',1).style.filter,undefined);
 console.log('PASS: failure-only grayscale, final retry outcome, color candidates/extra items');
+
+// Acquisition history records only first successful companion joins, not retries or duplicates.
+s=setup('companion');r=resolve(s,()=>0);assert.equal(s.characterJoinOrder.at(-1),r.id);const order=JSON.stringify(s.characterJoinOrder);s.world.visitedFacilities[0]=false;r=resolve(s,()=>0);assert.equal(JSON.stringify(s.characterJoinOrder),order);
+s=setup('companion');r=resolve(s,()=>.99);assert(!r.success);assert.equal(s.characterJoinOrder,undefined);
+console.log('PASS: first-join order and duplicate/failure preservation');

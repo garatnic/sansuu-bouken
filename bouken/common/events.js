@@ -63,7 +63,7 @@ window.BoukenEvents=Object.freeze({
   }
   const inventory=type==='companion'?(save.characters=save.characters||{}):(save.items=save.items||{});
   const key=String(chosen.id),previous=Number(inventory[key]||0);
-  if(success)inventory[key]=previous+1;
+  if(success){if(type==='companion'&&previous===0){if(!Array.isArray(save.characterJoinOrder))save.characterJoinOrder=Object.keys(save.characters||{}).filter(k=>Number(save.characters[k])>0).map(Number).sort((a,b)=>a-b);if(!save.characterJoinOrder.some(id=>String(id)===key))save.characterJoinOrder.push(chosen.id);}inventory[key]=previous+1;}
   let extra=null;
   if(success&&type==='collection'&&random()<[0,.25,.50,.75][level('C03')]){
    const others=candidates.filter(item=>item.id!==chosen.id);
