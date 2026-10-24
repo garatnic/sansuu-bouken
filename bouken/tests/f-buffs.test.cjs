@@ -25,9 +25,22 @@ s=setup('collection',[['F01',2],['C03',3]]);p=prepare(s);r=resolve(s,()=>0,p.ids
 s=setup();delete s.world.partyBuffsSnapshot;delete s.world.eventPools;assert(resolve(s).success);
 // Exercise the actual page visit handlers: saved choices, close/reopen, failed save, finish and repeat.
 class Element{constructor(){this.children=[];this.disabled=false;}replaceChildren(){this.children=[];}append(x){this.children.push(x);}showModal(){this.open=true;}close(){this.open=false;}}
-const html=fs.readFileSync(path.join(root,'world.html'),'utf8');let a=html.indexOf(' function showVisit(i)'),b=html.indexOf('\n function tap(i)',a);const context={BoukenEvents:E,BoukenExplore:{visit:w=>w.visitedFacilities[0]?'visited':'available'},BoukenProgress:{recordMilestones:()=>({newlyComplete:false})},characters:chars,items,facilities,fmap:{F01:facilities[0]},visitActions:new Element,visitTitle:new Element,visitDescription:new Element,visitModal:new Element,selected:new Element,document:{createElement:()=>new Element},render(){},notify(){},Math};
+const html=fs.readFileSync(path.join(root,'world.html'),'utf8');let a=html.indexOf(' function showVisit(i)'),b=html.indexOf('\n function tap(i)',a);const context={skillNames:{F01:"商人の知恵",F02:"人を見る目"},BoukenEvents:E,BoukenExplore:{visit:w=>w.visitedFacilities[0]?'visited':'available'},BoukenProgress:{recordMilestones:()=>({newlyComplete:false})},characters:chars,items,facilities,fmap:{F01:facilities[0]},visitActions:new Element,visitTitle:new Element,visitDescription:new Element,visitModal:new Element,selected:new Element,document:{createElement:()=>new Element},render(){},notify(){},Math};
 context.save=setup('companion',[['F02',3]]);context.w=context.save.world;let fail=false;context.persist=fn=>{if(fail)return false;fn();context.save=JSON.parse(JSON.stringify(context.save));context.w=context.save.world;return true;};vm.createContext(context);vm.runInContext(html.slice(a,b),context);
 context.showVisit(0);fail=true;context.visitActions.children[0].onclick();assert.equal(context.w.eventChoices,undefined);assert.equal(context.visitActions.children[0].disabled,false);fail=false;context.visitActions.children[0].onclick();assert.equal(context.visitActions.children.length,4);const ids=JSON.stringify(context.w.eventChoices[0].ids);context.visitModal.close();context.showVisit(0);assert.equal(JSON.stringify(context.w.eventChoices[0].ids),ids);assert.equal(context.visitActions.children.length,4);fail=true;context.visitActions.children[0].onclick();assert(!context.w.visitedFacilities[0]);assert(!context.visitActions.children[0].disabled);fail=false;context.visitActions.children[0].onclick();assert(context.w.visitedFacilities[0]);assert(!context.visitModal.open);context.showVisit(0);assert.equal(context.visitActions.children.length,0);
+// Verify displayed prompts and all recruitment outcomes through the real visit handler.
+for(const [type,skill,name,unit] of [['companion','F02','人を見る目','人'],['collection','F01','商人の知恵','つ']])for(let lv=1;lv<=3;lv++){
+ context.save=setup(type,[[skill,lv]]);context.w=context.save.world;context.showVisit(0);context.visitActions.children[0].onclick();
+ assert.equal(context.visitDescription.textContent,`${name}の効果でなんと${lv+1}${unit}も見つけたよ。${type==='companion'?'仲間にできるかな？だれかひとり':'ゲットできるかな？どれかひとつ'}を選んでね。`);
+}
+for(const success of [false,true])for(const retried of [false,true])for(const first of [false,true]){
+ const result={type:'companion',name:'テスト',success,retried,first:success&&first};
+ context.BoukenEvents={...E,resolve:()=>result};context.save=setup();context.w=context.save.world;context.showVisit(0);context.visitActions.children[0].onclick();
+ const failed='町で「テスト」を発見！ でも仲間にできなかった。';
+ const joined='「テスト」が仲間になったよ！'+(first?'（初めての獲得）':'（2回目以降）');
+ assert.equal(context.selected.textContent,retried?failed+'\nでも勧誘の達人でもう一度さそったよ。\n'+(success?'せいこう！'+joined:'ざんねん！仲間にできなかった。'):success?'町で'+joined:failed);
+}
+context.BoukenEvents=E;
 // Parse every inline script; cache references are all v40.
 for(const file of fs.readdirSync(root).filter(n=>n.endsWith('.html'))){const h=fs.readFileSync(root+'/'+file,'utf8');for(const match of h.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g))new vm.Script(match[1]);const version=Number(fs.readFileSync(path.join(root,'common/version.js'),'utf8').match(/=\s*(\d+)/)[1]);for(const m of h.matchAll(/\?v=(\d+)/g))assert.equal(Number(m[1]),version);}
 console.log('PASS: F01/F02 all levels, shortage, weighted draws, persistence, invalid selections, single award, F03 64 boundaries, D07/C03, old save, actual visit UI handlers, inline syntax/cache');
