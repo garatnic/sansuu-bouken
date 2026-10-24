@@ -38,7 +38,7 @@ for(const success of [false,true])for(const retried of [false,true])for(const fi
  context.BoukenEvents={...E,resolve:()=>result};context.save=setup();context.w=context.save.world;context.showVisit(0);context.visitActions.children[0].onclick();
  const failed='町で「テスト」を発見！ でも仲間にできなかった。';
  const joined='「テスト」が仲間になったよ！'+(first?'（初めての獲得）':'（2回目以降）');
- assert.equal(context.selected.textContent,retried?failed+'\nでも勧誘の達人でもう一度さそったよ。\n'+(success?'せいこう！'+joined:'ざんねん！仲間にできなかった。'):success?'町で'+joined:failed);
+ assert.equal(context.visitDescription.textContent,retried?failed+'\nでも勧誘の達人でもう一度さそったよ。\n'+(success?'せいこう！'+joined:'ざんねん！仲間にできなかった。'):success?'町で'+joined:failed);
 }
 context.BoukenEvents=E;
 // Result portraits are shown for both outcomes and C03's additional item; rendering does not save.

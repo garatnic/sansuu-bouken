@@ -30,5 +30,12 @@ const root=path.resolve(__dirname,'..');
  const boot=html.slice(html.indexOf(' if(!Number.isInteger(w.lastExploredIndex))'),html.indexOf(' }catch(e){info.textContent='));
  const startup={w:{lastExploredIndex:0},BoukenBuffs:{level:()=>0},render:()=>sequence.push('render'),adjustMapHeight:()=>sequence.push('layout'),centerMapOnPlayer:()=>sequence.push('center'),requestAnimationFrame:fn=>frames.push(fn),BoukenCharacterImages:{init:()=>{sequence.push('characters');return new Promise(()=>{})}},BoukenItemImages:{init:()=>{sequence.push('items');return new Promise(()=>{})}}};
  vm.createContext(startup);vm.runInContext(preload+boot,startup);assert.deepEqual(sequence,['render']);assert.equal(frames.length,1);frames.shift()();assert.deepEqual(sequence,['render','layout','center']);assert.equal(frames.length,1);frames.shift()();assert.deepEqual(sequence,['render','layout','center','characters','items']);assert.equal(frames.length,0);
+ // A failed save rolls back state and announces it through the floating notification.
+ const persistence=html.slice(html.indexOf(' function persist(mutator)'),html.indexOf(' function positionSense()'));
+ const errors=[],state={save:{world:{value:1},characters:{}},w:{value:1},BoukenSave:{save(){throw Error('容量不足')}},notify:msg=>errors.push(msg)};
+ vm.createContext(state);vm.runInContext(persistence,state);assert.equal(state.persist(()=>{state.w.value=2;state.save.characters.x=1}),false);assert.equal(state.w.value,1);assert.equal(Object.keys(state.save.characters).length,0);assert(errors[0].includes('容量不足'));
+ assert(html.includes('<header class="visit-header"><h2 id="visitTitle">'));assert.equal((html.match(/id="closeVisit"/g)||[]).length,1);assert(!html.includes('id="selected"'));
+ let opened=0,closed=0,timer;
+ vm.runInNewContext(notify+";notify('通知');",{toast:{classList:classes,matches:()=>false,showPopover(){opened++},hidePopover(){closed++}},toastTimer:undefined,clearTimeout(){},setTimeout(fn,ms){timer=fn;assert.equal(ms,4000)}});assert.equal(opened,1);timer();assert.equal(closed,1);
  console.log('PASS: all 1407 image coordinates, success/failure and 1000 redraws each with one request, invalid IDs, 4-second timer, early retreat boundaries');
 })().catch(e=>{console.error(e);process.exitCode=1});
