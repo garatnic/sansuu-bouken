@@ -20,7 +20,7 @@
 .facility-event .fe-result{text-align:center;overflow-wrap:anywhere}
 .facility-event .fe-result+.fe-result{border-top:1px solid #d5bd7777;margin-top:20px;padding-top:16px}
 .facility-event .fe-ribbon{display:inline-block;font-size:12px;font-weight:800;color:#7b5b14;background:#f5e5a3;border-radius:99px;padding:6px 12px;margin:10px 0 0}
-.facility-event .fe-heading{font-size:21px;white-space:pre-line;line-height:1.5;margin:12px 0 5px}
+.facility-event .fe-heading{text-wrap:balance;font-size:21px;white-space:pre-line;line-height:1.5;margin:12px 0 5px}
 .facility-event .fe-name{display:block;font-size:24px;line-height:1.5}
 .facility-event .fe-message{font-size:16px;white-space:pre-line;line-height:1.8;margin:12px 0 17px}
 .facility-event .fe-owned{display:inline-block;border:1px solid #d8ddcc;border-radius:99px;font-size:14px;color:#61704f;padding:6px 14px;margin:9px 0}
@@ -36,3 +36,6 @@
 @keyframes fe-twinkle{from{opacity:.35;transform:scale(.85)}to{opacity:1;transform:scale(1.1)}}
 @media(prefers-reduced-motion:reduce){.facility-event .fe-spark{animation:none}}
 @media(max-width:380px){#visitModal.facility-event #visitActions{padding-inline:16px}.facility-event .fe-heading{font-size:20px}.facility-event .fe-name{font-size:22px}}
+
+.facility-event .event-candidate .event-picture{width:96px;height:96px;flex-basis:96px}
+@media(max-width:380px){.facility-event .event-candidate .event-picture{width:72px;height:72px;flex-basis:72px}}
