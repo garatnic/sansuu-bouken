@@ -1,0 +1,38 @@
+#visitModal.facility-event{padding:0;width:min(94vw,440px);max-height:90dvh;border:2px solid #d5bd77;border-radius:22px;background:#fffdf2;color:#263d2a;box-shadow:0 18px 70px #0006;overflow:auto;overscroll-behavior:contain}
+#visitModal.facility-event::backdrop{background:#0b241eaa}
+#visitModal.facility-event.new{border-color:#dfbc4c;background:linear-gradient(160deg,#fffdf5 30%,#fff2c5)}
+#visitModal.facility-event.fail{border-color:#bac7b2;background:#f5f7ef}
+#visitModal.facility-event .visit-header{top:0;margin:0;padding:12px 16px;background:#fffdf2f5;z-index:5;border-bottom:1px solid #d5bd7733}
+#visitModal.facility-event .visit-header h2{font-size:14px;color:#7b5b14}
+#visitModal.facility-event #closeVisit{width:44px;height:44px;min-height:44px;margin:0;padding:0;border:1px solid #d9dfcc;border-radius:50%;background:#fffdf2;color:#64715b;font-size:13px}
+#visitModal.facility-event #visitDescription{margin:12px 24px;text-align:center;font-size:16px;line-height:1.8}
+#visitModal.facility-event #visitDescription:empty,#visitModal.facility-event #visitArtwork:empty{display:none}
+#visitModal.facility-event #visitActions{padding:0 24px 22px}
+.facility-event #visitArtwork{text-align:center;padding:0 20px}
+.facility-event .fe-visit-heading{font-size:24px;font-weight:800;margin:5px 0}
+.facility-event .fe-zone{position:relative;isolation:isolate;display:grid;place-items:center;height:180px;margin:8px 0 14px}
+.facility-event .fe-medallion{display:grid;place-items:center;width:168px;height:168px;border-radius:50%;background:radial-gradient(circle,#fffce4 0 48%,#f7e5a1 70%,#e5cd7c 71%,#f8ebbd 73%,#fff6d1 75%);box-shadow:0 0 0 1px #e4d49b,0 0 32px #f5cf5c55}
+.facility-event .event-picture{width:148px;height:148px;flex-basis:148px;font-size:14px}
+.facility-event .event-picture canvas{display:block;width:100%;height:100%;image-rendering:pixelated}
+.facility-event .fe-facility{position:relative;display:grid;place-items:center;width:128px;height:128px;font-size:64px}
+.facility-event .fe-facility canvas{width:100%;height:100%;image-rendering:pixelated}
+.facility-event .new .fe-medallion:before{content:'';position:absolute;z-index:-1;width:218px;height:218px;border-radius:50%;background:repeating-conic-gradient(from 10deg,#e6b82e24 0 10deg,transparent 10deg 29deg);mask-image:radial-gradient(circle,#000 35%,transparent 70%)}
+.facility-event .fe-result{text-align:center;overflow-wrap:anywhere}
+.facility-event .fe-result+.fe-result{border-top:1px solid #d5bd7777;margin-top:20px;padding-top:16px}
+.facility-event .fe-ribbon{display:inline-block;font-size:12px;font-weight:800;color:#7b5b14;background:#f5e5a3;border-radius:99px;padding:6px 12px;margin:10px 0 0}
+.facility-event .fe-heading{font-size:21px;white-space:pre-line;line-height:1.5;margin:12px 0 5px}
+.facility-event .fe-name{display:block;font-size:24px;line-height:1.5}
+.facility-event .fe-message{font-size:16px;white-space:pre-line;line-height:1.8;margin:12px 0 17px}
+.facility-event .fe-owned{display:inline-block;border:1px solid #d8ddcc;border-radius:99px;font-size:14px;color:#61704f;padding:6px 14px;margin:9px 0}
+.facility-event .fe-skills{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-top:12px}
+.facility-event .fe-skill{background:#eef3dd;border:1px solid #d8e0be;border-radius:10px;padding:8px 10px;font-size:14px;font-weight:700}
+.facility-event .duplicate .fe-zone{height:145px}.facility-event .duplicate .fe-medallion{width:136px;height:136px;background:#f1f4df;box-shadow:none}.facility-event .duplicate .event-picture{width:120px;height:120px;flex-basis:120px}.facility-event .duplicate .fe-name{font-size:21px}
+.facility-event .fail .fe-medallion{background:#e6ebdf;box-shadow:none}.facility-event .fail .fe-ribbon{background:#e0e7d9;color:#63715c}
+.facility-event .fe-spark{position:absolute;color:#dba32b;font-size:23px;left:calc(50% - 106px);top:35px;animation:fe-twinkle 1.5s ease-in-out 2 alternate;pointer-events:none}.facility-event .fe-spark.s1{left:calc(50% + 83px);top:106px;font-size:17px}.facility-event .fe-spark.s2{left:calc(50% + 65px);top:12px;font-size:13px}
+#visitModal.facility-event .fe-continue{min-height:50px;background:#28704b;border-radius:12px;box-shadow:0 3px 0 #165137;margin:12px 0 0;font-weight:750}
+.facility-event .fe-milestone{text-align:center;font-weight:700;color:#765715}
+.facility-event .event-candidate{border:1px solid #d8e0be;background:#eef3dd;color:#263d2a;min-height:50px}
+.facility-event button:focus-visible{outline:3px solid #ddaa35;outline-offset:2px}
+@keyframes fe-twinkle{from{opacity:.35;transform:scale(.85)}to{opacity:1;transform:scale(1.1)}}
+@media(prefers-reduced-motion:reduce){.facility-event .fe-spark{animation:none}}
+@media(max-width:380px){#visitModal.facility-event #visitActions{padding-inline:16px}.facility-event .fe-heading{font-size:20px}.facility-event .fe-name{font-size:22px}}
