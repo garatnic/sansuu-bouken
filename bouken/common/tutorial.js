@@ -25,7 +25,7 @@ window.BoukenTutorial=(()=>{
   });
  }
  const illustrations={intro:[1],world:[2],firstClear:[3],final:[4,5,6,7]};
- const imageLabels={intro:'冒険ワールドへ出発',world:'わかった！',firstClear:'とじる',final:'はじめる！'};
+ const imageLabels={intro:'冒険ワールドへ出発',world:'とじる',firstClear:'とじる',final:'はじめる！'};
  // The artwork already contains buttons: real keyboard-accessible buttons sit on top.
  function illustrated(name,content,finish,allOwned){
   return new Promise(resolve=>{

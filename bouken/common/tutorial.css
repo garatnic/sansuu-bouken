@@ -12,7 +12,6 @@
 [data-art="3"] .tutorial-art-next{left:66%;top:88%;width:32%;height:10%}
 [data-art="4"] .tutorial-art-next{left:65%;top:87%;width:33%;height:10%}
 [data-art="5"] .tutorial-art-hit{top:90.5%;height:8%}
-[data-art="2"] .tutorial-art-next{position:static;display:block;width:100%;min-height:48px;margin-top:6px!important;background:#25704d!important;color:white!important;font:700 18px system-ui!important;border-radius:10px}
-.tutorial-art-dialog:has([data-art="2"]){width:min(94vw,412px,calc((100vh - 90px)*2/3));width:min(94vw,412px,calc((100dvh - 90px)*2/3))}
+[data-art="2"] .tutorial-art-next{left:72%;top:91%;width:26%;height:8%}
 .tutorial-art-error{margin:0;background:#fff4da;color:#a11;padding:12px;font:16px/1.6 system-ui}.tutorial-art-error:empty{display:none}.tutorial-owned-correction{position:absolute;box-sizing:border-box;left:2.5%;top:35%;width:46%;height:25.5%;margin:0;padding:3%;border-radius:8px;background:#fff6de;color:#41290e;font:700 clamp(10px,3.5cqw,15px)/1.6 system-ui;overflow:auto}.tutorial-owned-correction[hidden],.tutorial-art-fallback[hidden]{display:none}
 .art-failed{background:#fffdf4;padding:18px;box-sizing:border-box}.art-failed .tutorial-art-image{display:none}.art-failed .tutorial-art-hit{position:static;display:inline-block;width:47%;min-height:52px;margin:10px 1% 0!important;background:#25704d!important;color:white!important;font:700 17px system-ui!important;border-radius:10px}.tutorial-art-fallback{font:18px/1.8 system-ui;overflow-wrap:anywhere}
