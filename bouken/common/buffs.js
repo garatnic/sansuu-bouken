@@ -30,7 +30,7 @@ window.BoukenBuffs=Object.freeze({
   const stack=Array.from({length:count},()=>({id:'A03',tiles:1}));
   return {...this.execute(w,start,stack,rng),stack};
  },
- correct(w,index,cumulativeBefore=0,rng=Math.random){BoukenExplore.explore(w,index);const stack=this.roll(w,index,rng);const extra=this.execute(w,index,stack,rng);
+ correct(w,index,cumulativeBefore=0,rng=Math.random,collectionChance=0){BoukenExplore.explore(w,index);const stack=this.roll(w,index,rng);if(collectionChance>0&&rng()<collectionChance)stack.push({id:'museum',tiles:1});const extra=this.execute(w,index,stack,rng);
  const last=extra.indices.length?extra.indices[extra.indices.length-1]:index;
  const a03=this.threshold(w,last,cumulativeBefore,cumulativeBefore+1+extra.opened,rng);
  return {stack:[...stack,...a03.stack],opened:1+extra.opened+a03.opened,extra:extra.opened+a03.opened,indices:[index,...extra.indices,...a03.indices],effects:[...extra.effects,...a03.effects]};}

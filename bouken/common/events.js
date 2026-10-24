@@ -35,6 +35,7 @@ window.BoukenEvents=Object.freeze({
    const groupBonuses=new Map();for(let n=5;n<=28;n++){const lv=level('C'+String(n).padStart(2,'0'));if(lv)groupBonuses.set(String(n-4).padStart(2,'0'),[0,5,10,30][lv]);}
    entries=candidates.map(item=>({value:item,weight:(1+(!save.items?.[item.id]?c04:0))*(1+(groupBonuses.get(item.groupId)||0))}));
   }else entries=this.companionWeights(save,w,candidates,characters);
+  if(window.BoukenCollection){const stages=BoukenCollection.stages(save);entries=BoukenCollection.unknownWeights(entries,type==='collection'?save.items:save.characters,.002*stages[type==='collection'?5:3]);}
   // Keep the original corrected weights while removing selected IDs (sampling without replacement).
   const choiceLevel=level(type==='collection'?'F01':'F02');
   const count=Math.min(candidates.length,choiceLevel?choiceLevel+1:1),ids=[];
@@ -55,7 +56,8 @@ window.BoukenEvents=Object.freeze({
   const chosen=candidates.find(c=>String(c.id)===String(id));if(!chosen)throw Error('候補データがありません');
   const level=id=>this.level(w,id);
   const successBonus=[0,.35,1,3][level(type==='collection'?'C02':'D02')]+[0,.15,.35,.60][level('F03')];
-  const successRate=(0.6+successBonus)/(1+successBonus);
+  const collectionStages=window.BoukenCollection?BoukenCollection.stages(save):Array(6).fill(0);
+  const successRate=Math.min(1,(0.6+successBonus)/(1+successBonus)+.002*collectionStages[type==='collection'?4:2]);
   let success=random()<successRate,retried=false;
   const retryLevel=type==='companion'?level('D07'):0;
   if(!success&&retryLevel&&random()<[0,.50,.77,1][retryLevel]){
@@ -67,7 +69,7 @@ window.BoukenEvents=Object.freeze({
   let extra=null;
   if(success&&type==='collection'&&random()<[0,.25,.50,.75][level('C03')]){
    const others=candidates.filter(item=>item.id!==chosen.id);
-   if(others.length){const item=this.weighted(others.map(item=>({value:item,weight:(1+(!save.items?.[item.id]?[0,4,14,24][level('C04')]:0))*(1+([0,5,10,30][level('C'+String(Number(item.groupId)+4).padStart(2,'0'))]||0))})),random);const extraKey=String(item.id),was=Number(inventory[extraKey]||0);inventory[extraKey]=was+1;extra={id:item.id,name:item.name,first:was===0};}
+   if(others.length){let entries=others.map(item=>({value:item,weight:(1+(!save.items?.[item.id]?[0,4,14,24][level('C04')]:0))*(1+([0,5,10,30][level('C'+String(Number(item.groupId)+4).padStart(2,'0'))]||0))}));if(window.BoukenCollection)entries=BoukenCollection.unknownWeights(entries,save.items,.002*collectionStages[5]);const item=this.weighted(entries,random);const extraKey=String(item.id),was=Number(inventory[extraKey]||0);inventory[extraKey]=was+1;extra={id:item.id,name:item.name,first:was===0};}
   }
   w.visitedFacilities[i]=true;
   w.eventResults=w.eventResults||{};
