@@ -1,0 +1,14 @@
+*{box-sizing:border-box}
+body{max-width:680px;padding:18px;background:#f5f8f4}
+.home-status{font-size:13px;line-height:1.6;color:#53675b;margin:12px 0 18px;min-height:21px}
+.home-menu{display:grid;gap:24px;padding:0 0 max(18px,env(safe-area-inset-bottom))}
+.image-button{display:flex;align-items:center;justify-content:center;min-width:0;width:100%;height:108px;padding:12px 8px;border:2px solid #344c65;border-radius:15px;background-color:#fff;background-repeat:no-repeat;background-position:center;background-size:cover;color:#fff;font-size:clamp(22px,5.8vw,38px);font-weight:800;line-height:1.2;text-align:center;text-decoration:none;letter-spacing:.025em;text-shadow:-2px -2px 1px #000,2px -2px 1px #000,-2px 2px 1px #000,2px 2px 1px #000,0 0 5px #000,0 0 9px #000,0 2px 5px #000;box-shadow:0 3px 0 #243b4926;overflow:hidden}
+.image-button:focus-visible{outline:4px solid #e8ad28;outline-offset:4px}
+.image-button:hover{box-shadow:0 4px 12px #264c4a33}
+.image-button:active{transform:translateY(2px);box-shadow:none}
+.button-world{background-image:url('../assets/sheets/button_newworld.png');background-size:100% 100%;image-rendering:pixelated}
+.button-party{background-image:url('../assets/sheets/button_party.png');background-size:155% auto;background-position:center 18%;image-rendering:pixelated}
+.button-characters{background-image:url('../assets/sheets/button_character.png');background-size:100% auto;background-position:center top;image-rendering:pixelated}
+.button-museum{background-image:url('../assets/sheets/button_museum.png');background-size:100% auto;background-position:center top;image-rendering:pixelated}
+.button-records{background-image:url('../assets/sheets/button_achieveme.jpg');background-size:100% auto;background-position:center 47%}
+@media(max-width:500px){body{padding:14px 12px}.home-menu{gap:20px}.image-button{height:clamp(76px,19vw,96px);border-radius:12px}.home-status{margin-bottom:15px}.page-heading h1{font-size:1.45rem}}

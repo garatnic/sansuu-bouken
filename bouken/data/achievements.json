@@ -883,7 +883,7 @@
     "id": 111,
     "category": "珍記録・特別実績",
     "name": "おかえりなさい",
-    "conditionText": "中断したワールドをホームの「つづきから」で初めて再開",
+    "conditionText": "出発画面の「前のワールドに出発」で初めて再開",
     "metric": "resumed",
     "target": 1
   },

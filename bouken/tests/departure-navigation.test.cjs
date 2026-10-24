@@ -1,0 +1,16 @@
+const fs=require('fs'),path=require('path'),vm=require('vm'),assert=require('assert/strict');
+const root=path.resolve(__dirname,'..'),script=file=>[...fs.readFileSync(path.join(root,file),'utf8').matchAll(/<script>([\s\S]*?)<\/script>/g)].at(-1)[1];
+async function page(file,initial,{locked=false,failSave=false,failLoad=false}={}){
+ let saved=structuredClone(initial),writes=0;const nodes={};const node=id=>nodes[id]??={disabled:['resumeWorld','size','create'].includes(id),textContent:'',children:[],style:{},events:{},append(x){this.children.push(x)},addEventListener(n,f){this.events[n]=f}};
+ const ctx={console,document:{getElementById:node,createElement:()=>({})},location:{href:''},BoukenAchievements:{init:async()=>{},event(s){s.resumed=true}},BoukenAchievementNotice:{show(){}},BoukenProgress:{tutorialLocked:()=>locked},BoukenSave:{load(){if(failLoad)throw Error('blocked');return structuredClone(saved)},save(s){if(failSave)throw Error('full');saved=structuredClone(s);writes++;return s}},BoukenMaster:{load:async()=>[{width:5,height:5,facilityCount:1},{width:10,height:10,facilityCount:4}]}};
+ vm.createContext(ctx);await vm.runInContext(script(file),ctx);return {ctx,node,get saved(){return saved},get writes(){return writes},replace(s){saved=structuredClone(s)}};
+}
+(async()=>{
+ const empty=await page('worldcreate.html',{});assert(empty.node('resumeWorld').disabled);assert(!empty.node('create').disabled);assert(!empty.node('size').disabled);assert.equal(empty.writes,0);assert.equal(empty.node('size').children.length,1);
+ const tutorial=await page('worldcreate.html',{world:{width:5,height:5,explored:[true,false]}},{locked:true});assert(!tutorial.node('resumeWorld').disabled);assert.equal(tutorial.node('create').events.click,undefined);assert(tutorial.node('guide').textContent.includes('前のワールドに出発'));assert.equal(tutorial.writes,0);tutorial.node('resumeWorld').onclick();assert.equal(tutorial.ctx.location.href,'world.html');assert(tutorial.saved.resumed);assert.equal(tutorial.saved.world.explored[1],false);
+ const regular=await page('worldcreate.html',{world:{width:10,height:10},worldsStarted:3});assert(!regular.node('resumeWorld').disabled);assert(!regular.node('create').disabled);assert.equal(regular.node('size').children[0].value,10);assert.equal(regular.writes,0);
+ const failed=await page('worldcreate.html',{world:{width:5,height:5}},{locked:true,failSave:true});failed.node('resumeWorld').onclick();assert.equal(failed.ctx.location.href,'');assert(!failed.saved.resumed);assert(!failed.node('resumeWorld').disabled);assert(failed.node('resumeStatus').textContent.includes('full'));
+ const stale=await page('worldcreate.html',{world:{width:5,height:5}},{locked:true});stale.replace({});stale.node('resumeWorld').onclick();assert.equal(stale.ctx.location.href,'');assert.equal(stale.writes,0);
+ const home=await page('home.html',{world:{width:5,height:5}},{locked:true});assert.equal(home.node('depart').onclick,undefined);assert.equal(home.writes,0);assert(home.node('status').textContent.includes('冒険ワールドへ出発'));
+ console.log('PASS: empty/regular/tutorial departure states, read-only entry, resume preserves world, fresh save recheck, save failure blocks navigation, unified home entry');
+})().catch(e=>{console.error(e);process.exitCode=1});
