@@ -24,11 +24,43 @@ window.BoukenTutorial=(()=>{
    d.addEventListener('cancel',e=>{e.preventDefault();if(confirm)close(false);});actions.append(next);d.append(heading,progress,body,error,actions);document.body.append(d);paint();d.showModal();next.focus();
   });
  }
- function story(name,finish,allOwned=false){const content=pages[name].map(p=>[...p]);if(name==='final'&&allOwned)content[1][1]='でも、最後まで地図を完成させると、必ず仲間が見つかります！ みんな見つけたあとは、同じ仲間がもう一度来てくれます。';return modal(content,{finish,celebrate:name==='final'});}
+ const illustrations={intro:[1],world:[2],firstClear:[3],final:[4,5,6,7]};
+ const imageLabels={intro:'冒険ワールドへ出発',world:'わかった！',firstClear:'とじる',final:'はじめる！'};
+ // The artwork already contains buttons: real keyboard-accessible buttons sit on top.
+ function illustrated(name,content,finish,allOwned){
+  return new Promise(resolve=>{
+   const prior=document.activeElement,d=document.createElement('dialog');d.className='tutorial-art-dialog';d.setAttribute('aria-label','冒険のものがたり');
+   const stage=document.createElement('div');stage.className='tutorial-art-stage';const img=document.createElement('img');img.width=412;img.height=618;img.className='tutorial-art-image';
+   const fallback=document.createElement('div');fallback.className='tutorial-art-fallback';fallback.hidden=true;
+   const correction=document.createElement('p');correction.className='tutorial-owned-correction';correction.hidden=true;correction.textContent='でも、最後まで地図を完成させると、必ず仲間が見つかります！ みんな見つけたあとは、同じ仲間がもう一度来てくれます。';
+   const back=document.createElement('button'),next=document.createElement('button');back.type=next.type='button';back.className='tutorial-art-hit tutorial-art-back';next.className='tutorial-art-hit tutorial-art-next';
+   const error=document.createElement('p');error.className='tutorial-art-error';error.setAttribute('role','status');
+   let page=0,busy=false,ready=false;
+   function paint(){
+    ready=false;next.disabled=true;error.textContent='';fallback.hidden=true;fallback.replaceChildren();stage.classList.remove('art-failed');
+    const number=illustrations[name][page];stage.dataset.art=String(number);back.hidden=page===0;back.disabled=busy;
+    const label=page<content.length-1?'つぎへ':imageLabels[name];next.textContent=label;next.setAttribute('aria-label',label);back.textContent='もどる';back.setAttribute('aria-label','もどる');
+    img.alt=content[page].join('\n');correction.hidden=!(allOwned&&name==='final'&&page===1);
+    img.onload=()=>{ready=true;next.disabled=busy;};
+    img.onerror=()=>{ready=true;next.disabled=busy;stage.classList.add('art-failed');fallback.hidden=false;correction.hidden=true;for(const line of content[page]){const p=document.createElement('p');p.textContent=line;fallback.append(p);}};
+    img.src='assets/tutorial/tutorial'+String(number).padStart(2,'0')+'.png';
+    d.scrollTop=0;
+   }
+   back.onclick=()=>{if(busy||page===0)return;page--;paint();back.focus();};
+   next.onclick=async()=>{if(busy||!ready)return;if(page<content.length-1){page++;paint();next.focus();return;}
+    busy=true;next.disabled=back.disabled=true;
+    try{if(await finish()===false)throw Error('保存できませんでした');d.close();d.remove();if(prior?.isConnected)prior.focus();resolve(true);}
+    catch(e){error.textContent='説明の記録を保存できませんでした。もう一度ボタンを押してください。';}
+    finally{busy=false;next.disabled=false;back.disabled=false;}
+   };
+   d.addEventListener('cancel',e=>e.preventDefault());stage.append(img,fallback,correction,back,next);d.append(stage,error);document.body.append(d);paint();d.showModal();next.focus();
+  });
+ }
+ function story(name,finish,allOwned=false){const content=pages[name].map(p=>[...p]);if(name==='final'&&allOwned)content[1][1]='でも、最後まで地図を完成させると、必ず仲間が見つかります！ みんな見つけたあとは、同じ仲間がもう一度来てくれます。';if(name==='intro'||name==='world')return illustrated(name,[content.flat()],finish,allOwned);return illustrated(name,content,finish,allOwned);}
  async function home(s){
   if(!isActive(s))return;
   const saveFlag=key=>{const current=BoukenSave.load();current.tutorialStory[key]=true;BoukenSave.save(current);return true;};
-  if(!s.tutorialStory.introDone){await story('intro',()=>saveFlag('introDone'));s=BoukenSave.load();}
+  if(!s.tutorialStory.introDone){await story('intro',()=>saveFlag('introDone'));s=BoukenSave.load();if(!s.world&&!s.worldsStarted){location.href='worldcreate.html';return;}}
   // A reload after the reward was closed must still deliver its unfinished story.
   if(s.tutorialStory.firstRewardSeen&&!s.tutorialStory.firstClearDone){await story('firstClear',()=>saveFlag('firstClearDone'));s=BoukenSave.load();}
   if(s.tutorialStory.secondRewardSeen&&!s.tutorialStory.finalDone){const chars=await BoukenMaster.load('characters');await story('final',()=>{const current=BoukenSave.load();current.tutorialStory.finalDone=true;current.tutorialStory.complete=true;BoukenSave.save(current);return true;},chars.every(c=>Number(s.characters[c.id]||0)>0));return;}
