@@ -1,4 +1,4 @@
-// Seven terrain types with spatially correlated, marginally uniform draws.
+// Quota-controlled multi-field noise with area-preserving E08 shaping.
 window.BoukenWorldGen=Object.freeze({
  // E08: area-preserving component consolidation before facility placement.
  shape(terrain,width,height,startIndex,level,protectLand=false){
@@ -108,46 +108,57 @@ window.BoukenWorldGen=Object.freeze({
   }
  },
 
+ // Additive weights are solved so a single blessing adds 10/20/30 percentage points.
+ targets(buffs=[]){
+  const base=[.11,.20,.18,.14,.13,.13,.11];
+  const weights=base.map((p,i)=>{const lv=Math.max(0,Math.min(3,Number(buffs.find(b=>b.id==='E'+String(i+1).padStart(2,'0'))?.level||0))),d=.1*lv;return p+(d?d/(1-p-d):0);});
+  const sum=weights.reduce((a,b)=>a+b,0);return weights.map(w=>w/sum);
+ },
+ allocate(size,probabilities){
+  const raw=probabilities.map(p=>p*size),quota=raw.map(x=>Math.max(1,Math.floor(x)));let remaining=size-quota.reduce((a,b)=>a+b,0);
+  while(remaining>0){let best=0;for(let k=1;k<7;k++)if(raw[k]-quota[k]>raw[best]-quota[best])best=k;quota[best]++;remaining--;}
+  while(remaining<0){let best=-1;for(let k=0;k<7;k++)if(quota[k]>1&&(best<0||quota[k]-raw[k]>quota[best]-raw[best]))best=k;quota[best]--;remaining++;}return quota;
+ },
+ // Multi-octave value fields are suitability scores, never roulette random values.
+ field(width,height,scale){
+  const values=new Float64Array(width*height),smooth=t=>t*t*(3-2*t);
+  for(const [factor,amplitude] of [[1,.65],[.45,.25],[.20,.10]]){
+   const spacing=Math.max(2,scale*factor),gw=Math.ceil(width/spacing)+2,gh=Math.ceil(height/spacing)+2,grid=Array.from({length:gw*gh},()=>Math.random());
+   const offsetX=Math.random(),offsetY=Math.random();
+   for(let y=0;y<height;y++)for(let x=0;x<width;x++){
+    const u=x/spacing+offsetX,v=y/spacing+offsetY,i=Math.floor(u),j=Math.floor(v),a=smooth(u-i),b=smooth(v-j);
+    const value=(grid[j*gw+i]*(1-a)+grid[j*gw+i+1]*a)*(1-b)+(grid[(j+1)*gw+i]*(1-a)+grid[(j+1)*gw+i+1]*a)*b;
+    values[y*width+x]+=value*amplitude;
+   }
+  }
+  let min=Infinity,max=-Infinity;for(const v of values){min=Math.min(min,v);max=Math.max(max,v);}const range=max-min||1;
+  return Array.from(values,v=>(v-min)/range);
+ },
  generate(width,height,terrains,facilities,counts,partyBuffsSnapshot=[]){
   const setting=counts.find(v=>v.width===width&&v.height===height);if(!setting)throw Error('未対応のワールドサイズ');
-  const size=width*height, start={x:Math.floor(width/2),y:Math.floor(height/2)};
-  const startIndex=start.y*width+start.x;
-  // Uniform lattice values provide local correlation. Never average random values used for roulette.
-  const coarseW=Math.ceil(width/4)+2,coarseH=Math.ceil(height/4)+2;
-  const noise=Array.from({length:coarseW*coarseH},()=>Math.random());
-  const sample=(x,y)=>{let u=x/4,v=y/4,i=Math.floor(u),j=Math.floor(v),a=u-i,b=v-j;
-   const at=(xx,yy)=>noise[Math.min(coarseH-1,yy)*coarseW+Math.min(coarseW-1,xx)];
-   const smooth=t=>t*t*(3-2*t);a=smooth(a);b=smooth(b);
-   // Choose a corner using interpolation weights, rather than averaging its value.
-   // The selected corner remains uniform; weights depend only on position.
-   const xx=Math.random()<a?i+1:i,yy=Math.random()<b?j+1:j;
-   return at(xx,yy);
-  };
-  const ids=terrains.map(t=>t.id);
+  const size=width*height,start={x:Math.floor(width/2),y:Math.floor(height/2)},startIndex=start.y*width+start.x;
   const level=id=>Math.max(0,Math.min(3,Number(partyBuffsSnapshot.find(s=>s.id===id)?.level||0)));
-  const thresholds=[.11,.31,.49,.63,.76,.89,1]; // Baseline probabilities, before skills and start/facility overrides.
-  const baseWeights=thresholds.map((t,i)=>t-(thresholds[i-1]||0));
-  const terrain=Array(size).fill(null);
-  const adjacent=i=>{const x=i%width,y=Math.floor(i/width),out=[];if(x)out.push(i-1);if(x<width-1)out.push(i+1);if(y)out.push(i-width);if(y<height-1)out.push(i+width);return out;};
-  const connection=[1,1.08,1.16,1.3][level('E09')];
-  const terrainMultipliers=ids.map(id=>[1,4,7,11][level('E'+id.slice(1))]);
-  // E09 grows outward from the starting land. No post-generation terrain rewrite.
-  const order=Array.from({length:size},(_,i)=>i);
-  if(connection>1){terrain[startIndex]='T01';order.sort((a,b)=>Math.abs(a%width-start.x)+Math.abs(Math.floor(a/width)-start.y)-Math.abs(b%width-start.x)-Math.abs(Math.floor(b/width)-start.y));}
-  for(const i of order){
-   const x=i%width,y=Math.floor(i/width);
-   // Mixture, not weighted average: each branch has a uniform marginal.
-   const v=Math.random()<.85?sample(x,y):Math.random();
-   if(i===startIndex&&connection>1)continue;
-   const neighbors=adjacent(i).map(n=>terrain[n]).filter(Boolean),same=new Set(neighbors);
-   const landNear=neighbors.some(id=>id!=='T05');
-   const weights=ids.map((id,k)=>baseWeights[k]*terrainMultipliers[k]*(connection>1?((id==='T05')===landNear?1/connection:connection):1));
-   const total=weights.reduce((a,b)=>a+b,0);let r=v*total,index=weights.length-1;
-   for(let k=0;k<weights.length;k++){r-=weights[k];if(r<0){index=k;break;}}
-   terrain[i]=ids[index];
+  const ids=terrains.map(t=>t.id),quota=this.allocate(size,this.targets(partyBuffsSnapshot));
+  const span=Math.max(width,height),continental=this.field(width,height,span*.75),elevation=this.field(width,height,span*.45),temperature=this.field(width,height,span*.8),moisture=this.field(width,height,span*.5);
+  const terrain=Array(size).fill(null);terrain[startIndex]='T01';quota[0]--;
+  const cells=Array.from({length:size},(_,i)=>i).filter(i=>i!==startIndex);
+  const sea=cells.slice().sort((a,b)=>continental[a]-continental[b]);
+  for(let k=0;k<quota[4];k++)terrain[sea[k]]='T05';
+  const scores=Array.from({length:7},()=>Array(size).fill(0));
+  for(let i=0;i<size;i++){
+   const h=elevation[i],t=temperature[i],m=moisture[i],moderate=x=>1-Math.abs(x-.5)*2;
+   scores[0][i]=.45*moderate(t)+.35*moderate(m)+.20*(1-h);
+   scores[1][i]=.60*m+.25*moderate(t)+.15*(1-h);
+   scores[2][i]=h;
+   scores[3][i]=.55*t+.45*(1-m);
+   scores[5][i]=.80*(1-t)+.20*h;
+   scores[6][i]=.65*m+.35*(1-h);
   }
-  terrain[startIndex]='T01';
-  this.shape(terrain,width,height,startIndex,level('E08'),level('E09')>0);
+  // Rotate the suitability competition each world so no terrain is always last.
+  const order=[0,1,2,3,5,6];for(let k=order.length-1;k>0;k--){const j=Math.floor(Math.random()*(k+1));[order[k],order[j]]=[order[j],order[k]];}
+  for(const type of order){const candidates=cells.filter(i=>terrain[i]===null).sort((a,b)=>scores[type][b]-scores[type][a]);for(let k=0;k<quota[type];k++)terrain[candidates[k]]=ids[type];}
+  // E08 keeps exact quotas and incorporates land connectivity protection.
+  this.shape(terrain,width,height,startIndex,level('E08'),true);
   const weighted=entries=>{const total=entries.reduce((s,e)=>s+e.weight,0);let r=Math.random()*total;for(const e of entries){r-=e.weight;if(r<0)return e.value;}return entries.at(-1).value;};
   const facility=Array(size).fill(null),events=Array(size).fill(null),eventPools=Array(size).fill(null);
   const bonus=[0,1/4,2/3,3/2],collectionBonus=bonus[level('C01')],companionBonus=bonus[level('D01')];

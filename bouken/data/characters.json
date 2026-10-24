@@ -1138,12 +1138,12 @@
         "cost": 1
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 3,
-        "cost": 9
+        "cost": 6
       }
     ],
-    "totalCost": 12
+    "totalCost": 9
   },
   {
     "id": 35,
@@ -1988,12 +1988,12 @@
         "cost": 1
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 3,
-        "cost": 9
+        "cost": 6
       }
     ],
-    "totalCost": 12
+    "totalCost": 9
   },
   {
     "id": 60,
@@ -2090,12 +2090,12 @@
         "cost": 2
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 3,
-        "cost": 9
+        "cost": 6
       }
     ],
-    "totalCost": 12
+    "totalCost": 9
   },
   {
     "id": 63,
@@ -2226,12 +2226,12 @@
         "cost": 2
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 2,
-        "cost": 6
+        "cost": 4
       }
     ],
-    "totalCost": 12
+    "totalCost": 10
   },
   {
     "id": 67,
@@ -2590,12 +2590,12 @@
         "cost": 1
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 3,
-        "cost": 9
+        "cost": 6
       }
     ],
-    "totalCost": 12
+    "totalCost": 9
   },
   {
     "id": 78,
@@ -3236,12 +3236,12 @@
         "cost": 3
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 1,
-        "cost": 3
+        "cost": 2
       }
     ],
-    "totalCost": 12
+    "totalCost": 11
   },
   {
     "id": 97,
@@ -3542,12 +3542,12 @@
         "cost": 1
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 1,
-        "cost": 3
+        "cost": 2
       }
     ],
-    "totalCost": 12
+    "totalCost": 11
   },
   {
     "id": 106,
@@ -4868,12 +4868,12 @@
         "cost": 2
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 3,
-        "cost": 9
+        "cost": 6
       }
     ],
-    "totalCost": 12
+    "totalCost": 9
   },
   {
     "id": 145,
@@ -5538,12 +5538,12 @@
         "cost": 4
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 2,
-        "cost": 6
+        "cost": 4
       }
     ],
-    "totalCost": 12
+    "totalCost": 10
   },
   {
     "id": 165,
@@ -6242,12 +6242,12 @@
         "cost": 1
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 3,
-        "cost": 9
+        "cost": 6
       }
     ],
-    "totalCost": 12
+    "totalCost": 9
   },
   {
     "id": 186,
@@ -7038,12 +7038,12 @@
         "cost": 3
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 1,
-        "cost": 3
+        "cost": 2
       }
     ],
-    "totalCost": 12
+    "totalCost": 11
   },
   {
     "id": 210,
@@ -7718,12 +7718,12 @@
         "cost": 4
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 2,
-        "cost": 6
+        "cost": 4
       }
     ],
-    "totalCost": 12
+    "totalCost": 10
   },
   {
     "id": 230,
@@ -8602,12 +8602,12 @@
         "cost": 2
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 3,
-        "cost": 9
+        "cost": 6
       }
     ],
-    "totalCost": 12
+    "totalCost": 9
   },
   {
     "id": 256,
@@ -8704,12 +8704,12 @@
         "cost": 6
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 1,
-        "cost": 3
+        "cost": 2
       }
     ],
-    "totalCost": 12
+    "totalCost": 11
   },
   {
     "id": 259,
@@ -10030,12 +10030,12 @@
         "cost": 3
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 1,
-        "cost": 3
+        "cost": 2
       }
     ],
-    "totalCost": 12
+    "totalCost": 11
   },
   {
     "id": 298,
@@ -10564,12 +10564,12 @@
         "cost": 2
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 3,
-        "cost": 9
+        "cost": 6
       }
     ],
-    "totalCost": 12
+    "totalCost": 9
   },
   {
     "id": 314,
@@ -10734,12 +10734,12 @@
         "cost": 6
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 1,
-        "cost": 3
+        "cost": 2
       }
     ],
-    "totalCost": 12
+    "totalCost": 11
   },
   {
     "id": 319,
@@ -11234,12 +11234,12 @@
         "cost": 2
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 2,
-        "cost": 6
+        "cost": 4
       }
     ],
-    "totalCost": 12
+    "totalCost": 10
   },
   {
     "id": 334,
@@ -11880,12 +11880,12 @@
         "cost": 1
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 3,
-        "cost": 9
+        "cost": 6
       }
     ],
-    "totalCost": 12
+    "totalCost": 9
   },
   {
     "id": 353,
@@ -13332,12 +13332,12 @@
         "cost": 3
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 1,
-        "cost": 3
+        "cost": 2
       }
     ],
-    "totalCost": 12
+    "totalCost": 11
   },
   {
     "id": 396,
@@ -13570,12 +13570,12 @@
         "cost": 4
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 2,
-        "cost": 6
+        "cost": 4
       }
     ],
-    "totalCost": 12
+    "totalCost": 10
   },
   {
     "id": 403,
@@ -14376,12 +14376,12 @@
         "cost": 6
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 1,
-        "cost": 3
+        "cost": 2
       }
     ],
-    "totalCost": 12
+    "totalCost": 11
   },
   {
     "id": 427,
@@ -16620,12 +16620,12 @@
         "cost": 2
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 3,
-        "cost": 9
+        "cost": 6
       }
     ],
-    "totalCost": 12
+    "totalCost": 9
   },
   {
     "id": 493,
@@ -17028,12 +17028,12 @@
         "cost": 2
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 2,
-        "cost": 6
+        "cost": 4
       }
     ],
-    "totalCost": 12
+    "totalCost": 10
   },
   {
     "id": 505,
@@ -17062,12 +17062,12 @@
         "cost": 1
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 3,
-        "cost": 9
+        "cost": 6
       }
     ],
-    "totalCost": 12
+    "totalCost": 9
   },
   {
     "id": 506,
@@ -18718,12 +18718,12 @@
         "cost": 4
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 2,
-        "cost": 6
+        "cost": 4
       }
     ],
-    "totalCost": 12
+    "totalCost": 10
   },
   {
     "id": 555,
@@ -19568,12 +19568,12 @@
         "cost": 3
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 1,
-        "cost": 3
+        "cost": 2
       }
     ],
-    "totalCost": 12
+    "totalCost": 11
   },
   {
     "id": 580,
@@ -19636,12 +19636,12 @@
         "cost": 2
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 3,
-        "cost": 9
+        "cost": 6
       }
     ],
-    "totalCost": 12
+    "totalCost": 9
   },
   {
     "id": 582,
@@ -19840,12 +19840,12 @@
         "cost": 6
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 1,
-        "cost": 3
+        "cost": 2
       }
     ],
-    "totalCost": 12
+    "totalCost": 11
   },
   {
     "id": 588,
@@ -19874,12 +19874,12 @@
         "cost": 3
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 1,
-        "cost": 3
+        "cost": 2
       }
     ],
-    "totalCost": 12
+    "totalCost": 11
   },
   {
     "id": 589,
@@ -19942,12 +19942,12 @@
         "cost": 6
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 1,
-        "cost": 3
+        "cost": 2
       }
     ],
-    "totalCost": 12
+    "totalCost": 11
   },
   {
     "id": 591,
@@ -19976,12 +19976,12 @@
         "cost": 3
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 1,
-        "cost": 3
+        "cost": 2
       }
     ],
-    "totalCost": 12
+    "totalCost": 11
   },
   {
     "id": 592,
@@ -20112,12 +20112,12 @@
         "cost": 3
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 1,
-        "cost": 3
+        "cost": 2
       }
     ],
-    "totalCost": 12
+    "totalCost": 11
   },
   {
     "id": 596,
@@ -20278,16 +20278,11 @@
       },
       {
         "id": "E08",
-        "level": 1,
-        "cost": 2
-      },
-      {
-        "id": "E09",
-        "level": 2,
+        "level": 3,
         "cost": 6
       }
     ],
-    "totalCost": 12
+    "totalCost": 10
   },
   {
     "id": 601,
@@ -20486,12 +20481,12 @@
         "cost": 1
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 1,
-        "cost": 3
+        "cost": 2
       }
     ],
-    "totalCost": 12
+    "totalCost": 11
   },
   {
     "id": 607,
@@ -20618,16 +20613,11 @@
       },
       {
         "id": "E08",
-        "level": 1,
-        "cost": 2
-      },
-      {
-        "id": "E09",
-        "level": 2,
+        "level": 3,
         "cost": 6
       }
     ],
-    "totalCost": 12
+    "totalCost": 10
   },
   {
     "id": 611,
@@ -20690,12 +20680,12 @@
         "cost": 4
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 2,
-        "cost": 6
+        "cost": 4
       }
     ],
-    "totalCost": 12
+    "totalCost": 10
   },
   {
     "id": 613,
@@ -20792,12 +20782,12 @@
         "cost": 4
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 2,
-        "cost": 6
+        "cost": 4
       }
     ],
-    "totalCost": 12
+    "totalCost": 10
   },
   {
     "id": 616,
@@ -20860,12 +20850,12 @@
         "cost": 3
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 1,
-        "cost": 3
+        "cost": 2
       }
     ],
-    "totalCost": 12
+    "totalCost": 11
   },
   {
     "id": 618,
@@ -20996,12 +20986,12 @@
         "cost": 2
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 2,
-        "cost": 6
+        "cost": 4
       }
     ],
-    "totalCost": 12
+    "totalCost": 10
   },
   {
     "id": 622,
@@ -21462,12 +21452,12 @@
         "cost": 2
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 2,
-        "cost": 6
+        "cost": 4
       }
     ],
-    "totalCost": 12
+    "totalCost": 10
   },
   {
     "id": 636,
@@ -21632,12 +21622,12 @@
         "cost": 1
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 3,
-        "cost": 9
+        "cost": 6
       }
     ],
-    "totalCost": 12
+    "totalCost": 9
   },
   {
     "id": 641,
@@ -23264,12 +23254,12 @@
         "cost": 1
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 3,
-        "cost": 9
+        "cost": 6
       }
     ],
-    "totalCost": 12
+    "totalCost": 9
   },
   {
     "id": 689,
@@ -23706,12 +23696,12 @@
         "cost": 2
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 2,
-        "cost": 6
+        "cost": 4
       }
     ],
-    "totalCost": 12
+    "totalCost": 10
   },
   {
     "id": 702,
@@ -23808,12 +23798,12 @@
         "cost": 4
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 2,
-        "cost": 6
+        "cost": 4
       }
     ],
-    "totalCost": 12
+    "totalCost": 10
   },
   {
     "id": 705,
@@ -26144,12 +26134,12 @@
         "cost": 8
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 1,
-        "cost": 3
+        "cost": 2
       }
     ],
-    "totalCost": 12
+    "totalCost": 11
   },
   {
     "id": 774,
@@ -27164,12 +27154,12 @@
         "cost": 2
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 3,
-        "cost": 9
+        "cost": 6
       }
     ],
-    "totalCost": 12
+    "totalCost": 9
   },
   {
     "id": 804,
@@ -29048,12 +29038,12 @@
         "cost": 3
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 1,
-        "cost": 3
+        "cost": 2
       }
     ],
-    "totalCost": 12
+    "totalCost": 11
   },
   {
     "id": 860,
@@ -30660,12 +30650,12 @@
         "cost": 6
       },
       {
-        "id": "E09",
+        "id": "E08",
         "level": 1,
-        "cost": 3
+        "cost": 2
       }
     ],
-    "totalCost": 12
+    "totalCost": 11
   },
   {
     "id": 908,

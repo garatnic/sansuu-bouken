@@ -1,5 +1,5 @@
 (function(){
- const descriptionsPromise=fetch('data/skill_messages.json?v=34').then(r=>{if(!r.ok)throw Error('説明データが読み込めません');return r.json()});
+ const descriptionsPromise=fetch('data/skill_messages.json?v=48').then(r=>{if(!r.ok)throw Error('説明データが読み込めません');return r.json()});
  function createDialog(){const d=document.createElement('dialog');d.className='skill-dialog';const title=document.createElement('h2'),body=document.createElement('p'),close=document.createElement('button');close.className='close-skill';close.type='button';close.textContent='閉じる';close.onclick=()=>d.close();d.append(title,body,close);document.body.append(d);d.addEventListener('click',e=>{if(e.target===d)d.close()});return {d,title,body};}
  const dialog=createDialog();
  async function show(skill,level){dialog.title.textContent=skill.id+' '+skill.name+'　Lv'+level;dialog.body.textContent='読み込み中…';dialog.d.showModal();try{const desc=await descriptionsPromise;dialog.body.textContent=desc[skill.id]||'説明は準備中です。';}catch(e){dialog.body.textContent=e.message;}}
