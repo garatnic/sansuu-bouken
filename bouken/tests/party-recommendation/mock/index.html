@@ -2,7 +2,7 @@
 <header><div class="eyebrow">算数ぼうけん <span>おためし</span></div><h1>おすすめパーティー</h1><p class="safe-note">ゲームの編成は かわらないよ。</p></header>
 <p id="loading" role="status">仲間を よんでいます…</p>
 <section id="recommendView" hidden>
-<div class="purpose"><label for="type">どんな ぼうけんにする？</label><select id="type" aria-label="おすすめタイプ"><option value="balanced">おまかせ</option><option value="explore">どんどん開拓</option><option value="treasure">お宝あつめ</option><option value="companion">仲間あつめ</option><option value="map">マップ探索</option></select></div>
+<div class="purpose"><p id="typeLabel">どんな ぼうけんにする？</p><div id="types" class="type-grid" role="group" aria-labelledby="typeLabel"></div></div>
 <details class="current-panel"><summary>いまのパーティーと 見くらべる</summary><div id="current" class="mini-party"></div><p class="small">これも おためし用の編成だよ。</p></details>
 <section class="recommend-panel" aria-labelledby="candidateTitle"><div class="panel-heading"><div><span class="caption">おすすめの なかま</span><h2 id="candidateTitle">おまかせ</h2></div><span id="changeCount" class="change-count"></span></div>
 <p class="tap-guide">なかまをタップして <strong>🔒 固定</strong> しよう！</p>
