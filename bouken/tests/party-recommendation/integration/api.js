@@ -26,15 +26,19 @@ function randomParty(runtime,input,locked,current,random){validate(runtime,input
 function randomOther(runtime,input,locked,current,seen,random){validate(runtime,input,null,locked);if(current.every(id=>id!==null))validate(runtime,input,current,locked);if(locked.length===input.slots)return {status:'locked',party:[...current]};const free=input.owned.filter(id=>!locked.includes(id)),need=input.slots-locked.length;if(free.length===need)return {status:'single',party:[...current]};let fallback;for(let n=0;n<256;n++){const party=randomParty(runtime,input,locked,current,random);if(key(party)===key(current))continue;fallback=party;if(!seen.has(key(party)))return {status:'new',party};}
  // For small candidate spaces exhaustively establish whether any unseen set remains.
  const combinations=(n,k)=>{let v=1;for(let i=1;i<=k;i++)v=v*(n-i+1)/i;return v;};
- if(combinations(free.length,need)<=10000){const fresh=[];function visit(at,p){if(p.length===need){const party=arrange(input,p,locked,current);if(key(party)!==key(current)&&!seen.has(key(party)))fresh.push(party);return;}for(let i=at;i<=free.length-(need-p.length);i++)visit(i+1,[...p,free[i]]);}visit(0,[]);if(fresh.length)return {status:'new',party:fresh[Math.floor(random()*fresh.length)]};return {status:'cycled',party:fallback};}
- return {status:'retry-limit',party:fallback};
+ if(combinations(free.length,need)<=10000){const fresh=[],alternatives=[];function visit(at,p){if(p.length===need){const party=arrange(input,p,locked,current);if(key(party)!==key(current)){alternatives.push(party);if(!seen.has(key(party)))fresh.push(party);}return;}for(let i=at;i<=free.length-(need-p.length);i++)visit(i+1,[...p,free[i]]);}visit(0,[]);if(fresh.length)return {status:'new',party:fresh[Math.floor(random()*fresh.length)]};return {status:'cycled',party:alternatives[Math.floor(random()*alternatives.length)]};}
+ if(!fallback){fallback=[...current];const position=current.findIndex(id=>!locked.includes(id)),replacement=free.find(id=>!current.includes(id));fallback[position]=replacement;}return {status:'retry-limit',party:fallback};
 }
 function diagnose(runtime,party){const buffs=Array.from(runtime.c.BoukenParty.buffs(party,runtime.byId)),has=id=>buffs.some(x=>x.id===id),facts=[];const add=(text,ids,source)=>facts.push({text,skills:ids,source});
  if(has('A11'))add('出発したときに、土地をひらくスキルがあるよ。',['A11'],'common/buffs.js initial');
  if(buffs.some(x=>/^A0[1-9]$|^A10$|^A12$/.test(x.id)))add('問題に正解したあと、開拓を助けるスキルがあるよ。',buffs.filter(x=>x.id[0]==='A'&&x.id!=='A11').map(x=>x.id),'common/buffs.js correct/threshold');
  if(buffs.some(x=>x.id[0]==='B'))add('かくれた世界をしらべるスキルがあるよ。',buffs.filter(x=>x.id[0]==='B').map(x=>x.id),'common/buffs.js initialVision/revealNear/detected/guide/eventSense');
  if(has('C01')&&has('D01'))add('お宝と仲間の出やすさは、同じくじの中でわけ合うよ。',['C01','D01'],'common/worldgen.js eventWeights');
- const collectors=buffs.filter(x=>x.id[0]==='C'&&Number(x.id.slice(1))>=5);if(collectors.length>1)add('いくつかの種類のお宝を出やすくするよ。どれも同じくじからえらぶよ。',collectors.map(x=>x.id),'common/events.js itemWeights');
+ const collectors=buffs.filter(x=>x.id[0]==='C'&&Number(x.id.slice(1))>=5);if(collectors.length)add(collectors.length>1?'いくつかの種類のお宝を出やすくするよ。どれも同じくじからえらぶよ。':'ある種類のお宝を出やすくするスキルがあるよ。',collectors.map(x=>x.id),'common/events.js itemWeights');
+ if(has('C01'))add('お宝のイベントを出やすくするスキルがあるよ。',['C01'],'common/worldgen.js chooseEvent');
+ if(has('C02'))add('お宝を手に入れるのを助けるスキルがあるよ。',['C02'],'common/events.js resolve');
+ if(has('D01'))add('仲間のイベントを出やすくするスキルがあるよ。',['D01'],'common/worldgen.js chooseEvent');
+ if(has('D05'))add('まだ仲間になっていない仲間を出やすくするスキルがあるよ。',['D05'],'common/events.js companionWeights');
  if(has('C04'))add('まだ持っていないお宝を出やすくするスキルがあるよ。',['C04'],'common/events.js itemWeights');
  if(has('D05')&&has('D06'))add('新しい仲間と、同じなかまの種類をよぶよ。出会いやすさは手持ちでかわるよ。',['D05','D06'],'common/events.js companionWeights');
  if(has('D02')&&has('D07'))add('勧誘を助けて、失敗したときはもう一度ためすスキルもあるよ。',['D02','D07'],'common/events.js resolve');

@@ -1,0 +1,763 @@
+{
+  "sourceCommit": "26ea00fd61e1e8e34ba249b08a95567e745ba8d0",
+  "version": 69,
+  "cases": 31,
+  "auditCases": 11,
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "linux",
+    "arch": "x64",
+    "cpu": "AMD EPYC 9V74 80-Core Processor"
+  },
+  "qualityGate": "failed / do not integrate",
+  "specialistComparisons": [
+    {
+      "spec": {
+        "count": 30,
+        "fixed": 0,
+        "fraction": 0.5,
+        "size": 10,
+        "ownershipSeed": 305001
+      },
+      "mode": "explore",
+      "vsOneRandomPaired95": [
+        0.08958333333333338,
+        0.07449976237340397,
+        0.10466690429326278
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.9942965779467684
+    },
+    {
+      "spec": {
+        "count": 30,
+        "fixed": 0,
+        "fraction": 0.5,
+        "size": 10,
+        "ownershipSeed": 305001
+      },
+      "mode": "treasure",
+      "vsOneRandomPaired95": [
+        0.40625,
+        0.12691568546955506,
+        0.685584314530445
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.6383333333333336
+    },
+    {
+      "spec": {
+        "count": 30,
+        "fixed": 0,
+        "fraction": 0.5,
+        "size": 10,
+        "ownershipSeed": 305001
+      },
+      "mode": "companion",
+      "vsOneRandomPaired95": [
+        0.625,
+        0.2756237816686948,
+        0.9743762183313052
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.6479166666666667
+    },
+    {
+      "spec": {
+        "count": 30,
+        "fixed": 0,
+        "fraction": 0.5,
+        "size": 10,
+        "ownershipSeed": 305001
+      },
+      "mode": "map",
+      "vsOneRandomPaired95": [
+        0.0738608870967742,
+        0.06439788841403163,
+        0.08332388577951677
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 1.0746904563160824
+    },
+    {
+      "spec": {
+        "count": 100,
+        "fixed": 0,
+        "fraction": 0.5,
+        "size": 10,
+        "ownershipSeed": 305001
+      },
+      "mode": "explore",
+      "vsOneRandomPaired95": [
+        0.33749999999999997,
+        0.2942114478699077,
+        0.3807885521300922
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.9665242165242166
+    },
+    {
+      "spec": {
+        "count": 100,
+        "fixed": 0,
+        "fraction": 0.5,
+        "size": 10,
+        "ownershipSeed": 305001
+      },
+      "mode": "treasure",
+      "vsOneRandomPaired95": [
+        0.015625000000000003,
+        -0.2302600445658073,
+        0.2615100445658073
+      ],
+      "belowBestOtherMode": true,
+      "heldoutVsTrainRawRatio": 0.5136054421768709
+    },
+    {
+      "spec": {
+        "count": 100,
+        "fixed": 0,
+        "fraction": 0.5,
+        "size": 10,
+        "ownershipSeed": 305001
+      },
+      "mode": "companion",
+      "vsOneRandomPaired95": [
+        0.3125,
+        0.06408588490054523,
+        0.5609141150994548
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.5691964285714287
+    },
+    {
+      "spec": {
+        "count": 100,
+        "fixed": 0,
+        "fraction": 0.5,
+        "size": 10,
+        "ownershipSeed": 305001
+      },
+      "mode": "map",
+      "vsOneRandomPaired95": [
+        0.01075100806451613,
+        0.0019076005284548534,
+        0.019594415600577404
+      ],
+      "belowBestOtherMode": true,
+      "heldoutVsTrainRawRatio": 0.9296890216191651
+    },
+    {
+      "spec": {
+        "count": 140,
+        "fixed": 0,
+        "fraction": 0.5,
+        "size": 10,
+        "ownershipSeed": 305001
+      },
+      "mode": "explore",
+      "vsOneRandomPaired95": [
+        0.5104166666666666,
+        0.4605085274844568,
+        0.5603248058488765
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.9381127450980392
+    },
+    {
+      "spec": {
+        "count": 140,
+        "fixed": 0,
+        "fraction": 0.5,
+        "size": 10,
+        "ownershipSeed": 305001
+      },
+      "mode": "treasure",
+      "vsOneRandomPaired95": [
+        0.4859375,
+        0.09477231817681414,
+        0.877102681823186
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.8203517587939699
+    },
+    {
+      "spec": {
+        "count": 140,
+        "fixed": 0,
+        "fraction": 0.5,
+        "size": 10,
+        "ownershipSeed": 305001
+      },
+      "mode": "companion",
+      "vsOneRandomPaired95": [
+        0.203125,
+        -0.16180901897554734,
+        0.5680590189755473
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.7321428571428573
+    },
+    {
+      "spec": {
+        "count": 140,
+        "fixed": 0,
+        "fraction": 0.5,
+        "size": 10,
+        "ownershipSeed": 305001
+      },
+      "mode": "map",
+      "vsOneRandomPaired95": [
+        0.045292338709677415,
+        0.04033859305051747,
+        0.05024608436883736
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.9954791344667699
+    },
+    {
+      "spec": {
+        "count": 279,
+        "fixed": 0,
+        "fraction": 0.5,
+        "size": 10,
+        "ownershipSeed": 305001
+      },
+      "mode": "explore",
+      "vsOneRandomPaired95": [
+        0.6375,
+        0.5943109619144777,
+        0.6806890380855222
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.987617924528302
+    },
+    {
+      "spec": {
+        "count": 279,
+        "fixed": 0,
+        "fraction": 0.5,
+        "size": 10,
+        "ownershipSeed": 305001
+      },
+      "mode": "treasure",
+      "vsOneRandomPaired95": [
+        0.9500000000000001,
+        0.6486175535432464,
+        1.2513824464567538
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.970905172413793
+    },
+    {
+      "spec": {
+        "count": 279,
+        "fixed": 0,
+        "fraction": 0.5,
+        "size": 10,
+        "ownershipSeed": 305001
+      },
+      "mode": "companion",
+      "vsOneRandomPaired95": [
+        -0.12499999999999999,
+        -0.43875308763420956,
+        0.18875308763420956
+      ],
+      "belowBestOtherMode": true,
+      "heldoutVsTrainRawRatio": 0.3516666666666666
+    },
+    {
+      "spec": {
+        "count": 279,
+        "fixed": 0,
+        "fraction": 0.5,
+        "size": 10,
+        "ownershipSeed": 305001
+      },
+      "mode": "map",
+      "vsOneRandomPaired95": [
+        0.05737063172043011,
+        0.0547927410499981,
+        0.05994852239086212
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 1.0372577908741853
+    },
+    {
+      "spec": {
+        "count": 500,
+        "fixed": 0,
+        "fraction": 0.5,
+        "size": 10,
+        "ownershipSeed": 305001
+      },
+      "mode": "explore",
+      "vsOneRandomPaired95": [
+        0.778125,
+        0.7282883093742484,
+        0.8279616906257515
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.9815618221258132
+    },
+    {
+      "spec": {
+        "count": 500,
+        "fixed": 0,
+        "fraction": 0.5,
+        "size": 10,
+        "ownershipSeed": 305001
+      },
+      "mode": "treasure",
+      "vsOneRandomPaired95": [
+        3.5578125000000003,
+        2.801645421851523,
+        4.313979578148477
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 1.3596881959910911
+    },
+    {
+      "spec": {
+        "count": 500,
+        "fixed": 0,
+        "fraction": 0.5,
+        "size": 10,
+        "ownershipSeed": 305001
+      },
+      "mode": "companion",
+      "vsOneRandomPaired95": [
+        0.765625,
+        0.4145228592978317,
+        1.1167271407021682
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.6239837398373985
+    },
+    {
+      "spec": {
+        "count": 500,
+        "fixed": 0,
+        "fraction": 0.5,
+        "size": 10,
+        "ownershipSeed": 305001
+      },
+      "mode": "map",
+      "vsOneRandomPaired95": [
+        0.13930443548387098,
+        0.12742637917506186,
+        0.1511824917926801
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 1.029034160073037
+    },
+    {
+      "spec": {
+        "count": 927,
+        "fixed": 0,
+        "fraction": 0.5,
+        "size": 10,
+        "ownershipSeed": 305001
+      },
+      "mode": "explore",
+      "vsOneRandomPaired95": [
+        0.8854166666666666,
+        0.8357245342942955,
+        0.9351087990390378
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.9635316698656432
+    },
+    {
+      "spec": {
+        "count": 927,
+        "fixed": 0,
+        "fraction": 0.5,
+        "size": 10,
+        "ownershipSeed": 305001
+      },
+      "mode": "treasure",
+      "vsOneRandomPaired95": [
+        2.30625,
+        1.6456763505323817,
+        2.966823649467618
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.8282967032967034
+    },
+    {
+      "spec": {
+        "count": 927,
+        "fixed": 0,
+        "fraction": 0.5,
+        "size": 10,
+        "ownershipSeed": 305001
+      },
+      "mode": "companion",
+      "vsOneRandomPaired95": [
+        0.8125,
+        0.44500000000000006,
+        1.18
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.71875
+    },
+    {
+      "spec": {
+        "count": 927,
+        "fixed": 0,
+        "fraction": 0.5,
+        "size": 10,
+        "ownershipSeed": 305001
+      },
+      "mode": "map",
+      "vsOneRandomPaired95": [
+        0.10819892473118281,
+        0.10255222173324151,
+        0.11384562772912411
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.9580180921052629
+    },
+    {
+      "spec": {
+        "count": 100,
+        "fraction": 0.05,
+        "size": 10,
+        "ownershipSeed": 305011,
+        "fixed": 0
+      },
+      "mode": "explore",
+      "vsOneRandomPaired95": [
+        0.43229166666666663,
+        0.42192647395345195,
+        0.4426568593798813
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.9793447293447287
+    },
+    {
+      "spec": {
+        "count": 100,
+        "fraction": 0.05,
+        "size": 10,
+        "ownershipSeed": 305011,
+        "fixed": 0
+      },
+      "mode": "treasure",
+      "vsOneRandomPaired95": [
+        0.9812500000000001,
+        0.654297789449481,
+        1.308202210550519
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.8139931740614335
+    },
+    {
+      "spec": {
+        "count": 100,
+        "fraction": 0.05,
+        "size": 10,
+        "ownershipSeed": 305011,
+        "fixed": 0
+      },
+      "mode": "companion",
+      "vsOneRandomPaired95": [
+        0.59375,
+        0.31727233144487527,
+        0.8702276685551247
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.55
+    },
+    {
+      "spec": {
+        "count": 100,
+        "fraction": 0.05,
+        "size": 10,
+        "ownershipSeed": 305011,
+        "fixed": 0
+      },
+      "mode": "map",
+      "vsOneRandomPaired95": [
+        0.08723118279569893,
+        0.07352476054981268,
+        0.10093760504158518
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 1.122905782741848
+    },
+    {
+      "spec": {
+        "count": 500,
+        "fraction": 0.95,
+        "size": 10,
+        "ownershipSeed": 305012,
+        "fixed": 0
+      },
+      "mode": "explore",
+      "vsOneRandomPaired95": [
+        0.8354166666666667,
+        0.7800713532369101,
+        0.8907619800964233
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 1.0245726495726497
+    },
+    {
+      "spec": {
+        "count": 500,
+        "fraction": 0.95,
+        "size": 10,
+        "ownershipSeed": 305012,
+        "fixed": 0
+      },
+      "mode": "treasure",
+      "vsOneRandomPaired95": [
+        1.4859375000000001,
+        1.102521668987813,
+        1.8693533310121873
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.7882947976878613
+    },
+    {
+      "spec": {
+        "count": 500,
+        "fraction": 0.95,
+        "size": 10,
+        "ownershipSeed": 305012,
+        "fixed": 0
+      },
+      "mode": "companion",
+      "vsOneRandomPaired95": [
+        0.85625,
+        0.5039006069849636,
+        1.2085993930150363
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.7128099173553719
+    },
+    {
+      "spec": {
+        "count": 500,
+        "fraction": 0.95,
+        "size": 10,
+        "ownershipSeed": 305012,
+        "fixed": 0
+      },
+      "mode": "map",
+      "vsOneRandomPaired95": [
+        0.11189684139784947,
+        0.10120124479150198,
+        0.12259243800419696
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.9542495029821075
+    },
+    {
+      "spec": {
+        "count": 927,
+        "fraction": 0.95,
+        "size": 10,
+        "ownershipSeed": 305013,
+        "fixed": 0
+      },
+      "mode": "explore",
+      "vsOneRandomPaired95": [
+        0.9093749999999999,
+        0.8559847838834554,
+        0.9627652161165444
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.9810311284046691
+    },
+    {
+      "spec": {
+        "count": 927,
+        "fraction": 0.95,
+        "size": 10,
+        "ownershipSeed": 305013,
+        "fixed": 0
+      },
+      "mode": "treasure",
+      "vsOneRandomPaired95": [
+        1.98125,
+        1.573589654048508,
+        2.388910345951492
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.873417721518987
+    },
+    {
+      "spec": {
+        "count": 927,
+        "fraction": 0.95,
+        "size": 10,
+        "ownershipSeed": 305013,
+        "fixed": 0
+      },
+      "mode": "companion",
+      "vsOneRandomPaired95": [
+        0.84375,
+        0.4299376326120426,
+        1.2575623673879575
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 1.0416666666666667
+    },
+    {
+      "spec": {
+        "count": 927,
+        "fraction": 0.95,
+        "size": 10,
+        "ownershipSeed": 305013,
+        "fixed": 0
+      },
+      "mode": "map",
+      "vsOneRandomPaired95": [
+        0.08172211021505378,
+        0.07595757785829134,
+        0.08748664257181622
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.9553430858042509
+    },
+    {
+      "spec": {
+        "count": 279,
+        "fraction": 0.5,
+        "size": 20,
+        "ownershipSeed": 305014,
+        "fixed": 0
+      },
+      "mode": "explore",
+      "vsOneRandomPaired95": [
+        0.7395833333333333,
+        0.6677599378802597,
+        0.8114067287864069
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 1.0212264150943398
+    },
+    {
+      "spec": {
+        "count": 279,
+        "fraction": 0.5,
+        "size": 20,
+        "ownershipSeed": 305014,
+        "fixed": 0
+      },
+      "mode": "treasure",
+      "vsOneRandomPaired95": [
+        4.63125,
+        3.7590989525335794,
+        5.50340104746642
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 1.2108355091383813
+    },
+    {
+      "spec": {
+        "count": 279,
+        "fraction": 0.5,
+        "size": 20,
+        "ownershipSeed": 305014,
+        "fixed": 0
+      },
+      "mode": "companion",
+      "vsOneRandomPaired95": [
+        3.05625,
+        2.4293651276788046,
+        3.683134872321195
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 1.2075098814229246
+    },
+    {
+      "spec": {
+        "count": 279,
+        "fraction": 0.5,
+        "size": 20,
+        "ownershipSeed": 305014,
+        "fixed": 0
+      },
+      "mode": "map",
+      "vsOneRandomPaired95": [
+        0.1662987231182796,
+        0.1431848014532193,
+        0.18941264478333988
+      ],
+      "belowBestOtherMode": true,
+      "heldoutVsTrainRawRatio": 0.9660901173428313
+    },
+    {
+      "spec": {
+        "count": 500,
+        "fraction": 0.5,
+        "size": 30,
+        "ownershipSeed": 305015,
+        "fixed": 0
+      },
+      "mode": "explore",
+      "vsOneRandomPaired95": [
+        0.7229166666666667,
+        0.6694295752182349,
+        0.7764037581150984
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 1.0365853658536583
+    },
+    {
+      "spec": {
+        "count": 500,
+        "fraction": 0.5,
+        "size": 30,
+        "ownershipSeed": 305015,
+        "fixed": 0
+      },
+      "mode": "treasure",
+      "vsOneRandomPaired95": [
+        7.078125,
+        6.192456121468529,
+        7.963793878531471
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 1.067453625632378
+    },
+    {
+      "spec": {
+        "count": 500,
+        "fraction": 0.5,
+        "size": 30,
+        "ownershipSeed": 305015,
+        "fixed": 0
+      },
+      "mode": "companion",
+      "vsOneRandomPaired95": [
+        3.371875,
+        2.755248597334894,
+        3.9885014026651064
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.83
+    },
+    {
+      "spec": {
+        "count": 500,
+        "fraction": 0.5,
+        "size": 30,
+        "ownershipSeed": 305015,
+        "fixed": 0
+      },
+      "mode": "map",
+      "vsOneRandomPaired95": [
+        0.33979838709677423,
+        0.312578829202549,
+        0.3670179449909995
+      ],
+      "belowBestOtherMode": false,
+      "heldoutVsTrainRawRatio": 0.970031165659941
+    }
+  ]
+}

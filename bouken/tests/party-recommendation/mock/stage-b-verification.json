@@ -2,7 +2,27 @@
   "version": 69,
   "tests": 12,
   "mixedOperations": 3000,
-  "browser": "pending",
+  "browser": {
+    "commit": "696361d369a7c2eafd8d47f6ef10ead8cae480a9",
+    "environment": "cloud Chrome desktop",
+    "passed": [
+      "6 modes preserve 2 locked IDs/positions",
+      "all locked disables recommendation",
+      "2/5 people and locked unopened slots",
+      "single candidate explanation",
+      "mock decision, back and reset"
+    ],
+    "widths": [
+      320,
+      390,
+      412,
+      800
+    ],
+    "horizontalOverflow": false,
+    "minModeButtonHeight": 48,
+    "sheetRequests": 1,
+    "blockedStorageAttempts": []
+  },
   "smartphone": "user pending",
   "saveWrites": 0
 }
