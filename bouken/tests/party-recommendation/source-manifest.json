@@ -1,6 +1,6 @@
 {
-  "commit": "6f03aeefcf34d848b6cd4cc4dd4162a1adcd0877",
-  "version": 69,
+  "commit": "7f810a5e6964ec1d78ca572f24d91588f7a6c2ce",
+  "version": 70,
   "gitBlobs": {
     "bouken/common/buffs.js": "47bd448294bc53924cd85757aa1f1f77497cb13e",
     "bouken/common/collection.js": "9a52a2e880de0c8e4bf0f48d45966e87ef4436a9",
@@ -17,10 +17,10 @@
     "bouken/data/skills.json": "7ade9fddd739c586f5c7954e6aa80ea66c8eff19",
     "bouken/data/terrains.json": "316bd119f274ac678224e380fe41cee4976772e2",
     "bouken/data/world_facility_counts.json": "a1dfda8921560a21cb28afb14d1a09f5e0859b63",
-    "bouken/world.html": "633737a73ec4f353171555aa638bc0272a4ca59b",
-    "bouken/worldcreate.html": "87b9f7554ff2abf69e7811fb51c47828d3ce2883",
-    "bouken/common/version.js": "493877176bc457dd6e28c8687bb5b6913bf4de0c"
+    "bouken/world.html": "81e28859ab6bb99bd921f34e0d0284ab3132dfdf",
+    "bouken/worldcreate.html": "7d40443920adb547067f8a74939a69eb517db7e7",
+    "bouken/common/version.js": "bb4b64c142c7154ddeacffaa3adf7dcbe508a6f2"
   },
   "originalResearchCommit": "bf5a69255f627090c2e6fa2ce089209b88d72a4f",
-  "note": "Current runtime pin refreshed for approved character name/description update only. Original pin retained in source-manifest-original-ver69.json; historical quality results retain their original input."
+  "note": "ver.70: title debug adds ten characters. Game behavior sources unchanged; version and HTML cache metadata refreshed. Historical research pin/results retained separately."
 }
