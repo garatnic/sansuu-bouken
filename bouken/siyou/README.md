@@ -46,6 +46,8 @@
 
 [評価エンジン第2段階](おすすめパーティー評価エンジン第2段階検証.md)：3正規化・専門下限・探索改良・13進行/所有/サイズ条件・第1段階との独立比較・Workerブラウザ試作を検証。[第2段階コード](../tests/party-recommendation/phase2/README.md)。速度と一部専門成果は改善したが、序盤/終盤の専門推薦の不安定が残るため、ゲームUIへの組込みは追加検証後。スマホ実機性能は未確認。
 
+[おすすめパーティー操作モック](../tests/party-recommendation/mock/index.html)：スマホで固定・再提案・比較・決定/戻るを試す独立サンプル。[仕様と確認手順](../tests/party-recommendation/mock/README.md)。実エンジン・本体保存には接続せず、ユーザーの操作評価待ち。
+
 ## 原本データ
 
 - [characters.csv](source_csv/characters.csv)：927体の基本情報/24大・103小分類。

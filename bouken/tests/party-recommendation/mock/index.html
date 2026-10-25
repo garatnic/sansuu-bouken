@@ -1,0 +1,21 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#22593f"><title>おすすめパーティー｜操作モック</title><link rel="stylesheet" href="../../../common/character-detail.css?v=69"><link rel="stylesheet" href="style.css"></head><body><main>
+<header><div class="eyebrow">算数ぼうけん <span>おためし</span></div><h1>おすすめパーティー</h1><p class="safe-note">ゲームの編成は かわらないよ。</p></header>
+<p id="loading" role="status">仲間を よんでいます…</p>
+<section id="recommendView" hidden>
+<div class="purpose"><label for="type">どんな ぼうけんにする？</label><select id="type" aria-label="おすすめタイプ"><option value="balanced">おまかせ</option><option value="explore">どんどん開拓</option><option value="treasure">お宝あつめ</option><option value="companion">仲間あつめ</option><option value="map">マップ探索</option></select></div>
+<details class="current-panel"><summary>いまのパーティーと 見くらべる</summary><div id="current" class="mini-party"></div><p class="small">これも おためし用の編成だよ。</p></details>
+<section class="recommend-panel" aria-labelledby="candidateTitle"><div class="panel-heading"><div><span class="caption">おすすめの なかま</span><h2 id="candidateTitle">おまかせ</h2></div><span id="changeCount" class="change-count"></span></div>
+<p class="tap-guide">なかまをタップして <strong>🔒 固定</strong> しよう！</p>
+<div id="party" class="party-grid"></div>
+<div class="lock-row"><span id="lockCount">固定 0人</span><button id="unlock" class="text-button" type="button">固定をすべて解除</button></div>
+<div class="reason"><span aria-hidden="true">✦</span><div><h3>この編成がおすすめの理由 <small>サンプル</small></h3><p id="reason"></p></div></div>
+</section>
+<p id="feedback" class="feedback" role="status" aria-live="polite">好きな仲間を 固定してみよう！</p>
+<button id="other" class="primary" type="button"><span aria-hidden="true">↻</span> ほかのおすすめ</button>
+<div class="decisions"><button id="back" class="secondary" type="button">もどる</button><button id="choose" class="choose" type="button">このパーティーにする</button></div>
+<p class="sample-note">組み合わせは 操作確認用のサンプルです。<br>本物のおすすめエンジンには つながっていません。</p>
+<details class="testing"><summary>おためし条件・開発用の確認</summary><p>条件を変えると、固定も最初からになります。</p><div class="test-fields"><label for="size">パーティー人数<select id="size"><option value="1">1人</option><option value="2">2人</option><option selected value="3">3人</option><option value="4">4人</option><option value="5">5人</option></select></label><label for="pool">候補の数<select id="pool"><option value="many">たっぷり</option><option value="few">少ない</option><option value="single">ひと組だけ</option></select></label></div><label class="check"><input id="hideImages" type="checkbox">画像なしの表示をためす</label><p id="imageStatus"></p><pre id="diagnostics"></pre></details>
+</section>
+<section id="returnView" class="return-panel" hidden><span class="return-icon" aria-hidden="true">⚑</span><h2>いまのパーティー</h2><div id="returnParty" class="mini-party"></div><p>はじめの編成に もどったよ。<br>ゲームのセーブは かわっていません。</p><button id="again" class="primary" type="button">もういちど ためす</button></section>
+<dialog id="chosen" aria-labelledby="chosenTitle"><div class="celebrate" aria-hidden="true">✦ ✧ ✦</div><h2 id="chosenTitle">この編成を えらびました！</h2><div id="chosenParty" class="mini-party"></div><p>おためしなので、<br>ゲームの編成は かわらないよ。</p><button id="closeChosen" class="primary" type="button">つづけて ためす</button></dialog>
+</main><script src="guard.js"></script><script defer src="../../../common/character-images.js?v=69"></script><script defer src="../../../common/character-detail.js?v=69"></script><script defer src="model.js"></script><script defer src="app.js"></script></body></html>

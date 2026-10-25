@@ -1,0 +1,1 @@
+This non-image response deliberately exercises the image-error fallback in the isolated UI mock (?images=fail).
