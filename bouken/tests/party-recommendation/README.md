@@ -51,3 +51,7 @@ console.log(result.recommendations);
 - results.json / results-quick.json / audit-results.json：実測値と再検証用サンプル。
 
 数式、条件、測定結果、限界は[検証報告書](../../siyou/おすすめパーティー評価エンジン検証.md)を参照。UIへの組込みや最適性の保証は含まない。
+
+## 第2段階
+
+[改良エンジン・実行手順](phase2/README.md)、[第2段階報告書](../../siyou/おすすめパーティー評価エンジン第2段階検証.md)、[独立ブラウザ試作](phase2/browser.html)。第1段階のコード・設定・結果はこのまま再実行できる。第2段階はphase2/へ追加し、正式機能への採用は未決定。

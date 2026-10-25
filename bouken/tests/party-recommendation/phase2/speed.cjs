@@ -1,0 +1,6 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),L=require('./node.cjs'),input=require('./results/legacy-500.json'),r=L.load(),party=input.phase1Recommendations[0].party,cfg=input.spec.config,seeds=Array.from({length:32},(_,i)=>171001+i);
+const runOld=()=>seeds.map(seed=>L.Phase1.adventure(r,input.input.save,party,cfg,seed)),runNew=()=>seeds.map(seed=>L.adventure(r,input.input.save,party,cfg,seed,{full:true}));
+runOld();runNew();const rows=[];
+for(let i=0;i<5;i++){let a,b,oldMs,newMs;for(const name of i%2?['new','old']:['old','new']){const start=performance.now();if(name==='old'){a=runOld();oldMs=performance.now()-start;}else{b=runNew();newMs=performance.now()-start;}}for(let j=0;j<32;j++)if(JSON.stringify(a[j].raw)!==JSON.stringify(b[j].legacyRaw))throw Error('Replay mismatch');rows.push({oldMs,newMs});}
+const median=x=>[...x].sort((a,b)=>a-b)[2],output={case:input.spec.id,party,seeds,warmupTrialsPerEngine:32,repetitions:5,alternatingOrder:true,rows,oldMedianMs:median(rows.map(x=>x.oldMs)),newMedianMs:median(rows.map(x=>x.newMs)),identicalLegacyRaw:true};fs.writeFileSync(path.join(__dirname,'speed-results.json'),JSON.stringify(output,null,2)+'\n');console.log(output);

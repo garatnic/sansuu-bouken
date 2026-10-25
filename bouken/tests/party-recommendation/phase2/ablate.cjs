@@ -1,0 +1,10 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),L=require('./node.cjs'),input=require('./results/legacy-500.json'),r=L.load();
+const variants=[['all',{}],['oneSwap',{twoSwap:false}],['singleStart',{restarts:1}],['narrowBeam',{beamWidth:1}],['fixedTrials',{adaptive:false,minTrials:16,maxTrials:16}],['seed2',{searchSeed:172002}],['seed3',{searchSeed:172003}]];
+(async()=>{const results=[];for(const [id,patch]of variants){const cfg={...input.spec.config,...patch,maxAdventures:500};const result=await L.recommend(r,input.input,cfg,{incumbents:input.phase1Recommendations.map(x=>x.party)});results.push({id,result});console.log('ABLATION',id,result.elapsedMs,result.adventures);}
+ const cache=new Map(),seeds=Array.from({length:32},(_,i)=>161001+i);for(const v of results)for(const rec of v.result.recommendations){const key=L.signature(r,rec.party);if(!cache.has(key)){const trials=seeds.map(seed=>L.adventure(r,input.input.save,rec.party,input.spec.config,seed));cache.set(key,L.aggregate(rec.party,trials));}}
+ for(const v of results)v.heldout=v.result.recommendations.map(rec=>{const e=cache.get(L.signature(r,rec.party));return {...e,type:rec.type,scores:L.normalize(e.raw,v.result.calibration)};});
+ const speedParty=input.phase1Recommendations[0].party,profile={},native=performance.now(),oldResults=Array.from({length:32},(_,i)=>L.Phase1.adventure(r,input.input.save,speedParty,input.spec.config,171001+i)),phase1Ms=performance.now()-native,fast=performance.now(),newResults=Array.from({length:32},(_,i)=>L.adventure(r,input.input.save,speedParty,input.spec.config,171001+i,{full:true,profile})),phase2Ms=performance.now()-fast;
+ for(let i=0;i<32;i++)if(JSON.stringify(oldResults[i].raw)!==JSON.stringify(newResults[i].legacyRaw))throw Error('Full replay mismatch');
+ fs.writeFileSync(path.join(__dirname,'ablation-results.json'),JSON.stringify({sourceCommit:input.sourceCommit,case:input.spec.id,seeds,results,evaluations:[...cache.values()],fullTrajectorySpeed:{party:speedParty,n:32,phase1Ms,phase2Ms,sameRaw:true,profile}},null,2)+'\n');
+})().catch(e=>{console.error(e);process.exitCode=1;});

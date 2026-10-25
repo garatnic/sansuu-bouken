@@ -1,0 +1,4 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),L=require('./node.cjs'),r=L.load(),base=require('./results/alternate-500-10.json'),parties=[base.result.recommendations[1].party,base.result.recommendations[4].party],rows=[];
+for(const size of [10,20,30])for(const party of parties){const cfg={...base.spec.config,size},seeds=Array.from({length:16},(_,i)=>191001+i),conditions=[];for(const policy of ['informed','random']){const trials=seeds.map(seed=>L.adventure(r,base.input.save,party,cfg,seed,{policy}));conditions.push({policy,...L.aggregate(party,trials),firstFacilityCensored:trials.reduce((s,x)=>s+(x.firstFacility??cfg.budget+1),0)/trials.length});}rows.push({size,party,conditions});}
+fs.writeFileSync(path.join(__dirname,'policy-results.json'),JSON.stringify({case:base.spec.id,seedStart:191001,n:16,budget:30,rows},null,2)+'\n');console.log('policy check done');

@@ -1,0 +1,51 @@
+{
+  "sourceCommit": "dd6d9206fd11f556ffe222a8c6c9ad39c0377269",
+  "version": 69,
+  "stage1TestGroups": 17,
+  "stage2TestGroups": 12,
+  "testOutput": [
+    "PASS phase-1 trajectories and legacy raw scores retained by fast driver",
+    "PASS budget stopping preserves same early results as full adventure",
+    "PASS all 67 skills, Lv3 cap, D04 zero in fast driver",
+    "PASS normalizers finite, monotone, zero-spread, tied reference",
+    "PASS specialist field floor prevents avoidable weak specialization",
+    "PASS public observation still hides unknown information and arrow target",
+    "PASS endgame fallback reflects actual duplicates and no false new joins",
+    "PASS legitimate claims only; contexts preserve missing target",
+    "PASS async cancellation between adventures",
+    "PASS fixed-trial recommendation is reproducible",
+    "PASS browser UMD loads without Node globals and matches Node core",
+    "PASS reserved budget still samples final candidates in a short run",
+    "{\"passed\":12}"
+  ],
+  "runtimeBlobsVerified": 18,
+  "originalStage1FilesPreserved": [
+    "bouken/tests/party-recommendation/timing.cjs",
+    "bouken/tests/party-recommendation/timing-results.json",
+    "bouken/tests/party-recommendation/extra-results.json",
+    "bouken/tests/party-recommendation/test.cjs",
+    "bouken/tests/party-recommendation/results-quick.json",
+    "bouken/tests/party-recommendation/initial-findings.json",
+    "bouken/tests/party-recommendation/extra-checks.cjs",
+    "bouken/tests/party-recommendation/config.json",
+    "bouken/tests/party-recommendation/audit-results.json",
+    "bouken/tests/party-recommendation/audit.cjs",
+    "bouken/tests/party-recommendation/results.json",
+    "bouken/tests/party-recommendation/engine.cjs",
+    "bouken/tests/party-recommendation/verification.json",
+    "bouken/tests/party-recommendation/source-manifest.json",
+    "bouken/tests/party-recommendation/run.cjs"
+  ],
+  "scenarioCount": 13,
+  "searchAdventures": 6758,
+  "validationAdventures": 6232,
+  "standardReplaysUnchanged": [
+    "legacy-30",
+    "legacy-927"
+  ],
+  "smartphoneMeasured": false,
+  "cloudBrowser": "pending publication",
+  "allJsonParse": true,
+  "stage1BlobComparison": "all original code/config/results and both reports match starting main; parent README extends original",
+  "markdownLinks": "passed"
+}

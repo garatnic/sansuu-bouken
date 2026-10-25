@@ -1,0 +1,1635 @@
+{
+  "seedStart": 181001,
+  "n": 16,
+  "rows": [
+    {
+      "case": "legacy-500",
+      "remaining": {
+        "remainingItems": 210,
+        "remainingCharacters": 427,
+        "remainingTarget": 0
+      },
+      "recommendations": [
+        {
+          "type": "おまかせ",
+          "party": [
+            203,
+            440,
+            517,
+            569,
+            925
+          ],
+          "newItems": 1.125,
+          "items": 2.25,
+          "newTarget": 0,
+          "newCharacters": 2.5,
+          "joins": 1.5625,
+          "rewardJoins": 1,
+          "qClear": 83.25,
+          "newItemsPerCorrect": 0.01348448659878292,
+          "newCharactersPerCorrect": 0.030099996856662144,
+          "phase1": {
+            "party": [
+              190,
+              216,
+              373,
+              418,
+              900
+            ],
+            "newItems": 0.9375,
+            "items": 1.5625,
+            "newTarget": 0,
+            "newCharacters": 2.4375,
+            "joins": 1.5625,
+            "rewardJoins": 1,
+            "qClear": 74.5,
+            "newItemsPerCorrect": 0.012317059210570932,
+            "newCharactersPerCorrect": 0.032813410287889304
+          }
+        },
+        {
+          "type": "どんどん開拓",
+          "party": [
+            49,
+            332,
+            418,
+            661,
+            879
+          ],
+          "newItems": 0.6875,
+          "items": 0.8125,
+          "newTarget": 0,
+          "newCharacters": 1.3125,
+          "joins": 0.5,
+          "rewardJoins": 1,
+          "qClear": 60.4375,
+          "newItemsPerCorrect": 0.011408463086461389,
+          "newCharactersPerCorrect": 0.022047579619316422,
+          "phase1": {
+            "party": [
+              190,
+              216,
+              373,
+              418,
+              900
+            ],
+            "newItems": 0.9375,
+            "items": 1.5625,
+            "newTarget": 0,
+            "newCharacters": 2.4375,
+            "joins": 1.5625,
+            "rewardJoins": 1,
+            "qClear": 74.5,
+            "newItemsPerCorrect": 0.012317059210570932,
+            "newCharactersPerCorrect": 0.032813410287889304
+          }
+        },
+        {
+          "type": "お宝あつめ",
+          "party": [
+            382,
+            429,
+            454,
+            708,
+            819
+          ],
+          "newItems": 3.5625,
+          "items": 3.75,
+          "newTarget": 0,
+          "newCharacters": 1.5625,
+          "joins": 0.875,
+          "rewardJoins": 1,
+          "qClear": 81,
+          "newItemsPerCorrect": 0.04406966993683633,
+          "newCharactersPerCorrect": 0.019329024962166458,
+          "phase1": {
+            "party": [
+              176,
+              418,
+              454,
+              708,
+              748
+            ],
+            "newItems": 2.3125,
+            "items": 2.4375,
+            "newTarget": 0,
+            "newCharacters": 1.25,
+            "joins": 0.9375,
+            "rewardJoins": 1,
+            "qClear": 82.0625,
+            "newItemsPerCorrect": 0.02813563053625189,
+            "newCharactersPerCorrect": 0.015229167008589437
+          }
+        },
+        {
+          "type": "仲間あつめ",
+          "party": [
+            190,
+            216,
+            225,
+            418,
+            773
+          ],
+          "newItems": 0.6875,
+          "items": 1,
+          "newTarget": 0,
+          "newCharacters": 3.6875,
+          "joins": 2.75,
+          "rewardJoins": 1,
+          "qClear": 84.5625,
+          "newItemsPerCorrect": 0.00813304272395425,
+          "newCharactersPerCorrect": 0.04358341113860112,
+          "phase1": {
+            "party": [
+              190,
+              216,
+              373,
+              418,
+              900
+            ],
+            "newItems": 0.9375,
+            "items": 1.5625,
+            "newTarget": 0,
+            "newCharacters": 2.4375,
+            "joins": 1.5625,
+            "rewardJoins": 1,
+            "qClear": 74.5,
+            "newItemsPerCorrect": 0.012317059210570932,
+            "newCharactersPerCorrect": 0.032813410287889304
+          }
+        },
+        {
+          "type": "マップ探索",
+          "party": [
+            203,
+            440,
+            517,
+            569,
+            925
+          ],
+          "newItems": 1.125,
+          "items": 2.25,
+          "newTarget": 0,
+          "newCharacters": 2.5,
+          "joins": 1.5625,
+          "rewardJoins": 1,
+          "qClear": 83.25,
+          "newItemsPerCorrect": 0.01348448659878292,
+          "newCharactersPerCorrect": 0.030099996856662144,
+          "phase1": {
+            "party": [
+              275,
+              377,
+              498,
+              708,
+              186
+            ],
+            "newItems": 0.875,
+            "items": 2,
+            "newTarget": 0,
+            "newCharacters": 1.5625,
+            "joins": 1.625,
+            "rewardJoins": 1,
+            "qClear": 91.75,
+            "newItemsPerCorrect": 0.00956108827087514,
+            "newCharactersPerCorrect": 0.01704931527721579
+          }
+        }
+      ],
+      "evaluated": [
+        {
+          "party": [
+            203,
+            440,
+            517,
+            569,
+            925
+          ],
+          "newItems": 1.125,
+          "items": 2.25,
+          "newTarget": 0,
+          "newCharacters": 2.5,
+          "joins": 1.5625,
+          "rewardJoins": 1,
+          "qClear": 83.25,
+          "newItemsPerCorrect": 0.01348448659878292,
+          "newCharactersPerCorrect": 0.030099996856662144
+        },
+        {
+          "party": [
+            49,
+            332,
+            418,
+            661,
+            879
+          ],
+          "newItems": 0.6875,
+          "items": 0.8125,
+          "newTarget": 0,
+          "newCharacters": 1.3125,
+          "joins": 0.5,
+          "rewardJoins": 1,
+          "qClear": 60.4375,
+          "newItemsPerCorrect": 0.011408463086461389,
+          "newCharactersPerCorrect": 0.022047579619316422
+        },
+        {
+          "party": [
+            382,
+            429,
+            454,
+            708,
+            819
+          ],
+          "newItems": 3.5625,
+          "items": 3.75,
+          "newTarget": 0,
+          "newCharacters": 1.5625,
+          "joins": 0.875,
+          "rewardJoins": 1,
+          "qClear": 81,
+          "newItemsPerCorrect": 0.04406966993683633,
+          "newCharactersPerCorrect": 0.019329024962166458
+        },
+        {
+          "party": [
+            190,
+            216,
+            225,
+            418,
+            773
+          ],
+          "newItems": 0.6875,
+          "items": 1,
+          "newTarget": 0,
+          "newCharacters": 3.6875,
+          "joins": 2.75,
+          "rewardJoins": 1,
+          "qClear": 84.5625,
+          "newItemsPerCorrect": 0.00813304272395425,
+          "newCharactersPerCorrect": 0.04358341113860112
+        },
+        {
+          "party": [
+            190,
+            216,
+            373,
+            418,
+            900
+          ],
+          "newItems": 0.9375,
+          "items": 1.5625,
+          "newTarget": 0,
+          "newCharacters": 2.4375,
+          "joins": 1.5625,
+          "rewardJoins": 1,
+          "qClear": 74.5,
+          "newItemsPerCorrect": 0.012317059210570932,
+          "newCharactersPerCorrect": 0.032813410287889304
+        },
+        {
+          "party": [
+            176,
+            418,
+            454,
+            708,
+            748
+          ],
+          "newItems": 2.3125,
+          "items": 2.4375,
+          "newTarget": 0,
+          "newCharacters": 1.25,
+          "joins": 0.9375,
+          "rewardJoins": 1,
+          "qClear": 82.0625,
+          "newItemsPerCorrect": 0.02813563053625189,
+          "newCharactersPerCorrect": 0.015229167008589437
+        },
+        {
+          "party": [
+            275,
+            377,
+            498,
+            708,
+            186
+          ],
+          "newItems": 0.875,
+          "items": 2,
+          "newTarget": 0,
+          "newCharacters": 1.5625,
+          "joins": 1.625,
+          "rewardJoins": 1,
+          "qClear": 91.75,
+          "newItemsPerCorrect": 0.00956108827087514,
+          "newCharactersPerCorrect": 0.01704931527721579
+        }
+      ]
+    },
+    {
+      "case": "legacy-927",
+      "remaining": {
+        "remainingItems": 210,
+        "remainingCharacters": 0,
+        "remainingTarget": 0
+      },
+      "recommendations": [
+        {
+          "type": "おまかせ",
+          "party": [
+            241,
+            418,
+            440,
+            553,
+            770
+          ],
+          "newItems": 1.25,
+          "items": 2.125,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 1.875,
+          "rewardJoins": 1,
+          "qClear": 79.8125,
+          "newItemsPerCorrect": 0.015629227605017455,
+          "newCharactersPerCorrect": 0,
+          "phase1": {
+            "party": [
+              99,
+              219,
+              224,
+              351,
+              777
+            ],
+            "newItems": 1.125,
+            "items": 1.375,
+            "newTarget": 0,
+            "newCharacters": 0,
+            "joins": 1.0625,
+            "rewardJoins": 1,
+            "qClear": 81.375,
+            "newItemsPerCorrect": 0.013914076303067097,
+            "newCharactersPerCorrect": 0
+          }
+        },
+        {
+          "type": "どんどん開拓",
+          "party": [
+            3,
+            332,
+            373,
+            517,
+            582
+          ],
+          "newItems": 0.3125,
+          "items": 1.0625,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 1,
+          "rewardJoins": 1,
+          "qClear": 62.875,
+          "newItemsPerCorrect": 0.005090697999846978,
+          "newCharactersPerCorrect": 0,
+          "phase1": {
+            "party": [
+              867,
+              172,
+              221,
+              718,
+              373
+            ],
+            "newItems": 0.75,
+            "items": 1.6875,
+            "newTarget": 0,
+            "newCharacters": 0,
+            "joins": 0.6875,
+            "rewardJoins": 1,
+            "qClear": 75.625,
+            "newItemsPerCorrect": 0.009889729884735592,
+            "newCharactersPerCorrect": 0
+          }
+        },
+        {
+          "type": "お宝あつめ",
+          "party": [
+            68,
+            152,
+            382,
+            872,
+            819
+          ],
+          "newItems": 3.875,
+          "items": 4,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 1.0625,
+          "rewardJoins": 1,
+          "qClear": 86.625,
+          "newItemsPerCorrect": 0.04479044125763751,
+          "newCharactersPerCorrect": 0,
+          "phase1": {
+            "party": [
+              147,
+              834,
+              221,
+              718,
+              27
+            ],
+            "newItems": 2.5625,
+            "items": 3,
+            "newTarget": 0,
+            "newCharacters": 0,
+            "joins": 0.8125,
+            "rewardJoins": 1,
+            "qClear": 83.25,
+            "newItemsPerCorrect": 0.03142466103983563,
+            "newCharactersPerCorrect": 0
+          }
+        },
+        {
+          "type": "仲間あつめ",
+          "party": [
+            160,
+            225,
+            332,
+            50,
+            553
+          ],
+          "newItems": 0.625,
+          "items": 1.6875,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 3.375,
+          "rewardJoins": 1,
+          "qClear": 80.4375,
+          "newItemsPerCorrect": 0.007753506846718826,
+          "newCharactersPerCorrect": 0,
+          "phase1": {
+            "party": [
+              152,
+              341,
+              621,
+              677,
+              725
+            ],
+            "newItems": 0.5625,
+            "items": 1.375,
+            "newTarget": 0,
+            "newCharacters": 0,
+            "joins": 1.9375,
+            "rewardJoins": 1,
+            "qClear": 96.6875,
+            "newItemsPerCorrect": 0.005812392611683849,
+            "newCharactersPerCorrect": 0
+          }
+        },
+        {
+          "type": "マップ探索",
+          "party": [
+            241,
+            418,
+            440,
+            553,
+            575
+          ],
+          "newItems": 0.9375,
+          "items": 2.0625,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 1.6875,
+          "rewardJoins": 1,
+          "qClear": 80.3125,
+          "newItemsPerCorrect": 0.011579742165413617,
+          "newCharactersPerCorrect": 0,
+          "phase1": {
+            "party": [
+              152,
+              394,
+              716,
+              706,
+              725
+            ],
+            "newItems": 0.4375,
+            "items": 1.6875,
+            "newTarget": 0,
+            "newCharacters": 0,
+            "joins": 1.625,
+            "rewardJoins": 1,
+            "qClear": 92.0625,
+            "newItemsPerCorrect": 0.00475896974325936,
+            "newCharactersPerCorrect": 0
+          }
+        }
+      ],
+      "evaluated": [
+        {
+          "party": [
+            241,
+            418,
+            440,
+            553,
+            770
+          ],
+          "newItems": 1.25,
+          "items": 2.125,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 1.875,
+          "rewardJoins": 1,
+          "qClear": 79.8125,
+          "newItemsPerCorrect": 0.015629227605017455,
+          "newCharactersPerCorrect": 0
+        },
+        {
+          "party": [
+            3,
+            332,
+            373,
+            517,
+            582
+          ],
+          "newItems": 0.3125,
+          "items": 1.0625,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 1,
+          "rewardJoins": 1,
+          "qClear": 62.875,
+          "newItemsPerCorrect": 0.005090697999846978,
+          "newCharactersPerCorrect": 0
+        },
+        {
+          "party": [
+            68,
+            152,
+            382,
+            872,
+            819
+          ],
+          "newItems": 3.875,
+          "items": 4,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 1.0625,
+          "rewardJoins": 1,
+          "qClear": 86.625,
+          "newItemsPerCorrect": 0.04479044125763751,
+          "newCharactersPerCorrect": 0
+        },
+        {
+          "party": [
+            160,
+            225,
+            332,
+            50,
+            553
+          ],
+          "newItems": 0.625,
+          "items": 1.6875,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 3.375,
+          "rewardJoins": 1,
+          "qClear": 80.4375,
+          "newItemsPerCorrect": 0.007753506846718826,
+          "newCharactersPerCorrect": 0
+        },
+        {
+          "party": [
+            241,
+            418,
+            440,
+            553,
+            575
+          ],
+          "newItems": 0.9375,
+          "items": 2.0625,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 1.6875,
+          "rewardJoins": 1,
+          "qClear": 80.3125,
+          "newItemsPerCorrect": 0.011579742165413617,
+          "newCharactersPerCorrect": 0
+        },
+        {
+          "party": [
+            99,
+            219,
+            224,
+            351,
+            777
+          ],
+          "newItems": 1.125,
+          "items": 1.375,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 1.0625,
+          "rewardJoins": 1,
+          "qClear": 81.375,
+          "newItemsPerCorrect": 0.013914076303067097,
+          "newCharactersPerCorrect": 0
+        },
+        {
+          "party": [
+            867,
+            172,
+            221,
+            718,
+            373
+          ],
+          "newItems": 0.75,
+          "items": 1.6875,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 0.6875,
+          "rewardJoins": 1,
+          "qClear": 75.625,
+          "newItemsPerCorrect": 0.009889729884735592,
+          "newCharactersPerCorrect": 0
+        },
+        {
+          "party": [
+            147,
+            834,
+            221,
+            718,
+            27
+          ],
+          "newItems": 2.5625,
+          "items": 3,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 0.8125,
+          "rewardJoins": 1,
+          "qClear": 83.25,
+          "newItemsPerCorrect": 0.03142466103983563,
+          "newCharactersPerCorrect": 0
+        },
+        {
+          "party": [
+            152,
+            341,
+            621,
+            677,
+            725
+          ],
+          "newItems": 0.5625,
+          "items": 1.375,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 1.9375,
+          "rewardJoins": 1,
+          "qClear": 96.6875,
+          "newItemsPerCorrect": 0.005812392611683849,
+          "newCharactersPerCorrect": 0
+        },
+        {
+          "party": [
+            152,
+            394,
+            716,
+            706,
+            725
+          ],
+          "newItems": 0.4375,
+          "items": 1.6875,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 1.625,
+          "rewardJoins": 1,
+          "qClear": 92.0625,
+          "newItemsPerCorrect": 0.00475896974325936,
+          "newCharactersPerCorrect": 0
+        }
+      ]
+    },
+    {
+      "case": "early-140",
+      "remaining": {
+        "remainingItems": 458,
+        "remainingCharacters": 787,
+        "remainingTarget": 19
+      },
+      "recommendations": [
+        {
+          "type": "おまかせ",
+          "party": [
+            323,
+            285,
+            551
+          ],
+          "newItems": 1.6875,
+          "items": 1.8125,
+          "newTarget": 0.0625,
+          "newCharacters": 2,
+          "joins": 1.1875,
+          "rewardJoins": 1,
+          "qClear": 80.5625,
+          "newItemsPerCorrect": 0.020979854398383214,
+          "newCharactersPerCorrect": 0.024750572825562853,
+          "phase1": null
+        },
+        {
+          "type": "どんどん開拓",
+          "party": [
+            168,
+            418,
+            551
+          ],
+          "newItems": 0.875,
+          "items": 0.875,
+          "newTarget": 0,
+          "newCharacters": 1.75,
+          "joins": 0.75,
+          "rewardJoins": 1,
+          "qClear": 76.625,
+          "newItemsPerCorrect": 0.011495856467245335,
+          "newCharactersPerCorrect": 0.022952953742130758,
+          "phase1": null
+        },
+        {
+          "type": "お宝あつめ",
+          "party": [
+            83,
+            315,
+            394
+          ],
+          "newItems": 1.9375,
+          "items": 2,
+          "newTarget": 0,
+          "newCharacters": 2.125,
+          "joins": 1.1875,
+          "rewardJoins": 1,
+          "qClear": 97.3125,
+          "newItemsPerCorrect": 0.01990397598608081,
+          "newCharactersPerCorrect": 0.021830806132138156,
+          "phase1": null
+        },
+        {
+          "type": "仲間あつめ",
+          "party": [
+            114,
+            159,
+            588
+          ],
+          "newItems": 1.4375,
+          "items": 1.4375,
+          "newTarget": 0,
+          "newCharacters": 1.9375,
+          "joins": 1.3125,
+          "rewardJoins": 1,
+          "qClear": 95.4375,
+          "newItemsPerCorrect": 0.015043681105906159,
+          "newCharactersPerCorrect": 0.020272436846125723,
+          "phase1": null
+        },
+        {
+          "type": "マップ探索",
+          "party": [
+            323,
+            285,
+            551
+          ],
+          "newItems": 1.6875,
+          "items": 1.8125,
+          "newTarget": 0.0625,
+          "newCharacters": 2,
+          "joins": 1.1875,
+          "rewardJoins": 1,
+          "qClear": 80.5625,
+          "newItemsPerCorrect": 0.020979854398383214,
+          "newCharactersPerCorrect": 0.024750572825562853,
+          "phase1": null
+        }
+      ],
+      "evaluated": [
+        {
+          "party": [
+            323,
+            285,
+            551
+          ],
+          "newItems": 1.6875,
+          "items": 1.8125,
+          "newTarget": 0.0625,
+          "newCharacters": 2,
+          "joins": 1.1875,
+          "rewardJoins": 1,
+          "qClear": 80.5625,
+          "newItemsPerCorrect": 0.020979854398383214,
+          "newCharactersPerCorrect": 0.024750572825562853
+        },
+        {
+          "party": [
+            168,
+            418,
+            551
+          ],
+          "newItems": 0.875,
+          "items": 0.875,
+          "newTarget": 0,
+          "newCharacters": 1.75,
+          "joins": 0.75,
+          "rewardJoins": 1,
+          "qClear": 76.625,
+          "newItemsPerCorrect": 0.011495856467245335,
+          "newCharactersPerCorrect": 0.022952953742130758
+        },
+        {
+          "party": [
+            83,
+            315,
+            394
+          ],
+          "newItems": 1.9375,
+          "items": 2,
+          "newTarget": 0,
+          "newCharacters": 2.125,
+          "joins": 1.1875,
+          "rewardJoins": 1,
+          "qClear": 97.3125,
+          "newItemsPerCorrect": 0.01990397598608081,
+          "newCharactersPerCorrect": 0.021830806132138156
+        },
+        {
+          "party": [
+            114,
+            159,
+            588
+          ],
+          "newItems": 1.4375,
+          "items": 1.4375,
+          "newTarget": 0,
+          "newCharacters": 1.9375,
+          "joins": 1.3125,
+          "rewardJoins": 1,
+          "qClear": 95.4375,
+          "newItemsPerCorrect": 0.015043681105906159,
+          "newCharactersPerCorrect": 0.020272436846125723
+        }
+      ]
+    },
+    {
+      "case": "late-279-unclaimed",
+      "remaining": {
+        "remainingItems": 27,
+        "remainingCharacters": 648,
+        "remainingTarget": 4
+      },
+      "recommendations": [
+        {
+          "type": "おまかせ",
+          "party": [
+            572,
+            517,
+            145,
+            678
+          ],
+          "newItems": 0.25,
+          "items": 1.25,
+          "newTarget": 0,
+          "newCharacters": 1.8125,
+          "joins": 1.1875,
+          "rewardJoins": 1,
+          "qClear": 84.0625,
+          "newItemsPerCorrect": 0.002976815901479673,
+          "newCharactersPerCorrect": 0.021553833077080652,
+          "phase1": null
+        },
+        {
+          "type": "どんどん開拓",
+          "party": [
+            517,
+            571,
+            810,
+            857
+          ],
+          "newItems": 0.0625,
+          "items": 0.875,
+          "newTarget": 0,
+          "newCharacters": 1.5,
+          "joins": 0.75,
+          "rewardJoins": 1,
+          "qClear": 68.6875,
+          "newItemsPerCorrect": 0.0009057971014492754,
+          "newCharactersPerCorrect": 0.022103852905161314,
+          "phase1": null
+        },
+        {
+          "type": "お宝あつめ",
+          "party": [
+            467,
+            517,
+            819,
+            859
+          ],
+          "newItems": 1.0625,
+          "items": 1.9375,
+          "newTarget": 0.8125,
+          "newCharacters": 2.125,
+          "joins": 1.75,
+          "rewardJoins": 1,
+          "qClear": 85.5625,
+          "newItemsPerCorrect": 0.01242385787514685,
+          "newCharactersPerCorrect": 0.024856462232045982,
+          "phase1": null
+        },
+        {
+          "type": "仲間あつめ",
+          "party": [
+            572,
+            517,
+            145,
+            678
+          ],
+          "newItems": 0.25,
+          "items": 1.25,
+          "newTarget": 0,
+          "newCharacters": 1.8125,
+          "joins": 1.1875,
+          "rewardJoins": 1,
+          "qClear": 84.0625,
+          "newItemsPerCorrect": 0.002976815901479673,
+          "newCharactersPerCorrect": 0.021553833077080652,
+          "phase1": null
+        },
+        {
+          "type": "マップ探索",
+          "party": [
+            286,
+            498,
+            708,
+            705
+          ],
+          "newItems": 0.0625,
+          "items": 2.5,
+          "newTarget": 0,
+          "newCharacters": 1.9375,
+          "joins": 1.4375,
+          "rewardJoins": 1,
+          "qClear": 94.0625,
+          "newItemsPerCorrect": 0.0006648936170212766,
+          "newCharactersPerCorrect": 0.0206047032474804,
+          "phase1": null
+        }
+      ],
+      "evaluated": [
+        {
+          "party": [
+            572,
+            517,
+            145,
+            678
+          ],
+          "newItems": 0.25,
+          "items": 1.25,
+          "newTarget": 0,
+          "newCharacters": 1.8125,
+          "joins": 1.1875,
+          "rewardJoins": 1,
+          "qClear": 84.0625,
+          "newItemsPerCorrect": 0.002976815901479673,
+          "newCharactersPerCorrect": 0.021553833077080652
+        },
+        {
+          "party": [
+            517,
+            571,
+            810,
+            857
+          ],
+          "newItems": 0.0625,
+          "items": 0.875,
+          "newTarget": 0,
+          "newCharacters": 1.5,
+          "joins": 0.75,
+          "rewardJoins": 1,
+          "qClear": 68.6875,
+          "newItemsPerCorrect": 0.0009057971014492754,
+          "newCharactersPerCorrect": 0.022103852905161314
+        },
+        {
+          "party": [
+            467,
+            517,
+            819,
+            859
+          ],
+          "newItems": 1.0625,
+          "items": 1.9375,
+          "newTarget": 0.8125,
+          "newCharacters": 2.125,
+          "joins": 1.75,
+          "rewardJoins": 1,
+          "qClear": 85.5625,
+          "newItemsPerCorrect": 0.01242385787514685,
+          "newCharactersPerCorrect": 0.024856462232045982
+        },
+        {
+          "party": [
+            286,
+            498,
+            708,
+            705
+          ],
+          "newItems": 0.0625,
+          "items": 2.5,
+          "newTarget": 0,
+          "newCharacters": 1.9375,
+          "joins": 1.4375,
+          "rewardJoins": 1,
+          "qClear": 94.0625,
+          "newItemsPerCorrect": 0.0006648936170212766,
+          "newCharactersPerCorrect": 0.0206047032474804
+        }
+      ]
+    },
+    {
+      "case": "late-900",
+      "remaining": {
+        "remainingItems": 27,
+        "remainingCharacters": 27,
+        "remainingTarget": 4
+      },
+      "recommendations": [
+        {
+          "type": "おまかせ",
+          "party": [
+            176,
+            415,
+            288,
+            382,
+            742
+          ],
+          "newItems": 1.8125,
+          "items": 2.875,
+          "newTarget": 0,
+          "newCharacters": 1.5,
+          "joins": 1,
+          "rewardJoins": 1,
+          "qClear": 85.125,
+          "newItemsPerCorrect": 0.021302162955596823,
+          "newCharactersPerCorrect": 0.017650113047122207,
+          "phase1": null
+        },
+        {
+          "type": "どんどん開拓",
+          "party": [
+            250,
+            296,
+            332,
+            517,
+            705
+          ],
+          "newItems": 0.0625,
+          "items": 1.125,
+          "newTarget": 0,
+          "newCharacters": 1,
+          "joins": 0.8125,
+          "rewardJoins": 1,
+          "qClear": 61.625,
+          "newItemsPerCorrect": 0.0010416666666666667,
+          "newCharactersPerCorrect": 0.016263309382586143,
+          "phase1": null
+        },
+        {
+          "type": "お宝あつめ",
+          "party": [
+            176,
+            284,
+            288,
+            382,
+            742
+          ],
+          "newItems": 1.9375,
+          "items": 3.375,
+          "newTarget": 0.125,
+          "newCharacters": 1,
+          "joins": 1.4375,
+          "rewardJoins": 1,
+          "qClear": 84,
+          "newItemsPerCorrect": 0.023015728850231402,
+          "newCharactersPerCorrect": 0.011907324645175889,
+          "phase1": null
+        },
+        {
+          "type": "仲間あつめ",
+          "party": [
+            332,
+            312,
+            574,
+            772,
+            925
+          ],
+          "newItems": 0.125,
+          "items": 2,
+          "newTarget": 0,
+          "newCharacters": 1.6875,
+          "joins": 1.375,
+          "rewardJoins": 1,
+          "qClear": 78.25,
+          "newItemsPerCorrect": 0.0016396604938271604,
+          "newCharactersPerCorrect": 0.021500140497136146,
+          "phase1": null
+        },
+        {
+          "type": "マップ探索",
+          "party": [
+            332,
+            312,
+            574,
+            662,
+            925
+          ],
+          "newItems": 0.0625,
+          "items": 2.25,
+          "newTarget": 0.0625,
+          "newCharacters": 1,
+          "joins": 1.5625,
+          "rewardJoins": 1,
+          "qClear": 77.5,
+          "newItemsPerCorrect": 0.0007911392405063291,
+          "newCharactersPerCorrect": 0.012919802558227047,
+          "phase1": null
+        }
+      ],
+      "evaluated": [
+        {
+          "party": [
+            176,
+            415,
+            288,
+            382,
+            742
+          ],
+          "newItems": 1.8125,
+          "items": 2.875,
+          "newTarget": 0,
+          "newCharacters": 1.5,
+          "joins": 1,
+          "rewardJoins": 1,
+          "qClear": 85.125,
+          "newItemsPerCorrect": 0.021302162955596823,
+          "newCharactersPerCorrect": 0.017650113047122207
+        },
+        {
+          "party": [
+            250,
+            296,
+            332,
+            517,
+            705
+          ],
+          "newItems": 0.0625,
+          "items": 1.125,
+          "newTarget": 0,
+          "newCharacters": 1,
+          "joins": 0.8125,
+          "rewardJoins": 1,
+          "qClear": 61.625,
+          "newItemsPerCorrect": 0.0010416666666666667,
+          "newCharactersPerCorrect": 0.016263309382586143
+        },
+        {
+          "party": [
+            176,
+            284,
+            288,
+            382,
+            742
+          ],
+          "newItems": 1.9375,
+          "items": 3.375,
+          "newTarget": 0.125,
+          "newCharacters": 1,
+          "joins": 1.4375,
+          "rewardJoins": 1,
+          "qClear": 84,
+          "newItemsPerCorrect": 0.023015728850231402,
+          "newCharactersPerCorrect": 0.011907324645175889
+        },
+        {
+          "party": [
+            332,
+            312,
+            574,
+            772,
+            925
+          ],
+          "newItems": 0.125,
+          "items": 2,
+          "newTarget": 0,
+          "newCharacters": 1.6875,
+          "joins": 1.375,
+          "rewardJoins": 1,
+          "qClear": 78.25,
+          "newItemsPerCorrect": 0.0016396604938271604,
+          "newCharactersPerCorrect": 0.021500140497136146
+        },
+        {
+          "party": [
+            332,
+            312,
+            574,
+            662,
+            925
+          ],
+          "newItems": 0.0625,
+          "items": 2.25,
+          "newTarget": 0.0625,
+          "newCharacters": 1,
+          "joins": 1.5625,
+          "rewardJoins": 1,
+          "qClear": 77.5,
+          "newItemsPerCorrect": 0.0007911392405063291,
+          "newCharactersPerCorrect": 0.012919802558227047
+        }
+      ]
+    },
+    {
+      "case": "rich-927",
+      "remaining": {
+        "remainingItems": 14,
+        "remainingCharacters": 0,
+        "remainingTarget": 4
+      },
+      "recommendations": [
+        {
+          "type": "おまかせ",
+          "party": [
+            594,
+            241,
+            553,
+            382,
+            864
+          ],
+          "newItems": 0.6875,
+          "items": 3.125,
+          "newTarget": 0.6875,
+          "newCharacters": 0,
+          "joins": 2.25,
+          "rewardJoins": 1,
+          "qClear": 68.4375,
+          "newItemsPerCorrect": 0.010155554696795107,
+          "newCharactersPerCorrect": 0,
+          "phase1": null
+        },
+        {
+          "type": "どんどん開拓",
+          "party": [
+            99,
+            250,
+            332,
+            373,
+            517
+          ],
+          "newItems": 0.0625,
+          "items": 1.5,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 0.8125,
+          "rewardJoins": 1,
+          "qClear": 51.125,
+          "newItemsPerCorrect": 0.0014534883720930232,
+          "newCharactersPerCorrect": 0,
+          "phase1": null
+        },
+        {
+          "type": "お宝あつめ",
+          "party": [
+            24,
+            241,
+            553,
+            819,
+            864
+          ],
+          "newItems": 1.875,
+          "items": 2.8125,
+          "newTarget": 1.5625,
+          "newCharacters": 0,
+          "joins": 1.5625,
+          "rewardJoins": 1,
+          "qClear": 72.9375,
+          "newItemsPerCorrect": 0.02579701405086076,
+          "newCharactersPerCorrect": 0,
+          "phase1": null
+        },
+        {
+          "type": "仲間あつめ",
+          "party": [
+            160,
+            225,
+            455,
+            517,
+            553
+          ],
+          "newItems": 0,
+          "items": 1.75,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 3.4375,
+          "rewardJoins": 1,
+          "qClear": 69.875,
+          "newItemsPerCorrect": 0,
+          "newCharactersPerCorrect": 0,
+          "phase1": null
+        },
+        {
+          "type": "マップ探索",
+          "party": [
+            594,
+            241,
+            553,
+            819,
+            864
+          ],
+          "newItems": 1.875,
+          "items": 2.8125,
+          "newTarget": 1.5625,
+          "newCharacters": 0,
+          "joins": 2.25,
+          "rewardJoins": 1,
+          "qClear": 72.9375,
+          "newItemsPerCorrect": 0.02579701405086076,
+          "newCharactersPerCorrect": 0,
+          "phase1": null
+        }
+      ],
+      "evaluated": [
+        {
+          "party": [
+            594,
+            241,
+            553,
+            382,
+            864
+          ],
+          "newItems": 0.6875,
+          "items": 3.125,
+          "newTarget": 0.6875,
+          "newCharacters": 0,
+          "joins": 2.25,
+          "rewardJoins": 1,
+          "qClear": 68.4375,
+          "newItemsPerCorrect": 0.010155554696795107,
+          "newCharactersPerCorrect": 0
+        },
+        {
+          "party": [
+            99,
+            250,
+            332,
+            373,
+            517
+          ],
+          "newItems": 0.0625,
+          "items": 1.5,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 0.8125,
+          "rewardJoins": 1,
+          "qClear": 51.125,
+          "newItemsPerCorrect": 0.0014534883720930232,
+          "newCharactersPerCorrect": 0
+        },
+        {
+          "party": [
+            24,
+            241,
+            553,
+            819,
+            864
+          ],
+          "newItems": 1.875,
+          "items": 2.8125,
+          "newTarget": 1.5625,
+          "newCharacters": 0,
+          "joins": 1.5625,
+          "rewardJoins": 1,
+          "qClear": 72.9375,
+          "newItemsPerCorrect": 0.02579701405086076,
+          "newCharactersPerCorrect": 0
+        },
+        {
+          "party": [
+            160,
+            225,
+            455,
+            517,
+            553
+          ],
+          "newItems": 0,
+          "items": 1.75,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 3.4375,
+          "rewardJoins": 1,
+          "qClear": 69.875,
+          "newItemsPerCorrect": 0,
+          "newCharactersPerCorrect": 0
+        },
+        {
+          "party": [
+            594,
+            241,
+            553,
+            819,
+            864
+          ],
+          "newItems": 1.875,
+          "items": 2.8125,
+          "newTarget": 1.5625,
+          "newCharacters": 0,
+          "joins": 2.25,
+          "rewardJoins": 1,
+          "qClear": 72.9375,
+          "newItemsPerCorrect": 0.02579701405086076,
+          "newCharactersPerCorrect": 0
+        }
+      ]
+    },
+    {
+      "case": "rich-927-unclaimed",
+      "remaining": {
+        "remainingItems": 14,
+        "remainingCharacters": 0,
+        "remainingTarget": 4
+      },
+      "recommendations": [
+        {
+          "type": "おまかせ",
+          "party": [
+            275,
+            440,
+            459,
+            503,
+            925
+          ],
+          "newItems": 0.125,
+          "items": 2.625,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 2,
+          "rewardJoins": 1,
+          "qClear": 79.4375,
+          "newItemsPerCorrect": 0.0015723892405063293,
+          "newCharactersPerCorrect": 0,
+          "phase1": null
+        },
+        {
+          "type": "どんどん開拓",
+          "party": [
+            99,
+            250,
+            332,
+            373,
+            517
+          ],
+          "newItems": 0.0625,
+          "items": 1.625,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 0.75,
+          "rewardJoins": 1,
+          "qClear": 60.1875,
+          "newItemsPerCorrect": 0.001059322033898305,
+          "newCharactersPerCorrect": 0,
+          "phase1": null
+        },
+        {
+          "type": "お宝あつめ",
+          "party": [
+            553,
+            241,
+            459,
+            819,
+            864
+          ],
+          "newItems": 1.75,
+          "items": 3.125,
+          "newTarget": 1.3125,
+          "newCharacters": 0,
+          "joins": 1.375,
+          "rewardJoins": 1,
+          "qClear": 80.8125,
+          "newItemsPerCorrect": 0.021626833961289685,
+          "newCharactersPerCorrect": 0,
+          "phase1": null
+        },
+        {
+          "type": "仲間あつめ",
+          "party": [
+            152,
+            503,
+            332,
+            199,
+            574
+          ],
+          "newItems": 0,
+          "items": 0.75,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 3,
+          "rewardJoins": 1,
+          "qClear": 78.125,
+          "newItemsPerCorrect": 0,
+          "newCharactersPerCorrect": 0,
+          "phase1": null
+        },
+        {
+          "type": "マップ探索",
+          "party": [
+            275,
+            440,
+            459,
+            503,
+            925
+          ],
+          "newItems": 0.125,
+          "items": 2.625,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 2,
+          "rewardJoins": 1,
+          "qClear": 79.4375,
+          "newItemsPerCorrect": 0.0015723892405063293,
+          "newCharactersPerCorrect": 0,
+          "phase1": null
+        }
+      ],
+      "evaluated": [
+        {
+          "party": [
+            275,
+            440,
+            459,
+            503,
+            925
+          ],
+          "newItems": 0.125,
+          "items": 2.625,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 2,
+          "rewardJoins": 1,
+          "qClear": 79.4375,
+          "newItemsPerCorrect": 0.0015723892405063293,
+          "newCharactersPerCorrect": 0
+        },
+        {
+          "party": [
+            99,
+            250,
+            332,
+            373,
+            517
+          ],
+          "newItems": 0.0625,
+          "items": 1.625,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 0.75,
+          "rewardJoins": 1,
+          "qClear": 60.1875,
+          "newItemsPerCorrect": 0.001059322033898305,
+          "newCharactersPerCorrect": 0
+        },
+        {
+          "party": [
+            553,
+            241,
+            459,
+            819,
+            864
+          ],
+          "newItems": 1.75,
+          "items": 3.125,
+          "newTarget": 1.3125,
+          "newCharacters": 0,
+          "joins": 1.375,
+          "rewardJoins": 1,
+          "qClear": 80.8125,
+          "newItemsPerCorrect": 0.021626833961289685,
+          "newCharactersPerCorrect": 0
+        },
+        {
+          "party": [
+            152,
+            503,
+            332,
+            199,
+            574
+          ],
+          "newItems": 0,
+          "items": 0.75,
+          "newTarget": 0,
+          "newCharacters": 0,
+          "joins": 3,
+          "rewardJoins": 1,
+          "qClear": 78.125,
+          "newItemsPerCorrect": 0,
+          "newCharactersPerCorrect": 0
+        }
+      ]
+    }
+  ]
+}

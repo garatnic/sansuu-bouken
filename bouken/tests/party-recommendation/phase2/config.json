@@ -1,0 +1,30 @@
+{
+  "size": 10,
+  "budget": 30,
+  "targetGroup": "04",
+  "cumulativeExplored": 1234,
+  "searchSeed": 172001,
+  "trainSeedStart": 111001,
+  "referenceSeedStart": 121001,
+  "referencePartySeed": 192001,
+  "references": 24,
+  "referenceTrials": 4,
+  "initialTrials": 2,
+  "minTrials": 8,
+  "maxTrials": 32,
+  "initialRandom": 12,
+  "rounds": 2,
+  "beamWidth": 2,
+  "proposalsPerLeader": 4,
+  "promotionsPerType": 3,
+  "adaptive": true,
+  "twoSwap": true,
+  "selection": {
+    "method": "range",
+    "weight": 0.7,
+    "balance": "hybrid",
+    "floor": 0.95
+  },
+  "anchorTrials": 64,
+  "maxAdventures": 700
+}
