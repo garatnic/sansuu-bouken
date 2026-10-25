@@ -47,3 +47,6 @@ testは12グループ。旧phase2の12グループも回帰。validateは31条�
 
 ## D追加（2026-10-25）
 compareは現行編成との共通24seed比較。空枠/空編成対応。初期分込み30問平均×1000を試作の開拓力とし詳細で内訳を表示。outcomes.jsはコンプ時の仮想在庫だけを拡張し旧phase2を保持。製品標準/総合式は未承認。`node bouken/tests/party-recommendation/integration/def-test.cjs`で単位/比較/コンプ/保存保護/66診断を再現。
+
+## E改善の再現
+E1は31条件、E2は追加7条件。各結果JSONの設定/seed/元所有/全候補/短期監査/完走補助/能力距離を参照。異なる所有条件なのでE1/E2/旧82条件を単純な改善率にしない。E1を再現する場合はE1記録のコミットへ戻して実行する。`node bouken/tests/party-recommendation/integration/def-quality-v2.cjs /tmp/new-quality-v2.json`（既存出力の上書き拒否）。現行は専門生指標優先・最終32・能力同値除外。品質ゲート未合格。時間上限はソフト、30四方はNodeでも長い。スマホの電池/メモリ/操作時間は未検証。

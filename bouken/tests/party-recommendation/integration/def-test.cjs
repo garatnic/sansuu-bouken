@@ -18,3 +18,5 @@ const pre=fixture(926,479/480);assert.deepEqual(O.assumptions(r,pre.save),{empty
 assert.deepEqual(O.adventure(r,f.save,f.current,A.defaults,seeds[0]),L.adventure(r,f.save,f.current,A.defaults,seeds[0]));
 console.log('PASS D: shared outcomes, sparse/manual party, matched seeds, power units, 66 active skills, E08 wording, complete-category shadow, claim protection, original driver equality');
 })().catch(e=>{console.error(e);process.exitCode=1;});
+// Effective ability distance treats ID-only replacements as the same capability.
+const byId=new Map(r.byId),first=r.data.characters[0];byId.set(10001,{...first,id:10001});const mirrored={...r,byId};assert.equal(A.abilityDistance(mirrored,[first.id],[10001]),0);assert.equal(A.abilityDistance(r,[first.id],[first.id]),0);

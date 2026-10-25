@@ -2,7 +2,7 @@
 'use strict';
 const modes=['random','balanced','explore','treasure','companion','map'],labels=['ランダム','おまかせ','どんどん開拓','お宝集め','仲間集め','マップ探索'];
 const key=p=>p.filter(x=>x!==null).slice().sort((a,b)=>a-b).join(',');
-const defaults={size:10,budget:30,targetGroup:'04',searchSeed:262501,trainSeedStart:26251001,referenceSeedStart:26252001,referencePartySeed:26253001,references:12,referenceTrials:2,anchorTrials:8,initialTrials:4,finalTrials:16,candidateLimit:60,randomCandidates:20,timeLimitMs:10000,qualityRatio:.9,specialistRatio:.9,selectionSeedStart:40820001,bankLimit:8};
+const defaults={size:10,budget:30,targetGroup:'04',searchSeed:262501,trainSeedStart:26251001,referenceSeedStart:26252001,referencePartySeed:26253001,references:12,referenceTrials:2,anchorTrials:8,initialTrials:4,finalTrials:32,candidateLimit:60,randomCandidates:20,timeLimitMs:10000,qualityRatio:.9,specialistRatio:.9,selectionSeedStart:40820001,bankLimit:8};
 function snapshot(runtime,raw){
  const d=typeof raw==='string'?JSON.parse(raw):L.clone(raw),{c,data,byId}=runtime;
  if(!d||d.schemaVersion!==c.BoukenSchema.version)throw Error('セーブ形式が一致しません');
@@ -54,7 +54,7 @@ function evaluator(runtime,input,config={},hooks={}){const cfg={...defaults,...c
 }
 async function recommendMany(runtime,input,options={},hooks={}){
  const cfg={...defaults,...options.config},locked=[...(options.locked||[])],current=options.current||input.current||input.owned.slice(0,input.slots);validate(runtime,input,null,locked);
- const started=performance.now(),random=L.rng(cfg.searchSeed),ev=evaluator(runtime,input,cfg,hooks),estimate=L.estimator(runtime,input.save,cfg),base=estimate([]),rows=new Map(),candidates=new Map();let interrupted=false;
+ const started=performance.now(),random=L.rng(cfg.searchSeed),ev=evaluator(runtime,input,cfg,hooks),estimate=O.estimator(runtime,input.save,cfg),base=estimate([]),rows=new Map(),candidates=new Map();let interrupted=false;
  const order=p=>arrange(input,p,locked,current),sig=p=>L.signature(runtime,p),add=p=>{p=order(p);validate(runtime,input,p,locked);candidates.set(key(p),p);};
  const fixed=[...locked],free=input.owned.filter(id=>!locked.includes(id)),need=input.slots-locked.length;
  const approx=(p,type)=>L.objective(estimate(p).map((x,k)=>100*x/(Math.max(1e-9,base[k])+x)),type);
@@ -78,12 +78,13 @@ async function recommendMany(runtime,input,options={},hooks={}){
  if(!interrupted&&need){const leaders=new Map();for(let type=0;type<5;type++){for(const e of rank([...rows.values()],type).slice(0,2))leaders.set(key(e.party),e);if(type){const e=[...rows.values()].sort((a,b)=>b.raw[type-1]-a.raw[type-1])[0];leaders.set(key(e.party),e);}}
   for(const e of leaders.values()){for(const swaps of [1,2].filter(n=>n<=need)){const p=[...e.party],positions=L.shuffle(p.map((id,i)=>!locked.includes(id)?i:-1).filter(i=>i>=0),random).slice(0,swaps);for(const pos of positions){const pool=free.filter(id=>!p.includes(id));if(pool.length)p[pos]=pool[Math.floor(random()*pool.length)];}if(!rows.has(key(p)))await evaluate(p,cfg.initialTrials);if(interrupted)break;}if(interrupted)break;}}
  const survivors=new Map();for(let type=0;type<5;type++){for(const e of rank([...rows.values()],type).slice(0,6))survivors.set(key(e.party),e);if(type){for(const e of [...rows.values()].sort((a,b)=>b.raw[type-1]-a.raw[type-1]).slice(0,4))survivors.set(key(e.party),e);}}
- for(const e of survivors.values()){if(interrupted)break;await evaluate(e.party,cfg.finalTrials,true);}
+ const required=new Map();required.set(key(rank([...rows.values()],0)[0].party),rank([...rows.values()],0)[0]);for(let k=0;k<4;k++){const leader=[...rows.values()].sort((a,b)=>b.raw[k]-a.raw[k])[0];required.set(key(leader.party),leader);}const ordered=new Map([...required,...survivors]);
+ for(const [id,e] of ordered){if(interrupted&&!required.has(id))break;await evaluate(e.party,cfg.finalTrials,true);}
  const eligible=[...rows.values()].filter(e=>e.phase==='selection'),pool=eligible.length?eligible:[...rows.values()],banks={};
  for(let type=0;type<5;type++){
   let list=rank(pool,type);
-  if(type){const best=Math.max(...list.map(e=>e.raw[type-1]));list=list.filter(e=>e.raw[type-1]>=cfg.specialistRatio*best);}
-  const cutoff=list[0].objective*cfg.qualityRatio;list=list.filter(e=>e.objective>=cutoff);
+  if(type){const best=Math.max(...list.map(e=>e.raw[type-1]));list=list.filter(e=>e.raw[type-1]>=cfg.specialistRatio*best).sort((a,b)=>b.raw[type-1]-a.raw[type-1]||b.objective-a.objective);}
+  if(!type){const cutoff=list[0].objective*cfg.qualityRatio;list=list.filter(e=>e.objective>=cutoff);}
   // Keep the strongest first, then maximize effective-skill / group-set distance.
   // Exact ability-equivalent ID substitutions do not create additional recommendations.
   const distinct=[],signatures=new Set();for(const e of list){const sig=L.signature(runtime,e.party);if(!signatures.has(sig)){signatures.add(sig);distinct.push(e);}}

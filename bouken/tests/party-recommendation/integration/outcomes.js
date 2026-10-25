@@ -49,5 +49,6 @@ function adventure(runtime,base,party,cfg,seed,options={}){
  runtime.c.BoukenCollection={...original,stages:()=>[...stages]};
  try{return run(runtime,base,party,cfg,seed,a);}finally{runtime.c.BoukenCollection=original;}
 }
-return {adventure,assumptions};
+function estimator(runtime,base,cfg){const flags=assumptions(runtime,base);if(!flags.emptyItems&&!flags.emptyCharacters)return L.estimator(runtime,base,cfg);const original=runtime.c.BoukenCollection,stages=Array.from(original.stages(base)),virtual={...base,items:flags.emptyItems?{}:base.items,characters:flags.emptyCharacters?{}:base.characters};runtime.c.BoukenCollection={...original,stages:()=>[...stages]};try{return L.estimator(runtime,virtual,cfg);}finally{runtime.c.BoukenCollection=original;}}
+return {adventure,assumptions,estimator};
 });
