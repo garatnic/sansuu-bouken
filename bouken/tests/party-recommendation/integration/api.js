@@ -2,7 +2,7 @@
 'use strict';
 const modes=['random','balanced','explore','treasure','companion','map'],labels=['ランダム','おまかせ','どんどん開拓','お宝集め','仲間集め','マップ探索'];
 const key=p=>p.filter(x=>x!==null).slice().sort((a,b)=>a-b).join(',');
-const defaults={size:10,budget:30,targetGroup:'04',searchSeed:262501,trainSeedStart:26251001,referenceSeedStart:26252001,referencePartySeed:26253001,references:12,referenceTrials:2,anchorTrials:8,initialTrials:4,finalTrials:16,candidateLimit:60,randomCandidates:20,timeLimitMs:10000,qualityRatio:.9};
+const defaults={size:10,budget:30,targetGroup:'04',searchSeed:262501,trainSeedStart:26251001,referenceSeedStart:26252001,referencePartySeed:26253001,references:12,referenceTrials:2,anchorTrials:8,initialTrials:4,finalTrials:16,candidateLimit:60,randomCandidates:20,timeLimitMs:10000,qualityRatio:.9,specialistRatio:.9,selectionSeedStart:40820001,bankLimit:8};
 function snapshot(runtime,raw){
  const d=typeof raw==='string'?JSON.parse(raw):L.clone(raw),{c,data,byId}=runtime;
  if(!d||d.schemaVersion!==c.BoukenSchema.version)throw Error('セーブ形式が一致しません');
@@ -69,7 +69,7 @@ async function recommendMany(runtime,input,options={},hooks={}){
   if(input.slots===1)for(const id of free)add([id]);
  }
  const generationMs=performance.now()-candidateStart;
- async function evaluate(p,n){const e=await ev.evaluateParty(p,Array.from({length:n},(_,i)=>cfg.trainSeedStart+i));rows.set(key(p),e);if(performance.now()-started>cfg.timeLimitMs)interrupted=true;return e;}
+ async function evaluate(p,n,selection=false){const e=await ev.evaluateParty(p,Array.from({length:n},(_,i)=>(selection?cfg.selectionSeedStart:cfg.trainSeedStart)+i));e.phase=selection?'selection':'proposal';rows.set(key(p),e);if(performance.now()-started>cfg.timeLimitMs)interrupted=true;return e;}
  for(const p of [...candidates.values()].slice(0,cfg.candidateLimit)){await evaluate(p,cfg.initialTrials);if(interrupted)break;}
  if(!rows.size)throw Error('候補の試行が完了しませんでした');
  const rank=(list,type)=>list.map(e=>({...e,scores:L.normalize(e.raw,cal,'range')})).map(e=>({...e,objective:L.objective(e.scores,type,.7,'hybrid')})).sort((a,b)=>b.objective-a.objective||key(a.party).localeCompare(key(b.party)));
@@ -77,11 +77,29 @@ async function recommendMany(runtime,input,options={},hooks={}){
  // Preserve per-purpose beams, including real raw specialization, before one/two member exchanges.
  if(!interrupted&&need){const leaders=new Map();for(let type=0;type<5;type++){for(const e of rank([...rows.values()],type).slice(0,2))leaders.set(key(e.party),e);if(type){const e=[...rows.values()].sort((a,b)=>b.raw[type-1]-a.raw[type-1])[0];leaders.set(key(e.party),e);}}
   for(const e of leaders.values()){for(const swaps of [1,2].filter(n=>n<=need)){const p=[...e.party],positions=L.shuffle(p.map((id,i)=>!locked.includes(id)?i:-1).filter(i=>i>=0),random).slice(0,swaps);for(const pos of positions){const pool=free.filter(id=>!p.includes(id));if(pool.length)p[pos]=pool[Math.floor(random()*pool.length)];}if(!rows.has(key(p)))await evaluate(p,cfg.initialTrials);if(interrupted)break;}if(interrupted)break;}}
- const survivors=new Map();for(let type=0;type<5;type++){for(const e of rank([...rows.values()],type).slice(0,3))survivors.set(key(e.party),e);if(type){for(const e of [...rows.values()].sort((a,b)=>b.raw[type-1]-a.raw[type-1]).slice(0,2))survivors.set(key(e.party),e);}}
- for(const e of survivors.values()){if(interrupted)break;await evaluate(e.party,cfg.finalTrials);}
- const eligible=[...rows.values()].filter(e=>e.n>=cfg.finalTrials),pool=eligible.length?eligible:[...rows.values()],banks={};
- for(let type=0;type<5;type++){let list=rank(pool,type);if(type){const best=Math.max(...list.map(e=>e.raw[type-1]));list=list.filter(e=>e.raw[type-1]>=.95*best);}const cutoff=list[0].objective*cfg.qualityRatio;banks[modes[type+1]]=list.filter(e=>e.objective>=cutoff).map(e=>({...e,diagnosis:diagnose(runtime,e.party)}));}
+ const survivors=new Map();for(let type=0;type<5;type++){for(const e of rank([...rows.values()],type).slice(0,6))survivors.set(key(e.party),e);if(type){for(const e of [...rows.values()].sort((a,b)=>b.raw[type-1]-a.raw[type-1]).slice(0,4))survivors.set(key(e.party),e);}}
+ for(const e of survivors.values()){if(interrupted)break;await evaluate(e.party,cfg.finalTrials,true);}
+ const eligible=[...rows.values()].filter(e=>e.phase==='selection'),pool=eligible.length?eligible:[...rows.values()],banks={};
+ for(let type=0;type<5;type++){
+  let list=rank(pool,type);
+  if(type){const best=Math.max(...list.map(e=>e.raw[type-1]));list=list.filter(e=>e.raw[type-1]>=cfg.specialistRatio*best);}
+  const cutoff=list[0].objective*cfg.qualityRatio;list=list.filter(e=>e.objective>=cutoff);
+  // Keep the strongest first, then maximize effective-skill / group-set distance.
+  // Exact ability-equivalent ID substitutions do not create additional recommendations.
+  const distinct=[],signatures=new Set();for(const e of list){const sig=L.signature(runtime,e.party);if(!signatures.has(sig)){signatures.add(sig);distinct.push(e);}}
+  const chosen=distinct.length?[distinct.shift()]:[];
+  while(distinct.length&&chosen.length<cfg.bankLimit){distinct.sort((a,b)=>Math.min(...chosen.map(e=>abilityDistance(runtime,b.party,e.party)))-Math.min(...chosen.map(e=>abilityDistance(runtime,a.party,e.party)))||b.objective-a.objective);chosen.push(distinct.shift());}
+  banks[modes[type+1]]=chosen.map(e=>({...e,diagnosis:diagnose(runtime,e.party)}));
+ }
+
  return {banks,calibration:cal,referenceParties:references,evaluations:[...rows.values()],context:L.context(runtime,input.save,cfg),config:cfg,elapsedMs:performance.now()-started,adventures:ev.adventures,profile:{calibrationMs:calMs,candidateGenerationMs:generationMs},interrupted,provisional:true,qualityRatioMeaning:'training score only; not a true performance guarantee',locked};
+}
+
+
+function abilityDistance(runtime,a,b){
+ const vector=p=>new Map(Array.from(runtime.c.BoukenParty.buffs(p,runtime.byId)).filter(s=>s.id!=='D04').map(s=>[s.id,s.level]));const x=vector(a),y=vector(b),ids=new Set([...x.keys(),...y.keys()]);let distance=0,total=0;for(const id of ids){distance+=Math.abs((x.get(id)||0)-(y.get(id)||0));total+=Math.max(x.get(id)||0,y.get(id)||0);}
+ const levelD06=x.has('D06')||y.has('D06');if(levelD06){const ga=new Set(a.map(id=>runtime.byId.get(id).groupId)),gb=new Set(b.map(id=>runtime.byId.get(id).groupId));for(const group of new Set([...ga,...gb])){distance+=Number(ga.has(group)!==gb.has(group));total++;}}
+ return total?distance/total:0;
 }
 
 function validateAny(runtime,input,party){validate(runtime,input);const ids=party.filter(id=>id!==null);if(party.length>input.slots||new Set(ids).size!==ids.length||ids.some(id=>!input.owned.includes(id)))throw Error('評価する編成が不正です');return ids;}
@@ -97,5 +115,5 @@ async function compare(runtime,input,party,config={},hooks={}){
  return {baseline,candidate:recommended,delta,deltaSE:se,assumptions:O.assumptions(runtime,input.save),diagnosis:diagnose(runtime,candidate),seeds,condition:{size:cfg.size,budget:cfg.budget,slots:input.slots,cumulativeExplored:input.save.records.totalExplored||0,museumStages:Array.from(runtime.c.BoukenCollection.stages(input.save)),policy:'informed',initialIncluded:true,standard:'独立試作の比較条件。製品標準は未承認'},note:'開拓力＝この条件の期待総開拓マス/30×1000。初期開拓を含む。推定であり保証ではない。同seedでもスキルによって地形と乱数消費は異なる。SEは世界間変動のみ、モデルや参照集団の誤差を含まない。'};
 }
 
-return {compare,validateAny,comparisonSeeds,modes,labels,key,defaults,snapshot,validate,randomParty,randomOther,arrange,diagnose,evaluator,recommendMany};
+return {abilityDistance,compare,validateAny,comparisonSeeds,modes,labels,key,defaults,snapshot,validate,randomParty,randomOther,arrange,diagnose,evaluator,recommendMany};
 });
