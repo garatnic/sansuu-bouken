@@ -53,5 +53,10 @@
     "long-term game balance",
     "production integration G"
   ],
-  "finalPolish": "New-source status and cancelled-retry heartbeat reset after these checks; targeted repeat required after publish."
+  "finalPolish": {
+    "testedCommit": "20bf879b59e06190042aba6728d02c94f13233d5",
+    "publicReload": "passed",
+    "sourceSwitchStatus": "モードをえらぶか、この編成を評価してみよう。",
+    "scope": "targeted visible-status repeat; numerical engine unchanged"
+  }
 }
