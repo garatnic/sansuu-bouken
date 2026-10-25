@@ -1,4 +1,4 @@
-(function(root,factory){if(typeof module==='object'&&module.exports)module.exports=factory(require('../phase2/core.js'));else root.PartyExperiment=factory(root.BoukenPartyLab);})(typeof globalThis!=='undefined'?globalThis:this,function(L){
+(function(root,factory){if(typeof module==='object'&&module.exports)module.exports=factory(require('../phase2/core.js'),require('./outcomes.js'));else root.PartyExperiment=factory(root.BoukenPartyLab,root.PartyOutcomes);})(typeof globalThis!=='undefined'?globalThis:this,function(L,O){
 'use strict';
 const modes=['random','balanced','explore','treasure','companion','map'],labels=['ランダム','おまかせ','どんどん開拓','お宝集め','仲間集め','マップ探索'];
 const key=p=>p.filter(x=>x!==null).slice().sort((a,b)=>a-b).join(',');
@@ -42,12 +42,14 @@ function diagnose(runtime,party){const buffs=Array.from(runtime.c.BoukenParty.bu
  if(has('C04'))add('まだ持っていないお宝を出やすくするスキルがあるよ。',['C04'],'common/events.js itemWeights');
  if(has('D05')&&has('D06'))add('新しい仲間と、同じなかまの種類をよぶよ。出会いやすさは手持ちでかわるよ。',['D05','D06'],'common/events.js companionWeights');
  if(has('D02')&&has('D07'))add('勧誘を助けて、失敗したときはもう一度ためすスキルもあるよ。',['D02','D07'],'common/events.js resolve');
- const totals=new Map();for(const id of party)for(const s of runtime.byId.get(id).skills||[])totals.set(s.id,(totals.get(s.id)||0)+s.level);if([...totals.values()].some(x=>x>3))add('同じスキルは、あわせてレベル3までだよ。',[...totals].filter(x=>x[1]>3).map(x=>x[0]),'common/party.js buffs');
- if(buffs.some(x=>x.id[0]==='E'))add('土地のわりあいをかえるスキルがあるよ。数種類あると、わりあいをわけ合うよ。',buffs.filter(x=>x.id[0]==='E').map(x=>x.id),'common/worldgen.js targets');
+ const totals=new Map();for(const id of party)for(const s of runtime.byId.get(id)?.skills||[])totals.set(s.id,(totals.get(s.id)||0)+s.level);if([...totals.values()].some(x=>x>3))add('同じスキルは、あわせてレベル3までだよ。',[...totals].filter(x=>x[1]>3).map(x=>x[0]),'common/party.js buffs');
+ if(buffs.some(x=>/^E0[1-7]$/.test(x.id)))add('土地のわりあいをかえるよ。数種類あると、わりあいをわけ合うよ。',buffs.filter(x=>/^E0[1-7]$/.test(x.id)).map(x=>x.id),'common/worldgen.js targets');
+ if(has('E08'))add('同じ土地を、まとまりやすくするよ。',['E08'],'common/worldgen.js consolidate');
+ for(const [id,text] of Object.entries({C03:'お宝を手に入れたあと、もうひとつ見つかることがあるよ。',D02:'仲間をさそうのを助けるよ。',D03:'町やお城がふえるよ。',D06:'パーティーと同じ大きな種類の仲間を出やすくするよ。',D07:'さそうのに失敗したら、もう一度ためせることがあるよ。',D08:'墓地やダンジョンがふえるよ。',D09:'洞窟や遺跡や塔がふえるよ。',F01:'いくつかのお宝から、ひとつをえらべるよ。',F02:'何人かの仲間から、ひとりをえらべるよ。',F03:'お宝も仲間も、手に入れるのを助けるよ。'}))if(has(id))add(text,[id],id==='D03'||id==='D08'||id==='D09'?'common/worldgen.js facilities':'common/events.js prepare/resolve');
  return facts.length?facts:[{text:'この仲間たちの組み合わせを、模擬冒険でためしてみよう。',skills:[],source:'no effectiveness claim'}];
 }
 function evaluator(runtime,input,config={},hooks={}){const cfg={...defaults,...config},cache=new Map();validate(runtime,input);let adventures=0;const before=JSON.stringify(input.save);
- async function evaluateParty(party,seeds,strict=true){if(strict)validate(runtime,input,party);else if(party.length)throw Error('Only empty reference bypass is allowed');const sig=L.signature(runtime,party),trials=[];for(const seed of seeds){if(hooks.cancelled?.())throw Error('中止しました');const k=sig+'|'+seed;if(!cache.has(k)){cache.set(k,L.adventure(runtime,input.save,party,cfg,seed));adventures++;}trials.push(cache.get(k));await hooks.yield?.();}if(JSON.stringify(input.save)!==before)throw Error('Input mutation');return L.aggregate(party,trials);}
+ async function evaluateParty(party,seeds,strict=true){if(strict)validate(runtime,input,party);else if(party.length)throw Error('Only empty reference bypass is allowed');const sig=L.signature(runtime,party),trials=[];for(const seed of seeds){if(hooks.cancelled?.())throw Error('中止しました');const k=sig+'|'+seed;if(!cache.has(k)){cache.set(k,O.adventure(runtime,input.save,party,cfg,seed));adventures++;}trials.push(cache.get(k));await hooks.yield?.();}if(JSON.stringify(input.save)!==before)throw Error('Input mutation');return L.aggregate(party,trials);}
  return {cfg,evaluateParty,get adventures(){return adventures;}};
 }
 async function recommendMany(runtime,input,options={},hooks={}){
@@ -81,5 +83,19 @@ async function recommendMany(runtime,input,options={},hooks={}){
  for(let type=0;type<5;type++){let list=rank(pool,type);if(type){const best=Math.max(...list.map(e=>e.raw[type-1]));list=list.filter(e=>e.raw[type-1]>=.95*best);}const cutoff=list[0].objective*cfg.qualityRatio;banks[modes[type+1]]=list.filter(e=>e.objective>=cutoff).map(e=>({...e,diagnosis:diagnose(runtime,e.party)}));}
  return {banks,calibration:cal,referenceParties:references,evaluations:[...rows.values()],context:L.context(runtime,input.save,cfg),config:cfg,elapsedMs:performance.now()-started,adventures:ev.adventures,profile:{calibrationMs:calMs,candidateGenerationMs:generationMs},interrupted,provisional:true,qualityRatioMeaning:'training score only; not a true performance guarantee',locked};
 }
-return {modes,labels,key,defaults,snapshot,validate,randomParty,randomOther,arrange,diagnose,evaluator,recommendMany};
+
+function validateAny(runtime,input,party){validate(runtime,input);const ids=party.filter(id=>id!==null);if(party.length>input.slots||new Set(ids).size!==ids.length||ids.some(id=>!input.owned.includes(id)))throw Error('評価する編成が不正です');return ids;}
+const comparisonSeeds=Array.from({length:24},(_,i)=>40810001+i);
+async function compare(runtime,input,party,config={},hooks={}){
+ const cfg={...defaults,...config};if(![10,20,30].includes(cfg.size)||cfg.budget!==30)throw Error('比較は10/20/30四方・30問の試作条件です');
+ const current=validateAny(runtime,input,input.current),candidate=validateAny(runtime,input,party),seeds=config.comparisonSeeds||comparisonSeeds;
+ if(!seeds.length||new Set(seeds).size!==seeds.length)throw Error('比較seedが不正です');
+ const before=JSON.stringify(input.save),cache=new Map();
+ async function evaluate(ids){const trials=[];for(const seed of seeds){if(hooks.cancelled?.())throw Error('中止しました');const k=L.signature(runtime,ids)+'|'+seed;if(!cache.has(k))cache.set(k,O.adventure(runtime,input.save,ids,cfg,seed));trials.push(cache.get(k));await hooks.yield?.();}const result=L.aggregate(ids,trials);const mean=k=>trials.reduce((s,t)=>s+t[k],0)/trials.length;return {...result,initialOpened:mean('initial'),power:Math.round(result.metrics.opened/cfg.budget*1000),openedPerAnswer:result.metrics.opened/cfg.budget,openedSamples:trials.map(t=>t.opened),initialSamples:trials.map(t=>t.initial)};}
+ const baseline=await evaluate(current),recommended=await evaluate(candidate),differences=recommended.samples.map((row,i)=>row.map((x,k)=>x-baseline.samples[i][k])),delta=L.mean(differences),se=delta.map((m,k)=>Math.sqrt(differences.reduce((s,row)=>s+(row[k]-m)**2,0)/Math.max(1,seeds.length-1)/seeds.length));
+ if(JSON.stringify(input.save)!==before)throw Error('Input mutation');
+ return {baseline,candidate:recommended,delta,deltaSE:se,assumptions:O.assumptions(runtime,input.save),diagnosis:diagnose(runtime,candidate),seeds,condition:{size:cfg.size,budget:cfg.budget,slots:input.slots,cumulativeExplored:input.save.records.totalExplored||0,museumStages:Array.from(runtime.c.BoukenCollection.stages(input.save)),policy:'informed',initialIncluded:true,standard:'独立試作の比較条件。製品標準は未承認'},note:'開拓力＝この条件の期待総開拓マス/30×1000。初期開拓を含む。推定であり保証ではない。同seedでもスキルによって地形と乱数消費は異なる。SEは世界間変動のみ、モデルや参照集団の誤差を含まない。'};
+}
+
+return {compare,validateAny,comparisonSeeds,modes,labels,key,defaults,snapshot,validate,randomParty,randomOther,arrange,diagnose,evaluator,recommendMany};
 });

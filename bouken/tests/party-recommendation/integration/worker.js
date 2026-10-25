@@ -1,5 +1,5 @@
 'use strict';
-importScripts('../phase2/core.js','./api.js','./runtime.js');
+importScripts('../phase2/core.js','./outcomes.js','./api.js','./runtime.js');
 let runtimePromise,running=false;
 self.onmessage=async event=>{if(running)return;running=true;const m=event.data;try{
  const r=await(runtimePromise??=bootstrap());
@@ -10,6 +10,7 @@ self.onmessage=async event=>{if(running)return;running=true;const m=event.data;t
  if(m.type==='input'){postMessage({type:'input',input});return;}
  if(!input.eligible)throw Error(input.reason);
  const options={config:m.config,locked:m.locked,current:m.current},hooks={yield:()=>new Promise(resolve=>setTimeout(resolve,0)),onProgress:snapshot=>postMessage({type:'progress',snapshot})};
- if(m.type==='evaluate'){const evaluator=PartyExperiment.evaluator(r,input,m.config,hooks),evaluation=await evaluator.evaluateParty(m.current,Array.from({length:16},(_,i)=>30550001+i));postMessage({type:'evaluation',evaluation,diagnosis:PartyExperiment.diagnose(r,m.current)});return;}
+ if(m.type==='evaluate'){const comparison=await PartyExperiment.compare(r,input,m.current,m.config,hooks);postMessage({type:'comparison',comparison});return;}
+
  const result=await PartyExperiment.recommendMany(r,input,options,hooks);postMessage({type:'result',result});
  }catch(error){postMessage({type:'error',message:error.message});}finally{running=false;}};
