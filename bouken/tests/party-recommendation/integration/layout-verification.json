@@ -28,9 +28,20 @@
     "automatically compare current party after explicit input selection"
   ],
   "notChecked": [
-    "post-polish public UI repeat pending",
-    "smartphone touch/real-save acceptance",
+    "smartphone touch/real-save and user layout acceptance",
     "recommendation quality gate remains failed",
     "game integration G forbidden"
-  ]
+  ],
+  "finalPolishVerification": {
+    "commit": "1feb89935ff889941a3f479c2a074dfbb56d5f23",
+    "widthsVisuallyChecked": [
+      320,
+      412
+    ],
+    "sourceSelectionAutoComparison": "passed with500 owners",
+    "powerCurrentSideBySide": "passed at320",
+    "redundantAvailableListHidden": "passed",
+    "originalImages": "five images visually verified at412",
+    "skillRoute": "forecast -> candidate skills -> ghost actual B04/C12/D08 detail passed"
+  }
 }
