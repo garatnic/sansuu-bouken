@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-25",
+  "version": 69,
+  "uiCommit": "e970fe8419db44a4a0161426e9d61656e0f90e12",
+  "scope": "Public PC, synthetic ownership; smartphone layout acceptance pending",
+  "changes": [
+    "data selector dialog outside normal flow, gear entry",
+    "3 columns x 2 rows modes",
+    "54px image-only party, tap lock, skill details in forecast dialog",
+    "current party images and names",
+    "yellow summary and forecast before secondary actions",
+    "fixed display maxima: opened100/newItems10/newCharacters10/visited15"
+  ],
+  "observations": {
+    "samePartyOpened": 30,
+    "recommendedOpened": 32.7916666667,
+    "openingMeterMax": 100,
+    "candidateExceedsCurrentWithoutFullBar": true,
+    "narrowFrame": 320,
+    "narrowOwners": 500,
+    "fiveImageRowVisible": true,
+    "modeLayoutVisuallyVerified": "3x2",
+    "dataDialogClosesOnInput": true
+  },
+  "finalPolish": [
+    "baseline power rendered at14px beside24px candidate",
+    "hide redundant available-mode list, retain newly-unlocked notices",
+    "automatically compare current party after explicit input selection"
+  ],
+  "notChecked": [
+    "post-polish public UI repeat pending",
+    "smartphone touch/real-save acceptance",
+    "recommendation quality gate remains failed",
+    "game integration G forbidden"
+  ]
+}
