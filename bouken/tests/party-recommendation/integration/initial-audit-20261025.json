@@ -1,0 +1,2333 @@
+{
+  "sourceCommit": "07657383021597461b9d30a26e63a7b1da502b20",
+  "version": 69,
+  "scope": "All recursive specification files and recommendation assets acquired, byte-verified, text decoded / structured data parsed / images verified. Mechanical inventory is not a claim of line-by-line semantic review.",
+  "files": [
+    {
+      "path": "README.md",
+      "gitBlob": "6a26e6e3d0e7321d2726d122bd05dd7200eaff26",
+      "bytes": 414,
+      "kind": "text",
+      "lines": 10,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/README.md",
+      "gitBlob": "8aaeae3160e30ae6a57e7a10a5a383220d14311d",
+      "bytes": 3095,
+      "kind": "text",
+      "lines": 43,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/施設イベント・キャラクター抽選仕様.txt",
+      "gitBlob": "33f3f67c31829fea87efd484b669b11ec5b826ae",
+      "bytes": 13573,
+      "kind": "text",
+      "lines": 105,
+      "pendingLines": [
+        "生成/プール/成否の仕様は本文。D04だけ保留、D02/D05/D06/D07/F01～03は実装・ユーザー確認済み。後半ver.39/40/42の「今回未実装」「文字のみ」「旧文言」は各導入当時の履歴。現在の候補画像と結果カードは施設イベント演出実装仕様.md、手動ボーナスはホーム成長通知・コンプボーナス受取仕様.md。ver.39/40/42/43/69の受入は変更履歴.md。",
+        "D04シークレットテーブルの候補実体は未作成で、後工程に保留。既存buffs.txtの効果値は勝手に変更しない。",
+        "・施設生成時の仲間／モノ・仲間プールは変更しない。訪問時、選択済みプール内だけで個体重みと成功率を補正する。D04は未実装のまま。",
+        "・選択後は成功失敗にかかわらず施設を処理済みにし、結果保存と同時に保留候補を削除。所持数は最終成功時のみ1回加算。保存失敗時は画面側で保存前状態へ戻し、候補・結果を進めない。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/記録・実績実装仕様.md",
+      "gitBlob": "67801517aa6a6d927c8f3b123cc0c3c41d402409",
+      "bytes": 4521,
+      "kind": "text",
+      "lines": 27,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/おまかせ編成todo.md",
+      "gitBlob": "fb1b97368f938d2810aaa85c492da877b8897444",
+      "bytes": 14325,
+      "kind": "text",
+      "lines": 147,
+      "pendingLines": [
+        "- 候補は単純なID違いではなく、実際の能力とメンバー構成の多様性を評価。異なるモードで同じ編成が出ること自体は不具合とみなさない。",
+        "- パーティー評価は早期から使える方向。詳細診断の段階解放は未決定。",
+        "- [x] 実際の仲間・所有状態・スキル・解放枠を読み取り専用で取得。（独立API/合成セーブで検証。ユーザー実セーブの実機読込は未確認）",
+        "- [x] 不具合・速度・多様性・実力差の結果を報告。（独立検証記録/原本参照。品質ゲート未合格）"
+      ]
+    },
+    {
+      "path": "bouken/siyou/ホーム画像ボタン・出発導線仕様.md",
+      "gitBlob": "48e0d97b0714166948e962653934cd2e8b19c7df",
+      "bytes": 5072,
+      "kind": "text",
+      "lines": 32,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/ゲーム仕様書.txt",
+      "gitBlob": "d483c92fb789317c12ec7603fb4c9cc20ee4fd59",
+      "bytes": 11962,
+      "kind": "text",
+      "lines": 74,
+      "pendingLines": [
+        "各専門仕様書は本書から参照する詳細正本。過去本文はhistory/20261025整理前/siyou/ゲーム仕様書.txtへ原文保存し、旧案・当時の保留を現在へ持ち込まない。",
+        "未決定/未完了は更新内容と未決定事項.txtとtodo.txtだけに集約。D04候補・低優先画像名称監査・結合/例外/長時間検証・実効評価・旧原本所在/公開整理が残る。完了済みA03/固定報酬/チュートリアル/図鑑/博物館/称号/施設演出を未着手へ戻さない。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/ホーム成長通知・コンプボーナス受取仕様.md",
+      "gitBlob": "3f8cc99ef55ae3a88702a889e8e42d3c490a877d",
+      "bytes": 5343,
+      "kind": "text",
+      "lines": 44,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/変更履歴.md",
+      "gitBlob": "a963a083e6fb06ca67fe46550d30d111caf0e080",
+      "bytes": 69221,
+      "kind": "text",
+      "lines": 298,
+      "pendingLines": [
+        "2026-10-25整理。以下は各版当時の記録を原文で保持する。未実装・検証待ち・旧用語は当時の状態であり、現在の残件は[todo.txt](todo.txt)、仕様入口は[README.md](README.md)を参照する。後続のユーザー承認で解消した確認待ちを再び未完了と解釈しない。旧工程表全体はhistory/20261025整理前/siyou/todo.txt。",
+        "[ver.16] ToDo31: 出発時の編成固定・スキル合算スナップショット保存。indexにデバッグ仲間獲得ボタン。ToDo32実効果は未実装。",
+        "[ver.18] ToDo32-A前半: A01/A04～A12実適用。正解時の独立判定→スタック確定→連続開拓。A11は新規ワールド生成時のみ。A02/A03未実装。",
+        "[ver.19] UI追加：探索中の出発時固定バフ一覧、および探索・編成画面のスキル詳細ダイアログ。ToDo32のA02/A03は引き続き未実装。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/キャラクター画像表示仕様.md",
+      "gitBlob": "3231dbbe6cdc6b1ea1a672a38f8f05acf11ea863",
+      "bytes": 4745,
+      "kind": "text",
+      "lines": 38,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/todo.txt",
+      "gitBlob": "9da7706dc3668f638a2272acca96a6574f937ba8",
+      "bytes": 10186,
+      "kind": "text",
+      "lines": 77,
+      "pendingLines": [
+        "    ・C03の体感上の強弱は保留。変更する場合のみコスト/構成/割当への影響を検討する。",
+        "    [ ] 41-1. 未収録の旧評価CSV/構成案CSV等の原本所在を確認。具体的な一覧は更新内容と未決定事項.txt。実在する対応CSV/JSONを数値正本として使い、失われた評価点を推測復元しない。",
+        "[ ] 目的別おすすめパーティー（ゲームUIは未実装）。",
+        "    [x] Node/Worker共通コアと独立ブラウザ試作（進捗・中止・計算上限・結果JSON）。クラウドChromeで公開ページの計算/追加探索/中止/再実行/JSON保存と320・390・800pxのCSS幅を確認済み。ブラウザ出力とNode再実行の数値一致も確認。実機スマホは未確認。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/博物館表示・ボーナス実装仕様.md",
+      "gitBlob": "957dd5d03c5389e53cca3d909413d4825323a4b3",
+      "bytes": 4148,
+      "kind": "text",
+      "lines": 14,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/20261017_決定事項と経緯.txt",
+      "gitBlob": "45db98173d4d99c6230607244a41afe0ed5ed0a1",
+      "bytes": 30662,
+      "kind": "text",
+      "lines": 203,
+      "pendingLines": [
+        "本文は当時の記録を保持する。現在の仕様/残件はREADME.md・ゲーム仕様書.txt・todo.txt。68種/204定義/全員12/ホームで破棄/途中帰還禁止/未獲得？/自動コンプ等は後日改定済み。新たな仕様や未実装リストとして使わない。",
+        "後日変更されたZIP運用、ホーム中断、B05/B07、C01/D01、C03、施設増加の最低保証はGitHub運用方針.md・buffs.txt・実装構成・運用方針.mdの現行案内を優先する。旧「未確定」「未実装」「開始拠点保留」等を現行状態と誤認しない。",
+        "[確定] 固定仲間は第1全域開拓報酬#298 グリーンゴブ（B01遠見Lv3）、第2全域開拓報酬#199 犬着ぐるみポポ（D01いいこみっけLv3）。ともにコスト12単独。施設イベント成功判定とは別の確定加入報酬。[保留] 演出細部・既登録時処理。",
+        "[保留] 「レア」の正式名称、実際の入手確率、特別演出・報酬。存在数が少ないことと抽選確率が低いことは同義ではない。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/更新内容と未決定事項.txt",
+      "gitBlob": "4ab15e122ec4e4cc433ef17c2216af052e9393f8",
+      "bytes": 3381,
+      "kind": "text",
+      "lines": 28,
+      "pendingLines": [
+        "更新内容と未決定事項（現行）",
+        "資料入口README.md、状態todo.txt、過去の改定/受入は変更履歴.md。旧本文はhistory/20261025整理前/siyou/更新内容と未決定事項.txt。",
+        "【未決定・保留】",
+        "・38-画像名称監査は名称変更未着手。おすすめパーティーは独立評価/モック/読み取り専用接続の検証中（おまかせ編成todo.md参照）。正式UI統合は未承認・品質ゲート未合格。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/施設イベント演出モック.md",
+      "gitBlob": "dbacc3cc24221721a0b18a761837991452f30a89",
+      "bytes": 1789,
+      "kind": "text",
+      "lines": 13,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/おすすめパーティー評価エンジン第2段階検証.md",
+      "gitBlob": "31cd2edcc65d042ba17d53a8cead4e18650bacf6",
+      "bytes": 61412,
+      "kind": "text",
+      "lines": 651,
+      "pendingLines": [
+        "**927体加入済みの仕様案：** 新規加入は必ず0。現在の重複取得は解放枠やスキルLvを直接成長させないため、正式UIでは「仲間あつめ（コンプリート済み）」を基本にし、必要なら任意で「仲間との出会い」を選べる案を推奨する。今回5タイプを検証するため出会い回数を代替したが、正式な目標変更は未決定。全品所有済みのお宝も同様に完了表示/任意の総数目標を検討する。",
+        "方式を変えると、複合目的の順位は自然に変わる。各分野単独の単調な順位まで逆転させる方式ではないが、分位点の同点や少数参照の幅の推定で総合順位が変わり、重み変更だけでも推薦が入れ替わる。どの方式も全条件で安定して優位とは確認できなかった。range+下限は専門性を明示しやすいが、参照誤差・候補の見落とし・少数抽選を解決しない。製品採用は保留。",
+        "5. 同一seed集合をprefix拡張してキャッシュし、再評価のために既存試行を捨てない。ただし別の追加探索リクエスト間のキャッシュ持越しは未実装。",
+        "主スレッドはフォーム・結果・heartbeatを表示し、計算はWorkerで実行。postMessageで暫定/探索/追加試行の進捗を送り、終わるまでUIをブロックしない構成。冒険ごとのyieldで協調中止でき、UIの中止はWorker.terminateで強制終了する。再実行/追加探索では同じ入力なら候補を引き継ぐが、試行キャッシュの持越しは未実装。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/チュートリアル演出仕様.md",
+      "gitBlob": "78106ce89a8e703fd7204e256e54da2be73d29ff",
+      "bytes": 7618,
+      "kind": "text",
+      "lines": 59,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/E系地形生成仕様.md",
+      "gitBlob": "929a0a57290f77e2925db0d1a85c613e50329141",
+      "bytes": 7258,
+      "kind": "text",
+      "lines": 65,
+      "pendingLines": [
+        "E09を有効スキル一覧・条件・説明・生成処理から削除。E09以外のIDは再採番しない。現行は67種類（保留D04以外の66種類が実装済み）。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/キャラクター詳細・スキル強調仕様.md",
+      "gitBlob": "caff41fa70a33bdff477befd042502910453c7a4",
+      "bytes": 5884,
+      "kind": "text",
+      "lines": 44,
+      "pendingLines": [
+        "条件ダイアログはskills.jsonの全スキルをID順に表示し、分類見出しもIDの先頭文字から自動列挙する。A～Dだけに限定しない。現在はA12/B7/C28/D9/E8/F3の計67種（ver.48 E09統合後）。未実装効果の有無と所持スキルによる検索は別であり、D04・E系も検索対象に含む。複数指定は引き続きANDで、名前・番号検索と併用可能。検索・条件変更で20体単位の表示を先頭へ戻す。説明は全67種のskill_messages.jsonを使用。再表示や絞り込みで画像・マスターを追加取得せず、保存も変更しない。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/README.md",
+      "gitBlob": "074db6ee83ea1b9acc0ed82f47856a135de956bc",
+      "bytes": 8457,
+      "kind": "text",
+      "lines": 76,
+      "pendingLines": [
+        "3. [更新内容と未決定事項.txt](更新内容と未決定事項.txt)：真の保留と解消済み事項。",
+        "## おすすめパーティーの調査・設計（ゲームUI未実装）",
+        "[評価エンジン第2段階](おすすめパーティー評価エンジン第2段階検証.md)：3正規化・専門下限・探索改良・13進行/所有/サイズ条件・第1段階との独立比較・Workerブラウザ試作を検証。[第2段階コード](../tests/party-recommendation/phase2/README.md)。速度と一部専門成果は改善したが、序盤/終盤の専門推薦の不安定が残るため、ゲームUIへの組込みは追加検証後。スマホ実機性能は未確認。",
+        "[おまかせ編成 実データ独立検証](../tests/party-recommendation/integration/index.html)：読み取り専用セーブ接続、固定探索、任意評価、31条件の監査。候補多様性・専門安定性の品質ゲート未合格。本体への統合は未承認。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/博物館収集品_24大グループ96小グループ完成版.txt",
+      "gitBlob": "dcbcdc0eb532e4aae9d096b0f779d6fbbd826e21",
+      "bytes": 15458,
+      "kind": "text",
+      "lines": 625,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/buffs.txt",
+      "gitBlob": "35a1836d53e9fa207652ac0b665a1ddbc7692594",
+      "bytes": 21678,
+      "kind": "text",
+      "lines": 138,
+      "pendingLines": [
+        "定義は67種類/201レベル別、実装済み66種、D04のみ候補未定義で保留。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/施設イベント画像表示仕様.md",
+      "gitBlob": "6eae17baa64510541ba5ad5343de3c70ff421b8f",
+      "bytes": 5294,
+      "kind": "text",
+      "lines": 42,
+      "pendingLines": [
+        "## 開発側検証・実機未確認"
+      ]
+    },
+    {
+      "path": "bouken/siyou/開拓カウンタ・閾値発動処理仕様.txt",
+      "gitBlob": "7744e287b7e388c78c55de5a3609f3bce7da94c4",
+      "bytes": 3852,
+      "kind": "text",
+      "lines": 35,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/プロジェクト概要.txt",
+      "gitBlob": "325cbc4e3166ebe3ba468be1ec1457759a88cba0",
+      "bytes": 2043,
+      "kind": "text",
+      "lines": 14,
+      "pendingLines": [
+        "主要機能：7地形・8施設、通常10/20/30四方、最大5人の出発時固定編成、67スキル定義（D04保留、66実装）、仲間図鑑、博物館96小分類の手動ボーナス受取、120称号と通知、画像チュートリアル・施設イベントカード。主要機能の受入根拠は変更履歴.md。全組合せ/長期/例外検証はtodo39/40に残る。",
+        "資料入口：README.md。基本規則：ゲーム仕様書.txt。個別効果：buffs.txtとE系地形生成仕様.md。作業状態：todo.txt。旧決定/モック/統計は履歴として保持し、現行の未実装と誤認しない。旧本文はhistory/20261025整理前/siyou/プロジェクト概要.txt。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/実績カウンタ・保存設計.txt",
+      "gitBlob": "09f4e29945462209a32f10e50f68997f8a589e14",
+      "bytes": 3834,
+      "kind": "text",
+      "lines": 41,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/四則演算問題生成エンジン.md",
+      "gitBlob": "07541f86c656571dc24500abe4e3ccdb76fc3d91",
+      "bytes": 23930,
+      "kind": "text",
+      "lines": 451,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/おすすめパーティー評価エンジン検証.md",
+      "gitBlob": "29bb2c79b551175d3da7ca624533595c0a67e6a2",
+      "bytes": 38483,
+      "kind": "text",
+      "lines": 408,
+      "pendingLines": [
+        "2. **短時間と確定推薦を分ける。** 数秒の結果は暫定表示用、追加試行で精度を上げる設計を検討。スマホのWorker・端末実測・キャンセル・予算制御は未実装。10秒を製品保証にしない。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/博物館・コレクションボーナス仕様.txt",
+      "gitBlob": "cc23442259d3ea3b9a374a9feabd97472b4f7d65",
+      "bytes": 4360,
+      "kind": "text",
+      "lines": 26,
+      "pendingLines": [
+        "画像/選択順/集合境界は博物館表示・ボーナス実装仕様.md、受取/通知/旧保存移行はホーム成長通知・コンプボーナス受取仕様.md。旧未決定欄はver.56/68で解消済み。ver.56/68ユーザー確認済み。元報酬CSVの「完成時増分」は保存済み列名で、現行では受取時に有効になる増分を表す（自動付与ではない）。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/画面点検・改善仕様.md",
+      "gitBlob": "6e2e155d5ace93a3c3bf84757e89d7922e9eb8fb",
+      "bytes": 2398,
+      "kind": "text",
+      "lines": 21,
+      "pendingLines": [
+        "公開版のPCブラウザで読み込みから操作可能状態への移行、検索と詳細、編成保存、スキル説明右上閉じる、D04準備中説明、ボーナス一覧、1問正解と中断再開、No111の獲得を確認。個別の範囲・未確認・検証用セーブ操作はtodo.txt末尾に記録。スマホ実機はver.60ユーザー確認票4/4合格。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/67スキル相互作用調査・おすすめパーティー設計.md",
+      "gitBlob": "25bc6f2fb17c890de2664651e6da1d5f55997e97",
+      "bytes": 25611,
+      "kind": "text",
+      "lines": 451,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/旧todo.txt",
+      "gitBlob": "d0c75074bd97262edf21b4499e9bcb55f5022443",
+      "bytes": 30228,
+      "kind": "text",
+      "lines": 232,
+      "pendingLines": [
+        "本文は当時の記録を保持する。現在の仕様/残件はREADME.md・ゲーム仕様書.txt・todo.txt。68種/204定義/全員12/ホームで破棄/途中帰還禁止/未獲得？/自動コンプ等は後日改定済み。新たな仕様や未実装リストとして使わない。",
+        "後日変更されたZIP運用、ホーム中断、B05/B07、C01/D01、C03、施設増加の最低保証はGitHub運用方針.md・buffs.txt・実装構成・運用方針.mdの現行案内を優先する。旧「未確定」「未実装」「開始拠点保留」等を現行状態と誤認しない。",
+        "﻿算数ワールド開拓ゲーム｜未決定事項・やることリスト",
+        "    重複勧誘を許可し、成功時のみID別累計獲得数＋1、初回のみ図鑑登録。D04シークレット候補の実体は別途保留。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/実装構成・運用方針.md",
+      "gitBlob": "2ccdf374cbce455508199a02a19bb7199a2e6641",
+      "bytes": 3923,
+      "kind": "text",
+      "lines": 32,
+      "pendingLines": [
+        "関連Nodeテストと参照整合を確認し、公開PCは既存クラウドChromeで実操作する。Chromiumインストールは配布先制限のため再試行不要。画面幅変更APIは未確認、開発fixtureの320/390pxは実CSSの枠内確認でありスマホ実機/タッチの代替ではない。スマホはユーザー確認。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/GitHub運用方針.md",
+      "gitBlob": "5a870c7235313f0fb5ce50edd318809dca442c73",
+      "bytes": 7528,
+      "kind": "text",
+      "lines": 82,
+      "pendingLines": [
+        "7. **Vercelへのデプロイを実施・確認する。** GitHub連携による自動デプロイを基本とし、対象コミットの反映と公開先を確認する。ChatGPT側に権限がない場合は操作できないことを伝え、Vercel管理画面での確認・再デプロイ方法を案内する。未確認なら成功と断定しない。",
+        "10. ユーザーの確認結果を受け、不具合修正または検証OKの記録をToDo・検証履歴に反映する。",
+        "- 原則、機能追加・不具合修正の開発単位で `bouken/common/version.js` のバージョンを更新する。",
+        "- 不具合発生時はGitHubの履歴を参照し、復旧の影響を確認してから戻す。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/仲間図鑑仕様.md",
+      "gitBlob": "5c175ea9886944e40000c40dc8ed5970c9bf49a4",
+      "bytes": 3654,
+      "kind": "text",
+      "lines": 24,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/表示用語統一仕様.md",
+      "gitBlob": "c85a798eae3756ca6d5bdee511ff11315a1fe3a3",
+      "bytes": 1451,
+      "kind": "text",
+      "lines": 11,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/資料整合監査_20261025.md",
+      "gitBlob": "90968fa6f2ffe2dd3812d414d07062d7ef47660e",
+      "bytes": 13511,
+      "kind": "text",
+      "lines": 94,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/地形・施設画像表示仕様.md",
+      "gitBlob": "e05802b308fd8d4bdcdc980a4658ce38305a9c14",
+      "bytes": 4014,
+      "kind": "text",
+      "lines": 35,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/施設イベント演出実装仕様.md",
+      "gitBlob": "0beb866b092869e7dba01a4bff4fd5dbb0b9f24c",
+      "bytes": 6609,
+      "kind": "text",
+      "lines": 50,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/タイトル・称号通知仕様.md",
+      "gitBlob": "b5105027bf66365bdd1f7a9bfbe4f7f57012193e",
+      "bytes": 2890,
+      "kind": "text",
+      "lines": 24,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/おまかせ編成独立検証.md",
+      "gitBlob": "0dec207ba47e3ed9b5e30db9174eee7f0868ac15",
+      "bytes": 32641,
+      "kind": "text",
+      "lines": 303,
+      "pendingLines": [
+        "## 未決の判断事項（確定しない）",
+        "ランダム追加、6モード、5枠常時表示と未解放鍵。モデル12テスト/3000混合操作合格。ブラウザ・実機は別記し未確認を完了にしない。独立モックのみ、セーブアクセス拒否を維持。",
+        "**品質ゲートは未合格。** 固定制約の正しさと、推薦品質・多様性の合格は別。候補は研究用暫定表示のまま。ユーザー実機・仕様判断を飛ばしてGへ進まない。",
+        "変更できる枠があるケースでも、125モード条件中82条件が候補1組。多様性が十分とはいえない。候補90%は訓練上の目安であり、独立試行でも90%の性能を保証する基準ではない。さらに同じ能力ベクトルの別キャラを多様性として数える限界がある。メンバー重複率・能力距離の正式な下限は未決。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/実績・称号120件仕様.txt",
+      "gitBlob": "06a237a0fe2b75377c84976f535e4e8c0e321689",
+      "bytes": 3853,
+      "kind": "text",
+      "lines": 25,
+      "pendingLines": [
+        "実装キー/判定/旧保存移行は記録・実績実装仕様.mdと実績カウンタ・保存設計.txt。ホームで未通知の獲得称号をまとめて表示し、閉じると表示済みを保存する。記録にない過去回数/出来事は推測しない。No.116の将来の施設以外の獲得元は新機能導入時に定義し、現行の未実装タスクとはしない。ver.57/58/61ユーザー確認済み、詳細は変更履歴.md。"
+      ]
+    },
+    {
+      "path": "bouken/assets/sheets/README.md",
+      "gitBlob": "1696e03d72eab90cb1c53b38dfa3e44d3f331f7b",
+      "bytes": 1518,
+      "kind": "text",
+      "lines": 16,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/source-manifest.json",
+      "gitBlob": "9938ffdbab3fbd83d8985d7b91db516b9443b99e",
+      "bytes": 1495,
+      "kind": "text",
+      "lines": 24,
+      "structure": [
+        "commit",
+        "version",
+        "gitBlobs"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/engine.cjs",
+      "gitBlob": "adfbe6a5d4fd8675b59f60b3f2d80f73e06dbcf8",
+      "bytes": 17857,
+      "kind": "text",
+      "lines": 147,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/extra-results.json",
+      "gitBlob": "2af4935dc01cc53ceacc65b2efb670e960225f2b",
+      "bytes": 2796,
+      "kind": "text",
+      "lines": 173,
+      "structure": [
+        "sizes",
+        "reproducibility",
+        "capOverlap"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/initial-findings.json",
+      "gitBlob": "f09867e659676953afad6d471ec8cf8477acc699",
+      "bytes": 9412,
+      "kind": "text",
+      "lines": 416,
+      "structure": [
+        "stage",
+        "searchSeconds",
+        "audit"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/extra-checks.cjs",
+      "gitBlob": "3448c6e190fb126e84582fde37b12603b208cb82",
+      "bytes": 1371,
+      "kind": "text",
+      "lines": 6,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/results.json",
+      "gitBlob": "6b6623b4b87b664051a0e06e9905e473c45257ce",
+      "bytes": 557145,
+      "kind": "text",
+      "lines": 24419,
+      "structure": [
+        "sourceCommit",
+        "version",
+        "environment",
+        "config",
+        "mode",
+        "results"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/results-quick.json",
+      "gitBlob": "803d854c6e7a47c68e4dd9d7f5ce4d133c049de0",
+      "bytes": 202575,
+      "kind": "text",
+      "lines": 10092,
+      "structure": [
+        "sourceCommit",
+        "version",
+        "environment",
+        "config",
+        "mode",
+        "results"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/README.md",
+      "gitBlob": "2a10bd7461f4bbcd28ee0061df88c30f07a5deec",
+      "bytes": 4112,
+      "kind": "text",
+      "lines": 57,
+      "pendingLines": [
+        "[改良エンジン・実行手順](phase2/README.md)、[第2段階報告書](../../siyou/おすすめパーティー評価エンジン第2段階検証.md)、[独立ブラウザ試作](phase2/browser.html)。第1段階のコード・設定・結果はこのまま再実行できる。第2段階はphase2/へ追加し、正式機能への採用は未決定。"
+      ]
+    },
+    {
+      "path": "bouken/tests/party-recommendation/audit.cjs",
+      "gitBlob": "c5a92b3241f6dbcec39bae813de1b3733e25c634",
+      "bytes": 3177,
+      "kind": "text",
+      "lines": 20,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/audit-results.json",
+      "gitBlob": "12efd68eb28c997d64404060a2e05a131a9ce7ba",
+      "bytes": 627597,
+      "kind": "text",
+      "lines": 28924,
+      "structure": [
+        "sourceCommit",
+        "seeds",
+        "bootstrapReplicates",
+        "results"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/config.json",
+      "gitBlob": "91fbf17b84dd7d8d6278102e6ca665c54a739d49",
+      "bytes": 447,
+      "kind": "text",
+      "lines": 1,
+      "structure": [
+        "size",
+        "budget",
+        "cumulativeExplored",
+        "targetGroup",
+        "specialistWeight",
+        "searchSeed",
+        "trainSeeds",
+        "screenSeeds",
+        "validationSeedStart",
+        "validationTrials",
+        "candidateLimit",
+        "randomParties",
+        "swapsPerType",
+        "rounds",
+        "finalistsPerType"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/timing.cjs",
+      "gitBlob": "f6c0f3cf913339667400d2f3fab0f6c92b5167e5",
+      "bytes": 1343,
+      "kind": "text",
+      "lines": 9,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/test.cjs",
+      "gitBlob": "f6c5215e288d6851d2ced071b74d0fa0624226e1",
+      "bytes": 8817,
+      "kind": "text",
+      "lines": 47,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/run.cjs",
+      "gitBlob": "7c73455d1bd08de20354a7a131f626fce3c6dd9c",
+      "bytes": 1231,
+      "kind": "text",
+      "lines": 7,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/verification.json",
+      "gitBlob": "84e843418506a8bcc33dba45e977f84789a95244",
+      "bytes": 2163,
+      "kind": "text",
+      "lines": 76,
+      "structure": [
+        "sourceCommit",
+        "gameVersion",
+        "testPassed",
+        "testOutput",
+        "sourceBlobsMatched",
+        "standardAdventures",
+        "auditAdventures",
+        "auditSeeds",
+        "independentAuditPositive95Cases",
+        "replay",
+        "markdownLinks",
+        "jsonParse",
+        "scope",
+        "smartphoneMeasured"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/timing-results.json",
+      "gitBlob": "f1982805287f4da32f19bd925421ea644711f008",
+      "bytes": 41794,
+      "kind": "text",
+      "lines": 1892,
+      "structure": [
+        "standard30RepeatMs",
+        "originalStandard30Ms",
+        "reason",
+        "quick"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/integration/report.py",
+      "gitBlob": "52ce6ed3a0ce73596c1e3bb11a045b1ceeab943e",
+      "bytes": 9363,
+      "kind": "text",
+      "lines": 79,
+      "pendingLines": [
+        "**品質ゲートは未合格。** 固定制約の正しさと、推薦品質・多様性の合格は別。候補は研究用暫定表示のまま。ユーザー実機・仕様判断を飛ばしてGへ進まない。",
+        "s+=f'\\n変更できる枠があるケースでも、{len(counts)}モード条件中{ones}条件が候補1組。多様性が十分とはいえない。候補90%は訓練上の目安であり、独立試行でも90%の性能を保証する基準ではない。さらに同じ能力ベクトルの別キャラを多様性として数える限界がある。メンバー重複率・能力距離の正式な下限は未決。\\n'",
+        "## F：解放案の調査と保留"
+      ]
+    },
+    {
+      "path": "bouken/tests/party-recommendation/integration/index.html",
+      "gitBlob": "48c68ca3a984ef280002ddfee3fbb39e2d6b7b2a",
+      "bytes": 3910,
+      "kind": "text",
+      "lines": 11,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/integration/responsive.html",
+      "gitBlob": "93059f39c88964344cc01658eb3cff92aaabc28e",
+      "bytes": 863,
+      "kind": "text",
+      "lines": 1,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/integration/results.json",
+      "gitBlob": "2428fc215bfac2b6662147a8c891d3b792108487",
+      "bytes": 1184979,
+      "kind": "text",
+      "lines": 53272,
+      "structure": [
+        "sourceCommit",
+        "version",
+        "environment",
+        "config",
+        "trainSeeds",
+        "auditSeeds",
+        "cases",
+        "qualityGate"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/integration/worker.js",
+      "gitBlob": "53950c9cad913120a04dc362beeca2aaebef1554",
+      "bytes": 1596,
+      "kind": "text",
+      "lines": 15,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/integration/README.md",
+      "gitBlob": "5a479fcfe0d2d9e48578c1d57006f73937a7e3ff",
+      "bytes": 5282,
+      "kind": "text",
+      "lines": 46,
+      "pendingLines": [
+        "- 目的別に訓練スコア最良の90%以上、専門生評価95%以上の候補群を保持する研究設定。これは真の性能90%以上を保証しない。品質ゲート未合格。",
+        "- 履歴はモード+マップ+固定ID/位置ごとに分離。固定はモード変更でも維持。これは独立試作の暫定動作で正式ルールは未決。",
+        "phase2の生指標/参照分布range正規化/総合hybrid/専門70%を再利用。UIは4分野の研究用相対値、生平均、標準誤差、試行数、基準集団数・中心・幅を表示。任意評価だけ先に行った場合は参照未計算として生値だけ表示。総合探検力の正式表示は未決のため実装しない。"
+      ]
+    },
+    {
+      "path": "bouken/tests/party-recommendation/integration/validate.cjs",
+      "gitBlob": "f2b02c0c2fffe3a27371416f85225f47a6b67871",
+      "bytes": 3643,
+      "kind": "text",
+      "lines": 13,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/integration/app.js",
+      "gitBlob": "cc99a4735b6072f58e6b3aad24abbb43523c5004",
+      "bytes": 12041,
+      "kind": "text",
+      "lines": 28,
+      "pendingLines": [
+        "function showEvaluation(e,calibration,diagnosis){$('evaluation').hidden=false;$('graph').replaceChildren();if(calibration){const scores=L.normalize(e.raw,calibration,'range');['開拓','お宝','仲間','探索'].forEach((name,k)=>{const row=document.createElement('div');row.className='bar-row';const label=document.createElement('span');label.textContent=name;const track=document.createElement('div');track.className='bar';const bar=document.createElement('span');bar.style.width=scores[k]+'%';track.append(bar);const n=document.createElement('span');n.textContent=Math.round(scores[k]);row.append(label,track,n);$('graph').append(row);});}else $('graph').textContent='比較基準は未計算です。生の成果だけを表示します。';const m=e.metrics;$('raw').textContent=`${e.n}回の模擬冒険：開拓 ${m.opened.toFixed(1)}マス、お宝の新しい種類 ${m.newItems.toFixed(2)}、仲間の新しい種類 ${m.newCharacters.toFixed(2)}、施設訪問 ${m.visited.toFixed(2)}。`;$('metrics').textContent=JSON.stringify({raw:e.raw,standardError:e.se,trials:e.n,reference:calibration?{parties:calibration.columns[0].length,center:calibration.center,spread:calibration.spread}:null,condition:{map:Number($('size').value),correctAnswers:30,slots:input.slots},note:'研究用相対尺度。総合探検力の正式仕様は未決。独立検証による確定値ではない。',diagnosis},null,2);const prefix={explore:'A',treasure:'C',companion:'D',map:'B'}[mode];const facts=[...(diagnosis||[])].sort((a,b)=>Number(b.skills.some(id=>id[0]===prefix))-Number(a.skills.some(id=>id[0]===prefix)));$('reason').textContent=facts.slice(0,2).map(x=>x.text).join(' ');}"
+      ]
+    },
+    {
+      "path": "bouken/tests/party-recommendation/integration/runtime.js",
+      "gitBlob": "df9839172ae7259729af6e8fa14b286da0a99a17",
+      "bytes": 1562,
+      "kind": "text",
+      "lines": 14,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/integration/api.js",
+      "gitBlob": "6e4a90c17034f5e3c2de55b91b1008d4865b32e4",
+      "bytes": 15181,
+      "kind": "text",
+      "lines": 85,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/integration/source-audit.json",
+      "gitBlob": "cf1bbb2098386b3dd65ef58d34dc040dad5ebbd5",
+      "bytes": 2952,
+      "kind": "text",
+      "lines": 63,
+      "structure": [
+        "checkedCommit",
+        "version",
+        "readPaths",
+        "localGitBlobMatches",
+        "gameChangesAllowed",
+        "legacyPhase1Phase2ChangesAllowed"
+      ],
+      "pendingLines": [
+        "    \"bouken/siyou/更新内容と未決定事項.txt\","
+      ]
+    },
+    {
+      "path": "bouken/tests/party-recommendation/integration/test.cjs",
+      "gitBlob": "3b80acf3a8885053e893d5a527efd8d85b0d7e84",
+      "bytes": 6290,
+      "kind": "text",
+      "lines": 20,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/integration/read-only.js",
+      "gitBlob": "130f7db9a429ec77aca58c698d3f42b0e7cbbf82",
+      "bytes": 964,
+      "kind": "text",
+      "lines": 9,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/integration/verification.json",
+      "gitBlob": "45dec181dadedb21de056f38be5fd1e80ca03655",
+      "bytes": 1934,
+      "kind": "text",
+      "lines": 73,
+      "structure": [
+        "version",
+        "testedCodeCommit",
+        "environment",
+        "smartphone",
+        "tests",
+        "browser",
+        "unverified",
+        "formalIntegration",
+        "qualityGate",
+        "saveWritesImplemented"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/integration/style.css",
+      "gitBlob": "aa719c909558229547c953ee9b643db286fe1e7d",
+      "bytes": 705,
+      "kind": "text",
+      "lines": 1,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/integration/summary.json",
+      "gitBlob": "3329d9b81b2bbc0ad5514a448a36f25b449dbf3d",
+      "bytes": 17308,
+      "kind": "text",
+      "lines": 763,
+      "structure": [
+        "sourceCommit",
+        "version",
+        "cases",
+        "auditCases",
+        "environment",
+        "qualityGate",
+        "specialistComparisons"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/mock/index.html",
+      "gitBlob": "90cff0cde4e46e7dc023dcded81b31279d0cde4a",
+      "bytes": 4188,
+      "kind": "text",
+      "lines": 21,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/mock/guard.js",
+      "gitBlob": "ddb3d977029723e606067b23868fc4b8b8548308",
+      "bytes": 418,
+      "kind": "text",
+      "lines": 2,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/mock/responsive.html",
+      "gitBlob": "11ccd31ae38393c44b077d38c01a04dc508219b3",
+      "bytes": 866,
+      "kind": "text",
+      "lines": 1,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/mock/model.js",
+      "gitBlob": "306ce1afd7f7e6af3aac31d2a871213e8df52924",
+      "bytes": 4124,
+      "kind": "text",
+      "lines": 35,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/mock/README.md",
+      "gitBlob": "2ba402fcd48182f611c753ac8bee8143354dd68f",
+      "bytes": 6895,
+      "kind": "text",
+      "lines": 62,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/mock/app.js",
+      "gitBlob": "2b30b230ccceaa41c707c0e44c09b3d2d0dba8be",
+      "bytes": 8800,
+      "kind": "text",
+      "lines": 43,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/mock/stage-b-browser.jpg",
+      "gitBlob": "5f5945fcf9288ca0bb9f03372ae1ea23b05f3696",
+      "bytes": 58846,
+      "kind": "image",
+      "dimensions": [
+        1348,
+        926
+      ]
+    },
+    {
+      "path": "bouken/tests/party-recommendation/mock/unavailable-image.txt",
+      "gitBlob": "ee90cfa032c1518c32a59ae5aabd29122d6202a6",
+      "bytes": 112,
+      "kind": "text",
+      "lines": 1,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/mock/stage-b-verification.json",
+      "gitBlob": "5711172e7886746a8d50011b671d2f07cb856df3",
+      "bytes": 659,
+      "kind": "text",
+      "lines": 28,
+      "structure": [
+        "version",
+        "tests",
+        "mixedOperations",
+        "browser",
+        "smartphone",
+        "saveWrites"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/mock/browser-result.jpg",
+      "gitBlob": "730aad11b873b69ceee85be633c4c4e948d10edb",
+      "bytes": 52985,
+      "kind": "image",
+      "dimensions": [
+        1348,
+        926
+      ]
+    },
+    {
+      "path": "bouken/tests/party-recommendation/mock/test.cjs",
+      "gitBlob": "8b2cccbc5699e5499d39171b9362c328efa66847",
+      "bytes": 4854,
+      "kind": "text",
+      "lines": 15,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/mock/verification.json",
+      "gitBlob": "50d1b09a65eb145b77c4b9811e38ae428e592d40",
+      "bytes": 1910,
+      "kind": "text",
+      "lines": 63,
+      "structure": [
+        "sourceCommit",
+        "version",
+        "nodeTestGroups",
+        "mixedOperations",
+        "browser",
+        "smartphone",
+        "engineConnected",
+        "storageAccessBlocked",
+        "widthChecks",
+        "limitations"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/mock/samples.json",
+      "gitBlob": "84da69f49b976bfe1aefa68f1c795928b44bdfc7",
+      "bytes": 25566,
+      "kind": "text",
+      "lines": 997,
+      "structure": [
+        "sourceCommit",
+        "version",
+        "note",
+        "characters",
+        "skills",
+        "descriptions"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/mock/style.css",
+      "gitBlob": "6839e1726ad214da1b3a089d61aa97c992af02f6",
+      "bytes": 7401,
+      "kind": "text",
+      "lines": 3,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/horizon-results.json",
+      "gitBlob": "42c61ee218ce0e7c82cd767ae278fab3e38115e9",
+      "bytes": 40261,
+      "kind": "text",
+      "lines": 1635,
+      "structure": [
+        "seedStart",
+        "n",
+        "rows"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/browser-additional.json",
+      "gitBlob": "9a8259858fb5125efce541742ee2445cba9dca4d",
+      "bytes": 145928,
+      "kind": "text",
+      "lines": 7307,
+      "structure": [
+        "type",
+        "result",
+        "spec",
+        "workerMs",
+        "client"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/long-horizon.cjs",
+      "gitBlob": "2d0bb7c2ccdd38ef57d2ad83ceb833b9f946f3b4",
+      "bytes": 1540,
+      "kind": "text",
+      "lines": 8,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/ablate.cjs",
+      "gitBlob": "fa294270be6f5605733f1449558737bbd9a57750",
+      "bytes": 2124,
+      "kind": "text",
+      "lines": 10,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/report.py",
+      "gitBlob": "1be15cfe1fef6700c363277ef54d91cf9717edad",
+      "bytes": 36003,
+      "kind": "text",
+      "lines": 75,
+      "pendingLines": [
+        "add('', 'legacy-30/100/500/927は第1段階と同じ合成インベントリ。目標01は完成済みで、新規目標品は0になる。今回の追加ケースは未完成の目標04を指定。earlyはお宝約5%、lateは約95%を基にし、目標の欠品を確保した。これはコレクション進行の序盤/終盤であり、チュートリアル中という意味ではない。','', '所有seed：旧条件901、追加500/140は902、279は903、900/追加927は904。所持品seedは旧条件の第1段階手順、追加条件1902/1903/1904。全入力は各results JSONのinputへ保存。','', 'ownership-only-500は旧500条件の所持品・受取済み・目標を維持して仲間構成だけを変更。alternate-500-10/20/30は同じ入力を使うサイズ比較。rich-927とrich-927-unclaimedは同じ所持品・仲間で受取済みだけを変更した対照条件。推薦される編成自体は条件ごとに探索し直すため、1スキルの因果効果と混同しない。','', '### シードと段階','', '| 用途 | シード/設定 |','|---|---|','| 候補生成 | 172001、概算貪欲の初期化2通り。別探索172002/172003も比較 |','| 参照編成 | 192001、探索前に固定した無作為集団 |','| 参照冒険 | 121001以降、通常24編成×4試行、空編成64試行 |','| 大マップ参照 | 12編成×2試行、空編成32試行 |','| 候補訓練 | 111001以降の共通prefix、2→8→16→32（大マップ最大16） |','| 独立比較 | 141001以降。旧4条件と所有差分500は64、追加10サイズ32、大サイズ12 |','| 手法比較 | 独立161001～161032 |','| 速度の一致検証 | 171001～171032、各エンジン32回ウォームアップ後、交互順序5反復 |','| 完走後の長期指標 | 181001～181016 |','| 操作方針比較 | 191001～191016 |','', '探索段階の推薦は訓練シードから固定し、141001以降の結果で編成を選び直していない。正規化等の比較用候補も訓練結果から選択する。独立結果での再選択は順位安定性の診断だけに使用し、推薦へ流用しない。手法の採否に最終的な確証を得るには、さらに未使用の所有分布/シードが必要。','', '## 4. シミュレーターの整合性と高速化','', 'schema/party/explore/buffs/collection/events/progress/worldgenを変更せず呼ぶ。Nodeでは第1段階の隔離VM・Git blob検査を使用。Workerでは検査したコードをBlob経由でimportScriptsし、同じUMDコアを使う。乱数はワールドごとに固定し、操作の同点解決はseed XOR 0xa5a5a5a5の別系列。E08等によって消費回数が違う場合、同じseedでも同じ世界にはならない。','', '出発のA11→A03→博物館初期開拓→A03→B06→B01→B05、正解後の追加開拓順序/経路競合→A03→視界→記録→全域報酬、施設候補抽選/選択/成功/C03/D07を維持。D04は無効果、Lv合算は3上限、D06使用時は所属大分類集合も同値キーに含める。','', '高速化したのは外側のドライバと操作判断。隣接判定のために毎回全マスを再走査する処理を上下左右4マスへ変更、区画情報の集計を整理、取得したIDを集合で追跡し、既に正当に受け取った追加開拓率をキャッシュする。冒険内で新しい受取操作を行わず、入力の受取済み全小分類が完成していることを検査するため、この率は変化しない。施設イベント内の博物館効果は元の処理を呼び続ける。','', '初期探索は30正解で止める。全域報酬を架空に前倒しせず、予算内にクリアした場合だけ予算成果に含める。独立評価では10サイズを完走し、大サイズも各推薦4試行で完走を別測定。短期と完走までの指標を分ける。','', 'policyには公開観測しか渡さない。未開拓かつ未透視の地形/施設はnull、イベント配列は渡さない。B02/B03の位置、B04の矢印/起点、B07の区画件数は現行APIが返すものだけ使用。B04の内部の標的位置や距離を取り出さない。施設へ無料で直接移動できる現行ルールを前提に、開拓済み施設はすべて訪問する。候補は表示されたものだけから未獲得、次に目標分類、同点は提示順で選ぶ。','', '算数出題/解答時間・誤答・演出・称号・localStorage保存・保存障害は模擬対象外。ゲームのセーブ/マスターは一切書き換えない。チュートリアル中/0枠は対象外。','', '## 5. 生指標・評価式','', 'B=正解予算30、O=予算までの開拓マス（拠点除外）、U=新規コレクション種類、UT=新規目標分類種類、I=コレクション総取得、T=目標分類総取得、V=新規仲間種類、J=施設加入成功、R=予算内全域報酬の加入数、A=施設発見AUC、F=訪問済み施設数。','', 'Aは初めて実際に施設が見える/位置探知できた正解数dへmax(0,(B+1-d)/(B+1))を与えて合計。矢印/区画件数を直接「施設発見済み」とは数えない。最初の施設発見までの正解数も、未発見を31として別保存した。','', '| 分野 | 第2段階の生評価x |','|---|---|','| 開拓 | O/B |','| お宝（欠品あり） | 0.75U + 0.20UT + 0.05I |','| お宝（全品所有済み） | 0.8I + 0.2T |','| 仲間（未加入あり） | 0.9V + 0.1(J+R) |','| 仲間（927種類加入済み） | J+R（重複の出会い回数という検証用の代替指標） |','| 探索 | (0.55A + 0.45F)/B |','', '完走Qは補助として直接測る。第1段階の開拓生評価は0.7O/N+0.1N/Q、お宝は0.8U+0.2T等だった。今回、正規化だけでなく短期の生指標も変更したので、旧報告の点数と今回の点数を直接差し引かない。第1段階の編成も今回の同じ指標・同じ独立seedで再評価した。正規化3方式の比較は同じ第2段階の生指標を入力し、式の差を分離する。','', '**927体加入済みの仕様案：** 新規加入は必ず0。現在の重複取得は解放枠やスキルLvを直接成長させないため、正式UIでは「仲間あつめ（コンプリート済み）」を基本にし、必要なら任意で「仲間との出会い」を選べる案を推奨する。今回5タイプを検証するため出会い回数を代替したが、正式な目標変更は未決定。全品所有済みのお宝も同様に完了表示/任意の総数目標を検討する。','', '### 正規化3方式','', '参照集団は条件ごとに所有仲間から探索前に無作為生成し固定する。探索で勝った編成を後から参照へ足さない。同一条件内の3方式・重み比較では同じ集団を使う。所有やサイズが違う条件間で絶対的な強さを比較する点数ではない。','', '| 方法 | 式 | 注意点 |','|---|---|---|','| current（従来型） | 100x/(a+x)、aは空編成平均 | 分野による変動幅の差を残しやすい |','| quantile | 100×(参照のx未満件数+同値件数/2)/参照数 | 順位に揃うが少数参照では段差と上限の同点が多い |','| range（変動幅） | 100/(1+exp(-ln(9)×(x-m)/w)) | m=参照中央値、w=max(P90-P10,0.1×abs(m),10^-6)。外れ値を抑え、中心付近の変動幅を揃える |','', 'rangeはP10=10点/P90=90点と厳密に結び付く式ではない。分布が非対称、ゼロが多い場合は依然として難点がある。参照の推定誤差も残るため、暫定の研究設定として比較した。','', '総合は平均、最低点、幾何平均、0.5×最低点+0.5×幾何平均を比較。幾何平均はlogの入力を0.01以上にする。専門型はw×専門点+(1-w)×総合、w=0.5/0.7/0.9を比較。研究用の基準はrange・70%・最低点/幾何平均の混合。','', '専門成果下限：専門型の候補を「訓練上の同試行数候補集合の専門生評価最大値の95%以上」に制限してから70/30で選ぶ。下限なしも比較する。同じ編成を複数タイプに推薦することは禁止しない。**この95%は真の期待値の95%を保証しない。** 独立シードでは下回るケースが発生した。','', '## 6. 正規化・重み・弱点方式の比較','', '下表は各方式の訓練推薦と独立試行で同方式を再選択した推薦が一致したタイプ数（最大5）。不一致は順位不安定の診断であり、独立側の勝者へ置換していない。current/quantile/rangeは専門下限なし、adoptedはrange+95%下限。','', '| 条件 | current | quantile | range | adopted |','|---|---:|---:|---:|---:|')",
+        "add('', '方式を変えると、複合目的の順位は自然に変わる。各分野単独の単調な順位まで逆転させる方式ではないが、分位点の同点や少数参照の幅の推定で総合順位が変わり、重み変更だけでも推薦が入れ替わる。どの方式も全条件で安定して優位とは確認できなかった。range+下限は専門性を明示しやすいが、参照誤差・候補の見落とし・少数抽選を解決しない。製品採用は保留。','', '## 7. 探索の改良','', '1. 個人/部分編成の期待値に基づく概算を作り、全所有仲間の単独評価上位・各スキルを持つ仲間・無作為仲間を合わせた概算候補集合から、2通りの初期化×5目的の貪欲候補を生成する。140体以下では所有全体を概算貪欲に使用。集合外も無作為編成と交換候補から排除しない。','2. 各67種（D04を除く）の代表から層化した編成、全所有からの無作為編成、利用可能な第1段階の編成も残す。同じ有効Lvベクトルはまとめ、D06があれば所属分類も含める。','3. 2試行で広く比較し、総合5目的と4分野の生指標上位を保護するビームから1人/2人同時交換を2巡。期待値上位の提案に加え、概算が表せない相互作用向けの無作為提案も残す。','4. 上位を8試行へ進め、平均差と標準誤差が重なる候補へ16/32を配分する。ゼロ観測のSE=0を確実なゼロ確率とは解釈しない。表示候補用に試行枠を予約し、最終候補は通常32、大マップ16試行へ揃える。','5. 同一seed集合をprefix拡張してキャッシュし、再評価のために既存試行を捨てない。ただし別の追加探索リクエスト間のキャッシュ持越しは未実装。','', '期待値概算の正確な部分：実worldgen.targets、C01/D01の分岐式、C02/D02/F03/D07の成功式、C04/収集家/博物館の重み、実companionWeightsによるD05/D06、基本施設数の二項分布に対する追加施設数の期待値。概算だけの編成も比較対象とした。','', '近似部分：A02に最大隣接数3を使う、経路閉塞・A03初期持越し・地形の空間配置を完全には予測しない、F候補を復元抽出に近い近似で扱う、B系の面積/距離/区画情報量から到達を概算する。**これらは候補提案だけで、最終得点の相性加点ではない。** 最終評価は実生成・実抽選・実操作から得る。','', '候補探索は大域最適を保証しない。相互作用がある2人を同時に見つけられない、初期2試行の幸運で候補を落とす、参照と探索へ配分する予算が不足する問題が残る。','', '## 8. 処理時間・試行量・内訳','', '探索時間はrecommendの入口から返却まで。VM/マスター読み込み、合成入力作成、結果JSON書出し、独立検証は除く。最初の暫定結果は参照校正と初期候補評価後。時間制限を使わず試行上限で測定したので同条件/シードで再現できる。','', '| 条件 | 第1段階標準 秒 | 第2段階 秒 | 暫定まで 秒 | 探索冒険数 | 最終試行 |','|---|---:|---:|---:|---:|---|')",
+        "add('', 'early-140では完走指標でも仲間型が万能型に負ける例が残った。900体では残り27種類の新規獲得を実際に評価し、927体で新規加入が0であることを維持。全域報酬は毎世界1回、同じ試行の二重付与なし。[長期原本](../tests/party-recommendation/phase2/horizon-results.json)。','', '## 13. ブラウザ・スマートフォン実装準備','', '[独立検証ページ](../tests/party-recommendation/phase2/browser.html) / [CSS幅点検](../tests/party-recommendation/phase2/responsive.html)。','', 'Node依存のfs/vm/requireをcoreから外し、core.jsをNodeとWorkerで共有。Workerのbootstrapがゲームソース/マスター18ファイルをGit blob SHAで検証し、その検証済み本文のBlobをimportScriptsする。ゲームのセーブを読む/書くAPIを持たせず、合成データだけを作る。','', '主スレッドはフォーム・結果・heartbeatを表示し、計算はWorkerで実行。postMessageで暫定/探索/追加試行の進捗を送り、終わるまでUIをブロックしない構成。冒険ごとのyieldで協調中止でき、UIの中止はWorker.terminateで強制終了する。再実行/追加探索では同じ入力なら候補を引き継ぐが、試行キャッシュの持越しは未実装。','', '時間上限は各冒険などの区切りで判定するソフト上限。初期概算や単発の重いE08生成で超過し得る。厳密なCPU時間保証はせず、強制中止を用意。試行上限は校正も含み、最終候補用の枠を予約する。固定時間打切りの結果は端末依存なので、完全再現には実施試行数・候補・seedを保存する。','', 'メモリは1つのWorker・1世界ずつ処理し、キャッシュは成果サンプルだけを保存して世界配列や画像を保持しない。画像は一切読み込まない。Nodeのprocess.memoryUsageを各条件の前後で保存したが、ピーク計測でもスマホの使用量でもない。Workerヒープの実測は未完了。performance.memoryは非標準/廃止予定のため製品の必須機能にせず、実機開発者ツール等で測る。','', 'API設計の参照：[Worker.postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Worker/postMessage)、[Worker.terminate](https://developer.mozilla.org/en-US/docs/Web/API/Worker/terminate)、[performance.memoryの制約](https://developer.mozilla.org/en-US/docs/Web/API/Performance/memory)。','', '### 実際のブラウザ確認状態','')",
+        "add('', 'スマートフォンでの測定手順（端末/OS/ブラウザ/省電力状態、初回とウォーム時3回、100→500→927、20/30サイズ、スクロール・中止・再計算、結果JSON保存）はREADMEへ記録。高速表示の可否と推薦精度を別々に確認する。','', '## 14. テスト・原本・再実行','', '第1段階17項目を維持し合格、第2段階12項目を追加し合格。後者は旧経路と旧生評価の一致、予算打切りと完走の予算成果一致、67種各Lv3完走/D04無効果、正規化の単調/同値/ゼロ幅、専門下限、公開観測境界、927体の正しい代替、正当な受取済み状態、非破壊、協調キャンセル、固定試行の推薦再現、NodeなしUMD読込の一致、短時間設定での予約試行枠の利用。詳細はverification.jsonを参照。','', '全67種のLv1/2/3全組合せや全所有分布を網羅した統計試験ではない。表示文言/PNG/問題エンジン/保存障害のゲーム回帰を今回合格へ追加しない。','', '```sh','node bouken/tests/party-recommendation/test.cjs','node bouken/tests/party-recommendation/phase2/test.cjs','node bouken/tests/party-recommendation/phase2/run.cjs','node bouken/tests/party-recommendation/phase2/validate.cjs','node bouken/tests/party-recommendation/phase2/ablate.cjs','node bouken/tests/party-recommendation/phase2/speed.cjs','node bouken/tests/party-recommendation/phase2/policy-check.cjs','node bouken/tests/party-recommendation/phase2/long-horizon.cjs','python bouken/tests/party-recommendation/phase2/report.py','```','', 'results/へ入力・設定・段階別推薦・候補・サンプル・正規化比較・実測時間を保存する。固定source-manifestのゲームコードが変わればロードを拒否するので、将来の版で再実行する前に再調査する。','', '## 15. 残件と次の段階','', '1. **UI組込みを保留。** early/lateの弱い専門推薦、候補の見落とし、順位不安定が残るため、今の結果を確定推薦として子どもへ提示しない。','2. 専門型の生指標の信頼区間を直接比較し、下限を「標本平均の95%」から不確実性を含む判定へ改善。ゼロ/少数イベントでSE=0を確信と扱わず、近接候補だけ128等へ増やす停止規則を検討。','3. 短期成果と完走効率・全域報酬の価値を分け、特に残り少ない仲間/コレクションで長期の新種類/正解数を併記する。927体全加入時のUI扱いを決める。','4. 固定参照集団の人数/試行数/ゼロ分布の感度を検証し、rangeと分位点の安定性を追加の所有分布で再確認。50/70/90や混合総合を今は確定しない。','5. 2人交換・複数seed・ビーム・不確実性配分は全目的で優越しなかった。共有キャッシュを使う複数seedポートフォリオと、同じ実冒険数/同じ時間での比較を追加する。','6. 大マップは初動30正解・独立12/完走4と少ない。120/270正解など別予算、全施設訪問、E08負荷、例外キャンセル、異なる目標/博物館状態で再検証。','7. Workerを実機で測定し、読込・暫定・最終・キャンセル・熱/電池・メモリを確認。キャッシュ持越し、厳密な計算予算、対象版切替、エラー回復を仕上げる。','8. 上記を通過してから、推薦理由・不確実表示・同点処理を設計してゲーム画面への組込みを別工程で実施する。','', '## 16. ソース根拠','')"
+      ]
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/browser.js",
+      "gitBlob": "d9a4d3e90ffc04af5fdde0576cff54175f2a9092",
+      "bytes": 4030,
+      "kind": "text",
+      "lines": 17,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/policy-results.json",
+      "gitBlob": "295e4be0ff1f693b7aee9bbf0b713f3b8c173938",
+      "bytes": 36479,
+      "kind": "text",
+      "lines": 1688,
+      "structure": [
+        "case",
+        "seedStart",
+        "n",
+        "budget",
+        "rows"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/responsive.html",
+      "gitBlob": "433bee6f96a56c8fa75646f8959f5be89536e7e0",
+      "bytes": 923,
+      "kind": "text",
+      "lines": 1,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/worker.js",
+      "gitBlob": "d2ca0e1a5829ce32f973e5270a310eb84defcf37",
+      "bytes": 2849,
+      "kind": "text",
+      "lines": 26,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/browser-verification.json",
+      "gitBlob": "9668cd5a9a108752f3d29385e58a932383e281e6",
+      "bytes": 3184,
+      "kind": "text",
+      "lines": 97,
+      "structure": [
+        "status",
+        "codeCommit",
+        "url",
+        "responsiveUrl",
+        "environment",
+        "checks",
+        "firstRun",
+        "additional",
+        "cancel",
+        "widthChecks",
+        "screenshot",
+        "smartphoneMeasured",
+        "memoryMeasured",
+        "limitations",
+        "nodeBrowserReproduction"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/browser-measurement.json",
+      "gitBlob": "fb5562a627d05e3647ccc69aace3cc0839ab8fd5",
+      "bytes": 76518,
+      "kind": "text",
+      "lines": 3832,
+      "structure": [
+        "type",
+        "result",
+        "spec",
+        "workerMs",
+        "client"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/node.cjs",
+      "gitBlob": "aeca2e610fa1308eca50c4ec33d656178868310f",
+      "bytes": 217,
+      "kind": "text",
+      "lines": 5,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/README.md",
+      "gitBlob": "47649bc52d9aedbe60e3958ed975e8f000d0cb75",
+      "bytes": 5147,
+      "kind": "text",
+      "lines": 62,
+      "pendingLines": [
+        "- 現在の候補から追加探索：同じ入力なら候補IDを引き継いで再探索。試行キャッシュの持越しは未実装なので過去試行を再計算する。",
+        "評価式・検証結果・採用保留項目は[第2段階報告書](../../../siyou/おすすめパーティー評価エンジン第2段階検証.md)を参照。"
+      ]
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/validate.cjs",
+      "gitBlob": "dda243c49bac857882785deb8036c140f22ec654",
+      "bytes": 5346,
+      "kind": "text",
+      "lines": 23,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/browser.html",
+      "gitBlob": "bf48453fed7d27f1d8490452a216b7f2d21944ae",
+      "bytes": 3852,
+      "kind": "text",
+      "lines": 11,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/speed.cjs",
+      "gitBlob": "deec9451638c298f8ecb4cf394ccb92cb49f08a3",
+      "bytes": 1207,
+      "kind": "text",
+      "lines": 6,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/config.json",
+      "gitBlob": "cf52cadf039d9e1e8a7cfc873c4590a1a5b9f343",
+      "bytes": 606,
+      "kind": "text",
+      "lines": 30,
+      "structure": [
+        "size",
+        "budget",
+        "targetGroup",
+        "cumulativeExplored",
+        "searchSeed",
+        "trainSeedStart",
+        "referenceSeedStart",
+        "referencePartySeed",
+        "references",
+        "referenceTrials",
+        "initialTrials",
+        "minTrials",
+        "maxTrials",
+        "initialRandom",
+        "rounds"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/browser-result.jpg",
+      "gitBlob": "0404050ef605c1b530c2d51f7eae5c1ba32b8b4a",
+      "bytes": 93517,
+      "kind": "image",
+      "dimensions": [
+        1363,
+        936
+      ]
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/ablation-results.json",
+      "gitBlob": "fe553530cc55469c060ae638d9ffbc46b1393e5b",
+      "bytes": 1401586,
+      "kind": "text",
+      "lines": 61092,
+      "structure": [
+        "sourceCommit",
+        "case",
+        "seeds",
+        "results",
+        "evaluations",
+        "fullTrajectorySpeed"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/test.cjs",
+      "gitBlob": "3a8424be79112c681c6cc92c93a9fa9ffc4fdf45",
+      "bytes": 5396,
+      "kind": "text",
+      "lines": 18,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/speed-results.json",
+      "gitBlob": "2488be77b87ff4936edd0b80d26cb62d98a5dc98",
+      "bytes": 1055,
+      "kind": "text",
+      "lines": 72,
+      "structure": [
+        "case",
+        "party",
+        "seeds",
+        "warmupTrialsPerEngine",
+        "repetitions",
+        "alternatingOrder",
+        "rows",
+        "oldMedianMs",
+        "newMedianMs",
+        "identicalLegacyRaw"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/run.cjs",
+      "gitBlob": "9d934c6f8be8037f07978917949d5479101a549f",
+      "bytes": 2897,
+      "kind": "text",
+      "lines": 17,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/core.js",
+      "gitBlob": "240878c336d216d5f0d019f48e4832952fd9e7c1",
+      "bytes": 31797,
+      "kind": "text",
+      "lines": 242,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/policy-check.cjs",
+      "gitBlob": "c587926440fe9233b7b8bd8b91f862b163855f36",
+      "bytes": 893,
+      "kind": "text",
+      "lines": 4,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/verification.json",
+      "gitBlob": "fd5046cfb434990049aab558b40d6a2ed46d2c79",
+      "bytes": 2451,
+      "kind": "text",
+      "lines": 52,
+      "structure": [
+        "sourceCommit",
+        "version",
+        "stage1TestGroups",
+        "stage2TestGroups",
+        "testOutput",
+        "runtimeBlobsVerified",
+        "originalStage1FilesPreserved",
+        "scenarioCount",
+        "searchAdventures",
+        "validationAdventures",
+        "standardReplaysUnchanged",
+        "smartphoneMeasured",
+        "cloudBrowser",
+        "allJsonParse",
+        "stage1BlobComparison"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/late-900.validation.json",
+      "gitBlob": "34346ad55f421fae509bb4cc8b881e081bade29e",
+      "bytes": 88702,
+      "kind": "text",
+      "lines": 4242,
+      "structure": [
+        "sourceCommit",
+        "case",
+        "seeds",
+        "n",
+        "elapsedMs",
+        "adventures",
+        "comparisons",
+        "normalization",
+        "rankCorrelation",
+        "full",
+        "evaluations"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/rich-927.json",
+      "gitBlob": "d13258db36a840d9d1892164df9c31d70eb99c25",
+      "bytes": 203669,
+      "kind": "text",
+      "lines": 11122,
+      "structure": [
+        "sourceCommit",
+        "version",
+        "spec",
+        "input",
+        "environment",
+        "memory",
+        "phase1Recommendations",
+        "result"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/legacy-30.json",
+      "gitBlob": "fd1be1acc60dead1424ac322d2aebd309856a272",
+      "bytes": 124658,
+      "kind": "text",
+      "lines": 6323,
+      "structure": [
+        "sourceCommit",
+        "version",
+        "spec",
+        "input",
+        "environment",
+        "memory",
+        "phase1Recommendations",
+        "result"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/legacy-500.json",
+      "gitBlob": "b6d1275b7c13769f6f10a93aa7db01746dd400e2",
+      "bytes": 196596,
+      "kind": "text",
+      "lines": 10405,
+      "structure": [
+        "sourceCommit",
+        "version",
+        "spec",
+        "input",
+        "environment",
+        "memory",
+        "phase1Recommendations",
+        "result"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/alternate-500-20.validation.json",
+      "gitBlob": "7a1cea36b16b149b12c2e8817d350861a8b9fd58",
+      "bytes": 75338,
+      "kind": "text",
+      "lines": 3260,
+      "structure": [
+        "sourceCommit",
+        "case",
+        "seeds",
+        "n",
+        "elapsedMs",
+        "adventures",
+        "comparisons",
+        "normalization",
+        "rankCorrelation",
+        "full",
+        "evaluations"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/alternate-500-10.validation.json",
+      "gitBlob": "9bfece25179a15febe9cd7ef7b3922118e469c4a",
+      "bytes": 100768,
+      "kind": "text",
+      "lines": 4950,
+      "structure": [
+        "sourceCommit",
+        "case",
+        "seeds",
+        "n",
+        "elapsedMs",
+        "adventures",
+        "comparisons",
+        "normalization",
+        "rankCorrelation",
+        "full",
+        "evaluations"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/alternate-500-30.validation.json",
+      "gitBlob": "2970f00dedc28b51244951d40a28871f6d65dce0",
+      "bytes": 77491,
+      "kind": "text",
+      "lines": 3388,
+      "structure": [
+        "sourceCommit",
+        "case",
+        "seeds",
+        "n",
+        "elapsedMs",
+        "adventures",
+        "comparisons",
+        "normalization",
+        "rankCorrelation",
+        "full",
+        "evaluations"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/legacy-30.validation.json",
+      "gitBlob": "59eb69faa0c482cf574a37d5395d63b2fb18e860",
+      "bytes": 98834,
+      "kind": "text",
+      "lines": 4898,
+      "structure": [
+        "sourceCommit",
+        "case",
+        "seeds",
+        "n",
+        "elapsedMs",
+        "adventures",
+        "comparisons",
+        "normalization",
+        "rankCorrelation",
+        "full",
+        "evaluations"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/legacy-927.validation.json",
+      "gitBlob": "9108e1feca51c79de391c4c26b29c9a09ea16b3b",
+      "bytes": 162302,
+      "kind": "text",
+      "lines": 8570,
+      "structure": [
+        "sourceCommit",
+        "case",
+        "seeds",
+        "n",
+        "elapsedMs",
+        "adventures",
+        "comparisons",
+        "normalization",
+        "rankCorrelation",
+        "full",
+        "evaluations"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/early-140.validation.json",
+      "gitBlob": "3ee39932d14cc91d6d3c1f714e1d95886bf4cb9c",
+      "bytes": 89230,
+      "kind": "text",
+      "lines": 4348,
+      "structure": [
+        "sourceCommit",
+        "case",
+        "seeds",
+        "n",
+        "elapsedMs",
+        "adventures",
+        "comparisons",
+        "normalization",
+        "rankCorrelation",
+        "full",
+        "evaluations"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/rich-927.validation.json",
+      "gitBlob": "72666b19a7bf1c018be2ff7108c38bb34285d732",
+      "bytes": 96172,
+      "kind": "text",
+      "lines": 4714,
+      "structure": [
+        "sourceCommit",
+        "case",
+        "seeds",
+        "n",
+        "elapsedMs",
+        "adventures",
+        "comparisons",
+        "normalization",
+        "rankCorrelation",
+        "full",
+        "evaluations"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/alternate-500-30.json",
+      "gitBlob": "a0f788d4520dbb35d6bf3f9316ea18dd842ecc0f",
+      "bytes": 138397,
+      "kind": "text",
+      "lines": 7393,
+      "structure": [
+        "sourceCommit",
+        "version",
+        "spec",
+        "input",
+        "environment",
+        "memory",
+        "phase1Recommendations",
+        "result"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/legacy-500.validation.json",
+      "gitBlob": "adf747cea09369ea5c68b8ae08203fb238f63f37",
+      "bytes": 142312,
+      "kind": "text",
+      "lines": 7286,
+      "structure": [
+        "sourceCommit",
+        "case",
+        "seeds",
+        "n",
+        "elapsedMs",
+        "adventures",
+        "comparisons",
+        "normalization",
+        "rankCorrelation",
+        "full",
+        "evaluations"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/legacy-100.json",
+      "gitBlob": "d0bf7391d7bc1795438ddd2e2ef331c7c0f60388",
+      "bytes": 160727,
+      "kind": "text",
+      "lines": 8162,
+      "structure": [
+        "sourceCommit",
+        "version",
+        "spec",
+        "input",
+        "environment",
+        "memory",
+        "phase1Recommendations",
+        "result"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/ownership-only-500.validation.json",
+      "gitBlob": "32e84997882adffec654e924c1a339d5f746e362",
+      "bytes": 149668,
+      "kind": "text",
+      "lines": 7714,
+      "structure": [
+        "sourceCommit",
+        "case",
+        "seeds",
+        "n",
+        "elapsedMs",
+        "adventures",
+        "comparisons",
+        "normalization",
+        "rankCorrelation",
+        "full",
+        "evaluations"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/late-279-unclaimed.json",
+      "gitBlob": "3b29e76a88790575b157e2bc783655870c2f1325",
+      "bytes": 164263,
+      "kind": "text",
+      "lines": 8535,
+      "structure": [
+        "sourceCommit",
+        "version",
+        "spec",
+        "input",
+        "environment",
+        "memory",
+        "phase1Recommendations",
+        "result"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/late-900.json",
+      "gitBlob": "c913f30ccf44c28fb9af0817bb948eb27a8bf834",
+      "bytes": 195763,
+      "kind": "text",
+      "lines": 10638,
+      "structure": [
+        "sourceCommit",
+        "version",
+        "spec",
+        "input",
+        "environment",
+        "memory",
+        "phase1Recommendations",
+        "result"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/alternate-500-20.json",
+      "gitBlob": "8bf6910d479252ac5b172310c4f0a808e29e7768",
+      "bytes": 139812,
+      "kind": "text",
+      "lines": 7429,
+      "structure": [
+        "sourceCommit",
+        "version",
+        "spec",
+        "input",
+        "environment",
+        "memory",
+        "phase1Recommendations",
+        "result"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/alternate-500-10.json",
+      "gitBlob": "463fb799d9cbc03572c5a256eac45ef3f14a3a07",
+      "bytes": 174661,
+      "kind": "text",
+      "lines": 9219,
+      "structure": [
+        "sourceCommit",
+        "version",
+        "spec",
+        "input",
+        "environment",
+        "memory",
+        "phase1Recommendations",
+        "result"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/late-279-unclaimed.validation.json",
+      "gitBlob": "83d835c3831d600bc44a80693db5c06a9db717f6",
+      "bytes": 95699,
+      "kind": "text",
+      "lines": 4648,
+      "structure": [
+        "sourceCommit",
+        "case",
+        "seeds",
+        "n",
+        "elapsedMs",
+        "adventures",
+        "comparisons",
+        "normalization",
+        "rankCorrelation",
+        "full",
+        "evaluations"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/early-140.json",
+      "gitBlob": "f41fe4737c6b6ac6fb0f65ff3ca942c2a0ba375d",
+      "bytes": 149879,
+      "kind": "text",
+      "lines": 7754,
+      "structure": [
+        "sourceCommit",
+        "version",
+        "spec",
+        "input",
+        "environment",
+        "memory",
+        "phase1Recommendations",
+        "result"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/rich-927-unclaimed.validation.json",
+      "gitBlob": "a83a8e9b5c7bfae8956216b121541d004799d278",
+      "bytes": 103390,
+      "kind": "text",
+      "lines": 5186,
+      "structure": [
+        "sourceCommit",
+        "case",
+        "seeds",
+        "n",
+        "elapsedMs",
+        "adventures",
+        "comparisons",
+        "normalization",
+        "rankCorrelation",
+        "full",
+        "evaluations"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/legacy-927.json",
+      "gitBlob": "fe3a74bbac2e83f8f1b187b958f1f7d2226d5128",
+      "bytes": 215146,
+      "kind": "text",
+      "lines": 11790,
+      "structure": [
+        "sourceCommit",
+        "version",
+        "spec",
+        "input",
+        "environment",
+        "memory",
+        "phase1Recommendations",
+        "result"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/rich-927-unclaimed.json",
+      "gitBlob": "60f3526d19d240de96856aa00933ca8067a1779a",
+      "bytes": 202112,
+      "kind": "text",
+      "lines": 11081,
+      "structure": [
+        "sourceCommit",
+        "version",
+        "spec",
+        "input",
+        "environment",
+        "memory",
+        "phase1Recommendations",
+        "result"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/legacy-100.validation.json",
+      "gitBlob": "a2ccef0edbaa9bcca919e4dafa1841bf682cfa03",
+      "bytes": 145243,
+      "kind": "text",
+      "lines": 7510,
+      "structure": [
+        "sourceCommit",
+        "case",
+        "seeds",
+        "n",
+        "elapsedMs",
+        "adventures",
+        "comparisons",
+        "normalization",
+        "rankCorrelation",
+        "full",
+        "evaluations"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/tests/party-recommendation/phase2/results/ownership-only-500.json",
+      "gitBlob": "9bd358c1cdc8c54a2015b6e807d119ae34054718",
+      "bytes": 175511,
+      "kind": "text",
+      "lines": 9269,
+      "structure": [
+        "sourceCommit",
+        "version",
+        "spec",
+        "input",
+        "environment",
+        "memory",
+        "phase1Recommendations",
+        "result"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/history/README.md",
+      "gitBlob": "06924b7c645cedf8d8bda806f14bf4149b7fc924",
+      "bytes": 977,
+      "kind": "text",
+      "lines": 7,
+      "pendingLines": [
+        "これらの版番号・未実装/検証待ち・旧案・原本CSVの名称誤りは当時の記録。現行仕様ではない。履歴内の相対リンクは旧配置時点の表記をそのまま保持している。開発の入口は../README.md、現在の残件は../todo.txt。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/verification/e09-v48-migration.json",
+      "gitBlob": "d305375b22d4e2aaee27fd0ecc3cabe7df9c7cc0",
+      "bytes": 29348,
+      "kind": "text",
+      "lines": 1952,
+      "structure": {
+        "rows": 49
+      },
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/verification/terrain-v48-e08.png",
+      "gitBlob": "a917e96be589ebb5f25e49de2a595eb3f695a3db",
+      "bytes": 29481,
+      "kind": "image",
+      "dimensions": [
+        1300,
+        1120
+      ]
+    },
+    {
+      "path": "bouken/siyou/verification/terrain-v48-results.json",
+      "gitBlob": "4e0f0805c01ec01c15028a42564529fa3b82f8c1",
+      "bytes": 318374,
+      "kind": "text",
+      "lines": 20638,
+      "structure": [
+        "version",
+        "samples",
+        "results",
+        "pictures",
+        "node"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/verification/e08-v47-results.json",
+      "gitBlob": "643dcad23f2c1968253ece4e937ebcb4c031eed0",
+      "bytes": 167633,
+      "kind": "text",
+      "lines": 11063,
+      "structure": [
+        "samples",
+        "results",
+        "pictures"
+      ],
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/verification/docs-v69-check.py",
+      "gitBlob": "cf7746a1b4d3bd0ec08eb362823f7647732d3c2f",
+      "bytes": 3811,
+      "kind": "text",
+      "lines": 39,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/verification/e08-v47-report.md",
+      "gitBlob": "119e2517078a46c1e12d2be9fac5fb2ed1483394",
+      "bytes": 6112,
+      "kind": "text",
+      "lines": 109,
+      "pendingLines": [
+        "**コメント欄：** 不具合・見た目・端末差など。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/verification/terrain-v48-report.md",
+      "gitBlob": "3adfe34d173f2ed6ba00deab01cf20b32560ecca",
+      "bytes": 10506,
+      "kind": "text",
+      "lines": 228,
+      "pendingLines": [
+        "**コメント欄：** 不具合・見た目・端末差など。失敗画像のグレースケール化は今回含めていない。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/verification/terrain-v48-blessings.png",
+      "gitBlob": "8bff4ef95b6ba4b98f2cf69ca49437592392511b",
+      "bytes": 26322,
+      "kind": "image",
+      "dimensions": [
+        980,
+        1120
+      ]
+    },
+    {
+      "path": "bouken/siyou/verification/docs-v69-audit.json",
+      "gitBlob": "b174ca63b8cf7d76c49404d7fcd8b25e6a85798b",
+      "bytes": 10356,
+      "kind": "text",
+      "lines": 246,
+      "structure": [
+        "characters",
+        "characterGroups",
+        "characterSubgroups",
+        "skills",
+        "implementedSkills",
+        "collectionItems",
+        "collectionGroups",
+        "collectionSubgroups",
+        "rewardTypes",
+        "rewardGroupsPerType",
+        "achievements",
+        "characterCosts",
+        "characterSkillSlots",
+        "sourceCsvRows",
+        "reports"
+      ],
+      "pendingLines": [
+        "      \"path\": \"bouken/siyou/更新内容と未決定事項.txt\",",
+        "      \"archive\": \"bouken/siyou/history/20261025整理前/siyou/更新内容と未決定事項.txt\""
+      ]
+    },
+    {
+      "path": "bouken/siyou/verification/e09-v48-migration.md",
+      "gitBlob": "be7b5381460bd656b711b747328869d0f703ea74",
+      "bytes": 7574,
+      "kind": "text",
+      "lines": 60,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/verification/e08-v47-comparison.png",
+      "gitBlob": "b42fb1278f67ce9e7e01edc86146be15ff9b595f",
+      "bytes": 37464,
+      "kind": "image",
+      "dimensions": [
+        1300,
+        1120
+      ]
+    },
+    {
+      "path": "bouken/siyou/source_csv/博物館96小グループ報酬割当.csv",
+      "gitBlob": "0997da2822409a575949c1489bd7c3f114109ec3",
+      "bytes": 7606,
+      "kind": "text",
+      "lines": 97,
+      "rows": 96,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/source_csv/927キャラクター割当結果.csv",
+      "gitBlob": "d8efe9d3d579e47990705d5b90fea090e8e6e027",
+      "bytes": 517318,
+      "kind": "text",
+      "lines": 928,
+      "rows": 927,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/source_csv/称号120件マスター.csv",
+      "gitBlob": "053e04e5ea4a425bf58c72140168125c58e59372",
+      "bytes": 8858,
+      "kind": "text",
+      "lines": 121,
+      "rows": 120,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/source_csv/characters.csv",
+      "gitBlob": "33f0571f01fc5f3a884aed759e291d54c75e64ad",
+      "bytes": 291560,
+      "kind": "text",
+      "lines": 928,
+      "rows": 927,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/README.md",
+      "gitBlob": "5165a1fd87913040070900667f57cb692b767106",
+      "bytes": 24747,
+      "kind": "text",
+      "lines": 264,
+      "pendingLines": [
+        "・未実装：D02/D04～D07、E9種、F3種、全域開拓時の仲間付与、仲間図鑑・博物館の本体、永続コレクションボーナス、実績・称号画面と全条件判定、スプライト画像。",
+        "以下は各版作成時の記録。ZIP正本・未実装・検証待ち等は当時の状態であり、上記の現行案内とtodo.txtの最新結果を優先する。",
+        "- A02/A03は未実装（ver.19予定）。",
+        "- セーブは `localStorage`。共通 `schema.js` と `save.js` は初期骨格のみで、正式な全データ形式・移行処理は未実装。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/repository/README.md",
+      "gitBlob": "df725f409133ffd1c1c170c2fb2910932c56e999",
+      "bytes": 50,
+      "kind": "text",
+      "lines": 2,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/施設イベント・キャラクター抽選仕様.txt",
+      "gitBlob": "a0c359179c626bd8f9985cbbc8aa96a37e875c6b",
+      "bytes": 12955,
+      "kind": "text",
+      "lines": 102,
+      "pendingLines": [
+        "D04シークレットテーブルの候補実体は未作成で、後工程に保留。既存buffs.txtの効果値は勝手に変更しない。",
+        "・施設生成時の仲間／モノ・仲間プールは変更しない。訪問時、選択済みプール内だけで個体重みと成功率を補正する。D04は未実装のまま。",
+        "・F03は今回未実装。後日接続する際は初回と再判定の成功率を同じ共通値にする。",
+        "・選択後は成功失敗にかかわらず施設を処理済みにし、結果保存と同時に保留候補を削除。所持数は最終成功時のみ1回加算。保存失敗時は画面側で保存前状態へ戻し、候補・結果を進めない。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/記録・実績実装仕様.md",
+      "gitBlob": "aafe17617b8745d21b669e53d098c2196e376110",
+      "bytes": 4339,
+      "kind": "text",
+      "lines": 24,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/ホーム画像ボタン・出発導線仕様.md",
+      "gitBlob": "3a20c3fe82ccb29aa04299de7e3a98602fbffef8",
+      "bytes": 4849,
+      "kind": "text",
+      "lines": 29,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/ゲーム仕様書.txt",
+      "gitBlob": "85430d7a1a5bda9c195d73739e7051881d8140cf",
+      "bytes": 44409,
+      "kind": "text",
+      "lines": 321,
+      "pendingLines": [
+        "この資料中の過去の決定・当時の未実装表記と、現行コードの状態を区別する。",
+        "[確定] ユーザーの決定／[運用整理] 決定から導いた整理／[仮] 未確定の暫定値／[提案] 未承認の案／[保留] 今後決定／[履歴] 廃止・変更済み。",
+        "[確定] ワールドクリア条件・全域開拓報酬・途中帰還・進行中ワールドの自動保存と再開は2026-10-17に決定（末尾のtodo 21～23節参照）。[保留] ホームの正式名称・具体的画面配置、保存実装の細部。",
+        "[確定] 開拓対象・移動・通行制限・霧表示の基本ルールは2026-10-17に確定（本節追記参照）。[保留] 地形生成の詳細アルゴリズム。施設配置可能地形は以下の確定表に従う。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/ホーム成長通知・コンプボーナス受取仕様.md",
+      "gitBlob": "7b14fc1f28cff6997b68d09903bcf3dc95bfe1af",
+      "bytes": 5149,
+      "kind": "text",
+      "lines": 41,
+      "pendingLines": [
+        "2026-10-24ユーザー依頼。算数・開拓・施設抽選・全域報酬・出発時固定は変更しない。施設イベント演出本体はまだモック承認前のため未実装。モックの初獲得見出しは「やったね！はじめてのお宝を見つけた！」「やったね！はじめての仲間を見つけた！」に改定。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/キャラクター画像表示仕様.md",
+      "gitBlob": "ffb0bd4e75f487f0333f53fe221abb39b60a259a",
+      "bytes": 4355,
+      "kind": "text",
+      "lines": 35,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/todo.txt",
+      "gitBlob": "015637b4f1f92f9ad2eb8f8387f80e5bd48f55d4",
+      "bytes": 82284,
+      "kind": "text",
+      "lines": 443,
+      "pendingLines": [
+        "・未実装：D02/D04～D07、E9種、F3種、全域開拓時の仲間付与、仲間図鑑・博物館の本体、永続コレクションボーナス、実績・称号画面と全条件判定、スプライト画像。",
+        "    [ ] 32-D04. シークレット候補の定義後に実装する（保留）",
+        "・38の追加開拓スキル通知はver.22実装済み。新規の未実装候補から除外する。",
+        "    保留中の例外条件は、この工程で必要に応じて検討・決定する。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/博物館表示・ボーナス実装仕様.md",
+      "gitBlob": "15c48e016df93d95fe2c30328f65e0927dce6390",
+      "bytes": 3843,
+      "kind": "text",
+      "lines": 11,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/20261017_決定事項と経緯.txt",
+      "gitBlob": "3ff9548c7d6e9c38c696843e68fbb1a21189ea85",
+      "bytes": 30329,
+      "kind": "text",
+      "lines": 200,
+      "pendingLines": [
+        "後日変更されたZIP運用、ホーム中断、B05/B07、C01/D01、C03、施設増加の最低保証はGitHub運用方針.md・buffs.txt・実装構成・運用方針.mdの現行案内を優先する。旧「未確定」「未実装」「開始拠点保留」等を現行状態と誤認しない。",
+        "[確定] 固定仲間は第1全域開拓報酬#298 グリーンゴブ（B01遠見Lv3）、第2全域開拓報酬#199 犬着ぐるみポポ（D01いいこみっけLv3）。ともにコスト12単独。施設イベント成功判定とは別の確定加入報酬。[保留] 演出細部・既登録時処理。",
+        "[保留] 「レア」の正式名称、実際の入手確率、特別演出・報酬。存在数が少ないことと抽選確率が低いことは同義ではない。",
+        "[確定] 固定加入は第1全域開拓報酬#298 グリーンゴブ（B01遠見Lv3）、第2全域開拓報酬#199 犬着ぐるみポポ（D01いいこみっけLv3）。ともに単独Lv3。[保留] 加入演出・既登録時処理。バフ性能の実測・再調整は別工程。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/更新内容と未決定事項.txt",
+      "gitBlob": "a57380b240ac3276ebf613b2bf9cba5dc1e2b0aa",
+      "bytes": 3711,
+      "kind": "text",
+      "lines": 38,
+      "pendingLines": [
+        "# 更新内容と未決定事項",
+        "## 未決定・要確認",
+        "残る実装時詳細：追加開拓の選択順、同時発動順、実績No.108～109の開始処理の単位、画像対応、セーブデータ移行・障害対策。その他既存保留（全927体登録済み時の全域開拓代替報酬、固定報酬が既登録時の扱い）を維持。",
+        "【ver.57】実績108/109の開始処理単位、110の透視範囲、既存保存の実績移行を確定し実装。No.111を初再開へ変更。詳細：記録・実績実装仕様.md。これらは未決定一覧から解消。未記録の過去回数を推測しない。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/施設イベント演出モック.md",
+      "gitBlob": "8c41e88e3a95053203d7a4fe8fc1cb8d32c55329",
+      "bytes": 1508,
+      "kind": "text",
+      "lines": 10,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/チュートリアル演出仕様.md",
+      "gitBlob": "7a59d85a48f9882e6d4602a29722bea081494156",
+      "bytes": 7207,
+      "kind": "text",
+      "lines": 56,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/E系地形生成仕様.md",
+      "gitBlob": "c81ea6209f1e5971c1af0e6d2a1012835a2700cc",
+      "bytes": 7033,
+      "kind": "text",
+      "lines": 62,
+      "pendingLines": [
+        "E09を有効スキル一覧・条件・説明・生成処理から削除。E09以外のIDは再採番しない。現行は67種類（保留D04以外の66種類が実装済み）。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/キャラクター詳細・スキル強調仕様.md",
+      "gitBlob": "4b8630f7f7ac344bca06bef4a914fce202f17bc6",
+      "bytes": 5649,
+      "kind": "text",
+      "lines": 41,
+      "pendingLines": [
+        "条件ダイアログはskills.jsonの全スキルをID順に表示し、分類見出しもIDの先頭文字から自動列挙する。A～Dだけに限定しない。現行はA12/B7/C28/D9/E9/F3の計68種。未実装効果の有無と所持スキルによる検索は別であり、D04・E系も検索対象に含む。複数指定は引き続きANDで、名前・番号検索と併用可能。検索・条件変更で20体単位の表示を先頭へ戻す。説明は全68種のskill_messages.jsonを使用。再表示や絞り込みで画像・マスターを追加取得せず、保存も変更しない。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/buffs.txt",
+      "gitBlob": "051f4b73da952c82a5f95287d120986a2c604834",
+      "bytes": 30520,
+      "kind": "text",
+      "lines": 186,
+      "pendingLines": [
+        "・コスト12の単独Lv3バフは17種類あり、構成重複禁止のもと各1体にしか配れない。17体は内部的な特別枠（レアキャラ候補）。実際の抽選確率は未決定。",
+        "・施設生成時の仲間／モノ・仲間プールは変更しない。訪問時、選択済みプール内だけで個体重みと成功率を補正する。D04は未実装のまま。",
+        "・F03は今回未実装。後日接続する際は初回と再判定の成功率を同じ共通値にする。",
+        "・選択後は成功失敗にかかわらず施設を処理済みにし、結果保存と同時に保留候補を削除。所持数は最終成功時のみ1回加算。保存失敗時は画面側で保存前状態へ戻し、候補・結果を進めない。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/施設イベント画像表示仕様.md",
+      "gitBlob": "a478d26f9fcb3ca3807631ab2ece7bbd57a325a5",
+      "bytes": 4993,
+      "kind": "text",
+      "lines": 39,
+      "pendingLines": [
+        "## 開発側検証・実機未確認"
+      ]
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/開拓カウンタ・閾値発動処理仕様.txt",
+      "gitBlob": "11cf7f6f484f66d1deb298c0aa0cdcb00eb7e253",
+      "bytes": 6031,
+      "kind": "text",
+      "lines": 61,
+      "pendingLines": [
+        "【実装上の推奨順序（セル選択の詳細は既存保留事項）】",
+        "・博物館初期開拓は未実装のため接続を本件の完了に含めない。実装時は共通thresholdを使用する。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/プロジェクト概要.txt",
+      "gitBlob": "6e6663c387aef3c09b6454818aaa1cd39c711d9c",
+      "bytes": 21718,
+      "kind": "text",
+      "lines": 159,
+      "pendingLines": [
+        "この資料中の過去の決定・当時の未実装表記と、現行コードの状態を区別する。",
+        "位置づけ：プロジェクトの入口。実装時の詳細な確定事項は「ゲーム仕様書.txt」、バフの個別数値は「buffs.txt」、未決事項は「todo.txt」を参照する。",
+        "・204スキルのコストは「3Lv評価合計→68バフを横4ランク→ランク×Lv」。927構成は1スキル17・3スキル910で生成済み。コスト12単独持ち17体は将来活用できる特別枠（入手確率は未決定）。",
+        "## 5. 開発済み範囲と未実装範囲"
+      ]
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/実績カウンタ・保存設計.txt",
+      "gitBlob": "61c0dd19269007f10d73d9bea9d4028e404ab734",
+      "bytes": 4407,
+      "kind": "text",
+      "lines": 50,
+      "pendingLines": [
+        "【ver.57現行注記】No.111は途中帰還から「ホームのつづきからで初めて再開」へ変更（チュートリアル含む）。開始時のNo.108/109は全初期開拓を一括。保存移行・透視・イベントの実装詳細は記録・実績実装仕様.mdを優先する。以下の保留欄・旧条件は改定前の設計記録。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/四則演算問題生成エンジン.md",
+      "gitBlob": "11ae041ffe7d475fe6a7ec8d13f8e04f9436afc0",
+      "bytes": 23180,
+      "kind": "text",
+      "lines": 448,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/博物館・コレクションボーナス仕様.txt",
+      "gitBlob": "495df5475d640624416751e6bf24860b656aa408",
+      "bytes": 4626,
+      "kind": "text",
+      "lines": 29,
+      "pendingLines": [
+        "【ver.56現行注記】画像対応・初期開拓・追加開拓順・確率境界・旧保存の扱いは「博物館表示・ボーナス実装仕様.md」で確定。未獲得画像は仲間図鑑に合わせグレーシルエットへ変更。以下の未決定欄は旧設計時点の記録。",
+        "## 3. 未決定の実装詳細"
+      ]
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/画面点検・改善仕様.md",
+      "gitBlob": "4e6dd4958a91796a9a10ca6b94bfd6ee3cd58367",
+      "bytes": 2126,
+      "kind": "text",
+      "lines": 18,
+      "pendingLines": [
+        "公開版のPCブラウザで読み込みから操作可能状態への移行、検索と詳細、編成保存、スキル説明右上閉じる、D04準備中説明、ボーナス一覧、1問正解と中断再開、No111の獲得を確認。個別の範囲・未確認・検証用セーブ操作はtodo.txt末尾に記録。スマホ実機受入は待ち。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/旧todo.txt",
+      "gitBlob": "c1646e08af41e1936f7e1d4dd86589e37ed3e7f4",
+      "bytes": 29895,
+      "kind": "text",
+      "lines": 229,
+      "pendingLines": [
+        "後日変更されたZIP運用、ホーム中断、B05/B07、C01/D01、C03、施設増加の最低保証はGitHub運用方針.md・buffs.txt・実装構成・運用方針.mdの現行案内を優先する。旧「未確定」「未実装」「開始拠点保留」等を現行状態と誤認しない。",
+        "﻿算数ワールド開拓ゲーム｜未決定事項・やることリスト",
+        "    重複勧誘を許可し、成功時のみID別累計獲得数＋1、初回のみ図鑑登録。D04シークレット候補の実体は別途保留。",
+        "[x] 15. パーティー人数とスキル所持ルールを決める（仕様定義済み、未実装）"
+      ]
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/実装構成・運用方針.md",
+      "gitBlob": "b44e020e6af4e1c3daec25431700b05560735249",
+      "bytes": 12911,
+      "kind": "text",
+      "lines": 110,
+      "pendingLines": [
+        "・未実装：D02/D04～D07、E9種、F3種、全域開拓時の仲間付与、仲間図鑑・博物館の本体、永続コレクションボーナス、実績・称号画面と全条件判定、スプライト画像。",
+        "以下のZIP正本・未実装・検証待ちの表記は各版作成時点の記録。現行運用・状態として再採用しない。",
+        "- 保存失敗・破損・異形式は上書きせずエラーを表示。ワールド中の帰還操作は現時点で未実装（ホームへ戻る操作は保存ワールドを保持）。",
+        "- ver.7 は導線の更新。霧・開拓・移動・施設訪問（ToDo 27）は未実装。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/GitHub運用方針.md",
+      "gitBlob": "7c876d19f2f695aa4007076373d64605d0f807b0",
+      "bytes": 7076,
+      "kind": "text",
+      "lines": 78,
+      "pendingLines": [
+        "7. **Vercelへのデプロイを実施・確認する。** GitHub連携による自動デプロイを基本とし、対象コミットの反映と公開先を確認する。ChatGPT側に権限がない場合は操作できないことを伝え、Vercel管理画面での確認・再デプロイ方法を案内する。未確認なら成功と断定しない。",
+        "10. ユーザーの確認結果を受け、不具合修正または検証OKの記録をToDo・検証履歴に反映する。",
+        "- 原則、機能追加・不具合修正の開発単位で `bouken/common/version.js` のバージョンを更新する。",
+        "- 不具合発生時はGitHubの履歴を参照し、復旧の影響を確認してから戻す。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/仲間図鑑仕様.md",
+      "gitBlob": "fc3d466997a7789376d4db7b8975833cee4dadaa",
+      "bytes": 3472,
+      "kind": "text",
+      "lines": 21,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/地形・施設画像表示仕様.md",
+      "gitBlob": "b5c5f5e51d97636aa1c36cff3ee6635449fa919d",
+      "bytes": 3810,
+      "kind": "text",
+      "lines": 32,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/施設イベント演出実装仕様.md",
+      "gitBlob": "45216561f89e95efa124bb31d194a7444f63f7b5",
+      "bytes": 6307,
+      "kind": "text",
+      "lines": 47,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/タイトル・称号通知仕様.md",
+      "gitBlob": "f7dea46400faa55c631e6273d187f5e3bfe29ceb",
+      "bytes": 3563,
+      "kind": "text",
+      "lines": 29,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/実績・称号120件仕様.txt",
+      "gitBlob": "cbf27deb9509e7414696d604d24c2c6074b5bb17",
+      "bytes": 4306,
+      "kind": "text",
+      "lines": 28,
+      "pendingLines": [
+        "【ver.57現行注記】No.111は途中帰還から「ホームのつづきからで初めて再開」へ変更（チュートリアル含む）。開始時のNo.108/109は全初期開拓を一括。保存移行・透視・イベントの実装詳細は記録・実績実装仕様.mdを優先する。以下の保留欄・旧条件は改定前の設計記録。",
+        "[確定] 120件すべて採用。すべて最初から名称・獲得条件・達成進捗を公開する。隠し称号は設けない。第12系統の名称は「珍記録・特別実績」。獲得条件達成時に自動で永続解除（ワールド間保持）。装備・バフ効果は一切なし。未獲得も一覧に表示、獲得済みは達成表示。獲得日時の記録は可能だが必須仕様としては未決定。",
+        "## 判定・表示の保留（実装時に要明文化）"
+      ]
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/assets/sheets/README.md",
+      "gitBlob": "743499d1b190dd00f7bd999a90185dc460305601",
+      "bytes": 2437,
+      "kind": "text",
+      "lines": 28,
+      "pendingLines": [
+        "2026-10-23。Driveで指定された4画像を取得。画像表示への接続は未実装。ゲーム番号・保存形式は変更なし。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/verification/e08-v47-report.md",
+      "gitBlob": "c8abeb703cb5f43b83610cc30c3655fdc047abbd",
+      "bytes": 5607,
+      "kind": "text",
+      "lines": 106,
+      "pendingLines": [
+        "**コメント欄：** 不具合・見た目・端末差など。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/verification/terrain-v48-report.md",
+      "gitBlob": "352705967f289cbca3d15c4f6c6211480e27651d",
+      "bytes": 10001,
+      "kind": "text",
+      "lines": 225,
+      "pendingLines": [
+        "**コメント欄：** 不具合・見た目・端末差など。失敗画像のグレースケール化は今回含めていない。"
+      ]
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/verification/e09-v48-migration.md",
+      "gitBlob": "32a5c165603a5530d81763b8931a1e0961d0cec8",
+      "bytes": 7069,
+      "kind": "text",
+      "lines": 57,
+      "pendingLines": []
+    },
+    {
+      "path": "bouken/siyou/history/20261025整理前/siyou/source_csv/927キャラクター割当結果.csv",
+      "gitBlob": "7d0c9737da09db0abeec5f1ac9a3f46821aa8396",
+      "bytes": 521610,
+      "kind": "text",
+      "lines": 928,
+      "rows": 927,
+      "pendingLines": []
+    }
+  ],
+  "missing": []
+}
