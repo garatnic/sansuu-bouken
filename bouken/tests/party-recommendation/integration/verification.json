@@ -1,0 +1,73 @@
+{
+  "version": 69,
+  "testedCodeCommit": "6680c4eecbc16e9ad875e3b3812ae34833230939",
+  "environment": "existing cloud Chrome desktop",
+  "smartphone": "not tested / user pending",
+  "tests": {
+    "mockGroups": 12,
+    "mockMixedOperations": 3000,
+    "integrationGroups": 12,
+    "phase2RegressionGroups": 12
+  },
+  "browser": {
+    "passed": [
+      "explicit read returns no save in cloud browser",
+      "real master plus synthetic ownership100 / 2 slots",
+      "locked character preserved across random and 5 engine modes",
+      "arbitrary-party 16 trial evaluation",
+      "research graph, error and reference metadata",
+      "mock decide dialog closes without persistence",
+      "500 / 5 slots / 30 map cancel and Worker restart",
+      "after restart 10 map recommendation succeeds",
+      "all member buttons disabled while busy"
+    ],
+    "measuredSearches": [
+      {
+        "owned": 100,
+        "locked": 1,
+        "map": 10,
+        "trials": 16,
+        "milliseconds": 2367.6,
+        "adventures": 328
+      },
+      {
+        "owned": 500,
+        "locked": 1,
+        "map": 10,
+        "trials": 16,
+        "milliseconds": 3178.2,
+        "adventures": 344
+      }
+    ],
+    "widths": [
+      320,
+      390,
+      412,
+      800
+    ],
+    "documentWidths": [
+      305,
+      375,
+      397,
+      785
+    ],
+    "horizontalOverflow": false,
+    "alwaysFiveSlots": true,
+    "sixModeButtons": true,
+    "minModeHeight": 48,
+    "sheetResourceEntries": 1,
+    "explicitSaveReads": 1,
+    "prohibitedStorageCalls": 0
+  },
+  "unverified": [
+    "user actual save read on smartphone",
+    "touch and actual mobile viewport",
+    "memory / battery / extended operation",
+    "all 67 individual diagnoses",
+    "all fixed conditions held-out quality",
+    "many claimed museum bonuses full fixed grid"
+  ],
+  "formalIntegration": false,
+  "qualityGate": "failed / blocked",
+  "saveWritesImplemented": false
+}

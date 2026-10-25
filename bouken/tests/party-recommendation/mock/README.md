@@ -58,3 +58,5 @@ responsive.htmlは320/390/412/800pxのCSS幅を点検するためのiframeで、
 
 ## 段階B更新（2026-10-25）
 6ボタン・5枠・ランダムを追加。ランダムは能力で絞らず、固定以外をFisher–Yatesで無作為抽出。同じ集合や既出を再抽選し、128回で選べなければ小さなサンプル集合を列挙して未表示から抽選。尽きたら周回案内する。モード変更で固定/履歴を維持する挙動はモックの暫定動作で、正式仕様決定待ち。旧browser-result.jpgとverification.jsonの旧5タイプ結果は初版の履歴。今回の検証はstage-b-verification.json。
+
+段階Bの公開PC確認はstage-b-verification.json、画面例はstage-b-browser.jpg。実データ接続は別の[独立検証ページ](../integration/index.html)で行い、このサンプルモックの保存ガード/サンプル表示は維持する。

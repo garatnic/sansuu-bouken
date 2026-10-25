@@ -12,7 +12,7 @@ for c in auditcases:
   t=c['types'][mode];delta=paired(t['audit'],c['audit']['random'],k)
   other=max(v['audit']['raw'][k] for v in c['types'].values());summary['specialistComparisons'].append({'spec':c['spec'],'mode':mode,'vsOneRandomPaired95':delta,'belowBestOtherMode':t['audit']['raw'][k]<other-1e-9,'heldoutVsTrainRawRatio':t['audit']['raw'][k]/t['training']['raw'][k] if t['training']['raw'][k] else None})
 (root/'summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n')
-p=root/'../../../siyou/おまかせ編成独立検証.md';s=p.read_text();s+='''
+p=root/'../../../siyou/おまかせ編成独立検証.md';original=p.read_text();suffix='\n## 判断の選択肢'+original.split('\n## 判断の選択肢',1)[1] if '\n## 判断の選択肢' in original else '';s=original.split('\n## E：',1)[0];s+='''
 ## E：31条件の品質監査（本体統合を止める）
 
 **品質ゲートは未合格。** 固定制約の正しさと、推薦品質・多様性の合格は別。候補は研究用暫定表示のまま。ユーザー実機・仕様判断を飛ばしてGへ進まない。
@@ -75,5 +75,5 @@ s+='''
 4. 実機性能/メモリ、短期・長期の監査、博物館多数受取の固定条件を拡充する。
 5. 品質ゲート合格とユーザー明示承認の両方がそろうまでGは開始しない。
 '''
-p.write_text(s)
+p.write_text(s+suffix)
 print({'cases':len(cases),'oneCandidate':ones,'nonFullyLockedModeConditions':len(counts),'specialistLowerThanAnotherMode':sum(x['belowBestOtherMode'] for x in summary['specialistComparisons'])})
