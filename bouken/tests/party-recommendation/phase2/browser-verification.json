@@ -1,1 +1,97 @@
-{"status":"pending","cloudBrowser":true,"smartphoneMeasured":false,"note":"Public-page verification will be recorded after publication; Node UMD tests passed."}
+{
+  "status": "passed",
+  "codeCommit": "1dcd429555b7406d3e5d93765855c9f852c365b5",
+  "url": "https://sansuu-bouken.vercel.app/bouken/tests/party-recommendation/phase2/browser.html",
+  "responsiveUrl": "https://sansuu-bouken.vercel.app/bouken/tests/party-recommendation/phase2/responsive.html",
+  "environment": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "hardwareConcurrency": 5,
+    "deviceMemory": 8,
+    "viewport": {
+      "width": 1363,
+      "height": 936
+    },
+    "totalMs": 3008.7000000001863,
+    "heartbeatTicks": 12
+  },
+  "checks": [
+    "公開した独立ページで合成100体/10×10/50%所有/未受取/目標04を実行し、5タイプの推薦を表示。計算2.1104秒、読込等込み3.0087秒、heartbeat12回。",
+    "18ファイルのGit blob検証成功を画面で確認。",
+    "測定結果JSONのダウンロード成功。browser-measurement.jsonへ原本保存。",
+    "同じ入力から追加探索し、全推薦の試行数が16から32へ増加。計算約4.09秒。browser-additional.jsonへ原本保存。",
+    "927体/30×30/追加探索設定を計算中に中止し、フォームと開始操作が復帰。中止時3.2846秒。",
+    "中止後100体/10×10へ変更して再実行成功。計算約2.00秒、同じ16試行の推薦IDと画面得点が再現。",
+    "320/390/800pxのiframeでCSS幅点検。documentのscrollWidthとclientWidthが一致し、最小ボタン高46px。320pxの画像でも文字・フォーム・縦スクロールを確認。",
+    "ブラウザから保存した入力・設定をNodeで再実行し、推薦ID・生評価・正規化得点・試行数が数値まで完全一致。"
+  ],
+  "firstRun": {
+    "computeMs": 2110.399999999907,
+    "totalMs": 3008.7000000001863,
+    "adventures": 290,
+    "n": [
+      16,
+      16,
+      16,
+      16,
+      16
+    ]
+  },
+  "additional": {
+    "computeMs": 4090.7000000001863,
+    "totalMs": 4333.5,
+    "adventures": 636,
+    "n": [
+      32,
+      32,
+      32,
+      32,
+      32
+    ]
+  },
+  "cancel": {
+    "count": 927,
+    "size": 30,
+    "hardCancelElapsedMs": 3284.600000000093,
+    "readyLoadMs": 116.39999999990687,
+    "formRestored": true,
+    "restartSucceeded": true
+  },
+  "widthChecks": [
+    {
+      "frameWidth": 320,
+      "clientWidth": 305,
+      "scrollWidth": 305,
+      "minButtonHeight": 46
+    },
+    {
+      "frameWidth": 390,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "minButtonHeight": 46
+    },
+    {
+      "frameWidth": 800,
+      "clientWidth": 785,
+      "scrollWidth": 785,
+      "minButtonHeight": 46
+    }
+  ],
+  "screenshot": "browser-result.jpg",
+  "smartphoneMeasured": false,
+  "memoryMeasured": false,
+  "limitations": [
+    "Cloud Chrome Linux desktop; iframe widths are CSS checks only, not mobile emulation or touch/thermal/battery measurements.",
+    "Full-page screenshot API timed out; standard viewport screenshot succeeded."
+  ],
+  "nodeBrowserReproduction": {
+    "sameRecommendations": true,
+    "sameAdventureCount": true,
+    "n": [
+      16,
+      16,
+      16,
+      16,
+      16
+    ]
+  }
+}

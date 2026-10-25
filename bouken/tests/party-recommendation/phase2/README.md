@@ -32,6 +32,7 @@ runは13条件を逐次実行し、results/へケースごとに保存する。`
 - responsive.html：320/390/800pxのCSS表示点検用。実機性能の再現ではない。
 - speed.cjs / policy-check.cjs / long-horizon.cjs：交互順序の完走速度、公開情報を使う操作、全域報酬を含む長期指標。
 - results/：各条件の入力・設定・段階結果・生指標・独立比較・サンプル。
+- browser-verification.json / browser-measurement.json / browser-additional.json / browser-result.jpg：公開クラウドChromeでの実測と画像。スマホ実測ではない。
 
 ## ブラウザ試作
 

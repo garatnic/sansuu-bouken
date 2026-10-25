@@ -44,8 +44,9 @@
     "legacy-927"
   ],
   "smartphoneMeasured": false,
-  "cloudBrowser": "pending publication",
+  "cloudBrowser": "passed public-page flows; details in browser-verification.json",
   "allJsonParse": true,
   "stage1BlobComparison": "all original code/config/results and both reports match starting main; parent README extends original",
-  "markdownLinks": "passed"
+  "markdownLinks": "passed",
+  "browserCodeCommit": "1dcd429555b7406d3e5d93765855c9f852c365b5"
 }
