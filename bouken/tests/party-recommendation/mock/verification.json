@@ -1,1 +1,63 @@
-{"sourceCommit":"dfc733ff21dddc2bed9fb4041b05afc9f9e2804c","version":69,"nodeTestGroups":11,"mixedOperations":3000,"browser":"pending publication","smartphone":"user review pending","engineConnected":false,"storageAccessBlocked":true}
+{
+  "sourceCommit": "dfc733ff21dddc2bed9fb4041b05afc9f9e2804c",
+  "version": 69,
+  "nodeTestGroups": 11,
+  "mixedOperations": 3000,
+  "browser": {
+    "environment": "existing cloud Chrome / desktop",
+    "testedCodeCommit": "3928a290d409c911e670399c265d29deb4a8efaa",
+    "passed": [
+      "five types with two locked characters preserved by ID and position",
+      "single/multiple/all locked and unlock",
+      "unique parties and immediate-repeat avoidance",
+      "scarce pool cycling and single-candidate message",
+      "2/3/5 slots",
+      "real skill detail modal",
+      "mock decision and return/reset",
+      "reload resets mock state",
+      "native Image.onerror fallback remains operable"
+    ],
+    "sheetResourceEntriesAfterRepeatedOperations": 1,
+    "imageInitCalls": 1,
+    "blockedStorageAttempts": [],
+    "imageFailureSheetRequests": 0
+  },
+  "smartphone": "user review pending",
+  "engineConnected": false,
+  "storageAccessBlocked": true,
+  "widthChecks": [
+    {
+      "iframeWidth": 320,
+      "documentClientWidth": 305,
+      "documentScrollWidth": 305,
+      "minimumCardWidth": 45.796875,
+      "minimumDetailsHeight": 44
+    },
+    {
+      "iframeWidth": 390,
+      "documentClientWidth": 375,
+      "documentScrollWidth": 375,
+      "minimumCardWidth": 54.59375,
+      "minimumDetailsHeight": 44
+    },
+    {
+      "iframeWidth": 412,
+      "documentClientWidth": 397,
+      "documentScrollWidth": 397,
+      "minimumCardWidth": 59,
+      "minimumDetailsHeight": 44
+    },
+    {
+      "iframeWidth": 800,
+      "documentClientWidth": 785,
+      "documentScrollWidth": 785,
+      "minimumCardWidth": 99.59375,
+      "minimumDetailsHeight": 44
+    }
+  ],
+  "limitations": [
+    "CSS iframe widths are not smartphone emulation",
+    "smartphone touch, actual viewport and device performance await user review",
+    "recommendation quality is not tested; sample parties only"
+  ]
+}
