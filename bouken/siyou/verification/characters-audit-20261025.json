@@ -949,9 +949,19 @@
   "tests": [
     "encyclopedia.test.cjs PASS",
     "world-portraits.test.cjs PASS",
-    "facility-event-ui.test.cjs PASS"
+    "facility-event-ui.test.cjs PASS",
+    "characters-party-audit.cjs PASS: actual party HTML and detail code, all-owned fixture, 126 focus IDs, no save writes"
   ],
-  "browser": "GitHub Pages after commit: pending",
+  "browser": {
+    "pagesDataExact": true,
+    "pagesSha256": "ba5f631c1c228d6c85f0228acbc13a08a6858f4490e4cd52407f97f4f1c2916d",
+    "pagesUrl": "https://garatnic.github.io/sansuu-bouken/bouken/characters.html",
+    "partyUrl": "https://garatnic.github.io/sansuu-bouken/bouken/party.html",
+    "roster": "927-card grouped screen and search render; browser cached old names even after reload",
+    "party": "empty-owned page loads normally; real owned save not used",
+    "latestNamesVisual": "pending: cloud browser retains old data, public JSON independently verified exact"
+  },
   "smartphone": "pending",
-  "semanticImageAudit": "User-supplied names accepted; no independent visual re-audit of all 927 images."
+  "semanticImageAudit": "User-supplied names accepted; no independent visual re-audit of all 927 images.",
+  "reproduction": "From repository root: node bouken/siyou/verification/characters-party-audit.cjs; node bouken/tests/encyclopedia.test.cjs; node bouken/tests/world-portraits.test.cjs; node bouken/tests/facility-event-ui.test.cjs"
 }
