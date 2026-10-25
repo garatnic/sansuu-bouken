@@ -65,10 +65,10 @@
 
 ## 5. 実行ToDo（チェックリスト）
 ### A. 仕様・依存関係の確認【Work】
-- [ ] 最新mainのversion.js、siyou全資料、README、GitHub運用方針を確認。
-- [ ] 実パーティー保存・出発時固定・枠解放・所有仲間・画像・スキルLvのAPIを特定。
-- [ ] 既存の第1・第2段階の評価エンジン、モック、検証データを再確認。
-- [ ] 既存データとの接続方式、変更予定ファイル、セーブ保護方針を記録。
+- [x] 最新mainのversion.js、siyou全資料、README、GitHub運用方針を確認。
+- [x] 実パーティー保存・出発時固定・枠解放・所有仲間・画像・スキルLvのAPIを特定。
+- [x] 既存の第1・第2段階の評価エンジン、モック、検証データを再確認。
+- [x] 既存データとの接続方式、変更予定ファイル、セーブ保護方針を記録。
 
 ### B. UIモック修正【Work → 実機確認（ユーザー）】
 - [ ] 5選択ドロップダウンを6ボタンに変更。
@@ -134,3 +134,8 @@
 - UIモック：`https://sansuu-bouken.vercel.app/bouken/tests/party-recommendation/mock/index.html`
 - 第2段階ブラウザ試作：`https://sansuu-bouken.vercel.app/bouken/tests/party-recommendation/phase2/browser.html`
 - GitHub：`https://github.com/garatnic/sansuu-bouken`
+
+## 9. 実行記録（2026-10-25）
+- 原文登録済み。開始main `26ea00fd61e1e8e34ba249b08a95567e745ba8d0`、version.jsを再取得し69を確認。
+- A完了。依存API・接続方式・保存保護・未決事項は[独立検証記録](おまかせ編成独立検証.md)を参照。
+- B以降は順次実施。実機・正式仕様・G承認を自動で完了しない。
