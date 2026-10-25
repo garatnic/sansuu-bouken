@@ -1,0 +1,76 @@
+{
+  "sourceCommit": "bf5a69255f627090c2e6fa2ce089209b88d72a4f",
+  "gameVersion": 69,
+  "testPassed": 17,
+  "testOutput": [
+    "PASS 67 master skills and no browser storage",
+    "PASS same-ID level sum caps at 3",
+    "PASS departure equals current worldcreate.html execution block",
+    "PASS seed repeat, input immutability, full clear + reward, claims frozen",
+    "PASS correct turn equals current world.html transaction core",
+    "PASS all 67 isolated skills can run, including D04 no effect",
+    "PASS observation cannot expose unknown terrain/facility/event",
+    "PASS B04 passes arrow only and B07 counts only, not hidden targets",
+    "PASS terrain blessings compete through actual generator normalization",
+    "PASS C04 and collectors multiply; different collectors compete",
+    "PASS D05 + D06 use additive original-pool group correction",
+    "PASS facility group boosts add facilities",
+    "PASS C01/D01 compete and cancel at a 50:50 facility",
+    "PASS pinned runtime/master blob hashes unchanged",
+    "PASS reward idempotence and unclaimed completion gives no stage",
+    "PASS A02 first can block downstream path instead of fixed bonus",
+    "PASS balanced penalizes weak field; 70/30 formula",
+    "{\"passed\":17}"
+  ],
+  "sourceBlobsMatched": 18,
+  "standardAdventures": 6420,
+  "auditAdventures": 4480,
+  "auditSeeds": [
+    61001,
+    61128
+  ],
+  "independentAuditPositive95Cases": 20,
+  "replay": [
+    {
+      "count": 30,
+      "party": [
+        300
+      ],
+      "matched64Trials": true
+    },
+    {
+      "count": 100,
+      "party": [
+        241,
+        842
+      ],
+      "matched64Trials": true
+    },
+    {
+      "count": 500,
+      "party": [
+        190,
+        216,
+        373,
+        418,
+        900
+      ],
+      "matched64Trials": true
+    },
+    {
+      "count": 927,
+      "party": [
+        99,
+        219,
+        224,
+        351,
+        777
+      ],
+      "matched64Trials": true
+    }
+  ],
+  "markdownLinks": "passed",
+  "jsonParse": "passed",
+  "scope": "tests/party-recommendation and siyou report/index/todo only; remote Git tree diff must be checked separately",
+  "smartphoneMeasured": false
+}

@@ -1,0 +1,24 @@
+{
+  "commit": "bf5a69255f627090c2e6fa2ce089209b88d72a4f",
+  "version": 69,
+  "gitBlobs": {
+    "bouken/common/buffs.js": "47bd448294bc53924cd85757aa1f1f77497cb13e",
+    "bouken/common/collection.js": "9a52a2e880de0c8e4bf0f48d45966e87ef4436a9",
+    "bouken/common/events.js": "de7c1b505265cbecf62fbc857baf750246bfc98c",
+    "bouken/common/explore.js": "30e16ae2bfd06f5fee92c2120668b1a3ca6d941f",
+    "bouken/common/party.js": "380dc39d9ead60262b2fe96c16679d5904272061",
+    "bouken/common/progress.js": "f583895db3ec804b7154ab8482c23c76c38fe9c7",
+    "bouken/common/schema.js": "e7b99c67f4f511c00b055dda5894a4eb5a3fd02d",
+    "bouken/common/worldgen.js": "ad40ea25bca21b560949d17b13690b7c3da98e56",
+    "bouken/data/characters.json": "acfb6e7eba309c01f795f502a816c044f5ebbbe8",
+    "bouken/data/collection_items.json": "776d3a6fe6e6ca3bef3224a18853765605190d13",
+    "bouken/data/collection_rewards.json": "e9242c414fbbdaf57dee725a88a7d084ee17c6b8",
+    "bouken/data/facilities.json": "3450edcd63fa9fd2d388ade266f60531664fd1a7",
+    "bouken/data/skills.json": "7ade9fddd739c586f5c7954e6aa80ea66c8eff19",
+    "bouken/data/terrains.json": "316bd119f274ac678224e380fe41cee4976772e2",
+    "bouken/data/world_facility_counts.json": "a1dfda8921560a21cb28afb14d1a09f5e0859b63",
+    "bouken/world.html": "633737a73ec4f353171555aa638bc0272a4ca59b",
+    "bouken/worldcreate.html": "87b9f7554ff2abf69e7811fb51c47828d3ce2883",
+    "bouken/common/version.js": "493877176bc457dd6e28c8687bb5b6913bf4de0c"
+  }
+}

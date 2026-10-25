@@ -1,0 +1,6 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),E=require('./engine.cjs'),r=E.load(),cfg=require('./config.json'),standard=require('./results.json');
+const results={sizes:[],reproducibility:[],capOverlap:[]};
+for(const size of [5,20,30]){const f=E.fixture(r,500,cfg),start=performance.now(),a=E.adventure(r,f.save,f.owned.slice(0,f.slots),{...cfg,size,budget:Math.min(30,size*size-1)},82000+size);results.sizes.push({size,elapsedMs:performance.now()-start,qClear:a.qClear,opened:a.final.opened,claimsUnchanged:a.claimsUnchanged});}
+for(const item of standard.results){const f=E.fixture(r,item.ownedCount,cfg),p=item.recommendations[0].party,a=E.evaluate(r,f.save,p,cfg,Array.from({length:64},(_,i)=>31001+i));const old=item.recommendations[0];if(JSON.stringify(a.raw)!==JSON.stringify(old.raw))throw Error('Replay mismatch');results.reproducibility.push({count:item.ownedCount,party:p,matched64Trials:true});for(const rec of item.recommendations){const sums={};for(const id of rec.party)for(const b of r.byId.get(id).skills)sums[b.id]=(sums[b.id]||0)+b.level;results.capOverlap.push({count:item.ownedCount,type:rec.type,excess:Object.fromEntries(Object.entries(sums).filter(([,n])=>n>3).map(([id,n])=>[id,n-3]))});}}
+fs.writeFileSync(path.join(__dirname,'extra-results.json'),JSON.stringify(results,null,2)+'\n');console.log(JSON.stringify(results));

@@ -1,0 +1,173 @@
+{
+  "sizes": [
+    {
+      "size": 5,
+      "elapsedMs": 26.416888999999998,
+      "qClear": 20,
+      "opened": 24,
+      "claimsUnchanged": true
+    },
+    {
+      "size": 20,
+      "elapsedMs": 496.79569799999996,
+      "qClear": 366,
+      "opened": 399,
+      "claimsUnchanged": true
+    },
+    {
+      "size": 30,
+      "elapsedMs": 2959.6857579999996,
+      "qClear": 832,
+      "opened": 899,
+      "claimsUnchanged": true
+    }
+  ],
+  "reproducibility": [
+    {
+      "count": 30,
+      "party": [
+        300
+      ],
+      "matched64Trials": true
+    },
+    {
+      "count": 100,
+      "party": [
+        241,
+        842
+      ],
+      "matched64Trials": true
+    },
+    {
+      "count": 500,
+      "party": [
+        190,
+        216,
+        373,
+        418,
+        900
+      ],
+      "matched64Trials": true
+    },
+    {
+      "count": 927,
+      "party": [
+        99,
+        219,
+        224,
+        351,
+        777
+      ],
+      "matched64Trials": true
+    }
+  ],
+  "capOverlap": [
+    {
+      "count": 30,
+      "type": "おまかせ",
+      "excess": {}
+    },
+    {
+      "count": 30,
+      "type": "どんどん開拓",
+      "excess": {}
+    },
+    {
+      "count": 30,
+      "type": "お宝あつめ",
+      "excess": {}
+    },
+    {
+      "count": 30,
+      "type": "仲間あつめ",
+      "excess": {}
+    },
+    {
+      "count": 30,
+      "type": "マップ探索",
+      "excess": {}
+    },
+    {
+      "count": 100,
+      "type": "おまかせ",
+      "excess": {}
+    },
+    {
+      "count": 100,
+      "type": "どんどん開拓",
+      "excess": {}
+    },
+    {
+      "count": 100,
+      "type": "お宝あつめ",
+      "excess": {}
+    },
+    {
+      "count": 100,
+      "type": "仲間あつめ",
+      "excess": {}
+    },
+    {
+      "count": 100,
+      "type": "マップ探索",
+      "excess": {}
+    },
+    {
+      "count": 500,
+      "type": "おまかせ",
+      "excess": {}
+    },
+    {
+      "count": 500,
+      "type": "どんどん開拓",
+      "excess": {}
+    },
+    {
+      "count": 500,
+      "type": "お宝あつめ",
+      "excess": {}
+    },
+    {
+      "count": 500,
+      "type": "仲間あつめ",
+      "excess": {}
+    },
+    {
+      "count": 500,
+      "type": "マップ探索",
+      "excess": {
+        "D08": 1
+      }
+    },
+    {
+      "count": 927,
+      "type": "おまかせ",
+      "excess": {
+        "C12": 1,
+        "C19": 4
+      }
+    },
+    {
+      "count": 927,
+      "type": "どんどん開拓",
+      "excess": {}
+    },
+    {
+      "count": 927,
+      "type": "お宝あつめ",
+      "excess": {}
+    },
+    {
+      "count": 927,
+      "type": "仲間あつめ",
+      "excess": {}
+    },
+    {
+      "count": 927,
+      "type": "マップ探索",
+      "excess": {
+        "C06": 2
+      }
+    }
+  ]
+}
