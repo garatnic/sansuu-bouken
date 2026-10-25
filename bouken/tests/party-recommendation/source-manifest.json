@@ -1,5 +1,5 @@
 {
-  "commit": "bf5a69255f627090c2e6fa2ce089209b88d72a4f",
+  "commit": "6f03aeefcf34d848b6cd4cc4dd4162a1adcd0877",
   "version": 69,
   "gitBlobs": {
     "bouken/common/buffs.js": "47bd448294bc53924cd85757aa1f1f77497cb13e",
@@ -10,7 +10,7 @@
     "bouken/common/progress.js": "f583895db3ec804b7154ab8482c23c76c38fe9c7",
     "bouken/common/schema.js": "e7b99c67f4f511c00b055dda5894a4eb5a3fd02d",
     "bouken/common/worldgen.js": "ad40ea25bca21b560949d17b13690b7c3da98e56",
-    "bouken/data/characters.json": "acfb6e7eba309c01f795f502a816c044f5ebbbe8",
+    "bouken/data/characters.json": "9fc9148ba5b7c2c56ee43ba30fa5a856dc046fe8",
     "bouken/data/collection_items.json": "776d3a6fe6e6ca3bef3224a18853765605190d13",
     "bouken/data/collection_rewards.json": "e9242c414fbbdaf57dee725a88a7d084ee17c6b8",
     "bouken/data/facilities.json": "3450edcd63fa9fd2d388ade266f60531664fd1a7",
@@ -20,5 +20,7 @@
     "bouken/world.html": "633737a73ec4f353171555aa638bc0272a4ca59b",
     "bouken/worldcreate.html": "87b9f7554ff2abf69e7811fb51c47828d3ce2883",
     "bouken/common/version.js": "493877176bc457dd6e28c8687bb5b6913bf4de0c"
-  }
+  },
+  "originalResearchCommit": "bf5a69255f627090c2e6fa2ce089209b88d72a4f",
+  "note": "Current runtime pin refreshed for approved character name/description update only. Original pin retained in source-manifest-original-ver69.json; historical quality results retain their original input."
 }

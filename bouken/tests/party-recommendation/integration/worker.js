@@ -1,5 +1,5 @@
 'use strict';
-importScripts('../phase2/core.js','./unlocks.js','./outcomes.js','./api.js','./runtime.js');
+importScripts('../phase2/core.js','./unlocks.js','./outcomes.js','./api.js','./runtime.js?rev=manifest2');
 let runtimePromise,running=false;
 self.onmessage=async event=>{if(running)return;running=true;const m=event.data;try{
  const r=await(runtimePromise??=bootstrap());
