@@ -1,0 +1,246 @@
+{
+  "characters": 927,
+  "characterGroups": 24,
+  "characterSubgroups": 103,
+  "skills": 67,
+  "implementedSkills": 66,
+  "collectionItems": 480,
+  "collectionGroups": 24,
+  "collectionSubgroups": 96,
+  "rewardTypes": 6,
+  "rewardGroupsPerType": 16,
+  "achievements": 120,
+  "characterCosts": {
+    "12": 878,
+    "9": 15,
+    "10": 15,
+    "11": 19
+  },
+  "characterSkillSlots": {
+    "3": 908,
+    "1": 17,
+    "2": 2
+  },
+  "sourceCsvRows": {
+    "characters.csv": 927,
+    "927キャラクター割当結果.csv": 927,
+    "博物館96小グループ報酬割当.csv": 96,
+    "称号120件マスター.csv": 120
+  },
+  "reports": {
+    "e09-v48-migration.json": {
+      "kind": "list",
+      "entries": 49,
+      "sha256": "76999e601c0e7963f1c22132044b3cbd4c2a39197e048e260cf68ee3dbb12e54"
+    },
+    "terrain-v48-results.json": {
+      "kind": "dict",
+      "entries": 5,
+      "sha256": "4bd7bcebcd267949de22402c91ecf1a5b5eac8ad03bfde9b6794fbda834503f9"
+    },
+    "e08-v47-results.json": {
+      "kind": "dict",
+      "entries": 3,
+      "sha256": "736d42dd7b2877d553bb7aed66da8a0c826d6dee5efe347d7a784b57fcc783a6"
+    }
+  },
+  "sourceCommit": "8ba523a686eb2b655bba923bdcd39c45fee7faa3",
+  "scope": "2026-10-25資料照合の版固定スナップショット。ゲーム結合/実機の新規合格を意味しない。",
+  "sourceDocuments": [
+    {
+      "path": "README.md",
+      "gitBlobSha": "df725f409133ffd1c1c170c2fb2910932c56e999",
+      "archive": "bouken/siyou/history/20261025整理前/repository/README.md"
+    },
+    {
+      "path": "bouken/README.md",
+      "gitBlobSha": "5165a1fd87913040070900667f57cb692b767106",
+      "archive": "bouken/siyou/history/20261025整理前/README.md"
+    },
+    {
+      "path": "bouken/assets/sheets/README.md",
+      "gitBlobSha": "743499d1b190dd00f7bd999a90185dc460305601",
+      "archive": "bouken/siyou/history/20261025整理前/assets/sheets/README.md"
+    },
+    {
+      "path": "bouken/siyou/20261017_決定事項と経緯.txt",
+      "gitBlobSha": "3ff9548c7d6e9c38c696843e68fbb1a21189ea85",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/20261017_決定事項と経緯.txt"
+    },
+    {
+      "path": "bouken/siyou/E系地形生成仕様.md",
+      "gitBlobSha": "c81ea6209f1e5971c1af0e6d2a1012835a2700cc",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/E系地形生成仕様.md"
+    },
+    {
+      "path": "bouken/siyou/GitHub運用方針.md",
+      "gitBlobSha": "7c876d19f2f695aa4007076373d64605d0f807b0",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/GitHub運用方針.md"
+    },
+    {
+      "path": "bouken/siyou/buffs.txt",
+      "gitBlobSha": "051f4b73da952c82a5f95287d120986a2c604834",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/buffs.txt"
+    },
+    {
+      "path": "bouken/siyou/todo.txt",
+      "gitBlobSha": "015637b4f1f92f9ad2eb8f8387f80e5bd48f55d4",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/todo.txt"
+    },
+    {
+      "path": "bouken/siyou/verification/e08-v47-report.md",
+      "gitBlobSha": "c8abeb703cb5f43b83610cc30c3655fdc047abbd",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/verification/e08-v47-report.md"
+    },
+    {
+      "path": "bouken/siyou/verification/e09-v48-migration.md",
+      "gitBlobSha": "32a5c165603a5530d81763b8931a1e0961d0cec8",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/verification/e09-v48-migration.md"
+    },
+    {
+      "path": "bouken/siyou/verification/terrain-v48-report.md",
+      "gitBlobSha": "352705967f289cbca3d15c4f6c6211480e27651d",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/verification/terrain-v48-report.md"
+    },
+    {
+      "path": "bouken/siyou/キャラクター画像表示仕様.md",
+      "gitBlobSha": "ffb0bd4e75f487f0333f53fe221abb39b60a259a",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/キャラクター画像表示仕様.md"
+    },
+    {
+      "path": "bouken/siyou/キャラクター詳細・スキル強調仕様.md",
+      "gitBlobSha": "4b8630f7f7ac344bca06bef4a914fce202f17bc6",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/キャラクター詳細・スキル強調仕様.md"
+    },
+    {
+      "path": "bouken/siyou/ゲーム仕様書.txt",
+      "gitBlobSha": "85430d7a1a5bda9c195d73739e7051881d8140cf",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/ゲーム仕様書.txt"
+    },
+    {
+      "path": "bouken/siyou/タイトル・称号通知仕様.md",
+      "gitBlobSha": "f7dea46400faa55c631e6273d187f5e3bfe29ceb",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/タイトル・称号通知仕様.md"
+    },
+    {
+      "path": "bouken/siyou/チュートリアル演出仕様.md",
+      "gitBlobSha": "7a59d85a48f9882e6d4602a29722bea081494156",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/チュートリアル演出仕様.md"
+    },
+    {
+      "path": "bouken/siyou/プロジェクト概要.txt",
+      "gitBlobSha": "6e6663c387aef3c09b6454818aaa1cd39c711d9c",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/プロジェクト概要.txt"
+    },
+    {
+      "path": "bouken/siyou/ホーム成長通知・コンプボーナス受取仕様.md",
+      "gitBlobSha": "7b14fc1f28cff6997b68d09903bcf3dc95bfe1af",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/ホーム成長通知・コンプボーナス受取仕様.md"
+    },
+    {
+      "path": "bouken/siyou/ホーム画像ボタン・出発導線仕様.md",
+      "gitBlobSha": "3a20c3fe82ccb29aa04299de7e3a98602fbffef8",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/ホーム画像ボタン・出発導線仕様.md"
+    },
+    {
+      "path": "bouken/siyou/仲間図鑑仕様.md",
+      "gitBlobSha": "fc3d466997a7789376d4db7b8975833cee4dadaa",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/仲間図鑑仕様.md"
+    },
+    {
+      "path": "bouken/siyou/博物館・コレクションボーナス仕様.txt",
+      "gitBlobSha": "495df5475d640624416751e6bf24860b656aa408",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/博物館・コレクションボーナス仕様.txt"
+    },
+    {
+      "path": "bouken/siyou/博物館収集品_24大グループ96小グループ完成版.txt",
+      "gitBlobSha": "dcbcdc0eb532e4aae9d096b0f779d6fbbd826e21",
+      "archive": null
+    },
+    {
+      "path": "bouken/siyou/博物館表示・ボーナス実装仕様.md",
+      "gitBlobSha": "15c48e016df93d95fe2c30328f65e0927dce6390",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/博物館表示・ボーナス実装仕様.md"
+    },
+    {
+      "path": "bouken/siyou/四則演算問題生成エンジン.md",
+      "gitBlobSha": "11ae041ffe7d475fe6a7ec8d13f8e04f9436afc0",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/四則演算問題生成エンジン.md"
+    },
+    {
+      "path": "bouken/siyou/地形・施設画像表示仕様.md",
+      "gitBlobSha": "b5c5f5e51d97636aa1c36cff3ee6635449fa919d",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/地形・施設画像表示仕様.md"
+    },
+    {
+      "path": "bouken/siyou/実績カウンタ・保存設計.txt",
+      "gitBlobSha": "61c0dd19269007f10d73d9bea9d4028e404ab734",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/実績カウンタ・保存設計.txt"
+    },
+    {
+      "path": "bouken/siyou/実績・称号120件仕様.txt",
+      "gitBlobSha": "cbf27deb9509e7414696d604d24c2c6074b5bb17",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/実績・称号120件仕様.txt"
+    },
+    {
+      "path": "bouken/siyou/実装構成・運用方針.md",
+      "gitBlobSha": "b44e020e6af4e1c3daec25431700b05560735249",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/実装構成・運用方針.md"
+    },
+    {
+      "path": "bouken/siyou/施設イベント・キャラクター抽選仕様.txt",
+      "gitBlobSha": "a0c359179c626bd8f9985cbbc8aa96a37e875c6b",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/施設イベント・キャラクター抽選仕様.txt"
+    },
+    {
+      "path": "bouken/siyou/施設イベント演出モック.md",
+      "gitBlobSha": "8c41e88e3a95053203d7a4fe8fc1cb8d32c55329",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/施設イベント演出モック.md"
+    },
+    {
+      "path": "bouken/siyou/施設イベント演出実装仕様.md",
+      "gitBlobSha": "45216561f89e95efa124bb31d194a7444f63f7b5",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/施設イベント演出実装仕様.md"
+    },
+    {
+      "path": "bouken/siyou/施設イベント画像表示仕様.md",
+      "gitBlobSha": "a478d26f9fcb3ca3807631ab2ece7bbd57a325a5",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/施設イベント画像表示仕様.md"
+    },
+    {
+      "path": "bouken/siyou/旧todo.txt",
+      "gitBlobSha": "c1646e08af41e1936f7e1d4dd86589e37ed3e7f4",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/旧todo.txt"
+    },
+    {
+      "path": "bouken/siyou/更新内容と未決定事項.txt",
+      "gitBlobSha": "a57380b240ac3276ebf613b2bf9cba5dc1e2b0aa",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/更新内容と未決定事項.txt"
+    },
+    {
+      "path": "bouken/siyou/画面点検・改善仕様.md",
+      "gitBlobSha": "4e6dd4958a91796a9a10ca6b94bfd6ee3cd58367",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/画面点検・改善仕様.md"
+    },
+    {
+      "path": "bouken/siyou/表示用語統一仕様.md",
+      "gitBlobSha": "c85a798eae3756ca6d5bdee511ff11315a1fe3a3",
+      "archive": null
+    },
+    {
+      "path": "bouken/siyou/記録・実績実装仕様.md",
+      "gitBlobSha": "aafe17617b8745d21b669e53d098c2196e376110",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/記録・実績実装仕様.md"
+    },
+    {
+      "path": "bouken/siyou/開拓カウンタ・閾値発動処理仕様.txt",
+      "gitBlobSha": "11cf7f6f484f66d1deb298c0aa0cdcb00eb7e253",
+      "archive": "bouken/siyou/history/20261025整理前/siyou/開拓カウンタ・閾値発動処理仕様.txt"
+    }
+  ],
+  "sourceLabelCorrections": {
+    "A12NameCells": 47,
+    "A12NameInReasons": 27,
+    "numericChanges": 0
+  }
+}

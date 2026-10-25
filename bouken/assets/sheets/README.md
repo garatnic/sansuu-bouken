@@ -1,28 +1,16 @@
-【2026-10-23追記】ユーザーがmuseum.pngとcharacter_sheet.pngを通常PNGとして登録済み。Drive原本との完全一致確認済み。4シートとも通常PNGを利用でき、実行時の分割復元は不要。ver.35でfield_tiles.png／event_tiles.pngのみ表示接続。以下の分割保管案内は取り込み当時の履歴。
+# 共通画像素材と保管原本
 
-# 画像素材の取り込み
-2026-10-23。Driveで指定された4画像を取得。画像表示への接続は未実装。ゲーム番号・保存形式は変更なし。
+2026-10-25整理。現在は通常PNGを実行時に使用し、分割復元をゲームで行わない。取り込み当時の説明は[整理前原文](../../siyou/history/20261025整理前/assets/sheets/README.md)。
 
-| 原本 | 寸法 | 保管形式 |
+| 画像 | 寸法 | 内容/共通処理 |
 |---|---|---|
-| museum.png | 2600×3120 | .part01〜03 |
-| character_sheet.png | 3840×3968 | .part01〜04 |
-| event_tiles.png | 512×64 | 通常PNG |
-| field_tiles.png | 448×64 | 通常PNG |
+| field_tiles.png | 448×64 | 地形7枚・64pxセル、tile-images.js |
+| event_tiles.png | 512×64 | 施設8枚・64pxセル、tile-images.js |
+| character_sheet.png | 3840×3968 | 128px・30×31、ID1～927、character-images.js |
+| museum.png | 2600×3120 | 130px・20×24、四辺1pxを除く128px、ID1～480、item-images.js |
 
-GitHub連携のリクエスト上限16MiBにはbase64の増加分も含まれるため、大きい2原本は600万バイトごとに分割した。画像再生成・縮小・色変換・透過変更はしていない。
-manifest.jsonに原本SHA-256、寸法、バイト数、各部品のGit blob SHAを記録。番号順にバイト連結すると原本PNGへ完全復元できる。
+既存の.part01等/manifest.json/restore.pyはDrive原本の分割保管とSHA-256照合用に残す。通常PNGとHTTPキャッシュを使用するためプレイヤーの操作に復元工程は不要。
 
-## 復元・確認
-リポジトリ取得後、Python 3で次を実行（標準ライブラリのみ）。
-```sh
-python bouken/assets/sheets/restore.py
-```
-大きい2PNGをこのフォルダへ復元し、4原本のサイズとSHA-256を検証する。部品ファイル自体は画像として直接表示できない。
-今後の画像表示実装時は、復元PNGを通常のGit転送で登録するか、ブラウザ側で部品を連結する共通ローダーを設計する。今回ゲームへの読み込み追加は行わない。
+home.jpg/worldselect.jpgとbutton_*.png/jpgはホーム/出発の画像。tutorial01/02.pngはsheetsと../tutorial/に重複があるが、実際のチュートリアルは../tutorial/tutorial01～07.pngを参照する。過去のmanifestは4原本の記録であり、このフォルダの全UI画像一覧ではない。
 
-## シート対応の次回確認事項
-- field_tilesは横7枚、event_tilesは横8枚、各64×64。見た目は草原／森林／山岳／砂漠／海／雪原／毒沼、および町／城／墓地／ダンジョン／洞窟／遺跡／塔／小屋の順。IDとの正式対応と切出し範囲は実装時に確認する。
-- museumは130×130セルなら20列×24行、character_sheetは128×128セルなら30列×31行。セル余白・番号順・末尾空欄とデータマスターの対応を確認してから使用する。
-- museum、character_sheet、event_tilesには透明画素あり。field_tilesは全画素不透明。
-- 小型版museum64.png、character_sheet_64x64.pngは今回指定対象外のため取り込んでいない。
+画像は同一サイト内の相対URLで読み、個別キャラ取得・時刻乱数によるキャッシュ破棄を行わない。ローダーの共有は1ドキュメント内。別ページのメモリを自動共有する保証はなく、HTTPキャッシュと区別する。表示仕様は../../siyou/README.mdから参照。
