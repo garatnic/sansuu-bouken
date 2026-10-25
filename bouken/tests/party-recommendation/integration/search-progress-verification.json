@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-25",
+  "version": 69,
+  "commit": "ec2977987fc5756fb8aaf99dcfebce556e82d094",
+  "environment": "public PC Chrome, synthetic927-owner snapshot",
+  "checks": [
+    "header now おまかせ編成, no brand/research/independent-save header notes",
+    "no fixed count/all-unlock button or original-party section in rendered accessibility tree",
+    "initial outcome evaluation does not show search bar",
+    "companion and exploration search display searchMeter at approximately1.58/100 after0.1s",
+    "recommendation completes and hides searchProgress before outcome display",
+    "treasure search immediately cancelled, searchProgress hidden and Worker reinitializes"
+  ],
+  "timingPolicy": "Elapsed-time estimate only, 0 to95 over approximately6seconds, pending result never presented as100% complete",
+  "unchanged": [
+    "game files",
+    "save format and storage write protection",
+    "current-party internal comparison",
+    "recommendation algorithm and quality gate"
+  ],
+  "notVerified": [
+    "new smartphone layout acceptance",
+    "forced error path in browser",
+    "actual save read in user device"
+  ]
+}
