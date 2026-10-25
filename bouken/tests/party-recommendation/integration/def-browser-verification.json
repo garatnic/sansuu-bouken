@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-25",
+  "version": 69,
+  "testedCommit": "2eb17f7c2e9efb43b81302351bfbf46faf0cd7ed",
+  "scope": "Public cloud PC Chrome; synthetic inventory only; not smartphone or real save acceptance",
+  "url": "https://sansuu-bouken.vercel.app/bouken/tests/party-recommendation/integration/index.html",
+  "checks": [
+    "100 owners: same-party shared comparison power1000 and delta0",
+    "detail dialog displays initial share and comparison assumptions",
+    "ghost locked in position1 retained in exploration recommendation; power1267, mean38/30, +8 vs original",
+    "29 owners: all 6 disabled with required and remaining; evaluation enabled",
+    "29 ->30: random newly available notice; random button generates different member",
+    "927 owners +480 items: all6 modes enabled and both completion hypotheses shown; same-party power1053 mean31.58 delta0",
+    "companion search cancelled via Worker terminate; buttons return enabled after reinitialization",
+    "no game commit/save operation offered: choose is independent dialog only"
+  ],
+  "widths": [
+    {
+      "frame": 320,
+      "client": 305,
+      "scroll": 305,
+      "minimumModeButtonHeight": 64
+    },
+    {
+      "frame": 390,
+      "client": 375,
+      "scroll": 375,
+      "minimumModeButtonHeight": 64
+    },
+    {
+      "frame": 412,
+      "client": 397,
+      "scroll": 397,
+      "minimumModeButtonHeight": 64
+    },
+    {
+      "frame": 800,
+      "client": 785,
+      "scroll": 785,
+      "minimumModeButtonHeight": 64
+    }
+  ],
+  "diagnostics": {
+    "storageReads": [],
+    "storageBlockedAttempts": [],
+    "imageSheetRequests": 1,
+    "busyAfterCancel": false
+  },
+  "notChecked": [
+    "changed smartphone touch/speed/memory/battery",
+    "user actual save read and original save comparison",
+    "all-mode full browser quality",
+    "long-term game balance",
+    "production integration G"
+  ],
+  "finalPolish": "New-source status and cancelled-retry heartbeat reset after these checks; targeted repeat required after publish."
+}
