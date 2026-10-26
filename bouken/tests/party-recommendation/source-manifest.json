@@ -1,6 +1,6 @@
 {
-  "commit": "7f810a5e6964ec1d78ca572f24d91588f7a6c2ce",
-  "version": 70,
+  "commit": "70060754392000ec30e99edc458780222af05bbd",
+  "version": 71,
   "gitBlobs": {
     "bouken/common/buffs.js": "47bd448294bc53924cd85757aa1f1f77497cb13e",
     "bouken/common/collection.js": "9a52a2e880de0c8e4bf0f48d45966e87ef4436a9",
@@ -17,10 +17,10 @@
     "bouken/data/skills.json": "7ade9fddd739c586f5c7954e6aa80ea66c8eff19",
     "bouken/data/terrains.json": "316bd119f274ac678224e380fe41cee4976772e2",
     "bouken/data/world_facility_counts.json": "a1dfda8921560a21cb28afb14d1a09f5e0859b63",
-    "bouken/world.html": "81e28859ab6bb99bd921f34e0d0284ab3132dfdf",
-    "bouken/worldcreate.html": "7d40443920adb547067f8a74939a69eb517db7e7",
-    "bouken/common/version.js": "bb4b64c142c7154ddeacffaa3adf7dcbe508a6f2"
+    "bouken/world.html": "6e1d8f183c9c91ccd7faca244e027eb3b06b55f4",
+    "bouken/worldcreate.html": "0af06f8b387126f7940caa22acd3b0cc35d1de09",
+    "bouken/common/version.js": "e8c999bac3398929c51e88813d37f7268ab2f06b"
   },
   "originalResearchCommit": "bf5a69255f627090c2e6fa2ce089209b88d72a4f",
-  "note": "ver.70: title debug adds ten characters. Game behavior sources unchanged; version and HTML cache metadata refreshed. Historical research pin/results retained separately."
+  "note": "ver.71: formal game connection. Algorithms unchanged; live version pin refreshed. Original research manifest/results retained."
 }
