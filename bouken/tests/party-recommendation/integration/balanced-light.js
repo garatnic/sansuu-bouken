@@ -17,7 +17,8 @@ async function recommend(runtime,input,{config={},locked=[],seed=1,kind='weaknes
  const pause=async()=>{if(hooks.cancelled?.())throw Error('中止しました');await hooks.yield?.();if(hooks.cancelled?.())throw Error('中止しました');};
  const tick=()=>{done++;emit();};
  // Same condition, ownership and fixed constraints. Separate from ranking seeds.
- const cacheKey=JSON.stringify([input.save,input.owned,input.slots,locked.slice().sort((a,b)=>a-b).map(id=>[id,current.indexOf(id)]),cfg.size,cfg.budget,cfg.targetGroup,cfg.policy,cfg.referencePartySeed,cfg.referenceSeedStart]);
+ const {createdAt,updatedAt,party:storedParty,...conditionSave}=input.save;
+ const cacheKey=JSON.stringify([conditionSave,input.owned,input.slots,locked.slice().sort((a,b)=>a-b).map(id=>[id,current.indexOf(id)]),cfg.size,cfg.budget,cfg.targetGroup,cfg.policy,cfg.referencePartySeed,cfg.referenceSeedStart]);
  enter(0,settings.referenceParties*settings.referenceTrials+free.length);
  let reference=referenceCache.get(cacheKey),referenceCacheHit=!!reference,referenceAdventures=0;
  if(!reference){const refRandom=L.rng(cfg.referencePartySeed),ev=A.evaluator(runtime,input,cfg,{...hooks,onTrial:()=>tick()}),values=[],proxies=[],parties=[];

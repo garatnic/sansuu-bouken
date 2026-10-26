@@ -1,5 +1,5 @@
 'use strict';
-importScripts('../phase2/core.js','./unlocks.js','./outcomes.js','./api.js?rev=steps1','./light.js?rev=light1','./balanced-light.js?rev=balance1','./runtime.js?rev=manifest2');
+importScripts('../phase2/core.js','./unlocks.js','./outcomes.js','./api.js?rev=steps1','./light.js?rev=light1','./balanced-light.js?rev=balance2','./runtime.js?rev=manifest2');
 let runtimePromise,running=false;
 self.onmessage=async event=>{if(running)return;running=true;const m=event.data,reply=value=>postMessage({...value,requestId:m.requestId,mode:m.mode});try{
  const r=await(runtimePromise??=bootstrap());
