@@ -1,0 +1,150 @@
+{
+  "baseline-development": {
+    "cases": 6,
+    "flexibleModes": 30,
+    "singleBanks": 13,
+    "weakRaw": [
+      {
+        "spec": {
+          "count": 140,
+          "fixed": 1,
+          "size": 10,
+          "fraction": 0.5,
+          "ownershipSeed": 42610002,
+          "itemSeed": 42611002
+        },
+        "mode": "companion",
+        "other": "map",
+        "ratio": 0.6421052631578948,
+        "ci": [
+          -0.8303544155289067,
+          -0.2321455844710933
+        ]
+      },
+      {
+        "spec": {
+          "count": 279,
+          "fixed": 2,
+          "size": 10,
+          "fraction": 0.95,
+          "ownershipSeed": 42610003,
+          "itemSeed": 42611003
+        },
+        "mode": "companion",
+        "other": "balanced",
+        "ratio": 0.8478664192949908,
+        "ci": [
+          -0.3728708751496698,
+          0.11662087514966984
+        ]
+      }
+    ],
+    "significantWeak": 1,
+    "milliseconds": {
+      "min": 7133.836004,
+      "median": 9554.454719999996,
+      "max": 11836.915276000007
+    },
+    "retryBelow90": 4,
+    "retryChecks": 24,
+    "minAbilityDistance": 0.26666666666666666
+  },
+  "improved-development": {
+    "cases": 6,
+    "flexibleModes": 30,
+    "singleBanks": 9,
+    "weakRaw": [
+      {
+        "spec": {
+          "count": 140,
+          "fixed": 1,
+          "size": 10,
+          "fraction": 0.5,
+          "ownershipSeed": 42610002,
+          "itemSeed": 42611002
+        },
+        "mode": "companion",
+        "other": "map",
+        "ratio": 0.6421052631578948,
+        "ci": [
+          -0.8303544155289067,
+          -0.2321455844710933
+        ]
+      },
+      {
+        "spec": {
+          "count": 279,
+          "fixed": 2,
+          "size": 10,
+          "fraction": 0.95,
+          "ownershipSeed": 42610003,
+          "itemSeed": 42611003
+        },
+        "mode": "companion",
+        "other": "balanced",
+        "ratio": 0.8478664192949908,
+        "ci": [
+          -0.3728708751496698,
+          0.11662087514966984
+        ]
+      }
+    ],
+    "significantWeak": 1,
+    "milliseconds": {
+      "min": 8624.772322,
+      "median": 11749.137913499999,
+      "max": 13095.878982999995
+    },
+    "retryBelow90": 5,
+    "retryChecks": 24,
+    "minAbilityDistance": 0.13793103448275862
+  },
+  "baseline-holdout": {
+    "cases": 14,
+    "flexibleModes": 65,
+    "singleBanks": 35,
+    "weakRaw": [],
+    "significantWeak": 0,
+    "milliseconds": {
+      "min": 1055.0459839999967,
+      "median": 10296.137181500002,
+      "max": 26218.15467800002
+    },
+    "retryBelow90": 6,
+    "retryChecks": 52,
+    "minAbilityDistance": 0.10344827586206896
+  },
+  "improved-holdout": {
+    "cases": 14,
+    "flexibleModes": 65,
+    "singleBanks": 30,
+    "weakRaw": [
+      {
+        "spec": {
+          "count": 279,
+          "fixed": 2,
+          "size": 10,
+          "fraction": 0.95,
+          "ownershipSeed": 42690005,
+          "itemSeed": 42691005
+        },
+        "mode": "companion",
+        "other": "balanced",
+        "ratio": 0.7677261613691934,
+        "ci": [
+          -0.6010676729749858,
+          0.007317672974985812
+        ]
+      }
+    ],
+    "significantWeak": 0,
+    "milliseconds": {
+      "min": 1802.6694689999858,
+      "median": 13348.27975100001,
+      "max": 40289.316816000035
+    },
+    "retryBelow90": 7,
+    "retryChecks": 52,
+    "minAbilityDistance": 0.10344827586206896
+  }
+}
