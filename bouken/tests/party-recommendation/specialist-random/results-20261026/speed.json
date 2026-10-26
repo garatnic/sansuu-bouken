@@ -1,0 +1,501 @@
+{
+  "baseCommit": "7e73c9a9b85d1f72d88b7fb0210aba6639b1e27d",
+  "gameVersion": 70,
+  "sourceHash": "83c930d06f8edb464320ea36bada5533d4a5fdef5fad3167c97de58734fb1728",
+  "environment": {
+    "node": "v24.22.1",
+    "cpu": "AMD EPYC 9V74 80-Core Processor"
+  },
+  "pilot": [
+    410,
+    876,
+    493,
+    634,
+    915
+  ],
+  "trialCount": 10,
+  "maps": [
+    {
+      "id": "M01",
+      "size": 10,
+      "seed": 2053122308
+    },
+    {
+      "id": "M02",
+      "size": 20,
+      "seed": 2252183232
+    },
+    {
+      "id": "M03",
+      "size": 30,
+      "seed": 285226233
+    },
+    {
+      "id": "M04",
+      "size": 10,
+      "seed": 935957109
+    },
+    {
+      "id": "M05",
+      "size": 20,
+      "seed": 1084098152
+    },
+    {
+      "id": "M06",
+      "size": 30,
+      "seed": 1347828008
+    },
+    {
+      "id": "M07",
+      "size": 10,
+      "seed": 2756060228
+    },
+    {
+      "id": "M08",
+      "size": 20,
+      "seed": 2133079044
+    },
+    {
+      "id": "M09",
+      "size": 30,
+      "seed": 1533206848
+    },
+    {
+      "id": "M10",
+      "size": 10,
+      "seed": 3443228221
+    }
+  ],
+  "worlds": [
+    {
+      "size": 10,
+      "terrain": {
+        "T06": 13,
+        "T03": 18,
+        "T01": 11,
+        "T02": 20,
+        "T07": 11,
+        "T04": 14,
+        "T05": 13
+      },
+      "facilities": {
+        "F06": 2,
+        "F04": 1
+      },
+      "mapHash": "38ec45d6c1f1ebc4f796e31126d566093279575a3b80223e84eeffe9670f9726"
+    },
+    {
+      "size": 20,
+      "terrain": {
+        "T02": 80,
+        "T01": 44,
+        "T07": 44,
+        "T04": 56,
+        "T03": 72,
+        "T05": 52,
+        "T06": 52
+      },
+      "facilities": {
+        "F08": 4,
+        "F05": 2,
+        "F01": 2,
+        "F06": 1,
+        "F04": 2,
+        "F03": 1,
+        "F07": 1
+      },
+      "mapHash": "42a4423266da8c102501a5a6f7f7ae64f9cdfa64534b8f0f3e6f321f4168836f"
+    },
+    {
+      "size": 30,
+      "terrain": {
+        "T05": 117,
+        "T06": 117,
+        "T07": 99,
+        "T03": 162,
+        "T02": 180,
+        "T01": 99,
+        "T04": 126
+      },
+      "facilities": {
+        "F08": 4,
+        "F01": 5,
+        "F04": 6,
+        "F02": 2,
+        "F05": 3,
+        "F06": 1,
+        "F03": 4,
+        "F07": 5
+      },
+      "mapHash": "bf9b648ea5d1fcd2dccc7903c01506b611575f466f4a067da3110a377df93695"
+    },
+    {
+      "size": 10,
+      "terrain": {
+        "T05": 13,
+        "T06": 13,
+        "T03": 18,
+        "T04": 14,
+        "T02": 20,
+        "T01": 11,
+        "T07": 11
+      },
+      "facilities": {
+        "F05": 1,
+        "F01": 2
+      },
+      "mapHash": "a681de529d3e7ad8da29339e8559b715f580b7d51ffde78c4115fa519c926fc7"
+    },
+    {
+      "size": 20,
+      "terrain": {
+        "T01": 44,
+        "T02": 80,
+        "T04": 56,
+        "T03": 72,
+        "T07": 44,
+        "T06": 52,
+        "T05": 52
+      },
+      "facilities": {
+        "F03": 4,
+        "F06": 1,
+        "F05": 3,
+        "F04": 3,
+        "F02": 1,
+        "F07": 1
+      },
+      "mapHash": "e1bdb45f9095dec740f2238fc77be7300990e3a0b3dd9d6d4e807c89a9e81973"
+    },
+    {
+      "size": 30,
+      "terrain": {
+        "T04": 126,
+        "T05": 117,
+        "T03": 162,
+        "T01": 99,
+        "T06": 117,
+        "T02": 180,
+        "T07": 99
+      },
+      "facilities": {
+        "F03": 2,
+        "F08": 7,
+        "F01": 4,
+        "F07": 3,
+        "F02": 3,
+        "F04": 5,
+        "F06": 3,
+        "F05": 3
+      },
+      "mapHash": "d25a77a3ba5219f1eff73983510fb94e8f46474ff2ad25338f36279ead227b2c"
+    },
+    {
+      "size": 10,
+      "terrain": {
+        "T07": 11,
+        "T02": 20,
+        "T05": 13,
+        "T06": 13,
+        "T01": 11,
+        "T04": 14,
+        "T03": 18
+      },
+      "facilities": {
+        "F04": 1,
+        "F05": 1,
+        "F01": 1
+      },
+      "mapHash": "61787a60005c9edcbcc18d4deda460eeffdba29dc09ce49ee12a2f9c2deeff75"
+    },
+    {
+      "size": 20,
+      "terrain": {
+        "T06": 52,
+        "T07": 44,
+        "T03": 72,
+        "T01": 44,
+        "T02": 80,
+        "T04": 56,
+        "T05": 52
+      },
+      "facilities": {
+        "F03": 1,
+        "F01": 3,
+        "F08": 3,
+        "F04": 1,
+        "F02": 2,
+        "F05": 2,
+        "F06": 1
+      },
+      "mapHash": "b10cb0c2c35a36d7fda3442058d963b0d8c5eac61718ab117350042161262e7d"
+    },
+    {
+      "size": 30,
+      "terrain": {
+        "T05": 117,
+        "T07": 99,
+        "T02": 180,
+        "T01": 99,
+        "T06": 117,
+        "T03": 162,
+        "T04": 126
+      },
+      "facilities": {
+        "F03": 4,
+        "F06": 2,
+        "F04": 7,
+        "F05": 6,
+        "F01": 4,
+        "F07": 3,
+        "F02": 2,
+        "F08": 2
+      },
+      "mapHash": "0a34083ee19004cb1c524aa841ed63d9a6a6a7f01e1db4632360efc0a4235c66"
+    },
+    {
+      "size": 10,
+      "terrain": {
+        "T07": 11,
+        "T03": 18,
+        "T04": 14,
+        "T05": 13,
+        "T02": 20,
+        "T01": 11,
+        "T06": 13
+      },
+      "facilities": {
+        "F07": 1,
+        "F01": 2
+      },
+      "mapHash": "92f0d049275b61c5d82b9904af6c2f2bff4811b5d6c4e896229661274deb7347"
+    }
+  ],
+  "trials": [
+    {
+      "map": "M01",
+      "seed": 2053122308,
+      "size": 10,
+      "metrics": {
+        "opened": 31,
+        "newItems": 0,
+        "newCharacters": 0,
+        "visited": 0
+      },
+      "raw": [
+        1.0333333333333334,
+        0,
+        0,
+        0
+      ],
+      "claimsUnchanged": true
+    },
+    {
+      "map": "M02",
+      "seed": 2252183232,
+      "size": 20,
+      "metrics": {
+        "opened": 33,
+        "newItems": 0,
+        "newCharacters": 1,
+        "visited": 7
+      },
+      "raw": [
+        1.1,
+        0,
+        1.4,
+        0.20553763440860215
+      ],
+      "claimsUnchanged": true
+    },
+    {
+      "map": "M03",
+      "seed": 285226233,
+      "size": 30,
+      "metrics": {
+        "opened": 32,
+        "newItems": 0,
+        "newCharacters": 0,
+        "visited": 4
+      },
+      "raw": [
+        1.0666666666666667,
+        0,
+        0.30000000000000004,
+        0.10553763440860216
+      ],
+      "claimsUnchanged": true
+    },
+    {
+      "map": "M04",
+      "seed": 935957109,
+      "size": 10,
+      "metrics": {
+        "opened": 32,
+        "newItems": 1,
+        "newCharacters": 0,
+        "visited": 2
+      },
+      "raw": [
+        1.0666666666666667,
+        0.8,
+        0.1,
+        0.057204301075268825
+      ],
+      "claimsUnchanged": true
+    },
+    {
+      "map": "M05",
+      "seed": 1084098152,
+      "size": 20,
+      "metrics": {
+        "opened": 34,
+        "newItems": 1,
+        "newCharacters": 1,
+        "visited": 6
+      },
+      "raw": [
+        1.1333333333333333,
+        0.8,
+        1.2000000000000002,
+        0.16333333333333336
+      ],
+      "claimsUnchanged": true
+    },
+    {
+      "map": "M06",
+      "seed": 1347828008,
+      "size": 30,
+      "metrics": {
+        "opened": 39,
+        "newItems": 1,
+        "newCharacters": 2,
+        "visited": 8
+      },
+      "raw": [
+        1.3,
+        0.8,
+        2.4000000000000004,
+        0.2110752688172043
+      ],
+      "claimsUnchanged": true
+    },
+    {
+      "map": "M07",
+      "seed": 2756060228,
+      "size": 10,
+      "metrics": {
+        "opened": 32,
+        "newItems": 0,
+        "newCharacters": 0,
+        "visited": 1
+      },
+      "raw": [
+        1.0666666666666667,
+        0,
+        0.1,
+        0.03333333333333333
+      ],
+      "claimsUnchanged": true
+    },
+    {
+      "map": "M08",
+      "seed": 2133079044,
+      "size": 20,
+      "metrics": {
+        "opened": 31,
+        "newItems": 2,
+        "newCharacters": 2,
+        "visited": 6
+      },
+      "raw": [
+        1.0333333333333334,
+        1.6,
+        2.1,
+        0.17102150537634409
+      ],
+      "claimsUnchanged": true
+    },
+    {
+      "map": "M09",
+      "seed": 1533206848,
+      "size": 30,
+      "metrics": {
+        "opened": 33,
+        "newItems": 0,
+        "newCharacters": 2,
+        "visited": 6
+      },
+      "raw": [
+        1.1,
+        0,
+        2.1,
+        0.16983870967741937
+      ],
+      "claimsUnchanged": true
+    },
+    {
+      "map": "M10",
+      "seed": 3443228221,
+      "size": 10,
+      "metrics": {
+        "opened": 32,
+        "newItems": 0,
+        "newCharacters": 1,
+        "visited": 2
+      },
+      "raw": [
+        1.0666666666666667,
+        0,
+        1.1,
+        0.06607526881720431
+      ],
+      "claimsUnchanged": true
+    }
+  ],
+  "trialTimesMs": [
+    22.981932999999998,
+    34.58962500000001,
+    36.801844999999986,
+    8.365746000000001,
+    24.414566000000008,
+    42.496774000000016,
+    6.3227019999999925,
+    19.415340999999984,
+    39.83103600000004,
+    6.644016000000022
+  ],
+  "simulationMs": 241.86358400000006,
+  "perTrial": {
+    "mean": 24.186358400000007,
+    "min": 6.3227019999999925,
+    "max": 42.496774000000016,
+    "sd": 13.93957920060406
+  },
+  "overheads": {
+    "loadMs": 13.313362999999995,
+    "fixtureMs": 3.595945999999998,
+    "pilotGenerationMs": 0.12181400000000053,
+    "scoringAndGenerationMs": 117.55965600000002,
+    "serializationMs": 0.3988420000000019,
+    "planSaveMs": 3.6251800000000003
+  },
+  "budget": {
+    "singleField": {
+      "physicalTrials": 1300,
+      "meanEstimateMs": 36442.265920000005,
+      "conservativeEstimateMs": 87868.70930000003
+    },
+    "allFourShared": {
+      "physicalTrials": 2200,
+      "nominalFieldTrials": 5200,
+      "meanEstimateMs": 58209.988480000015,
+      "conservativeEstimateMs": 145239.35420000006
+    },
+    "formula": "upperTrialMs=max(mean*2,max*1.5); overhead=max(5000,measured overhead*3)",
+    "upperTrialMs": 63.745161000000024,
+    "additionalUpperMs": 5000
+  },
+  "totalMeasurementMs": 382.42643300000003,
+  "mainStarted": false
+}

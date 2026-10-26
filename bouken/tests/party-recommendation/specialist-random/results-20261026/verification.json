@@ -1,0 +1,32 @@
+{
+  "status": "complete",
+  "mainTrials": 2200,
+  "speedTrials": 10,
+  "totalAdventures": 2210,
+  "extraAdventuresInTestsAndDiagnostics": 0,
+  "formalPass": null,
+  "legacy1500NotRun": true,
+  "checks": [
+    "source hash",
+    "plan/team reproducibility",
+    "owned 5-member distinct teams",
+    "10 matched map conditions",
+    "baseline and strict-above arithmetic",
+    "all 4x30 CSV rows",
+    "input/claims unchanged",
+    "source/UI unchanged by diff"
+  ],
+  "sha256": {
+    "main.json": "c4b296b74956ac7889ed3cba9397ca1973e05a56f10d937c70745e3d7cedf8f3",
+    "explore-30teams.csv": "acc632f519d93ea019f52fe0c661263e175f1bc9efc49b411dd128a936387748",
+    "map-30teams.csv": "3dd532a25506fb09f470e92b80a87daceb5d0e3bffbb47d529be8a0cdeb65d94",
+    "plan.json": "8caa465432fa94d887a6710415f0b9753dd0fba3f7089384461db20b93dbdde7",
+    "baseline.json": "9f3a86216ddd1ff83664306f4690216307ab6a1654cea8201863765b4e061726",
+    "overhead-detail.json": "ecda0329e8740d21fafcf9f8f6ba19824e476e55ad0a037bde13cf79bfe2c31a",
+    "speed.json": "d4f5d2ac76b31dc36c5304e46dfa5ee60081cb99fbd29397db63bc3841a6d59b",
+    "diagnostics.json": "bf5bfd00b05aee47e1eb8ea63d71008cb8056dfae9b16f2f7e7452d6c51867b5",
+    "treasure-30teams.csv": "c6ab525fdbf1d27b3b1afa0e199ff6595be198bb89202b327dffeffbad3b9813",
+    "companion-30teams.csv": "d33c7942c2665b6837303759be3da27b414df9d50c2585d2ae3944ca8b6d92aa",
+    "specialists-30teams-per-field.csv": "bc530c37bd6e26e07345e054229e5a92bdc99c7e4bdf022873fb61ccb18ec548"
+  }
+}

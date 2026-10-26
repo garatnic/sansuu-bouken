@@ -1,0 +1,1620 @@
+{
+  "simulationCalls": 0,
+  "scoreConfig": {
+    "size": 10,
+    "budget": 30,
+    "targetGroup": "04",
+    "searchSeed": 262501,
+    "trainSeedStart": 26251001,
+    "referenceSeedStart": 26252001,
+    "referencePartySeed": 26253001,
+    "references": 12,
+    "referenceTrials": 2,
+    "anchorTrials": 8,
+    "initialTrials": 4,
+    "finalTrials": 32,
+    "candidateLimit": 60,
+    "randomCandidates": 20,
+    "timeLimitMs": 10000,
+    "qualityRatio": 0.9,
+    "specialistRatio": 0.9,
+    "selectionSeedStart": 40820001,
+    "bankLimit": 8,
+    "cumulativeExplored": 1234,
+    "policy": "informed"
+  },
+  "fields": {
+    "explore": {
+      "top10": [
+        {
+          "id": 503,
+          "score": 0.30566666666666675,
+          "name": "ギアクラブ",
+          "skills": [
+            {
+              "id": "A08",
+              "level": 2,
+              "cost": 2
+            },
+            {
+              "id": "A11",
+              "level": 2,
+              "cost": 8
+            },
+            {
+              "id": "C23",
+              "level": 1,
+              "cost": 2
+            }
+          ],
+          "generatedTeams": 4
+        },
+        {
+          "id": 312,
+          "score": 0.29266666666666663,
+          "name": "ゴブバンディット",
+          "skills": [
+            {
+              "id": "A09",
+              "level": 1,
+              "cost": 1
+            },
+            {
+              "id": "A11",
+              "level": 2,
+              "cost": 8
+            },
+            {
+              "id": "B04",
+              "level": 1,
+              "cost": 3
+            }
+          ],
+          "generatedTeams": 4
+        },
+        {
+          "id": 510,
+          "score": 0.2666666666666666,
+          "name": "夢色ベアリン",
+          "skills": [
+            {
+              "id": "A11",
+              "level": 2,
+              "cost": 8
+            },
+            {
+              "id": "C22",
+              "level": 1,
+              "cost": 2
+            },
+            {
+              "id": "E08",
+              "level": 1,
+              "cost": 2
+            }
+          ],
+          "generatedTeams": 1
+        },
+        {
+          "id": 9,
+          "score": 0.2666666666666666,
+          "name": "騎士アルベルト",
+          "skills": [
+            {
+              "id": "A11",
+              "level": 2,
+              "cost": 8
+            },
+            {
+              "id": "B07",
+              "level": 2,
+              "cost": 2
+            },
+            {
+              "id": "C08",
+              "level": 1,
+              "cost": 2
+            }
+          ],
+          "generatedTeams": 5
+        },
+        {
+          "id": 551,
+          "score": 0.2666666666666666,
+          "name": "ホーンオウル",
+          "skills": [
+            {
+              "id": "A11",
+              "level": 2,
+              "cost": 8
+            },
+            {
+              "id": "B02",
+              "level": 2,
+              "cost": 2
+            },
+            {
+              "id": "C16",
+              "level": 1,
+              "cost": 2
+            }
+          ],
+          "generatedTeams": 2
+        },
+        {
+          "id": 586,
+          "score": 0.19200000000000017,
+          "name": "モスグラン",
+          "skills": [
+            {
+              "id": "A06",
+              "level": 3,
+              "cost": 3
+            },
+            {
+              "id": "C16",
+              "level": 3,
+              "cost": 6
+            },
+            {
+              "id": "E03",
+              "level": 3,
+              "cost": 3
+            }
+          ],
+          "generatedTeams": 3
+        },
+        {
+          "id": 879,
+          "score": 0.18333333333333335,
+          "name": "クッション",
+          "skills": [
+            {
+              "id": "A03",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "A11",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "C12",
+              "level": 2,
+              "cost": 4
+            }
+          ],
+          "generatedTeams": 1
+        },
+        {
+          "id": 296,
+          "score": 0.17799999999999994,
+          "name": "ゴブリン",
+          "skills": [
+            {
+              "id": "A02",
+              "level": 3,
+              "cost": 9
+            },
+            {
+              "id": "A07",
+              "level": 1,
+              "cost": 1
+            },
+            {
+              "id": "C12",
+              "level": 1,
+              "cost": 2
+            }
+          ],
+          "generatedTeams": 2
+        },
+        {
+          "id": 168,
+          "score": 0.17799999999999994,
+          "name": "鬼武者バク",
+          "skills": [
+            {
+              "id": "A02",
+              "level": 3,
+              "cost": 9
+            },
+            {
+              "id": "A07",
+              "level": 1,
+              "cost": 1
+            },
+            {
+              "id": "C18",
+              "level": 1,
+              "cost": 2
+            }
+          ],
+          "generatedTeams": 4
+        },
+        {
+          "id": 373,
+          "score": 0.17599999999999993,
+          "name": "コーラルピクシー",
+          "skills": [
+            {
+              "id": "A02",
+              "level": 3,
+              "cost": 9
+            },
+            {
+              "id": "A08",
+              "level": 1,
+              "cost": 1
+            },
+            {
+              "id": "C10",
+              "level": 1,
+              "cost": 2
+            }
+          ],
+          "generatedTeams": 4
+        }
+      ],
+      "strictlyAboveCut": 9,
+      "tiedAtCut": 2,
+      "baselineEstimatedMean": 1.1501047433693352,
+      "anchoredEstimatedMean": 1.3348121001607633,
+      "anchoredEstimateVsActualRankCorrelation": 0.8585107805276939,
+      "anchorGroups": [
+        {
+          "id": 503,
+          "count": 4,
+          "above": 4,
+          "mean": 43.900000000000006
+        },
+        {
+          "id": 312,
+          "count": 4,
+          "above": 4,
+          "mean": 41.95
+        },
+        {
+          "id": 510,
+          "count": 1,
+          "above": 1,
+          "mean": 41.4
+        },
+        {
+          "id": 9,
+          "count": 5,
+          "above": 5,
+          "mean": 40.56
+        },
+        {
+          "id": 551,
+          "count": 2,
+          "above": 2,
+          "mean": 42.45
+        },
+        {
+          "id": 586,
+          "count": 3,
+          "above": 2,
+          "mean": 38.53333333333334
+        },
+        {
+          "id": 879,
+          "count": 1,
+          "above": 1,
+          "mean": 39.2
+        },
+        {
+          "id": 296,
+          "count": 2,
+          "above": 2,
+          "mean": 38.3
+        },
+        {
+          "id": 168,
+          "count": 4,
+          "above": 4,
+          "mean": 39.400000000000006
+        },
+        {
+          "id": 373,
+          "count": 4,
+          "above": 3,
+          "mean": 37.625
+        }
+      ],
+      "perMap": [
+        {
+          "id": "M01",
+          "size": 10,
+          "seed": 2053122308,
+          "baseline": 35.81,
+          "anchoredMean": 40.56666666666667,
+          "difference": 4.756666666666668,
+          "above": 28,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M02",
+          "size": 20,
+          "seed": 2252183232,
+          "baseline": 35.76,
+          "anchoredMean": 40.1,
+          "difference": 4.340000000000003,
+          "above": 26,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M03",
+          "size": 30,
+          "seed": 285226233,
+          "baseline": 34.7,
+          "anchoredMean": 39.7,
+          "difference": 5,
+          "above": 30,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M04",
+          "size": 10,
+          "seed": 935957109,
+          "baseline": 35.68,
+          "anchoredMean": 40.13333333333333,
+          "difference": 4.453333333333333,
+          "above": 28,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M05",
+          "size": 20,
+          "seed": 1084098152,
+          "baseline": 35.19,
+          "anchoredMean": 38.833333333333336,
+          "difference": 3.643333333333338,
+          "above": 26,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M06",
+          "size": 30,
+          "seed": 1347828008,
+          "baseline": 35.8,
+          "anchoredMean": 41.7,
+          "difference": 5.900000000000006,
+          "above": 28,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M07",
+          "size": 10,
+          "seed": 2756060228,
+          "baseline": 35.53,
+          "anchoredMean": 39.3,
+          "difference": 3.769999999999996,
+          "above": 23,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M08",
+          "size": 20,
+          "seed": 2133079044,
+          "baseline": 35.08,
+          "anchoredMean": 40.63333333333333,
+          "difference": 5.553333333333335,
+          "above": 24,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M09",
+          "size": 30,
+          "seed": 1533206848,
+          "baseline": 35.54,
+          "anchoredMean": 41.03333333333333,
+          "difference": 5.493333333333332,
+          "above": 27,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M10",
+          "size": 10,
+          "seed": 3443228221,
+          "baseline": 35.69,
+          "anchoredMean": 42,
+          "difference": 6.310000000000002,
+          "above": 28,
+          "zeroBaseline": false
+        }
+      ]
+    },
+    "treasure": {
+      "top10": [
+        {
+          "id": 91,
+          "score": 0.13577748409090906,
+          "name": "商人ボリス",
+          "skills": [
+            {
+              "id": "A08",
+              "level": 1,
+              "cost": 1
+            },
+            {
+              "id": "C03",
+              "level": 1,
+              "cost": 3
+            },
+            {
+              "id": "F01",
+              "level": 2,
+              "cost": 8
+            }
+          ],
+          "generatedTeams": 2
+        },
+        {
+          "id": 859,
+          "score": 0.11162880658436213,
+          "name": "ストーンガード",
+          "skills": [
+            {
+              "id": "C08",
+              "level": 3,
+              "cost": 6
+            },
+            {
+              "id": "D09",
+              "level": 1,
+              "cost": 3
+            },
+            {
+              "id": "E08",
+              "level": 1,
+              "cost": 2
+            }
+          ],
+          "generatedTeams": 1
+        },
+        {
+          "id": 95,
+          "score": 0.1083459893048128,
+          "name": "商人フェルナンド",
+          "skills": [
+            {
+              "id": "C20",
+              "level": 2,
+              "cost": 4
+            },
+            {
+              "id": "D03",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "F01",
+              "level": 1,
+              "cost": 4
+            }
+          ],
+          "generatedTeams": 4
+        },
+        {
+          "id": 67,
+          "score": 0.10665572192513366,
+          "name": "司祭エレナ",
+          "skills": [
+            {
+              "id": "C01",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "C04",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "C20",
+              "level": 2,
+              "cost": 4
+            }
+          ],
+          "generatedTeams": 4
+        },
+        {
+          "id": 434,
+          "score": 0.10576379564879561,
+          "name": "ライトビートル",
+          "skills": [
+            {
+              "id": "C02",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "C04",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "C15",
+              "level": 2,
+              "cost": 4
+            }
+          ],
+          "generatedTeams": 8
+        },
+        {
+          "id": 826,
+          "score": 0.10575615319749214,
+          "name": "キングミミック",
+          "skills": [
+            {
+              "id": "A09",
+              "level": 1,
+              "cost": 1
+            },
+            {
+              "id": "C03",
+              "level": 3,
+              "cost": 9
+            },
+            {
+              "id": "C24",
+              "level": 1,
+              "cost": 2
+            }
+          ],
+          "generatedTeams": 1
+        },
+        {
+          "id": 565,
+          "score": 0.10461250909090906,
+          "name": "テントウフェアリー",
+          "skills": [
+            {
+              "id": "C01",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "C04",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "C16",
+              "level": 2,
+              "cost": 4
+            }
+          ],
+          "generatedTeams": 1
+        },
+        {
+          "id": 824,
+          "score": 0.10000330721003133,
+          "name": "ニコ宝箱",
+          "skills": [
+            {
+              "id": "C03",
+              "level": 3,
+              "cost": 9
+            },
+            {
+              "id": "C19",
+              "level": 1,
+              "cost": 2
+            },
+            {
+              "id": "E01",
+              "level": 1,
+              "cost": 1
+            }
+          ],
+          "generatedTeams": 2
+        },
+        {
+          "id": 176,
+          "score": 0.09894209790209789,
+          "name": "武闘家リュウガ",
+          "skills": [
+            {
+              "id": "C04",
+              "level": 3,
+              "cost": 12
+            }
+          ],
+          "generatedTeams": 6
+        },
+        {
+          "id": 13,
+          "score": 0.09811667832167832,
+          "name": "旅人フィオナ",
+          "skills": [
+            {
+              "id": "A11",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "C04",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "C14",
+              "level": 2,
+              "cost": 4
+            }
+          ],
+          "generatedTeams": 1
+        }
+      ],
+      "strictlyAboveCut": 9,
+      "tiedAtCut": 1,
+      "baselineEstimatedMean": 0.2188567810898882,
+      "anchoredEstimatedMean": 0.34471808580220886,
+      "anchoredEstimateVsActualRankCorrelation": 0.1904657526688009,
+      "anchorGroups": [
+        {
+          "id": 91,
+          "count": 2,
+          "above": 0,
+          "mean": 0.5
+        },
+        {
+          "id": 859,
+          "count": 1,
+          "above": 0,
+          "mean": 0.1
+        },
+        {
+          "id": 95,
+          "count": 4,
+          "above": 2,
+          "mean": 1.15
+        },
+        {
+          "id": 67,
+          "count": 4,
+          "above": 4,
+          "mean": 2.875
+        },
+        {
+          "id": 434,
+          "count": 8,
+          "above": 7,
+          "mean": 1.9124999999999999
+        },
+        {
+          "id": 826,
+          "count": 1,
+          "above": 1,
+          "mean": 1
+        },
+        {
+          "id": 565,
+          "count": 1,
+          "above": 0,
+          "mean": 0.3
+        },
+        {
+          "id": 824,
+          "count": 2,
+          "above": 0,
+          "mean": 0.35
+        },
+        {
+          "id": 176,
+          "count": 6,
+          "above": 4,
+          "mean": 1.616666666666667
+        },
+        {
+          "id": 13,
+          "count": 1,
+          "above": 0,
+          "mean": 0.7
+        }
+      ],
+      "perMap": [
+        {
+          "id": "M01",
+          "size": 10,
+          "seed": 2053122308,
+          "baseline": 0.9,
+          "anchoredMean": 1.1,
+          "difference": 0.20000000000000007,
+          "above": 18,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M02",
+          "size": 20,
+          "seed": 2252183232,
+          "baseline": 0.83,
+          "anchoredMean": 1.1666666666666667,
+          "difference": 0.3366666666666668,
+          "above": 18,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M03",
+          "size": 30,
+          "seed": 285226233,
+          "baseline": 1.27,
+          "anchoredMean": 1.7666666666666666,
+          "difference": 0.4966666666666666,
+          "above": 16,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M04",
+          "size": 10,
+          "seed": 935957109,
+          "baseline": 0.69,
+          "anchoredMean": 0.9333333333333333,
+          "difference": 0.2433333333333334,
+          "above": 16,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M05",
+          "size": 20,
+          "seed": 1084098152,
+          "baseline": 1.25,
+          "anchoredMean": 1.7333333333333334,
+          "difference": 0.4833333333333334,
+          "above": 15,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M06",
+          "size": 30,
+          "seed": 1347828008,
+          "baseline": 1.15,
+          "anchoredMean": 2.2,
+          "difference": 1.0500000000000003,
+          "above": 17,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M07",
+          "size": 10,
+          "seed": 2756060228,
+          "baseline": 0.77,
+          "anchoredMean": 1.0333333333333334,
+          "difference": 0.2633333333333334,
+          "above": 22,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M08",
+          "size": 20,
+          "seed": 2133079044,
+          "baseline": 1.33,
+          "anchoredMean": 2.2,
+          "difference": 0.8700000000000001,
+          "above": 16,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M09",
+          "size": 30,
+          "seed": 1533206848,
+          "baseline": 1.36,
+          "anchoredMean": 2.2,
+          "difference": 0.8400000000000001,
+          "above": 17,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M10",
+          "size": 10,
+          "seed": 3443228221,
+          "baseline": 0.41,
+          "anchoredMean": 0.6333333333333333,
+          "difference": 0.22333333333333333,
+          "above": 14,
+          "zeroBaseline": false
+        }
+      ]
+    },
+    "companion": {
+      "top10": [
+        {
+          "id": 295,
+          "score": 0.14361466417638338,
+          "name": "コブリン",
+          "skills": [
+            {
+              "id": "A02",
+              "level": 1,
+              "cost": 3
+            },
+            {
+              "id": "A06",
+              "level": 1,
+              "cost": 1
+            },
+            {
+              "id": "D05",
+              "level": 2,
+              "cost": 8
+            }
+          ],
+          "generatedTeams": 4
+        },
+        {
+          "id": 202,
+          "score": 0.14163915092814008,
+          "name": "ひよこ着ぐるみピヨ",
+          "skills": [
+            {
+              "id": "C12",
+              "level": 2,
+              "cost": 4
+            },
+            {
+              "id": "D02",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "D05",
+              "level": 1,
+              "cost": 4
+            }
+          ],
+          "generatedTeams": 5
+        },
+        {
+          "id": 900,
+          "score": 0.1322882410055202,
+          "name": "ヴォイドアサシン",
+          "skills": [
+            {
+              "id": "A11",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "C24",
+              "level": 2,
+              "cost": 4
+            },
+            {
+              "id": "D05",
+              "level": 1,
+              "cost": 4
+            }
+          ],
+          "generatedTeams": 3
+        },
+        {
+          "id": 674,
+          "score": 0.12754387854746976,
+          "name": "墓守スコップ",
+          "skills": [
+            {
+              "id": "A10",
+              "level": 2,
+              "cost": 2
+            },
+            {
+              "id": "C06",
+              "level": 1,
+              "cost": 2
+            },
+            {
+              "id": "D05",
+              "level": 2,
+              "cost": 8
+            }
+          ],
+          "generatedTeams": 5
+        },
+        {
+          "id": 712,
+          "score": 0.12638796429037166,
+          "name": "インフェルノスカル",
+          "skills": [
+            {
+              "id": "C06",
+              "level": 2,
+              "cost": 4
+            },
+            {
+              "id": "D03",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "F02",
+              "level": 1,
+              "cost": 4
+            }
+          ],
+          "generatedTeams": 1
+        },
+        {
+          "id": 83,
+          "score": 0.12638796429037166,
+          "name": "神官エリアス",
+          "skills": [
+            {
+              "id": "C16",
+              "level": 2,
+              "cost": 4
+            },
+            {
+              "id": "D03",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "F02",
+              "level": 1,
+              "cost": 4
+            }
+          ],
+          "generatedTeams": 2
+        },
+        {
+          "id": 773,
+          "score": 0.12575823569981268,
+          "name": "ダルマスラ",
+          "skills": [
+            {
+              "id": "A08",
+              "level": 1,
+              "cost": 1
+            },
+            {
+              "id": "D05",
+              "level": 2,
+              "cost": 8
+            },
+            {
+              "id": "E08",
+              "level": 1,
+              "cost": 2
+            }
+          ],
+          "generatedTeams": 4
+        },
+        {
+          "id": 772,
+          "score": 0.12249957236332118,
+          "name": "ミコスラ",
+          "skills": [
+            {
+              "id": "D05",
+              "level": 3,
+              "cost": 12
+            }
+          ],
+          "generatedTeams": 1
+        },
+        {
+          "id": 291,
+          "score": 0.12131108587896647,
+          "name": "モグリン",
+          "skills": [
+            {
+              "id": "C16",
+              "level": 2,
+              "cost": 4
+            },
+            {
+              "id": "D05",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "F03",
+              "level": 1,
+              "cost": 4
+            }
+          ],
+          "generatedTeams": 1
+        },
+        {
+          "id": 310,
+          "score": 0.12131108587896647,
+          "name": "ゴブソーサラー",
+          "skills": [
+            {
+              "id": "C15",
+              "level": 2,
+              "cost": 4
+            },
+            {
+              "id": "D05",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "F03",
+              "level": 1,
+              "cost": 4
+            }
+          ],
+          "generatedTeams": 4
+        }
+      ],
+      "strictlyAboveCut": 8,
+      "tiedAtCut": 3,
+      "baselineEstimatedMean": 0.24484695063981243,
+      "anchoredEstimatedMean": 0.3447649787154471,
+      "anchoredEstimateVsActualRankCorrelation": 0.08584190791307232,
+      "anchorGroups": [
+        {
+          "id": 295,
+          "count": 4,
+          "above": 2,
+          "mean": 0.7999999999999999
+        },
+        {
+          "id": 202,
+          "count": 5,
+          "above": 2,
+          "mean": 1.0599999999999998
+        },
+        {
+          "id": 900,
+          "count": 3,
+          "above": 3,
+          "mean": 1.4000000000000001
+        },
+        {
+          "id": 674,
+          "count": 5,
+          "above": 2,
+          "mean": 0.6799999999999999
+        },
+        {
+          "id": 712,
+          "count": 1,
+          "above": 1,
+          "mean": 1.4
+        },
+        {
+          "id": 83,
+          "count": 2,
+          "above": 2,
+          "mean": 1.1
+        },
+        {
+          "id": 773,
+          "count": 4,
+          "above": 2,
+          "mean": 0.95
+        },
+        {
+          "id": 772,
+          "count": 1,
+          "above": 1,
+          "mean": 1.5
+        },
+        {
+          "id": 291,
+          "count": 1,
+          "above": 0,
+          "mean": 0.4
+        },
+        {
+          "id": 310,
+          "count": 4,
+          "above": 3,
+          "mean": 1.4
+        }
+      ],
+      "perMap": [
+        {
+          "id": "M01",
+          "size": 10,
+          "seed": 2053122308,
+          "baseline": 0.17,
+          "anchoredMean": 0.26666666666666666,
+          "difference": 0.09666666666666665,
+          "above": 7,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M02",
+          "size": 20,
+          "seed": 2252183232,
+          "baseline": 1.18,
+          "anchoredMean": 1.5,
+          "difference": 0.32000000000000006,
+          "above": 11,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M03",
+          "size": 30,
+          "seed": 285226233,
+          "baseline": 1.06,
+          "anchoredMean": 1.3,
+          "difference": 0.24,
+          "above": 12,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M04",
+          "size": 10,
+          "seed": 935957109,
+          "baseline": 0.55,
+          "anchoredMean": 0.8333333333333334,
+          "difference": 0.2833333333333333,
+          "above": 20,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M05",
+          "size": 20,
+          "seed": 1084098152,
+          "baseline": 0.83,
+          "anchoredMean": 1.2,
+          "difference": 0.37,
+          "above": 20,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M06",
+          "size": 30,
+          "seed": 1347828008,
+          "baseline": 1.03,
+          "anchoredMean": 1.2333333333333334,
+          "difference": 0.20333333333333337,
+          "above": 11,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M07",
+          "size": 10,
+          "seed": 2756060228,
+          "baseline": 0.37,
+          "anchoredMean": 0.5,
+          "difference": 0.13,
+          "above": 13,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M08",
+          "size": 20,
+          "seed": 2133079044,
+          "baseline": 1.05,
+          "anchoredMean": 1.4666666666666666,
+          "difference": 0.4166666666666665,
+          "above": 13,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M09",
+          "size": 30,
+          "seed": 1533206848,
+          "baseline": 0.83,
+          "anchoredMean": 1.1666666666666667,
+          "difference": 0.3366666666666668,
+          "above": 18,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M10",
+          "size": 10,
+          "seed": 3443228221,
+          "baseline": 0.67,
+          "anchoredMean": 0.8666666666666667,
+          "difference": 0.19666666666666666,
+          "above": 19,
+          "zeroBaseline": false
+        }
+      ]
+    },
+    "map": {
+      "top10": [
+        {
+          "id": 440,
+          "score": 0.029360750304584796,
+          "name": "メカセンチピード",
+          "skills": [
+            {
+              "id": "B07",
+              "level": 3,
+              "cost": 3
+            },
+            {
+              "id": "C13",
+              "level": 3,
+              "cost": 6
+            },
+            {
+              "id": "D09",
+              "level": 1,
+              "cost": 3
+            }
+          ],
+          "generatedTeams": 5
+        },
+        {
+          "id": 575,
+          "score": 0.02396390400000001,
+          "name": "ゴールドガーゴイル",
+          "skills": [
+            {
+              "id": "B02",
+              "level": 2,
+              "cost": 2
+            },
+            {
+              "id": "C18",
+              "level": 2,
+              "cost": 4
+            },
+            {
+              "id": "D08",
+              "level": 2,
+              "cost": 6
+            }
+          ],
+          "generatedTeams": 5
+        },
+        {
+          "id": 830,
+          "score": 0.02396390400000001,
+          "name": "アクアミミック",
+          "skills": [
+            {
+              "id": "B02",
+              "level": 2,
+              "cost": 2
+            },
+            {
+              "id": "C20",
+              "level": 2,
+              "cost": 4
+            },
+            {
+              "id": "D08",
+              "level": 2,
+              "cost": 6
+            }
+          ],
+          "generatedTeams": 2
+        },
+        {
+          "id": 17,
+          "score": 0.02381818181818181,
+          "name": "狩人リーファ",
+          "skills": [
+            {
+              "id": "A05",
+              "level": 2,
+              "cost": 6
+            },
+            {
+              "id": "B01",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "C16",
+              "level": 1,
+              "cost": 2
+            }
+          ],
+          "generatedTeams": 1
+        },
+        {
+          "id": 925,
+          "score": 0.023704831878787882,
+          "name": "ホーリーシタデル",
+          "skills": [
+            {
+              "id": "B02",
+              "level": 2,
+              "cost": 2
+            },
+            {
+              "id": "C21",
+              "level": 1,
+              "cost": 2
+            },
+            {
+              "id": "D03",
+              "level": 2,
+              "cost": 8
+            }
+          ],
+          "generatedTeams": 2
+        },
+        {
+          "id": 361,
+          "score": 0.02357272727272727,
+          "name": "コーラルランサー",
+          "skills": [
+            {
+              "id": "A07",
+              "level": 2,
+              "cost": 2
+            },
+            {
+              "id": "B01",
+              "level": 2,
+              "cost": 8
+            },
+            {
+              "id": "C26",
+              "level": 1,
+              "cost": 2
+            }
+          ],
+          "generatedTeams": 4
+        },
+        {
+          "id": 501,
+          "score": 0.023531818181818178,
+          "name": "アイアンビースト",
+          "skills": [
+            {
+              "id": "A09",
+              "level": 2,
+              "cost": 2
+            },
+            {
+              "id": "B01",
+              "level": 2,
+              "cost": 8
+            },
+            {
+              "id": "C13",
+              "level": 1,
+              "cost": 2
+            }
+          ],
+          "generatedTeams": 3
+        },
+        {
+          "id": 759,
+          "score": 0.023490909090909087,
+          "name": "プリズムスラ",
+          "skills": [
+            {
+              "id": "A06",
+              "level": 1,
+              "cost": 1
+            },
+            {
+              "id": "B05",
+              "level": 3,
+              "cost": 9
+            },
+            {
+              "id": "C17",
+              "level": 1,
+              "cost": 2
+            }
+          ],
+          "generatedTeams": 4
+        },
+        {
+          "id": 226,
+          "score": 0.023490909090909087,
+          "name": "ドラブレイズ",
+          "skills": [
+            {
+              "id": "A06",
+              "level": 1,
+              "cost": 1
+            },
+            {
+              "id": "B05",
+              "level": 3,
+              "cost": 9
+            },
+            {
+              "id": "C25",
+              "level": 1,
+              "cost": 2
+            }
+          ],
+          "generatedTeams": 2
+        },
+        {
+          "id": 394,
+          "score": 0.02335454545454545,
+          "name": "フロストトロル",
+          "skills": [
+            {
+              "id": "A09",
+              "level": 1,
+              "cost": 1
+            },
+            {
+              "id": "B05",
+              "level": 3,
+              "cost": 9
+            },
+            {
+              "id": "C19",
+              "level": 1,
+              "cost": 2
+            }
+          ],
+          "generatedTeams": 2
+        }
+      ],
+      "strictlyAboveCut": 9,
+      "tiedAtCut": 4,
+      "baselineEstimatedMean": 0.04809592212529281,
+      "anchoredEstimatedMean": 0.05925940323690623,
+      "anchoredEstimateVsActualRankCorrelation": 0.4902007493768021,
+      "anchorGroups": [
+        {
+          "id": 440,
+          "count": 5,
+          "above": 4,
+          "mean": 6.18
+        },
+        {
+          "id": 575,
+          "count": 5,
+          "above": 5,
+          "mean": 6.94
+        },
+        {
+          "id": 830,
+          "count": 2,
+          "above": 2,
+          "mean": 6.55
+        },
+        {
+          "id": 17,
+          "count": 1,
+          "above": 1,
+          "mean": 5.1
+        },
+        {
+          "id": 925,
+          "count": 2,
+          "above": 2,
+          "mean": 6
+        },
+        {
+          "id": 361,
+          "count": 4,
+          "above": 3,
+          "mean": 5.7749999999999995
+        },
+        {
+          "id": 501,
+          "count": 3,
+          "above": 1,
+          "mean": 4.133333333333334
+        },
+        {
+          "id": 759,
+          "count": 4,
+          "above": 3,
+          "mean": 5.175
+        },
+        {
+          "id": 226,
+          "count": 2,
+          "above": 2,
+          "mean": 6.6
+        },
+        {
+          "id": 394,
+          "count": 2,
+          "above": 2,
+          "mean": 5.75
+        }
+      ],
+      "perMap": [
+        {
+          "id": "M01",
+          "size": 10,
+          "seed": 2053122308,
+          "baseline": 2.81,
+          "anchoredMean": 3.7333333333333334,
+          "difference": 0.9233333333333333,
+          "above": 29,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M02",
+          "size": 20,
+          "seed": 2252183232,
+          "baseline": 5.75,
+          "anchoredMean": 7.1,
+          "difference": 1.3499999999999996,
+          "above": 22,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M03",
+          "size": 30,
+          "seed": 285226233,
+          "baseline": 6.26,
+          "anchoredMean": 7.433333333333334,
+          "difference": 1.1733333333333338,
+          "above": 19,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M04",
+          "size": 10,
+          "seed": 935957109,
+          "baseline": 3.04,
+          "anchoredMean": 3.566666666666667,
+          "difference": 0.5266666666666668,
+          "above": 14,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M05",
+          "size": 20,
+          "seed": 1084098152,
+          "baseline": 4.89,
+          "anchoredMean": 6.966666666666667,
+          "difference": 2.076666666666667,
+          "above": 26,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M06",
+          "size": 30,
+          "seed": 1347828008,
+          "baseline": 5.71,
+          "anchoredMean": 7.333333333333333,
+          "difference": 1.623333333333333,
+          "above": 25,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M07",
+          "size": 10,
+          "seed": 2756060228,
+          "baseline": 2.82,
+          "anchoredMean": 3.6666666666666665,
+          "difference": 0.8466666666666667,
+          "above": 28,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M08",
+          "size": 20,
+          "seed": 2133079044,
+          "baseline": 5.59,
+          "anchoredMean": 7.6,
+          "difference": 2.01,
+          "above": 23,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M09",
+          "size": 30,
+          "seed": 1533206848,
+          "baseline": 5.7,
+          "anchoredMean": 7.866666666666666,
+          "difference": 2.166666666666666,
+          "above": 25,
+          "zeroBaseline": false
+        },
+        {
+          "id": "M10",
+          "size": 10,
+          "seed": 3443228221,
+          "baseline": 2.9,
+          "anchoredMean": 3.6333333333333333,
+          "difference": 0.7333333333333334,
+          "above": 28,
+          "zeroBaseline": false
+        }
+      ]
+    }
+  }
+}

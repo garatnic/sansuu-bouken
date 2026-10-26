@@ -1,0 +1,20 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict'),L=require('../phase2/node.cjs'),A=require('../integration/api.js'),O=require('../integration/outcomes.js');
+const fields=[{id:'explore',label:'開拓',metric:'opened',unit:'マス'},{id:'treasure',label:'お宝',metric:'newItems',unit:'種類'},{id:'companion',label:'仲間',metric:'newCharacters',unit:'種類'},{id:'map',label:'探索',metric:'visited',unit:'施設'}];
+const baseCommit='7e73c9a9b85d1f72d88b7fb0210aba6639b1e27d',seeds={ownership:82610101,items:82610201,mapConditions:82610301,pilotTeam:82610401,baselineTeams:82610501,tieOrder:82610601,anchoredTeams:[82611001,82612001,82613001,82614001]};
+function sha(data){return crypto.createHash('sha256').update(data).digest('hex');}
+function sourceHash(){const root=path.resolve(__dirname,'../../..'),files=[];for(const dir of ['common','data'])for(const file of fs.readdirSync(path.join(root,dir)).sort())if(/\.(js|json)$/.test(file))files.push(path.join(root,dir,file));for(const file of ['../phase2/core.js','../integration/outcomes.js','lib.cjs'])files.push(path.join(__dirname,file));return sha(files.map(f=>f.slice(root.length)+':'+sha(fs.readFileSync(f))).join('\n'));}
+function version(){return Number(fs.readFileSync(path.join(__dirname,'../../../common/version.js'),'utf8').match(/BoukenVersion\s*=\s*(\d+)/)[1]);}
+function fixture(r){const cfg={...A.defaults,size:10,budget:30,cumulativeExplored:1234,policy:'informed'},f=L.makeFixture(r,{count:500,itemFraction:.5,ownershipSeed:seeds.ownership,itemSeed:seeds.items,claims:0,config:cfg});f.current=f.owned.slice(0,5);f.save.party=[...f.current];f.eligible=true;assert.equal(f.slots,5);return {f,cfg};}
+function maps(){const random=L.rng(seeds.mapConditions);return Array.from({length:10},(_,i)=>({id:'M'+String(i+1).padStart(2,'0'),size:[10,20,30][i%3],seed:Math.floor(random()*4294967296)>>>0}));}
+function randomTeam(owned,random){return L.shuffle(owned,random).slice(0,5);}
+function validate(r,owned,p){assert.equal(p.length,5);assert.equal(new Set(p).size,5);assert.ok(p.every(id=>owned.includes(id)&&r.byId.has(id)));}
+function mean(v){return v.reduce((a,b)=>a+b,0)/v.length;}
+function describe(v){const average=mean(v);return {mean:average,min:Math.min(...v),max:Math.max(...v),sd:Math.sqrt(v.reduce((s,x)=>s+(x-average)**2,0)/Math.max(1,v.length-1))};}
+function makeTeams(r,f,cfg){const estimate=O.estimator(r,f.save,cfg),empty=estimate([]),tie=L.shuffle(f.owned,L.rng(seeds.tieOrder));const individual=tie.map(id=>({id,scores:estimate([id]).map((v,k)=>v-empty[k])})),top10=fields.map((field,k)=>({field:field.id,entries:individual.slice().sort((a,b)=>b.scores[k]-a.scores[k]).slice(0,10).map(e=>({id:e.id,score:e.scores[k]}))}));
+ const random=L.rng(seeds.baselineTeams),baseline=Array.from({length:100},(_,i)=>({id:'R'+String(i+1).padStart(3,'0'),party:randomTeam(f.owned,random)}));
+ const anchored=Object.fromEntries(fields.map((field,k)=>{const rng=L.rng(seeds.anchoredTeams[k]),pool=top10[k].entries.map(x=>x.id);return [field.id,Array.from({length:30},(_,i)=>{const anchor=pool[Math.floor(rng()*pool.length)];return {id:field.id+'-'+String(i+1).padStart(2,'0'),anchor,party:[anchor,...L.shuffle(f.owned.filter(id=>id!==anchor),rng).slice(0,4)]};})];}));
+ for(const team of [...baseline,...Object.values(anchored).flat()])validate(r,f.owned,team.party);return {individual,top10,baseline,anchored};}
+function runTrial(r,save,party,cfg,map){const result=O.adventure(r,save,party,{...cfg,size:map.size},map.seed);return {map:map.id,seed:map.seed,size:map.size,metrics:Object.fromEntries(fields.map(f=>[f.metric,result[f.metric]])),raw:result.raw,claimsUnchanged:result.claimsUnchanged};}
+function writeNew(file,data){fs.writeFileSync(file,typeof data==='string'?data:JSON.stringify(data,null,2)+'\n',{flag:'wx'});}
+module.exports={fs,path,assert,L,A,O,fields,baseCommit,seeds,sha,sourceHash,version,fixture,maps,randomTeam,validate,mean,describe,makeTeams,runTrial,writeNew};
