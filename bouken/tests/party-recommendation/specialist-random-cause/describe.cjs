@@ -1,0 +1,5 @@
+'use strict';
+const X=require('../specialist-random/lib.cjs'),{fs,path,L}=X,output=process.argv[2],p=JSON.parse(fs.readFileSync(path.join(output,'plan.json'))),r=L.load(),out={};
+for(const[field,design]of Object.entries(p.fields))out[field]=design.backgrounds.map(b=>({...b,buffs:Array.from(r.c.BoukenParty.buffs(b.party,r.byId)),members:b.party.map(id=>({id,name:r.byId.get(id).name,skills:r.byId.get(id).skills}))}));
+const target=path.join(output,'background-skills.json');if(fs.existsSync(target))X.assert.deepEqual(JSON.parse(fs.readFileSync(target)),JSON.parse(JSON.stringify(out)));else X.writeNew(target,out);
+const groups={};for(const[field,design]of Object.entries(p.fields)){groups[field]=design.backgrounds.map(b=>{const bySig={};for(const a of design.anchors){const sig=L.signature(r,[a.id,...b.party]);(bySig[sig]??=[]).push(a.id);}return {background:b.id,distinctAbilityCount:Object.keys(bySig).length,groups:Object.values(bySig)};});}X.writeNew(path.join(output,'ability-groups.json'),groups);

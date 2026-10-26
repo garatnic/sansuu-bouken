@@ -1,0 +1,1406 @@
+{
+  "treasure": [
+    {
+      "id": "treasure-B1",
+      "party": [
+        427,
+        696,
+        200,
+        316
+      ],
+      "buffs": [
+        {
+          "id": "A02",
+          "level": 1
+        },
+        {
+          "id": "A05",
+          "level": 3
+        },
+        {
+          "id": "A06",
+          "level": 2
+        },
+        {
+          "id": "B04",
+          "level": 2
+        },
+        {
+          "id": "C10",
+          "level": 3
+        },
+        {
+          "id": "C18",
+          "level": 2
+        },
+        {
+          "id": "C20",
+          "level": 2
+        },
+        {
+          "id": "C28",
+          "level": 1
+        },
+        {
+          "id": "D03",
+          "level": 1
+        },
+        {
+          "id": "D06",
+          "level": 1
+        },
+        {
+          "id": "E04",
+          "level": 1
+        },
+        {
+          "id": "E07",
+          "level": 3
+        }
+      ],
+      "members": [
+        {
+          "id": 427,
+          "name": "ブルーゴーレム",
+          "skills": [
+            {
+              "id": "A06",
+              "level": 2,
+              "cost": 2
+            },
+            {
+              "id": "B04",
+              "level": 2,
+              "cost": 6
+            },
+            {
+              "id": "C18",
+              "level": 2,
+              "cost": 4
+            }
+          ]
+        },
+        {
+          "id": 696,
+          "name": "スカルローブ",
+          "skills": [
+            {
+              "id": "A02",
+              "level": 1,
+              "cost": 3
+            },
+            {
+              "id": "C10",
+              "level": 3,
+              "cost": 6
+            },
+            {
+              "id": "E07",
+              "level": 3,
+              "cost": 3
+            }
+          ]
+        },
+        {
+          "id": 200,
+          "name": "竜着ぐるみガウ",
+          "skills": [
+            {
+              "id": "C20",
+              "level": 2,
+              "cost": 4
+            },
+            {
+              "id": "D03",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "D06",
+              "level": 1,
+              "cost": 4
+            }
+          ]
+        },
+        {
+          "id": 316,
+          "name": "オークドルイド",
+          "skills": [
+            {
+              "id": "A05",
+              "level": 3,
+              "cost": 9
+            },
+            {
+              "id": "C28",
+              "level": 1,
+              "cost": 2
+            },
+            {
+              "id": "E04",
+              "level": 1,
+              "cost": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "treasure-B2",
+      "party": [
+        387,
+        136,
+        832,
+        739
+      ],
+      "buffs": [
+        {
+          "id": "A02",
+          "level": 3
+        },
+        {
+          "id": "B03",
+          "level": 3
+        },
+        {
+          "id": "B04",
+          "level": 3
+        },
+        {
+          "id": "B07",
+          "level": 2
+        },
+        {
+          "id": "C01",
+          "level": 2
+        },
+        {
+          "id": "C11",
+          "level": 1
+        },
+        {
+          "id": "C20",
+          "level": 2
+        },
+        {
+          "id": "C26",
+          "level": 1
+        },
+        {
+          "id": "E01",
+          "level": 1
+        },
+        {
+          "id": "E02",
+          "level": 1
+        },
+        {
+          "id": "E03",
+          "level": 1
+        }
+      ],
+      "members": [
+        {
+          "id": 387,
+          "name": "トロルシャーマン",
+          "skills": [
+            {
+              "id": "B03",
+              "level": 3,
+              "cost": 9
+            },
+            {
+              "id": "C20",
+              "level": 1,
+              "cost": 2
+            },
+            {
+              "id": "E03",
+              "level": 1,
+              "cost": 1
+            }
+          ]
+        },
+        {
+          "id": 136,
+          "name": "紅戦士ラドル",
+          "skills": [
+            {
+              "id": "B04",
+              "level": 3,
+              "cost": 9
+            },
+            {
+              "id": "C11",
+              "level": 1,
+              "cost": 2
+            },
+            {
+              "id": "E01",
+              "level": 1,
+              "cost": 1
+            }
+          ]
+        },
+        {
+          "id": 832,
+          "name": "ゴルドミック",
+          "skills": [
+            {
+              "id": "B07",
+              "level": 2,
+              "cost": 2
+            },
+            {
+              "id": "C01",
+              "level": 2,
+              "cost": 8
+            },
+            {
+              "id": "C20",
+              "level": 1,
+              "cost": 2
+            }
+          ]
+        },
+        {
+          "id": 739,
+          "name": "アクアピリット",
+          "skills": [
+            {
+              "id": "A02",
+              "level": 3,
+              "cost": 9
+            },
+            {
+              "id": "C26",
+              "level": 1,
+              "cost": 2
+            },
+            {
+              "id": "E02",
+              "level": 1,
+              "cost": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "treasure-B3",
+      "party": [
+        179,
+        442,
+        42,
+        622
+      ],
+      "buffs": [
+        {
+          "id": "A06",
+          "level": 1
+        },
+        {
+          "id": "A12",
+          "level": 3
+        },
+        {
+          "id": "B04",
+          "level": 3
+        },
+        {
+          "id": "B05",
+          "level": 2
+        },
+        {
+          "id": "C04",
+          "level": 1
+        },
+        {
+          "id": "C13",
+          "level": 2
+        },
+        {
+          "id": "C18",
+          "level": 1
+        },
+        {
+          "id": "C19",
+          "level": 1
+        },
+        {
+          "id": "C21",
+          "level": 1
+        },
+        {
+          "id": "D02",
+          "level": 1
+        },
+        {
+          "id": "D06",
+          "level": 1
+        },
+        {
+          "id": "E04",
+          "level": 1
+        }
+      ],
+      "members": [
+        {
+          "id": 179,
+          "name": "忍者クロガネ",
+          "skills": [
+            {
+              "id": "B05",
+              "level": 2,
+              "cost": 6
+            },
+            {
+              "id": "C18",
+              "level": 1,
+              "cost": 2
+            },
+            {
+              "id": "D06",
+              "level": 1,
+              "cost": 4
+            }
+          ]
+        },
+        {
+          "id": 442,
+          "name": "プチボット",
+          "skills": [
+            {
+              "id": "C04",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "C13",
+              "level": 2,
+              "cost": 4
+            },
+            {
+              "id": "D02",
+              "level": 1,
+              "cost": 4
+            }
+          ]
+        },
+        {
+          "id": 42,
+          "name": "武闘家ラウル",
+          "skills": [
+            {
+              "id": "A06",
+              "level": 1,
+              "cost": 1
+            },
+            {
+              "id": "B04",
+              "level": 3,
+              "cost": 9
+            },
+            {
+              "id": "C21",
+              "level": 1,
+              "cost": 2
+            }
+          ]
+        },
+        {
+          "id": 622,
+          "name": "クリスタルガルド",
+          "skills": [
+            {
+              "id": "A12",
+              "level": 3,
+              "cost": 9
+            },
+            {
+              "id": "C19",
+              "level": 1,
+              "cost": 2
+            },
+            {
+              "id": "E04",
+              "level": 1,
+              "cost": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "treasure-B4",
+      "party": [
+        389,
+        46,
+        130,
+        892
+      ],
+      "buffs": [
+        {
+          "id": "A02",
+          "level": 1
+        },
+        {
+          "id": "A10",
+          "level": 3
+        },
+        {
+          "id": "B05",
+          "level": 2
+        },
+        {
+          "id": "B07",
+          "level": 2
+        },
+        {
+          "id": "C03",
+          "level": 3
+        },
+        {
+          "id": "C07",
+          "level": 1
+        },
+        {
+          "id": "C08",
+          "level": 3
+        },
+        {
+          "id": "C09",
+          "level": 2
+        },
+        {
+          "id": "E02",
+          "level": 1
+        },
+        {
+          "id": "E03",
+          "level": 3
+        },
+        {
+          "id": "E04",
+          "level": 1
+        },
+        {
+          "id": "F03",
+          "level": 2
+        }
+      ],
+      "members": [
+        {
+          "id": 389,
+          "name": "ブラックオーガ",
+          "skills": [
+            {
+              "id": "A10",
+              "level": 3,
+              "cost": 3
+            },
+            {
+              "id": "C08",
+              "level": 3,
+              "cost": 6
+            },
+            {
+              "id": "E03",
+              "level": 3,
+              "cost": 3
+            }
+          ]
+        },
+        {
+          "id": 46,
+          "name": "魔導士アッシュ",
+          "skills": [
+            {
+              "id": "B05",
+              "level": 2,
+              "cost": 6
+            },
+            {
+              "id": "B07",
+              "level": 2,
+              "cost": 2
+            },
+            {
+              "id": "C09",
+              "level": 2,
+              "cost": 4
+            }
+          ]
+        },
+        {
+          "id": 130,
+          "name": "黄戦士ケイン",
+          "skills": [
+            {
+              "id": "C03",
+              "level": 3,
+              "cost": 9
+            },
+            {
+              "id": "C07",
+              "level": 1,
+              "cost": 2
+            },
+            {
+              "id": "E04",
+              "level": 1,
+              "cost": 1
+            }
+          ]
+        },
+        {
+          "id": 892,
+          "name": "アビスエイリアン",
+          "skills": [
+            {
+              "id": "A02",
+              "level": 1,
+              "cost": 3
+            },
+            {
+              "id": "E02",
+              "level": 1,
+              "cost": 1
+            },
+            {
+              "id": "F03",
+              "level": 2,
+              "cost": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "treasure-B5",
+      "party": [
+        282,
+        732,
+        650,
+        164
+      ],
+      "buffs": [
+        {
+          "id": "A05",
+          "level": 3
+        },
+        {
+          "id": "C02",
+          "level": 1
+        },
+        {
+          "id": "C05",
+          "level": 1
+        },
+        {
+          "id": "C08",
+          "level": 1
+        },
+        {
+          "id": "C17",
+          "level": 2
+        },
+        {
+          "id": "C26",
+          "level": 1
+        },
+        {
+          "id": "D02",
+          "level": 1
+        },
+        {
+          "id": "D07",
+          "level": 2
+        },
+        {
+          "id": "E01",
+          "level": 1
+        },
+        {
+          "id": "E08",
+          "level": 3
+        }
+      ],
+      "members": [
+        {
+          "id": 282,
+          "name": "デビルピィ",
+          "skills": [
+            {
+              "id": "C02",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "C17",
+              "level": 2,
+              "cost": 4
+            },
+            {
+              "id": "E08",
+              "level": 2,
+              "cost": 4
+            }
+          ]
+        },
+        {
+          "id": 732,
+          "name": "アーススピリット",
+          "skills": [
+            {
+              "id": "C26",
+              "level": 1,
+              "cost": 2
+            },
+            {
+              "id": "D07",
+              "level": 2,
+              "cost": 8
+            },
+            {
+              "id": "E08",
+              "level": 1,
+              "cost": 2
+            }
+          ]
+        },
+        {
+          "id": 650,
+          "name": "サクラウッド",
+          "skills": [
+            {
+              "id": "A05",
+              "level": 3,
+              "cost": 9
+            },
+            {
+              "id": "C05",
+              "level": 1,
+              "cost": 2
+            },
+            {
+              "id": "E01",
+              "level": 1,
+              "cost": 1
+            }
+          ]
+        },
+        {
+          "id": 164,
+          "name": "武将カゲトラ",
+          "skills": [
+            {
+              "id": "C08",
+              "level": 1,
+              "cost": 2
+            },
+            {
+              "id": "D02",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "E08",
+              "level": 2,
+              "cost": 4
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "companion": [
+    {
+      "id": "companion-B1",
+      "party": [
+        455,
+        622,
+        93,
+        783
+      ],
+      "buffs": [
+        {
+          "id": "A08",
+          "level": 3
+        },
+        {
+          "id": "A12",
+          "level": 3
+        },
+        {
+          "id": "B03",
+          "level": 2
+        },
+        {
+          "id": "B05",
+          "level": 1
+        },
+        {
+          "id": "C05",
+          "level": 2
+        },
+        {
+          "id": "C14",
+          "level": 3
+        },
+        {
+          "id": "C19",
+          "level": 3
+        },
+        {
+          "id": "E01",
+          "level": 2
+        },
+        {
+          "id": "E02",
+          "level": 2
+        },
+        {
+          "id": "E04",
+          "level": 1
+        }
+      ],
+      "members": [
+        {
+          "id": 455,
+          "name": "クリスタルウィング",
+          "skills": [
+            {
+              "id": "A08",
+              "level": 3,
+              "cost": 3
+            },
+            {
+              "id": "B05",
+              "level": 1,
+              "cost": 3
+            },
+            {
+              "id": "C14",
+              "level": 3,
+              "cost": 6
+            }
+          ]
+        },
+        {
+          "id": 622,
+          "name": "クリスタルガルド",
+          "skills": [
+            {
+              "id": "A12",
+              "level": 3,
+              "cost": 9
+            },
+            {
+              "id": "C19",
+              "level": 1,
+              "cost": 2
+            },
+            {
+              "id": "E04",
+              "level": 1,
+              "cost": 1
+            }
+          ]
+        },
+        {
+          "id": 93,
+          "name": "木工職人ドルフ",
+          "skills": [
+            {
+              "id": "B03",
+              "level": 2,
+              "cost": 6
+            },
+            {
+              "id": "C19",
+              "level": 2,
+              "cost": 4
+            },
+            {
+              "id": "E02",
+              "level": 2,
+              "cost": 2
+            }
+          ]
+        },
+        {
+          "id": 783,
+          "name": "サンダージェリー",
+          "skills": [
+            {
+              "id": "A12",
+              "level": 2,
+              "cost": 6
+            },
+            {
+              "id": "C05",
+              "level": 2,
+              "cost": 4
+            },
+            {
+              "id": "E01",
+              "level": 2,
+              "cost": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "companion-B2",
+      "party": [
+        7,
+        428,
+        368,
+        335
+      ],
+      "buffs": [
+        {
+          "id": "A03",
+          "level": 1
+        },
+        {
+          "id": "A10",
+          "level": 1
+        },
+        {
+          "id": "B02",
+          "level": 2
+        },
+        {
+          "id": "B05",
+          "level": 1
+        },
+        {
+          "id": "C04",
+          "level": 1
+        },
+        {
+          "id": "C07",
+          "level": 2
+        },
+        {
+          "id": "C14",
+          "level": 2
+        },
+        {
+          "id": "C17",
+          "level": 1
+        },
+        {
+          "id": "C22",
+          "level": 3
+        },
+        {
+          "id": "D09",
+          "level": 3
+        },
+        {
+          "id": "E01",
+          "level": 3
+        },
+        {
+          "id": "E08",
+          "level": 3
+        }
+      ],
+      "members": [
+        {
+          "id": 7,
+          "name": "剣士ディラン",
+          "skills": [
+            {
+              "id": "A03",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "C04",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "C07",
+              "level": 2,
+              "cost": 4
+            }
+          ]
+        },
+        {
+          "id": 428,
+          "name": "ゴルドゴーレム",
+          "skills": [
+            {
+              "id": "B02",
+              "level": 2,
+              "cost": 2
+            },
+            {
+              "id": "C14",
+              "level": 2,
+              "cost": 4
+            },
+            {
+              "id": "E08",
+              "level": 3,
+              "cost": 6
+            }
+          ]
+        },
+        {
+          "id": 368,
+          "name": "マーメリン",
+          "skills": [
+            {
+              "id": "A10",
+              "level": 1,
+              "cost": 1
+            },
+            {
+              "id": "C17",
+              "level": 1,
+              "cost": 2
+            },
+            {
+              "id": "D09",
+              "level": 3,
+              "cost": 9
+            }
+          ]
+        },
+        {
+          "id": 335,
+          "name": "パンダル",
+          "skills": [
+            {
+              "id": "B05",
+              "level": 1,
+              "cost": 3
+            },
+            {
+              "id": "C22",
+              "level": 3,
+              "cost": 6
+            },
+            {
+              "id": "E01",
+              "level": 3,
+              "cost": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "companion-B3",
+      "party": [
+        192,
+        226,
+        488,
+        877
+      ],
+      "buffs": [
+        {
+          "id": "A06",
+          "level": 1
+        },
+        {
+          "id": "A10",
+          "level": 3
+        },
+        {
+          "id": "B01",
+          "level": 1
+        },
+        {
+          "id": "B04",
+          "level": 3
+        },
+        {
+          "id": "B05",
+          "level": 3
+        },
+        {
+          "id": "B07",
+          "level": 3
+        },
+        {
+          "id": "C21",
+          "level": 1
+        },
+        {
+          "id": "C25",
+          "level": 1
+        },
+        {
+          "id": "C26",
+          "level": 3
+        },
+        {
+          "id": "C27",
+          "level": 2
+        },
+        {
+          "id": "E04",
+          "level": 1
+        },
+        {
+          "id": "F02",
+          "level": 1
+        }
+      ],
+      "members": [
+        {
+          "id": 192,
+          "name": "精霊巫女スズネ",
+          "skills": [
+            {
+              "id": "A10",
+              "level": 3,
+              "cost": 3
+            },
+            {
+              "id": "B07",
+              "level": 3,
+              "cost": 3
+            },
+            {
+              "id": "C26",
+              "level": 3,
+              "cost": 6
+            }
+          ]
+        },
+        {
+          "id": 226,
+          "name": "ドラブレイズ",
+          "skills": [
+            {
+              "id": "A06",
+              "level": 1,
+              "cost": 1
+            },
+            {
+              "id": "B05",
+              "level": 3,
+              "cost": 9
+            },
+            {
+              "id": "C25",
+              "level": 1,
+              "cost": 2
+            }
+          ]
+        },
+        {
+          "id": 488,
+          "name": "ウィングナイト",
+          "skills": [
+            {
+              "id": "B01",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "C27",
+              "level": 2,
+              "cost": 4
+            },
+            {
+              "id": "F02",
+              "level": 1,
+              "cost": 4
+            }
+          ]
+        },
+        {
+          "id": 877,
+          "name": "ランプル",
+          "skills": [
+            {
+              "id": "B04",
+              "level": 3,
+              "cost": 9
+            },
+            {
+              "id": "C21",
+              "level": 1,
+              "cost": 2
+            },
+            {
+              "id": "E04",
+              "level": 1,
+              "cost": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "companion-B4",
+      "party": [
+        204,
+        176,
+        401,
+        635
+      ],
+      "buffs": [
+        {
+          "id": "B06",
+          "level": 1
+        },
+        {
+          "id": "C01",
+          "level": 1
+        },
+        {
+          "id": "C04",
+          "level": 3
+        },
+        {
+          "id": "C10",
+          "level": 2
+        },
+        {
+          "id": "C22",
+          "level": 1
+        },
+        {
+          "id": "C25",
+          "level": 2
+        },
+        {
+          "id": "D01",
+          "level": 1
+        },
+        {
+          "id": "D05",
+          "level": 1
+        },
+        {
+          "id": "D07",
+          "level": 1
+        },
+        {
+          "id": "E08",
+          "level": 2
+        }
+      ],
+      "members": [
+        {
+          "id": 204,
+          "name": "怪獣着ぐるみモコ",
+          "skills": [
+            {
+              "id": "C25",
+              "level": 2,
+              "cost": 4
+            },
+            {
+              "id": "D01",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "D07",
+              "level": 1,
+              "cost": 4
+            }
+          ]
+        },
+        {
+          "id": 176,
+          "name": "武闘家リュウガ",
+          "skills": [
+            {
+              "id": "C04",
+              "level": 3,
+              "cost": 12
+            }
+          ]
+        },
+        {
+          "id": 401,
+          "name": "ミニオーガ",
+          "skills": [
+            {
+              "id": "B06",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "C10",
+              "level": 2,
+              "cost": 4
+            },
+            {
+              "id": "D05",
+              "level": 1,
+              "cost": 4
+            }
+          ]
+        },
+        {
+          "id": 635,
+          "name": "サンピリット",
+          "skills": [
+            {
+              "id": "C01",
+              "level": 1,
+              "cost": 4
+            },
+            {
+              "id": "C22",
+              "level": 1,
+              "cost": 2
+            },
+            {
+              "id": "E08",
+              "level": 2,
+              "cost": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "companion-B5",
+      "party": [
+        475,
+        618,
+        253,
+        414
+      ],
+      "buffs": [
+        {
+          "id": "A06",
+          "level": 3
+        },
+        {
+          "id": "B03",
+          "level": 1
+        },
+        {
+          "id": "B04",
+          "level": 2
+        },
+        {
+          "id": "C13",
+          "level": 3
+        },
+        {
+          "id": "C17",
+          "level": 1
+        },
+        {
+          "id": "C25",
+          "level": 3
+        },
+        {
+          "id": "D07",
+          "level": 2
+        },
+        {
+          "id": "E03",
+          "level": 3
+        },
+        {
+          "id": "E06",
+          "level": 3
+        }
+      ],
+      "members": [
+        {
+          "id": 475,
+          "name": "道化人形",
+          "skills": [
+            {
+              "id": "B03",
+              "level": 1,
+              "cost": 3
+            },
+            {
+              "id": "B04",
+              "level": 1,
+              "cost": 3
+            },
+            {
+              "id": "C13",
+              "level": 3,
+              "cost": 6
+            }
+          ]
+        },
+        {
+          "id": 618,
+          "name": "ブロンズゴレガ",
+          "skills": [
+            {
+              "id": "B04",
+              "level": 1,
+              "cost": 3
+            },
+            {
+              "id": "C13",
+              "level": 3,
+              "cost": 6
+            },
+            {
+              "id": "E03",
+              "level": 3,
+              "cost": 3
+            }
+          ]
+        },
+        {
+          "id": 253,
+          "name": "ドラフリーズ",
+          "skills": [
+            {
+              "id": "A06",
+              "level": 3,
+              "cost": 3
+            },
+            {
+              "id": "C25",
+              "level": 3,
+              "cost": 6
+            },
+            {
+              "id": "E06",
+              "level": 3,
+              "cost": 3
+            }
+          ]
+        },
+        {
+          "id": 414,
+          "name": "フォレストミノ",
+          "skills": [
+            {
+              "id": "A06",
+              "level": 2,
+              "cost": 2
+            },
+            {
+              "id": "C17",
+              "level": 1,
+              "cost": 2
+            },
+            {
+              "id": "D07",
+              "level": 2,
+              "cost": 8
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

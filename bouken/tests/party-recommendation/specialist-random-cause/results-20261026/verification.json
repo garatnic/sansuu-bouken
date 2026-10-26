@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "additionalAdventures": 1000,
+  "testAndAnalysisAdventures": 0,
+  "conclusionsInThisDesign": {
+    "treasure": "B",
+    "companion": "B"
+  },
+  "formalPass": null,
+  "previousRawFilesUntouched": true,
+  "sha256": {
+    "results.json": "b3bc269b63d36c836f9e2092b23e54509bea99418bc632b705ba3b6ba6dda5da",
+    "plan.json": "11ccf811cf4c3b4a851339cfb643105783c63f9fe846abdb56928736a4df15d2",
+    "all-teams.csv": "57419adf1a53684b917330dee30dc5e629d5a1e6df9e4eb9207cb4a59a4c7129",
+    "analysis.json": "8aa22215284c58dd46fe9b3c7e2e157f1ab18182d4ae84dcbc41fc49cc483348",
+    "background-skills.json": "7f8be7bb2dd96fd6b90bf37e00db3917aa27bd83bd3095be6bc9e8dc7a6f45fa",
+    "companion-teams.csv": "8aa8da349f7c7eb3d8319084d0bb99eb65f816fed5acd77eada89d21becfd84a",
+    "treasure-teams.csv": "bccd53f09aaced653e58b5d7aaee9c3ea9b65f895f8862c2b44c4c6b08831381",
+    "ability-groups.json": "69b1eeaa15c5d8fc8b41256e8ac9233acbe3763a3fda4ea790427d1b64bbad67"
+  }
+}

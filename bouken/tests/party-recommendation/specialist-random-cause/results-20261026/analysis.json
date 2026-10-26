@@ -1,0 +1,3803 @@
+{
+  "planHash": "11ccf811cf4c3b4a851339cfb643105783c63f9fe846abdb56928736a4df15d2",
+  "adventures": 1000,
+  "wallMs": 27583.227564999997,
+  "fields": {
+    "treasure": {
+      "baseline": 0.9959999999999997,
+      "matrix": [
+        [
+          1.9,
+          1.2,
+          2.3,
+          1.4,
+          0.7
+        ],
+        [
+          0.7,
+          0.7,
+          1.8,
+          1.6,
+          0.2
+        ],
+        [
+          1.3,
+          1.6,
+          1.8,
+          1.9,
+          0.1
+        ],
+        [
+          1.7,
+          2,
+          2.1,
+          2.3,
+          0.4
+        ],
+        [
+          2,
+          1.2,
+          2.2,
+          2.5,
+          0.3
+        ],
+        [
+          1.2,
+          1.5,
+          3.2,
+          1.4,
+          0.6
+        ],
+        [
+          1.9,
+          1.9,
+          1.9,
+          2.2,
+          0.3
+        ],
+        [
+          1.1,
+          1,
+          2.1,
+          1.5,
+          0.3
+        ],
+        [
+          1.7,
+          1.2,
+          1.6,
+          2.2,
+          0.4
+        ],
+        [
+          1,
+          1.2,
+          1.5,
+          2.9,
+          0.1
+        ]
+      ],
+      "anchors": [
+        {
+          "id": 91,
+          "score": 0.13577748409090906,
+          "originalRank": 1,
+          "mean": 1.5,
+          "min": 0.7,
+          "max": 2.3,
+          "variance": 0.38499999999999995,
+          "sd": 0.6204836822995428,
+          "above": 4,
+          "aboveRate": 0.8,
+          "backgroundMeans": [
+            1.9,
+            1.2,
+            2.3,
+            1.4,
+            0.7
+          ],
+          "oldCount": 2,
+          "oldAbove": 0,
+          "oldRange": [
+            0.4,
+            0.6
+          ]
+        },
+        {
+          "id": 859,
+          "score": 0.11162880658436213,
+          "originalRank": 2,
+          "mean": 1.0,
+          "min": 0.2,
+          "max": 1.8,
+          "variance": 0.45500000000000007,
+          "sd": 0.6745368781616021,
+          "above": 2,
+          "aboveRate": 0.4,
+          "backgroundMeans": [
+            0.7,
+            0.7,
+            1.8,
+            1.6,
+            0.2
+          ],
+          "oldCount": 1,
+          "oldAbove": 0,
+          "oldRange": [
+            0.1,
+            0.1
+          ]
+        },
+        {
+          "id": 95,
+          "score": 0.1083459893048128,
+          "originalRank": 3,
+          "mean": 1.34,
+          "min": 0.1,
+          "max": 1.9,
+          "variance": 0.533,
+          "sd": 0.7300684899377592,
+          "above": 4,
+          "aboveRate": 0.8,
+          "backgroundMeans": [
+            1.3,
+            1.6,
+            1.8,
+            1.9,
+            0.1
+          ],
+          "oldCount": 4,
+          "oldAbove": 2,
+          "oldRange": [
+            0.3,
+            2.3
+          ]
+        },
+        {
+          "id": 67,
+          "score": 0.10665572192513366,
+          "originalRank": 4,
+          "mean": 1.7,
+          "min": 0.4,
+          "max": 2.3,
+          "variance": 0.575,
+          "sd": 0.758287544405155,
+          "above": 4,
+          "aboveRate": 0.8,
+          "backgroundMeans": [
+            1.7,
+            2,
+            2.1,
+            2.3,
+            0.4
+          ],
+          "oldCount": 4,
+          "oldAbove": 4,
+          "oldRange": [
+            2,
+            4.3
+          ]
+        },
+        {
+          "id": 434,
+          "score": 0.10576379564879561,
+          "originalRank": 5,
+          "mean": 1.6400000000000001,
+          "min": 0.3,
+          "max": 2.5,
+          "variance": 0.793,
+          "sd": 0.8905054744357275,
+          "above": 4,
+          "aboveRate": 0.8,
+          "backgroundMeans": [
+            2,
+            1.2,
+            2.2,
+            2.5,
+            0.3
+          ],
+          "oldCount": 8,
+          "oldAbove": 7,
+          "oldRange": [
+            0.6,
+            3
+          ]
+        },
+        {
+          "id": 826,
+          "score": 0.10575615319749214,
+          "originalRank": 6,
+          "mean": 1.58,
+          "min": 0.6,
+          "max": 3.2,
+          "variance": 0.9420000000000002,
+          "sd": 0.9705668446840744,
+          "above": 4,
+          "aboveRate": 0.8,
+          "backgroundMeans": [
+            1.2,
+            1.5,
+            3.2,
+            1.4,
+            0.6
+          ],
+          "oldCount": 1,
+          "oldAbove": 1,
+          "oldRange": [
+            1,
+            1
+          ]
+        },
+        {
+          "id": 565,
+          "score": 0.10461250909090906,
+          "originalRank": 7,
+          "mean": 1.64,
+          "min": 0.3,
+          "max": 2.2,
+          "variance": 0.5780000000000001,
+          "sd": 0.7602631123499285,
+          "above": 4,
+          "aboveRate": 0.8,
+          "backgroundMeans": [
+            1.9,
+            1.9,
+            1.9,
+            2.2,
+            0.3
+          ],
+          "oldCount": 1,
+          "oldAbove": 0,
+          "oldRange": [
+            0.3,
+            0.3
+          ]
+        },
+        {
+          "id": 824,
+          "score": 0.10000330721003133,
+          "originalRank": 8,
+          "mean": 1.2,
+          "min": 0.3,
+          "max": 2.1,
+          "variance": 0.44000000000000006,
+          "sd": 0.66332495807108,
+          "above": 4,
+          "aboveRate": 0.8,
+          "backgroundMeans": [
+            1.1,
+            1,
+            2.1,
+            1.5,
+            0.3
+          ],
+          "oldCount": 2,
+          "oldAbove": 0,
+          "oldRange": [
+            0.3,
+            0.4
+          ]
+        },
+        {
+          "id": 176,
+          "score": 0.09894209790209789,
+          "originalRank": 9,
+          "mean": 1.42,
+          "min": 0.4,
+          "max": 2.2,
+          "variance": 0.45200000000000007,
+          "sd": 0.6723094525588645,
+          "above": 4,
+          "aboveRate": 0.8,
+          "backgroundMeans": [
+            1.7,
+            1.2,
+            1.6,
+            2.2,
+            0.4
+          ],
+          "oldCount": 6,
+          "oldAbove": 4,
+          "oldRange": [
+            0.6,
+            3.1
+          ]
+        },
+        {
+          "id": 13,
+          "score": 0.09811667832167832,
+          "originalRank": 10,
+          "mean": 1.34,
+          "min": 0.1,
+          "max": 2.9,
+          "variance": 1.033,
+          "sd": 1.016366075781753,
+          "above": 4,
+          "aboveRate": 0.8,
+          "backgroundMeans": [
+            1,
+            1.2,
+            1.5,
+            2.9,
+            0.1
+          ],
+          "oldCount": 1,
+          "oldAbove": 0,
+          "oldRange": [
+            0.7,
+            0.7
+          ]
+        }
+      ],
+      "backgrounds": [
+        {
+          "id": "treasure-B1",
+          "party": [
+            427,
+            696,
+            200,
+            316
+          ],
+          "mean": 1.45,
+          "min": 0.7,
+          "max": 2,
+          "variance": 0.20055555555555554,
+          "sd": 0.44783429475148007,
+          "above": 9,
+          "anchorMeans": [
+            1.9,
+            0.7,
+            1.3,
+            1.7,
+            2,
+            1.2,
+            1.9,
+            1.1,
+            1.7,
+            1
+          ]
+        },
+        {
+          "id": "treasure-B2",
+          "party": [
+            387,
+            136,
+            832,
+            739
+          ],
+          "mean": 1.35,
+          "min": 0.7,
+          "max": 2,
+          "variance": 0.16055555555555556,
+          "sd": 0.40069384267237695,
+          "above": 9,
+          "anchorMeans": [
+            1.2,
+            0.7,
+            1.6,
+            2,
+            1.2,
+            1.5,
+            1.9,
+            1,
+            1.2,
+            1.2
+          ]
+        },
+        {
+          "id": "treasure-B3",
+          "party": [
+            179,
+            442,
+            42,
+            622
+          ],
+          "mean": 2.05,
+          "min": 1.5,
+          "max": 3.2,
+          "variance": 0.22944444444444448,
+          "sd": 0.47900359543999715,
+          "above": 10,
+          "anchorMeans": [
+            2.3,
+            1.8,
+            1.8,
+            2.1,
+            2.2,
+            3.2,
+            1.9,
+            2.1,
+            1.6,
+            1.5
+          ]
+        },
+        {
+          "id": "treasure-B4",
+          "party": [
+            389,
+            46,
+            130,
+            892
+          ],
+          "mean": 1.99,
+          "min": 1.4,
+          "max": 2.9,
+          "variance": 0.26322222222222225,
+          "sd": 0.5130518708885313,
+          "above": 10,
+          "anchorMeans": [
+            1.4,
+            1.6,
+            1.9,
+            2.3,
+            2.5,
+            1.4,
+            2.2,
+            1.5,
+            2.2,
+            2.9
+          ]
+        },
+        {
+          "id": "treasure-B5",
+          "party": [
+            282,
+            732,
+            650,
+            164
+          ],
+          "mean": 0.33999999999999997,
+          "min": 0.1,
+          "max": 0.7,
+          "variance": 0.03822222222222222,
+          "sd": 0.19550504398153573,
+          "above": 0,
+          "anchorMeans": [
+            0.7,
+            0.2,
+            0.1,
+            0.4,
+            0.3,
+            0.6,
+            0.3,
+            0.3,
+            0.4,
+            0.1
+          ]
+        }
+      ],
+      "decomposition": {
+        "grand": 1.436,
+        "conditionalAnchorVariance": 0.1784,
+        "conditionalBackgroundVariance": 0.6186,
+        "rowMeanVariance": 0.04913777777777778,
+        "columnMeanVariance": 0.47317999999999993,
+        "SS": {
+          "anchor": 2.2112000000000003,
+          "background": 18.927200000000003,
+          "interactionAndFiniteMapNoise": 5.8168,
+          "total": 26.9552
+        },
+        "df": {
+          "anchor": 9,
+          "background": 4,
+          "residual": 36
+        },
+        "MS": {
+          "anchor": 0.24568888888888893,
+          "background": 4.731800000000001,
+          "residual": 0.16157777777777776
+        },
+        "componentUntruncated": {
+          "anchor": 0.01682222222222223,
+          "background": 0.45702222222222233,
+          "residual": 0.16157777777777776
+        },
+        "componentNonnegative": {
+          "anchor": 0.01682222222222223,
+          "background": 0.45702222222222233,
+          "residual": 0.16157777777777776
+        },
+        "rows": [
+          1.5,
+          1.0,
+          1.34,
+          1.7,
+          1.6400000000000001,
+          1.58,
+          1.64,
+          1.2,
+          1.42,
+          1.34
+        ],
+        "columns": [
+          1.45,
+          1.35,
+          2.05,
+          1.99,
+          0.33999999999999997
+        ]
+      },
+      "leaveOneBackground": [
+        {
+          "grand": 1.4325,
+          "conditionalAnchorVariance": 0.17286111111111113,
+          "conditionalBackgroundVariance": 0.7915833333333333,
+          "rowMeanVariance": 0.03889583333333333,
+          "columnMeanVariance": 0.630825,
+          "SS": {
+            "anchor": 1.40025,
+            "background": 18.924750000000003,
+            "interactionAndFiniteMapNoise": 4.82275,
+            "total": 25.14775
+          },
+          "df": {
+            "anchor": 9,
+            "background": 3,
+            "residual": 27
+          },
+          "MS": {
+            "anchor": 0.15558333333333332,
+            "background": 6.308250000000001,
+            "residual": 0.17862037037037037
+          },
+          "componentUntruncated": {
+            "anchor": -0.005759259259259263,
+            "background": 0.612962962962963,
+            "residual": 0.17862037037037037
+          },
+          "componentNonnegative": {
+            "anchor": 0,
+            "background": 0.612962962962963,
+            "residual": 0.17862037037037037
+          },
+          "rows": [
+            1.4,
+            1.075,
+            1.35,
+            1.7,
+            1.55,
+            1.675,
+            1.575,
+            1.225,
+            1.35,
+            1.425
+          ],
+          "columns": [
+            1.35,
+            2.05,
+            1.99,
+            0.33999999999999997
+          ]
+        },
+        {
+          "grand": 1.4575,
+          "conditionalAnchorVariance": 0.1828611111111111,
+          "conditionalBackgroundVariance": 0.7950833333333334,
+          "rowMeanVariance": 0.04347916666666667,
+          "columnMeanVariance": 0.627825,
+          "SS": {
+            "anchor": 1.5652500000000003,
+            "background": 18.83475,
+            "interactionAndFiniteMapNoise": 5.01775,
+            "total": 25.41775
+          },
+          "df": {
+            "anchor": 9,
+            "background": 3,
+            "residual": 27
+          },
+          "MS": {
+            "anchor": 0.1739166666666667,
+            "background": 6.27825,
+            "residual": 0.18584259259259261
+          },
+          "componentUntruncated": {
+            "anchor": -0.002981481481481481,
+            "background": 0.6092407407407407,
+            "residual": 0.18584259259259261
+          },
+          "componentNonnegative": {
+            "anchor": 0,
+            "background": 0.6092407407407407,
+            "residual": 0.18584259259259261
+          },
+          "rows": [
+            1.575,
+            1.075,
+            1.275,
+            1.625,
+            1.75,
+            1.6,
+            1.575,
+            1.25,
+            1.475,
+            1.375
+          ],
+          "columns": [
+            1.45,
+            2.05,
+            1.99,
+            0.33999999999999997
+          ]
+        },
+        {
+          "grand": 1.2825,
+          "conditionalAnchorVariance": 0.1656388888888889,
+          "conditionalBackgroundVariance": 0.5945833333333334,
+          "rowMeanVariance": 0.06500694444444442,
+          "columnMeanVariance": 0.473825,
+          "SS": {
+            "anchor": 2.3402499999999993,
+            "background": 14.21475,
+            "interactionAndFiniteMapNoise": 3.6227499999999995,
+            "total": 20.17775
+          },
+          "df": {
+            "anchor": 9,
+            "background": 3,
+            "residual": 27
+          },
+          "MS": {
+            "anchor": 0.2600277777777777,
+            "background": 4.73825,
+            "residual": 0.1341759259259259
+          },
+          "componentUntruncated": {
+            "anchor": 0.03146296296296295,
+            "background": 0.4604074074074074,
+            "residual": 0.1341759259259259
+          },
+          "componentNonnegative": {
+            "anchor": 0.03146296296296295,
+            "background": 0.4604074074074074,
+            "residual": 0.1341759259259259
+          },
+          "rows": [
+            1.2999999999999998,
+            0.8,
+            1.225,
+            1.5999999999999999,
+            1.5,
+            1.175,
+            1.575,
+            0.975,
+            1.375,
+            1.3
+          ],
+          "columns": [
+            1.45,
+            1.35,
+            1.99,
+            0.33999999999999997
+          ]
+        },
+        {
+          "grand": 1.2975,
+          "conditionalAnchorVariance": 0.15719444444444444,
+          "conditionalBackgroundVariance": 0.6055833333333334,
+          "rowMeanVariance": 0.07172916666666668,
+          "columnMeanVariance": 0.5030249999999999,
+          "SS": {
+            "anchor": 2.58225,
+            "background": 15.090749999999996,
+            "interactionAndFiniteMapNoise": 3.07675,
+            "total": 20.74975
+          },
+          "df": {
+            "anchor": 9,
+            "background": 3,
+            "residual": 27
+          },
+          "MS": {
+            "anchor": 0.2869166666666667,
+            "background": 5.030249999999999,
+            "residual": 0.11395370370370371
+          },
+          "componentUntruncated": {
+            "anchor": 0.043240740740740746,
+            "background": 0.4916296296296295,
+            "residual": 0.11395370370370371
+          },
+          "componentNonnegative": {
+            "anchor": 0.043240740740740746,
+            "background": 0.4916296296296295,
+            "residual": 0.11395370370370371
+          },
+          "rows": [
+            1.525,
+            0.85,
+            1.2,
+            1.55,
+            1.425,
+            1.625,
+            1.5,
+            1.125,
+            1.225,
+            0.95
+          ],
+          "columns": [
+            1.45,
+            1.35,
+            2.05,
+            0.33999999999999997
+          ]
+        },
+        {
+          "grand": 1.71,
+          "conditionalAnchorVariance": 0.21344444444444446,
+          "conditionalBackgroundVariance": 0.3061666666666667,
+          "rowMeanVariance": 0.06697222222222222,
+          "columnMeanVariance": 0.13039999999999993,
+          "SS": {
+            "anchor": 2.411,
+            "background": 3.911999999999998,
+            "interactionAndFiniteMapNoise": 5.273000000000001,
+            "total": 11.596000000000002
+          },
+          "df": {
+            "anchor": 9,
+            "background": 3,
+            "residual": 27
+          },
+          "MS": {
+            "anchor": 0.2678888888888889,
+            "background": 1.3039999999999994,
+            "residual": 0.19529629629629633
+          },
+          "componentUntruncated": {
+            "anchor": 0.018148148148148142,
+            "background": 0.11087037037037031,
+            "residual": 0.19529629629629633
+          },
+          "componentNonnegative": {
+            "anchor": 0.018148148148148142,
+            "background": 0.11087037037037031,
+            "residual": 0.19529629629629633
+          },
+          "rows": [
+            1.7,
+            1.2,
+            1.65,
+            2.025,
+            1.975,
+            1.825,
+            1.975,
+            1.425,
+            1.675,
+            1.65
+          ],
+          "columns": [
+            1.45,
+            1.35,
+            2.05,
+            1.99
+          ]
+        }
+      ],
+      "leaveOneAnchor": [
+        {
+          "grand": 1.4288888888888889,
+          "conditionalAnchorVariance": 0.17944444444444446,
+          "conditionalBackgroundVariance": 0.6445555555555555,
+          "rowMeanVariance": 0.05471111111111111,
+          "columnMeanVariance": 0.5059629629629628,
+          "SS": {
+            "anchor": 2.1884444444444444,
+            "background": 18.214666666666663,
+            "interactionAndFiniteMapNoise": 4.989333333333334,
+            "total": 25.392444444444447
+          },
+          "df": {
+            "anchor": 8,
+            "background": 4,
+            "residual": 32
+          },
+          "MS": {
+            "anchor": 0.27355555555555555,
+            "background": 4.553666666666666,
+            "residual": 0.15591666666666668
+          },
+          "componentUntruncated": {
+            "anchor": 0.023527777777777776,
+            "background": 0.48863888888888884,
+            "residual": 0.15591666666666668
+          },
+          "componentNonnegative": {
+            "anchor": 0.023527777777777776,
+            "background": 0.48863888888888884,
+            "residual": 0.15591666666666668
+          },
+          "rows": [
+            1.0,
+            1.34,
+            1.7,
+            1.6400000000000001,
+            1.58,
+            1.64,
+            1.2,
+            1.42,
+            1.34
+          ],
+          "columns": [
+            1.4,
+            1.3666666666666667,
+            2.022222222222222,
+            2.0555555555555554,
+            0.3
+          ]
+        },
+        {
+          "grand": 1.4844444444444445,
+          "conditionalAnchorVariance": 0.16683333333333333,
+          "conditionalBackgroundVariance": 0.6367777777777778,
+          "rowMeanVariance": 0.028877777777777777,
+          "columnMeanVariance": 0.4834938271604938,
+          "SS": {
+            "anchor": 1.155111111111111,
+            "background": 17.40577777777778,
+            "interactionAndFiniteMapNoise": 5.518222222222223,
+            "total": 24.07911111111111
+          },
+          "df": {
+            "anchor": 8,
+            "background": 4,
+            "residual": 32
+          },
+          "MS": {
+            "anchor": 0.14438888888888887,
+            "background": 4.351444444444445,
+            "residual": 0.17244444444444446
+          },
+          "componentUntruncated": {
+            "anchor": -0.005611111111111117,
+            "background": 0.4643333333333334,
+            "residual": 0.17244444444444446
+          },
+          "componentNonnegative": {
+            "anchor": 0,
+            "background": 0.4643333333333334,
+            "residual": 0.17244444444444446
+          },
+          "rows": [
+            1.5,
+            1.34,
+            1.7,
+            1.6400000000000001,
+            1.58,
+            1.64,
+            1.2,
+            1.42,
+            1.34
+          ],
+          "columns": [
+            1.5333333333333332,
+            1.4222222222222223,
+            2.077777777777778,
+            2.033333333333333,
+            0.35555555555555557
+          ]
+        },
+        {
+          "grand": 1.4466666666666668,
+          "conditionalAnchorVariance": 0.19477777777777777,
+          "conditionalBackgroundVariance": 0.6281111111111112,
+          "rowMeanVariance": 0.054,
+          "columnMeanVariance": 0.4716913580246914,
+          "SS": {
+            "anchor": 2.16,
+            "background": 16.980888888888888,
+            "interactionAndFiniteMapNoise": 5.631111111111111,
+            "total": 24.772
+          },
+          "df": {
+            "anchor": 8,
+            "background": 4,
+            "residual": 32
+          },
+          "MS": {
+            "anchor": 0.27,
+            "background": 4.245222222222222,
+            "residual": 0.17597222222222222
+          },
+          "componentUntruncated": {
+            "anchor": 0.018805555555555558,
+            "background": 0.4521388888888888,
+            "residual": 0.17597222222222222
+          },
+          "componentNonnegative": {
+            "anchor": 0.018805555555555558,
+            "background": 0.4521388888888888,
+            "residual": 0.17597222222222222
+          },
+          "rows": [
+            1.5,
+            1.0,
+            1.7,
+            1.6400000000000001,
+            1.58,
+            1.64,
+            1.2,
+            1.42,
+            1.34
+          ],
+          "columns": [
+            1.4666666666666666,
+            1.3222222222222222,
+            2.077777777777778,
+            2.0,
+            0.36666666666666664
+          ]
+        },
+        {
+          "grand": 1.4066666666666667,
+          "conditionalAnchorVariance": 0.1843888888888889,
+          "conditionalBackgroundVariance": 0.6234444444444445,
+          "rowMeanVariance": 0.0456,
+          "columnMeanVariance": 0.4692345679012345,
+          "SS": {
+            "anchor": 1.824,
+            "background": 16.892444444444443,
+            "interactionAndFiniteMapNoise": 5.551555555555555,
+            "total": 24.268
+          },
+          "df": {
+            "anchor": 8,
+            "background": 4,
+            "residual": 32
+          },
+          "MS": {
+            "anchor": 0.228,
+            "background": 4.223111111111111,
+            "residual": 0.1734861111111111
+          },
+          "componentUntruncated": {
+            "anchor": 0.010902777777777784,
+            "background": 0.4499583333333333,
+            "residual": 0.1734861111111111
+          },
+          "componentNonnegative": {
+            "anchor": 0.010902777777777784,
+            "background": 0.4499583333333333,
+            "residual": 0.1734861111111111
+          },
+          "rows": [
+            1.5,
+            1.0,
+            1.34,
+            1.6400000000000001,
+            1.58,
+            1.64,
+            1.2,
+            1.42,
+            1.34
+          ],
+          "columns": [
+            1.4222222222222223,
+            1.2777777777777777,
+            2.0444444444444443,
+            1.9555555555555555,
+            0.3333333333333333
+          ]
+        },
+        {
+          "grand": 1.4133333333333333,
+          "conditionalAnchorVariance": 0.1837777777777778,
+          "conditionalBackgroundVariance": 0.5992222222222222,
+          "rowMeanVariance": 0.049499999999999995,
+          "columnMeanVariance": 0.45002469135802464,
+          "SS": {
+            "anchor": 1.9799999999999998,
+            "background": 16.20088888888889,
+            "interactionAndFiniteMapNoise": 5.3711111111111105,
+            "total": 23.552
+          },
+          "df": {
+            "anchor": 8,
+            "background": 4,
+            "residual": 32
+          },
+          "MS": {
+            "anchor": 0.24749999999999997,
+            "background": 4.050222222222223,
+            "residual": 0.1678472222222222
+          },
+          "componentUntruncated": {
+            "anchor": 0.015930555555555552,
+            "background": 0.43137500000000006,
+            "residual": 0.1678472222222222
+          },
+          "componentNonnegative": {
+            "anchor": 0.015930555555555552,
+            "background": 0.43137500000000006,
+            "residual": 0.1678472222222222
+          },
+          "rows": [
+            1.5,
+            1.0,
+            1.34,
+            1.7,
+            1.58,
+            1.64,
+            1.2,
+            1.42,
+            1.34
+          ],
+          "columns": [
+            1.3888888888888888,
+            1.3666666666666667,
+            2.033333333333333,
+            1.9333333333333333,
+            0.34444444444444444
+          ]
+        },
+        {
+          "grand": 1.42,
+          "conditionalAnchorVariance": 0.15005555555555555,
+          "conditionalBackgroundVariance": 0.5826666666666667,
+          "rowMeanVariance": 0.052399999999999995,
+          "columnMeanVariance": 0.47416049382716047,
+          "SS": {
+            "anchor": 2.096,
+            "background": 17.069777777777773,
+            "interactionAndFiniteMapNoise": 3.906222222222222,
+            "total": 23.072
+          },
+          "df": {
+            "anchor": 8,
+            "background": 4,
+            "residual": 32
+          },
+          "MS": {
+            "anchor": 0.262,
+            "background": 4.267444444444443,
+            "residual": 0.12206944444444444
+          },
+          "componentUntruncated": {
+            "anchor": 0.02798611111111111,
+            "background": 0.4605972222222221,
+            "residual": 0.12206944444444444
+          },
+          "componentNonnegative": {
+            "anchor": 0.02798611111111111,
+            "background": 0.4605972222222221,
+            "residual": 0.12206944444444444
+          },
+          "rows": [
+            1.5,
+            1.0,
+            1.34,
+            1.7,
+            1.6400000000000001,
+            1.64,
+            1.2,
+            1.42,
+            1.34
+          ],
+          "columns": [
+            1.4777777777777779,
+            1.3333333333333333,
+            1.9222222222222223,
+            2.0555555555555554,
+            0.3111111111111111
+          ]
+        },
+        {
+          "grand": 1.4133333333333333,
+          "conditionalAnchorVariance": 0.18477777777777776,
+          "conditionalBackgroundVariance": 0.6231111111111112,
+          "rowMeanVariance": 0.04950000000000001,
+          "columnMeanVariance": 0.4728024691358025,
+          "SS": {
+            "anchor": 1.98,
+            "background": 17.02088888888889,
+            "interactionAndFiniteMapNoise": 5.4111111111111105,
+            "total": 24.412
+          },
+          "df": {
+            "anchor": 8,
+            "background": 4,
+            "residual": 32
+          },
+          "MS": {
+            "anchor": 0.2475,
+            "background": 4.255222222222223,
+            "residual": 0.1690972222222222
+          },
+          "componentUntruncated": {
+            "anchor": 0.01568055555555556,
+            "background": 0.454013888888889,
+            "residual": 0.1690972222222222
+          },
+          "componentNonnegative": {
+            "anchor": 0.01568055555555556,
+            "background": 0.454013888888889,
+            "residual": 0.1690972222222222
+          },
+          "rows": [
+            1.5,
+            1.0,
+            1.34,
+            1.7,
+            1.6400000000000001,
+            1.58,
+            1.2,
+            1.42,
+            1.34
+          ],
+          "columns": [
+            1.4,
+            1.288888888888889,
+            2.066666666666667,
+            1.9666666666666666,
+            0.34444444444444444
+          ]
+        },
+        {
+          "grand": 1.4622222222222223,
+          "conditionalAnchorVariance": 0.18711111111111112,
+          "conditionalBackgroundVariance": 0.6384444444444445,
+          "rowMeanVariance": 0.04754444444444444,
+          "columnMeanVariance": 0.4833703703703703,
+          "SS": {
+            "anchor": 1.9017777777777776,
+            "background": 17.401333333333334,
+            "interactionAndFiniteMapNoise": 5.582666666666667,
+            "total": 24.88577777777778
+          },
+          "df": {
+            "anchor": 8,
+            "background": 4,
+            "residual": 32
+          },
+          "MS": {
+            "anchor": 0.2377222222222222,
+            "background": 4.350333333333333,
+            "residual": 0.17445833333333335
+          },
+          "componentUntruncated": {
+            "anchor": 0.012652777777777768,
+            "background": 0.46398611111111115,
+            "residual": 0.17445833333333335
+          },
+          "componentNonnegative": {
+            "anchor": 0.012652777777777768,
+            "background": 0.46398611111111115,
+            "residual": 0.17445833333333335
+          },
+          "rows": [
+            1.5,
+            1.0,
+            1.34,
+            1.7,
+            1.6400000000000001,
+            1.58,
+            1.64,
+            1.42,
+            1.34
+          ],
+          "columns": [
+            1.488888888888889,
+            1.3888888888888888,
+            2.0444444444444443,
+            2.0444444444444443,
+            0.34444444444444444
+          ]
+        },
+        {
+          "grand": 1.4377777777777778,
+          "conditionalAnchorVariance": 0.1913888888888889,
+          "conditionalBackgroundVariance": 0.6371111111111112,
+          "rowMeanVariance": 0.05524444444444444,
+          "columnMeanVariance": 0.4858395061728395,
+          "SS": {
+            "anchor": 2.2097777777777776,
+            "background": 17.490222222222222,
+            "interactionAndFiniteMapNoise": 5.445777777777777,
+            "total": 25.145777777777777
+          },
+          "df": {
+            "anchor": 8,
+            "background": 4,
+            "residual": 32
+          },
+          "MS": {
+            "anchor": 0.2762222222222222,
+            "background": 4.3725555555555555,
+            "residual": 0.17018055555555553
+          },
+          "componentUntruncated": {
+            "anchor": 0.021208333333333336,
+            "background": 0.46693055555555557,
+            "residual": 0.17018055555555553
+          },
+          "componentNonnegative": {
+            "anchor": 0.021208333333333336,
+            "background": 0.46693055555555557,
+            "residual": 0.17018055555555553
+          },
+          "rows": [
+            1.5,
+            1.0,
+            1.34,
+            1.7,
+            1.6400000000000001,
+            1.58,
+            1.64,
+            1.2,
+            1.34
+          ],
+          "columns": [
+            1.4222222222222223,
+            1.3666666666666667,
+            2.1,
+            1.9666666666666666,
+            0.3333333333333333
+          ]
+        },
+        {
+          "grand": 1.4466666666666668,
+          "conditionalAnchorVariance": 0.16144444444444445,
+          "conditionalBackgroundVariance": 0.5725555555555556,
+          "rowMeanVariance": 0.054,
+          "columnMeanVariance": 0.4531728395061729,
+          "SS": {
+            "anchor": 2.16,
+            "background": 16.31422222222222,
+            "interactionAndFiniteMapNoise": 4.297777777777778,
+            "total": 22.772
+          },
+          "df": {
+            "anchor": 8,
+            "background": 4,
+            "residual": 32
+          },
+          "MS": {
+            "anchor": 0.27,
+            "background": 4.078555555555555,
+            "residual": 0.13430555555555557
+          },
+          "componentUntruncated": {
+            "anchor": 0.02713888888888889,
+            "background": 0.4382499999999999,
+            "residual": 0.13430555555555557
+          },
+          "componentNonnegative": {
+            "anchor": 0.02713888888888889,
+            "background": 0.4382499999999999,
+            "residual": 0.13430555555555557
+          },
+          "rows": [
+            1.5,
+            1.0,
+            1.34,
+            1.7,
+            1.6400000000000001,
+            1.58,
+            1.64,
+            1.2,
+            1.42
+          ],
+          "columns": [
+            1.5,
+            1.3666666666666667,
+            2.111111111111111,
+            1.8888888888888888,
+            0.36666666666666664
+          ]
+        }
+      ],
+      "originalScoreVsMeanSpearman": 0.060790554368006455,
+      "anchorRanksAcrossBackgroundCorrelations": [
+        0.44668225242658943,
+        0.42024539877300615,
+        0.1687116564417178,
+        0.45966279700101,
+        0.15099118391884714,
+        0.2264867758782707,
+        0.1719884778657094,
+        -0.5337423312883436,
+        0.6957058549204476,
+        -0.4751919455483414
+      ],
+      "above": 38,
+      "teams": 50,
+      "minimum": 0.1,
+      "maximum": 3.2,
+      "previousAbove": 18,
+      "pairedAnchorDifferences": [
+        {
+          "first": 91,
+          "second": 859,
+          "differences": [
+            1.2,
+            0.5,
+            0.4999999999999998,
+            -0.20000000000000018,
+            0.49999999999999994
+          ],
+          "meanDifference": 0.4999999999999999
+        },
+        {
+          "first": 91,
+          "second": 95,
+          "differences": [
+            0.5999999999999999,
+            -0.40000000000000013,
+            0.4999999999999998,
+            -0.5,
+            0.6
+          ],
+          "meanDifference": 0.1599999999999999
+        },
+        {
+          "first": 91,
+          "second": 67,
+          "differences": [
+            0.19999999999999996,
+            -0.8,
+            0.19999999999999973,
+            -0.8999999999999999,
+            0.29999999999999993
+          ],
+          "meanDifference": -0.20000000000000007
+        },
+        {
+          "first": 91,
+          "second": 434,
+          "differences": [
+            -0.10000000000000009,
+            0.0,
+            0.09999999999999964,
+            -1.1,
+            0.39999999999999997
+          ],
+          "meanDifference": -0.14000000000000012
+        },
+        {
+          "first": 91,
+          "second": 826,
+          "differences": [
+            0.7,
+            -0.30000000000000004,
+            -0.9000000000000004,
+            0.0,
+            0.09999999999999998
+          ],
+          "meanDifference": -0.0800000000000001
+        },
+        {
+          "first": 91,
+          "second": 565,
+          "differences": [
+            0.0,
+            -0.7,
+            0.3999999999999999,
+            -0.8000000000000003,
+            0.39999999999999997
+          ],
+          "meanDifference": -0.14000000000000007
+        },
+        {
+          "first": 91,
+          "second": 824,
+          "differences": [
+            0.7999999999999998,
+            0.19999999999999996,
+            0.19999999999999973,
+            -0.10000000000000009,
+            0.39999999999999997
+          ],
+          "meanDifference": 0.2999999999999999
+        },
+        {
+          "first": 91,
+          "second": 176,
+          "differences": [
+            0.19999999999999996,
+            0.0,
+            0.6999999999999997,
+            -0.8000000000000003,
+            0.29999999999999993
+          ],
+          "meanDifference": 0.07999999999999988
+        },
+        {
+          "first": 91,
+          "second": 13,
+          "differences": [
+            0.8999999999999999,
+            0.0,
+            0.7999999999999998,
+            -1.5,
+            0.6
+          ],
+          "meanDifference": 0.15999999999999995
+        },
+        {
+          "first": 859,
+          "second": 95,
+          "differences": [
+            -0.6000000000000001,
+            -0.9000000000000001,
+            0.0,
+            -0.2999999999999998,
+            0.1
+          ],
+          "meanDifference": -0.34
+        },
+        {
+          "first": 859,
+          "second": 67,
+          "differences": [
+            -1.0,
+            -1.3,
+            -0.30000000000000004,
+            -0.6999999999999997,
+            -0.2
+          ],
+          "meanDifference": -0.7
+        },
+        {
+          "first": 859,
+          "second": 434,
+          "differences": [
+            -1.3,
+            -0.5,
+            -0.40000000000000013,
+            -0.8999999999999999,
+            -0.09999999999999998
+          ],
+          "meanDifference": -0.64
+        },
+        {
+          "first": 859,
+          "second": 826,
+          "differences": [
+            -0.5,
+            -0.8,
+            -1.4000000000000001,
+            0.20000000000000018,
+            -0.39999999999999997
+          ],
+          "meanDifference": -0.58
+        },
+        {
+          "first": 859,
+          "second": 565,
+          "differences": [
+            -1.2,
+            -1.2,
+            -0.09999999999999987,
+            -0.6000000000000001,
+            -0.09999999999999998
+          ],
+          "meanDifference": -0.64
+        },
+        {
+          "first": 859,
+          "second": 824,
+          "differences": [
+            -0.40000000000000013,
+            -0.30000000000000004,
+            -0.30000000000000004,
+            0.10000000000000009,
+            -0.09999999999999998
+          ],
+          "meanDifference": -0.2
+        },
+        {
+          "first": 859,
+          "second": 176,
+          "differences": [
+            -1.0,
+            -0.5,
+            0.19999999999999996,
+            -0.6000000000000001,
+            -0.2
+          ],
+          "meanDifference": -0.42000000000000004
+        },
+        {
+          "first": 859,
+          "second": 13,
+          "differences": [
+            -0.30000000000000004,
+            -0.5,
+            0.30000000000000004,
+            -1.2999999999999998,
+            0.1
+          ],
+          "meanDifference": -0.33999999999999997
+        },
+        {
+          "first": 95,
+          "second": 67,
+          "differences": [
+            -0.3999999999999999,
+            -0.3999999999999999,
+            -0.30000000000000004,
+            -0.3999999999999999,
+            -0.30000000000000004
+          ],
+          "meanDifference": -0.36
+        },
+        {
+          "first": 95,
+          "second": 434,
+          "differences": [
+            -0.7,
+            0.40000000000000013,
+            -0.40000000000000013,
+            -0.6000000000000001,
+            -0.19999999999999998
+          ],
+          "meanDifference": -0.3
+        },
+        {
+          "first": 95,
+          "second": 826,
+          "differences": [
+            0.10000000000000009,
+            0.10000000000000009,
+            -1.4000000000000001,
+            0.5,
+            -0.5
+          ],
+          "meanDifference": -0.24
+        },
+        {
+          "first": 95,
+          "second": 565,
+          "differences": [
+            -0.5999999999999999,
+            -0.2999999999999998,
+            -0.09999999999999987,
+            -0.30000000000000027,
+            -0.19999999999999998
+          ],
+          "meanDifference": -0.29999999999999993
+        },
+        {
+          "first": 95,
+          "second": 824,
+          "differences": [
+            0.19999999999999996,
+            0.6000000000000001,
+            -0.30000000000000004,
+            0.3999999999999999,
+            -0.19999999999999998
+          ],
+          "meanDifference": 0.13999999999999999
+        },
+        {
+          "first": 95,
+          "second": 176,
+          "differences": [
+            -0.3999999999999999,
+            0.40000000000000013,
+            0.19999999999999996,
+            -0.30000000000000027,
+            -0.30000000000000004
+          ],
+          "meanDifference": -0.08000000000000003
+        },
+        {
+          "first": 95,
+          "second": 13,
+          "differences": [
+            0.30000000000000004,
+            0.40000000000000013,
+            0.30000000000000004,
+            -1.0,
+            0.0
+          ],
+          "meanDifference": 4.4408920985006264e-17
+        },
+        {
+          "first": 67,
+          "second": 434,
+          "differences": [
+            -0.30000000000000004,
+            0.8,
+            -0.10000000000000009,
+            -0.20000000000000018,
+            0.10000000000000003
+          ],
+          "meanDifference": 0.059999999999999956
+        },
+        {
+          "first": 67,
+          "second": 826,
+          "differences": [
+            0.5,
+            0.5,
+            -1.1,
+            0.8999999999999999,
+            -0.19999999999999996
+          ],
+          "meanDifference": 0.11999999999999997
+        },
+        {
+          "first": 67,
+          "second": 565,
+          "differences": [
+            -0.19999999999999996,
+            0.10000000000000009,
+            0.20000000000000018,
+            0.09999999999999964,
+            0.10000000000000003
+          ],
+          "meanDifference": 0.06
+        },
+        {
+          "first": 67,
+          "second": 824,
+          "differences": [
+            0.5999999999999999,
+            1,
+            0.0,
+            0.7999999999999998,
+            0.10000000000000003
+          ],
+          "meanDifference": 0.49999999999999994
+        },
+        {
+          "first": 67,
+          "second": 176,
+          "differences": [
+            0.0,
+            0.8,
+            0.5,
+            0.09999999999999964,
+            0.0
+          ],
+          "meanDifference": 0.2799999999999999
+        },
+        {
+          "first": 67,
+          "second": 13,
+          "differences": [
+            0.7,
+            0.8,
+            0.6000000000000001,
+            -0.6000000000000001,
+            0.30000000000000004
+          ],
+          "meanDifference": 0.36
+        },
+        {
+          "first": 434,
+          "second": 826,
+          "differences": [
+            0.8,
+            -0.30000000000000004,
+            -1.0,
+            1.1,
+            -0.3
+          ],
+          "meanDifference": 0.06000000000000002
+        },
+        {
+          "first": 434,
+          "second": 565,
+          "differences": [
+            0.10000000000000009,
+            -0.7,
+            0.30000000000000027,
+            0.2999999999999998,
+            0.0
+          ],
+          "meanDifference": 4.4408920985006264e-17
+        },
+        {
+          "first": 434,
+          "second": 824,
+          "differences": [
+            0.8999999999999999,
+            0.19999999999999996,
+            0.10000000000000009,
+            1.0,
+            0.0
+          ],
+          "meanDifference": 0.44
+        },
+        {
+          "first": 434,
+          "second": 176,
+          "differences": [
+            0.30000000000000004,
+            0.0,
+            0.6000000000000001,
+            0.2999999999999998,
+            -0.10000000000000003
+          ],
+          "meanDifference": 0.21999999999999997
+        },
+        {
+          "first": 434,
+          "second": 13,
+          "differences": [
+            1,
+            0.0,
+            0.7000000000000002,
+            -0.3999999999999999,
+            0.19999999999999998
+          ],
+          "meanDifference": 0.30000000000000004
+        },
+        {
+          "first": 826,
+          "second": 565,
+          "differences": [
+            -0.7,
+            -0.3999999999999999,
+            1.3000000000000003,
+            -0.8000000000000003,
+            0.3
+          ],
+          "meanDifference": -0.05999999999999998
+        },
+        {
+          "first": 826,
+          "second": 824,
+          "differences": [
+            0.09999999999999987,
+            0.5,
+            1.1,
+            -0.10000000000000009,
+            0.3
+          ],
+          "meanDifference": 0.37999999999999995
+        },
+        {
+          "first": 826,
+          "second": 176,
+          "differences": [
+            -0.5,
+            0.30000000000000004,
+            1.6,
+            -0.8000000000000003,
+            0.19999999999999996
+          ],
+          "meanDifference": 0.15999999999999998
+        },
+        {
+          "first": 826,
+          "second": 13,
+          "differences": [
+            0.19999999999999996,
+            0.30000000000000004,
+            1.7000000000000002,
+            -1.5,
+            0.5
+          ],
+          "meanDifference": 0.24000000000000005
+        },
+        {
+          "first": 565,
+          "second": 824,
+          "differences": [
+            0.7999999999999998,
+            0.8999999999999999,
+            -0.20000000000000018,
+            0.7000000000000002,
+            0.0
+          ],
+          "meanDifference": 0.43999999999999995
+        },
+        {
+          "first": 565,
+          "second": 176,
+          "differences": [
+            0.19999999999999996,
+            0.7,
+            0.2999999999999998,
+            0.0,
+            -0.10000000000000003
+          ],
+          "meanDifference": 0.21999999999999995
+        },
+        {
+          "first": 565,
+          "second": 13,
+          "differences": [
+            0.8999999999999999,
+            0.7,
+            0.3999999999999999,
+            -0.6999999999999997,
+            0.19999999999999998
+          ],
+          "meanDifference": 0.3
+        },
+        {
+          "first": 824,
+          "second": 176,
+          "differences": [
+            -0.5999999999999999,
+            -0.19999999999999996,
+            0.5,
+            -0.7000000000000002,
+            -0.10000000000000003
+          ],
+          "meanDifference": -0.22
+        },
+        {
+          "first": 824,
+          "second": 13,
+          "differences": [
+            0.10000000000000009,
+            -0.19999999999999996,
+            0.6000000000000001,
+            -1.4,
+            0.19999999999999998
+          ],
+          "meanDifference": -0.13999999999999993
+        },
+        {
+          "first": 176,
+          "second": 13,
+          "differences": [
+            0.7,
+            0.0,
+            0.10000000000000009,
+            -0.6999999999999997,
+            0.30000000000000004
+          ],
+          "meanDifference": 0.08000000000000007
+        }
+      ]
+    },
+    "companion": {
+      "baseline": 0.774,
+      "matrix": [
+        [
+          1.6,
+          0.8,
+          1.7,
+          0.6,
+          2.1
+        ],
+        [
+          1.9,
+          0.9,
+          1.5,
+          0.6,
+          2.3
+        ],
+        [
+          1.9,
+          0.4,
+          2.2,
+          0.5,
+          1.6
+        ],
+        [
+          1.9,
+          0.9,
+          1.3,
+          0.4,
+          2.3
+        ],
+        [
+          1.6,
+          0.6,
+          1.3,
+          1,
+          1.7
+        ],
+        [
+          1.6,
+          0.6,
+          1.3,
+          1,
+          1.7
+        ],
+        [
+          1.4,
+          1,
+          1.2,
+          0.8,
+          1.4
+        ],
+        [
+          1.7,
+          1,
+          1.3,
+          0.5,
+          2.3
+        ],
+        [
+          1.9,
+          0.9,
+          1.7,
+          0.6,
+          2.2
+        ],
+        [
+          1.9,
+          0.9,
+          1.7,
+          0.6,
+          2.2
+        ]
+      ],
+      "anchors": [
+        {
+          "id": 295,
+          "score": 0.14361466417638338,
+          "originalRank": 1,
+          "mean": 1.36,
+          "min": 0.6,
+          "max": 2.1,
+          "variance": 0.403,
+          "sd": 0.6348228099241552,
+          "above": 4,
+          "aboveRate": 0.8,
+          "backgroundMeans": [
+            1.6,
+            0.8,
+            1.7,
+            0.6,
+            2.1
+          ],
+          "oldCount": 4,
+          "oldAbove": 2,
+          "oldRange": [
+            0.3,
+            1.4
+          ]
+        },
+        {
+          "id": 202,
+          "score": 0.14163915092814008,
+          "originalRank": 2,
+          "mean": 1.44,
+          "min": 0.6,
+          "max": 2.3,
+          "variance": 0.48799999999999993,
+          "sd": 0.6985699678629191,
+          "above": 4,
+          "aboveRate": 0.8,
+          "backgroundMeans": [
+            1.9,
+            0.9,
+            1.5,
+            0.6,
+            2.3
+          ],
+          "oldCount": 5,
+          "oldAbove": 2,
+          "oldRange": [
+            0.5,
+            2.8
+          ]
+        },
+        {
+          "id": 900,
+          "score": 0.1322882410055202,
+          "originalRank": 3,
+          "mean": 1.32,
+          "min": 0.4,
+          "max": 2.2,
+          "variance": 0.677,
+          "sd": 0.8228000972289685,
+          "above": 3,
+          "aboveRate": 0.6,
+          "backgroundMeans": [
+            1.9,
+            0.4,
+            2.2,
+            0.5,
+            1.6
+          ],
+          "oldCount": 3,
+          "oldAbove": 3,
+          "oldRange": [
+            0.9,
+            1.7
+          ]
+        },
+        {
+          "id": 674,
+          "score": 0.12754387854746976,
+          "originalRank": 4,
+          "mean": 1.3599999999999999,
+          "min": 0.4,
+          "max": 2.3,
+          "variance": 0.5779999999999998,
+          "sd": 0.7602631123499284,
+          "above": 4,
+          "aboveRate": 0.8,
+          "backgroundMeans": [
+            1.9,
+            0.9,
+            1.3,
+            0.4,
+            2.3
+          ],
+          "oldCount": 5,
+          "oldAbove": 2,
+          "oldRange": [
+            0.2,
+            1.3
+          ]
+        },
+        {
+          "id": 712,
+          "score": 0.12638796429037166,
+          "originalRank": 5,
+          "mean": 1.24,
+          "min": 0.6,
+          "max": 1.7,
+          "variance": 0.203,
+          "sd": 0.4505552130427524,
+          "above": 4,
+          "aboveRate": 0.8,
+          "backgroundMeans": [
+            1.6,
+            0.6,
+            1.3,
+            1,
+            1.7
+          ],
+          "oldCount": 1,
+          "oldAbove": 1,
+          "oldRange": [
+            1.4,
+            1.4
+          ]
+        },
+        {
+          "id": 83,
+          "score": 0.12638796429037166,
+          "originalRank": 6,
+          "mean": 1.24,
+          "min": 0.6,
+          "max": 1.7,
+          "variance": 0.203,
+          "sd": 0.4505552130427524,
+          "above": 4,
+          "aboveRate": 0.8,
+          "backgroundMeans": [
+            1.6,
+            0.6,
+            1.3,
+            1,
+            1.7
+          ],
+          "oldCount": 2,
+          "oldAbove": 2,
+          "oldRange": [
+            1.1,
+            1.1
+          ]
+        },
+        {
+          "id": 773,
+          "score": 0.12575823569981268,
+          "originalRank": 7,
+          "mean": 1.16,
+          "min": 0.8,
+          "max": 1.4,
+          "variance": 0.06799999999999996,
+          "sd": 0.26076809620810587,
+          "above": 5,
+          "aboveRate": 1.0,
+          "backgroundMeans": [
+            1.4,
+            1,
+            1.2,
+            0.8,
+            1.4
+          ],
+          "oldCount": 4,
+          "oldAbove": 2,
+          "oldRange": [
+            0.2,
+            1.8
+          ]
+        },
+        {
+          "id": 772,
+          "score": 0.12249957236332118,
+          "originalRank": 8,
+          "mean": 1.3599999999999999,
+          "min": 0.5,
+          "max": 2.3,
+          "variance": 0.4679999999999999,
+          "sd": 0.6841052550594827,
+          "above": 4,
+          "aboveRate": 0.8,
+          "backgroundMeans": [
+            1.7,
+            1,
+            1.3,
+            0.5,
+            2.3
+          ],
+          "oldCount": 1,
+          "oldAbove": 1,
+          "oldRange": [
+            1.5,
+            1.5
+          ]
+        },
+        {
+          "id": 291,
+          "score": 0.12131108587896647,
+          "originalRank": 9,
+          "mean": 1.46,
+          "min": 0.6,
+          "max": 2.2,
+          "variance": 0.463,
+          "sd": 0.68044103344816,
+          "above": 4,
+          "aboveRate": 0.8,
+          "backgroundMeans": [
+            1.9,
+            0.9,
+            1.7,
+            0.6,
+            2.2
+          ],
+          "oldCount": 1,
+          "oldAbove": 0,
+          "oldRange": [
+            0.4,
+            0.4
+          ]
+        },
+        {
+          "id": 310,
+          "score": 0.12131108587896647,
+          "originalRank": 10,
+          "mean": 1.46,
+          "min": 0.6,
+          "max": 2.2,
+          "variance": 0.463,
+          "sd": 0.68044103344816,
+          "above": 4,
+          "aboveRate": 0.8,
+          "backgroundMeans": [
+            1.9,
+            0.9,
+            1.7,
+            0.6,
+            2.2
+          ],
+          "oldCount": 4,
+          "oldAbove": 3,
+          "oldRange": [
+            0.4,
+            2.8
+          ]
+        }
+      ],
+      "backgrounds": [
+        {
+          "id": "companion-B1",
+          "party": [
+            455,
+            622,
+            93,
+            783
+          ],
+          "mean": 1.74,
+          "min": 1.4,
+          "max": 1.9,
+          "variance": 0.03377777777777776,
+          "sd": 0.18378731669453624,
+          "above": 10,
+          "anchorMeans": [
+            1.6,
+            1.9,
+            1.9,
+            1.9,
+            1.6,
+            1.6,
+            1.4,
+            1.7,
+            1.9,
+            1.9
+          ]
+        },
+        {
+          "id": "companion-B2",
+          "party": [
+            7,
+            428,
+            368,
+            335
+          ],
+          "mean": 0.8,
+          "min": 0.4,
+          "max": 1,
+          "variance": 0.04,
+          "sd": 0.2,
+          "above": 7,
+          "anchorMeans": [
+            0.8,
+            0.9,
+            0.4,
+            0.9,
+            0.6,
+            0.6,
+            1,
+            1,
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "id": "companion-B3",
+          "party": [
+            192,
+            226,
+            488,
+            877
+          ],
+          "mean": 1.52,
+          "min": 1.2,
+          "max": 2.2,
+          "variance": 0.09511111111111113,
+          "sd": 0.3084008934992101,
+          "above": 10,
+          "anchorMeans": [
+            1.7,
+            1.5,
+            2.2,
+            1.3,
+            1.3,
+            1.3,
+            1.2,
+            1.3,
+            1.7,
+            1.7
+          ]
+        },
+        {
+          "id": "companion-B4",
+          "party": [
+            204,
+            176,
+            401,
+            635
+          ],
+          "mean": 0.66,
+          "min": 0.4,
+          "max": 1,
+          "variance": 0.042666666666666665,
+          "sd": 0.2065591117977289,
+          "above": 3,
+          "anchorMeans": [
+            0.6,
+            0.6,
+            0.5,
+            0.4,
+            1,
+            1,
+            0.8,
+            0.5,
+            0.6,
+            0.6
+          ]
+        },
+        {
+          "id": "companion-B5",
+          "party": [
+            475,
+            618,
+            253,
+            414
+          ],
+          "mean": 1.98,
+          "min": 1.4,
+          "max": 2.3,
+          "variance": 0.11733333333333333,
+          "sd": 0.34253953543107013,
+          "above": 10,
+          "anchorMeans": [
+            2.1,
+            2.3,
+            1.6,
+            2.3,
+            1.7,
+            1.7,
+            1.4,
+            2.3,
+            2.2,
+            2.2
+          ]
+        }
+      ],
+      "decomposition": {
+        "grand": 1.34,
+        "conditionalAnchorVariance": 0.06577777777777778,
+        "conditionalBackgroundVariance": 0.4014,
+        "rowMeanVariance": 0.010311111111111111,
+        "columnMeanVariance": 0.33899999999999997,
+        "SS": {
+          "anchor": 0.46399999999999997,
+          "background": 13.559999999999999,
+          "interactionAndFiniteMapNoise": 2.496,
+          "total": 16.52
+        },
+        "df": {
+          "anchor": 9,
+          "background": 4,
+          "residual": 36
+        },
+        "MS": {
+          "anchor": 0.05155555555555555,
+          "background": 3.3899999999999997,
+          "residual": 0.06933333333333333
+        },
+        "componentUntruncated": {
+          "anchor": -0.003555555555555556,
+          "background": 0.3320666666666666,
+          "residual": 0.06933333333333333
+        },
+        "componentNonnegative": {
+          "anchor": 0,
+          "background": 0.3320666666666666,
+          "residual": 0.06933333333333333
+        },
+        "rows": [
+          1.36,
+          1.44,
+          1.32,
+          1.3599999999999999,
+          1.24,
+          1.24,
+          1.16,
+          1.3599999999999999,
+          1.46,
+          1.46
+        ],
+        "columns": [
+          1.74,
+          0.8,
+          1.52,
+          0.66,
+          1.98
+        ]
+      },
+      "leaveOneBackground": [
+        {
+          "grand": 1.24,
+          "conditionalAnchorVariance": 0.07377777777777778,
+          "conditionalBackgroundVariance": 0.46366666666666667,
+          "rowMeanVariance": 0.008500000000000004,
+          "columnMeanVariance": 0.3853333333333333,
+          "SS": {
+            "anchor": 0.3060000000000001,
+            "background": 11.559999999999999,
+            "interactionAndFiniteMapNoise": 2.35,
+            "total": 14.216
+          },
+          "df": {
+            "anchor": 9,
+            "background": 3,
+            "residual": 27
+          },
+          "MS": {
+            "anchor": 0.03400000000000001,
+            "background": 3.853333333333333,
+            "residual": 0.08703703703703704
+          },
+          "componentUntruncated": {
+            "anchor": -0.013259259259259257,
+            "background": 0.3766296296296296,
+            "residual": 0.08703703703703704
+          },
+          "componentNonnegative": {
+            "anchor": 0,
+            "background": 0.3766296296296296,
+            "residual": 0.08703703703703704
+          },
+          "rows": [
+            1.3,
+            1.325,
+            1.175,
+            1.225,
+            1.15,
+            1.15,
+            1.1,
+            1.275,
+            1.35,
+            1.35
+          ],
+          "columns": [
+            0.8,
+            1.52,
+            0.66,
+            1.98
+          ]
+        },
+        {
+          "grand": 1.475,
+          "conditionalAnchorVariance": 0.07222222222222222,
+          "conditionalBackgroundVariance": 0.39916666666666667,
+          "rowMeanVariance": 0.01500000000000001,
+          "columnMeanVariance": 0.33049999999999996,
+          "SS": {
+            "anchor": 0.5400000000000004,
+            "background": 9.915,
+            "interactionAndFiniteMapNoise": 2.0599999999999996,
+            "total": 12.515
+          },
+          "df": {
+            "anchor": 9,
+            "background": 3,
+            "residual": 27
+          },
+          "MS": {
+            "anchor": 0.06000000000000004,
+            "background": 3.3049999999999997,
+            "residual": 0.07629629629629628
+          },
+          "componentUntruncated": {
+            "anchor": -0.00407407407407406,
+            "background": 0.32287037037037036,
+            "residual": 0.07629629629629628
+          },
+          "componentNonnegative": {
+            "anchor": 0,
+            "background": 0.32287037037037036,
+            "residual": 0.07629629629629628
+          },
+          "rows": [
+            1.5,
+            1.575,
+            1.55,
+            1.4749999999999999,
+            1.4,
+            1.4,
+            1.2,
+            1.45,
+            1.6,
+            1.6
+          ],
+          "columns": [
+            1.74,
+            1.52,
+            0.66,
+            1.98
+          ]
+        },
+        {
+          "grand": 1.295,
+          "conditionalAnchorVariance": 0.05844444444444444,
+          "conditionalBackgroundVariance": 0.4925,
+          "rowMeanVariance": 0.01344444444444443,
+          "columnMeanVariance": 0.43849999999999995,
+          "SS": {
+            "anchor": 0.48399999999999954,
+            "background": 13.155,
+            "interactionAndFiniteMapNoise": 1.6199999999999999,
+            "total": 15.258999999999999
+          },
+          "df": {
+            "anchor": 9,
+            "background": 3,
+            "residual": 27
+          },
+          "MS": {
+            "anchor": 0.05377777777777773,
+            "background": 4.385,
+            "residual": 0.06
+          },
+          "componentUntruncated": {
+            "anchor": -0.001555555555555567,
+            "background": 0.4325,
+            "residual": 0.06
+          },
+          "componentNonnegative": {
+            "anchor": 0,
+            "background": 0.4325,
+            "residual": 0.06
+          },
+          "rows": [
+            1.2750000000000001,
+            1.4249999999999998,
+            1.1,
+            1.375,
+            1.225,
+            1.225,
+            1.15,
+            1.375,
+            1.4,
+            1.4
+          ],
+          "columns": [
+            1.74,
+            0.8,
+            0.66,
+            1.98
+          ]
+        },
+        {
+          "grand": 1.51,
+          "conditionalAnchorVariance": 0.07155555555555555,
+          "conditionalBackgroundVariance": 0.31266666666666665,
+          "rowMeanVariance": 0.027111111111111107,
+          "columnMeanVariance": 0.2593333333333333,
+          "SS": {
+            "anchor": 0.9759999999999998,
+            "background": 7.779999999999999,
+            "interactionAndFiniteMapNoise": 1.5999999999999999,
+            "total": 10.356
+          },
+          "df": {
+            "anchor": 9,
+            "background": 3,
+            "residual": 27
+          },
+          "MS": {
+            "anchor": 0.10844444444444441,
+            "background": 2.5933333333333333,
+            "residual": 0.059259259259259255
+          },
+          "componentUntruncated": {
+            "anchor": 0.01229629629629629,
+            "background": 0.2534074074074074,
+            "residual": 0.059259259259259255
+          },
+          "componentNonnegative": {
+            "anchor": 0.01229629629629629,
+            "background": 0.2534074074074074,
+            "residual": 0.059259259259259255
+          },
+          "rows": [
+            1.55,
+            1.65,
+            1.5250000000000001,
+            1.5999999999999999,
+            1.3,
+            1.3,
+            1.25,
+            1.575,
+            1.675,
+            1.675
+          ],
+          "columns": [
+            1.74,
+            0.8,
+            1.52,
+            1.98
+          ]
+        },
+        {
+          "grand": 1.18,
+          "conditionalAnchorVariance": 0.05288888888888889,
+          "conditionalBackgroundVariance": 0.339,
+          "rowMeanVariance": 0.004833333333333329,
+          "columnMeanVariance": 0.2813333333333333,
+          "SS": {
+            "anchor": 0.17399999999999982,
+            "background": 8.44,
+            "interactionAndFiniteMapNoise": 1.7300000000000002,
+            "total": 10.344
+          },
+          "df": {
+            "anchor": 9,
+            "background": 3,
+            "residual": 27
+          },
+          "MS": {
+            "anchor": 0.019333333333333313,
+            "background": 2.813333333333333,
+            "residual": 0.06407407407407407
+          },
+          "componentUntruncated": {
+            "anchor": -0.01118518518518519,
+            "background": 0.2749259259259259,
+            "residual": 0.06407407407407407
+          },
+          "componentNonnegative": {
+            "anchor": 0,
+            "background": 0.2749259259259259,
+            "residual": 0.06407407407407407
+          },
+          "rows": [
+            1.175,
+            1.225,
+            1.25,
+            1.125,
+            1.125,
+            1.125,
+            1.1,
+            1.125,
+            1.275,
+            1.275
+          ],
+          "columns": [
+            1.74,
+            0.8,
+            1.52,
+            0.66
+          ]
+        }
+      ],
+      "leaveOneAnchor": [
+        {
+          "grand": 1.3377777777777777,
+          "conditionalAnchorVariance": 0.07205555555555555,
+          "conditionalBackgroundVariance": 0.4012222222222222,
+          "rowMeanVariance": 0.011544444444444444,
+          "columnMeanVariance": 0.3339876543209876,
+          "SS": {
+            "anchor": 0.46177777777777773,
+            "background": 12.023555555555554,
+            "interactionAndFiniteMapNoise": 2.4204444444444446,
+            "total": 14.905777777777777
+          },
+          "df": {
+            "anchor": 8,
+            "background": 4,
+            "residual": 32
+          },
+          "MS": {
+            "anchor": 0.057722222222222216,
+            "background": 3.0058888888888884,
+            "residual": 0.0756388888888889
+          },
+          "componentUntruncated": {
+            "anchor": -0.0035833333333333355,
+            "background": 0.3255833333333333,
+            "residual": 0.0756388888888889
+          },
+          "componentNonnegative": {
+            "anchor": 0,
+            "background": 0.3255833333333333,
+            "residual": 0.0756388888888889
+          },
+          "rows": [
+            1.44,
+            1.32,
+            1.3599999999999999,
+            1.24,
+            1.24,
+            1.16,
+            1.3599999999999999,
+            1.46,
+            1.46
+          ],
+          "columns": [
+            1.7555555555555555,
+            0.8,
+            1.5,
+            0.6666666666666666,
+            1.9666666666666666
+          ]
+        },
+        {
+          "grand": 1.3288888888888888,
+          "conditionalAnchorVariance": 0.07005555555555557,
+          "conditionalBackgroundVariance": 0.3917777777777778,
+          "rowMeanVariance": 0.010211111111111112,
+          "columnMeanVariance": 0.32528395061728393,
+          "SS": {
+            "anchor": 0.4084444444444445,
+            "background": 11.710222222222221,
+            "interactionAndFiniteMapNoise": 2.393777777777778,
+            "total": 14.512444444444444
+          },
+          "df": {
+            "anchor": 8,
+            "background": 4,
+            "residual": 32
+          },
+          "MS": {
+            "anchor": 0.05105555555555556,
+            "background": 2.9275555555555552,
+            "residual": 0.07480555555555556
+          },
+          "componentUntruncated": {
+            "anchor": -0.004749999999999999,
+            "background": 0.3169722222222222,
+            "residual": 0.07480555555555556
+          },
+          "componentNonnegative": {
+            "anchor": 0,
+            "background": 0.3169722222222222,
+            "residual": 0.07480555555555556
+          },
+          "rows": [
+            1.36,
+            1.32,
+            1.3599999999999999,
+            1.24,
+            1.24,
+            1.16,
+            1.3599999999999999,
+            1.46,
+            1.46
+          ],
+          "columns": [
+            1.722222222222222,
+            0.7888888888888889,
+            1.5222222222222221,
+            0.6666666666666666,
+            1.9444444444444444
+          ]
+        },
+        {
+          "grand": 1.3422222222222222,
+          "conditionalAnchorVariance": 0.051277777777777776,
+          "conditionalBackgroundVariance": 0.37077777777777776,
+          "rowMeanVariance": 0.011544444444444444,
+          "columnMeanVariance": 0.32662962962962955,
+          "SS": {
+            "anchor": 0.46177777777777784,
+            "background": 11.758666666666663,
+            "interactionAndFiniteMapNoise": 1.5893333333333333,
+            "total": 13.809777777777777
+          },
+          "df": {
+            "anchor": 8,
+            "background": 4,
+            "residual": 32
+          },
+          "MS": {
+            "anchor": 0.05772222222222223,
+            "background": 2.9396666666666658,
+            "residual": 0.049666666666666665
+          },
+          "componentUntruncated": {
+            "anchor": 0.001611111111111113,
+            "background": 0.321111111111111,
+            "residual": 0.049666666666666665
+          },
+          "componentNonnegative": {
+            "anchor": 0.001611111111111113,
+            "background": 0.321111111111111,
+            "residual": 0.049666666666666665
+          },
+          "rows": [
+            1.36,
+            1.44,
+            1.3599999999999999,
+            1.24,
+            1.24,
+            1.16,
+            1.3599999999999999,
+            1.46,
+            1.46
+          ],
+          "columns": [
+            1.722222222222222,
+            0.8444444444444444,
+            1.4444444444444444,
+            0.6777777777777778,
+            2.022222222222222
+          ]
+        },
+        {
+          "grand": 1.3377777777777777,
+          "conditionalAnchorVariance": 0.06694444444444445,
+          "conditionalBackgroundVariance": 0.38177777777777777,
+          "rowMeanVariance": 0.011544444444444444,
+          "columnMeanVariance": 0.3202222222222222,
+          "SS": {
+            "anchor": 0.46177777777777784,
+            "background": 11.527999999999999,
+            "interactionAndFiniteMapNoise": 2.216,
+            "total": 14.205777777777778
+          },
+          "df": {
+            "anchor": 8,
+            "background": 4,
+            "residual": 32
+          },
+          "MS": {
+            "anchor": 0.05772222222222223,
+            "background": 2.8819999999999997,
+            "residual": 0.06925
+          },
+          "componentUntruncated": {
+            "anchor": -0.002305555555555555,
+            "background": 0.31252777777777774,
+            "residual": 0.06925
+          },
+          "componentNonnegative": {
+            "anchor": 0,
+            "background": 0.31252777777777774,
+            "residual": 0.06925
+          },
+          "rows": [
+            1.36,
+            1.44,
+            1.32,
+            1.24,
+            1.24,
+            1.16,
+            1.3599999999999999,
+            1.46,
+            1.46
+          ],
+          "columns": [
+            1.722222222222222,
+            0.7888888888888889,
+            1.5444444444444445,
+            0.6888888888888889,
+            1.9444444444444444
+          ]
+        },
+        {
+          "grand": 1.3511111111111112,
+          "conditionalAnchorVariance": 0.0656111111111111,
+          "conditionalBackgroundVariance": 0.4234444444444444,
+          "rowMeanVariance": 0.010211111111111112,
+          "columnMeanVariance": 0.36188888888888887,
+          "SS": {
+            "anchor": 0.4084444444444445,
+            "background": 13.027999999999999,
+            "interactionAndFiniteMapNoise": 2.216,
+            "total": 15.652444444444443
+          },
+          "df": {
+            "anchor": 8,
+            "background": 4,
+            "residual": 32
+          },
+          "MS": {
+            "anchor": 0.05105555555555556,
+            "background": 3.2569999999999997,
+            "residual": 0.06925
+          },
+          "componentUntruncated": {
+            "anchor": -0.0036388888888888886,
+            "background": 0.3541944444444444,
+            "residual": 0.06925
+          },
+          "componentNonnegative": {
+            "anchor": 0,
+            "background": 0.3541944444444444,
+            "residual": 0.06925
+          },
+          "rows": [
+            1.36,
+            1.44,
+            1.32,
+            1.3599999999999999,
+            1.24,
+            1.16,
+            1.3599999999999999,
+            1.46,
+            1.46
+          ],
+          "columns": [
+            1.7555555555555555,
+            0.8222222222222222,
+            1.5444444444444445,
+            0.6222222222222222,
+            2.011111111111111
+          ]
+        },
+        {
+          "grand": 1.3511111111111112,
+          "conditionalAnchorVariance": 0.0656111111111111,
+          "conditionalBackgroundVariance": 0.4234444444444444,
+          "rowMeanVariance": 0.010211111111111112,
+          "columnMeanVariance": 0.36188888888888887,
+          "SS": {
+            "anchor": 0.4084444444444445,
+            "background": 13.027999999999999,
+            "interactionAndFiniteMapNoise": 2.216,
+            "total": 15.652444444444443
+          },
+          "df": {
+            "anchor": 8,
+            "background": 4,
+            "residual": 32
+          },
+          "MS": {
+            "anchor": 0.05105555555555556,
+            "background": 3.2569999999999997,
+            "residual": 0.06925
+          },
+          "componentUntruncated": {
+            "anchor": -0.0036388888888888886,
+            "background": 0.3541944444444444,
+            "residual": 0.06925
+          },
+          "componentNonnegative": {
+            "anchor": 0,
+            "background": 0.3541944444444444,
+            "residual": 0.06925
+          },
+          "rows": [
+            1.36,
+            1.44,
+            1.32,
+            1.3599999999999999,
+            1.24,
+            1.16,
+            1.3599999999999999,
+            1.46,
+            1.46
+          ],
+          "columns": [
+            1.7555555555555555,
+            0.8222222222222222,
+            1.5444444444444445,
+            0.6222222222222222,
+            2.011111111111111
+          ]
+        },
+        {
+          "grand": 1.36,
+          "conditionalAnchorVariance": 0.056944444444444436,
+          "conditionalBackgroundVariance": 0.4384444444444444,
+          "rowMeanVariance": 0.007099999999999997,
+          "columnMeanVariance": 0.38306172839506164,
+          "SS": {
+            "anchor": 0.28399999999999986,
+            "background": 13.790222222222217,
+            "interactionAndFiniteMapNoise": 1.9937777777777776,
+            "total": 16.068
+          },
+          "df": {
+            "anchor": 8,
+            "background": 4,
+            "residual": 32
+          },
+          "MS": {
+            "anchor": 0.03549999999999998,
+            "background": 3.4475555555555544,
+            "residual": 0.06230555555555555
+          },
+          "componentUntruncated": {
+            "anchor": -0.005361111111111113,
+            "background": 0.37613888888888874,
+            "residual": 0.06230555555555555
+          },
+          "componentNonnegative": {
+            "anchor": 0,
+            "background": 0.37613888888888874,
+            "residual": 0.06230555555555555
+          },
+          "rows": [
+            1.36,
+            1.44,
+            1.32,
+            1.3599999999999999,
+            1.24,
+            1.24,
+            1.3599999999999999,
+            1.46,
+            1.46
+          ],
+          "columns": [
+            1.7777777777777777,
+            0.7777777777777778,
+            1.5555555555555556,
+            0.6444444444444445,
+            2.0444444444444443
+          ]
+        },
+        {
+          "grand": 1.3377777777777777,
+          "conditionalAnchorVariance": 0.06794444444444445,
+          "conditionalBackgroundVariance": 0.39399999999999996,
+          "rowMeanVariance": 0.011544444444444444,
+          "columnMeanVariance": 0.3313333333333333,
+          "SS": {
+            "anchor": 0.46177777777777784,
+            "background": 11.927999999999999,
+            "interactionAndFiniteMapNoise": 2.2560000000000002,
+            "total": 14.645777777777777
+          },
+          "df": {
+            "anchor": 8,
+            "background": 4,
+            "residual": 32
+          },
+          "MS": {
+            "anchor": 0.05772222222222223,
+            "background": 2.9819999999999998,
+            "residual": 0.07050000000000001
+          },
+          "componentUntruncated": {
+            "anchor": -0.0025555555555555553,
+            "background": 0.32349999999999995,
+            "residual": 0.07050000000000001
+          },
+          "componentNonnegative": {
+            "anchor": 0,
+            "background": 0.32349999999999995,
+            "residual": 0.07050000000000001
+          },
+          "rows": [
+            1.36,
+            1.44,
+            1.32,
+            1.3599999999999999,
+            1.24,
+            1.24,
+            1.16,
+            1.46,
+            1.46
+          ],
+          "columns": [
+            1.7444444444444445,
+            0.7777777777777778,
+            1.5444444444444445,
+            0.6777777777777778,
+            1.9444444444444444
+          ]
+        },
+        {
+          "grand": 1.3266666666666667,
+          "conditionalAnchorVariance": 0.07066666666666667,
+          "conditionalBackgroundVariance": 0.39455555555555555,
+          "rowMeanVariance": 0.0096,
+          "columnMeanVariance": 0.32670370370370366,
+          "SS": {
+            "anchor": 0.384,
+            "background": 11.761333333333331,
+            "interactionAndFiniteMapNoise": 2.4426666666666668,
+            "total": 14.588
+          },
+          "df": {
+            "anchor": 8,
+            "background": 4,
+            "residual": 32
+          },
+          "MS": {
+            "anchor": 0.048,
+            "background": 2.940333333333333,
+            "residual": 0.07633333333333334
+          },
+          "componentUntruncated": {
+            "anchor": -0.005666666666666667,
+            "background": 0.3182222222222222,
+            "residual": 0.07633333333333334
+          },
+          "componentNonnegative": {
+            "anchor": 0,
+            "background": 0.3182222222222222,
+            "residual": 0.07633333333333334
+          },
+          "rows": [
+            1.36,
+            1.44,
+            1.32,
+            1.3599999999999999,
+            1.24,
+            1.24,
+            1.16,
+            1.3599999999999999,
+            1.46
+          ],
+          "columns": [
+            1.722222222222222,
+            0.7888888888888889,
+            1.5,
+            0.6666666666666666,
+            1.9555555555555555
+          ]
+        },
+        {
+          "grand": 1.3266666666666667,
+          "conditionalAnchorVariance": 0.07066666666666667,
+          "conditionalBackgroundVariance": 0.39455555555555555,
+          "rowMeanVariance": 0.0096,
+          "columnMeanVariance": 0.32670370370370366,
+          "SS": {
+            "anchor": 0.384,
+            "background": 11.761333333333331,
+            "interactionAndFiniteMapNoise": 2.4426666666666668,
+            "total": 14.588
+          },
+          "df": {
+            "anchor": 8,
+            "background": 4,
+            "residual": 32
+          },
+          "MS": {
+            "anchor": 0.048,
+            "background": 2.940333333333333,
+            "residual": 0.07633333333333334
+          },
+          "componentUntruncated": {
+            "anchor": -0.005666666666666667,
+            "background": 0.3182222222222222,
+            "residual": 0.07633333333333334
+          },
+          "componentNonnegative": {
+            "anchor": 0,
+            "background": 0.3182222222222222,
+            "residual": 0.07633333333333334
+          },
+          "rows": [
+            1.36,
+            1.44,
+            1.32,
+            1.3599999999999999,
+            1.24,
+            1.24,
+            1.16,
+            1.3599999999999999,
+            1.46
+          ],
+          "columns": [
+            1.722222222222222,
+            0.7888888888888889,
+            1.5,
+            0.6666666666666666,
+            1.9555555555555555
+          ]
+        }
+      ],
+      "originalScoreVsMeanSpearman": -0.1661546326865134,
+      "anchorRanksAcrossBackgroundCorrelations": [
+        -0.03404197375856945,
+        0.6168001625063042,
+        -0.6604142909162475,
+        0.5810468272831243,
+        -0.4539571927394596,
+        -0.2222222222222222,
+        0.429566618529658,
+        -0.3388231221171329,
+        0.0516300982134074,
+        -0.5513840178141879
+      ],
+      "above": 40,
+      "teams": 50,
+      "minimum": 0.4,
+      "maximum": 2.3,
+      "previousAbove": 18,
+      "pairedAnchorDifferences": [
+        {
+          "first": 295,
+          "second": 202,
+          "differences": [
+            -0.2999999999999998,
+            -0.09999999999999998,
+            0.19999999999999996,
+            0.0,
+            -0.19999999999999973
+          ],
+          "meanDifference": -0.07999999999999992
+        },
+        {
+          "first": 295,
+          "second": 900,
+          "differences": [
+            -0.2999999999999998,
+            0.4,
+            -0.5000000000000002,
+            0.09999999999999998,
+            0.5
+          ],
+          "meanDifference": 0.039999999999999994
+        },
+        {
+          "first": 295,
+          "second": 674,
+          "differences": [
+            -0.2999999999999998,
+            -0.09999999999999998,
+            0.3999999999999999,
+            0.19999999999999996,
+            -0.19999999999999973
+          ],
+          "meanDifference": 6.661338147750939e-17
+        },
+        {
+          "first": 295,
+          "second": 712,
+          "differences": [
+            0.0,
+            0.20000000000000007,
+            0.3999999999999999,
+            -0.4,
+            0.40000000000000013
+          ],
+          "meanDifference": 0.12000000000000002
+        },
+        {
+          "first": 295,
+          "second": 83,
+          "differences": [
+            0.0,
+            0.20000000000000007,
+            0.3999999999999999,
+            -0.4,
+            0.40000000000000013
+          ],
+          "meanDifference": 0.12000000000000002
+        },
+        {
+          "first": 295,
+          "second": 773,
+          "differences": [
+            0.20000000000000018,
+            -0.19999999999999996,
+            0.5,
+            -0.20000000000000007,
+            0.7000000000000002
+          ],
+          "meanDifference": 0.20000000000000007
+        },
+        {
+          "first": 295,
+          "second": 772,
+          "differences": [
+            -0.09999999999999987,
+            -0.19999999999999996,
+            0.3999999999999999,
+            0.09999999999999998,
+            -0.19999999999999973
+          ],
+          "meanDifference": 6.661338147750939e-17
+        },
+        {
+          "first": 295,
+          "second": 291,
+          "differences": [
+            -0.2999999999999998,
+            -0.09999999999999998,
+            0.0,
+            0.0,
+            -0.10000000000000009
+          ],
+          "meanDifference": -0.09999999999999998
+        },
+        {
+          "first": 295,
+          "second": 310,
+          "differences": [
+            -0.2999999999999998,
+            -0.09999999999999998,
+            0.0,
+            0.0,
+            -0.10000000000000009
+          ],
+          "meanDifference": -0.09999999999999998
+        },
+        {
+          "first": 202,
+          "second": 900,
+          "differences": [
+            0.0,
+            0.5,
+            -0.7000000000000002,
+            0.09999999999999998,
+            0.6999999999999997
+          ],
+          "meanDifference": 0.11999999999999991
+        },
+        {
+          "first": 202,
+          "second": 674,
+          "differences": [
+            0.0,
+            0.0,
+            0.19999999999999996,
+            0.19999999999999996,
+            0.0
+          ],
+          "meanDifference": 0.07999999999999999
+        },
+        {
+          "first": 202,
+          "second": 712,
+          "differences": [
+            0.2999999999999998,
+            0.30000000000000004,
+            0.19999999999999996,
+            -0.4,
+            0.5999999999999999
+          ],
+          "meanDifference": 0.19999999999999993
+        },
+        {
+          "first": 202,
+          "second": 83,
+          "differences": [
+            0.2999999999999998,
+            0.30000000000000004,
+            0.19999999999999996,
+            -0.4,
+            0.5999999999999999
+          ],
+          "meanDifference": 0.19999999999999993
+        },
+        {
+          "first": 202,
+          "second": 773,
+          "differences": [
+            0.5,
+            -0.09999999999999998,
+            0.30000000000000004,
+            -0.20000000000000007,
+            0.8999999999999999
+          ],
+          "meanDifference": 0.27999999999999997
+        },
+        {
+          "first": 202,
+          "second": 772,
+          "differences": [
+            0.19999999999999996,
+            -0.09999999999999998,
+            0.19999999999999996,
+            0.09999999999999998,
+            0.0
+          ],
+          "meanDifference": 0.07999999999999999
+        },
+        {
+          "first": 202,
+          "second": 291,
+          "differences": [
+            0.0,
+            0.0,
+            -0.19999999999999996,
+            0.0,
+            0.09999999999999964
+          ],
+          "meanDifference": -0.020000000000000063
+        },
+        {
+          "first": 202,
+          "second": 310,
+          "differences": [
+            0.0,
+            0.0,
+            -0.19999999999999996,
+            0.0,
+            0.09999999999999964
+          ],
+          "meanDifference": -0.020000000000000063
+        },
+        {
+          "first": 900,
+          "second": 674,
+          "differences": [
+            0.0,
+            -0.5,
+            0.9000000000000001,
+            0.09999999999999998,
+            -0.6999999999999997
+          ],
+          "meanDifference": -0.039999999999999925
+        },
+        {
+          "first": 900,
+          "second": 712,
+          "differences": [
+            0.2999999999999998,
+            -0.19999999999999996,
+            0.9000000000000001,
+            -0.5,
+            -0.09999999999999987
+          ],
+          "meanDifference": 0.08000000000000003
+        },
+        {
+          "first": 900,
+          "second": 83,
+          "differences": [
+            0.2999999999999998,
+            -0.19999999999999996,
+            0.9000000000000001,
+            -0.5,
+            -0.09999999999999987
+          ],
+          "meanDifference": 0.08000000000000003
+        },
+        {
+          "first": 900,
+          "second": 773,
+          "differences": [
+            0.5,
+            -0.6,
+            1.0000000000000002,
+            -0.30000000000000004,
+            0.20000000000000018
+          ],
+          "meanDifference": 0.1600000000000001
+        },
+        {
+          "first": 900,
+          "second": 772,
+          "differences": [
+            0.19999999999999996,
+            -0.6,
+            0.9000000000000001,
+            0.0,
+            -0.6999999999999997
+          ],
+          "meanDifference": -0.039999999999999925
+        },
+        {
+          "first": 900,
+          "second": 291,
+          "differences": [
+            0.0,
+            -0.5,
+            0.5000000000000002,
+            -0.09999999999999998,
+            -0.6000000000000001
+          ],
+          "meanDifference": -0.13999999999999996
+        },
+        {
+          "first": 900,
+          "second": 310,
+          "differences": [
+            0.0,
+            -0.5,
+            0.5000000000000002,
+            -0.09999999999999998,
+            -0.6000000000000001
+          ],
+          "meanDifference": -0.13999999999999996
+        },
+        {
+          "first": 674,
+          "second": 712,
+          "differences": [
+            0.2999999999999998,
+            0.30000000000000004,
+            0.0,
+            -0.6,
+            0.5999999999999999
+          ],
+          "meanDifference": 0.11999999999999995
+        },
+        {
+          "first": 674,
+          "second": 83,
+          "differences": [
+            0.2999999999999998,
+            0.30000000000000004,
+            0.0,
+            -0.6,
+            0.5999999999999999
+          ],
+          "meanDifference": 0.11999999999999995
+        },
+        {
+          "first": 674,
+          "second": 773,
+          "differences": [
+            0.5,
+            -0.09999999999999998,
+            0.10000000000000009,
+            -0.4,
+            0.8999999999999999
+          ],
+          "meanDifference": 0.2
+        },
+        {
+          "first": 674,
+          "second": 772,
+          "differences": [
+            0.19999999999999996,
+            -0.09999999999999998,
+            0.0,
+            -0.09999999999999998,
+            0.0
+          ],
+          "meanDifference": 0.0
+        },
+        {
+          "first": 674,
+          "second": 291,
+          "differences": [
+            0.0,
+            0.0,
+            -0.3999999999999999,
+            -0.19999999999999996,
+            0.09999999999999964
+          ],
+          "meanDifference": -0.10000000000000005
+        },
+        {
+          "first": 674,
+          "second": 310,
+          "differences": [
+            0.0,
+            0.0,
+            -0.3999999999999999,
+            -0.19999999999999996,
+            0.09999999999999964
+          ],
+          "meanDifference": -0.10000000000000005
+        },
+        {
+          "first": 712,
+          "second": 83,
+          "differences": [
+            0.0,
+            0.0,
+            0.0,
+            0,
+            0.0
+          ],
+          "meanDifference": 0.0
+        },
+        {
+          "first": 712,
+          "second": 773,
+          "differences": [
+            0.20000000000000018,
+            -0.4,
+            0.10000000000000009,
+            0.19999999999999996,
+            0.30000000000000004
+          ],
+          "meanDifference": 0.08000000000000004
+        },
+        {
+          "first": 712,
+          "second": 772,
+          "differences": [
+            -0.09999999999999987,
+            -0.4,
+            0.0,
+            0.5,
+            -0.5999999999999999
+          ],
+          "meanDifference": -0.11999999999999995
+        },
+        {
+          "first": 712,
+          "second": 291,
+          "differences": [
+            -0.2999999999999998,
+            -0.30000000000000004,
+            -0.3999999999999999,
+            0.4,
+            -0.5000000000000002
+          ],
+          "meanDifference": -0.22
+        },
+        {
+          "first": 712,
+          "second": 310,
+          "differences": [
+            -0.2999999999999998,
+            -0.30000000000000004,
+            -0.3999999999999999,
+            0.4,
+            -0.5000000000000002
+          ],
+          "meanDifference": -0.22
+        },
+        {
+          "first": 83,
+          "second": 773,
+          "differences": [
+            0.20000000000000018,
+            -0.4,
+            0.10000000000000009,
+            0.19999999999999996,
+            0.30000000000000004
+          ],
+          "meanDifference": 0.08000000000000004
+        },
+        {
+          "first": 83,
+          "second": 772,
+          "differences": [
+            -0.09999999999999987,
+            -0.4,
+            0.0,
+            0.5,
+            -0.5999999999999999
+          ],
+          "meanDifference": -0.11999999999999995
+        },
+        {
+          "first": 83,
+          "second": 291,
+          "differences": [
+            -0.2999999999999998,
+            -0.30000000000000004,
+            -0.3999999999999999,
+            0.4,
+            -0.5000000000000002
+          ],
+          "meanDifference": -0.22
+        },
+        {
+          "first": 83,
+          "second": 310,
+          "differences": [
+            -0.2999999999999998,
+            -0.30000000000000004,
+            -0.3999999999999999,
+            0.4,
+            -0.5000000000000002
+          ],
+          "meanDifference": -0.22
+        },
+        {
+          "first": 773,
+          "second": 772,
+          "differences": [
+            -0.30000000000000004,
+            0,
+            -0.10000000000000009,
+            0.30000000000000004,
+            -0.8999999999999999
+          ],
+          "meanDifference": -0.2
+        },
+        {
+          "first": 773,
+          "second": 291,
+          "differences": [
+            -0.5,
+            0.09999999999999998,
+            -0.5,
+            0.20000000000000007,
+            -0.8000000000000003
+          ],
+          "meanDifference": -0.30000000000000004
+        },
+        {
+          "first": 773,
+          "second": 310,
+          "differences": [
+            -0.5,
+            0.09999999999999998,
+            -0.5,
+            0.20000000000000007,
+            -0.8000000000000003
+          ],
+          "meanDifference": -0.30000000000000004
+        },
+        {
+          "first": 772,
+          "second": 291,
+          "differences": [
+            -0.19999999999999996,
+            0.09999999999999998,
+            -0.3999999999999999,
+            -0.09999999999999998,
+            0.09999999999999964
+          ],
+          "meanDifference": -0.10000000000000005
+        },
+        {
+          "first": 772,
+          "second": 310,
+          "differences": [
+            -0.19999999999999996,
+            0.09999999999999998,
+            -0.3999999999999999,
+            -0.09999999999999998,
+            0.09999999999999964
+          ],
+          "meanDifference": -0.10000000000000005
+        },
+        {
+          "first": 291,
+          "second": 310,
+          "differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "meanDifference": 0.0
+        }
+      ]
+    }
+  },
+  "previousObservations": {
+    "treasure": [
+      {
+        "id": 91,
+        "score": 0.13577748409090906,
+        "originalRank": 1,
+        "mean": 1.5,
+        "min": 0.7,
+        "max": 2.3,
+        "variance": 0.38499999999999995,
+        "sd": 0.6204836822995428,
+        "above": 4,
+        "aboveRate": 0.8,
+        "backgroundMeans": [
+          1.9,
+          1.2,
+          2.3,
+          1.4,
+          0.7
+        ],
+        "oldCount": 2,
+        "oldAbove": 0,
+        "oldRange": [
+          0.4,
+          0.6
+        ]
+      },
+      {
+        "id": 67,
+        "score": 0.10665572192513366,
+        "originalRank": 4,
+        "mean": 1.7,
+        "min": 0.4,
+        "max": 2.3,
+        "variance": 0.575,
+        "sd": 0.758287544405155,
+        "above": 4,
+        "aboveRate": 0.8,
+        "backgroundMeans": [
+          1.7,
+          2,
+          2.1,
+          2.3,
+          0.4
+        ],
+        "oldCount": 4,
+        "oldAbove": 4,
+        "oldRange": [
+          2,
+          4.3
+        ]
+      },
+      {
+        "id": 434,
+        "score": 0.10576379564879561,
+        "originalRank": 5,
+        "mean": 1.6400000000000001,
+        "min": 0.3,
+        "max": 2.5,
+        "variance": 0.793,
+        "sd": 0.8905054744357275,
+        "above": 4,
+        "aboveRate": 0.8,
+        "backgroundMeans": [
+          2,
+          1.2,
+          2.2,
+          2.5,
+          0.3
+        ],
+        "oldCount": 8,
+        "oldAbove": 7,
+        "oldRange": [
+          0.6,
+          3
+        ]
+      }
+    ],
+    "companion": [
+      {
+        "id": 202,
+        "score": 0.14163915092814008,
+        "originalRank": 2,
+        "mean": 1.44,
+        "min": 0.6,
+        "max": 2.3,
+        "variance": 0.48799999999999993,
+        "sd": 0.6985699678629191,
+        "above": 4,
+        "aboveRate": 0.8,
+        "backgroundMeans": [
+          1.9,
+          0.9,
+          1.5,
+          0.6,
+          2.3
+        ],
+        "oldCount": 5,
+        "oldAbove": 2,
+        "oldRange": [
+          0.5,
+          2.8
+        ]
+      }
+    ]
+  }
+}
