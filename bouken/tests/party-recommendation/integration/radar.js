@@ -5,7 +5,7 @@ const fields=[['opened','開拓','マス','top-left'],['newItems','お宝','種�
 const corners=[[-1,-1],[1,-1],[1,1],[-1,1]],NS='http://www.w3.org/2000/svg';
 function ratio(value,key){return Math.min(1,Math.max(0,value/RADAR_MAX[key]));}
 function points(metrics){return fields.map(([key],i)=>{const v=ratio(metrics[key],key);return [120+corners[i][0]*104*v,120+corners[i][1]*104*v];});}
-function format(value){return value.toFixed(2);}
+function format(value){return value.toFixed(1);}
 function render(host,baseline,candidate){const doc=host.ownerDocument,el=(tag,cls,text)=>{const e=doc.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e;},svgEl=(tag,attrs)=>{const e=doc.createElementNS(NS,tag);for(const [k,v]of Object.entries(attrs))e.setAttribute(k,v);return e;};
  const legend=el('div','radar-legend');for(const [cls,label]of [['current','今のパーティー'],['candidate','新しいパーティー']]){const item=el('span',cls);const swatch=el('i','radar-swatch');swatch.setAttribute('aria-hidden','true');item.append(swatch,doc.createTextNode(label));legend.append(item);}
  const layout=el('div','radar-layout');
