@@ -1,0 +1,1120 @@
+{
+  "date": "2026-10-27",
+  "initialCommit": "e001e1546f77092a0b9ffe1d4922ee7efc1e2092",
+  "cacheFixCommit": "d2a227704302127a4696403407293b30af1d05a7",
+  "publicUrl": "https://sansuu-bouken.vercel.app/bouken/tests/party-recommendation/integration/index.html",
+  "firstBalanced": {
+    "version": 70,
+    "independent": true,
+    "storage": {
+      "reads": [],
+      "blocked": []
+    },
+    "source": "サンプル所有・進行（実マスター使用）",
+    "owned": 500,
+    "slots": 5,
+    "mode": "balanced",
+    "party": [
+      83,
+      811,
+      415,
+      692,
+      625
+    ],
+    "locked": [],
+    "busy": false,
+    "request": 4,
+    "engine": "balanced-light-50x3x10",
+    "generatedCandidates": 50,
+    "logicalTrials": 150,
+    "referenceAdventures": 24,
+    "referenceCacheHit": false,
+    "reference": [
+      35.583333333333336,
+      0.625,
+      0.2916666666666667,
+      2.9166666666666665
+    ],
+    "cachedCandidates": 10,
+    "lightCursor": 0,
+    "comparisonParty": "[83,811,415,692,625]",
+    "pendingKind": "evaluate",
+    "comparisonElapsedMs": 290.4000000001397,
+    "adventures": 150,
+    "elapsedMs": 2041.3999999999069,
+    "imageSheetRequests": 1
+  },
+  "cycles": [
+    {
+      "version": 70,
+      "independent": true,
+      "storage": {
+        "reads": [],
+        "blocked": []
+      },
+      "source": "サンプル所有・進行（実マスター使用）",
+      "owned": 500,
+      "slots": 5,
+      "mode": "balanced",
+      "party": [
+        772,
+        361,
+        549,
+        415,
+        517
+      ],
+      "locked": [],
+      "busy": false,
+      "request": 5,
+      "engine": "balanced-light-50x3x10",
+      "generatedCandidates": 50,
+      "logicalTrials": 150,
+      "referenceAdventures": 24,
+      "referenceCacheHit": false,
+      "reference": [
+        35.583333333333336,
+        0.625,
+        0.2916666666666667,
+        2.9166666666666665
+      ],
+      "cachedCandidates": 10,
+      "lightCursor": 1,
+      "comparisonParty": "[772,361,549,415,517]",
+      "pendingKind": "evaluate",
+      "comparisonElapsedMs": 300.5999999998603,
+      "adventures": 150,
+      "elapsedMs": 2041.3999999999069,
+      "imageSheetRequests": 1
+    },
+    {
+      "version": 70,
+      "independent": true,
+      "storage": {
+        "reads": [],
+        "blocked": []
+      },
+      "source": "サンプル所有・進行（実マスター使用）",
+      "owned": 500,
+      "slots": 5,
+      "mode": "balanced",
+      "party": [
+        312,
+        263,
+        100,
+        448,
+        201
+      ],
+      "locked": [],
+      "busy": false,
+      "request": 6,
+      "engine": "balanced-light-50x3x10",
+      "generatedCandidates": 50,
+      "logicalTrials": 150,
+      "referenceAdventures": 24,
+      "referenceCacheHit": false,
+      "reference": [
+        35.583333333333336,
+        0.625,
+        0.2916666666666667,
+        2.9166666666666665
+      ],
+      "cachedCandidates": 10,
+      "lightCursor": 2,
+      "comparisonParty": "[312,263,100,448,201]",
+      "pendingKind": "evaluate",
+      "comparisonElapsedMs": 300,
+      "adventures": 150,
+      "elapsedMs": 2041.3999999999069,
+      "imageSheetRequests": 1
+    },
+    {
+      "version": 70,
+      "independent": true,
+      "storage": {
+        "reads": [],
+        "blocked": []
+      },
+      "source": "サンプル所有・進行（実マスター使用）",
+      "owned": 500,
+      "slots": 5,
+      "mode": "balanced",
+      "party": [
+        415,
+        225,
+        549,
+        9,
+        434
+      ],
+      "locked": [],
+      "busy": false,
+      "request": 7,
+      "engine": "balanced-light-50x3x10",
+      "generatedCandidates": 50,
+      "logicalTrials": 150,
+      "referenceAdventures": 24,
+      "referenceCacheHit": false,
+      "reference": [
+        35.583333333333336,
+        0.625,
+        0.2916666666666667,
+        2.9166666666666665
+      ],
+      "cachedCandidates": 10,
+      "lightCursor": 3,
+      "comparisonParty": "[415,225,549,9,434]",
+      "pendingKind": "evaluate",
+      "comparisonElapsedMs": 296.89999999990687,
+      "adventures": 150,
+      "elapsedMs": 2041.3999999999069,
+      "imageSheetRequests": 1
+    },
+    {
+      "version": 70,
+      "independent": true,
+      "storage": {
+        "reads": [],
+        "blocked": []
+      },
+      "source": "サンプル所有・進行（実マスター使用）",
+      "owned": 500,
+      "slots": 5,
+      "mode": "balanced",
+      "party": [
+        202,
+        549,
+        551,
+        497,
+        273
+      ],
+      "locked": [],
+      "busy": false,
+      "request": 8,
+      "engine": "balanced-light-50x3x10",
+      "generatedCandidates": 50,
+      "logicalTrials": 150,
+      "referenceAdventures": 24,
+      "referenceCacheHit": false,
+      "reference": [
+        35.583333333333336,
+        0.625,
+        0.2916666666666667,
+        2.9166666666666665
+      ],
+      "cachedCandidates": 10,
+      "lightCursor": 4,
+      "comparisonParty": "[202,549,551,497,273]",
+      "pendingKind": "evaluate",
+      "comparisonElapsedMs": 315.4000000001397,
+      "adventures": 150,
+      "elapsedMs": 2041.3999999999069,
+      "imageSheetRequests": 1
+    },
+    {
+      "version": 70,
+      "independent": true,
+      "storage": {
+        "reads": [],
+        "blocked": []
+      },
+      "source": "サンプル所有・進行（実マスター使用）",
+      "owned": 500,
+      "slots": 5,
+      "mode": "balanced",
+      "party": [
+        65,
+        382,
+        772,
+        510,
+        394
+      ],
+      "locked": [],
+      "busy": false,
+      "request": 9,
+      "engine": "balanced-light-50x3x10",
+      "generatedCandidates": 50,
+      "logicalTrials": 150,
+      "referenceAdventures": 24,
+      "referenceCacheHit": false,
+      "reference": [
+        35.583333333333336,
+        0.625,
+        0.2916666666666667,
+        2.9166666666666665
+      ],
+      "cachedCandidates": 10,
+      "lightCursor": 5,
+      "comparisonParty": "[65,382,772,510,394]",
+      "pendingKind": "evaluate",
+      "comparisonElapsedMs": 303.0999999998603,
+      "adventures": 150,
+      "elapsedMs": 2041.3999999999069,
+      "imageSheetRequests": 1
+    },
+    {
+      "version": 70,
+      "independent": true,
+      "storage": {
+        "reads": [],
+        "blocked": []
+      },
+      "source": "サンプル所有・進行（実マスター使用）",
+      "owned": 500,
+      "slots": 5,
+      "mode": "balanced",
+      "party": [
+        903,
+        226,
+        108,
+        434,
+        100
+      ],
+      "locked": [],
+      "busy": false,
+      "request": 10,
+      "engine": "balanced-light-50x3x10",
+      "generatedCandidates": 50,
+      "logicalTrials": 150,
+      "referenceAdventures": 24,
+      "referenceCacheHit": false,
+      "reference": [
+        35.583333333333336,
+        0.625,
+        0.2916666666666667,
+        2.9166666666666665
+      ],
+      "cachedCandidates": 10,
+      "lightCursor": 6,
+      "comparisonParty": "[903,226,108,434,100]",
+      "pendingKind": "evaluate",
+      "comparisonElapsedMs": 309.19999999995343,
+      "adventures": 150,
+      "elapsedMs": 2041.3999999999069,
+      "imageSheetRequests": 1
+    },
+    {
+      "version": 70,
+      "independent": true,
+      "storage": {
+        "reads": [],
+        "blocked": []
+      },
+      "source": "サンプル所有・進行（実マスター使用）",
+      "owned": 500,
+      "slots": 5,
+      "mode": "balanced",
+      "party": [
+        448,
+        225,
+        692,
+        810,
+        91
+      ],
+      "locked": [],
+      "busy": false,
+      "request": 11,
+      "engine": "balanced-light-50x3x10",
+      "generatedCandidates": 50,
+      "logicalTrials": 150,
+      "referenceAdventures": 24,
+      "referenceCacheHit": false,
+      "reference": [
+        35.583333333333336,
+        0.625,
+        0.2916666666666667,
+        2.9166666666666665
+      ],
+      "cachedCandidates": 10,
+      "lightCursor": 7,
+      "comparisonParty": "[448,225,692,810,91]",
+      "pendingKind": "evaluate",
+      "comparisonElapsedMs": 305.0999999998603,
+      "adventures": 150,
+      "elapsedMs": 2041.3999999999069,
+      "imageSheetRequests": 1
+    },
+    {
+      "version": 70,
+      "independent": true,
+      "storage": {
+        "reads": [],
+        "blocked": []
+      },
+      "source": "サンプル所有・進行（実マスター使用）",
+      "owned": 500,
+      "slots": 5,
+      "mode": "balanced",
+      "party": [
+        67,
+        415,
+        517,
+        108,
+        382
+      ],
+      "locked": [],
+      "busy": false,
+      "request": 12,
+      "engine": "balanced-light-50x3x10",
+      "generatedCandidates": 50,
+      "logicalTrials": 150,
+      "referenceAdventures": 24,
+      "referenceCacheHit": false,
+      "reference": [
+        35.583333333333336,
+        0.625,
+        0.2916666666666667,
+        2.9166666666666665
+      ],
+      "cachedCandidates": 10,
+      "lightCursor": 8,
+      "comparisonParty": "[67,415,517,108,382]",
+      "pendingKind": "evaluate",
+      "comparisonElapsedMs": 313.89999999990687,
+      "adventures": 150,
+      "elapsedMs": 2041.3999999999069,
+      "imageSheetRequests": 1
+    },
+    {
+      "version": 70,
+      "independent": true,
+      "storage": {
+        "reads": [],
+        "blocked": []
+      },
+      "source": "サンプル所有・進行（実マスター使用）",
+      "owned": 500,
+      "slots": 5,
+      "mode": "balanced",
+      "party": [
+        273,
+        625,
+        772,
+        448,
+        759
+      ],
+      "locked": [],
+      "busy": false,
+      "request": 13,
+      "engine": "balanced-light-50x3x10",
+      "generatedCandidates": 50,
+      "logicalTrials": 150,
+      "referenceAdventures": 24,
+      "referenceCacheHit": false,
+      "reference": [
+        35.583333333333336,
+        0.625,
+        0.2916666666666667,
+        2.9166666666666665
+      ],
+      "cachedCandidates": 10,
+      "lightCursor": 9,
+      "comparisonParty": "[273,625,772,448,759]",
+      "pendingKind": "evaluate",
+      "comparisonElapsedMs": 293.30000000004657,
+      "adventures": 150,
+      "elapsedMs": 2041.3999999999069,
+      "imageSheetRequests": 1
+    },
+    {
+      "version": 70,
+      "independent": true,
+      "storage": {
+        "reads": [],
+        "blocked": []
+      },
+      "source": "サンプル所有・進行（実マスター使用）",
+      "owned": 500,
+      "slots": 5,
+      "mode": "balanced",
+      "party": [
+        83,
+        811,
+        415,
+        692,
+        625
+      ],
+      "locked": [],
+      "busy": false,
+      "request": 14,
+      "engine": "balanced-light-50x3x10",
+      "generatedCandidates": 50,
+      "logicalTrials": 150,
+      "referenceAdventures": 24,
+      "referenceCacheHit": false,
+      "reference": [
+        35.583333333333336,
+        0.625,
+        0.2916666666666667,
+        2.9166666666666665
+      ],
+      "cachedCandidates": 10,
+      "lightCursor": 0,
+      "comparisonParty": "[83,811,415,692,625]",
+      "pendingKind": "evaluate",
+      "comparisonElapsedMs": 305.30000000004657,
+      "adventures": 150,
+      "elapsedMs": 2041.3999999999069,
+      "imageSheetRequests": 1
+    }
+  ],
+  "cancelledDiag": {
+    "version": 70,
+    "independent": true,
+    "storage": {
+      "reads": [],
+      "blocked": []
+    },
+    "source": "サンプル所有・進行（実マスター使用）",
+    "owned": 500,
+    "slots": 5,
+    "mode": "balanced",
+    "party": [
+      83,
+      811,
+      415,
+      692,
+      625
+    ],
+    "locked": [
+      415
+    ],
+    "busy": false,
+    "request": 16,
+    "engine": "legacy",
+    "lightCursor": -1,
+    "comparisonParty": "",
+    "pendingKind": "recommend",
+    "comparisonElapsedMs": 305.30000000004657,
+    "imageSheetRequests": 1
+  },
+  "fixedDiag": {
+    "version": 70,
+    "independent": true,
+    "storage": {
+      "reads": [],
+      "blocked": []
+    },
+    "source": "サンプル所有・進行（実マスター使用）",
+    "owned": 500,
+    "slots": 5,
+    "mode": "balanced",
+    "party": [
+      709,
+      283,
+      415,
+      662,
+      65
+    ],
+    "locked": [
+      415
+    ],
+    "busy": false,
+    "request": 18,
+    "engine": "balanced-light-50x3x10",
+    "generatedCandidates": 50,
+    "logicalTrials": 150,
+    "referenceAdventures": 24,
+    "referenceCacheHit": false,
+    "reference": [
+      33.708333333333336,
+      1.0416666666666667,
+      1.0833333333333333,
+      3.8333333333333335
+    ],
+    "cachedCandidates": 10,
+    "lightCursor": 0,
+    "comparisonParty": "[709,283,415,662,65]",
+    "pendingKind": "evaluate",
+    "comparisonElapsedMs": 309.4000000001397,
+    "adventures": 150,
+    "elapsedMs": 1948.9000000001397,
+    "imageSheetRequests": 1
+  },
+  "regression": [
+    {
+      "version": 70,
+      "independent": true,
+      "storage": {
+        "reads": [],
+        "blocked": []
+      },
+      "source": "サンプル所有・進行（実マスター使用）",
+      "owned": 500,
+      "slots": 5,
+      "mode": "explore",
+      "party": [
+        312,
+        260,
+        415,
+        754,
+        117
+      ],
+      "locked": [
+        415
+      ],
+      "busy": false,
+      "request": 20,
+      "engine": "light-50x3x10",
+      "generatedCandidates": 50,
+      "logicalTrials": 150,
+      "cachedCandidates": 10,
+      "lightCursor": 0,
+      "comparisonParty": "[312,260,415,754,117]",
+      "pendingKind": "evaluate",
+      "comparisonElapsedMs": 288.0999999998603,
+      "adventures": 150,
+      "elapsedMs": 1257.5,
+      "imageSheetRequests": 1
+    },
+    {
+      "version": 70,
+      "independent": true,
+      "storage": {
+        "reads": [],
+        "blocked": []
+      },
+      "source": "サンプル所有・進行（実マスター使用）",
+      "owned": 500,
+      "slots": 5,
+      "mode": "treasure",
+      "party": [
+        862,
+        173,
+        415,
+        271,
+        737
+      ],
+      "locked": [
+        415
+      ],
+      "busy": false,
+      "request": 22,
+      "engine": "light-50x3x10",
+      "generatedCandidates": 50,
+      "logicalTrials": 150,
+      "cachedCandidates": 10,
+      "lightCursor": 0,
+      "comparisonParty": "[862,173,415,271,737]",
+      "pendingKind": "evaluate",
+      "comparisonElapsedMs": 290.69999999995343,
+      "adventures": 150,
+      "elapsedMs": 1224.6000000000931,
+      "imageSheetRequests": 1
+    },
+    {
+      "version": 70,
+      "independent": true,
+      "storage": {
+        "reads": [],
+        "blocked": []
+      },
+      "source": "サンプル所有・進行（実マスター使用）",
+      "owned": 500,
+      "slots": 5,
+      "mode": "companion",
+      "party": [
+        199,
+        195,
+        415,
+        709,
+        535
+      ],
+      "locked": [
+        415
+      ],
+      "busy": false,
+      "request": 24,
+      "engine": "light-50x3x10",
+      "generatedCandidates": 50,
+      "logicalTrials": 150,
+      "cachedCandidates": 10,
+      "lightCursor": 0,
+      "comparisonParty": "[199,195,415,709,535]",
+      "pendingKind": "evaluate",
+      "comparisonElapsedMs": 312.80000000004657,
+      "adventures": 150,
+      "elapsedMs": 1199.8000000000466,
+      "imageSheetRequests": 1
+    },
+    {
+      "version": 70,
+      "independent": true,
+      "storage": {
+        "reads": [],
+        "blocked": []
+      },
+      "source": "サンプル所有・進行（実マスター使用）",
+      "owned": 500,
+      "slots": 5,
+      "mode": "map",
+      "party": [
+        542,
+        767,
+        415,
+        728,
+        922
+      ],
+      "locked": [
+        415
+      ],
+      "busy": false,
+      "request": 26,
+      "engine": "light-50x3x10",
+      "generatedCandidates": 50,
+      "logicalTrials": 150,
+      "cachedCandidates": 10,
+      "lightCursor": 0,
+      "comparisonParty": "[542,767,415,728,922]",
+      "pendingKind": "evaluate",
+      "comparisonElapsedMs": 330.0999999998603,
+      "adventures": 150,
+      "elapsedMs": 1209.3999999999069,
+      "imageSheetRequests": 1
+    },
+    {
+      "version": 70,
+      "independent": true,
+      "storage": {
+        "reads": [],
+        "blocked": []
+      },
+      "source": "サンプル所有・進行（実マスター使用）",
+      "owned": 500,
+      "slots": 5,
+      "mode": "random",
+      "party": [
+        30,
+        546,
+        415,
+        907,
+        59
+      ],
+      "locked": [
+        415
+      ],
+      "busy": false,
+      "request": 27,
+      "engine": "legacy",
+      "lightCursor": -1,
+      "comparisonParty": "[30,546,415,907,59]",
+      "pendingKind": "evaluate",
+      "comparisonElapsedMs": 370.20000000018626,
+      "imageSheetRequests": 1
+    },
+    {
+      "version": 70,
+      "independent": true,
+      "storage": {
+        "reads": [],
+        "blocked": []
+      },
+      "source": "サンプル所有・進行（実マスター使用）",
+      "owned": 500,
+      "slots": 5,
+      "mode": "balanced",
+      "party": [
+        24,
+        100,
+        415,
+        549,
+        459
+      ],
+      "locked": [
+        415
+      ],
+      "busy": false,
+      "request": 29,
+      "engine": "balanced-light-50x3x10",
+      "generatedCandidates": 50,
+      "logicalTrials": 150,
+      "referenceAdventures": 24,
+      "referenceCacheHit": false,
+      "reference": [
+        33.708333333333336,
+        1.0416666666666667,
+        1.0833333333333333,
+        3.8333333333333335
+      ],
+      "cachedCandidates": 10,
+      "lightCursor": 0,
+      "comparisonParty": "[24,100,415,549,459]",
+      "pendingKind": "evaluate",
+      "comparisonElapsedMs": 300.5,
+      "adventures": 150,
+      "elapsedMs": 1808.0999999998603,
+      "imageSheetRequests": 1
+    }
+  ],
+  "unlockDiag": {
+    "version": 70,
+    "independent": true,
+    "storage": {
+      "reads": [],
+      "blocked": []
+    },
+    "source": "サンプル所有・進行（実マスター使用）",
+    "owned": 500,
+    "slots": 5,
+    "mode": "balanced",
+    "party": [
+      273,
+      434,
+      811,
+      551,
+      625
+    ],
+    "locked": [],
+    "busy": false,
+    "request": 31,
+    "engine": "balanced-light-50x3x10",
+    "generatedCandidates": 50,
+    "logicalTrials": 150,
+    "referenceAdventures": 24,
+    "referenceCacheHit": false,
+    "reference": [
+      35.583333333333336,
+      0.625,
+      0.2916666666666667,
+      2.9166666666666665
+    ],
+    "cachedCandidates": 10,
+    "lightCursor": 0,
+    "comparisonParty": "[273,434,811,551,625]",
+    "pendingKind": "evaluate",
+    "comparisonElapsedMs": 299.5,
+    "adventures": 150,
+    "elapsedMs": 1943.3000000000466,
+    "imageSheetRequests": 1
+  },
+  "detailsCheck": {
+    "comparisonParty": [
+      24,
+      100,
+      415,
+      549,
+      459
+    ],
+    "matching": true,
+    "metrics": {
+      "discoveryAuc": 2.6465053763440856,
+      "items": 2.9583333333333335,
+      "joins": 1.0416666666666667,
+      "known": 4.833333333333333,
+      "newCharacters": 1,
+      "newItems": 2,
+      "newTarget": 0,
+      "opened": 35.75,
+      "target": 0,
+      "visited": 4.833333333333333
+    },
+    "party": [
+      24,
+      100,
+      415,
+      549,
+      459
+    ]
+  },
+  "confirmTest": true,
+  "backTest": true,
+  "fixedVersionFirst": {
+    "version": 70,
+    "independent": true,
+    "storage": {
+      "reads": [],
+      "blocked": []
+    },
+    "source": "サンプル所有・進行（実マスター使用）",
+    "owned": 500,
+    "slots": 5,
+    "mode": "balanced",
+    "party": [
+      225,
+      625,
+      202,
+      273,
+      382
+    ],
+    "locked": [],
+    "busy": false,
+    "request": 4,
+    "engine": "balanced-light-50x3x10",
+    "generatedCandidates": 50,
+    "logicalTrials": 150,
+    "referenceAdventures": 24,
+    "referenceCacheHit": false,
+    "reference": [
+      35.583333333333336,
+      0.625,
+      0.2916666666666667,
+      2.9166666666666665
+    ],
+    "cachedCandidates": 10,
+    "lightCursor": 0,
+    "comparisonParty": "[225,625,202,273,382]",
+    "pendingKind": "evaluate",
+    "comparisonElapsedMs": 306.5,
+    "adventures": 150,
+    "elapsedMs": 1954.9000000001397,
+    "imageSheetRequests": 1
+  },
+  "cacheFixed": {
+    "version": 70,
+    "independent": true,
+    "storage": {
+      "reads": [],
+      "blocked": []
+    },
+    "source": "サンプル所有・進行（実マスター使用）",
+    "owned": 500,
+    "slots": 5,
+    "mode": "balanced",
+    "party": [
+      202,
+      699,
+      903,
+      603,
+      225
+    ],
+    "locked": [],
+    "busy": false,
+    "request": 7,
+    "engine": "balanced-light-50x3x10",
+    "generatedCandidates": 50,
+    "logicalTrials": 150,
+    "referenceAdventures": 0,
+    "referenceCacheHit": true,
+    "reference": [
+      35.583333333333336,
+      0.625,
+      0.2916666666666667,
+      2.9166666666666665
+    ],
+    "cachedCandidates": 10,
+    "lightCursor": 0,
+    "comparisonParty": "[202,699,903,603,225]",
+    "pendingKind": "evaluate",
+    "comparisonElapsedMs": 317.89999999990687,
+    "adventures": 150,
+    "elapsedMs": 1592.6999999999534,
+    "imageSheetRequests": 1
+  },
+  "widthChecks": [
+    {
+      "choose": {
+        "bottom": 702.75,
+        "height": 48,
+        "right": 311.984375,
+        "width": 173.25,
+        "x": 138.734375,
+        "y": 654.75
+      },
+      "clientWidth": 320,
+      "diag": {
+        "adventures": 150,
+        "busy": false,
+        "cachedCandidates": 10,
+        "comparisonElapsedMs": 323.10000000009313,
+        "comparisonParty": "[692,273,745,625,95]",
+        "elapsedMs": 2035.1999999999537,
+        "engine": "balanced-light-50x3x10",
+        "generatedCandidates": 50,
+        "imageSheetRequests": 1,
+        "independent": true,
+        "lightCursor": 0,
+        "locked": [],
+        "logicalTrials": 150,
+        "mode": "balanced",
+        "owned": 500,
+        "party": [
+          692,
+          273,
+          745,
+          625,
+          95
+        ],
+        "pendingKind": "evaluate",
+        "reference": [
+          35.583333333333336,
+          0.625,
+          0.2916666666666667,
+          2.9166666666666665
+        ],
+        "referenceAdventures": 24,
+        "referenceCacheHit": false,
+        "request": 4,
+        "slots": 5,
+        "source": "サンプル所有・進行（実マスター使用）",
+        "storage": {
+          "blocked": [],
+          "reads": []
+        },
+        "version": 70
+      },
+      "graph": {
+        "bottom": 634.75,
+        "height": 193.5625,
+        "right": 302,
+        "width": 284,
+        "x": 18,
+        "y": 441.1875
+      },
+      "metricsMatch": true,
+      "other": {
+        "bottom": 702.75,
+        "height": 48,
+        "right": 131.734375,
+        "width": 123.734375,
+        "x": 8,
+        "y": 654.75
+      },
+      "scrollWidth": 320
+    },
+    {
+      "choose": {
+        "bottom": 729.734375,
+        "height": 48,
+        "right": 360.984375,
+        "width": 211.6875,
+        "x": 149.296875,
+        "y": 681.734375
+      },
+      "clientWidth": 375,
+      "diag": {
+        "adventures": 150,
+        "busy": false,
+        "cachedCandidates": 10,
+        "comparisonElapsedMs": 327.5,
+        "comparisonParty": "[811,510,862,201,273]",
+        "elapsedMs": 2109.399999999907,
+        "engine": "balanced-light-50x3x10",
+        "generatedCandidates": 50,
+        "imageSheetRequests": 1,
+        "independent": true,
+        "lightCursor": 0,
+        "locked": [],
+        "logicalTrials": 150,
+        "mode": "balanced",
+        "owned": 500,
+        "party": [
+          811,
+          510,
+          862,
+          201,
+          273
+        ],
+        "pendingKind": "evaluate",
+        "reference": [
+          35.583333333333336,
+          0.625,
+          0.2916666666666667,
+          2.9166666666666665
+        ],
+        "referenceAdventures": 24,
+        "referenceCacheHit": false,
+        "request": 4,
+        "slots": 5,
+        "source": "サンプル所有・進行（実マスター使用）",
+        "storage": {
+          "blocked": [],
+          "reads": []
+        },
+        "version": 70
+      },
+      "graph": {
+        "bottom": 661.734375,
+        "height": 215.765625,
+        "right": 349,
+        "width": 323,
+        "x": 26,
+        "y": 445.96875
+      },
+      "metricsMatch": true,
+      "other": {
+        "bottom": 729.734375,
+        "height": 48,
+        "right": 142.296875,
+        "width": 128.296875,
+        "x": 14,
+        "y": 681.734375
+      },
+      "scrollWidth": 375
+    },
+    {
+      "choose": {
+        "bottom": 751.734375,
+        "height": 48,
+        "right": 383,
+        "width": 225.40625,
+        "x": 157.59375,
+        "y": 703.734375
+      },
+      "clientWidth": 397,
+      "diag": {
+        "adventures": 150,
+        "busy": false,
+        "cachedCandidates": 10,
+        "comparisonElapsedMs": 304.39999999990687,
+        "comparisonParty": "[415,459,67,225,83]",
+        "elapsedMs": 2034.3000000000463,
+        "engine": "balanced-light-50x3x10",
+        "generatedCandidates": 50,
+        "imageSheetRequests": 1,
+        "independent": true,
+        "lightCursor": 0,
+        "locked": [],
+        "logicalTrials": 150,
+        "mode": "balanced",
+        "owned": 500,
+        "party": [
+          415,
+          459,
+          67,
+          225,
+          83
+        ],
+        "pendingKind": "evaluate",
+        "reference": [
+          35.583333333333336,
+          0.625,
+          0.2916666666666667,
+          2.9166666666666665
+        ],
+        "referenceAdventures": 24,
+        "referenceCacheHit": false,
+        "request": 4,
+        "slots": 5,
+        "source": "サンプル所有・進行（実マスター使用）",
+        "storage": {
+          "blocked": [],
+          "reads": []
+        },
+        "version": 70
+      },
+      "graph": {
+        "bottom": 683.734375,
+        "height": 237.765625,
+        "right": 371,
+        "width": 345,
+        "x": 26,
+        "y": 445.96875
+      },
+      "metricsMatch": true,
+      "other": {
+        "bottom": 751.734375,
+        "height": 48,
+        "right": 150.59375,
+        "width": 136.59375,
+        "x": 14,
+        "y": 703.734375
+      },
+      "scrollWidth": 397
+    }
+  ],
+  "applicationConsole": [],
+  "extensionErrorCount": 115,
+  "limits": [
+    "CSS iframe widths at height 850 are not actual smartphones",
+    "Sample ownership only; actual save not read",
+    "Long-run memory and larger map timings not tested"
+  ]
+}
