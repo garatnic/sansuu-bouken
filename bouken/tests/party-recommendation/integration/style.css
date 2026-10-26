@@ -32,3 +32,8 @@ main{max-width:560px;padding-top:12px}header{padding-bottom:4px}.title-row{displ
 #evaluation #details.forecast-help{display:grid;place-items:center;flex:0 0 44px;width:44px;height:44px;min-height:44px!important;padding:0;margin:0;background:transparent;color:#386448;border-radius:50%;text-decoration:none}.forecast-help svg{width:26px;height:26px}.forecast-help:focus-visible{outline:3px solid #dd9f19}
 .radar-legend{margin-top:5px}.radar-layout{margin-top:2px}.search-actions{grid-template-columns:minmax(0,1fr) minmax(0,1.65fr)}.search-actions button{min-width:0;width:100%;white-space:normal;overflow-wrap:anywhere;line-height:1.4;height:auto;padding:8px 5px!important}.search-actions .choose{min-height:48px}
 @media(max-width:360px){#evaluation{padding:8px}.search-actions{grid-template-columns:minmax(0,1fr) minmax(0,1.4fr)}.search-actions button{font-size:13px}}
+
+/* Match the shared character-detail / party screen green buttons. */
+.header-actions #back,#forecast #closeForecast{background:#25704d;color:#fff;min-height:44px;border-radius:9px;padding:10px 14px;margin:0;flex:none;width:auto;font-weight:650}
+#forecast .forecast-dialog-heading{position:sticky;top:0;z-index:3;display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--paper,#fffdf7);padding:0 0 8px;margin:0 0 8px}
+#forecast .forecast-dialog-heading h2{margin:0;text-align:left;min-width:0;font-size:20px}
