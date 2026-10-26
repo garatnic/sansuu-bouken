@@ -49,38 +49,51 @@ function diagnose(runtime,party){const buffs=Array.from(runtime.c.BoukenParty.bu
  return facts.length?facts:[{text:'この仲間たちの組み合わせを、模擬冒険でためしてみよう。',skills:[],source:'no effectiveness claim'}];
 }
 function evaluator(runtime,input,config={},hooks={}){const cfg={...defaults,...config},cache=new Map();validate(runtime,input);let adventures=0;const before=JSON.stringify(input.save);
- async function evaluateParty(party,seeds,strict=true){if(strict)validate(runtime,input,party);else if(party.length)throw Error('Only empty reference bypass is allowed');const sig=L.signature(runtime,party),trials=[];for(const seed of seeds){if(hooks.cancelled?.())throw Error('中止しました');const k=sig+'|'+seed;if(!cache.has(k)){cache.set(k,O.adventure(runtime,input.save,party,cfg,seed));adventures++;}trials.push(cache.get(k));await hooks.yield?.();}if(JSON.stringify(input.save)!==before)throw Error('Input mutation');return L.aggregate(party,trials);}
+ async function evaluateParty(party,seeds,strict=true){if(strict)validate(runtime,input,party);else if(party.length)throw Error('Only empty reference bypass is allowed');const sig=L.signature(runtime,party),trials=[];for(const seed of seeds){if(hooks.cancelled?.())throw Error('中止しました');const k=sig+'|'+seed;if(!cache.has(k)){cache.set(k,O.adventure(runtime,input.save,party,cfg,seed));adventures++;}trials.push(cache.get(k));hooks.onTrial?.(trials.length,seeds.length);await hooks.yield?.();}if(JSON.stringify(input.save)!==before)throw Error('Input mutation');return L.aggregate(party,trials);}
  return {cfg,evaluateParty,get adventures(){return adventures;}};
 }
 async function recommendMany(runtime,input,options={},hooks={}){
  const cfg={...defaults,...options.config},locked=[...(options.locked||[])],current=options.current||input.current||input.owned.slice(0,input.slots);validate(runtime,input,null,locked);
- const started=performance.now(),random=L.rng(cfg.searchSeed),ev=evaluator(runtime,input,cfg,hooks),estimate=O.estimator(runtime,input.save,cfg),base=estimate([]),rows=new Map(),candidates=new Map();let interrupted=false;
+ let stage=0,unit=0,total=1;
+ const report=()=>hooks.onProgress?.({stage,completed:unit,total,adventures:ev.adventures,candidates:rows.size});
+ const enter=(next,count)=>{stage=next;unit=0;total=Math.max(1,count);report();};
+ const step=()=>{unit++;report();};
+ const progressHooks={...hooks,onTrial:(done,n)=>{hooks.onTrial?.(done,n);hooks.onProgress?.({stage,completed:unit+done/n,total,adventures:ev.adventures,candidates:rows.size});}};
+ const started=performance.now(),random=L.rng(cfg.searchSeed),ev=evaluator(runtime,input,cfg,progressHooks),estimate=O.estimator(runtime,input.save,cfg),base=estimate([]),rows=new Map(),candidates=new Map();let interrupted=false;
  const order=p=>arrange(input,p,locked,current),sig=p=>L.signature(runtime,p),add=p=>{p=order(p);validate(runtime,input,p,locked);candidates.set(key(p),p);};
  const fixed=[...locked],free=input.owned.filter(id=>!locked.includes(id)),need=input.slots-locked.length;
  const approx=(p,type)=>L.objective(estimate(p).map((x,k)=>100*x/(Math.max(1e-9,base[k])+x)),type);
  const refRandom=L.rng(cfg.referencePartySeed),references=[];for(let i=0;i<cfg.references;i++)references.push(randomParty(runtime,input,[],Array(input.slots).fill(null),refRandom));
- const reference=[];for(const p of references)reference.push((await ev.evaluateParty(p,Array.from({length:cfg.referenceTrials},(_,i)=>cfg.referenceSeedStart+i))).raw);
+ enter(0,references.length);
+ const reference=[];for(const p of references){reference.push((await ev.evaluateParty(p,Array.from({length:cfg.referenceTrials},(_,i)=>cfg.referenceSeedStart+i))).raw);step();}
+ enter(1,1);
  const anchor=await ev.evaluateParty([],Array.from({length:cfg.anchorTrials},(_,i)=>cfg.referenceSeedStart+i),false),cal=L.calibration(reference,anchor.raw);
+ step();
  const calMs=performance.now()-started,candidateStart=performance.now();
- if(!need)add(fixed);else{
-  for(let type=0;type<5;type++)for(let restart=0;restart<2;restart++){const p=[...fixed];while(p.length<input.slots){const rank=free.filter(id=>!p.includes(id)).map(id=>({id,score:approx([...p,id],type)})).sort((a,b)=>b.score-a.score);p.push(rank[restart?Math.floor(random()*Math.min(4,rank.length)):0].id);}add(p);}
-  if(current.filter(x=>x!==null).length===input.slots)add(current);
-  for(let i=0;i<cfg.randomCandidates;i++)add(randomParty(runtime,input,locked,current,random));
-  if(input.slots===1)for(const id of free)add([id]);
+ enter(2,need?10+cfg.randomCandidates+(input.slots===1?free.length:0)+(current.filter(x=>x!==null).length===input.slots?1:0):1);
+ if(!need){add(fixed);step();}else{
+  for(let type=0;type<5;type++)for(let restart=0;restart<2;restart++){const p=[...fixed];while(p.length<input.slots){const rank=free.filter(id=>!p.includes(id)).map(id=>({id,score:approx([...p,id],type)})).sort((a,b)=>b.score-a.score);p.push(rank[restart?Math.floor(random()*Math.min(4,rank.length)):0].id);}add(p);step();await hooks.yield?.();}
+  if(current.filter(x=>x!==null).length===input.slots){add(current);step();}
+  for(let i=0;i<cfg.randomCandidates;i++){add(randomParty(runtime,input,locked,current,random));step();await hooks.yield?.();}
+  if(input.slots===1)for(const id of free){add([id]);step();await hooks.yield?.();}
  }
  const generationMs=performance.now()-candidateStart;
  async function evaluate(p,n,selection=false){const e=await ev.evaluateParty(p,Array.from({length:n},(_,i)=>(selection?cfg.selectionSeedStart:cfg.trainSeedStart)+i));e.phase=selection?'selection':'proposal';rows.set(key(p),e);if(performance.now()-started>cfg.timeLimitMs)interrupted=true;return e;}
- for(const p of [...candidates.values()].slice(0,cfg.candidateLimit)){await evaluate(p,cfg.initialTrials);if(interrupted)break;}
+ enter(3,Math.min(candidates.size,cfg.candidateLimit));
+ for(const p of [...candidates.values()].slice(0,cfg.candidateLimit)){await evaluate(p,cfg.initialTrials);step();if(interrupted)break;}
  if(!rows.size)throw Error('候補の試行が完了しませんでした');
  const rank=(list,type)=>list.map(e=>({...e,scores:L.normalize(e.raw,cal,'range')})).map(e=>({...e,objective:L.objective(e.scores,type,.7,'hybrid')})).sort((a,b)=>b.objective-a.objective||key(a.party).localeCompare(key(b.party)));
- hooks.onProgress?.({stage:'provisional',adventures:ev.adventures,candidates:rows.size,elapsedMs:performance.now()-started});
+ enter(4,1);
  // Preserve per-purpose beams, including real raw specialization, before one/two member exchanges.
  if(!interrupted&&need){const leaders=new Map();for(let type=0;type<5;type++){for(const e of rank([...rows.values()],type).slice(0,2))leaders.set(key(e.party),e);if(type){const e=[...rows.values()].sort((a,b)=>b.raw[type-1]-a.raw[type-1])[0];leaders.set(key(e.party),e);}}
-  for(const e of leaders.values()){for(const swaps of [1,2].filter(n=>n<=need)){const p=[...e.party],positions=L.shuffle(p.map((id,i)=>!locked.includes(id)?i:-1).filter(i=>i>=0),random).slice(0,swaps);for(const pos of positions){const pool=free.filter(id=>!p.includes(id));if(pool.length)p[pos]=pool[Math.floor(random()*pool.length)];}if(!rows.has(key(p)))await evaluate(p,cfg.initialTrials);if(interrupted)break;}if(interrupted)break;}}
+  enter(4,leaders.size*[1,2].filter(n=>n<=need).length);
+  for(const e of leaders.values()){for(const swaps of [1,2].filter(n=>n<=need)){const p=[...e.party],positions=L.shuffle(p.map((id,i)=>!locked.includes(id)?i:-1).filter(i=>i>=0),random).slice(0,swaps);for(const pos of positions){const pool=free.filter(id=>!p.includes(id));if(pool.length)p[pos]=pool[Math.floor(random()*pool.length)];}if(!rows.has(key(p)))await evaluate(p,cfg.initialTrials);step();if(interrupted)break;}if(interrupted)break;}}
  const survivors=new Map();for(let type=0;type<5;type++){for(const e of rank([...rows.values()],type).slice(0,6))survivors.set(key(e.party),e);if(type){for(const e of [...rows.values()].sort((a,b)=>b.raw[type-1]-a.raw[type-1]).slice(0,4))survivors.set(key(e.party),e);}}
  const required=new Map();required.set(key(rank([...rows.values()],0)[0].party),rank([...rows.values()],0)[0]);for(let k=0;k<4;k++){const leader=[...rows.values()].sort((a,b)=>b.raw[k]-a.raw[k])[0];required.set(key(leader.party),leader);}const ordered=new Map([...required,...survivors]);
- for(const [id,e] of ordered){if(interrupted&&!required.has(id))break;await evaluate(e.party,cfg.finalTrials,true);}
+ enter(5,ordered.size);
+ for(const [id,e] of ordered){if(interrupted&&!required.has(id))break;await evaluate(e.party,cfg.finalTrials,true);step();}
  const eligible=[...rows.values()].filter(e=>e.phase==='selection'),pool=eligible.length?eligible:[...rows.values()],banks={};
+ enter(6,5);
  for(let type=0;type<5;type++){
   let list=rank(pool,type);
   if(type){const best=Math.max(...list.map(e=>e.raw[type-1]));list=list.filter(e=>e.raw[type-1]>=cfg.specialistRatio*best).sort((a,b)=>b.raw[type-1]-a.raw[type-1]||b.objective-a.objective);}
@@ -90,9 +103,10 @@ async function recommendMany(runtime,input,options={},hooks={}){
   const distinct=[],signatures=new Set();for(const e of list){const sig=L.signature(runtime,e.party);if(!signatures.has(sig)){signatures.add(sig);distinct.push(e);}}
   const chosen=distinct.length?[distinct.shift()]:[];
   while(distinct.length&&chosen.length<cfg.bankLimit){distinct.sort((a,b)=>Math.min(...chosen.map(e=>abilityDistance(runtime,b.party,e.party)))-Math.min(...chosen.map(e=>abilityDistance(runtime,a.party,e.party)))||b.objective-a.objective);chosen.push(distinct.shift());}
-  banks[modes[type+1]]=chosen.map(e=>({...e,diagnosis:diagnose(runtime,e.party)}));
+  banks[modes[type+1]]=chosen.map(e=>({...e,diagnosis:diagnose(runtime,e.party)}));step();await hooks.yield?.();
  }
 
+ enter(7,1);step();
  return {banks,calibration:cal,referenceParties:references,evaluations:[...rows.values()],context:L.context(runtime,input.save,cfg),config:cfg,elapsedMs:performance.now()-started,adventures:ev.adventures,profile:{calibrationMs:calMs,candidateGenerationMs:generationMs},interrupted,provisional:true,qualityRatioMeaning:'training score only; not a true performance guarantee',locked};
 }
 
@@ -109,8 +123,9 @@ async function compare(runtime,input,party,config={},hooks={}){
  const cfg={...defaults,...config};if(![10,20,30].includes(cfg.size)||cfg.budget!==30)throw Error('比較は10/20/30四方・30問の試作条件です');
  const current=validateAny(runtime,input,input.current),candidate=validateAny(runtime,input,party),seeds=config.comparisonSeeds||comparisonSeeds;
  if(!seeds.length||new Set(seeds).size!==seeds.length)throw Error('比較seedが不正です');
- const before=JSON.stringify(input.save),cache=new Map();
- async function evaluate(ids){const trials=[];for(const seed of seeds){if(hooks.cancelled?.())throw Error('中止しました');const k=L.signature(runtime,ids)+'|'+seed;if(!cache.has(k))cache.set(k,O.adventure(runtime,input.save,ids,cfg,seed));trials.push(cache.get(k));await hooks.yield?.();}const result=L.aggregate(ids,trials);const mean=k=>trials.reduce((s,t)=>s+t[k],0)/trials.length;return {...result,initialOpened:mean('initial'),power:Math.round(result.metrics.opened/cfg.budget*1000),openedPerAnswer:result.metrics.opened/cfg.budget,openedSamples:trials.map(t=>t.opened),initialSamples:trials.map(t=>t.initial)};}
+ const before=JSON.stringify(input.save),cache=new Map();let comparisonDone=0;
+ hooks.onProgress?.({stage:8,completed:0,total:seeds.length});
+ async function evaluate(ids){const trials=[];for(const seed of seeds){if(hooks.cancelled?.())throw Error('中止しました');const k=L.signature(runtime,ids)+'|'+seed;if(!cache.has(k))cache.set(k,O.adventure(runtime,input.save,ids,cfg,seed));trials.push(cache.get(k));comparisonDone++;hooks.onProgress?.({stage:comparisonDone<=seeds.length?8:9,completed:(comparisonDone-1)%seeds.length+1,total:seeds.length});await hooks.yield?.();}const result=L.aggregate(ids,trials);const mean=k=>trials.reduce((s,t)=>s+t[k],0)/trials.length;return {...result,initialOpened:mean('initial'),power:Math.round(result.metrics.opened/cfg.budget*1000),openedPerAnswer:result.metrics.opened/cfg.budget,openedSamples:trials.map(t=>t.opened),initialSamples:trials.map(t=>t.initial)};}
  const baseline=await evaluate(current),recommended=await evaluate(candidate),differences=recommended.samples.map((row,i)=>row.map((x,k)=>x-baseline.samples[i][k])),delta=L.mean(differences),se=delta.map((m,k)=>Math.sqrt(differences.reduce((s,row)=>s+(row[k]-m)**2,0)/Math.max(1,seeds.length-1)/seeds.length));
  if(JSON.stringify(input.save)!==before)throw Error('Input mutation');
  return {baseline,candidate:recommended,delta,deltaSE:se,assumptions:O.assumptions(runtime,input.save),diagnosis:diagnose(runtime,candidate),seeds,condition:{size:cfg.size,budget:cfg.budget,slots:input.slots,cumulativeExplored:input.save.records.totalExplored||0,museumStages:Array.from(runtime.c.BoukenCollection.stages(input.save)),policy:'informed',initialIncluded:true,standard:'独立試作の比較条件。製品標準は未承認'},note:'開拓力＝この条件の期待総開拓マス/30×1000。初期開拓を含む。推定であり保証ではない。同seedでもスキルによって地形と乱数消費は異なる。SEは世界間変動のみ、モデルや参照集団の誤差を含まない。'};

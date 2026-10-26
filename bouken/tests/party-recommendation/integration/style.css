@@ -10,3 +10,5 @@ main{max-width:560px;padding-top:12px}header{padding-bottom:4px}.title-row{displ
 #power{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;line-height:1.35}#power>span{white-space:nowrap}#power .power-current{font-size:14px;font-weight:500;color:#64745f}
 
 #searchProgress{margin:8px 0 10px;padding:9px 12px;background:#e4efdf;border-radius:10px;color:#2b5b3c;font-size:14px;font-weight:700}#searchMeter{display:block;width:100%;height:14px;margin-top:5px;accent-color:#307a50}header{margin-bottom:4px}.party-grid{margin-bottom:8px}
+
+#searchStage{display:block;font-size:11px;font-weight:normal;line-height:1.5;margin-top:4px;overflow-wrap:anywhere}#searchMessage{display:block;min-height:2.8em;line-height:1.4}
