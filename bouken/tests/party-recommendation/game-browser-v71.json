@@ -1,0 +1,166 @@
+{
+  "date": "2026-10-27",
+  "version": 71,
+  "implementationSha": "e6f40659d3849926980398026860dd4cc91d959d",
+  "codeVerificationSha": "00928dadeecdc5a54a827621d3fbb3b22baba370",
+  "environment": "Cloud Chrome PC; fixture widths, not smartphone emulation",
+  "url": "https://sansuu-bouken.vercel.app/bouken/tests/party-recommendation-preview.html",
+  "initialFixture": {
+    "owned": 500,
+    "slots": 5,
+    "size": 10,
+    "items": 240
+  },
+  "balanced": {
+    "candidates": 50,
+    "logicalTrials": 150,
+    "referenceAdventures": 24,
+    "bank": 10,
+    "searchMs": 2008.7,
+    "comparisonMs": 346.2
+  },
+  "specialists": [
+    {
+      "mode": "explore",
+      "searchMs": 1245.7
+    },
+    {
+      "mode": "treasure",
+      "searchMs": 1221
+    },
+    {
+      "mode": "companion",
+      "searchMs": 1193.1
+    },
+    {
+      "mode": "map",
+      "searchMs": 1191.1
+    }
+  ],
+  "specialistCounts": {
+    "candidates": 50,
+    "logicalTrials": 150,
+    "bank": 10
+  },
+  "fixedCheck": {
+    "id": 308,
+    "position": 2,
+    "first": [
+      286,
+      457,
+      308,
+      342,
+      24
+    ],
+    "next": [
+      286,
+      255,
+      308,
+      435,
+      354
+    ],
+    "sameSearchMs": 1188.6,
+    "cursor": [
+      0,
+      1
+    ]
+  },
+  "saveCheck": {
+    "beforeWrites": 0,
+    "beforeParty": [
+      1
+    ],
+    "saveFailureWrites": 0,
+    "saveFailureStayedOpen": true,
+    "successWrites": 1,
+    "savedParty": [
+      286,
+      255,
+      308,
+      435,
+      354
+    ],
+    "unrelatedDataUnchanged": true,
+    "partyScreenReloadPreserved": true,
+    "departureWorldParty": [
+      286,
+      255,
+      308,
+      435,
+      354
+    ],
+    "nextParty": [
+      200,
+      341,
+      215,
+      329,
+      300
+    ],
+    "worldSnapshotPreserved": true
+  },
+  "widths": [
+    {
+      "width": 320,
+      "client": 320,
+      "scroll": 320,
+      "buttonHeight": 48,
+      "chooseRight": 311.984375,
+      "buttonBottom": 700.75
+    },
+    {
+      "width": 390,
+      "client": 390,
+      "scroll": 390,
+      "buttonHeight": 48,
+      "chooseRight": 376,
+      "buttonBottom": 742.734375
+    },
+    {
+      "width": 412,
+      "client": 412,
+      "scroll": 412,
+      "buttonHeight": 48,
+      "chooseRight": 397.984375,
+      "buttonBottom": 739.140625
+    }
+  ],
+  "checks": [
+    "6 modes",
+    "forecast and member skill detail",
+    "fixed position and cached switch",
+    "cancel restart",
+    "back does not write",
+    "29 locked/30 random/one slot all fixed",
+    "927 companions and 480 items use evaluation-only assumptions, zero writes",
+    "normal production title version71 and 0-owner locked entry",
+    "final normal zero-owner message and back verified",
+    "manual roster character detail, full-slot replacement save, entry-party restoration verified on public QA"
+  ],
+  "console": {
+    "appErrorsObserved": 0,
+    "extensionMetadataErrorsObserved": true
+  },
+  "limitations": [
+    "smartphone touch/speed/memory not tested",
+    "fixture source uses real game pages and save API with isolated storage, not user inventory",
+    "ranking quality unchanged; sparse outcomes and three-trial selection remain uncertain"
+  ],
+  "durableReload": {
+    "storage": "dedicated bouken.qa.party.v71 browser localStorage; normal game key untouched",
+    "party": [
+      352,
+      450,
+      117,
+      55,
+      210
+    ],
+    "wholePageReloadPreserved": true
+  },
+  "regression": {
+    "rootFiles": 21,
+    "passed": 20,
+    "blocked": 1,
+    "blockedTest": "e09-migration.test.cjs",
+    "reason": "Required git show e3cd20cb4a720a5bd16689c1bfc14a60b6ba635a:bouken/data/characters.json unavailable in checkout; historical prerequisite, no migration code changed"
+  }
+}
