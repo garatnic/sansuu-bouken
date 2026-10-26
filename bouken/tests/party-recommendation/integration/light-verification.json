@@ -1,0 +1,37 @@
+{
+  "results": [
+    {
+      "mode": "explore",
+      "candidates": 50,
+      "logicalTrials": 150,
+      "physicalAdventures": 150,
+      "bank": 10,
+      "elapsedMs": 1520.575534
+    },
+    {
+      "mode": "treasure",
+      "candidates": 50,
+      "logicalTrials": 150,
+      "physicalAdventures": 150,
+      "bank": 10,
+      "elapsedMs": 1317.9140239999997
+    },
+    {
+      "mode": "companion",
+      "candidates": 50,
+      "logicalTrials": 150,
+      "physicalAdventures": 150,
+      "bank": 10,
+      "elapsedMs": 1436.7685099999999
+    },
+    {
+      "mode": "map",
+      "candidates": 50,
+      "logicalTrials": 150,
+      "physicalAdventures": 150,
+      "bank": 10,
+      "elapsedMs": 1691.6528360000011
+    }
+  ],
+  "passed": true
+}
