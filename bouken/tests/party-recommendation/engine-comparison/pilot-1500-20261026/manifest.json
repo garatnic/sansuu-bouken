@@ -1,0 +1,79 @@
+{
+  "planHash": "77c421610c6a80444387073b3ae1402f0bedb992fafd204088ca4e377926026b",
+  "sourceHash": "09cbf6fe78caf30fbbe9173c2e549d724131e56b6fe06c61767dada3e4259e36",
+  "selection": "pilot",
+  "auditTrials": 16,
+  "targetPerMethod": 500,
+  "targetTotal": 1500,
+  "environment": {
+    "node": "v24.22.1",
+    "cpu": "AMD EPYC 9V74 80-Core Processor"
+  },
+  "completed": [
+    {
+      "id": "10-01-001",
+      "file": "10-01-001.json",
+      "sha256": "bfc3d20bae64186a60ea1a895342bbe74c1bf61c55e6849b4a842175008e560b",
+      "wallMs": 3198.844169,
+      "recommendationMs": {
+        "current": 2025.309922,
+        "anchored": 175.8479830000001,
+        "random": 137.89206000000013
+      },
+      "auditMs": 856.4738459999999,
+      "auditAdventures": 160
+    },
+    {
+      "id": "30-01-001",
+      "file": "30-01-001.json",
+      "sha256": "df90cfa2a0b6f77ad247a512e70ead7a26189491fd1a6f2560913b24d99bf2dc",
+      "wallMs": 5197.300192,
+      "recommendationMs": {
+        "current": 3291.840634,
+        "anchored": 185.00947499999984,
+        "random": 451.1737119999998
+      },
+      "auditMs": 1268.7749600000006,
+      "auditAdventures": 224
+    },
+    {
+      "id": "100-03-001",
+      "file": "100-03-001.json",
+      "sha256": "b36e8794b35c453bc9145a12e1b4339bd4a2d650358a690f92af2d8a8dd233fa",
+      "wallMs": 35703.229408,
+      "recommendationMs": {
+        "current": 11661.041458,
+        "anchored": 1102.0056600000025,
+        "random": 5939.657535999999
+      },
+      "auditMs": 16999.675458,
+      "auditAdventures": 448
+    },
+    {
+      "id": "300-02-001",
+      "file": "300-02-001.json",
+      "sha256": "04f5fd99f346da058a336f9d4f5de44f04fe9e382a30bc7c2d18b8d48f0004f8",
+      "wallMs": 33370.827966,
+      "recommendationMs": {
+        "current": 10524.971652,
+        "anchored": 4754.436277000001,
+        "random": 3413.4444109999968
+      },
+      "auditMs": 14676.886025000007,
+      "auditAdventures": 560
+    },
+    {
+      "id": "927-01-001",
+      "file": "927-01-001.json",
+      "sha256": "16b083d5bf25daa6b53ea2ce1a5fd0dd0a253b62eeff456c4e3a91e494061090",
+      "wallMs": 19216.096653,
+      "recommendationMs": {
+        "current": 10232.850136000008,
+        "anchored": 1743.7508350000135,
+        "random": 1601.804575000002
+      },
+      "auditMs": 5636.820380000005,
+      "auditAdventures": 576
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "baseCommit": "6a3da473418a7c2c166771a85a213d3fd2bc6eba",
+  "sourceHash": "09cbf6fe78caf30fbbe9173c2e549d724131e56b6fe06c61767dada3e4259e36",
+  "environment": {
+    "node": "v24.22.1",
+    "cpu": "AMD EPYC 9V74 80-Core Processor"
+  },
+  "designs": [
+    [
+      30,
+      0,
+      10,
+      0.05
+    ],
+    [
+      100,
+      0,
+      10,
+      0.05
+    ],
+    [
+      140,
+      1,
+      10,
+      0.5
+    ],
+    [
+      279,
+      2,
+      10,
+      0.95
+    ],
+    [
+      500,
+      0,
+      10,
+      0.5
+    ],
+    [
+      500,
+      3,
+      20,
+      0.5
+    ],
+    [
+      500,
+      4,
+      30,
+      0.95
+    ],
+    [
+      500,
+      5,
+      10,
+      0.5
+    ],
+    [
+      927,
+      0,
+      10,
+      1
+    ],
+    [
+      100,
+      0,
+      10,
+      0.05
+    ],
+    [
+      279,
+      2,
+      10,
+      0.95
+    ],
+    [
+      500,
+      0,
+      10,
+      0.5
+    ]
+  ],
+  "scope": "Node experiment only. Public engine/UI and G unchanged.",
+  "cases": [
+    {
+      "id": "01",
+      "file": "case-01.json",
+      "spec": {
+        "count": 30,
+        "fixed": 0,
+        "size": 10,
+        "itemFraction": 0.05,
+        "ownershipSeed": 52600001,
+        "itemSeed": 52600002
+      },
+      "sha256": "50748e9587051888f3c785dd342440c416fcbb6f29415e28a336a1ed6026bf3e"
+    },
+    {
+      "id": "02",
+      "file": "case-02.json",
+      "spec": {
+        "count": 100,
+        "fixed": 0,
+        "size": 10,
+        "itemFraction": 0.05,
+        "ownershipSeed": 52700001,
+        "itemSeed": 52700002
+      },
+      "sha256": "a05c63296211ff51b1bd7b871a5ce0dc4fbd7ac93c95f39ccf42be8f0383d83c"
+    }
+  ]
+}

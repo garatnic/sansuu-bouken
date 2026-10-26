@@ -1,0 +1,7 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),L=require('../phase2/node.cjs'),A=require('../integration/api.js'),B=require('./light.cjs'),r=L.load();
+const [planFile,folder,output]=process.argv.slice(2);if(!output||fs.existsSync(output))throw Error('New output only');const plan=JSON.parse(fs.readFileSync(planFile)),m=JSON.parse(fs.readFileSync(path.join(folder,'manifest.json'))),report=[];
+(async()=>{for(const item of m.completed){const d=JSON.parse(fs.readFileSync(path.join(folder,item.file))),owner=plan.sets.find(x=>x.id===d.task.owner),f=L.makeFixture(r,{...owner.spec,itemFraction:d.task.itemFraction,config:{...owner.spec.config,size:d.task.size}});f.current=[...d.current];f.save.party=[...f.current];f.eligible=true;const before=JSON.stringify(f.save),row={id:d.task.id,count:d.task.count,size:d.task.size,methods:{}};
+ for(const kind of ['current','anchored','random']){const bank=d.methods[kind].bank,c=B.cursor(bank);c.next();const start=performance.now(),compare=await A.compare(r,f,c.current.party,{size:d.task.size,budget:30});row.methods[kind]={compare24Ms:performance.now()-start,logicalAdventures:48,party:c.current.party,comparisonSeeds:compare.seeds,cursorMicroseconds:d.methods[kind].quality.switch.microsecondsPerSwitch};}
+ assert.equal(JSON.stringify(f.save),before);report.push(row);fs.writeFileSync(output,JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(row));}
+})().catch(e=>{console.error(e);process.exitCode=1;});

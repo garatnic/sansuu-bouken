@@ -1,0 +1,7 @@
+{
+  "plannedLegacyConditions": 12,
+  "completedLegacyConditions": 2,
+  "unexecutedLegacyConditions": 10,
+  "status": "stopped after user changed sample design; completed files preserved",
+  "formal1500": false
+}

@@ -1,0 +1,13 @@
+{
+  "completedPilotPerMethod": 5,
+  "completedPilotTotal": 15,
+  "unexecutedRecommendations": 1485,
+  "completedFormal64": 0,
+  "formalNotStarted": true,
+  "projectedHours": {
+    "16": 2.685546305416668,
+    "32": 3.7810638240000016,
+    "64": 5.972098861166669
+  },
+  "runtimeMeasuredSeconds": 96.686298388
+}
