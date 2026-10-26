@@ -1,6 +1,6 @@
 > 2026-10-26：専門4モードを軽量50候補×3試行→10保存へ接続。おまかせ/ランダム/旧api.jsは維持。表示比較は別途24試行。独立モック試用でGではない。[接続記録・スマホ確認票](../../../siyou/おまかせ編成軽量方式モック接続_20261026.md)。新機能の入口は既存index.html。
 >
-> 機能検査：`node bouken/tests/party-recommendation/integration/light-test.cjs`、`light-app-test.cjs`。幅確認補助：light-browser-check.html（320/390/412の実画面iframe）。
+> 機能検査：`node bouken/tests/party-recommendation/integration/light-test.cjs`、`light-app-test.cjs`。既存light-verification.jsonは初回計測原本。再計測JSONを保存する場合だけlight-test.cjsに新規出力パスを渡す（上書き拒否）。幅確認補助：light-browser-check.html（320/390/412の実画面iframe）。
 
 # 独立検証・現行チェックポイント（D/E/F）
 
