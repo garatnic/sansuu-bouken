@@ -1,0 +1,117 @@
+{
+  "version": 72,
+  "date": "2026-10-27",
+  "implementationSha": "019e6338e4af8724cd6e6fc145856f6e159e2dc2",
+  "environment": "Cloud Chrome PC iframe, height850px, QA-only browser save",
+  "buttonOrder": [
+    "はずす",
+    "おすすめ",
+    "もとに戻す"
+  ],
+  "manualChart": {
+    "series": 1,
+    "valueBadges": 4,
+    "legends": 0,
+    "color": "blue"
+  },
+  "recommendationChart": {
+    "series": 2,
+    "legends": 1
+  },
+  "initial": [
+    30,
+    0.2,
+    0.2,
+    1.4
+  ],
+  "add": [
+    34.5,
+    0,
+    0.1,
+    1.4
+  ],
+  "remove": [
+    33.8,
+    0.2,
+    0.1,
+    1.0
+  ],
+  "restoreMatchesInitial": true,
+  "rapidChanges": [
+    39.4,
+    0.5,
+    0.5,
+    5.3
+  ],
+  "saveFailurePreservesChart": true,
+  "recommendedConfirmedParty": [
+    166,
+    283,
+    411,
+    69,
+    92
+  ],
+  "recommendedChart": [
+    34.9,
+    0.6,
+    0.3,
+    2.1
+  ],
+  "wholePageReloadMatches": true,
+  "emptyPartyChart": [
+    30,
+    0.1,
+    0.1,
+    0.9
+  ],
+  "widths": [
+    {
+      "iframe": 320,
+      "client": 305,
+      "scroll": 305,
+      "buttonWidths": [
+        79,
+        79,
+        79
+      ],
+      "buttonHeights": [
+        48,
+        48,
+        48
+      ]
+    },
+    {
+      "iframe": 390,
+      "client": 375,
+      "scroll": 375,
+      "buttonWidths": [
+        102.328,
+        102.328,
+        102.344
+      ],
+      "buttonHeights": [
+        48,
+        48,
+        48
+      ]
+    },
+    {
+      "iframe": 412,
+      "client": 397,
+      "scroll": 397,
+      "buttonWidths": [
+        109.656,
+        109.672,
+        109.656
+      ],
+      "buttonHeights": [
+        48,
+        48,
+        48
+      ]
+    }
+  ],
+  "appErrorsObserved": 0,
+  "extensionMetadataErrorsObserved": true,
+  "smartphone": "pending user validation"
+}
