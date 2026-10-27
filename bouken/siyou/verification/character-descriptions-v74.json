@@ -291,8 +291,24 @@
     "comparisonAndUnlocksAndWorker": "PASS",
     "legacyCharactersPartyAudit": "FAIL: BoukenPartyForecast is not defined; reproduced with original HEAD party.html"
   },
-  "status": "READY_TO_COMMIT",
-  "publicVersion": 73,
-  "commit": null,
-  "legacyAuditDisposition": "User authorized commit after explanation on 2026-10-28. Legacy harness failure reproduces on baseline; excluded as unrelated. Required data checks and active regression checks pass."
+  "status": "COMMITTED_AND_VERCEL_PUBLISHED",
+  "publicVersion": 74,
+  "commit": "07720ba097f81f15295ab4e827b5645c140ae9a2",
+  "legacyAuditDisposition": "User authorized commit after explanation on 2026-10-28. Legacy harness failure reproduces on baseline; excluded as unrelated. Required data checks and active regression checks pass.",
+  "publicVerification": {
+    "vercel": {
+      "state": "READY",
+      "deploymentId": "dpl_7bP7AgNyBz2UwqwQcWudQNtFKaw6",
+      "url": "https://sansuu-bouken.vercel.app/bouken/",
+      "version": 74,
+      "charactersByteExact": true
+    },
+    "githubPages": {
+      "status": "pending",
+      "observedVersion": 73,
+      "charactersByteExact": false
+    },
+    "smartphone": "user verification pending",
+    "browserUI": "not performed for this data-only update"
+  }
 }
