@@ -56,3 +56,8 @@ common/party-forecast.jsは既存Workerのinput→evaluateを共有する。現�
 新規party-forecast.test.cjs、既存radar、light-app（専門モック/本体おまかせ）、party-recommendation-game/f-buffs/departure-navigation/encyclopedia、API12項目をPASS。旧E09テストの過去入力依存は今回変更しない。既存推薦/模擬冒険API/Worker/スキル式は無変更。
 
 [公開確認画像（320px）](party-forecast-v72.jpg) / [操作結果JSON](party-forecast-v72.json)。ver.72変更後のスマホは上の確認票でユーザー確認待ち。
+
+【2026-10-27 ver.73 編成ボタンと画面名】
+[x] 左から「じどう🤖」「はずす」「もとに戻す」。「じどう🤖」は確定ボタンと同じ背景#c58e28・白文字。
+[x] 本体おすすめ画面の見出し/titleと親dialog/iframeのアクセシブル名を「じどうへんせいロボ🤖」に統一。独立モックや推薦/保存ロジックは変更なし。
+[ ] スマホ実機の表示・開閉・手動編成・保存再開はユーザー確認待ち。
