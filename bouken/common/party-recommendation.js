@@ -17,6 +17,6 @@ window.BoukenRecommendation=Object.freeze({
   });
   dialog.addEventListener('cancel',event=>{event.preventDefault();close();});
   dialog.addEventListener('close',close);window.addEventListener('pagehide',close,{once:true});
-  dialog.append(frame);document.body.append(dialog);dialog.showModal();frame.src='party-recommendation.html?v=73';
+  dialog.append(frame);document.body.append(dialog);dialog.showModal();frame.src='party-recommendation.html?v=74';
  }
 });
