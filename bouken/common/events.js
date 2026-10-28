@@ -74,7 +74,7 @@ window.BoukenEvents=Object.freeze({
   w.visitedFacilities[i]=true;
   w.eventResults=w.eventResults||{};
   const result={type,pool,id:chosen.id,name:chosen.name,success,retried,first:success&&previous===0,extra};
-  w.eventResults[i]=result;
+  w.eventResults[i]=result;if(window.BoukenResult)BoukenResult.encounter(w,result,'facility');
   delete w.eventChoices[i];
   return result;
  }

@@ -1,26 +1,26 @@
 {
-  "commit": "0cc8fa87567ff8a9d798bd059d7ef5530117739d",
-  "version": 74,
+  "commit": "d749a19910d0d2c5ee9322455a08c15f89dc3e29",
+  "version": 75,
   "gitBlobs": {
     "bouken/common/buffs.js": "47bd448294bc53924cd85757aa1f1f77497cb13e",
     "bouken/common/collection.js": "9a52a2e880de0c8e4bf0f48d45966e87ef4436a9",
-    "bouken/common/events.js": "de7c1b505265cbecf62fbc857baf750246bfc98c",
+    "bouken/common/events.js": "7e8b74d541b84d702a9a9f90c1511c77f901812f",
     "bouken/common/explore.js": "30e16ae2bfd06f5fee92c2120668b1a3ca6d941f",
     "bouken/common/party.js": "380dc39d9ead60262b2fe96c16679d5904272061",
-    "bouken/common/progress.js": "f583895db3ec804b7154ab8482c23c76c38fe9c7",
+    "bouken/common/progress.js": "f8b7063cb631dc14b3bb4aadaed13025c7e82724",
     "bouken/common/schema.js": "e7b99c67f4f511c00b055dda5894a4eb5a3fd02d",
     "bouken/common/worldgen.js": "ad40ea25bca21b560949d17b13690b7c3da98e56",
-    "bouken/data/characters.json": "ad9a76e2bf3c7fceb7315aff52ec4b846382bf01",
+    "bouken/data/characters.json": "1736be189c4e5d91432972a458ce0335e283bad2",
     "bouken/data/collection_items.json": "776d3a6fe6e6ca3bef3224a18853765605190d13",
     "bouken/data/collection_rewards.json": "e9242c414fbbdaf57dee725a88a7d084ee17c6b8",
     "bouken/data/facilities.json": "3450edcd63fa9fd2d388ade266f60531664fd1a7",
     "bouken/data/skills.json": "7ade9fddd739c586f5c7954e6aa80ea66c8eff19",
     "bouken/data/terrains.json": "316bd119f274ac678224e380fe41cee4976772e2",
     "bouken/data/world_facility_counts.json": "a1dfda8921560a21cb28afb14d1a09f5e0859b63",
-    "bouken/world.html": "5b9bccfd178f1df20c73eaa228feef7979894249",
-    "bouken/worldcreate.html": "d0790675f9f4311f51d7b862fb6f5f43235a7488",
-    "bouken/common/version.js": "326b60788fe745591d93d28228fba5fe4d6dac4c"
+    "bouken/world.html": "223bdec7eacce27604493f8d6a4b72d64dba3294",
+    "bouken/worldcreate.html": "0030af11a8b1232976a8b80336d387f5be634975",
+    "bouken/common/version.js": "59abbbc315b53f8775d31e98c692f860204a57ff"
   },
   "originalResearchCommit": "bf5a69255f627090c2e6fa2ce089209b88d72a4f",
-  "note": "ver.74: replace only 248 character descriptions from approved CSV; refresh version/cache and verified source hashes. Simulation algorithms unchanged. commit identifies the pre-update main baseline."
+  "note": "ver.75: adventure result measurements and UI; refresh current runtime hashes, including latest upstream character data. Reward and draw rules unchanged. commit identifies pre-update main."
 }
