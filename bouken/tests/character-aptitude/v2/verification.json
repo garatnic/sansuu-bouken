@@ -1,0 +1,208 @@
+{
+  "passed": true,
+  "tests": 42,
+  "pass": 42,
+  "fail": 0,
+  "node": "v24.22.1",
+  "independent": {
+    "passed": true,
+    "scenarios": 1,
+    "charactersPerScenario": 927,
+    "metricChecks": 22248,
+    "specialtyChecks": 927,
+    "additionalSimulations": 0
+  },
+  "checks": [
+    {
+      "name": "Protected sources unchanged",
+      "passed": true
+    },
+    {
+      "name": "67 unique definitions and IDs",
+      "passed": true
+    },
+    {
+      "name": "Only approved definition differences",
+      "passed": true
+    },
+    {
+      "name": "E01 Lv1 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "E01 Lv2 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "E01 Lv3 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "E02 Lv1 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "E02 Lv2 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "E02 Lv3 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "E03 Lv1 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "E03 Lv2 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "E03 Lv3 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "E04 Lv1 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "E04 Lv2 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "E04 Lv3 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "E05 Lv1 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "E05 Lv2 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "E05 Lv3 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "E06 Lv1 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "E06 Lv2 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "E06 Lv3 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "E07 Lv1 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "E07 Lv2 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "E07 Lv3 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "E08 Lv1 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "E08 Lv2 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "E08 Lv3 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "D04 Lv1 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "D04 Lv2 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "D04 Lv3 isolated exact contribution",
+      "passed": true
+    },
+    {
+      "name": "Excluded skills do not alter other scores/synergies",
+      "passed": true
+    },
+    {
+      "name": "Unknown ID, invalid Lv, duplicate skills rejected",
+      "passed": true
+    },
+    {
+      "name": "Specialty zero exclusion, tiny positive, ties, all-zero",
+      "passed": true
+    },
+    {
+      "name": "Zero variance and midrank ties",
+      "passed": true
+    },
+    {
+      "name": "927 unique complete valid-range records",
+      "passed": true
+    },
+    {
+      "name": "Archived v1 full numeric details and current skill identity",
+      "passed": true
+    },
+    {
+      "name": "No raw-zero winners; both excluded holder groups retained",
+      "passed": true
+    },
+    {
+      "name": "Input order independent including skills and master",
+      "passed": true
+    },
+    {
+      "name": "Deterministic output bytes",
+      "passed": true
+    },
+    {
+      "name": "Independent Python direct recomputation",
+      "passed": true
+    },
+    {
+      "name": "Phase6 plan unique unused IDs and no runs",
+      "passed": true
+    },
+    {
+      "name": "Protected sources still unchanged after generation",
+      "passed": true
+    }
+  ],
+  "artifacts": {
+    "PHASE6-PLAN.md": "fb53b8b48c982371aeed61209fc0d5e159c59e96bd956ebba9e6b0456f2b4a30",
+    "README.md": "590913c3150d160061cab799aa795920d9e1f6b8a067f771cdaad9ce8368d98d",
+    "REPORT.md": "606924de590a4847f4852cb9e43056f1998a78c60ed2f693ddef835c81c91bcb",
+    "analysis.json": "fc13de245ff5ae45c0daabedba46b7ff45062ce0bb7d143fdba2467a1f7e4b39",
+    "calculate.cjs": "1015b4bfd5829a52bec61d607788cf7beaca915bea87a6ac905bb1c9e60fc887",
+    "comparison.csv": "dd26117f72209db7a797c8f12a4845cce26c59d7fc86cec5bdb44e0c3bea8234",
+    "details.json": "77b1e6833a7cc61986b6176eee972499b4fe037cb1d8f3970a90d6cd1766f96d",
+    "distribution.csv": "c37fd51aa4e90effa7c8b2b4da876aad601ba38b4741672005b9bdc543cbc217",
+    "e08-impact.csv": "1bdafcb80a5edb110db77bd499c49bf8a4946c9ebfa8028b8c83780026061b9a",
+    "excluded-skill-audit.csv": "eeee91db64ab4fffd360836a853cf0bb9c818de2c2d79bc9cc04f3824811b0ef",
+    "independent-check.py": "f0627a7f77c454d58babd128d772a9560196f0859eb944f62473f20c312ea405",
+    "input-manifest.json": "b298944126b01f8f8a9211c9df51792b71378c4cf3e4c55569571efda5ec2981",
+    "phase6-plan.json": "8f72245e40f9044521c93a1e30aef5861190da02a460de5559ac9a7c2ee399a4",
+    "phase6-selection.csv": "05a2a2647da27ae66f071b8fe5a3e542d405f6cd450ce6fdf344c64c56eaa226",
+    "plan-phase6.cjs": "5dc9e3db008e8a0daf3e9ee405320b64f8407a5c431c73856f0c50ad267ce712",
+    "scorer.cjs": "cfdedbf33fe5ca107baa2b001aba1ca48afd89570f17015b1c9d3a9169e3b151",
+    "scores.csv": "a1101a8eaebf445b1eee781c0d5c67ac5e15cde63c212db0db78ca3575d76724",
+    "scoring-v2.json": "7b5a66f69e30629da0acfdc87836895b05361230cabf778ab381c1d448bd93d3",
+    "specialty-changes.csv": "6ee9b9b60ed545ac525b700186ede4489fb6fb91d5f680f0c54b4e5662559a58",
+    "verify.cjs": "3c1686f00763c304019d8b4b66f8ed37616ecbc1326fe36191169529d74f0c3c"
+  },
+  "additionalSimulations": 0
+}

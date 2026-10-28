@@ -1,0 +1,109 @@
+{
+  "sourceCommit": "535055e00f5133cc0b8679d127794a18ba6acc21",
+  "gameVersion": 74,
+  "aptitudeVersion": "2.0.0",
+  "population": 927,
+  "renamed": 77,
+  "absoluteChanged": 453,
+  "specialtyChanged": 137,
+  "recalibrationOnly": 58,
+  "noSpecialty": [],
+  "multipleSpecialties": [],
+  "v1": {
+    "development": {
+      "n": 927,
+      "mean": 23.173678532901835,
+      "median": 24,
+      "populationStdDev": 14.476445092638434,
+      "min": 0,
+      "max": 61,
+      "zeroCount": 123,
+      "specialtyCount": 256
+    },
+    "companions": {
+      "n": 927,
+      "mean": 8.86839266450917,
+      "median": 0,
+      "populationStdDev": 13.975473349596239,
+      "min": 0,
+      "max": 56,
+      "zeroCount": 628,
+      "specialtyCount": 236
+    },
+    "treasure": {
+      "n": 927,
+      "mean": 26.492988133764833,
+      "median": 25,
+      "populationStdDev": 13.244269869751776,
+      "min": 0,
+      "max": 60,
+      "zeroCount": 42,
+      "specialtyCount": 203
+    },
+    "exploration": {
+      "n": 927,
+      "mean": 18.320388349514563,
+      "median": 16,
+      "populationStdDev": 16.553461644194503,
+      "min": 0,
+      "max": 67,
+      "zeroCount": 279,
+      "specialtyCount": 232
+    }
+  },
+  "v2": {
+    "development": {
+      "n": 927,
+      "mean": 26.97411003236246,
+      "median": 27,
+      "populationStdDev": 17.90353447054675,
+      "min": 0,
+      "max": 70,
+      "zeroCount": 161,
+      "specialtyCount": 286
+    },
+    "companions": {
+      "n": 927,
+      "mean": 8.86839266450917,
+      "median": 0,
+      "populationStdDev": 13.975473349596239,
+      "min": 0,
+      "max": 56,
+      "zeroCount": 628,
+      "specialtyCount": 218
+    },
+    "treasure": {
+      "n": 927,
+      "mean": 26.492988133764833,
+      "median": 25,
+      "populationStdDev": 13.244269869751776,
+      "min": 0,
+      "max": 60,
+      "zeroCount": 42,
+      "specialtyCount": 210
+    },
+    "exploration": {
+      "n": 927,
+      "mean": 10.473570658036678,
+      "median": 0,
+      "populationStdDev": 16.598732177612934,
+      "min": 0,
+      "max": 67,
+      "zeroCount": 632,
+      "specialtyCount": 213
+    }
+  },
+  "E08": {
+    "holders": 98,
+    "absoluteChanged": 98,
+    "specialtyChanged": 33,
+    "meanAbsoluteDelta": {
+      "development": -4.969387755102041,
+      "companions": 0,
+      "treasure": 0,
+      "exploration": -18.979591836734695
+    }
+  },
+  "D04Holders": 48,
+  "additionalSimulations": 0
+}

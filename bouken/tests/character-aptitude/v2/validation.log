@@ -1,0 +1,43 @@
+ok 1 - Protected sources unchanged
+ok 2 - 67 unique definitions and IDs
+ok 3 - Only approved definition differences
+ok 4 - E01 Lv1 isolated exact contribution
+ok 5 - E01 Lv2 isolated exact contribution
+ok 6 - E01 Lv3 isolated exact contribution
+ok 7 - E02 Lv1 isolated exact contribution
+ok 8 - E02 Lv2 isolated exact contribution
+ok 9 - E02 Lv3 isolated exact contribution
+ok 10 - E03 Lv1 isolated exact contribution
+ok 11 - E03 Lv2 isolated exact contribution
+ok 12 - E03 Lv3 isolated exact contribution
+ok 13 - E04 Lv1 isolated exact contribution
+ok 14 - E04 Lv2 isolated exact contribution
+ok 15 - E04 Lv3 isolated exact contribution
+ok 16 - E05 Lv1 isolated exact contribution
+ok 17 - E05 Lv2 isolated exact contribution
+ok 18 - E05 Lv3 isolated exact contribution
+ok 19 - E06 Lv1 isolated exact contribution
+ok 20 - E06 Lv2 isolated exact contribution
+ok 21 - E06 Lv3 isolated exact contribution
+ok 22 - E07 Lv1 isolated exact contribution
+ok 23 - E07 Lv2 isolated exact contribution
+ok 24 - E07 Lv3 isolated exact contribution
+ok 25 - E08 Lv1 isolated exact contribution
+ok 26 - E08 Lv2 isolated exact contribution
+ok 27 - E08 Lv3 isolated exact contribution
+ok 28 - D04 Lv1 isolated exact contribution
+ok 29 - D04 Lv2 isolated exact contribution
+ok 30 - D04 Lv3 isolated exact contribution
+ok 31 - Excluded skills do not alter other scores/synergies
+ok 32 - Unknown ID, invalid Lv, duplicate skills rejected
+ok 33 - Specialty zero exclusion, tiny positive, ties, all-zero
+ok 34 - Zero variance and midrank ties
+ok 35 - 927 unique complete valid-range records
+ok 36 - Archived v1 full numeric details and current skill identity
+ok 37 - No raw-zero winners; both excluded holder groups retained
+ok 38 - Input order independent including skills and master
+ok 39 - Deterministic output bytes
+ok 40 - Independent Python direct recomputation
+ok 41 - Phase6 plan unique unused IDs and no runs
+ok 42 - Protected sources still unchanged after generation
+{"passed":true,"scenarios":1,"charactersPerScenario":927,"metricChecks":22248,"specialtyChecks":927,"additionalSimulations":0}
