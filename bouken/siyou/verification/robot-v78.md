@@ -27,3 +27,14 @@ Cloud Chromeで次を確認した。
 GitHub PR #1、codex/jidou-unten-robot-v78へ保存。main直接pushは自動承認レビューで拒否（実装指示のみでは直接main反映の承認が不明確、PRを推奨）。代替としてPRを作成。本番main/Vercel production/GitHub Pagesへの反映は未実施。
 
 スマホ実機・ユーザー実セーブ・長時間、全スキル/施設/全域報酬/チュートリアルの横断結合は未確認。既存の未検証事項を合格へ変更しない。
+
+
+## 本番リリース（2026-10-28追記）
+ユーザーの「オッケー！リリースして。」による明示承認でPR #1をmainへマージ。上記「本番未反映」はリリース前の履歴。
+
+- リリースコミット：44a5260728d41b8e5b7658de003d1e5a46b3862a。mainのcommon/version.js=78を再取得確認。
+- Vercel production：dpl_CAj1RBy8vXdFg1PEysmZwx37gnBb、READY。対象コミット一致、alias sansuu-bouken.vercel.appへの割当を確認。
+- 通常URL https://sansuu-bouken.vercel.app/bouken/index.html で「バージョン78」を実ブラウザ確認。
+- 本番の隔離確認ページで遠方(2,2)タップ→あと4問、57−29へ正解→開拓1/あと3問/次問28÷7、開拓しないでロボ終了を確認。通常セーブへ読み書きしない仮データを使用。
+- VercelとGitHub Pagesのversion.js/auto-drive.js/world.htmlをHTTP 200で取得し、78とロボ読み込みを確認。Pagesの実ブラウザ操作は今回未実施。
+- スマホ実機・実セーブ・長時間の受入は引き続きユーザー確認待ち。
