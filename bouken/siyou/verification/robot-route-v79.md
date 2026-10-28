@@ -21,3 +21,11 @@
 
 ## 公開と受入
 PR #2。公開状態は本番反映後に追記。スマホ実機・実セーブ・長時間は未確認。
+
+
+## 本番リリース（2026-10-29）
+PR #2をmainへマージ（435f76829f637f096c3b1f6c1a2d61c8286ab4b8）。Vercel production dpl_2pFxLwmnU5hz41RLyygvipTKjdT3はREADY、対象コミット一致、sansuu-bouken.vercel.appへ割当済み。
+
+通常URL https://sansuu-bouken.vercel.app/bouken/index.html のバージョン79表示を実ブラウザ確認。本番の隔離仮セーブで22タップ→1/2/3/旗と4マス確認（出題なし）、しゅっぱつ！→あと4問の算数出題、中断→枠/旗/確認の全解除を確認。HTTPでもVercel version.js=79、200を取得。
+
+GitHub Pagesの初回HTTP確認は78で伝播待ち（Vercelとは別環境）。スマホ実機・実セーブ・長時間は引き続きユーザー受入待ち。プレビュー画像/検証は上記参照。
