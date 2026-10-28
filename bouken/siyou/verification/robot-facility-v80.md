@@ -11,3 +11,7 @@
 
 ## PC実画面確認
 実装1eea4d9、Vercel Preview dpl_99LUwvpLVqzswvitD9MCBABvvc7Lで隔離仮セーブを使用。B01 Lv1/塔index2/目的地index4。最初の正解後は開拓1、塔のclass=cell revealed frontier、施設確認false、塔の次問へ進行。次の正解後は開拓2、塔のclass=cell explored playerとなり初めて「塔を発見したよ！」を表示。はいでロボ終了を確認。画像：[実開拓後の確認](robot-facility-v80.jpg)。通常localStorageには触れない。
+
+## 本番公開（2026-10-29）
+PR #3をmainへマージ（1e30aa8e0270fc6c3b8978b325bd01c216a638ab）。Vercel production dpl_8JfeF9SBnF1uGgi5LmsMah1VFgzV READY、コミット一致、sansuu-bouken.vercel.app割当を確認。通常URLのタイトルでバージョン80を実ブラウザ確認。本番auto-drive.jsをHTTP 200で取得し、exploredのみの判定が存在し旧explored||revealed判定がないことを確認。
+GitHub Pagesの初回確認は79で伝播待ち。修正後のユーザー実機・実セーブ・長時間は未確認。
