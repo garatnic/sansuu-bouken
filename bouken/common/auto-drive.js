@@ -11,12 +11,12 @@ window.BoukenAutoDrive=Object.freeze({
  },
  create({world,tap,busy,changed,discovered,arrived,blocked,schedule=fn=>setTimeout(fn,100),cancel=clearTimeout}){
   let route=[],cursor=0,completed=0,active=false,previewing=false,origin=null,waiting=false,timer=null,before=null,generation=0;
-  const visibleFacilities=w=>w.facility.map((f,i)=>!!f&&!!(w.explored[i]||w.revealed[i]));
+  const exploredFacilities=w=>w.facility.map((f,i)=>!!f&&!!w.explored[i]);
   const remaining=()=>route.slice(completed).filter(i=>!world().explored[i]).length;
   function update(){changed({active,previewing,remaining:remaining(),steps:route.length,route:route.slice(completed).map((index,k)=>({index,step:completed+k+1,destination:completed+k===route.length-1}))});}
   function stop(){generation++;if(timer!==null)cancel(timer);timer=null;active=false;previewing=false;origin=null;waiting=false;route=[];cursor=0;completed=0;before=null;discoveries=[];update();}
   function queue(){if(active&&timer===null){const token=generation;timer=schedule(()=>{timer=null;if(token===generation)tick();});}}
-  function complete(){if(!active||!waiting||before===null)return;waiting=false;completed=cursor;const w=world(),after=visibleFacilities(w),found=[];after.forEach((v,i)=>{if(v&&!before[i])found.push(i);});before=null;update();
+  function complete(){if(!active||!waiting||before===null)return;waiting=false;completed=cursor;const w=world(),after=exploredFacilities(w),found=[];after.forEach((v,i)=>{if(v&&!before[i])found.push(i);});before=null;update();
    // Defer the prompt until existing reward/event/tutorial dialogs have closed.
    if(found.length)discoveries.push(...found);queue();
   }
@@ -27,7 +27,7 @@ window.BoukenAutoDrive=Object.freeze({
    if(cursor===route.length){stop();arrived();return;}
    const w=world(),i=route[cursor],from=w.player.y*w.width+w.player.x;
    if(Math.abs(i%w.width-from%w.width)+Math.abs(Math.floor(i/w.width)-Math.floor(from/w.width))!==1){stop();blocked();return;}
-   before=visibleFacilities(w);cursor++;waiting=true;update();
+   before=exploredFacilities(w);cursor++;waiting=true;update();
    try{const result=tap(i);if(!active)return;if(result==='moved')complete();else if(result!=='question'){stop();blocked();}}catch(e){stop();blocked(e);}
   }
   return Object.freeze({
