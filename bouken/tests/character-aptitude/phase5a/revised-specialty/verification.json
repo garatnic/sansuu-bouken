@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "tests": 9,
+  "pass": 9,
+  "fail": 0,
+  "checks": [
+    "927 unique complete IDs",
+    "all927 independently recomputed with strict positive raw and unrounded deviation",
+    "allD04 holders remain and onlyD04 marked excluded, no point transfer",
+    "old absolute/deviation/percentile/rank values preserved as strings",
+    "zero allfields => none, no minimum cutoff on tiny positive raw",
+    "ties retained and display rounding unused",
+    "focusseven complete and zero winners removed",
+    "deterministic outputs",
+    "protected game/master/Phase3/4/5A originals byteidentical"
+  ],
+  "population": 927,
+  "node": "v24.22.1",
+  "artifacts": {
+    "specialties.csv": "cd37ccf1322d70e5a32b4c49ed6c4d2fca3c696d8dc1a3ef7e676cd52fd87684",
+    "comparison.csv": "05ca92d419e94973e66915b146e814407b8ba90455eadb910033e795d8ae0c27",
+    "d04-audit.csv": "b6365842924cfb18e89b5a4e02b5ad58ced20aec6b7a1a7356943456cfa2e2d0",
+    "focus-seven.csv": "ac2fbfb7dfcc7b34389330914a88cb2c1466f5acf9b99b8cefa56426e63398bd",
+    "analysis.json": "b134711e41840c25a0009d6d4f3e0b5ddac86cbdde19160c6be2b5c43bab208d",
+    "REPORT.md": "c4c8ba8b39c2daba080f9a88eec6e1f8e8cf28b312b3c07c178115e7673e1926",
+    "rules.cjs": "bd7fb376422b161dbebb14caa44088a978859f59b355691bb0eb337ff3e5f70d"
+  }
+}

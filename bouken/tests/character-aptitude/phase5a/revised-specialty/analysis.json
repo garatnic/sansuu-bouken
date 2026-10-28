@@ -1,0 +1,522 @@
+{
+  "population": 927,
+  "changed": 1,
+  "changedVsOldPercentile": 35,
+  "D04Holders": 48,
+  "zeroContributionWinners": 0,
+  "noSpecialty": 0,
+  "focus": [
+    {
+      "id": 167,
+      "name": "槍武者シンゲン",
+      "aptitudeVersion": "1.0.0-draft",
+      "specialtyRuleVersion": "deviation-positive-raw-1.0.0",
+      "skills": [
+        {
+          "id": "A01",
+          "level": 1,
+          "evaluationStatus": "評価対象",
+          "excludedFromAptitude": false
+        },
+        {
+          "id": "C07",
+          "level": 1,
+          "evaluationStatus": "評価対象",
+          "excludedFromAptitude": false
+        },
+        {
+          "id": "D04",
+          "level": 2,
+          "evaluationStatus": "対象外・別枠",
+          "excludedFromAptitude": true
+        }
+      ],
+      "hasD04": true,
+      "D04Status": "対象外・別枠（所持キャラは評価継続、再配分なし）",
+      "eligibleFields": [
+        "development",
+        "treasure"
+      ],
+      "oldFields": [
+        "companions"
+      ],
+      "oldPercentileFields": [
+        "companions"
+      ],
+      "newFields": [
+        "development"
+      ],
+      "changed": true,
+      "changedVsOldPercentile": true,
+      "reason": "旧最大の実効寄与raw=0を除外し、正のrawを持つ分野の未丸め偏差値で再判定",
+      "development_raw": 5,
+      "development_absolute": "13",
+      "development_deviation": "42.97225356929972",
+      "development_percentile": "26.83585313174946",
+      "development_rank": "670",
+      "development_tieCount": "18",
+      "development_eligible": true,
+      "companions_raw": 0,
+      "companions_absolute": "0",
+      "companions_deviation": "43.65431678579575",
+      "companions_percentile": "33.855291576673864",
+      "companions_rank": "300",
+      "companions_tieCount": "628",
+      "companions_eligible": false,
+      "treasure_raw": 5,
+      "treasure_absolute": "13",
+      "treasure_deviation": "39.812206889123345",
+      "treasure_percentile": "18.14254859611231",
+      "treasure_rank": "639",
+      "treasure_tieCount": "241",
+      "treasure_eligible": true,
+      "exploration_raw": 0,
+      "exploration_absolute": "0",
+      "exploration_deviation": "38.932593832456945",
+      "exploration_percentile": "15.010799136069114",
+      "exploration_rank": "649",
+      "exploration_tieCount": "279",
+      "exploration_eligible": false
+    },
+    {
+      "id": 362,
+      "name": "モスガメ",
+      "aptitudeVersion": "1.0.0-draft",
+      "specialtyRuleVersion": "deviation-positive-raw-1.0.0",
+      "skills": [
+        {
+          "id": "A08",
+          "level": 1,
+          "evaluationStatus": "評価対象",
+          "excludedFromAptitude": false
+        },
+        {
+          "id": "C05",
+          "level": 1,
+          "evaluationStatus": "評価対象",
+          "excludedFromAptitude": false
+        },
+        {
+          "id": "D04",
+          "level": 3,
+          "evaluationStatus": "対象外・別枠",
+          "excludedFromAptitude": true
+        }
+      ],
+      "hasD04": true,
+      "D04Status": "対象外・別枠（所持キャラは評価継続、再配分なし）",
+      "eligibleFields": [
+        "development",
+        "treasure"
+      ],
+      "oldFields": [
+        "development"
+      ],
+      "oldPercentileFields": [
+        "companions"
+      ],
+      "newFields": [
+        "development"
+      ],
+      "changed": false,
+      "changedVsOldPercentile": true,
+      "reason": "旧偏差値最大が正のrawを持つため判定維持（旧percentileとの比較は別列）",
+      "development_raw": 7,
+      "development_absolute": "18",
+      "development_deviation": "46.426140188565526",
+      "development_percentile": "32.073434125269976",
+      "development_rank": "604",
+      "development_tieCount": "53",
+      "development_eligible": true,
+      "companions_raw": 0,
+      "companions_absolute": "0",
+      "companions_deviation": "43.65431678579575",
+      "companions_percentile": "33.855291576673864",
+      "companions_rank": "300",
+      "companions_tieCount": "628",
+      "companions_eligible": false,
+      "treasure_raw": 5,
+      "treasure_absolute": "13",
+      "treasure_deviation": "39.812206889123345",
+      "treasure_percentile": "18.14254859611231",
+      "treasure_rank": "639",
+      "treasure_tieCount": "241",
+      "treasure_eligible": true,
+      "exploration_raw": 0,
+      "exploration_absolute": "0",
+      "exploration_deviation": "38.932593832456945",
+      "exploration_percentile": "15.010799136069114",
+      "exploration_rank": "649",
+      "exploration_tieCount": "279",
+      "exploration_eligible": false
+    },
+    {
+      "id": 392,
+      "name": "グリーントロル",
+      "aptitudeVersion": "1.0.0-draft",
+      "specialtyRuleVersion": "deviation-positive-raw-1.0.0",
+      "skills": [
+        {
+          "id": "A06",
+          "level": 1,
+          "evaluationStatus": "評価対象",
+          "excludedFromAptitude": false
+        },
+        {
+          "id": "C19",
+          "level": 1,
+          "evaluationStatus": "評価対象",
+          "excludedFromAptitude": false
+        },
+        {
+          "id": "D04",
+          "level": 3,
+          "evaluationStatus": "対象外・別枠",
+          "excludedFromAptitude": true
+        }
+      ],
+      "hasD04": true,
+      "D04Status": "対象外・別枠（所持キャラは評価継続、再配分なし）",
+      "eligibleFields": [
+        "development",
+        "treasure"
+      ],
+      "oldFields": [
+        "development"
+      ],
+      "oldPercentileFields": [
+        "companions"
+      ],
+      "newFields": [
+        "development"
+      ],
+      "changed": false,
+      "changedVsOldPercentile": true,
+      "reason": "旧偏差値最大が正のrawを持つため判定維持（旧percentileとの比較は別列）",
+      "development_raw": 7,
+      "development_absolute": "18",
+      "development_deviation": "46.426140188565526",
+      "development_percentile": "32.073434125269976",
+      "development_rank": "604",
+      "development_tieCount": "53",
+      "development_eligible": true,
+      "companions_raw": 0,
+      "companions_absolute": "0",
+      "companions_deviation": "43.65431678579575",
+      "companions_percentile": "33.855291576673864",
+      "companions_rank": "300",
+      "companions_tieCount": "628",
+      "companions_eligible": false,
+      "treasure_raw": 5,
+      "treasure_absolute": "13",
+      "treasure_deviation": "39.812206889123345",
+      "treasure_percentile": "18.14254859611231",
+      "treasure_rank": "639",
+      "treasure_tieCount": "241",
+      "treasure_eligible": true,
+      "exploration_raw": 0,
+      "exploration_absolute": "0",
+      "exploration_deviation": "38.932593832456945",
+      "exploration_percentile": "15.010799136069114",
+      "exploration_rank": "649",
+      "exploration_tieCount": "279",
+      "exploration_eligible": false
+    },
+    {
+      "id": 757,
+      "name": "フレイムスラ",
+      "aptitudeVersion": "1.0.0-draft",
+      "specialtyRuleVersion": "deviation-positive-raw-1.0.0",
+      "skills": [
+        {
+          "id": "A09",
+          "level": 1,
+          "evaluationStatus": "評価対象",
+          "excludedFromAptitude": false
+        },
+        {
+          "id": "C28",
+          "level": 1,
+          "evaluationStatus": "評価対象",
+          "excludedFromAptitude": false
+        },
+        {
+          "id": "D04",
+          "level": 3,
+          "evaluationStatus": "対象外・別枠",
+          "excludedFromAptitude": true
+        }
+      ],
+      "hasD04": true,
+      "D04Status": "対象外・別枠（所持キャラは評価継続、再配分なし）",
+      "eligibleFields": [
+        "development",
+        "treasure"
+      ],
+      "oldFields": [
+        "development"
+      ],
+      "oldPercentileFields": [
+        "companions"
+      ],
+      "newFields": [
+        "development"
+      ],
+      "changed": false,
+      "changedVsOldPercentile": true,
+      "reason": "旧偏差値最大が正のrawを持つため判定維持（旧percentileとの比較は別列）",
+      "development_raw": 7,
+      "development_absolute": "18",
+      "development_deviation": "46.426140188565526",
+      "development_percentile": "32.073434125269976",
+      "development_rank": "604",
+      "development_tieCount": "53",
+      "development_eligible": true,
+      "companions_raw": 0,
+      "companions_absolute": "0",
+      "companions_deviation": "43.65431678579575",
+      "companions_percentile": "33.855291576673864",
+      "companions_rank": "300",
+      "companions_tieCount": "628",
+      "companions_eligible": false,
+      "treasure_raw": 5,
+      "treasure_absolute": "13",
+      "treasure_deviation": "39.812206889123345",
+      "treasure_percentile": "18.14254859611231",
+      "treasure_rank": "639",
+      "treasure_tieCount": "241",
+      "treasure_eligible": true,
+      "exploration_raw": 0,
+      "exploration_absolute": "0",
+      "exploration_deviation": "38.932593832456945",
+      "exploration_percentile": "15.010799136069114",
+      "exploration_rank": "649",
+      "exploration_tieCount": "279",
+      "exploration_eligible": false
+    },
+    {
+      "id": 775,
+      "name": "アクアジェリー",
+      "aptitudeVersion": "1.0.0-draft",
+      "specialtyRuleVersion": "deviation-positive-raw-1.0.0",
+      "skills": [
+        {
+          "id": "A08",
+          "level": 1,
+          "evaluationStatus": "評価対象",
+          "excludedFromAptitude": false
+        },
+        {
+          "id": "C15",
+          "level": 1,
+          "evaluationStatus": "評価対象",
+          "excludedFromAptitude": false
+        },
+        {
+          "id": "D04",
+          "level": 3,
+          "evaluationStatus": "対象外・別枠",
+          "excludedFromAptitude": true
+        }
+      ],
+      "hasD04": true,
+      "D04Status": "対象外・別枠（所持キャラは評価継続、再配分なし）",
+      "eligibleFields": [
+        "development",
+        "treasure"
+      ],
+      "oldFields": [
+        "development"
+      ],
+      "oldPercentileFields": [
+        "companions"
+      ],
+      "newFields": [
+        "development"
+      ],
+      "changed": false,
+      "changedVsOldPercentile": true,
+      "reason": "旧偏差値最大が正のrawを持つため判定維持（旧percentileとの比較は別列）",
+      "development_raw": 7,
+      "development_absolute": "18",
+      "development_deviation": "46.426140188565526",
+      "development_percentile": "32.073434125269976",
+      "development_rank": "604",
+      "development_tieCount": "53",
+      "development_eligible": true,
+      "companions_raw": 0,
+      "companions_absolute": "0",
+      "companions_deviation": "43.65431678579575",
+      "companions_percentile": "33.855291576673864",
+      "companions_rank": "300",
+      "companions_tieCount": "628",
+      "companions_eligible": false,
+      "treasure_raw": 5,
+      "treasure_absolute": "13",
+      "treasure_deviation": "39.812206889123345",
+      "treasure_percentile": "18.14254859611231",
+      "treasure_rank": "639",
+      "treasure_tieCount": "241",
+      "treasure_eligible": true,
+      "exploration_raw": 0,
+      "exploration_absolute": "0",
+      "exploration_deviation": "38.932593832456945",
+      "exploration_percentile": "15.010799136069114",
+      "exploration_rank": "649",
+      "exploration_tieCount": "279",
+      "exploration_eligible": false
+    },
+    {
+      "id": 785,
+      "name": "アクアプルン",
+      "aptitudeVersion": "1.0.0-draft",
+      "specialtyRuleVersion": "deviation-positive-raw-1.0.0",
+      "skills": [
+        {
+          "id": "A09",
+          "level": 1,
+          "evaluationStatus": "評価対象",
+          "excludedFromAptitude": false
+        },
+        {
+          "id": "C18",
+          "level": 1,
+          "evaluationStatus": "評価対象",
+          "excludedFromAptitude": false
+        },
+        {
+          "id": "D04",
+          "level": 3,
+          "evaluationStatus": "対象外・別枠",
+          "excludedFromAptitude": true
+        }
+      ],
+      "hasD04": true,
+      "D04Status": "対象外・別枠（所持キャラは評価継続、再配分なし）",
+      "eligibleFields": [
+        "development",
+        "treasure"
+      ],
+      "oldFields": [
+        "development"
+      ],
+      "oldPercentileFields": [
+        "companions"
+      ],
+      "newFields": [
+        "development"
+      ],
+      "changed": false,
+      "changedVsOldPercentile": true,
+      "reason": "旧偏差値最大が正のrawを持つため判定維持（旧percentileとの比較は別列）",
+      "development_raw": 7,
+      "development_absolute": "18",
+      "development_deviation": "46.426140188565526",
+      "development_percentile": "32.073434125269976",
+      "development_rank": "604",
+      "development_tieCount": "53",
+      "development_eligible": true,
+      "companions_raw": 0,
+      "companions_absolute": "0",
+      "companions_deviation": "43.65431678579575",
+      "companions_percentile": "33.855291576673864",
+      "companions_rank": "300",
+      "companions_tieCount": "628",
+      "companions_eligible": false,
+      "treasure_raw": 5,
+      "treasure_absolute": "13",
+      "treasure_deviation": "39.812206889123345",
+      "treasure_percentile": "18.14254859611231",
+      "treasure_rank": "639",
+      "treasure_tieCount": "241",
+      "treasure_eligible": true,
+      "exploration_raw": 0,
+      "exploration_absolute": "0",
+      "exploration_deviation": "38.932593832456945",
+      "exploration_percentile": "15.010799136069114",
+      "exploration_rank": "649",
+      "exploration_tieCount": "279",
+      "exploration_eligible": false
+    },
+    {
+      "id": 860,
+      "name": "ブラックナイト",
+      "aptitudeVersion": "1.0.0-draft",
+      "specialtyRuleVersion": "deviation-positive-raw-1.0.0",
+      "skills": [
+        {
+          "id": "A06",
+          "level": 1,
+          "evaluationStatus": "評価対象",
+          "excludedFromAptitude": false
+        },
+        {
+          "id": "C08",
+          "level": 1,
+          "evaluationStatus": "評価対象",
+          "excludedFromAptitude": false
+        },
+        {
+          "id": "D04",
+          "level": 3,
+          "evaluationStatus": "対象外・別枠",
+          "excludedFromAptitude": true
+        }
+      ],
+      "hasD04": true,
+      "D04Status": "対象外・別枠（所持キャラは評価継続、再配分なし）",
+      "eligibleFields": [
+        "development",
+        "treasure"
+      ],
+      "oldFields": [
+        "development"
+      ],
+      "oldPercentileFields": [
+        "companions"
+      ],
+      "newFields": [
+        "development"
+      ],
+      "changed": false,
+      "changedVsOldPercentile": true,
+      "reason": "旧偏差値最大が正のrawを持つため判定維持（旧percentileとの比較は別列）",
+      "development_raw": 7,
+      "development_absolute": "18",
+      "development_deviation": "46.426140188565526",
+      "development_percentile": "32.073434125269976",
+      "development_rank": "604",
+      "development_tieCount": "53",
+      "development_eligible": true,
+      "companions_raw": 0,
+      "companions_absolute": "0",
+      "companions_deviation": "43.65431678579575",
+      "companions_percentile": "33.855291576673864",
+      "companions_rank": "300",
+      "companions_tieCount": "628",
+      "companions_eligible": false,
+      "treasure_raw": 5,
+      "treasure_absolute": "13",
+      "treasure_deviation": "39.812206889123345",
+      "treasure_percentile": "18.14254859611231",
+      "treasure_rank": "639",
+      "treasure_tieCount": "241",
+      "treasure_eligible": true,
+      "exploration_raw": 0,
+      "exploration_absolute": "0",
+      "exploration_deviation": "38.932593832456945",
+      "exploration_percentile": "15.010799136069114",
+      "exploration_rank": "649",
+      "exploration_tieCount": "279",
+      "exploration_eligible": false
+    }
+  ],
+  "distribution": {
+    "development": 256,
+    "companions": 236,
+    "treasure": 203,
+    "exploration": 232
+  },
+  "finalScoringVersion": "1.0.0-draft",
+  "additionalSimulations": 0
+}
