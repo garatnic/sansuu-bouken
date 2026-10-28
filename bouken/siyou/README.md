@@ -103,3 +103,7 @@
 
 ## 適性スコア 配点v2（2026-10-28確定）
 [確定仕様v2](キャラクター適性スコア理論採点仕様_v2.md) / [927体再計算・検証](../tests/character-aptitude/v2/README.md) / [Phase6計画案・実測未開始](../tests/character-aptitude/v2/PHASE6-PLAN.md)。旧v1/未承認提案は履歴として保存。本体統合は別途承認。
+
+
+## Phase6 現行方針（2026-10-28変更）
+追加50体/大量実測の旧計画は未実施の履歴として保存し、[既存8,000冒険と理論式の整合性監査](../tests/character-aptitude/v2/phase6-audit/README.md)へ置換。67種201Lv監査完了、追加冒険0、配点2.0.0不変。Phase7はChat・ユーザー判断待ち。

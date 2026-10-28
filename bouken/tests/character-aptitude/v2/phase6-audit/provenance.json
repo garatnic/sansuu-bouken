@@ -1,0 +1,13 @@
+{
+  "phase4InputCommit": "557a7b1a5a69bc6e2132e935794b6d47e544d989",
+  "sourceCommit": "f511bcca0aa2685c62e0cdc5e0d679215f18aca1",
+  "relevantCharacterFieldsCompared": [
+    "id",
+    "groupId",
+    "areas",
+    "skills"
+  ],
+  "all927Match": true,
+  "renamed": 77,
+  "comparisonMethod": "git show archived input characters vs current parsed JSON; read-only; no replay"
+}

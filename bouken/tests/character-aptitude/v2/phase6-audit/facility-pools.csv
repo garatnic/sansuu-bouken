@@ -1,0 +1,9 @@
+id,name,poolMode,poolWeights,candidateN
+F01,町,weighted,"{""human"":90,""monster"":10}","{""all"":927,""human"":207,""monster"":720}"
+F02,城・砦,weighted,"{""human"":90,""monster"":10}","{""all"":927,""human"":207,""monster"":720}"
+F03,墓地,weighted,"{""human"":10,""monster"":90}","{""all"":927,""human"":207,""monster"":720}"
+F04,ダンジョン,weighted,"{""human"":10,""monster"":90}","{""all"":927,""human"":207,""monster"":720}"
+F05,洞窟,weighted,"{""human"":10,""danger"":90}","{""all"":927,""human"":207,""monster"":720}"
+F06,遺跡,weighted,"{""human"":10,""danger"":90}","{""all"":927,""human"":207,""monster"":720}"
+F07,塔,weighted,"{""human"":10,""danger"":90}","{""all"":927,""human"":207,""monster"":720}"
+F08,小屋,all_uniform,{},"{""all"":927,""human"":207,""monster"":720}"

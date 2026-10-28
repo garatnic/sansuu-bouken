@@ -1,0 +1,92 @@
+[
+  {
+    "caseId": "D06-613",
+    "level": 1,
+    "buffs": {
+      "C13": 2,
+      "D02": 3,
+      "D06": 1,
+      "E08": 2
+    },
+    "party": [
+      160,
+      613
+    ],
+    "groupJoins": {
+      "n": 100,
+      "mean": 0.04,
+      "median": 0.0,
+      "sampleSD": 0.19694638556693236,
+      "min": 0.0,
+      "max": 1.0,
+      "ci95Low": 0.0009215643221437836,
+      "ci95High": 0.07907843567785622
+    },
+    "newCharacters": {
+      "n": 100,
+      "mean": 0.02,
+      "median": 0.0,
+      "sampleSD": 0.5314360191257669,
+      "min": -2.0,
+      "max": 2.0,
+      "ci95Low": -0.08544843577870248,
+      "ci95High": 0.1254484357787025
+    },
+    "recruitSuccesses": {
+      "n": 100,
+      "mean": 0.0,
+      "median": 0.0,
+      "sampleSD": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "ci95Low": 0.0,
+      "ci95High": 0.0
+    },
+    "worldHashMatched": true,
+    "targetDrawCount": "not recorded"
+  },
+  {
+    "caseId": "D06-386",
+    "level": 3,
+    "buffs": {
+      "D02": 3,
+      "D06": 3
+    },
+    "party": [
+      160,
+      386
+    ],
+    "groupJoins": {
+      "n": 100,
+      "mean": 0.13,
+      "median": 0.0,
+      "sampleSD": 0.41814887880811646,
+      "min": -1.0,
+      "max": 2.0,
+      "ci95Low": 0.04703019064182162,
+      "ci95High": 0.21296980935817839
+    },
+    "newCharacters": {
+      "n": 100,
+      "mean": 0.05,
+      "median": 0.0,
+      "sampleSD": 0.4793724854411023,
+      "min": -1.0,
+      "max": 2.0,
+      "ci95Low": -0.045117901169492214,
+      "ci95High": 0.14511790116949222
+    },
+    "recruitSuccesses": {
+      "n": 100,
+      "mean": 0.0,
+      "median": 0.0,
+      "sampleSD": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "ci95Low": 0.0,
+      "ci95High": 0.0
+    },
+    "worldHashMatched": true,
+    "targetDrawCount": "not recorded"
+  }
+]

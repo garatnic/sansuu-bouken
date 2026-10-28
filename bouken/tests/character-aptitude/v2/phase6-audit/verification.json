@@ -1,0 +1,130 @@
+{
+  "passed": true,
+  "sourceCommit": "f511bcca0aa2685c62e0cdc5e0d679215f18aca1",
+  "gameVersion": 74,
+  "aptitudeVersion": "2.0.0",
+  "tests": 17,
+  "pass": 17,
+  "fail": 0,
+  "checks": [
+    {
+      "name": "All protected originals and v2 inputs unchanged at start",
+      "passed": true
+    },
+    {
+      "name": "67 IDs and all 201 unique Lv cells complete",
+      "passed": true
+    },
+    {
+      "name": "Every cell has effect, theory, current points, conditions and reason",
+      "passed": true
+    },
+    {
+      "name": "Classifications and judgments valid and totals equal67",
+      "passed": true
+    },
+    {
+      "name": "D04/E08 excluded at every Lv; E01-07 retain approved definitions",
+      "passed": true
+    },
+    {
+      "name": "5000 unique main and 3000 unique support records",
+      "passed": true
+    },
+    {
+      "name": "All8000 fixed conditions, accounting and100 common seeds verified",
+      "passed": true
+    },
+    {
+      "name": "Support paired raw aggregates match archived summary",
+      "passed": true
+    },
+    {
+      "name": "Collector target totals and new kinds match archive",
+      "passed": true
+    },
+    {
+      "name": "21 E solo theoretical targets equal runtime; seven actual cases are onlyLv3",
+      "passed": true
+    },
+    {
+      "name": "72 D06/D05 conditional probabilities equal actual companionWeights",
+      "passed": true
+    },
+    {
+      "name": "A12 99-cell threshold and conditional contribution share correct; no observed opportunities",
+      "passed": true
+    },
+    {
+      "name": "Archived/current semantic character fields and runtime sources consistent; B witnesses archived",
+      "passed": true
+    },
+    {
+      "name": "Original v2 whole927 independent oracle still passes read-only",
+      "passed": true
+    },
+    {
+      "name": "Exact facility distribution and50x4/7x3 tables consistent",
+      "passed": true
+    },
+    {
+      "name": "All generated reports/CSV/JSON byte reproducible",
+      "passed": true
+    },
+    {
+      "name": "All original artifacts and v2 definition unchanged after analysis",
+      "passed": true
+    }
+  ],
+  "levelsAudited": 201,
+  "archivedAdventuresRead": 8000,
+  "additionalAdventures": 0,
+  "runtimePureComparisons": {
+    "E": 21,
+    "ECombinedTargets": 14,
+    "D06_D05": 72,
+    "A12ThresholdFixtures": 12
+  },
+  "v2Independent": {
+    "metricChecks": 22248,
+    "specialtySets": 927
+  },
+  "supportArchivedComparisons": 70,
+  "inputManifest": "input-manifest.json",
+  "inputCount": 175,
+  "artifacts": {
+    "FOCUSED-ANALYSIS.md": "9aeee72f2d56a8763f6e07c7a615cd58e69acd4d95f15605f5030bcd0e7f5e0d",
+    "PHASE4-REANALYSIS.md": "1cc3d4223dd8c7984c03ba8e12c971bcdebded4bdd0afd360ced79eca9d4359d",
+    "README.md": "dc0755e7ec292158225b9e8b62bea9d8145091cbdaeccb1ec0f299f2b22fab9f",
+    "REPORT.md": "7ef56c21e051d439f4f6c3e6951beb4bd8e96c9df17340e4e2c3d2956ef64f90",
+    "SKILL-AUDIT.csv": "0bde5b85acaa89418b5670d8c5c5919c92a0ae4ac5e5cefc8a24a4d6042cf947",
+    "analysis.json": "716f010eca76cc4f53ecfe563363db262438ee4eafb2b21763f6a96d0f6b6d8b",
+    "audit.py": "426c2ea9792dd5f9177b2a45f5956af31b8ce510069692a2d22819852f74fad6",
+    "b-information.csv": "baaa8d5d9f35bbfdb295ef5e7887cfa477e2ce2c863ce72a132f4e574b6a5102",
+    "character-v2-measurements.csv": "4397ed15e7b0cddae05477a449b2691d00ad99ee5d3cab113e46d6769144e124",
+    "collector-reanalysis.csv": "4a4ce671c1bc7f4e481240f8c50c10f372b7b12b33bb99376e0153bcfa022baa",
+    "correlations.csv": "937f1a614b143833c008d3c07d99151348132c910b7e951cc07ad98d0be3e789",
+    "d06-observed.json": "f420b21dfc73df85f0c45dd3824b45737b9a784307d5cf47a16c9d3c08a3ace0",
+    "d06-probabilities.csv": "a94f176c9380ae9f37b275ccfadbce21ed515f1ee4e8b329d3522e16f6d6b142",
+    "e-blessing-comparison.csv": "647517f31c94d3ada69a3f780fb0828d8351e33985588c2a9ba5368f1e0dcbc4",
+    "effect-notes.json": "76c63665427b932b156b83873cc3179dcf69464339958e71a42f978e73b44f4f",
+    "facility-expectations.csv": "3b9210ac30ded995662e5c31d444efaacb01589f44e28606240d32fbd1827c69",
+    "facility-pools.csv": "9cfd21297d794c019ce46a5f20f823f8a24c4887854231637ffa1e4294334d2d",
+    "input-manifest.json": "5ddea9e91da46fa1b0ac90be1b2bb43794f16ce4043a2dcb4d0961b80af86ec8",
+    "provenance.json": "3f825b52c215db7ef7dac3d5f059614f6268642069e0a57c125b69a6dd7c0cb1",
+    "reports.py": "338f2f09f1c1e2dd7f4469685444d42b700e83d380af1650393ff32a1d538d08",
+    "runtime-oracle.cjs": "b989afbd78315813580cca3e124ca4583e38729495d248877063a35a02502ff3",
+    "support-paired.csv": "93dada3cb39719b9826beb27d28820c94aae447e2a17dd884a3acc5de6a5a2dd",
+    "verify.py": "a1648dbc17d56cfecbeb9cdbb58b912d79616a6762a6188822c7191245431a91"
+  },
+  "python": "3.12.14",
+  "unverified": [
+    "raw係数/正規化/シナジーの唯一の効用尺度",
+    "E Lv1/2の対応実測とAI条件外への汎化",
+    "D06成功前分類出現とLv2専用対照",
+    "A12終盤の実行可用性",
+    "B全Lvの成果対照/個別発見時刻",
+    "F候補個票/分類価値",
+    "Phase7移行の承認"
+  ]
+}

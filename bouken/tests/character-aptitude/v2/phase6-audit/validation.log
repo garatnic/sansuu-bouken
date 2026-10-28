@@ -1,0 +1,18 @@
+ok 1 - All protected originals and v2 inputs unchanged at start
+ok 2 - 67 IDs and all 201 unique Lv cells complete
+ok 3 - Every cell has effect, theory, current points, conditions and reason
+ok 4 - Classifications and judgments valid and totals equal67
+ok 5 - D04/E08 excluded at every Lv; E01-07 retain approved definitions
+ok 6 - 5000 unique main and 3000 unique support records
+ok 7 - All8000 fixed conditions, accounting and100 common seeds verified
+ok 8 - Support paired raw aggregates match archived summary
+ok 9 - Collector target totals and new kinds match archive
+ok 10 - 21 E solo theoretical targets equal runtime; seven actual cases are onlyLv3
+ok 11 - 72 D06/D05 conditional probabilities equal actual companionWeights
+ok 12 - A12 99-cell threshold and conditional contribution share correct; no observed opportunities
+ok 13 - Archived/current semantic character fields and runtime sources consistent; B witnesses archived
+ok 14 - Original v2 whole927 independent oracle still passes read-only
+ok 15 - Exact facility distribution and50x4/7x3 tables consistent
+ok 16 - All generated reports/CSV/JSON byte reproducible
+ok 17 - All original artifacts and v2 definition unchanged after analysis
+Additional adventures: 0
