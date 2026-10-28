@@ -1,0 +1,1444 @@
+TAP version 13
+# Subtest: definition equals normative table, complete and unique
+ok 1 - definition equals normative table, complete and unique
+  ---
+  duration_ms: 3.387011
+  type: 'test'
+  ...
+# Subtest: A01 Lv1: independent expected contribution/normalization
+ok 2 - A01 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.475966
+  type: 'test'
+  ...
+# Subtest: A01 Lv2: independent expected contribution/normalization
+ok 3 - A01 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.225199
+  type: 'test'
+  ...
+# Subtest: A01 Lv3: independent expected contribution/normalization
+ok 4 - A01 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.163025
+  type: 'test'
+  ...
+# Subtest: A02 Lv1: independent expected contribution/normalization
+ok 5 - A02 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.20584
+  type: 'test'
+  ...
+# Subtest: A02 Lv2: independent expected contribution/normalization
+ok 6 - A02 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.128243
+  type: 'test'
+  ...
+# Subtest: A02 Lv3: independent expected contribution/normalization
+ok 7 - A02 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.080611
+  type: 'test'
+  ...
+# Subtest: A03 Lv1: independent expected contribution/normalization
+ok 8 - A03 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.149034
+  type: 'test'
+  ...
+# Subtest: A03 Lv2: independent expected contribution/normalization
+ok 9 - A03 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.20617
+  type: 'test'
+  ...
+# Subtest: A03 Lv3: independent expected contribution/normalization
+ok 10 - A03 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.240362
+  type: 'test'
+  ...
+# Subtest: A04 Lv1: independent expected contribution/normalization
+ok 11 - A04 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.101433
+  type: 'test'
+  ...
+# Subtest: A04 Lv2: independent expected contribution/normalization
+ok 12 - A04 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.07322
+  type: 'test'
+  ...
+# Subtest: A04 Lv3: independent expected contribution/normalization
+ok 13 - A04 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.051457
+  type: 'test'
+  ...
+# Subtest: A05 Lv1: independent expected contribution/normalization
+ok 14 - A05 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.044747
+  type: 'test'
+  ...
+# Subtest: A05 Lv2: independent expected contribution/normalization
+ok 15 - A05 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.098668
+  type: 'test'
+  ...
+# Subtest: A05 Lv3: independent expected contribution/normalization
+ok 16 - A05 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.06634
+  type: 'test'
+  ...
+# Subtest: A06 Lv1: independent expected contribution/normalization
+ok 17 - A06 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.089275
+  type: 'test'
+  ...
+# Subtest: A06 Lv2: independent expected contribution/normalization
+ok 18 - A06 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.041712
+  type: 'test'
+  ...
+# Subtest: A06 Lv3: independent expected contribution/normalization
+ok 19 - A06 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.03964
+  type: 'test'
+  ...
+# Subtest: A07 Lv1: independent expected contribution/normalization
+ok 20 - A07 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.042774
+  type: 'test'
+  ...
+# Subtest: A07 Lv2: independent expected contribution/normalization
+ok 21 - A07 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.039239
+  type: 'test'
+  ...
+# Subtest: A07 Lv3: independent expected contribution/normalization
+ok 22 - A07 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.038608
+  type: 'test'
+  ...
+# Subtest: A08 Lv1: independent expected contribution/normalization
+ok 23 - A08 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.041692
+  type: 'test'
+  ...
+# Subtest: A08 Lv2: independent expected contribution/normalization
+ok 24 - A08 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.036735
+  type: 'test'
+  ...
+# Subtest: A08 Lv3: independent expected contribution/normalization
+ok 25 - A08 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.035553
+  type: 'test'
+  ...
+# Subtest: A09 Lv1: independent expected contribution/normalization
+ok 26 - A09 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.035724
+  type: 'test'
+  ...
+# Subtest: A09 Lv2: independent expected contribution/normalization
+ok 27 - A09 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.065368
+  type: 'test'
+  ...
+# Subtest: A09 Lv3: independent expected contribution/normalization
+ok 28 - A09 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.043115
+  type: 'test'
+  ...
+# Subtest: A10 Lv1: independent expected contribution/normalization
+ok 29 - A10 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.037326
+  type: 'test'
+  ...
+# Subtest: A10 Lv2: independent expected contribution/normalization
+ok 30 - A10 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.036746
+  type: 'test'
+  ...
+# Subtest: A10 Lv3: independent expected contribution/normalization
+ok 31 - A10 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.035464
+  type: 'test'
+  ...
+# Subtest: A11 Lv1: independent expected contribution/normalization
+ok 32 - A11 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.458269
+  type: 'test'
+  ...
+# Subtest: A11 Lv2: independent expected contribution/normalization
+ok 33 - A11 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.073951
+  type: 'test'
+  ...
+# Subtest: A11 Lv3: independent expected contribution/normalization
+ok 34 - A11 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.048623
+  type: 'test'
+  ...
+# Subtest: A12 Lv1: independent expected contribution/normalization
+ok 35 - A12 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.053981
+  type: 'test'
+  ...
+# Subtest: A12 Lv2: independent expected contribution/normalization
+ok 36 - A12 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.080712
+  type: 'test'
+  ...
+# Subtest: A12 Lv3: independent expected contribution/normalization
+ok 37 - A12 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.047641
+  type: 'test'
+  ...
+# Subtest: B01 Lv1: independent expected contribution/normalization
+ok 38 - B01 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.041022
+  type: 'test'
+  ...
+# Subtest: B01 Lv2: independent expected contribution/normalization
+ok 39 - B01 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.04026
+  type: 'test'
+  ...
+# Subtest: B01 Lv3: independent expected contribution/normalization
+ok 40 - B01 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 1.456089
+  type: 'test'
+  ...
+# Subtest: B02 Lv1: independent expected contribution/normalization
+ok 41 - B02 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.081172
+  type: 'test'
+  ...
+# Subtest: B02 Lv2: independent expected contribution/normalization
+ok 42 - B02 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.050406
+  type: 'test'
+  ...
+# Subtest: B02 Lv3: independent expected contribution/normalization
+ok 43 - B02 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.042273
+  type: 'test'
+  ...
+# Subtest: B03 Lv1: independent expected contribution/normalization
+ok 44 - B03 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.111498
+  type: 'test'
+  ...
+# Subtest: B03 Lv2: independent expected contribution/normalization
+ok 45 - B03 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.08008
+  type: 'test'
+  ...
+# Subtest: B03 Lv3: independent expected contribution/normalization
+ok 46 - B03 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.125108
+  type: 'test'
+  ...
+# Subtest: B04 Lv1: independent expected contribution/normalization
+ok 47 - B04 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.114703
+  type: 'test'
+  ...
+# Subtest: B04 Lv2: independent expected contribution/normalization
+ok 48 - B04 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.07979
+  type: 'test'
+  ...
+# Subtest: B04 Lv3: independent expected contribution/normalization
+ok 49 - B04 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.064266
+  type: 'test'
+  ...
+# Subtest: B05 Lv1: independent expected contribution/normalization
+ok 50 - B05 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.051267
+  type: 'test'
+  ...
+# Subtest: B05 Lv2: independent expected contribution/normalization
+ok 51 - B05 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.038507
+  type: 'test'
+  ...
+# Subtest: B05 Lv3: independent expected contribution/normalization
+ok 52 - B05 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.035824
+  type: 'test'
+  ...
+# Subtest: B06 Lv1: independent expected contribution/normalization
+ok 53 - B06 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.036365
+  type: 'test'
+  ...
+# Subtest: B06 Lv2: independent expected contribution/normalization
+ok 54 - B06 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.035644
+  type: 'test'
+  ...
+# Subtest: B06 Lv3: independent expected contribution/normalization
+ok 55 - B06 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.062374
+  type: 'test'
+  ...
+# Subtest: B07 Lv1: independent expected contribution/normalization
+ok 56 - B07 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.056996
+  type: 'test'
+  ...
+# Subtest: B07 Lv2: independent expected contribution/normalization
+ok 57 - B07 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.041393
+  type: 'test'
+  ...
+# Subtest: B07 Lv3: independent expected contribution/normalization
+ok 58 - B07 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.034962
+  type: 'test'
+  ...
+# Subtest: C01 Lv1: independent expected contribution/normalization
+ok 59 - C01 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.035624
+  type: 'test'
+  ...
+# Subtest: C01 Lv2: independent expected contribution/normalization
+ok 60 - C01 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.034692
+  type: 'test'
+  ...
+# Subtest: C01 Lv3: independent expected contribution/normalization
+ok 61 - C01 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.034702
+  type: 'test'
+  ...
+# Subtest: C02 Lv1: independent expected contribution/normalization
+ok 62 - C02 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.083856
+  type: 'test'
+  ...
+# Subtest: C02 Lv2: independent expected contribution/normalization
+ok 63 - C02 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.050636
+  type: 'test'
+  ...
+# Subtest: C02 Lv3: independent expected contribution/normalization
+ok 64 - C02 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.095063
+  type: 'test'
+  ...
+# Subtest: C03 Lv1: independent expected contribution/normalization
+ok 65 - C03 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.051667
+  type: 'test'
+  ...
+# Subtest: C03 Lv2: independent expected contribution/normalization
+ok 66 - C03 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.035513
+  type: 'test'
+  ...
+# Subtest: C03 Lv3: independent expected contribution/normalization
+ok 67 - C03 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.034091
+  type: 'test'
+  ...
+# Subtest: C04 Lv1: independent expected contribution/normalization
+ok 68 - C04 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.034141
+  type: 'test'
+  ...
+# Subtest: C04 Lv2: independent expected contribution/normalization
+ok 69 - C04 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.138829
+  type: 'test'
+  ...
+# Subtest: C04 Lv3: independent expected contribution/normalization
+ok 70 - C04 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.098198
+  type: 'test'
+  ...
+# Subtest: C05 Lv1: independent expected contribution/normalization
+ok 71 - C05 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.098688
+  type: 'test'
+  ...
+# Subtest: C05 Lv2: independent expected contribution/normalization
+ok 72 - C05 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.092459
+  type: 'test'
+  ...
+# Subtest: C05 Lv3: independent expected contribution/normalization
+ok 73 - C05 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.047851
+  type: 'test'
+  ...
+# Subtest: C06 Lv1: independent expected contribution/normalization
+ok 74 - C06 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.038428
+  type: 'test'
+  ...
+# Subtest: C06 Lv2: independent expected contribution/normalization
+ok 75 - C06 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.035033
+  type: 'test'
+  ...
+# Subtest: C06 Lv3: independent expected contribution/normalization
+ok 76 - C06 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.071136
+  type: 'test'
+  ...
+# Subtest: C07 Lv1: independent expected contribution/normalization
+ok 77 - C07 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.041101
+  type: 'test'
+  ...
+# Subtest: C07 Lv2: independent expected contribution/normalization
+ok 78 - C07 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.034843
+  type: 'test'
+  ...
+# Subtest: C07 Lv3: independent expected contribution/normalization
+ok 79 - C07 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.055604
+  type: 'test'
+  ...
+# Subtest: C08 Lv1: independent expected contribution/normalization
+ok 80 - C08 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.043144
+  type: 'test'
+  ...
+# Subtest: C08 Lv2: independent expected contribution/normalization
+ok 81 - C08 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.064857
+  type: 'test'
+  ...
+# Subtest: C08 Lv3: independent expected contribution/normalization
+ok 82 - C08 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.065749
+  type: 'test'
+  ...
+# Subtest: C09 Lv1: independent expected contribution/normalization
+ok 83 - C09 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.062634
+  type: 'test'
+  ...
+# Subtest: C09 Lv2: independent expected contribution/normalization
+ok 84 - C09 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.037056
+  type: 'test'
+  ...
+# Subtest: C09 Lv3: independent expected contribution/normalization
+ok 85 - C09 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.034211
+  type: 'test'
+  ...
+# Subtest: C10 Lv1: independent expected contribution/normalization
+ok 86 - C10 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.068153
+  type: 'test'
+  ...
+# Subtest: C10 Lv2: independent expected contribution/normalization
+ok 87 - C10 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.04662
+  type: 'test'
+  ...
+# Subtest: C10 Lv3: independent expected contribution/normalization
+ok 88 - C10 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.035122
+  type: 'test'
+  ...
+# Subtest: C11 Lv1: independent expected contribution/normalization
+ok 89 - C11 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.036405
+  type: 'test'
+  ...
+# Subtest: C11 Lv2: independent expected contribution/normalization
+ok 90 - C11 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.033401
+  type: 'test'
+  ...
+# Subtest: C11 Lv3: independent expected contribution/normalization
+ok 91 - C11 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.031688
+  type: 'test'
+  ...
+# Subtest: C12 Lv1: independent expected contribution/normalization
+ok 92 - C12 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.032519
+  type: 'test'
+  ...
+# Subtest: C12 Lv2: independent expected contribution/normalization
+ok 93 - C12 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.032079
+  type: 'test'
+  ...
+# Subtest: C12 Lv3: independent expected contribution/normalization
+ok 94 - C12 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.032579
+  type: 'test'
+  ...
+# Subtest: C13 Lv1: independent expected contribution/normalization
+ok 95 - C13 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.033741
+  type: 'test'
+  ...
+# Subtest: C13 Lv2: independent expected contribution/normalization
+ok 96 - C13 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.032449
+  type: 'test'
+  ...
+# Subtest: C13 Lv3: independent expected contribution/normalization
+ok 97 - C13 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.032319
+  type: 'test'
+  ...
+# Subtest: C14 Lv1: independent expected contribution/normalization
+ok 98 - C14 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.03326
+  type: 'test'
+  ...
+# Subtest: C14 Lv2: independent expected contribution/normalization
+ok 99 - C14 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.031548
+  type: 'test'
+  ...
+# Subtest: C14 Lv3: independent expected contribution/normalization
+ok 100 - C14 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.031407
+  type: 'test'
+  ...
+# Subtest: C15 Lv1: independent expected contribution/normalization
+ok 101 - C15 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.032509
+  type: 'test'
+  ...
+# Subtest: C15 Lv2: independent expected contribution/normalization
+ok 102 - C15 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.034742
+  type: 'test'
+  ...
+# Subtest: C15 Lv3: independent expected contribution/normalization
+ok 103 - C15 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.060601
+  type: 'test'
+  ...
+# Subtest: C16 Lv1: independent expected contribution/normalization
+ok 104 - C16 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.102314
+  type: 'test'
+  ...
+# Subtest: C16 Lv2: independent expected contribution/normalization
+ok 105 - C16 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.03955
+  type: 'test'
+  ...
+# Subtest: C16 Lv3: independent expected contribution/normalization
+ok 106 - C16 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.118499
+  type: 'test'
+  ...
+# Subtest: C17 Lv1: independent expected contribution/normalization
+ok 107 - C17 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.044517
+  type: 'test'
+  ...
+# Subtest: C17 Lv2: independent expected contribution/normalization
+ok 108 - C17 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.114472
+  type: 'test'
+  ...
+# Subtest: C17 Lv3: independent expected contribution/normalization
+ok 109 - C17 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.04658
+  type: 'test'
+  ...
+# Subtest: C18 Lv1: independent expected contribution/normalization
+ok 110 - C18 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.035924
+  type: 'test'
+  ...
+# Subtest: C18 Lv2: independent expected contribution/normalization
+ok 111 - C18 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.03341
+  type: 'test'
+  ...
+# Subtest: C18 Lv3: independent expected contribution/normalization
+ok 112 - C18 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.03314
+  type: 'test'
+  ...
+# Subtest: C19 Lv1: independent expected contribution/normalization
+ok 113 - C19 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.03302
+  type: 'test'
+  ...
+# Subtest: C19 Lv2: independent expected contribution/normalization
+ok 114 - C19 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.03359
+  type: 'test'
+  ...
+# Subtest: C19 Lv3: independent expected contribution/normalization
+ok 115 - C19 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.156395
+  type: 'test'
+  ...
+# Subtest: C20 Lv1: independent expected contribution/normalization
+ok 116 - C20 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.051668
+  type: 'test'
+  ...
+# Subtest: C20 Lv2: independent expected contribution/normalization
+ok 117 - C20 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.042614
+  type: 'test'
+  ...
+# Subtest: C20 Lv3: independent expected contribution/normalization
+ok 118 - C20 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.044257
+  type: 'test'
+  ...
+# Subtest: C21 Lv1: independent expected contribution/normalization
+ok 119 - C21 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.12612
+  type: 'test'
+  ...
+# Subtest: C21 Lv2: independent expected contribution/normalization
+ok 120 - C21 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.056505
+  type: 'test'
+  ...
+# Subtest: C21 Lv3: independent expected contribution/normalization
+ok 121 - C21 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.043706
+  type: 'test'
+  ...
+# Subtest: C22 Lv1: independent expected contribution/normalization
+ok 122 - C22 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.042905
+  type: 'test'
+  ...
+# Subtest: C22 Lv2: independent expected contribution/normalization
+ok 123 - C22 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.042293
+  type: 'test'
+  ...
+# Subtest: C22 Lv3: independent expected contribution/normalization
+ok 124 - C22 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.040832
+  type: 'test'
+  ...
+# Subtest: C23 Lv1: independent expected contribution/normalization
+ok 125 - C23 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.051367
+  type: 'test'
+  ...
+# Subtest: C23 Lv2: independent expected contribution/normalization
+ok 126 - C23 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.042855
+  type: 'test'
+  ...
+# Subtest: C23 Lv3: independent expected contribution/normalization
+ok 127 - C23 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.041142
+  type: 'test'
+  ...
+# Subtest: C24 Lv1: independent expected contribution/normalization
+ok 128 - C24 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.045208
+  type: 'test'
+  ...
+# Subtest: C24 Lv2: independent expected contribution/normalization
+ok 129 - C24 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.191348
+  type: 'test'
+  ...
+# Subtest: C24 Lv3: independent expected contribution/normalization
+ok 130 - C24 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.08655
+  type: 'test'
+  ...
+# Subtest: C25 Lv1: independent expected contribution/normalization
+ok 131 - C25 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.169856
+  type: 'test'
+  ...
+# Subtest: C25 Lv2: independent expected contribution/normalization
+ok 132 - C25 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.076485
+  type: 'test'
+  ...
+# Subtest: C25 Lv3: independent expected contribution/normalization
+ok 133 - C25 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.047341
+  type: 'test'
+  ...
+# Subtest: C26 Lv1: independent expected contribution/normalization
+ok 134 - C26 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.043386
+  type: 'test'
+  ...
+# Subtest: C26 Lv2: independent expected contribution/normalization
+ok 135 - C26 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.043816
+  type: 'test'
+  ...
+# Subtest: C26 Lv3: independent expected contribution/normalization
+ok 136 - C26 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.042384
+  type: 'test'
+  ...
+# Subtest: C27 Lv1: independent expected contribution/normalization
+ok 137 - C27 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.041823
+  type: 'test'
+  ...
+# Subtest: C27 Lv2: independent expected contribution/normalization
+ok 138 - C27 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.053
+  type: 'test'
+  ...
+# Subtest: C27 Lv3: independent expected contribution/normalization
+ok 139 - C27 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.071227
+  type: 'test'
+  ...
+# Subtest: C28 Lv1: independent expected contribution/normalization
+ok 140 - C28 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.043255
+  type: 'test'
+  ...
+# Subtest: C28 Lv2: independent expected contribution/normalization
+ok 141 - C28 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.042684
+  type: 'test'
+  ...
+# Subtest: C28 Lv3: independent expected contribution/normalization
+ok 142 - C28 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.041753
+  type: 'test'
+  ...
+# Subtest: D01 Lv1: independent expected contribution/normalization
+ok 143 - D01 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.041082
+  type: 'test'
+  ...
+# Subtest: D01 Lv2: independent expected contribution/normalization
+ok 144 - D01 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.040321
+  type: 'test'
+  ...
+# Subtest: D01 Lv3: independent expected contribution/normalization
+ok 145 - D01 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.081172
+  type: 'test'
+  ...
+# Subtest: D02 Lv1: independent expected contribution/normalization
+ok 146 - D02 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.329075
+  type: 'test'
+  ...
+# Subtest: D02 Lv2: independent expected contribution/normalization
+ok 147 - D02 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.054512
+  type: 'test'
+  ...
+# Subtest: D02 Lv3: independent expected contribution/normalization
+ok 148 - D02 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.044667
+  type: 'test'
+  ...
+# Subtest: D03 Lv1: independent expected contribution/normalization
+ok 149 - D03 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.097026
+  type: 'test'
+  ...
+# Subtest: D03 Lv2: independent expected contribution/normalization
+ok 150 - D03 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.056365
+  type: 'test'
+  ...
+# Subtest: D03 Lv3: independent expected contribution/normalization
+ok 151 - D03 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.045438
+  type: 'test'
+  ...
+# Subtest: D04 Lv1: independent expected contribution/normalization
+ok 152 - D04 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.049554
+  type: 'test'
+  ...
+# Subtest: D04 Lv2: independent expected contribution/normalization
+ok 153 - D04 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.09285
+  type: 'test'
+  ...
+# Subtest: D04 Lv3: independent expected contribution/normalization
+ok 154 - D04 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.110436
+  type: 'test'
+  ...
+# Subtest: D05 Lv1: independent expected contribution/normalization
+ok 155 - D05 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.059019
+  type: 'test'
+  ...
+# Subtest: D05 Lv2: independent expected contribution/normalization
+ok 156 - D05 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.045037
+  type: 'test'
+  ...
+# Subtest: D05 Lv3: independent expected contribution/normalization
+ok 157 - D05 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.041432
+  type: 'test'
+  ...
+# Subtest: D06 Lv1: independent expected contribution/normalization
+ok 158 - D06 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.044977
+  type: 'test'
+  ...
+# Subtest: D06 Lv2: independent expected contribution/normalization
+ok 159 - D06 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.041422
+  type: 'test'
+  ...
+# Subtest: D06 Lv3: independent expected contribution/normalization
+ok 160 - D06 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.040521
+  type: 'test'
+  ...
+# Subtest: D07 Lv1: independent expected contribution/normalization
+ok 161 - D07 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.045648
+  type: 'test'
+  ...
+# Subtest: D07 Lv2: independent expected contribution/normalization
+ok 162 - D07 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.041943
+  type: 'test'
+  ...
+# Subtest: D07 Lv3: independent expected contribution/normalization
+ok 163 - D07 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.041081
+  type: 'test'
+  ...
+# Subtest: D08 Lv1: independent expected contribution/normalization
+ok 164 - D08 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.044156
+  type: 'test'
+  ...
+# Subtest: D08 Lv2: independent expected contribution/normalization
+ok 165 - D08 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.041262
+  type: 'test'
+  ...
+# Subtest: D08 Lv3: independent expected contribution/normalization
+ok 166 - D08 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.042133
+  type: 'test'
+  ...
+# Subtest: D09 Lv1: independent expected contribution/normalization
+ok 167 - D09 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.042454
+  type: 'test'
+  ...
+# Subtest: D09 Lv2: independent expected contribution/normalization
+ok 168 - D09 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.044116
+  type: 'test'
+  ...
+# Subtest: D09 Lv3: independent expected contribution/normalization
+ok 169 - D09 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.040561
+  type: 'test'
+  ...
+# Subtest: E01 Lv1: independent expected contribution/normalization
+ok 170 - E01 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.178709
+  type: 'test'
+  ...
+# Subtest: E01 Lv2: independent expected contribution/normalization
+ok 171 - E01 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.078067
+  type: 'test'
+  ...
+# Subtest: E01 Lv3: independent expected contribution/normalization
+ok 172 - E01 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.128884
+  type: 'test'
+  ...
+# Subtest: E02 Lv1: independent expected contribution/normalization
+ok 173 - E02 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.059379
+  type: 'test'
+  ...
+# Subtest: E02 Lv2: independent expected contribution/normalization
+ok 174 - E02 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.047551
+  type: 'test'
+  ...
+# Subtest: E02 Lv3: independent expected contribution/normalization
+ok 175 - E02 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.042454
+  type: 'test'
+  ...
+# Subtest: E03 Lv1: independent expected contribution/normalization
+ok 176 - E03 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.042194
+  type: 'test'
+  ...
+# Subtest: E03 Lv2: independent expected contribution/normalization
+ok 177 - E03 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.042133
+  type: 'test'
+  ...
+# Subtest: E03 Lv3: independent expected contribution/normalization
+ok 178 - E03 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.075623
+  type: 'test'
+  ...
+# Subtest: E04 Lv1: independent expected contribution/normalization
+ok 179 - E04 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.115293
+  type: 'test'
+  ...
+# Subtest: E04 Lv2: independent expected contribution/normalization
+ok 180 - E04 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.149645
+  type: 'test'
+  ...
+# Subtest: E04 Lv3: independent expected contribution/normalization
+ok 181 - E04 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.054252
+  type: 'test'
+  ...
+# Subtest: E05 Lv1: independent expected contribution/normalization
+ok 182 - E05 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.043946
+  type: 'test'
+  ...
+# Subtest: E05 Lv2: independent expected contribution/normalization
+ok 183 - E05 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.043856
+  type: 'test'
+  ...
+# Subtest: E05 Lv3: independent expected contribution/normalization
+ok 184 - E05 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.043085
+  type: 'test'
+  ...
+# Subtest: E06 Lv1: independent expected contribution/normalization
+ok 185 - E06 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.040451
+  type: 'test'
+  ...
+# Subtest: E06 Lv2: independent expected contribution/normalization
+ok 186 - E06 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.043425
+  type: 'test'
+  ...
+# Subtest: E06 Lv3: independent expected contribution/normalization
+ok 187 - E06 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.055444
+  type: 'test'
+  ...
+# Subtest: E07 Lv1: independent expected contribution/normalization
+ok 188 - E07 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.043005
+  type: 'test'
+  ...
+# Subtest: E07 Lv2: independent expected contribution/normalization
+ok 189 - E07 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.180171
+  type: 'test'
+  ...
+# Subtest: E07 Lv3: independent expected contribution/normalization
+ok 190 - E07 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.140311
+  type: 'test'
+  ...
+# Subtest: E08 Lv1: independent expected contribution/normalization
+ok 191 - E08 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.098658
+  type: 'test'
+  ...
+# Subtest: E08 Lv2: independent expected contribution/normalization
+ok 192 - E08 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.052458
+  type: 'test'
+  ...
+# Subtest: E08 Lv3: independent expected contribution/normalization
+ok 193 - E08 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.044758
+  type: 'test'
+  ...
+# Subtest: F01 Lv1: independent expected contribution/normalization
+ok 194 - F01 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.050476
+  type: 'test'
+  ...
+# Subtest: F01 Lv2: independent expected contribution/normalization
+ok 195 - F01 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.043666
+  type: 'test'
+  ...
+# Subtest: F01 Lv3: independent expected contribution/normalization
+ok 196 - F01 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.042514
+  type: 'test'
+  ...
+# Subtest: F02 Lv1: independent expected contribution/normalization
+ok 197 - F02 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.042204
+  type: 'test'
+  ...
+# Subtest: F02 Lv2: independent expected contribution/normalization
+ok 198 - F02 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.044387
+  type: 'test'
+  ...
+# Subtest: F02 Lv3: independent expected contribution/normalization
+ok 199 - F02 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.042284
+  type: 'test'
+  ...
+# Subtest: F03 Lv1: independent expected contribution/normalization
+ok 200 - F03 Lv1: independent expected contribution/normalization
+  ---
+  duration_ms: 0.044587
+  type: 'test'
+  ...
+# Subtest: F03 Lv2: independent expected contribution/normalization
+ok 201 - F03 Lv2: independent expected contribution/normalization
+  ---
+  duration_ms: 0.07331
+  type: 'test'
+  ...
+# Subtest: F03 Lv3: independent expected contribution/normalization
+ok 202 - F03 Lv3: independent expected contribution/normalization
+  ---
+  duration_ms: 0.159209
+  type: 'test'
+  ...
+# Subtest: 927 records, unique IDs/names mapped, integer scores 0..100, finite raw and version
+ok 203 - 927 records, unique IDs/names mapped, integer scores 0..100, finite raw and version
+  ---
+  duration_ms: 7.497591
+  type: 'test'
+  ...
+# Subtest: same input byte-equivalent, no mutation
+ok 204 - same input byte-equivalent, no mutation
+  ---
+  duration_ms: 25.273909
+  type: 'test'
+  ...
+# Subtest: character/master/skill/definition/synergy input order independent
+ok 205 - character/master/skill/definition/synergy input order independent
+  ---
+  duration_ms: 23.168538
+  type: 'test'
+  ...
+# Subtest: job, race, cost, legacy scores do not affect results
+ok 206 - job, race, cost, legacy scores do not affect results
+  ---
+  duration_ms: 27.386519
+  type: 'test'
+  ...
+# Subtest: D04 only: all levels zero
+ok 207 - D04 only: all levels zero
+  ---
+  duration_ms: 0.262414
+  type: 'test'
+  ...
+# Subtest: terrain synergy 1: all 9 level pairs + absent pair
+ok 208 - terrain synergy 1: all 9 level pairs + absent pair
+  ---
+  duration_ms: 2.434991
+  type: 'test'
+  ...
+# Subtest: terrain synergy 2: all 9 level pairs + absent pair
+ok 209 - terrain synergy 2: all 9 level pairs + absent pair
+  ---
+  duration_ms: 0.262825
+  type: 'test'
+  ...
+# Subtest: terrain synergy 3: all 9 level pairs + absent pair
+ok 210 - terrain synergy 3: all 9 level pairs + absent pair
+  ---
+  duration_ms: 0.196445
+  type: 'test'
+  ...
+# Subtest: terrain synergy 4: all 9 level pairs + absent pair
+ok 211 - terrain synergy 4: all 9 level pairs + absent pair
+  ---
+  duration_ms: 0.180571
+  type: 'test'
+  ...
+# Subtest: terrain synergy 5: all 9 level pairs + absent pair
+ok 212 - terrain synergy 5: all 9 level pairs + absent pair
+  ---
+  duration_ms: 0.23288
+  type: 'test'
+  ...
+# Subtest: terrain synergy 6: all 9 level pairs + absent pair
+ok 213 - terrain synergy 6: all 9 level pairs + absent pair
+  ---
+  duration_ms: 0.180501
+  type: 'test'
+  ...
+# Subtest: terrain synergy 7: all 9 level pairs + absent pair
+ok 214 - terrain synergy 7: all 9 level pairs + absent pair
+  ---
+  duration_ms: 0.181192
+  type: 'test'
+  ...
+# Subtest: fixed synergy B02+C01
+ok 215 - fixed synergy B02+C01
+  ---
+  duration_ms: 0.237967
+  type: 'test'
+  ...
+# Subtest: fixed synergy B03+D01
+ok 216 - fixed synergy B03+D01
+  ---
+  duration_ms: 0.230576
+  type: 'test'
+  ...
+# Subtest: fixed synergy F01+C04
+ok 217 - fixed synergy F01+C04
+  ---
+  duration_ms: 0.158639
+  type: 'test'
+  ...
+# Subtest: fixed synergy F02+D05
+ok 218 - fixed synergy F02+D05
+  ---
+  duration_ms: 0.160121
+  type: 'test'
+  ...
+# Subtest: per-field cap 8; each pair once (synthetic >3-skill boundary fixture)
+ok 219 - per-field cap 8; each pair once (synthetic >3-skill boundary fixture)
+  ---
+  duration_ms: 0.098388
+  type: 'test'
+  ...
+# Subtest: no inferred synergy or cross-field penalties; independent totals
+ok 220 - no inferred synergy or cross-field penalties; independent totals
+  ---
+  duration_ms: 0.157517
+  type: 'test'
+  ...
+# Subtest: reject invalid level 0
+ok 221 - reject invalid level 0
+  ---
+  duration_ms: 1.905415
+  type: 'test'
+  ...
+# Subtest: reject invalid level 4
+ok 222 - reject invalid level 4
+  ---
+  duration_ms: 0.094091
+  type: 'test'
+  ...
+# Subtest: reject invalid level -1
+ok 223 - reject invalid level -1
+  ---
+  duration_ms: 0.062184
+  type: 'test'
+  ...
+# Subtest: reject invalid level 1.5
+ok 224 - reject invalid level 1.5
+  ---
+  duration_ms: 0.065719
+  type: 'test'
+  ...
+# Subtest: reject invalid level 2
+ok 225 - reject invalid level 2
+  ---
+  duration_ms: 0.075223
+  type: 'test'
+  ...
+# Subtest: reject invalid level null
+ok 226 - reject invalid level null
+  ---
+  duration_ms: 0.051477
+  type: 'test'
+  ...
+# Subtest: reject invalid level undefined
+ok 227 - reject invalid level undefined
+  ---
+  duration_ms: 0.047932
+  type: 'test'
+  ...
+# Subtest: reject invalid level NaN
+ok 228 - reject invalid level NaN
+  ---
+  duration_ms: 0.048213
+  type: 'test'
+  ...
+# Subtest: reject unknown/retired/duplicate/missing skills
+ok 229 - reject unknown/retired/duplicate/missing skills
+  ---
+  duration_ms: 0.310557
+  type: 'test'
+  ...
+# Subtest: reject wrong count, duplicate IDs, invalid ID/name
+ok 230 - reject wrong count, duplicate IDs, invalid ID/name
+  ---
+  duration_ms: 4.86233
+  type: 'test'
+  ...
+# Subtest: reject missing/duplicate definitions and masters
+ok 231 - reject missing/duplicate definitions and masters
+  ---
+  duration_ms: 0.640713
+  type: 'test'
+  ...
+# Subtest: reject invalid base/share/version/normalization/synergy
+ok 232 - reject invalid base/share/version/normalization/synergy
+  ---
+  duration_ms: 1.637522
+  type: 'test'
+  ...
+# Subtest: normalization negative, zero, monotonic, bounded saturation
+ok 233 - normalization negative, zero, monotonic, bounded saturation
+  ---
+  duration_ms: 0.237277
+  type: 'test'
+  ...
+# Subtest: persisted output/manifest match fresh calculation
+ok 234 - persisted output/manifest match fresh calculation
+  ---
+  duration_ms: 22.880244
+  type: 'test'
+  ...
+# Subtest: game/master files unchanged relative to audited source commit
+ok 235 - game/master files unchanged relative to audited source commit
+  ---
+  duration_ms: 5.892328
+  type: 'test'
+  ...
+# Subtest: complete exact normative synergy rules, no added or omitted pair
+ok 236 - complete exact normative synergy rules, no added or omitted pair
+  ---
+  duration_ms: 0.190546
+  type: 'test'
+  ...
+# Subtest: all 927 scores independently reconstructed from normative table and hardcoded synergy
+ok 237 - all 927 scores independently reconstructed from normative table and hardcoded synergy
+  ---
+  duration_ms: 12.772269
+  type: 'test'
+  ...
+# Subtest: analysis frequency, mean, ranks and support are consistent with complete rows
+ok 238 - analysis frequency, mean, ranks and support are consistent with complete rows
+  ---
+  duration_ms: 9.475443
+  type: 'test'
+  ...
+# Subtest: report and analysis regenerate byte-for-byte deterministically
+ok 239 - report and analysis regenerate byte-for-byte deterministically
+  ---
+  duration_ms: 241.861939
+  type: 'test'
+  ...
+1..239
+# tests 239
+# suites 0
+# pass 239
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 604.991937

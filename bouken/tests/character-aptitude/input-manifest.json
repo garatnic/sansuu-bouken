@@ -1,0 +1,11 @@
+{
+  "aptitudeVersion": "1.0.0-draft",
+  "gameVersion": 74,
+  "inputs": {
+    "data/characters.json": "616ae62c6b226c14a0cc23218dae1c34385771bc2c3e0f26c5462494bd1311e2",
+    "data/skills.json": "b4bdd2476e16b3ac83bc4b1e5a865c3f8c8b0e4dc0fbc38cfcd30a463565afb2",
+    "common/version.js": "5e155d3e5ed43d6fd62ad0260c6b6a197c187456f75541f422d548281d621009",
+    "siyou/キャラクター適性スコア理論採点仕様_v1.md": "151b9373bac6dadaad4e067a94806953f0f48eecc6e1d0881fbf4bbea2fef176"
+  },
+  "definitionSha256": "dfc055c62c474a548bf204950f983206d0e4f5fbbbeaaf150bf83aae512c3058"
+}

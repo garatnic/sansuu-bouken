@@ -1,0 +1,6 @@
+{
+  "sourceCommit": "b55105d5d29bc3411bf0c3f7f4426bdc7db441b9",
+  "gameVersion": 74,
+  "scope": "Phase 3 only; no simulation, integration or manual deployment",
+  "review": "siyou root document inventory, current rules and history boundaries, README, ToDo, change history, normative v1 table and roadmap; related common/buffs.js, worldgen.js, events.js and party.js. Historical subdirectories not re-audited in full."
+}

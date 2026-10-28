@@ -1,0 +1,17 @@
+{
+  "command": "node verify.cjs",
+  "node": "v24.22.1",
+  "tests": 239,
+  "pass": 239,
+  "fail": 0,
+  "skipped": 0,
+  "exitCode": 0,
+  "artifacts": {
+    "scoring-v1.json": "dfc055c62c474a548bf204950f983206d0e4f5fbbbeaaf150bf83aae512c3058",
+    "scores.csv": "e62d3143c5b49e520efcb4ffa0c8773164ff9009833f670fe346fde42c9d47bb",
+    "details.json": "c89d27b69ee3fa4238e7f04b0c78f3f0207183b807f3b6ab88f7f298b4764f27",
+    "analysis.json": "4a7f93ba2273e3f4328514cce896ef31270e530b9bfd5199a87d9fe233b471d6",
+    "REPORT.md": "65ca4c8a4a0f43aea88615db8f350ea02a91654e47369cda5393e3dad741fb13",
+    "input-manifest.json": "7b293d23b949bb6c20cfe447fe34c0e94434f4a981dec23cf329a3317ee1b6a5"
+  }
+}
