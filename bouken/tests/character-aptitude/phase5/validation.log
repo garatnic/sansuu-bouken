@@ -1,0 +1,148 @@
+TAP version 13
+# Subtest: TaskA gate and protected archived/game inputs verified
+ok 1 - TaskA gate and protected archived/game inputs verified
+  ---
+  duration_ms: 22.818389
+  type: 'test'
+  ...
+# Subtest: all3x927 unique complete registered IDs and candidate provenance
+ok 2 - all3x927 unique complete registered IDs and candidate provenance
+  ---
+  duration_ms: 6.775922
+  type: 'test'
+  ...
+# Subtest: all67 review IDs/names/base/shares and201 nonempty effect descriptions
+ok 3 - all67 review IDs/names/base/shares and201 nonempty effect descriptions
+  ---
+  duration_ms: 4.514734
+  type: 'test'
+  ...
+# Subtest: D04 excluded separately, all48 holders retained, allD04 contributions zero
+ok 4 - D04 excluded separately, all48 holders retained, allD04 contributions zero
+  ---
+  duration_ms: 2.628209
+  type: 'test'
+  ...
+# Subtest: onlyE01..07 shares differ; everybase, E08, normalization andsynergy unchanged
+ok 5 - onlyE01..07 shares differ; everybase, E08, normalization andsynergy unchanged
+  ---
+  duration_ms: 19.066791
+  type: 'test'
+  ...
+# Subtest: scenarioA v1 details exactlymatch archived Phase3, not onlyinteger scores
+ok 6 - scenarioA v1 details exactlymatch archived Phase3, not onlyinteger scores
+  ---
+  duration_ms: 18.617807
+  type: 'test'
+  ...
+# Subtest: scenarioA specialty matches committed TaskA all927
+ok 7 - scenarioA specialty matches committed TaskA all927
+  ---
+  duration_ms: 18.071937
+  type: 'test'
+  ...
+# Subtest: independent Python oracle verifies alltheoretical/raw/relative/rank outputs
+ok 8 - independent Python oracle verifies alltheoretical/raw/relative/rank outputs
+  ---
+  duration_ms: 1341.089106
+  type: 'test'
+  ...
+# Subtest: allscenario scores0..100 and winners have positive raw, no minimum
+ok 9 - allscenario scores0..100 and winners have positive raw, no minimum
+  ---
+  duration_ms: 5.863832
+  type: 'test'
+  ...
+# Subtest: zeroall fields and tinypositive preserve agreed rule; numeric ties
+ok 10 - zeroall fields and tinypositive preserve agreed rule; numeric ties
+  ---
+  duration_ms: 0.687243
+  type: 'test'
+  ...
+# Subtest: sharetransfer monotonic dev/explore and totalraw conserved
+ok 11 - sharetransfer monotonic dev/explore and totalraw conserved
+  ---
+  duration_ms: 9.833917
+  type: 'test'
+  ...
+# Subtest: companions/treasure unchanged; nonE holders allabsolute values unchanged
+ok 12 - companions/treasure unchanged; nonE holders allabsolute values unchanged
+  ---
+  duration_ms: 41.415902
+  type: 'test'
+  ...
+# Subtest: eachscenario population deviationmean50/std10 andpercentile range
+ok 13 - eachscenario population deviationmean50/std10 andpercentile range
+  ---
+  duration_ms: 5.201526
+  type: 'test'
+  ...
+# Subtest: inputcharacter/master order independent all3 scenarios
+ok 14 - inputcharacter/master order independent all3 scenarios
+  ---
+  duration_ms: 74.346179
+  type: 'test'
+  ...
+# Subtest: comparison927 and allstored absolute/z/percentile/deltas match sourcecalculations
+ok 15 - comparison927 and allstored absolute/z/percentile/deltas match sourcecalculations
+  ---
+  duration_ms: 71.863904
+  type: 'test'
+  ...
+# Subtest: specialtychanges preciselyenumerated and summaries consistent
+ok 16 - specialtychanges preciselyenumerated and summaries consistent
+  ---
+  duration_ms: 3.997217
+  type: 'test'
+  ...
+# Subtest: all67 evidence counts agree with archived basic/supplement rows
+ok 17 - all67 evidence counts agree with archived basic/supplement rows
+  ---
+  duration_ms: 438.353582
+  type: 'test'
+  ...
+# Subtest: concentration804 rows do not count D04 asactive contribution
+ok 18 - concentration804 rows do not count D04 asactive contribution
+  ---
+  duration_ms: 42.03108
+  type: 'test'
+  ...
+# Subtest: all14 proposedchanges for7E only, everyretetst row explicitlyunexecuted
+ok 19 - all14 proposedchanges for7E only, everyretetst row explicitlyunexecuted
+  ---
+  duration_ms: 0.737278
+  type: 'test'
+  ...
+# Subtest: preserved archived5000+3000/holdout873 and allgame/master files byteidentical
+ok 20 - preserved archived5000+3000/holdout873 and allgame/master files byteidentical
+  ---
+  duration_ms: 14.79981
+  type: 'test'
+  ...
+# Subtest: deterministicall outputs and v2proposal
+ok 21 - deterministicall outputs and v2proposal
+  ---
+  duration_ms: 755.65625
+  type: 'test'
+  ...
+# Subtest: authorizedscope only and noadventure engine loaded
+ok 22 - authorizedscope only and noadventure engine loaded
+  ---
+  duration_ms: 6.915331
+  type: 'test'
+  ...
+# Subtest: supportgroups and concentration highlights trace to complete scenario records
+ok 23 - supportgroups and concentration highlights trace to complete scenario records
+  ---
+  duration_ms: 2.125404
+  type: 'test'
+  ...
+1..23
+# tests 23
+# suites 0
+# pass 23
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4155.470712

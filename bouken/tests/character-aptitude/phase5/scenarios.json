@@ -1,0 +1,11 @@
+{
+  "status": "未承認ドラフト・比較試算専用・正式マスターではない",
+  "sourceAptitudeVersion": "1.0.0-draft",
+  "commonRules": {"scale":35,"zeroRawExcluded":true,"D04":"対象外・別枠・全Lv0・他スキルへ振替なし","specialty":"各案927体の偏差値最大、正rawのみ、数値同点1e-12を全保持"},
+  "scenarios": [
+    {"id":"A-v1","candidateVersion":"1.0.0-draft-preserved","developmentShare":55,"explorationShare":45,"description":"現行v1の全数値を維持、確定済み得意判定規則だけ共通適用"},
+    {"id":"B-e75","candidateVersion":"2.0.0-proposal-e75","developmentShare":75,"explorationShare":25,"description":"E01〜E07のみ開拓75/探索25。多数を開拓支援へ移す中間の設計仮説。75は実測から推定/最適化した係数ではない。残る25の探索価値も未実証、議論・感度比較用"},
+    {"id":"C-e100","candidateVersion":"2.0.0-proposal-e100","developmentShare":100,"explorationShare":0,"description":"E01〜E07のみ開拓100/探索0。情報公開の直接効果がないという専門性解釈の端点。間接的な探索支援を落とすリスクがあり自動採用しない"}
+  ],
+  "unchanged":"全67スキルの基礎点、E08含む他60種の配分、35による正規化、指定シナジーと上限8は不変。D04は67件一覧に残す"
+}

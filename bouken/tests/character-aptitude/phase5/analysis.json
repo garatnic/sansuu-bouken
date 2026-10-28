@@ -1,0 +1,1691 @@
+{
+  "concentrationHighlights": [
+    {
+      "scenario": "A-v1",
+      "field": "development",
+      "top": [
+        {
+          "scenario": "A-v1",
+          "id": "A02",
+          "name": "大開拓",
+          "field": "development",
+          "holderCount": 48,
+          "fieldSpecialists": 256,
+          "holdersAmongSpecialists": 35,
+          "shareOfSpecialists": 0.13671875,
+          "shareOfHolders": 0.7291666666666666,
+          "D04Status": "評価対象"
+        },
+        {
+          "scenario": "A-v1",
+          "id": "A05",
+          "name": "森林特攻",
+          "field": "development",
+          "holderCount": 47,
+          "fieldSpecialists": 256,
+          "holdersAmongSpecialists": 33,
+          "shareOfSpecialists": 0.12890625,
+          "shareOfHolders": 0.7021276595744681,
+          "D04Status": "評価対象"
+        },
+        {
+          "scenario": "A-v1",
+          "id": "A08",
+          "name": "海特攻",
+          "field": "development",
+          "holderCount": 55,
+          "fieldSpecialists": 256,
+          "holdersAmongSpecialists": 33,
+          "shareOfSpecialists": 0.12890625,
+          "shareOfHolders": 0.6,
+          "D04Status": "評価対象"
+        }
+      ]
+    },
+    {
+      "scenario": "A-v1",
+      "field": "companions",
+      "top": [
+        {
+          "scenario": "A-v1",
+          "id": "D09",
+          "name": "危険地帯の縁",
+          "field": "companions",
+          "holderCount": 48,
+          "fieldSpecialists": 236,
+          "holdersAmongSpecialists": 35,
+          "shareOfSpecialists": 0.1483050847457627,
+          "shareOfHolders": 0.7291666666666666,
+          "D04Status": "評価対象"
+        },
+        {
+          "scenario": "A-v1",
+          "id": "D01",
+          "name": "いいこみっけ",
+          "field": "companions",
+          "holderCount": 30,
+          "fieldSpecialists": 236,
+          "holdersAmongSpecialists": 30,
+          "shareOfSpecialists": 0.1271186440677966,
+          "shareOfHolders": 1,
+          "D04Status": "評価対象"
+        },
+        {
+          "scenario": "A-v1",
+          "id": "D08",
+          "name": "魔物の縁",
+          "field": "companions",
+          "holderCount": 47,
+          "fieldSpecialists": 236,
+          "holdersAmongSpecialists": 30,
+          "shareOfSpecialists": 0.1271186440677966,
+          "shareOfHolders": 0.6382978723404256,
+          "D04Status": "評価対象"
+        }
+      ]
+    },
+    {
+      "scenario": "A-v1",
+      "field": "treasure",
+      "top": [
+        {
+          "scenario": "A-v1",
+          "id": "C03",
+          "name": "お宝倍増",
+          "field": "treasure",
+          "holderCount": 47,
+          "fieldSpecialists": 203,
+          "holdersAmongSpecialists": 46,
+          "shareOfSpecialists": 0.22660098522167488,
+          "shareOfHolders": 0.9787234042553191,
+          "D04Status": "評価対象"
+        },
+        {
+          "scenario": "A-v1",
+          "id": "C01",
+          "name": "いいものみっけ",
+          "field": "treasure",
+          "holderCount": 29,
+          "fieldSpecialists": 203,
+          "holdersAmongSpecialists": 28,
+          "shareOfSpecialists": 0.13793103448275862,
+          "shareOfHolders": 0.9655172413793104,
+          "D04Status": "評価対象"
+        },
+        {
+          "scenario": "A-v1",
+          "id": "C02",
+          "name": "宝探し",
+          "field": "treasure",
+          "holderCount": 29,
+          "fieldSpecialists": 203,
+          "holdersAmongSpecialists": 27,
+          "shareOfSpecialists": 0.1330049261083744,
+          "shareOfHolders": 0.9310344827586207,
+          "D04Status": "評価対象"
+        }
+      ]
+    },
+    {
+      "scenario": "A-v1",
+      "field": "exploration",
+      "top": [
+        {
+          "scenario": "A-v1",
+          "id": "E08",
+          "name": "地形集中",
+          "field": "exploration",
+          "holderCount": 98,
+          "fieldSpecialists": 232,
+          "holdersAmongSpecialists": 47,
+          "shareOfSpecialists": 0.2025862068965517,
+          "shareOfHolders": 0.47959183673469385,
+          "D04Status": "評価対象"
+        },
+        {
+          "scenario": "A-v1",
+          "id": "B04",
+          "name": "道しるべ",
+          "field": "exploration",
+          "holderCount": 49,
+          "fieldSpecialists": 232,
+          "holdersAmongSpecialists": 39,
+          "shareOfSpecialists": 0.16810344827586207,
+          "shareOfHolders": 0.7959183673469388,
+          "D04Status": "評価対象"
+        },
+        {
+          "scenario": "A-v1",
+          "id": "B03",
+          "name": "人の気配",
+          "field": "exploration",
+          "holderCount": 48,
+          "fieldSpecialists": 232,
+          "holdersAmongSpecialists": 38,
+          "shareOfSpecialists": 0.16379310344827586,
+          "shareOfHolders": 0.7916666666666666,
+          "D04Status": "評価対象"
+        }
+      ]
+    },
+    {
+      "scenario": "B-e75",
+      "field": "development",
+      "top": [
+        {
+          "scenario": "B-e75",
+          "id": "A05",
+          "name": "森林特攻",
+          "field": "development",
+          "holderCount": 47,
+          "fieldSpecialists": 258,
+          "holdersAmongSpecialists": 33,
+          "shareOfSpecialists": 0.12790697674418605,
+          "shareOfHolders": 0.7021276595744681,
+          "D04Status": "評価対象"
+        },
+        {
+          "scenario": "B-e75",
+          "id": "A02",
+          "name": "大開拓",
+          "field": "development",
+          "holderCount": 48,
+          "fieldSpecialists": 258,
+          "holdersAmongSpecialists": 32,
+          "shareOfSpecialists": 0.12403100775193798,
+          "shareOfHolders": 0.6666666666666666,
+          "D04Status": "評価対象"
+        },
+        {
+          "scenario": "B-e75",
+          "id": "A04",
+          "name": "草原特攻",
+          "field": "development",
+          "holderCount": 48,
+          "fieldSpecialists": 258,
+          "holdersAmongSpecialists": 31,
+          "shareOfSpecialists": 0.12015503875968993,
+          "shareOfHolders": 0.6458333333333334,
+          "D04Status": "評価対象"
+        }
+      ]
+    },
+    {
+      "scenario": "B-e75",
+      "field": "companions",
+      "top": [
+        {
+          "scenario": "B-e75",
+          "id": "D09",
+          "name": "危険地帯の縁",
+          "field": "companions",
+          "holderCount": 48,
+          "fieldSpecialists": 232,
+          "holdersAmongSpecialists": 35,
+          "shareOfSpecialists": 0.15086206896551724,
+          "shareOfHolders": 0.7291666666666666,
+          "D04Status": "評価対象"
+        },
+        {
+          "scenario": "B-e75",
+          "id": "D01",
+          "name": "いいこみっけ",
+          "field": "companions",
+          "holderCount": 30,
+          "fieldSpecialists": 232,
+          "holdersAmongSpecialists": 30,
+          "shareOfSpecialists": 0.12931034482758622,
+          "shareOfHolders": 1,
+          "D04Status": "評価対象"
+        },
+        {
+          "scenario": "B-e75",
+          "id": "D08",
+          "name": "魔物の縁",
+          "field": "companions",
+          "holderCount": 47,
+          "fieldSpecialists": 232,
+          "holdersAmongSpecialists": 30,
+          "shareOfSpecialists": 0.12931034482758622,
+          "shareOfHolders": 0.6382978723404256,
+          "D04Status": "評価対象"
+        }
+      ]
+    },
+    {
+      "scenario": "B-e75",
+      "field": "treasure",
+      "top": [
+        {
+          "scenario": "B-e75",
+          "id": "C03",
+          "name": "お宝倍増",
+          "field": "treasure",
+          "holderCount": 47,
+          "fieldSpecialists": 198,
+          "holdersAmongSpecialists": 45,
+          "shareOfSpecialists": 0.22727272727272727,
+          "shareOfHolders": 0.9574468085106383,
+          "D04Status": "評価対象"
+        },
+        {
+          "scenario": "B-e75",
+          "id": "C01",
+          "name": "いいものみっけ",
+          "field": "treasure",
+          "holderCount": 29,
+          "fieldSpecialists": 198,
+          "holdersAmongSpecialists": 28,
+          "shareOfSpecialists": 0.1414141414141414,
+          "shareOfHolders": 0.9655172413793104,
+          "D04Status": "評価対象"
+        },
+        {
+          "scenario": "B-e75",
+          "id": "C02",
+          "name": "宝探し",
+          "field": "treasure",
+          "holderCount": 29,
+          "fieldSpecialists": 198,
+          "holdersAmongSpecialists": 27,
+          "shareOfSpecialists": 0.13636363636363635,
+          "shareOfHolders": 0.9310344827586207,
+          "D04Status": "評価対象"
+        }
+      ]
+    },
+    {
+      "scenario": "B-e75",
+      "field": "exploration",
+      "top": [
+        {
+          "scenario": "B-e75",
+          "id": "E08",
+          "name": "地形集中",
+          "field": "exploration",
+          "holderCount": 98,
+          "fieldSpecialists": 239,
+          "holdersAmongSpecialists": 44,
+          "shareOfSpecialists": 0.18410041841004185,
+          "shareOfHolders": 0.4489795918367347,
+          "D04Status": "評価対象"
+        },
+        {
+          "scenario": "B-e75",
+          "id": "B04",
+          "name": "道しるべ",
+          "field": "exploration",
+          "holderCount": 49,
+          "fieldSpecialists": 239,
+          "holdersAmongSpecialists": 39,
+          "shareOfSpecialists": 0.16317991631799164,
+          "shareOfHolders": 0.7959183673469388,
+          "D04Status": "評価対象"
+        },
+        {
+          "scenario": "B-e75",
+          "id": "B03",
+          "name": "人の気配",
+          "field": "exploration",
+          "holderCount": 48,
+          "fieldSpecialists": 239,
+          "holdersAmongSpecialists": 38,
+          "shareOfSpecialists": 0.1589958158995816,
+          "shareOfHolders": 0.7916666666666666,
+          "D04Status": "評価対象"
+        }
+      ]
+    },
+    {
+      "scenario": "C-e100",
+      "field": "development",
+      "top": [
+        {
+          "scenario": "C-e100",
+          "id": "A02",
+          "name": "大開拓",
+          "field": "development",
+          "holderCount": 48,
+          "fieldSpecialists": 272,
+          "holdersAmongSpecialists": 32,
+          "shareOfSpecialists": 0.11764705882352941,
+          "shareOfHolders": 0.6666666666666666,
+          "D04Status": "評価対象"
+        },
+        {
+          "scenario": "C-e100",
+          "id": "E05",
+          "name": "海の加護",
+          "field": "development",
+          "holderCount": 55,
+          "fieldSpecialists": 272,
+          "holdersAmongSpecialists": 32,
+          "shareOfSpecialists": 0.11764705882352941,
+          "shareOfHolders": 0.5818181818181818,
+          "D04Status": "評価対象"
+        },
+        {
+          "scenario": "C-e100",
+          "id": "A05",
+          "name": "森林特攻",
+          "field": "development",
+          "holderCount": 47,
+          "fieldSpecialists": 272,
+          "holdersAmongSpecialists": 30,
+          "shareOfSpecialists": 0.11029411764705882,
+          "shareOfHolders": 0.6382978723404256,
+          "D04Status": "評価対象"
+        }
+      ]
+    },
+    {
+      "scenario": "C-e100",
+      "field": "companions",
+      "top": [
+        {
+          "scenario": "C-e100",
+          "id": "D09",
+          "name": "危険地帯の縁",
+          "field": "companions",
+          "holderCount": 48,
+          "fieldSpecialists": 223,
+          "holdersAmongSpecialists": 34,
+          "shareOfSpecialists": 0.15246636771300448,
+          "shareOfHolders": 0.7083333333333334,
+          "D04Status": "評価対象"
+        },
+        {
+          "scenario": "C-e100",
+          "id": "D01",
+          "name": "いいこみっけ",
+          "field": "companions",
+          "holderCount": 30,
+          "fieldSpecialists": 223,
+          "holdersAmongSpecialists": 30,
+          "shareOfSpecialists": 0.13452914798206278,
+          "shareOfHolders": 1,
+          "D04Status": "評価対象"
+        },
+        {
+          "scenario": "C-e100",
+          "id": "D02",
+          "name": "交渉上手",
+          "field": "companions",
+          "holderCount": 30,
+          "fieldSpecialists": 223,
+          "holdersAmongSpecialists": 29,
+          "shareOfSpecialists": 0.13004484304932734,
+          "shareOfHolders": 0.9666666666666667,
+          "D04Status": "評価対象"
+        }
+      ]
+    },
+    {
+      "scenario": "C-e100",
+      "field": "treasure",
+      "top": [
+        {
+          "scenario": "C-e100",
+          "id": "C03",
+          "name": "お宝倍増",
+          "field": "treasure",
+          "holderCount": 47,
+          "fieldSpecialists": 205,
+          "holdersAmongSpecialists": 45,
+          "shareOfSpecialists": 0.21951219512195122,
+          "shareOfHolders": 0.9574468085106383,
+          "D04Status": "評価対象"
+        },
+        {
+          "scenario": "C-e100",
+          "id": "C01",
+          "name": "いいものみっけ",
+          "field": "treasure",
+          "holderCount": 29,
+          "fieldSpecialists": 205,
+          "holdersAmongSpecialists": 28,
+          "shareOfSpecialists": 0.13658536585365855,
+          "shareOfHolders": 0.9655172413793104,
+          "D04Status": "評価対象"
+        },
+        {
+          "scenario": "C-e100",
+          "id": "C02",
+          "name": "宝探し",
+          "field": "treasure",
+          "holderCount": 29,
+          "fieldSpecialists": 205,
+          "holdersAmongSpecialists": 27,
+          "shareOfSpecialists": 0.13170731707317074,
+          "shareOfHolders": 0.9310344827586207,
+          "D04Status": "評価対象"
+        }
+      ]
+    },
+    {
+      "scenario": "C-e100",
+      "field": "exploration",
+      "top": [
+        {
+          "scenario": "C-e100",
+          "id": "B02",
+          "name": "宝の気配",
+          "field": "exploration",
+          "holderCount": 56,
+          "fieldSpecialists": 227,
+          "holdersAmongSpecialists": 45,
+          "shareOfSpecialists": 0.19823788546255505,
+          "shareOfHolders": 0.8035714285714286,
+          "D04Status": "評価対象"
+        },
+        {
+          "scenario": "C-e100",
+          "id": "E08",
+          "name": "地形集中",
+          "field": "exploration",
+          "holderCount": 98,
+          "fieldSpecialists": 227,
+          "holdersAmongSpecialists": 42,
+          "shareOfSpecialists": 0.18502202643171806,
+          "shareOfHolders": 0.42857142857142855,
+          "D04Status": "評価対象"
+        },
+        {
+          "scenario": "C-e100",
+          "id": "B07",
+          "name": "イベント探知",
+          "field": "exploration",
+          "holderCount": 55,
+          "fieldSpecialists": 227,
+          "holdersAmongSpecialists": 40,
+          "shareOfSpecialists": 0.1762114537444934,
+          "shareOfHolders": 0.7272727272727273,
+          "D04Status": "評価対象"
+        }
+      ]
+    }
+  ],
+  "sourceCommit": "d4dffecb0d93daa49cf7e162592c45dbfcfb00af",
+  "gameVersion": 74,
+  "sourceAptitudeVersion": "1.0.0-draft",
+  "status": "未承認ドラフト・比較試算専用・正式マスターではない",
+  "scenarioSummaries": [
+    {
+      "scenario": "A-v1",
+      "changedSpecialty": 0,
+      "absoluteChanged": 0,
+      "recalibrationOnlySpecialtyChanges": 0,
+      "noSpecialty": 0,
+      "multipleSpecialties": 0,
+      "D04Holders": 48,
+      "specialtyCounts": {
+        "development": 256,
+        "companions": 236,
+        "treasure": 203,
+        "exploration": 232
+      },
+      "fields": {
+        "development": {
+          "n": 927,
+          "mean": 23.173678532901835,
+          "median": 24,
+          "populationStdDev": 14.476445092638434,
+          "min": 0,
+          "max": 61,
+          "zeroCount": 123
+        },
+        "companions": {
+          "n": 927,
+          "mean": 8.86839266450917,
+          "median": 0,
+          "populationStdDev": 13.975473349596239,
+          "min": 0,
+          "max": 56,
+          "zeroCount": 628
+        },
+        "treasure": {
+          "n": 927,
+          "mean": 26.492988133764833,
+          "median": 25,
+          "populationStdDev": 13.244269869751776,
+          "min": 0,
+          "max": 60,
+          "zeroCount": 42
+        },
+        "exploration": {
+          "n": 927,
+          "mean": 18.320388349514563,
+          "median": 16,
+          "populationStdDev": 16.553461644194503,
+          "min": 0,
+          "max": 67,
+          "zeroCount": 279
+        }
+      },
+      "E01to07Holders": 382
+    },
+    {
+      "scenario": "B-e75",
+      "changedSpecialty": 61,
+      "absoluteChanged": 382,
+      "recalibrationOnlySpecialtyChanges": 32,
+      "noSpecialty": 0,
+      "multipleSpecialties": 0,
+      "D04Holders": 48,
+      "specialtyCounts": {
+        "development": 258,
+        "companions": 232,
+        "treasure": 198,
+        "exploration": 239
+      },
+      "fields": {
+        "development": {
+          "n": 927,
+          "mean": 25.34304207119741,
+          "median": 26,
+          "populationStdDev": 15.621911996779517,
+          "min": 0,
+          "max": 65,
+          "zeroCount": 123
+        },
+        "companions": {
+          "n": 927,
+          "mean": 8.86839266450917,
+          "median": 0,
+          "populationStdDev": 13.975473349596239,
+          "min": 0,
+          "max": 56,
+          "zeroCount": 628
+        },
+        "treasure": {
+          "n": 927,
+          "mean": 26.492988133764833,
+          "median": 25,
+          "populationStdDev": 13.244269869751776,
+          "min": 0,
+          "max": 60,
+          "zeroCount": 42
+        },
+        "exploration": {
+          "n": 927,
+          "mean": 15.805825242718447,
+          "median": 10,
+          "populationStdDev": 16.10821845435203,
+          "min": 0,
+          "max": 67,
+          "zeroCount": 279
+        }
+      },
+      "E01to07Holders": 382
+    },
+    {
+      "scenario": "C-e100",
+      "changedSpecialty": 128,
+      "absoluteChanged": 382,
+      "recalibrationOnlySpecialtyChanges": 64,
+      "noSpecialty": 0,
+      "multipleSpecialties": 0,
+      "D04Holders": 48,
+      "specialtyCounts": {
+        "development": 272,
+        "companions": 223,
+        "treasure": 205,
+        "exploration": 227
+      },
+      "fields": {
+        "development": {
+          "n": 927,
+          "mean": 27.816612729234087,
+          "median": 28,
+          "populationStdDev": 17.433826936274777,
+          "min": 0,
+          "max": 70,
+          "zeroCount": 123
+        },
+        "companions": {
+          "n": 927,
+          "mean": 8.86839266450917,
+          "median": 0,
+          "populationStdDev": 13.975473349596239,
+          "min": 0,
+          "max": 56,
+          "zeroCount": 628
+        },
+        "treasure": {
+          "n": 927,
+          "mean": 26.492988133764833,
+          "median": 25,
+          "populationStdDev": 13.244269869751776,
+          "min": 0,
+          "max": 60,
+          "zeroCount": 42
+        },
+        "exploration": {
+          "n": 927,
+          "mean": 12.099244875943905,
+          "median": 0,
+          "populationStdDev": 16.736000427974094,
+          "min": 0,
+          "max": 67,
+          "zeroCount": 552
+        }
+      },
+      "E01to07Holders": 382
+    }
+  ],
+  "skillTreatmentCounts": {
+    "維持": 46,
+    "保留": 13,
+    "対象外・別枠": 1,
+    "変更候補": 7
+  },
+  "treatmentIds": {
+    "維持": [
+      "A01",
+      "A03",
+      "A04",
+      "A05",
+      "A06",
+      "A07",
+      "A08",
+      "A09",
+      "A10",
+      "A11",
+      "B01",
+      "B02",
+      "B03",
+      "B04",
+      "B05",
+      "B06",
+      "B07",
+      "C03",
+      "C04",
+      "C05",
+      "C07",
+      "C08",
+      "C09",
+      "C11",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "D01",
+      "D02",
+      "D06",
+      "D07",
+      "D08",
+      "D09",
+      "F01"
+    ],
+    "保留": [
+      "A02",
+      "A12",
+      "C01",
+      "C02",
+      "C06",
+      "C10",
+      "C12",
+      "C22",
+      "D03",
+      "D05",
+      "E08",
+      "F02",
+      "F03"
+    ],
+    "対象外・別枠": [
+      "D04"
+    ],
+    "変更候補": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05",
+      "E06",
+      "E07"
+    ]
+  },
+  "supportImpact": [
+    {
+      "scenario": "A-v1",
+      "group": "E01〜E07",
+      "n": 382,
+      "specialtyChanged": 0,
+      "developmentDeltaMean": 0,
+      "explorationDeltaMean": 0,
+      "specialtyCounts": {
+        "development": 136,
+        "companions": 72,
+        "treasure": 64,
+        "exploration": 110
+      },
+      "note": "群は重複し得る。E08/D06自身の配点は変更せず、E01〜07の併有と母集団再標準化の影響を含む"
+    },
+    {
+      "scenario": "A-v1",
+      "group": "E08",
+      "n": 98,
+      "specialtyChanged": 0,
+      "developmentDeltaMean": 0,
+      "explorationDeltaMean": 0,
+      "specialtyCounts": {
+        "development": 21,
+        "companions": 14,
+        "treasure": 16,
+        "exploration": 47
+      },
+      "note": "群は重複し得る。E08/D06自身の配点は変更せず、E01〜07の併有と母集団再標準化の影響を含む"
+    },
+    {
+      "scenario": "A-v1",
+      "group": "D06",
+      "n": 29,
+      "specialtyChanged": 0,
+      "developmentDeltaMean": 0,
+      "explorationDeltaMean": 0,
+      "specialtyCounts": {
+        "development": 0,
+        "companions": 24,
+        "treasure": 4,
+        "exploration": 1
+      },
+      "note": "群は重複し得る。E08/D06自身の配点は変更せず、E01〜07の併有と母集団再標準化の影響を含む"
+    },
+    {
+      "scenario": "B-e75",
+      "group": "E01〜E07",
+      "n": 382,
+      "specialtyChanged": 29,
+      "developmentDeltaMean": 5.2643979057591626,
+      "explorationDeltaMean": -6.102094240837697,
+      "specialtyCounts": {
+        "development": 165,
+        "companions": 71,
+        "treasure": 43,
+        "exploration": 103
+      },
+      "note": "群は重複し得る。E08/D06自身の配点は変更せず、E01〜07の併有と母集団再標準化の影響を含む"
+    },
+    {
+      "scenario": "B-e75",
+      "group": "E08",
+      "n": 98,
+      "specialtyChanged": 11,
+      "developmentDeltaMean": 1.346938775510204,
+      "explorationDeltaMean": -1.4489795918367347,
+      "specialtyCounts": {
+        "development": 24,
+        "companions": 14,
+        "treasure": 16,
+        "exploration": 44
+      },
+      "note": "群は重複し得る。E08/D06自身の配点は変更せず、E01〜07の併有と母集団再標準化の影響を含む"
+    },
+    {
+      "scenario": "B-e75",
+      "group": "D06",
+      "n": 29,
+      "specialtyChanged": 0,
+      "developmentDeltaMean": 0.8275862068965517,
+      "explorationDeltaMean": -0.8275862068965517,
+      "specialtyCounts": {
+        "development": 0,
+        "companions": 24,
+        "treasure": 4,
+        "exploration": 1
+      },
+      "note": "群は重複し得る。E08/D06自身の配点は変更せず、E01〜07の併有と母集団再標準化の影響を含む"
+    },
+    {
+      "scenario": "C-e100",
+      "group": "E01〜E07",
+      "n": 382,
+      "specialtyChanged": 64,
+      "developmentDeltaMean": 11.267015706806284,
+      "explorationDeltaMean": -15.096858638743456,
+      "specialtyCounts": {
+        "development": 200,
+        "companions": 71,
+        "treasure": 43,
+        "exploration": 68
+      },
+      "note": "群は重複し得る。E08/D06自身の配点は変更せず、E01〜07の併有と母集団再標準化の影響を含む"
+    },
+    {
+      "scenario": "C-e100",
+      "group": "E08",
+      "n": 98,
+      "specialtyChanged": 32,
+      "developmentDeltaMean": 3,
+      "explorationDeltaMean": -3.6020408163265305,
+      "specialtyCounts": {
+        "development": 24,
+        "companions": 13,
+        "treasure": 19,
+        "exploration": 42
+      },
+      "note": "群は重複し得る。E08/D06自身の配点は変更せず、E01〜07の併有と母集団再標準化の影響を含む"
+    },
+    {
+      "scenario": "C-e100",
+      "group": "D06",
+      "n": 29,
+      "specialtyChanged": 0,
+      "developmentDeltaMean": 1.793103448275862,
+      "explorationDeltaMean": -2.206896551724138,
+      "specialtyCounts": {
+        "development": 0,
+        "companions": 24,
+        "treasure": 4,
+        "exploration": 1
+      },
+      "note": "群は重複し得る。E08/D06自身の配点は変更せず、E01〜07の併有と母集団再標準化の影響を含む"
+    }
+  ],
+  "archivedMain": 5000,
+  "archivedSupplement": 3000,
+  "additionalSimulations": 0,
+  "correlations": [
+    {
+      "scenario": "A-v1",
+      "field": "development",
+      "metric": "opened_mean",
+      "spearman": 0.6425132124226653,
+      "pearson": 0.688293383149061,
+      "n": 50,
+      "note": "旧50体の記述的照合。配分の選定/係数学習には使用しない。総冒険成果の予測点ではない"
+    },
+    {
+      "scenario": "A-v1",
+      "field": "companions",
+      "metric": "newCharacters_mean",
+      "spearman": 0.3075097452667262,
+      "pearson": 0.0738822939875226,
+      "n": 50,
+      "note": "旧50体の記述的照合。配分の選定/係数学習には使用しない。総冒険成果の予測点ではない"
+    },
+    {
+      "scenario": "A-v1",
+      "field": "treasure",
+      "metric": "newItems_mean",
+      "spearman": 0.29763207380260964,
+      "pearson": 0.21147201385707307,
+      "n": 50,
+      "note": "旧50体の記述的照合。配分の選定/係数学習には使用しない。総冒険成果の予測点ではない"
+    },
+    {
+      "scenario": "A-v1",
+      "field": "exploration",
+      "metric": "explorationIndex_mean",
+      "spearman": 0.40482141028474194,
+      "pearson": 0.8189157309340241,
+      "n": 50,
+      "note": "旧50体の記述的照合。配分の選定/係数学習には使用しない。総冒険成果の予測点ではない"
+    },
+    {
+      "scenario": "B-e75",
+      "field": "development",
+      "metric": "opened_mean",
+      "spearman": 0.5891900737282593,
+      "pearson": 0.6175835125653848,
+      "n": 50,
+      "note": "旧50体の記述的照合。配分の選定/係数学習には使用しない。総冒険成果の予測点ではない"
+    },
+    {
+      "scenario": "B-e75",
+      "field": "companions",
+      "metric": "newCharacters_mean",
+      "spearman": 0.3075097452667262,
+      "pearson": 0.0738822939875226,
+      "n": 50,
+      "note": "旧50体の記述的照合。配分の選定/係数学習には使用しない。総冒険成果の予測点ではない"
+    },
+    {
+      "scenario": "B-e75",
+      "field": "treasure",
+      "metric": "newItems_mean",
+      "spearman": 0.29763207380260964,
+      "pearson": 0.21147201385707307,
+      "n": 50,
+      "note": "旧50体の記述的照合。配分の選定/係数学習には使用しない。総冒険成果の予測点ではない"
+    },
+    {
+      "scenario": "B-e75",
+      "field": "exploration",
+      "metric": "explorationIndex_mean",
+      "spearman": 0.4445821469803197,
+      "pearson": 0.8864107059886241,
+      "n": 50,
+      "note": "旧50体の記述的照合。配分の選定/係数学習には使用しない。総冒険成果の予測点ではない"
+    },
+    {
+      "scenario": "C-e100",
+      "field": "development",
+      "metric": "opened_mean",
+      "spearman": 0.533776600803091,
+      "pearson": 0.5460643300817665,
+      "n": 50,
+      "note": "旧50体の記述的照合。配分の選定/係数学習には使用しない。総冒険成果の予測点ではない"
+    },
+    {
+      "scenario": "C-e100",
+      "field": "companions",
+      "metric": "newCharacters_mean",
+      "spearman": 0.3075097452667262,
+      "pearson": 0.0738822939875226,
+      "n": 50,
+      "note": "旧50体の記述的照合。配分の選定/係数学習には使用しない。総冒険成果の予測点ではない"
+    },
+    {
+      "scenario": "C-e100",
+      "field": "treasure",
+      "metric": "newItems_mean",
+      "spearman": 0.29763207380260964,
+      "pearson": 0.21147201385707307,
+      "n": 50,
+      "note": "旧50体の記述的照合。配分の選定/係数学習には使用しない。総冒険成果の予測点ではない"
+    },
+    {
+      "scenario": "C-e100",
+      "field": "exploration",
+      "metric": "explorationIndex_mean",
+      "spearman": 0.538581652843282,
+      "pearson": 0.9139090750370684,
+      "n": 50,
+      "note": "旧50体の記述的照合。配分の選定/係数学習には使用しない。総冒険成果の予測点ではない"
+    }
+  ],
+  "lowHighBoundaries": {
+    "low": 55,
+    "high": 100
+  },
+  "supportEvidence": [
+    {
+      "id": "D06",
+      "evidence": [
+        {
+          "supportId": 613,
+          "partnerId": 160,
+          "metric": "opened",
+          "n": 100,
+          "pairedMean": 0,
+          "ci95Low": 0,
+          "ci95High": 0
+        },
+        {
+          "supportId": 613,
+          "partnerId": 160,
+          "metric": "newCharacters",
+          "n": 100,
+          "pairedMean": 0.02,
+          "ci95Low": -0.085448435783295,
+          "ci95High": 0.125448435783295
+        },
+        {
+          "supportId": 613,
+          "partnerId": 160,
+          "metric": "newItems",
+          "n": 100,
+          "pairedMean": 0,
+          "ci95Low": 0,
+          "ci95High": 0
+        },
+        {
+          "supportId": 613,
+          "partnerId": 160,
+          "metric": "explorationIndex",
+          "n": 100,
+          "pairedMean": 0,
+          "ci95Low": 0,
+          "ci95High": 0
+        },
+        {
+          "supportId": 613,
+          "partnerId": 160,
+          "metric": "visited",
+          "n": 100,
+          "pairedMean": 0,
+          "ci95Low": 0,
+          "ci95High": 0
+        },
+        {
+          "supportId": 613,
+          "partnerId": 160,
+          "metric": "groupJoins",
+          "n": 100,
+          "pairedMean": 0.04,
+          "ci95Low": 0.0009215643204418256,
+          "ci95High": 0.07907843567955818
+        },
+        {
+          "supportId": 613,
+          "partnerId": 160,
+          "metric": "generatedFacilities",
+          "n": 100,
+          "pairedMean": 0,
+          "ci95Low": 0,
+          "ci95High": 0
+        },
+        {
+          "supportId": 386,
+          "partnerId": 160,
+          "metric": "opened",
+          "n": 100,
+          "pairedMean": 0,
+          "ci95Low": 0,
+          "ci95High": 0
+        },
+        {
+          "supportId": 386,
+          "partnerId": 160,
+          "metric": "newCharacters",
+          "n": 100,
+          "pairedMean": 0.05,
+          "ci95Low": -0.04511790117363483,
+          "ci95High": 0.14511790117363482
+        },
+        {
+          "supportId": 386,
+          "partnerId": 160,
+          "metric": "newItems",
+          "n": 100,
+          "pairedMean": 0,
+          "ci95Low": 0,
+          "ci95High": 0
+        },
+        {
+          "supportId": 386,
+          "partnerId": 160,
+          "metric": "explorationIndex",
+          "n": 100,
+          "pairedMean": 0,
+          "ci95Low": 0,
+          "ci95High": 0
+        },
+        {
+          "supportId": 386,
+          "partnerId": 160,
+          "metric": "visited",
+          "n": 100,
+          "pairedMean": 0,
+          "ci95Low": 0,
+          "ci95High": 0
+        },
+        {
+          "supportId": 386,
+          "partnerId": 160,
+          "metric": "groupJoins",
+          "n": 100,
+          "pairedMean": 0.13,
+          "ci95Low": 0.04703019063820808,
+          "ci95High": 0.21296980936179194
+        },
+        {
+          "supportId": 386,
+          "partnerId": 160,
+          "metric": "generatedFacilities",
+          "n": 100,
+          "pairedMean": 0,
+          "ci95Low": 0,
+          "ci95High": 0
+        }
+      ]
+    },
+    {
+      "id": "E01",
+      "evidence": [
+        {
+          "supportId": 752,
+          "partnerId": 463,
+          "metric": "opened",
+          "n": 100,
+          "pairedMean": 3.51,
+          "ci95Low": 3.192807261966701,
+          "ci95High": 3.8271927380332986
+        },
+        {
+          "supportId": 752,
+          "partnerId": 463,
+          "metric": "newCharacters",
+          "n": 100,
+          "pairedMean": 0.09,
+          "ci95Low": -0.012056179764347183,
+          "ci95High": 0.1920561797643472
+        },
+        {
+          "supportId": 752,
+          "partnerId": 463,
+          "metric": "newItems",
+          "n": 100,
+          "pairedMean": 0.11,
+          "ci95Low": -0.02196508167282614,
+          "ci95High": 0.24196508167282615
+        },
+        {
+          "supportId": 752,
+          "partnerId": 463,
+          "metric": "explorationIndex",
+          "n": 100,
+          "pairedMean": 0.007414516129032258,
+          "ci95Low": 0.002303247157914189,
+          "ci95High": 0.012525785100150327
+        },
+        {
+          "supportId": 752,
+          "partnerId": 463,
+          "metric": "visited",
+          "n": 100,
+          "pairedMean": 0.35,
+          "ci95Low": 0.1326856688970755,
+          "ci95High": 0.5673143311029245
+        },
+        {
+          "supportId": 752,
+          "partnerId": 463,
+          "metric": "groupJoins",
+          "n": 100,
+          "pairedMean": 0.01,
+          "ci95Low": -0.0427242178916475,
+          "ci95High": 0.0627242178916475
+        },
+        {
+          "supportId": 752,
+          "partnerId": 463,
+          "metric": "generatedFacilities",
+          "n": 100,
+          "pairedMean": 0,
+          "ci95Low": 0,
+          "ci95High": 0
+        }
+      ]
+    },
+    {
+      "id": "E02",
+      "evidence": [
+        {
+          "supportId": 818,
+          "partnerId": 646,
+          "metric": "opened",
+          "n": 100,
+          "pairedMean": 4.1,
+          "ci95Low": 3.7306665708811693,
+          "ci95High": 4.46933342911883
+        },
+        {
+          "supportId": 818,
+          "partnerId": 646,
+          "metric": "newCharacters",
+          "n": 100,
+          "pairedMean": 0.05,
+          "ci95Low": -0.056927763395981476,
+          "ci95High": 0.15692776339598147
+        },
+        {
+          "supportId": 818,
+          "partnerId": 646,
+          "metric": "newItems",
+          "n": 100,
+          "pairedMean": 0.04,
+          "ci95Low": -0.05319612931195299,
+          "ci95High": 0.133196129311953
+        },
+        {
+          "supportId": 818,
+          "partnerId": 646,
+          "metric": "explorationIndex",
+          "n": 100,
+          "pairedMean": 0.00462258064516129,
+          "ci95Low": -0.0007739303745231893,
+          "ci95High": 0.01001909166484577
+        },
+        {
+          "supportId": 818,
+          "partnerId": 646,
+          "metric": "visited",
+          "n": 100,
+          "pairedMean": 0.21,
+          "ci95Low": 0.00028500359894717553,
+          "ci95High": 0.4197149964010528
+        },
+        {
+          "supportId": 818,
+          "partnerId": 646,
+          "metric": "groupJoins",
+          "n": 100,
+          "pairedMean": -0.03,
+          "ci95Low": -0.06401872658811573,
+          "ci95High": 0.004018726588115737
+        },
+        {
+          "supportId": 818,
+          "partnerId": 646,
+          "metric": "generatedFacilities",
+          "n": 100,
+          "pairedMean": 0,
+          "ci95Low": 0,
+          "ci95High": 0
+        }
+      ]
+    },
+    {
+      "id": "E03",
+      "evidence": [
+        {
+          "supportId": 627,
+          "partnerId": 378,
+          "metric": "opened",
+          "n": 100,
+          "pairedMean": 3.18,
+          "ci95Low": 2.794977411166339,
+          "ci95High": 3.5650225888336613
+        },
+        {
+          "supportId": 627,
+          "partnerId": 378,
+          "metric": "newCharacters",
+          "n": 100,
+          "pairedMean": 0.02,
+          "ci95Low": -0.06909469116745497,
+          "ci95High": 0.10909469116745497
+        },
+        {
+          "supportId": 627,
+          "partnerId": 378,
+          "metric": "newItems",
+          "n": 100,
+          "pairedMean": 0.05,
+          "ci95Low": -0.04511790117363482,
+          "ci95High": 0.14511790117363482
+        },
+        {
+          "supportId": 627,
+          "partnerId": 378,
+          "metric": "explorationIndex",
+          "n": 100,
+          "pairedMean": 0.008025806451612903,
+          "ci95Low": 0.0028235109916434353,
+          "ci95High": 0.013228101911582371
+        },
+        {
+          "supportId": 627,
+          "partnerId": 378,
+          "metric": "visited",
+          "n": 100,
+          "pairedMean": 0.36,
+          "ci95Low": 0.15175984435908393,
+          "ci95High": 0.568240155640916
+        },
+        {
+          "supportId": 627,
+          "partnerId": 378,
+          "metric": "groupJoins",
+          "n": 100,
+          "pairedMean": 0.01,
+          "ci95Low": -0.02448316755789942,
+          "ci95High": 0.044483167557899425
+        },
+        {
+          "supportId": 627,
+          "partnerId": 378,
+          "metric": "generatedFacilities",
+          "n": 100,
+          "pairedMean": 0,
+          "ci95Low": 0,
+          "ci95High": 0
+        }
+      ]
+    },
+    {
+      "id": "E04",
+      "evidence": [
+        {
+          "supportId": 794,
+          "partnerId": 652,
+          "metric": "opened",
+          "n": 100,
+          "pairedMean": 2.82,
+          "ci95Low": 2.454041525381585,
+          "ci95High": 3.1859584746184146
+        },
+        {
+          "supportId": 794,
+          "partnerId": 652,
+          "metric": "newCharacters",
+          "n": 100,
+          "pairedMean": 0.02,
+          "ci95Low": -0.08160706400351213,
+          "ci95High": 0.12160706400351214
+        },
+        {
+          "supportId": 794,
+          "partnerId": 652,
+          "metric": "newItems",
+          "n": 100,
+          "pairedMean": -0.08,
+          "ci95Low": -0.17216630621780987,
+          "ci95High": 0.012166306217809855
+        },
+        {
+          "supportId": 794,
+          "partnerId": 652,
+          "metric": "explorationIndex",
+          "n": 100,
+          "pairedMean": 0.0020865591397849466,
+          "ci95Low": -0.003099524895358966,
+          "ci95High": 0.007272643174928859
+        },
+        {
+          "supportId": 794,
+          "partnerId": 652,
+          "metric": "visited",
+          "n": 100,
+          "pairedMean": 0.05,
+          "ci95Low": -0.16547654477687734,
+          "ci95High": 0.2654765447768773
+        },
+        {
+          "supportId": 794,
+          "partnerId": 652,
+          "metric": "groupJoins",
+          "n": 100,
+          "pairedMean": -0.01,
+          "ci95Low": -0.0545473455837275,
+          "ci95High": 0.0345473455837275
+        },
+        {
+          "supportId": 794,
+          "partnerId": 652,
+          "metric": "generatedFacilities",
+          "n": 100,
+          "pairedMean": 0,
+          "ci95Low": 0,
+          "ci95High": 0
+        }
+      ]
+    },
+    {
+      "id": "E05",
+      "evidence": [
+        {
+          "supportId": 378,
+          "partnerId": 609,
+          "metric": "opened",
+          "n": 100,
+          "pairedMean": 1.49,
+          "ci95Low": 1.1509896434794378,
+          "ci95High": 1.8290103565205622
+        },
+        {
+          "supportId": 378,
+          "partnerId": 609,
+          "metric": "newCharacters",
+          "n": 100,
+          "pairedMean": -0.05,
+          "ci95Low": -0.16412405921770723,
+          "ci95High": 0.06412405921770724
+        },
+        {
+          "supportId": 378,
+          "partnerId": 609,
+          "metric": "newItems",
+          "n": 100,
+          "pairedMean": -0.07,
+          "ci95Low": -0.19049734412566494,
+          "ci95High": 0.050497344125664936
+        },
+        {
+          "supportId": 378,
+          "partnerId": 609,
+          "metric": "explorationIndex",
+          "n": 100,
+          "pairedMean": -0.0017037634408602147,
+          "ci95Low": -0.006792105022151317,
+          "ci95High": 0.003384578140430888
+        },
+        {
+          "supportId": 378,
+          "partnerId": 609,
+          "metric": "visited",
+          "n": 100,
+          "pairedMean": -0.03,
+          "ci95Low": -0.23425843580841588,
+          "ci95High": 0.17425843580841588
+        },
+        {
+          "supportId": 378,
+          "partnerId": 609,
+          "metric": "groupJoins",
+          "n": 100,
+          "pairedMean": 0,
+          "ci95Low": -0.028202431698877987,
+          "ci95High": 0.028202431698877987
+        },
+        {
+          "supportId": 378,
+          "partnerId": 609,
+          "metric": "generatedFacilities",
+          "n": 100,
+          "pairedMean": 0,
+          "ci95Low": 0,
+          "ci95High": 0
+        }
+      ]
+    },
+    {
+      "id": "E06",
+      "evidence": [
+        {
+          "supportId": 608,
+          "partnerId": 778,
+          "metric": "opened",
+          "n": 100,
+          "pairedMean": 3.64,
+          "ci95Low": 3.2466594809283746,
+          "ci95High": 4.033340519071626
+        },
+        {
+          "supportId": 608,
+          "partnerId": 778,
+          "metric": "newCharacters",
+          "n": 100,
+          "pairedMean": 0.03,
+          "ci95Low": -0.10658539870987044,
+          "ci95High": 0.16658539870987044
+        },
+        {
+          "supportId": 608,
+          "partnerId": 778,
+          "metric": "newItems",
+          "n": 100,
+          "pairedMean": 0,
+          "ci95Low": -0.07976852280090828,
+          "ci95High": 0.07976852280090828
+        },
+        {
+          "supportId": 608,
+          "partnerId": 778,
+          "metric": "explorationIndex",
+          "n": 100,
+          "pairedMean": 0.007555913978494625,
+          "ci95Low": 0.0022480298313954884,
+          "ci95High": 0.01286379812559376
+        },
+        {
+          "supportId": 608,
+          "partnerId": 778,
+          "metric": "visited",
+          "n": 100,
+          "pairedMean": 0.32,
+          "ci95Low": 0.10359342243911532,
+          "ci95High": 0.5364065775608847
+        },
+        {
+          "supportId": 608,
+          "partnerId": 778,
+          "metric": "groupJoins",
+          "n": 100,
+          "pairedMean": 0.02,
+          "ci95Low": -0.02868494549771043,
+          "ci95High": 0.06868494549771043
+        },
+        {
+          "supportId": 608,
+          "partnerId": 778,
+          "metric": "generatedFacilities",
+          "n": 100,
+          "pairedMean": 0,
+          "ci95Low": 0,
+          "ci95High": 0
+        }
+      ]
+    },
+    {
+      "id": "E07",
+      "evidence": [
+        {
+          "supportId": 729,
+          "partnerId": 724,
+          "metric": "opened",
+          "n": 100,
+          "pairedMean": 3.28,
+          "ci95Low": 2.8635196887181675,
+          "ci95High": 3.696480311281832
+        },
+        {
+          "supportId": 729,
+          "partnerId": 724,
+          "metric": "newCharacters",
+          "n": 100,
+          "pairedMean": 0.03,
+          "ci95Low": -0.1036420367511825,
+          "ci95High": 0.1636420367511825
+        },
+        {
+          "supportId": 729,
+          "partnerId": 724,
+          "metric": "newItems",
+          "n": 100,
+          "pairedMean": -0.09,
+          "ci95Low": -0.23127982755103887,
+          "ci95High": 0.05127982755103888
+        },
+        {
+          "supportId": 729,
+          "partnerId": 724,
+          "metric": "explorationIndex",
+          "n": 100,
+          "pairedMean": 0.0008397849462365601,
+          "ci95Low": 0.00017489029014249426,
+          "ci95High": 0.001504679602330626
+        },
+        {
+          "supportId": 729,
+          "partnerId": 724,
+          "metric": "visited",
+          "n": 100,
+          "pairedMean": 0,
+          "ci95Low": 0,
+          "ci95High": 0
+        },
+        {
+          "supportId": 729,
+          "partnerId": 724,
+          "metric": "groupJoins",
+          "n": 100,
+          "pairedMean": 0,
+          "ci95Low": -0.056404863397755974,
+          "ci95High": 0.056404863397755974
+        },
+        {
+          "supportId": 729,
+          "partnerId": 724,
+          "metric": "generatedFacilities",
+          "n": 100,
+          "pairedMean": 0,
+          "ci95Low": 0,
+          "ci95High": 0
+        }
+      ]
+    },
+    {
+      "id": "E08",
+      "evidence": [
+        {
+          "supportId": 313,
+          "partnerId": 646,
+          "metric": "opened",
+          "n": 100,
+          "pairedMean": -0.04,
+          "ci95Low": -0.37950855234961883,
+          "ci95High": 0.2995085523496189
+        },
+        {
+          "supportId": 313,
+          "partnerId": 646,
+          "metric": "newCharacters",
+          "n": 100,
+          "pairedMean": 0.07,
+          "ci95Low": -0.0005342760406625569,
+          "ci95High": 0.14053427604066257
+        },
+        {
+          "supportId": 313,
+          "partnerId": 646,
+          "metric": "newItems",
+          "n": 100,
+          "pairedMean": -0.01,
+          "ci95Low": -0.11360315965058546,
+          "ci95High": 0.09360315965058547
+        },
+        {
+          "supportId": 313,
+          "partnerId": 646,
+          "metric": "explorationIndex",
+          "n": 100,
+          "pairedMean": 0.0006252688172043015,
+          "ci95Low": -0.004752057824622148,
+          "ci95High": 0.006002595459030751
+        },
+        {
+          "supportId": 313,
+          "partnerId": 646,
+          "metric": "visited",
+          "n": 100,
+          "pairedMean": 0.02,
+          "ci95Low": -0.19100998333206554,
+          "ci95High": 0.23100998333206552
+        },
+        {
+          "supportId": 313,
+          "partnerId": 646,
+          "metric": "groupJoins",
+          "n": 100,
+          "pairedMean": 0.04,
+          "ci95Low": -0.008192336412455078,
+          "ci95High": 0.08819233641245508
+        },
+        {
+          "supportId": 313,
+          "partnerId": 646,
+          "metric": "generatedFacilities",
+          "n": 100,
+          "pairedMean": 0,
+          "ci95Low": 0,
+          "ci95High": 0
+        }
+      ]
+    }
+  ],
+  "decision": "全案未承認。正式数値はv1維持、B/Cは比較用提案。Chatとユーザーの判断待ち"
+}
