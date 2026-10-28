@@ -1,0 +1,361 @@
+{
+  "skillCoverage": {
+    "covered": [
+      "A01",
+      "A03",
+      "A05",
+      "A06",
+      "A07",
+      "A08",
+      "A09",
+      "A10",
+      "A11",
+      "B01",
+      "B02",
+      "B03",
+      "B04",
+      "B05",
+      "B06",
+      "B07",
+      "C03",
+      "C04",
+      "C05",
+      "C07",
+      "C08",
+      "C09",
+      "C11",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "D01",
+      "D02",
+      "D04",
+      "D06",
+      "D07",
+      "D08",
+      "D09",
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05",
+      "E06",
+      "E07",
+      "E08",
+      "F01"
+    ],
+    "missing": [
+      "A02",
+      "A04",
+      "A12",
+      "C01",
+      "C02",
+      "C06",
+      "C10",
+      "C12",
+      "C22",
+      "D03",
+      "D05",
+      "F02",
+      "F03"
+    ]
+  },
+  "correlations": {
+    "development": {
+      "metric": "opened",
+      "spearman": 0.6425132124226653,
+      "pearson": 0.6882933831490612,
+      "pairedSeedBootstrap95": [
+        0.6298914094371463,
+        0.6523598664212742
+      ],
+      "bootstrapTrials": 1000,
+      "bootstrapSeed": 2026102808,
+      "nCharacters": 50,
+      "meanOfMeans": 30.985799999999998,
+      "minMean": 30.0,
+      "maxMean": 39.63
+    },
+    "companions": {
+      "metric": "newCharacters",
+      "spearman": 0.3075097452667262,
+      "pearson": 0.07388229398752258,
+      "pairedSeedBootstrap95": [
+        -0.006826235565478538,
+        0.369642791620914
+      ],
+      "bootstrapTrials": 1000,
+      "bootstrapSeed": 2026102808,
+      "nCharacters": 50,
+      "meanOfMeans": 0.1912,
+      "minMean": 0.08,
+      "maxMean": 0.48
+    },
+    "treasure": {
+      "metric": "newItems",
+      "spearman": 0.2976320738026097,
+      "pearson": 0.21147201385707307,
+      "pairedSeedBootstrap95": [
+        0.05199781003933658,
+        0.35230687701904717
+      ],
+      "bootstrapTrials": 1000,
+      "bootstrapSeed": 2026102808,
+      "nCharacters": 50,
+      "meanOfMeans": 0.2182,
+      "minMean": 0.06,
+      "maxMean": 0.62
+    },
+    "exploration": {
+      "metric": "explorationIndex",
+      "spearman": 0.404821410284742,
+      "pearson": 0.818915730934024,
+      "pairedSeedBootstrap95": [
+        0.24902631921377996,
+        0.5818400888651156
+      ],
+      "bootstrapTrials": 1000,
+      "bootstrapSeed": 2026102808,
+      "nCharacters": 50,
+      "meanOfMeans": 0.034399204301075265,
+      "minMean": 0.018903763440860217,
+      "maxMean": 0.08944354838709677
+    }
+  },
+  "bSkills": [
+    {
+      "skill": "B01",
+      "holders": [
+        540,
+        532
+      ],
+      "adventures": 200,
+      "meanDiscovered": 2.85,
+      "meanVisited": 2.82,
+      "meanExplorationIndex": 0.08559032258064518,
+      "meanCumulativeReveal": 82.61,
+      "meanDetected": 0.78,
+      "meanGuideSignalTurns": 0.0,
+      "meanSenseSignalTurns": 15.0
+    },
+    {
+      "skill": "B02",
+      "holders": [
+        540,
+        539,
+        831
+      ],
+      "adventures": 300,
+      "meanDiscovered": 2.24,
+      "meanVisited": 2.22,
+      "meanExplorationIndex": 0.0694068100358423,
+      "meanCumulativeReveal": 26.99,
+      "meanDetected": 1.56,
+      "meanGuideSignalTurns": 0.0,
+      "meanSenseSignalTurns": 0.0
+    },
+    {
+      "skill": "B03",
+      "holders": [
+        329
+      ],
+      "adventures": 100,
+      "meanDiscovered": 2.26,
+      "meanVisited": 2.26,
+      "meanExplorationIndex": 0.06853225806451613,
+      "meanCumulativeReveal": 0.0,
+      "meanDetected": 1.79,
+      "meanGuideSignalTurns": 0.0,
+      "meanSenseSignalTurns": 0.0
+    },
+    {
+      "skill": "B04",
+      "holders": [
+        35
+      ],
+      "adventures": 100,
+      "meanDiscovered": 3.0,
+      "meanVisited": 3.0,
+      "meanExplorationIndex": 0.08552258064516131,
+      "meanCumulativeReveal": 0.0,
+      "meanDetected": 0.0,
+      "meanGuideSignalTurns": 12.97,
+      "meanSenseSignalTurns": 30.0
+    },
+    {
+      "skill": "B05",
+      "holders": [
+        46
+      ],
+      "adventures": 100,
+      "meanDiscovered": 3.0,
+      "meanVisited": 3.0,
+      "meanExplorationIndex": 0.07990430107526883,
+      "meanCumulativeReveal": 60.0,
+      "meanDetected": 0.0,
+      "meanGuideSignalTurns": 0.0,
+      "meanSenseSignalTurns": 30.0
+    },
+    {
+      "skill": "B06",
+      "holders": [
+        865
+      ],
+      "adventures": 100,
+      "meanDiscovered": 2.45,
+      "meanVisited": 2.45,
+      "meanExplorationIndex": 0.06397795698924731,
+      "meanCumulativeReveal": 20.0,
+      "meanDetected": 0.0,
+      "meanGuideSignalTurns": 0.0,
+      "meanSenseSignalTurns": 30.0
+    },
+    {
+      "skill": "B07",
+      "holders": [
+        30,
+        865,
+        532,
+        35,
+        46
+      ],
+      "adventures": 500,
+      "meanDiscovered": 2.728,
+      "meanVisited": 2.728,
+      "meanExplorationIndex": 0.07423698924731184,
+      "meanCumulativeReveal": 32.85,
+      "meanDetected": 0.0,
+      "meanGuideSignalTurns": 2.594,
+      "meanSenseSignalTurns": 30.0
+    }
+  ],
+  "companionComparison": {
+    "theoryZero": {
+      "characters": 35,
+      "adventures": 3500,
+      "meanNewCharacters": 0.18771428571428572,
+      "meanRecruitSuccesses": 0.354,
+      "meanCompanionEvents": 0.6205714285714286
+    },
+    "theory40Plus": {
+      "characters": 7,
+      "adventures": 700,
+      "meanNewCharacters": 0.20142857142857143,
+      "meanRecruitSuccesses": 0.38857142857142857,
+      "meanCompanionEvents": 0.5242857142857142
+    }
+  },
+  "saturation": {
+    "maxOpened": 42.0,
+    "allOpened": 0,
+    "lateEligibleAdventures": 0,
+    "lateEligibleTurns": 0.0,
+    "blockedEffects": 9.0,
+    "blockedAdventures": 9,
+    "a12Holders": []
+  },
+  "completed": {
+    "main": 5000,
+    "support": 3000
+  },
+  "timing": {
+    "mainComputeMs": 86724.43559100002,
+    "supportComputeMs": 51893.40146600001,
+    "mainGroups": 50,
+    "supportGroups": 10,
+    "runs": [
+      {
+        "kind": "main",
+        "previous": 0,
+        "added": 100,
+        "completed": 100,
+        "elapsedMs": 1547.390124,
+        "configHash": "40bc2ca0c792c1caca01130dc5bc82861d0f4e57a0e5e38ddb467e72cec61028"
+      },
+      {
+        "kind": "main",
+        "previous": 100,
+        "added": 0,
+        "completed": 100,
+        "elapsedMs": 0.6737420000000043,
+        "configHash": "40bc2ca0c792c1caca01130dc5bc82861d0f4e57a0e5e38ddb467e72cec61028"
+      },
+      {
+        "kind": "support",
+        "previous": 0,
+        "added": 3000,
+        "completed": 3000,
+        "elapsedMs": 51899.129526,
+        "configHash": "40bc2ca0c792c1caca01130dc5bc82861d0f4e57a0e5e38ddb467e72cec61028"
+      },
+      {
+        "kind": "main",
+        "previous": 100,
+        "added": 4900,
+        "completed": 5000,
+        "elapsedMs": 85200.555218,
+        "configHash": "40bc2ca0c792c1caca01130dc5bc82861d0f4e57a0e5e38ddb467e72cec61028"
+      },
+      {
+        "kind": "main",
+        "previous": 5000,
+        "added": 0,
+        "completed": 5000,
+        "elapsedMs": 50.84545600000001,
+        "configHash": "40bc2ca0c792c1caca01130dc5bc82861d0f4e57a0e5e38ddb467e72cec61028"
+      },
+      {
+        "kind": "main",
+        "previous": 5000,
+        "added": 0,
+        "completed": 5000,
+        "elapsedMs": 58.7466529999997,
+        "configHash": "40bc2ca0c792c1caca01130dc5bc82861d0f4e57a0e5e38ddb467e72cec61028"
+      },
+      {
+        "kind": "main",
+        "previous": 5000,
+        "added": 0,
+        "completed": 5000,
+        "elapsedMs": 54.83728199999996,
+        "configHash": "40bc2ca0c792c1caca01130dc5bc82861d0f4e57a0e5e38ddb467e72cec61028"
+      },
+      {
+        "kind": "main",
+        "previous": 5000,
+        "added": 0,
+        "completed": 5000,
+        "elapsedMs": 49.869208999999955,
+        "configHash": "40bc2ca0c792c1caca01130dc5bc82861d0f4e57a0e5e38ddb467e72cec61028"
+      },
+      {
+        "kind": "main",
+        "previous": 5000,
+        "added": 0,
+        "completed": 5000,
+        "elapsedMs": 61.80271300000004,
+        "configHash": "40bc2ca0c792c1caca01130dc5bc82861d0f4e57a0e5e38ddb467e72cec61028"
+      },
+      {
+        "kind": "main",
+        "previous": 5000,
+        "added": 0,
+        "completed": 5000,
+        "elapsedMs": 50.79206699999986,
+        "configHash": "40bc2ca0c792c1caca01130dc5bc82861d0f4e57a0e5e38ddb467e72cec61028"
+      }
+    ]
+  }
+}

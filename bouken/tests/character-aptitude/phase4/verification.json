@@ -1,0 +1,118 @@
+{
+  "passed": true,
+  "checks": 17,
+  "failed": 0,
+  "pilotChecks": 17,
+  "phase3Tests": 239,
+  "mainAdventures": 5000,
+  "supportAdventures": 3000,
+  "replayAdventures": 80,
+  "elapsedMs": 7621.401953,
+  "node": "v24.22.1",
+  "configHash": "40bc2ca0c792c1caca01130dc5bc82861d0f4e57a0e5e38ddb467e72cec61028",
+  "checksDetail": [
+    {
+      "name": "pilot gate and all frozen sources valid",
+      "passed": true,
+      "elapsedMs": 6.518313000000035
+    },
+    {
+      "name": "5000 complete unique id/seed pairs and identical100 seeds per character",
+      "passed": true,
+      "elapsedMs": 15.090894999999989
+    },
+    {
+      "name": "3000 complete unique support case/arm/seed triples",
+      "passed": true,
+      "elapsedMs": 20.713652999999965
+    },
+    {
+      "name": "50 selected and873 holdout disjoint from every54 participant",
+      "passed": true,
+      "elapsedMs": 0.24945500000001175
+    },
+    {
+      "name": "all8000 records share initial inventory, museum, policy, size, budget and correct theory",
+      "passed": true,
+      "elapsedMs": 152.990112
+    },
+    {
+      "name": "all8000 accounting identities, finite metrics and physical bounds",
+      "passed": true,
+      "elapsedMs": 24.726231999999982
+    },
+    {
+      "name": "all50 characters xone recorded seed replay exactly and initial-save immutable",
+      "passed": true,
+      "elapsedMs": 858.966052
+    },
+    {
+      "name": "all10 support cases xthree arms replay one seed exactly",
+      "passed": true,
+      "elapsedMs": 487.50695300000007
+    },
+    {
+      "name": "support ablation preserves two identities and all other skill levels",
+      "passed": true,
+      "elapsedMs": 61.05836199999999
+    },
+    {
+      "name": "D06: identical realized maps for bothmatched arms on all100 seeds",
+      "passed": true,
+      "elapsedMs": 17.049588000000085
+    },
+    {
+      "name": "E01..E07 target terrain grows versus ablation; E08 total area stays100",
+      "passed": true,
+      "elapsedMs": 14.445494999999937
+    },
+    {
+      "name": "native F01/F02 candidate counts and C02/D02/F03 success formula",
+      "passed": true,
+      "elapsedMs": 17.632061999999905
+    },
+    {
+      "name": "native D05 novelty weights and D03 facilities, C01 split, D07 retry",
+      "passed": true,
+      "elapsedMs": 3.0876089999999294
+    },
+    {
+      "name": "CSV quoting roundtrip and complete checkpoint no-op resume",
+      "passed": true,
+      "elapsedMs": 178.77817000000005
+    },
+    {
+      "name": "game/masters/Phase3 unchanged and onlyauthorized paths differ",
+      "passed": true,
+      "elapsedMs": 9.58624299999974
+    },
+    {
+      "name": "statistics cover50x33 and ranks/correlations are independently reconstructed",
+      "passed": true,
+      "elapsedMs": 2866.9653749999998
+    },
+    {
+      "name": "analysis/summary/report/plot byte-identical across reruns",
+      "passed": true,
+      "elapsedMs": 2883.978089
+    }
+  ],
+  "artifacts": {
+    "adventures.csv": "2f7c72137e1157ab0f6c364bd135a500af255f84d511191c9eebcfd77b61759b",
+    "support-adventures.csv": "2dbfe26d2a2b779b95e3b0b0d9a2f349f181ec96882911c2cb33039405baf5ea",
+    "character-statistics.csv": "29062d701aa57a0d9a067cc0931c4a8ee666be5d6052ad5881702b4bbea9e9d5",
+    "character-summary.csv": "03065d50f90ac2ed5effea3b38f1288de022a4a73797914f919b8bbce6ab09af",
+    "rankings.csv": "3140a9a55ad35f67da0d8a76b7dcc60a53de4427ff22c5a1a701d9809cbdbb5c",
+    "support-summary.csv": "c3f8c487d02849346b6d294beffa9d77adaf8ca285ed692c22f4b1fe3e96d7a5",
+    "collector-effects.csv": "d341aa8dd152506bcf0d6ce5c7792fa7382c9c358e00bc7f8756b3a65b2a678f",
+    "analysis.json": "43157d60632f78c43398a9ff2c2d3d5f063a7e9d4ff5a34124ad2aa3660dfdc6",
+    "REPORT.md": "5abe00769f4f24cf9d04e707ffa649fca8492ee5d5b4924a58e3770a839de79f",
+    "comparison.svg": "a5220e2a7b51f9d43f4029b9e39451441428313c85a4e2cd687ad176460f9a82",
+    "config.json": "40bc2ca0c792c1caca01130dc5bc82861d0f4e57a0e5e38ddb467e72cec61028",
+    "initial-save.json": "a8f0c5309325c6ee2c23a92b2f0c4cc869922d0c822fbc13dc61fecaf749c3dc",
+    "selection.csv": "212af3d67aaccf136ad5980ba9eee756d216c96883ceb7a99b016b037bdde453",
+    "holdout.csv": "9a76bc3f0182ba4c55dc212a61734bc8dea936d7b947f9dfef77f90cd38e5e81",
+    "engine.cjs": "16cb6860bf7a56b93800b6d9d4b5d513ec2d492bc65fa57417b23127ecfa0aa4",
+    "run.cjs": "cf9a7c0a018bf4546fa3dcd0f226277d82560ad7ec47c060250972d0aa3d4a90"
+  }
+}

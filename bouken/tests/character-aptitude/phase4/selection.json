@@ -1,0 +1,1270 @@
+[
+  {
+    "id": 250,
+    "name": "ドラゴルム",
+    "category": "development-high",
+    "reason": "分野別理論点の上位・同点は固定シード順位",
+    "skills": [
+      {
+        "id": "A09",
+        "level": 3
+      },
+      {
+        "id": "C25",
+        "level": 3
+      },
+      {
+        "id": "E06",
+        "level": 3
+      }
+    ],
+    "scores": {
+      "development": 61,
+      "companions": 0,
+      "treasure": 35,
+      "exploration": 24
+    }
+  },
+  {
+    "id": 571,
+    "name": "フロストガーゴイル",
+    "category": "development-high",
+    "reason": "分野別理論点の上位・同点は固定シード順位",
+    "skills": [
+      {
+        "id": "A09",
+        "level": 3
+      },
+      {
+        "id": "C13",
+        "level": 3
+      },
+      {
+        "id": "E06",
+        "level": 3
+      }
+    ],
+    "scores": {
+      "development": 61,
+      "companions": 0,
+      "treasure": 35,
+      "exploration": 24
+    }
+  },
+  {
+    "id": 586,
+    "name": "モスグラン",
+    "category": "development-high",
+    "reason": "分野別理論点の上位・同点は固定シード順位",
+    "skills": [
+      {
+        "id": "A06",
+        "level": 3
+      },
+      {
+        "id": "C16",
+        "level": 3
+      },
+      {
+        "id": "E03",
+        "level": 3
+      }
+    ],
+    "scores": {
+      "development": 61,
+      "companions": 0,
+      "treasure": 35,
+      "exploration": 24
+    }
+  },
+  {
+    "id": 652,
+    "name": "モスウッド",
+    "category": "development-high",
+    "reason": "分野別理論点の上位・同点は固定シード順位",
+    "skills": [
+      {
+        "id": "A03",
+        "level": 2
+      },
+      {
+        "id": "A07",
+        "level": 3
+      },
+      {
+        "id": "E02",
+        "level": 1
+      }
+    ],
+    "scores": {
+      "development": 57,
+      "companions": 0,
+      "treasure": 0,
+      "exploration": 9
+    }
+  },
+  {
+    "id": 241,
+    "name": "ドラヴァル",
+    "category": "development-high",
+    "reason": "分野別理論点の上位・同点は固定シード順位",
+    "skills": [
+      {
+        "id": "A06",
+        "level": 2
+      },
+      {
+        "id": "A11",
+        "level": 2
+      },
+      {
+        "id": "C25",
+        "level": 1
+      }
+    ],
+    "scores": {
+      "development": 54,
+      "companions": 0,
+      "treasure": 13,
+      "exploration": 0
+    }
+  },
+  {
+    "id": 190,
+    "name": "巫女アヤメ",
+    "category": "companions-high",
+    "reason": "分野別理論点の上位・同点は固定シード順位",
+    "skills": [
+      {
+        "id": "D07",
+        "level": 3
+      }
+    ],
+    "scores": {
+      "development": 0,
+      "companions": 56,
+      "treasure": 0,
+      "exploration": 0
+    }
+  },
+  {
+    "id": 355,
+    "name": "セイレーネ",
+    "category": "companions-high",
+    "reason": "分野別理論点の上位・同点は固定シード順位",
+    "skills": [
+      {
+        "id": "D07",
+        "level": 2
+      },
+      {
+        "id": "D09",
+        "level": 1
+      },
+      {
+        "id": "E05",
+        "level": 1
+      }
+    ],
+    "scores": {
+      "development": 14,
+      "companions": 51,
+      "treasure": 3,
+      "exploration": 9
+    }
+  },
+  {
+    "id": 160,
+    "name": "忍者ハヤテ",
+    "category": "companions-high",
+    "reason": "分野別理論点の上位・同点は固定シード順位",
+    "skills": [
+      {
+        "id": "D02",
+        "level": 3
+      }
+    ],
+    "scores": {
+      "development": 0,
+      "companions": 51,
+      "treasure": 0,
+      "exploration": 0
+    }
+  },
+  {
+    "id": 594,
+    "name": "ストーンタワー",
+    "category": "companions-high",
+    "reason": "分野別理論点の上位・同点は固定シード順位",
+    "skills": [
+      {
+        "id": "D02",
+        "level": 2
+      },
+      {
+        "id": "D09",
+        "level": 1
+      },
+      {
+        "id": "E03",
+        "level": 1
+      }
+    ],
+    "scores": {
+      "development": 14,
+      "companions": 48,
+      "treasure": 3,
+      "exploration": 9
+    }
+  },
+  {
+    "id": 199,
+    "name": "犬着ぐるみポポ",
+    "category": "companions-high",
+    "reason": "分野別理論点の上位・同点は固定シード順位",
+    "skills": [
+      {
+        "id": "D01",
+        "level": 3
+      }
+    ],
+    "scores": {
+      "development": 0,
+      "companions": 48,
+      "treasure": 0,
+      "exploration": 0
+    }
+  },
+  {
+    "id": 823,
+    "name": "ブラッドミミック",
+    "category": "treasure-high",
+    "reason": "分野別理論点の上位・同点は固定シード順位",
+    "skills": [
+      {
+        "id": "C03",
+        "level": 3
+      },
+      {
+        "id": "C18",
+        "level": 1
+      },
+      {
+        "id": "E02",
+        "level": 1
+      }
+    ],
+    "scores": {
+      "development": 10,
+      "companions": 0,
+      "treasure": 60,
+      "exploration": 9
+    }
+  },
+  {
+    "id": 549,
+    "name": "スノーオウル",
+    "category": "treasure-high",
+    "reason": "分野別理論点の上位・同点は固定シード順位",
+    "skills": [
+      {
+        "id": "A09",
+        "level": 1
+      },
+      {
+        "id": "C03",
+        "level": 3
+      },
+      {
+        "id": "C11",
+        "level": 1
+      }
+    ],
+    "scores": {
+      "development": 18,
+      "companions": 0,
+      "treasure": 60,
+      "exploration": 0
+    }
+  },
+  {
+    "id": 564,
+    "name": "ドラゴンフライ",
+    "category": "treasure-high",
+    "reason": "分野別理論点の上位・同点は固定シード順位",
+    "skills": [
+      {
+        "id": "C03",
+        "level": 3
+      },
+      {
+        "id": "C25",
+        "level": 1
+      },
+      {
+        "id": "E05",
+        "level": 1
+      }
+    ],
+    "scores": {
+      "development": 10,
+      "companions": 0,
+      "treasure": 60,
+      "exploration": 9
+    }
+  },
+  {
+    "id": 30,
+    "name": "神官オルフェン",
+    "category": "treasure-high",
+    "reason": "分野別理論点の上位・同点は固定シード順位",
+    "skills": [
+      {
+        "id": "B07",
+        "level": 1
+      },
+      {
+        "id": "C03",
+        "level": 3
+      },
+      {
+        "id": "C07",
+        "level": 1
+      }
+    ],
+    "scores": {
+      "development": 0,
+      "companions": 0,
+      "treasure": 60,
+      "exploration": 18
+    }
+  },
+  {
+    "id": 862,
+    "name": "アイアンナイト",
+    "category": "treasure-high",
+    "reason": "分野別理論点の上位・同点は固定シード順位",
+    "skills": [
+      {
+        "id": "C03",
+        "level": 3
+      },
+      {
+        "id": "C08",
+        "level": 1
+      },
+      {
+        "id": "E01",
+        "level": 1
+      }
+    ],
+    "scores": {
+      "development": 10,
+      "companions": 0,
+      "treasure": 60,
+      "exploration": 9
+    }
+  },
+  {
+    "id": 540,
+    "name": "ホーリーフェニックス",
+    "category": "exploration-high",
+    "reason": "分野別理論点の上位・同点は固定シード順位",
+    "skills": [
+      {
+        "id": "A07",
+        "level": 1
+      },
+      {
+        "id": "B01",
+        "level": 2
+      },
+      {
+        "id": "B02",
+        "level": 3
+      }
+    ],
+    "scores": {
+      "development": 18,
+      "companions": 0,
+      "treasure": 0,
+      "exploration": 67
+    }
+  },
+  {
+    "id": 865,
+    "name": "ポットン",
+    "category": "exploration-high",
+    "reason": "分野別理論点の上位・同点は固定シード順位",
+    "skills": [
+      {
+        "id": "B06",
+        "level": 2
+      },
+      {
+        "id": "B07",
+        "level": 1
+      },
+      {
+        "id": "E04",
+        "level": 3
+      }
+    ],
+    "scores": {
+      "development": 28,
+      "companions": 0,
+      "treasure": 0,
+      "exploration": 62
+    }
+  },
+  {
+    "id": 539,
+    "name": "アビスクロウ",
+    "category": "exploration-high",
+    "reason": "分野別理論点の上位・同点は固定シード順位",
+    "skills": [
+      {
+        "id": "B02",
+        "level": 3
+      },
+      {
+        "id": "C24",
+        "level": 3
+      },
+      {
+        "id": "E03",
+        "level": 3
+      }
+    ],
+    "scores": {
+      "development": 28,
+      "companions": 0,
+      "treasure": 35,
+      "exploration": 59
+    }
+  },
+  {
+    "id": 831,
+    "name": "フローラミミック",
+    "category": "exploration-high",
+    "reason": "分野別理論点の上位・同点は固定シード順位",
+    "skills": [
+      {
+        "id": "B02",
+        "level": 3
+      },
+      {
+        "id": "C05",
+        "level": 3
+      },
+      {
+        "id": "E04",
+        "level": 3
+      }
+    ],
+    "scores": {
+      "development": 28,
+      "companions": 0,
+      "treasure": 35,
+      "exploration": 59
+    }
+  },
+  {
+    "id": 532,
+    "name": "ガルーダ",
+    "category": "exploration-high",
+    "reason": "分野別理論点の上位・同点は固定シード順位",
+    "skills": [
+      {
+        "id": "B01",
+        "level": 2
+      },
+      {
+        "id": "B07",
+        "level": 2
+      },
+      {
+        "id": "C26",
+        "level": 1
+      }
+    ],
+    "scores": {
+      "development": 0,
+      "companions": 0,
+      "treasure": 13,
+      "exploration": 59
+    }
+  },
+  {
+    "id": 572,
+    "name": "アビスガーゴイル",
+    "category": "balanced",
+    "reason": "4分野の最小点を優先した複数分野型",
+    "skills": [
+      {
+        "id": "C14",
+        "level": 1
+      },
+      {
+        "id": "D08",
+        "level": 2
+      },
+      {
+        "id": "E08",
+        "level": 2
+      }
+    ],
+    "scores": {
+      "development": 17,
+      "companions": 26,
+      "treasure": 19,
+      "exploration": 17
+    }
+  },
+  {
+    "id": 855,
+    "name": "アビスデビル",
+    "category": "balanced",
+    "reason": "4分野の最小点を優先した複数分野型",
+    "skills": [
+      {
+        "id": "C27",
+        "level": 2
+      },
+      {
+        "id": "D09",
+        "level": 2
+      },
+      {
+        "id": "E03",
+        "level": 2
+      }
+    ],
+    "scores": {
+      "development": 27,
+      "companions": 26,
+      "treasure": 30,
+      "exploration": 16
+    }
+  },
+  {
+    "id": 598,
+    "name": "モスゴレガス",
+    "category": "balanced",
+    "reason": "4分野の最小点を優先した複数分野型",
+    "skills": [
+      {
+        "id": "C19",
+        "level": 2
+      },
+      {
+        "id": "D09",
+        "level": 2
+      },
+      {
+        "id": "E03",
+        "level": 2
+      }
+    ],
+    "scores": {
+      "development": 27,
+      "companions": 26,
+      "treasure": 30,
+      "exploration": 16
+    }
+  },
+  {
+    "id": 736,
+    "name": "フローラピリット",
+    "category": "balanced",
+    "reason": "4分野の最小点を優先した複数分野型",
+    "skills": [
+      {
+        "id": "C26",
+        "level": 2
+      },
+      {
+        "id": "D09",
+        "level": 2
+      },
+      {
+        "id": "E01",
+        "level": 2
+      }
+    ],
+    "scores": {
+      "development": 27,
+      "companions": 26,
+      "treasure": 30,
+      "exploration": 16
+    }
+  },
+  {
+    "id": 809,
+    "name": "アビスウェイブ",
+    "category": "balanced",
+    "reason": "4分野の最小点を優先した複数分野型",
+    "skills": [
+      {
+        "id": "C24",
+        "level": 2
+      },
+      {
+        "id": "D09",
+        "level": 2
+      },
+      {
+        "id": "E05",
+        "level": 2
+      }
+    ],
+    "scores": {
+      "development": 27,
+      "companions": 26,
+      "treasure": 30,
+      "exploration": 16
+    }
+  },
+  {
+    "id": 752,
+    "name": "ドクスラ",
+    "category": "support",
+    "reason": "E01保有・Lv優先",
+    "skills": [
+      {
+        "id": "A10",
+        "level": 1
+      },
+      {
+        "id": "C04",
+        "level": 2
+      },
+      {
+        "id": "E01",
+        "level": 3
+      }
+    ],
+    "scores": {
+      "development": 41,
+      "companions": 0,
+      "treasure": 35,
+      "exploration": 24
+    }
+  },
+  {
+    "id": 818,
+    "name": "赤ずきんピピ",
+    "category": "support",
+    "reason": "E02保有・Lv優先",
+    "skills": [
+      {
+        "id": "C24",
+        "level": 3
+      },
+      {
+        "id": "D04",
+        "level": 1
+      },
+      {
+        "id": "E02",
+        "level": 3
+      }
+    ],
+    "scores": {
+      "development": 28,
+      "companions": 0,
+      "treasure": 35,
+      "exploration": 24
+    }
+  },
+  {
+    "id": 627,
+    "name": "アビスクリスタ",
+    "category": "support",
+    "reason": "E03保有・Lv優先",
+    "skills": [
+      {
+        "id": "A05",
+        "level": 1
+      },
+      {
+        "id": "C18",
+        "level": 3
+      },
+      {
+        "id": "E03",
+        "level": 3
+      }
+    ],
+    "scores": {
+      "development": 41,
+      "companions": 0,
+      "treasure": 35,
+      "exploration": 24
+    }
+  },
+  {
+    "id": 794,
+    "name": "アクアピリットン",
+    "category": "support",
+    "reason": "E04保有・Lv優先",
+    "skills": [
+      {
+        "id": "A05",
+        "level": 1
+      },
+      {
+        "id": "C26",
+        "level": 3
+      },
+      {
+        "id": "E04",
+        "level": 3
+      }
+    ],
+    "scores": {
+      "development": 41,
+      "companions": 0,
+      "treasure": 35,
+      "exploration": 24
+    }
+  },
+  {
+    "id": 378,
+    "name": "トラフグン",
+    "category": "support",
+    "reason": "E05保有・Lv優先",
+    "skills": [
+      {
+        "id": "A06",
+        "level": 3
+      },
+      {
+        "id": "C26",
+        "level": 3
+      },
+      {
+        "id": "E05",
+        "level": 3
+      }
+    ],
+    "scores": {
+      "development": 53,
+      "companions": 0,
+      "treasure": 35,
+      "exploration": 24
+    }
+  },
+  {
+    "id": 608,
+    "name": "シルバーゴレム",
+    "category": "support",
+    "reason": "E06保有・Lv優先",
+    "skills": [
+      {
+        "id": "A06",
+        "level": 1
+      },
+      {
+        "id": "D02",
+        "level": 2
+      },
+      {
+        "id": "E06",
+        "level": 3
+      }
+    ],
+    "scores": {
+      "development": 41,
+      "companions": 40,
+      "treasure": 0,
+      "exploration": 24
+    }
+  },
+  {
+    "id": 729,
+    "name": "ボーンマンティス",
+    "category": "support",
+    "reason": "E07保有・Lv優先",
+    "skills": [
+      {
+        "id": "A05",
+        "level": 1
+      },
+      {
+        "id": "C09",
+        "level": 3
+      },
+      {
+        "id": "E07",
+        "level": 3
+      }
+    ],
+    "scores": {
+      "development": 41,
+      "companions": 0,
+      "treasure": 35,
+      "exploration": 24
+    }
+  },
+  {
+    "id": 313,
+    "name": "ゴブファイター",
+    "category": "support",
+    "reason": "E08保有・Lv優先",
+    "skills": [
+      {
+        "id": "A10",
+        "level": 1
+      },
+      {
+        "id": "C15",
+        "level": 1
+      },
+      {
+        "id": "E08",
+        "level": 3
+      }
+    ],
+    "scores": {
+      "development": 30,
+      "companions": 0,
+      "treasure": 13,
+      "exploration": 24
+    }
+  },
+  {
+    "id": 613,
+    "name": "ギアゴレド",
+    "category": "support",
+    "reason": "D06 Lv1保有",
+    "skills": [
+      {
+        "id": "C13",
+        "level": 2
+      },
+      {
+        "id": "D06",
+        "level": 1
+      },
+      {
+        "id": "E08",
+        "level": 2
+      }
+    ],
+    "scores": {
+      "development": 10,
+      "companions": 18,
+      "treasure": 25,
+      "exploration": 17
+    }
+  },
+  {
+    "id": 386,
+    "name": "オークコック",
+    "category": "support",
+    "reason": "D06 Lv3保有",
+    "skills": [
+      {
+        "id": "D06",
+        "level": 3
+      }
+    ],
+    "scores": {
+      "development": 0,
+      "companions": 45,
+      "treasure": 0,
+      "exploration": 0
+    }
+  },
+  {
+    "id": 167,
+    "name": "槍武者シンゲン",
+    "category": "low",
+    "reason": "D04保有かつ理論合計の低い型",
+    "skills": [
+      {
+        "id": "A01",
+        "level": 1
+      },
+      {
+        "id": "C07",
+        "level": 1
+      },
+      {
+        "id": "D04",
+        "level": 2
+      }
+    ],
+    "scores": {
+      "development": 13,
+      "companions": 0,
+      "treasure": 13,
+      "exploration": 0
+    }
+  },
+  {
+    "id": 762,
+    "name": "クリスタルスラ",
+    "category": "low",
+    "reason": "理論4分野合計の低い型",
+    "skills": [
+      {
+        "id": "C17",
+        "level": 1
+      },
+      {
+        "id": "D04",
+        "level": 2
+      },
+      {
+        "id": "F01",
+        "level": 1
+      }
+    ],
+    "scores": {
+      "development": 0,
+      "companions": 0,
+      "treasure": 27,
+      "exploration": 0
+    }
+  },
+  {
+    "id": 775,
+    "name": "アクアジェリー",
+    "category": "low",
+    "reason": "理論4分野合計の低い型",
+    "skills": [
+      {
+        "id": "A08",
+        "level": 1
+      },
+      {
+        "id": "C15",
+        "level": 1
+      },
+      {
+        "id": "D04",
+        "level": 3
+      }
+    ],
+    "scores": {
+      "development": 18,
+      "companions": 0,
+      "treasure": 13,
+      "exploration": 0
+    }
+  },
+  {
+    "id": 757,
+    "name": "フレイムスラ",
+    "category": "low",
+    "reason": "理論4分野合計の低い型",
+    "skills": [
+      {
+        "id": "A09",
+        "level": 1
+      },
+      {
+        "id": "C28",
+        "level": 1
+      },
+      {
+        "id": "D04",
+        "level": 3
+      }
+    ],
+    "scores": {
+      "development": 18,
+      "companions": 0,
+      "treasure": 13,
+      "exploration": 0
+    }
+  },
+  {
+    "id": 860,
+    "name": "ブラックナイト",
+    "category": "low",
+    "reason": "理論4分野合計の低い型",
+    "skills": [
+      {
+        "id": "A06",
+        "level": 1
+      },
+      {
+        "id": "C08",
+        "level": 1
+      },
+      {
+        "id": "D04",
+        "level": 3
+      }
+    ],
+    "scores": {
+      "development": 18,
+      "companions": 0,
+      "treasure": 13,
+      "exploration": 0
+    }
+  },
+  {
+    "id": 329,
+    "name": "クロウレンジャー",
+    "category": "medium",
+    "reason": "探索公開情報 B03 の代表（中間枠のカバレッジ優先）",
+    "skills": [
+      {
+        "id": "B03",
+        "level": 2
+      },
+      {
+        "id": "C09",
+        "level": 1
+      },
+      {
+        "id": "D01",
+        "level": 1
+      }
+    ],
+    "scores": {
+      "development": 0,
+      "companions": 29,
+      "treasure": 13,
+      "exploration": 35
+    }
+  },
+  {
+    "id": 35,
+    "name": "旅人アルド",
+    "category": "medium",
+    "reason": "探索公開情報 B04 の代表（中間枠のカバレッジ優先）",
+    "skills": [
+      {
+        "id": "B04",
+        "level": 2
+      },
+      {
+        "id": "B07",
+        "level": 2
+      },
+      {
+        "id": "C20",
+        "level": 2
+      }
+    ],
+    "scores": {
+      "development": 0,
+      "companions": 0,
+      "treasure": 25,
+      "exploration": 54
+    }
+  },
+  {
+    "id": 46,
+    "name": "魔導士アッシュ",
+    "category": "medium",
+    "reason": "探索公開情報 B05 の代表（中間枠のカバレッジ優先）",
+    "skills": [
+      {
+        "id": "B05",
+        "level": 2
+      },
+      {
+        "id": "B07",
+        "level": 2
+      },
+      {
+        "id": "C09",
+        "level": 2
+      }
+    ],
+    "scores": {
+      "development": 0,
+      "companions": 0,
+      "treasure": 25,
+      "exploration": 54
+    }
+  },
+  {
+    "id": 38,
+    "name": "巫女レナ",
+    "category": "medium",
+    "reason": "全体中央値ベクトル(24/0/25/16)への距離が小さい型",
+    "skills": [
+      {
+        "id": "A01",
+        "level": 1
+      },
+      {
+        "id": "C21",
+        "level": 2
+      },
+      {
+        "id": "E08",
+        "level": 2
+      }
+    ],
+    "scores": {
+      "development": 22,
+      "companions": 0,
+      "treasure": 25,
+      "exploration": 17
+    }
+  },
+  {
+    "id": 538,
+    "name": "フェニックス",
+    "category": "medium",
+    "reason": "全体中央値ベクトル(24/0/25/16)への距離が小さい型",
+    "skills": [
+      {
+        "id": "A01",
+        "level": 1
+      },
+      {
+        "id": "C05",
+        "level": 2
+      },
+      {
+        "id": "E08",
+        "level": 2
+      }
+    ],
+    "scores": {
+      "development": 22,
+      "companions": 0,
+      "treasure": 25,
+      "exploration": 17
+    }
+  },
+  {
+    "id": 646,
+    "name": "アビストレント",
+    "category": "random",
+    "reason": "未選定集合から固定シードの一様シャッフル順",
+    "skills": [
+      {
+        "id": "A05",
+        "level": 3
+      },
+      {
+        "id": "C16",
+        "level": 1
+      },
+      {
+        "id": "E05",
+        "level": 1
+      }
+    ],
+    "scores": {
+      "development": 42,
+      "companions": 0,
+      "treasure": 13,
+      "exploration": 9
+    }
+  },
+  {
+    "id": 642,
+    "name": "フローラント",
+    "category": "random",
+    "reason": "未選定集合から固定シードの一様シャッフル順",
+    "skills": [
+      {
+        "id": "A05",
+        "level": 1
+      },
+      {
+        "id": "C16",
+        "level": 3
+      },
+      {
+        "id": "D04",
+        "level": 1
+      }
+    ],
+    "scores": {
+      "development": 18,
+      "companions": 0,
+      "treasure": 35,
+      "exploration": 0
+    }
+  },
+  {
+    "id": 66,
+    "name": "呪術師ガルシア",
+    "category": "random",
+    "reason": "未選定集合から固定シードの一様シャッフル順",
+    "skills": [
+      {
+        "id": "C21",
+        "level": 2
+      },
+      {
+        "id": "E01",
+        "level": 2
+      },
+      {
+        "id": "E08",
+        "level": 2
+      }
+    ],
+    "scores": {
+      "development": 27,
+      "companions": 0,
+      "treasure": 25,
+      "exploration": 31
+    }
+  },
+  {
+    "id": 473,
+    "name": "ブリキ兵",
+    "category": "random",
+    "reason": "未選定集合から固定シードの一様シャッフル順",
+    "skills": [
+      {
+        "id": "C23",
+        "level": 1
+      },
+      {
+        "id": "D08",
+        "level": 3
+      },
+      {
+        "id": "E07",
+        "level": 1
+      }
+    ],
+    "scores": {
+      "development": 21,
+      "companions": 35,
+      "treasure": 21,
+      "exploration": 9
+    }
+  },
+  {
+    "id": 786,
+    "name": "フロストドラグ",
+    "category": "random",
+    "reason": "未選定集合から固定シードの一様シャッフル順",
+    "skills": [
+      {
+        "id": "C18",
+        "level": 1
+      },
+      {
+        "id": "D04",
+        "level": 3
+      },
+      {
+        "id": "E06",
+        "level": 1
+      }
+    ],
+    "scores": {
+      "development": 10,
+      "companions": 0,
+      "treasure": 13,
+      "exploration": 9
+    }
+  }
+]

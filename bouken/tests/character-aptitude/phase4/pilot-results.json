@@ -1,0 +1,1648 @@
+{
+  "passed": true,
+  "checks": 17,
+  "failed": 0,
+  "elapsedMs": 1252.738466,
+  "node": "v24.22.1",
+  "configHash": "40bc2ca0c792c1caca01130dc5bc82861d0f4e57a0e5e38ddb467e72cec61028",
+  "engineHash": "16cb6860bf7a56b93800b6d9d4b5d513ec2d492bc65fa57417b23127ecfa0aa4",
+  "policyWitnesses": {
+    "B01": {
+      "seed": 2026105900,
+      "q": 0,
+      "informed": 45,
+      "ablated": 54
+    },
+    "B02": {
+      "seed": 2026105900,
+      "q": 0,
+      "informed": 45,
+      "ablated": 54
+    },
+    "B03": {
+      "seed": 2026105901,
+      "q": 0,
+      "informed": 54,
+      "ablated": 65
+    },
+    "B04": {
+      "seed": 2026105900,
+      "q": 1,
+      "informed": 45,
+      "ablated": 44
+    },
+    "B05": {
+      "seed": 2026105900,
+      "q": 9,
+      "informed": 45,
+      "ablated": 67
+    },
+    "B06": {
+      "seed": 2026105900,
+      "q": 0,
+      "informed": 45,
+      "ablated": 54
+    },
+    "B07": {
+      "seed": 2026105900,
+      "q": 0,
+      "informed": 56,
+      "ablated": 54
+    }
+  },
+  "checksDetail": [
+    {
+      "name": "source hashes and Phase3 artifact hashes unchanged",
+      "passed": true,
+      "elapsedMs": 5.225031000000001
+    },
+    {
+      "name": "selection unique50, holdout disjoint, all nine strata and seven B signals",
+      "passed": true,
+      "elapsedMs": 0.30621999999999616
+    },
+    {
+      "name": "shared464/240 ownership, all participants owned, fixed zero claims and bonuses",
+      "passed": true,
+      "elapsedMs": 1.0320109999999971
+    },
+    {
+      "name": "six representatives x three seeds: completion, same-seed equality, accounting, input immutable",
+      "passed": true,
+      "elapsedMs": 636.040331
+    },
+    {
+      "name": "hidden world perturbation leaves no-skill observation and decision unchanged",
+      "passed": true,
+      "elapsedMs": 1.8673459999999977
+    },
+    {
+      "name": "policy VM has no world, inventory, runtime, Node require or process inputs",
+      "passed": true,
+      "elapsedMs": 0.8595770000000584
+    },
+    {
+      "name": "B01 public signal changes policy decisions (ablation witness)",
+      "passed": true,
+      "elapsedMs": 22.132661999999982
+    },
+    {
+      "name": "B02 public signal changes policy decisions (ablation witness)",
+      "passed": true,
+      "elapsedMs": 16.756259
+    },
+    {
+      "name": "B03 public signal changes policy decisions (ablation witness)",
+      "passed": true,
+      "elapsedMs": 37.883175999999935
+    },
+    {
+      "name": "B04 public signal changes policy decisions (ablation witness)",
+      "passed": true,
+      "elapsedMs": 17.323140999999964
+    },
+    {
+      "name": "B05 public signal changes policy decisions (ablation witness)",
+      "passed": true,
+      "elapsedMs": 28.063188999999966
+    },
+    {
+      "name": "B06 public signal changes policy decisions (ablation witness)",
+      "passed": true,
+      "elapsedMs": 18.242011000000048
+    },
+    {
+      "name": "B07 public signal changes policy decisions (ablation witness)",
+      "passed": true,
+      "elapsedMs": 26.834153000000015
+    },
+    {
+      "name": "D04 has exactly no effect; Lv summation capped at3",
+      "passed": true,
+      "elapsedMs": 91.14934500000004
+    },
+    {
+      "name": "A02 first, A03 no self recursion, no invented E/D effects",
+      "passed": true,
+      "elapsedMs": 1.1090560000000096
+    },
+    {
+      "name": "support frozen10 cases x3 arms, matched ablation preserves identity/group/count",
+      "passed": true,
+      "elapsedMs": 344.491946
+    },
+    {
+      "name": "C/D/F formulas, museum stages and unowned-weight correction use game functions",
+      "passed": true,
+      "elapsedMs": 1.3216659999998228
+    }
+  ],
+  "pilotTrials": [
+    {
+      "id": 250,
+      "seed": 2026104900,
+      "party": [
+        250
+      ],
+      "buffs": [
+        {
+          "id": "A09",
+          "level": 3
+        },
+        {
+          "id": "C25",
+          "level": 3
+        },
+        {
+          "id": "E06",
+          "level": 3
+        }
+      ],
+      "questions": 30,
+      "opened": 37,
+      "normalOpened": 30,
+      "initialSkillOpened": 0,
+      "additionalSkillOpened": 7,
+      "totalSkillOpened": 7,
+      "efficiency": 1.2333333333333334,
+      "companionEvents": 0,
+      "recruitAttempts": 0,
+      "retryAttempts": 0,
+      "recruitRolls": 0,
+      "recruitSuccesses": 0,
+      "newCharacters": 0,
+      "itemEvents": 1,
+      "itemAttempts": 1,
+      "itemSuccesses": 0,
+      "totalItems": 0,
+      "newItems": 0,
+      "discovered": 1,
+      "visited": 1,
+      "detected": 0,
+      "cumulativeReveal": 0,
+      "remainingReveal": 0,
+      "discoveryAuc": 0.0967741935483871,
+      "explorationIndex": 0.0167741935483871,
+      "discoveryEfficiency": 0.03333333333333333,
+      "visitEfficiency": 0.03333333333333333,
+      "generatedFacilities": 3,
+      "rewardJoins": 0,
+      "blocked": 0,
+      "a12EligibleTurns": 0,
+      "emptyFrontierTurns": 0,
+      "targetItems": 0,
+      "targetNewItems": 0,
+      "groupJoins": 0,
+      "collectorGroups": [
+        "21"
+      ],
+      "signalSteps": {
+        "treasure": 0,
+        "companion": 0,
+        "guide": 0,
+        "sense": 0,
+        "visibleFacility": 0
+      },
+      "inventoryHash": "bf420abb5bd865f306176caf8264c40d1c0c2db54adef0bcb647eae4d36dd82d",
+      "museumStages": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "policyVersion": "phase2-public-informed+phase4-isolated-v1",
+      "worldHash": "aeb6bccd7fe438828576d1619a6fd6bd2326290b4589a40f30ddcf220e781095",
+      "initialTerrainCounts": {
+        "T01": 7,
+        "T02": 13,
+        "T03": 12,
+        "T04": 9,
+        "T05": 9,
+        "T06": 43,
+        "T07": 7
+      }
+    },
+    {
+      "id": 250,
+      "seed": 2026104901,
+      "party": [
+        250
+      ],
+      "buffs": [
+        {
+          "id": "A09",
+          "level": 3
+        },
+        {
+          "id": "C25",
+          "level": 3
+        },
+        {
+          "id": "E06",
+          "level": 3
+        }
+      ],
+      "questions": 30,
+      "opened": 36,
+      "normalOpened": 30,
+      "initialSkillOpened": 0,
+      "additionalSkillOpened": 6,
+      "totalSkillOpened": 6,
+      "efficiency": 1.2,
+      "companionEvents": 1,
+      "recruitAttempts": 1,
+      "retryAttempts": 0,
+      "recruitRolls": 1,
+      "recruitSuccesses": 1,
+      "newCharacters": 1,
+      "itemEvents": 1,
+      "itemAttempts": 1,
+      "itemSuccesses": 1,
+      "totalItems": 1,
+      "newItems": 1,
+      "discovered": 2,
+      "visited": 2,
+      "detected": 0,
+      "cumulativeReveal": 0,
+      "remainingReveal": 0,
+      "discoveryAuc": 1.3225806451612905,
+      "explorationIndex": 0.05424731182795699,
+      "discoveryEfficiency": 0.06666666666666667,
+      "visitEfficiency": 0.06666666666666667,
+      "generatedFacilities": 3,
+      "rewardJoins": 0,
+      "blocked": 0,
+      "a12EligibleTurns": 0,
+      "emptyFrontierTurns": 0,
+      "targetItems": 1,
+      "targetNewItems": 1,
+      "groupJoins": 0,
+      "collectorGroups": [
+        "21"
+      ],
+      "signalSteps": {
+        "treasure": 0,
+        "companion": 0,
+        "guide": 0,
+        "sense": 0,
+        "visibleFacility": 0
+      },
+      "inventoryHash": "bf420abb5bd865f306176caf8264c40d1c0c2db54adef0bcb647eae4d36dd82d",
+      "museumStages": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "policyVersion": "phase2-public-informed+phase4-isolated-v1",
+      "worldHash": "d948baf4705b63f5e78abdab8501f46844bf4a873d258b3af5ff4c0ff63fbd22",
+      "initialTerrainCounts": {
+        "T01": 7,
+        "T02": 13,
+        "T03": 12,
+        "T04": 9,
+        "T05": 9,
+        "T06": 43,
+        "T07": 7
+      }
+    },
+    {
+      "id": 250,
+      "seed": 2026104902,
+      "party": [
+        250
+      ],
+      "buffs": [
+        {
+          "id": "A09",
+          "level": 3
+        },
+        {
+          "id": "C25",
+          "level": 3
+        },
+        {
+          "id": "E06",
+          "level": 3
+        }
+      ],
+      "questions": 30,
+      "opened": 37,
+      "normalOpened": 30,
+      "initialSkillOpened": 0,
+      "additionalSkillOpened": 7,
+      "totalSkillOpened": 7,
+      "efficiency": 1.2333333333333334,
+      "companionEvents": 1,
+      "recruitAttempts": 1,
+      "retryAttempts": 0,
+      "recruitRolls": 1,
+      "recruitSuccesses": 0,
+      "newCharacters": 0,
+      "itemEvents": 1,
+      "itemAttempts": 1,
+      "itemSuccesses": 0,
+      "totalItems": 0,
+      "newItems": 0,
+      "discovered": 2,
+      "visited": 2,
+      "detected": 0,
+      "cumulativeReveal": 0,
+      "remainingReveal": 0,
+      "discoveryAuc": 0.7419354838709677,
+      "explorationIndex": 0.04360215053763441,
+      "discoveryEfficiency": 0.06666666666666667,
+      "visitEfficiency": 0.06666666666666667,
+      "generatedFacilities": 3,
+      "rewardJoins": 0,
+      "blocked": 0,
+      "a12EligibleTurns": 0,
+      "emptyFrontierTurns": 0,
+      "targetItems": 0,
+      "targetNewItems": 0,
+      "groupJoins": 0,
+      "collectorGroups": [
+        "21"
+      ],
+      "signalSteps": {
+        "treasure": 0,
+        "companion": 0,
+        "guide": 0,
+        "sense": 0,
+        "visibleFacility": 0
+      },
+      "inventoryHash": "bf420abb5bd865f306176caf8264c40d1c0c2db54adef0bcb647eae4d36dd82d",
+      "museumStages": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "policyVersion": "phase2-public-informed+phase4-isolated-v1",
+      "worldHash": "2754cd6813e7804432c19ba2884349b21d3a2d7384b57df0d63b67be4d951285",
+      "initialTerrainCounts": {
+        "T01": 7,
+        "T02": 13,
+        "T03": 12,
+        "T04": 9,
+        "T05": 9,
+        "T06": 43,
+        "T07": 7
+      }
+    },
+    {
+      "id": 190,
+      "seed": 2026104900,
+      "party": [
+        190
+      ],
+      "buffs": [
+        {
+          "id": "D07",
+          "level": 3
+        }
+      ],
+      "questions": 30,
+      "opened": 30,
+      "normalOpened": 30,
+      "initialSkillOpened": 0,
+      "additionalSkillOpened": 0,
+      "totalSkillOpened": 0,
+      "efficiency": 1,
+      "companionEvents": 1,
+      "recruitAttempts": 1,
+      "retryAttempts": 1,
+      "recruitRolls": 2,
+      "recruitSuccesses": 1,
+      "newCharacters": 1,
+      "itemEvents": 0,
+      "itemAttempts": 0,
+      "itemSuccesses": 0,
+      "totalItems": 0,
+      "newItems": 0,
+      "discovered": 1,
+      "visited": 1,
+      "detected": 0,
+      "cumulativeReveal": 0,
+      "remainingReveal": 0,
+      "discoveryAuc": 0.5483870967741935,
+      "explorationIndex": 0.02505376344086022,
+      "discoveryEfficiency": 0.03333333333333333,
+      "visitEfficiency": 0.03333333333333333,
+      "generatedFacilities": 3,
+      "rewardJoins": 0,
+      "blocked": 0,
+      "a12EligibleTurns": 0,
+      "emptyFrontierTurns": 0,
+      "targetItems": 0,
+      "targetNewItems": 0,
+      "groupJoins": 0,
+      "collectorGroups": [],
+      "signalSteps": {
+        "treasure": 0,
+        "companion": 0,
+        "guide": 0,
+        "sense": 0,
+        "visibleFacility": 0
+      },
+      "inventoryHash": "bf420abb5bd865f306176caf8264c40d1c0c2db54adef0bcb647eae4d36dd82d",
+      "museumStages": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "policyVersion": "phase2-public-informed+phase4-isolated-v1",
+      "worldHash": "80f4e548144dede1fbd9054d80c3f46fbc66c037426fd0f6cfcae17e3932e19a",
+      "initialTerrainCounts": {
+        "T01": 11,
+        "T02": 20,
+        "T03": 18,
+        "T04": 14,
+        "T05": 13,
+        "T06": 13,
+        "T07": 11
+      }
+    },
+    {
+      "id": 190,
+      "seed": 2026104901,
+      "party": [
+        190
+      ],
+      "buffs": [
+        {
+          "id": "D07",
+          "level": 3
+        }
+      ],
+      "questions": 30,
+      "opened": 30,
+      "normalOpened": 30,
+      "initialSkillOpened": 0,
+      "additionalSkillOpened": 0,
+      "totalSkillOpened": 0,
+      "efficiency": 1,
+      "companionEvents": 1,
+      "recruitAttempts": 1,
+      "retryAttempts": 0,
+      "recruitRolls": 1,
+      "recruitSuccesses": 1,
+      "newCharacters": 0,
+      "itemEvents": 0,
+      "itemAttempts": 0,
+      "itemSuccesses": 0,
+      "totalItems": 0,
+      "newItems": 0,
+      "discovered": 1,
+      "visited": 1,
+      "detected": 0,
+      "cumulativeReveal": 0,
+      "remainingReveal": 0,
+      "discoveryAuc": 0.41935483870967744,
+      "explorationIndex": 0.022688172043010754,
+      "discoveryEfficiency": 0.03333333333333333,
+      "visitEfficiency": 0.03333333333333333,
+      "generatedFacilities": 3,
+      "rewardJoins": 0,
+      "blocked": 0,
+      "a12EligibleTurns": 0,
+      "emptyFrontierTurns": 0,
+      "targetItems": 0,
+      "targetNewItems": 0,
+      "groupJoins": 0,
+      "collectorGroups": [],
+      "signalSteps": {
+        "treasure": 0,
+        "companion": 0,
+        "guide": 0,
+        "sense": 0,
+        "visibleFacility": 0
+      },
+      "inventoryHash": "bf420abb5bd865f306176caf8264c40d1c0c2db54adef0bcb647eae4d36dd82d",
+      "museumStages": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "policyVersion": "phase2-public-informed+phase4-isolated-v1",
+      "worldHash": "ace51172aab6fef3433f6708e1e9f16395c81edc154a123f6aefbd252a312fc0",
+      "initialTerrainCounts": {
+        "T01": 11,
+        "T02": 20,
+        "T03": 18,
+        "T04": 14,
+        "T05": 13,
+        "T06": 13,
+        "T07": 11
+      }
+    },
+    {
+      "id": 190,
+      "seed": 2026104902,
+      "party": [
+        190
+      ],
+      "buffs": [
+        {
+          "id": "D07",
+          "level": 3
+        }
+      ],
+      "questions": 30,
+      "opened": 30,
+      "normalOpened": 30,
+      "initialSkillOpened": 0,
+      "additionalSkillOpened": 0,
+      "totalSkillOpened": 0,
+      "efficiency": 1,
+      "companionEvents": 1,
+      "recruitAttempts": 1,
+      "retryAttempts": 1,
+      "recruitRolls": 2,
+      "recruitSuccesses": 1,
+      "newCharacters": 1,
+      "itemEvents": 1,
+      "itemAttempts": 1,
+      "itemSuccesses": 1,
+      "totalItems": 1,
+      "newItems": 0,
+      "discovered": 2,
+      "visited": 2,
+      "detected": 0,
+      "cumulativeReveal": 0,
+      "remainingReveal": 0,
+      "discoveryAuc": 0.41935483870967744,
+      "explorationIndex": 0.037688172043010754,
+      "discoveryEfficiency": 0.06666666666666667,
+      "visitEfficiency": 0.06666666666666667,
+      "generatedFacilities": 3,
+      "rewardJoins": 0,
+      "blocked": 0,
+      "a12EligibleTurns": 0,
+      "emptyFrontierTurns": 0,
+      "targetItems": 0,
+      "targetNewItems": 0,
+      "groupJoins": 0,
+      "collectorGroups": [],
+      "signalSteps": {
+        "treasure": 0,
+        "companion": 0,
+        "guide": 0,
+        "sense": 0,
+        "visibleFacility": 0
+      },
+      "inventoryHash": "bf420abb5bd865f306176caf8264c40d1c0c2db54adef0bcb647eae4d36dd82d",
+      "museumStages": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "policyVersion": "phase2-public-informed+phase4-isolated-v1",
+      "worldHash": "7bc047cee5fe9f8bb379c128fc93742e7e31ab47bab37d1ffe7297ab22ab2e28",
+      "initialTerrainCounts": {
+        "T01": 11,
+        "T02": 20,
+        "T03": 18,
+        "T04": 14,
+        "T05": 13,
+        "T06": 13,
+        "T07": 11
+      }
+    },
+    {
+      "id": 823,
+      "seed": 2026104900,
+      "party": [
+        823
+      ],
+      "buffs": [
+        {
+          "id": "C03",
+          "level": 3
+        },
+        {
+          "id": "C18",
+          "level": 1
+        },
+        {
+          "id": "E02",
+          "level": 1
+        }
+      ],
+      "questions": 30,
+      "opened": 30,
+      "normalOpened": 30,
+      "initialSkillOpened": 0,
+      "additionalSkillOpened": 0,
+      "totalSkillOpened": 0,
+      "efficiency": 1,
+      "companionEvents": 0,
+      "recruitAttempts": 0,
+      "retryAttempts": 0,
+      "recruitRolls": 0,
+      "recruitSuccesses": 0,
+      "newCharacters": 0,
+      "itemEvents": 0,
+      "itemAttempts": 0,
+      "itemSuccesses": 0,
+      "totalItems": 0,
+      "newItems": 0,
+      "discovered": 0,
+      "visited": 0,
+      "detected": 0,
+      "cumulativeReveal": 0,
+      "remainingReveal": 0,
+      "discoveryAuc": 0,
+      "explorationIndex": 0,
+      "discoveryEfficiency": 0,
+      "visitEfficiency": 0,
+      "generatedFacilities": 3,
+      "rewardJoins": 0,
+      "blocked": 0,
+      "a12EligibleTurns": 0,
+      "emptyFrontierTurns": 0,
+      "targetItems": 0,
+      "targetNewItems": 0,
+      "groupJoins": 0,
+      "collectorGroups": [
+        "14"
+      ],
+      "signalSteps": {
+        "treasure": 0,
+        "companion": 0,
+        "guide": 0,
+        "sense": 0,
+        "visibleFacility": 0
+      },
+      "inventoryHash": "bf420abb5bd865f306176caf8264c40d1c0c2db54adef0bcb647eae4d36dd82d",
+      "museumStages": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "policyVersion": "phase2-public-informed+phase4-isolated-v1",
+      "worldHash": "559f0f40c0d4f59ed062bed4bd568fb72799397bde3ce343d4073f19c0a7c095",
+      "initialTerrainCounts": {
+        "T01": 10,
+        "T02": 30,
+        "T03": 16,
+        "T04": 12,
+        "T05": 11,
+        "T06": 11,
+        "T07": 10
+      }
+    },
+    {
+      "id": 823,
+      "seed": 2026104901,
+      "party": [
+        823
+      ],
+      "buffs": [
+        {
+          "id": "C03",
+          "level": 3
+        },
+        {
+          "id": "C18",
+          "level": 1
+        },
+        {
+          "id": "E02",
+          "level": 1
+        }
+      ],
+      "questions": 30,
+      "opened": 30,
+      "normalOpened": 30,
+      "initialSkillOpened": 0,
+      "additionalSkillOpened": 0,
+      "totalSkillOpened": 0,
+      "efficiency": 1,
+      "companionEvents": 0,
+      "recruitAttempts": 0,
+      "retryAttempts": 0,
+      "recruitRolls": 0,
+      "recruitSuccesses": 0,
+      "newCharacters": 0,
+      "itemEvents": 0,
+      "itemAttempts": 0,
+      "itemSuccesses": 0,
+      "totalItems": 0,
+      "newItems": 0,
+      "discovered": 0,
+      "visited": 0,
+      "detected": 0,
+      "cumulativeReveal": 0,
+      "remainingReveal": 0,
+      "discoveryAuc": 0,
+      "explorationIndex": 0,
+      "discoveryEfficiency": 0,
+      "visitEfficiency": 0,
+      "generatedFacilities": 3,
+      "rewardJoins": 0,
+      "blocked": 0,
+      "a12EligibleTurns": 0,
+      "emptyFrontierTurns": 0,
+      "targetItems": 0,
+      "targetNewItems": 0,
+      "groupJoins": 0,
+      "collectorGroups": [
+        "14"
+      ],
+      "signalSteps": {
+        "treasure": 0,
+        "companion": 0,
+        "guide": 0,
+        "sense": 0,
+        "visibleFacility": 0
+      },
+      "inventoryHash": "bf420abb5bd865f306176caf8264c40d1c0c2db54adef0bcb647eae4d36dd82d",
+      "museumStages": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "policyVersion": "phase2-public-informed+phase4-isolated-v1",
+      "worldHash": "f10016ee5cafeb681e9c6f62d269dd0a462c7221e2949e99cae0f3a6c4851a57",
+      "initialTerrainCounts": {
+        "T01": 10,
+        "T02": 30,
+        "T03": 16,
+        "T04": 12,
+        "T05": 11,
+        "T06": 11,
+        "T07": 10
+      }
+    },
+    {
+      "id": 823,
+      "seed": 2026104902,
+      "party": [
+        823
+      ],
+      "buffs": [
+        {
+          "id": "C03",
+          "level": 3
+        },
+        {
+          "id": "C18",
+          "level": 1
+        },
+        {
+          "id": "E02",
+          "level": 1
+        }
+      ],
+      "questions": 30,
+      "opened": 30,
+      "normalOpened": 30,
+      "initialSkillOpened": 0,
+      "additionalSkillOpened": 0,
+      "totalSkillOpened": 0,
+      "efficiency": 1,
+      "companionEvents": 1,
+      "recruitAttempts": 1,
+      "retryAttempts": 0,
+      "recruitRolls": 1,
+      "recruitSuccesses": 1,
+      "newCharacters": 1,
+      "itemEvents": 1,
+      "itemAttempts": 1,
+      "itemSuccesses": 0,
+      "totalItems": 0,
+      "newItems": 0,
+      "discovered": 2,
+      "visited": 2,
+      "detected": 0,
+      "cumulativeReveal": 0,
+      "remainingReveal": 0,
+      "discoveryAuc": 1.1612903225806452,
+      "explorationIndex": 0.05129032258064516,
+      "discoveryEfficiency": 0.06666666666666667,
+      "visitEfficiency": 0.06666666666666667,
+      "generatedFacilities": 3,
+      "rewardJoins": 0,
+      "blocked": 0,
+      "a12EligibleTurns": 0,
+      "emptyFrontierTurns": 0,
+      "targetItems": 0,
+      "targetNewItems": 0,
+      "groupJoins": 0,
+      "collectorGroups": [
+        "14"
+      ],
+      "signalSteps": {
+        "treasure": 0,
+        "companion": 0,
+        "guide": 0,
+        "sense": 0,
+        "visibleFacility": 0
+      },
+      "inventoryHash": "bf420abb5bd865f306176caf8264c40d1c0c2db54adef0bcb647eae4d36dd82d",
+      "museumStages": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "policyVersion": "phase2-public-informed+phase4-isolated-v1",
+      "worldHash": "0e094c58d0f441dcd049fba4663c35548e060a09ac3cf329d2810d4ec82a1e7c",
+      "initialTerrainCounts": {
+        "T01": 10,
+        "T02": 30,
+        "T03": 16,
+        "T04": 12,
+        "T05": 11,
+        "T06": 11,
+        "T07": 10
+      }
+    },
+    {
+      "id": 540,
+      "seed": 2026104900,
+      "party": [
+        540
+      ],
+      "buffs": [
+        {
+          "id": "A07",
+          "level": 1
+        },
+        {
+          "id": "B01",
+          "level": 2
+        },
+        {
+          "id": "B02",
+          "level": 3
+        }
+      ],
+      "questions": 30,
+      "opened": 32,
+      "normalOpened": 30,
+      "initialSkillOpened": 0,
+      "additionalSkillOpened": 2,
+      "totalSkillOpened": 2,
+      "efficiency": 1.0666666666666667,
+      "companionEvents": 1,
+      "recruitAttempts": 1,
+      "retryAttempts": 0,
+      "recruitRolls": 1,
+      "recruitSuccesses": 1,
+      "newCharacters": 1,
+      "itemEvents": 2,
+      "itemAttempts": 2,
+      "itemSuccesses": 0,
+      "totalItems": 0,
+      "newItems": 0,
+      "discovered": 3,
+      "visited": 3,
+      "detected": 2,
+      "cumulativeReveal": 84,
+      "remainingReveal": 52,
+      "discoveryAuc": 2.903225806451613,
+      "explorationIndex": 0.09822580645161291,
+      "discoveryEfficiency": 0.1,
+      "visitEfficiency": 0.1,
+      "generatedFacilities": 3,
+      "rewardJoins": 0,
+      "blocked": 0,
+      "a12EligibleTurns": 0,
+      "emptyFrontierTurns": 0,
+      "targetItems": 0,
+      "targetNewItems": 0,
+      "groupJoins": 0,
+      "collectorGroups": [],
+      "signalSteps": {
+        "treasure": 6,
+        "companion": 0,
+        "guide": 0,
+        "sense": 0,
+        "visibleFacility": 5
+      },
+      "inventoryHash": "bf420abb5bd865f306176caf8264c40d1c0c2db54adef0bcb647eae4d36dd82d",
+      "museumStages": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "policyVersion": "phase2-public-informed+phase4-isolated-v1",
+      "worldHash": "80f4e548144dede1fbd9054d80c3f46fbc66c037426fd0f6cfcae17e3932e19a",
+      "initialTerrainCounts": {
+        "T01": 11,
+        "T02": 20,
+        "T03": 18,
+        "T04": 14,
+        "T05": 13,
+        "T06": 13,
+        "T07": 11
+      }
+    },
+    {
+      "id": 540,
+      "seed": 2026104901,
+      "party": [
+        540
+      ],
+      "buffs": [
+        {
+          "id": "A07",
+          "level": 1
+        },
+        {
+          "id": "B01",
+          "level": 2
+        },
+        {
+          "id": "B02",
+          "level": 3
+        }
+      ],
+      "questions": 30,
+      "opened": 34,
+      "normalOpened": 30,
+      "initialSkillOpened": 0,
+      "additionalSkillOpened": 4,
+      "totalSkillOpened": 4,
+      "efficiency": 1.1333333333333333,
+      "companionEvents": 1,
+      "recruitAttempts": 1,
+      "retryAttempts": 0,
+      "recruitRolls": 1,
+      "recruitSuccesses": 0,
+      "newCharacters": 0,
+      "itemEvents": 2,
+      "itemAttempts": 2,
+      "itemSuccesses": 1,
+      "totalItems": 1,
+      "newItems": 0,
+      "discovered": 3,
+      "visited": 3,
+      "detected": 2,
+      "cumulativeReveal": 80,
+      "remainingReveal": 46,
+      "discoveryAuc": 2.903225806451613,
+      "explorationIndex": 0.09822580645161291,
+      "discoveryEfficiency": 0.1,
+      "visitEfficiency": 0.1,
+      "generatedFacilities": 3,
+      "rewardJoins": 0,
+      "blocked": 0,
+      "a12EligibleTurns": 0,
+      "emptyFrontierTurns": 0,
+      "targetItems": 0,
+      "targetNewItems": 0,
+      "groupJoins": 0,
+      "collectorGroups": [],
+      "signalSteps": {
+        "treasure": 13,
+        "companion": 0,
+        "guide": 0,
+        "sense": 0,
+        "visibleFacility": 6
+      },
+      "inventoryHash": "bf420abb5bd865f306176caf8264c40d1c0c2db54adef0bcb647eae4d36dd82d",
+      "museumStages": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "policyVersion": "phase2-public-informed+phase4-isolated-v1",
+      "worldHash": "ace51172aab6fef3433f6708e1e9f16395c81edc154a123f6aefbd252a312fc0",
+      "initialTerrainCounts": {
+        "T01": 11,
+        "T02": 20,
+        "T03": 18,
+        "T04": 14,
+        "T05": 13,
+        "T06": 13,
+        "T07": 11
+      }
+    },
+    {
+      "id": 540,
+      "seed": 2026104902,
+      "party": [
+        540
+      ],
+      "buffs": [
+        {
+          "id": "A07",
+          "level": 1
+        },
+        {
+          "id": "B01",
+          "level": 2
+        },
+        {
+          "id": "B02",
+          "level": 3
+        }
+      ],
+      "questions": 30,
+      "opened": 33,
+      "normalOpened": 30,
+      "initialSkillOpened": 0,
+      "additionalSkillOpened": 3,
+      "totalSkillOpened": 3,
+      "efficiency": 1.1,
+      "companionEvents": 1,
+      "recruitAttempts": 1,
+      "retryAttempts": 0,
+      "recruitRolls": 1,
+      "recruitSuccesses": 1,
+      "newCharacters": 0,
+      "itemEvents": 2,
+      "itemAttempts": 2,
+      "itemSuccesses": 1,
+      "totalItems": 1,
+      "newItems": 1,
+      "discovered": 3,
+      "visited": 3,
+      "detected": 2,
+      "cumulativeReveal": 85,
+      "remainingReveal": 52,
+      "discoveryAuc": 2.3870967741935485,
+      "explorationIndex": 0.08876344086021506,
+      "discoveryEfficiency": 0.1,
+      "visitEfficiency": 0.1,
+      "generatedFacilities": 3,
+      "rewardJoins": 0,
+      "blocked": 1,
+      "a12EligibleTurns": 0,
+      "emptyFrontierTurns": 0,
+      "targetItems": 0,
+      "targetNewItems": 0,
+      "groupJoins": 0,
+      "collectorGroups": [],
+      "signalSteps": {
+        "treasure": 8,
+        "companion": 0,
+        "guide": 0,
+        "sense": 0,
+        "visibleFacility": 6
+      },
+      "inventoryHash": "bf420abb5bd865f306176caf8264c40d1c0c2db54adef0bcb647eae4d36dd82d",
+      "museumStages": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "policyVersion": "phase2-public-informed+phase4-isolated-v1",
+      "worldHash": "7bc047cee5fe9f8bb379c128fc93742e7e31ab47bab37d1ffe7297ab22ab2e28",
+      "initialTerrainCounts": {
+        "T01": 11,
+        "T02": 20,
+        "T03": 18,
+        "T04": 14,
+        "T05": 13,
+        "T06": 13,
+        "T07": 11
+      }
+    },
+    {
+      "id": 752,
+      "seed": 2026104900,
+      "party": [
+        752
+      ],
+      "buffs": [
+        {
+          "id": "A10",
+          "level": 1
+        },
+        {
+          "id": "C04",
+          "level": 2
+        },
+        {
+          "id": "E01",
+          "level": 3
+        }
+      ],
+      "questions": 30,
+      "opened": 30,
+      "normalOpened": 30,
+      "initialSkillOpened": 0,
+      "additionalSkillOpened": 0,
+      "totalSkillOpened": 0,
+      "efficiency": 1,
+      "companionEvents": 0,
+      "recruitAttempts": 0,
+      "retryAttempts": 0,
+      "recruitRolls": 0,
+      "recruitSuccesses": 0,
+      "newCharacters": 0,
+      "itemEvents": 0,
+      "itemAttempts": 0,
+      "itemSuccesses": 0,
+      "totalItems": 0,
+      "newItems": 0,
+      "discovered": 0,
+      "visited": 0,
+      "detected": 0,
+      "cumulativeReveal": 0,
+      "remainingReveal": 0,
+      "discoveryAuc": 0,
+      "explorationIndex": 0,
+      "discoveryEfficiency": 0,
+      "visitEfficiency": 0,
+      "generatedFacilities": 3,
+      "rewardJoins": 0,
+      "blocked": 0,
+      "a12EligibleTurns": 0,
+      "emptyFrontierTurns": 0,
+      "targetItems": 0,
+      "targetNewItems": 0,
+      "groupJoins": 0,
+      "collectorGroups": [],
+      "signalSteps": {
+        "treasure": 0,
+        "companion": 0,
+        "guide": 0,
+        "sense": 0,
+        "visibleFacility": 0
+      },
+      "inventoryHash": "bf420abb5bd865f306176caf8264c40d1c0c2db54adef0bcb647eae4d36dd82d",
+      "museumStages": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "policyVersion": "phase2-public-informed+phase4-isolated-v1",
+      "worldHash": "f513dad670ef5fb4687a36a82e68a844e9abb1068ffb8e9c467be5106aa8b7fd",
+      "initialTerrainCounts": {
+        "T01": 41,
+        "T02": 13,
+        "T03": 12,
+        "T04": 9,
+        "T05": 9,
+        "T06": 9,
+        "T07": 7
+      }
+    },
+    {
+      "id": 752,
+      "seed": 2026104901,
+      "party": [
+        752
+      ],
+      "buffs": [
+        {
+          "id": "A10",
+          "level": 1
+        },
+        {
+          "id": "C04",
+          "level": 2
+        },
+        {
+          "id": "E01",
+          "level": 3
+        }
+      ],
+      "questions": 30,
+      "opened": 30,
+      "normalOpened": 30,
+      "initialSkillOpened": 0,
+      "additionalSkillOpened": 0,
+      "totalSkillOpened": 0,
+      "efficiency": 1,
+      "companionEvents": 0,
+      "recruitAttempts": 0,
+      "retryAttempts": 0,
+      "recruitRolls": 0,
+      "recruitSuccesses": 0,
+      "newCharacters": 0,
+      "itemEvents": 1,
+      "itemAttempts": 1,
+      "itemSuccesses": 1,
+      "totalItems": 1,
+      "newItems": 1,
+      "discovered": 1,
+      "visited": 1,
+      "detected": 0,
+      "cumulativeReveal": 0,
+      "remainingReveal": 0,
+      "discoveryAuc": 0.967741935483871,
+      "explorationIndex": 0.03274193548387097,
+      "discoveryEfficiency": 0.03333333333333333,
+      "visitEfficiency": 0.03333333333333333,
+      "generatedFacilities": 3,
+      "rewardJoins": 0,
+      "blocked": 0,
+      "a12EligibleTurns": 0,
+      "emptyFrontierTurns": 0,
+      "targetItems": 0,
+      "targetNewItems": 0,
+      "groupJoins": 0,
+      "collectorGroups": [],
+      "signalSteps": {
+        "treasure": 0,
+        "companion": 0,
+        "guide": 0,
+        "sense": 0,
+        "visibleFacility": 0
+      },
+      "inventoryHash": "bf420abb5bd865f306176caf8264c40d1c0c2db54adef0bcb647eae4d36dd82d",
+      "museumStages": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "policyVersion": "phase2-public-informed+phase4-isolated-v1",
+      "worldHash": "bd7d6fe92929817d4e3c2ba1ade1aede86195e40535d69fbf15bf72a3da763a1",
+      "initialTerrainCounts": {
+        "T01": 41,
+        "T02": 13,
+        "T03": 12,
+        "T04": 9,
+        "T05": 9,
+        "T06": 9,
+        "T07": 7
+      }
+    },
+    {
+      "id": 752,
+      "seed": 2026104902,
+      "party": [
+        752
+      ],
+      "buffs": [
+        {
+          "id": "A10",
+          "level": 1
+        },
+        {
+          "id": "C04",
+          "level": 2
+        },
+        {
+          "id": "E01",
+          "level": 3
+        }
+      ],
+      "questions": 30,
+      "opened": 32,
+      "normalOpened": 30,
+      "initialSkillOpened": 0,
+      "additionalSkillOpened": 2,
+      "totalSkillOpened": 2,
+      "efficiency": 1.0666666666666667,
+      "companionEvents": 0,
+      "recruitAttempts": 0,
+      "retryAttempts": 0,
+      "recruitRolls": 0,
+      "recruitSuccesses": 0,
+      "newCharacters": 0,
+      "itemEvents": 1,
+      "itemAttempts": 1,
+      "itemSuccesses": 1,
+      "totalItems": 1,
+      "newItems": 1,
+      "discovered": 1,
+      "visited": 1,
+      "detected": 0,
+      "cumulativeReveal": 0,
+      "remainingReveal": 0,
+      "discoveryAuc": 0.7096774193548387,
+      "explorationIndex": 0.028010752688172044,
+      "discoveryEfficiency": 0.03333333333333333,
+      "visitEfficiency": 0.03333333333333333,
+      "generatedFacilities": 3,
+      "rewardJoins": 0,
+      "blocked": 0,
+      "a12EligibleTurns": 0,
+      "emptyFrontierTurns": 0,
+      "targetItems": 0,
+      "targetNewItems": 0,
+      "groupJoins": 0,
+      "collectorGroups": [],
+      "signalSteps": {
+        "treasure": 0,
+        "companion": 0,
+        "guide": 0,
+        "sense": 0,
+        "visibleFacility": 0
+      },
+      "inventoryHash": "bf420abb5bd865f306176caf8264c40d1c0c2db54adef0bcb647eae4d36dd82d",
+      "museumStages": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "policyVersion": "phase2-public-informed+phase4-isolated-v1",
+      "worldHash": "ed66b7ad5ccae1975bc4036cfa9243579ed41d56c978118ab40d51009ad16026",
+      "initialTerrainCounts": {
+        "T01": 41,
+        "T02": 13,
+        "T03": 12,
+        "T04": 9,
+        "T05": 9,
+        "T06": 9,
+        "T07": 7
+      }
+    },
+    {
+      "id": 167,
+      "seed": 2026104900,
+      "party": [
+        167
+      ],
+      "buffs": [
+        {
+          "id": "A01",
+          "level": 1
+        },
+        {
+          "id": "C07",
+          "level": 1
+        },
+        {
+          "id": "D04",
+          "level": 2
+        }
+      ],
+      "questions": 30,
+      "opened": 31,
+      "normalOpened": 30,
+      "initialSkillOpened": 0,
+      "additionalSkillOpened": 1,
+      "totalSkillOpened": 1,
+      "efficiency": 1.0333333333333334,
+      "companionEvents": 1,
+      "recruitAttempts": 1,
+      "retryAttempts": 0,
+      "recruitRolls": 1,
+      "recruitSuccesses": 1,
+      "newCharacters": 1,
+      "itemEvents": 0,
+      "itemAttempts": 0,
+      "itemSuccesses": 0,
+      "totalItems": 0,
+      "newItems": 0,
+      "discovered": 1,
+      "visited": 1,
+      "detected": 0,
+      "cumulativeReveal": 0,
+      "remainingReveal": 0,
+      "discoveryAuc": 0.5483870967741935,
+      "explorationIndex": 0.02505376344086022,
+      "discoveryEfficiency": 0.03333333333333333,
+      "visitEfficiency": 0.03333333333333333,
+      "generatedFacilities": 3,
+      "rewardJoins": 0,
+      "blocked": 0,
+      "a12EligibleTurns": 0,
+      "emptyFrontierTurns": 0,
+      "targetItems": 0,
+      "targetNewItems": 0,
+      "groupJoins": 0,
+      "collectorGroups": [
+        "03"
+      ],
+      "signalSteps": {
+        "treasure": 0,
+        "companion": 0,
+        "guide": 0,
+        "sense": 0,
+        "visibleFacility": 0
+      },
+      "inventoryHash": "bf420abb5bd865f306176caf8264c40d1c0c2db54adef0bcb647eae4d36dd82d",
+      "museumStages": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "policyVersion": "phase2-public-informed+phase4-isolated-v1",
+      "worldHash": "80f4e548144dede1fbd9054d80c3f46fbc66c037426fd0f6cfcae17e3932e19a",
+      "initialTerrainCounts": {
+        "T01": 11,
+        "T02": 20,
+        "T03": 18,
+        "T04": 14,
+        "T05": 13,
+        "T06": 13,
+        "T07": 11
+      }
+    },
+    {
+      "id": 167,
+      "seed": 2026104901,
+      "party": [
+        167
+      ],
+      "buffs": [
+        {
+          "id": "A01",
+          "level": 1
+        },
+        {
+          "id": "C07",
+          "level": 1
+        },
+        {
+          "id": "D04",
+          "level": 2
+        }
+      ],
+      "questions": 30,
+      "opened": 33,
+      "normalOpened": 30,
+      "initialSkillOpened": 0,
+      "additionalSkillOpened": 3,
+      "totalSkillOpened": 3,
+      "efficiency": 1.1,
+      "companionEvents": 0,
+      "recruitAttempts": 0,
+      "retryAttempts": 0,
+      "recruitRolls": 0,
+      "recruitSuccesses": 0,
+      "newCharacters": 0,
+      "itemEvents": 1,
+      "itemAttempts": 1,
+      "itemSuccesses": 1,
+      "totalItems": 1,
+      "newItems": 1,
+      "discovered": 1,
+      "visited": 1,
+      "detected": 0,
+      "cumulativeReveal": 0,
+      "remainingReveal": 0,
+      "discoveryAuc": 0.5161290322580645,
+      "explorationIndex": 0.02446236559139785,
+      "discoveryEfficiency": 0.03333333333333333,
+      "visitEfficiency": 0.03333333333333333,
+      "generatedFacilities": 3,
+      "rewardJoins": 0,
+      "blocked": 0,
+      "a12EligibleTurns": 0,
+      "emptyFrontierTurns": 0,
+      "targetItems": 1,
+      "targetNewItems": 1,
+      "groupJoins": 0,
+      "collectorGroups": [
+        "03"
+      ],
+      "signalSteps": {
+        "treasure": 0,
+        "companion": 0,
+        "guide": 0,
+        "sense": 0,
+        "visibleFacility": 0
+      },
+      "inventoryHash": "bf420abb5bd865f306176caf8264c40d1c0c2db54adef0bcb647eae4d36dd82d",
+      "museumStages": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "policyVersion": "phase2-public-informed+phase4-isolated-v1",
+      "worldHash": "ace51172aab6fef3433f6708e1e9f16395c81edc154a123f6aefbd252a312fc0",
+      "initialTerrainCounts": {
+        "T01": 11,
+        "T02": 20,
+        "T03": 18,
+        "T04": 14,
+        "T05": 13,
+        "T06": 13,
+        "T07": 11
+      }
+    },
+    {
+      "id": 167,
+      "seed": 2026104902,
+      "party": [
+        167
+      ],
+      "buffs": [
+        {
+          "id": "A01",
+          "level": 1
+        },
+        {
+          "id": "C07",
+          "level": 1
+        },
+        {
+          "id": "D04",
+          "level": 2
+        }
+      ],
+      "questions": 30,
+      "opened": 32,
+      "normalOpened": 30,
+      "initialSkillOpened": 0,
+      "additionalSkillOpened": 2,
+      "totalSkillOpened": 2,
+      "efficiency": 1.0666666666666667,
+      "companionEvents": 1,
+      "recruitAttempts": 1,
+      "retryAttempts": 0,
+      "recruitRolls": 1,
+      "recruitSuccesses": 1,
+      "newCharacters": 0,
+      "itemEvents": 1,
+      "itemAttempts": 1,
+      "itemSuccesses": 0,
+      "totalItems": 0,
+      "newItems": 0,
+      "discovered": 2,
+      "visited": 2,
+      "detected": 0,
+      "cumulativeReveal": 0,
+      "remainingReveal": 0,
+      "discoveryAuc": 0.5806451612903226,
+      "explorationIndex": 0.040645161290322585,
+      "discoveryEfficiency": 0.06666666666666667,
+      "visitEfficiency": 0.06666666666666667,
+      "generatedFacilities": 3,
+      "rewardJoins": 0,
+      "blocked": 0,
+      "a12EligibleTurns": 0,
+      "emptyFrontierTurns": 0,
+      "targetItems": 0,
+      "targetNewItems": 0,
+      "groupJoins": 0,
+      "collectorGroups": [
+        "03"
+      ],
+      "signalSteps": {
+        "treasure": 0,
+        "companion": 0,
+        "guide": 0,
+        "sense": 0,
+        "visibleFacility": 0
+      },
+      "inventoryHash": "bf420abb5bd865f306176caf8264c40d1c0c2db54adef0bcb647eae4d36dd82d",
+      "museumStages": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "policyVersion": "phase2-public-informed+phase4-isolated-v1",
+      "worldHash": "7bc047cee5fe9f8bb379c128fc93742e7e31ab47bab37d1ffe7297ab22ab2e28",
+      "initialTerrainCounts": {
+        "T01": 11,
+        "T02": 20,
+        "T03": 18,
+        "T04": 14,
+        "T05": 13,
+        "T06": 13,
+        "T07": 11
+      }
+    }
+  ]
+}

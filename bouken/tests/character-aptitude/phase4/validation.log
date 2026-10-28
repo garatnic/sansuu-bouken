@@ -1,0 +1,18 @@
+PASS pilot gate and all frozen sources valid
+PASS 5000 complete unique id/seed pairs and identical100 seeds per character
+PASS 3000 complete unique support case/arm/seed triples
+PASS 50 selected and873 holdout disjoint from every54 participant
+PASS all8000 records share initial inventory, museum, policy, size, budget and correct theory
+PASS all8000 accounting identities, finite metrics and physical bounds
+PASS all50 characters xone recorded seed replay exactly and initial-save immutable
+PASS all10 support cases xthree arms replay one seed exactly
+PASS support ablation preserves two identities and all other skill levels
+PASS D06: identical realized maps for bothmatched arms on all100 seeds
+PASS E01..E07 target terrain grows versus ablation; E08 total area stays100
+PASS native F01/F02 candidate counts and C02/D02/F03 success formula
+PASS native D05 novelty weights and D03 facilities, C01 split, D07 retry
+PASS CSV quoting roundtrip and complete checkpoint no-op resume
+PASS game/masters/Phase3 unchanged and onlyauthorized paths differ
+PASS statistics cover50x33 and ranks/correlations are independently reconstructed
+PASS analysis/summary/report/plot byte-identical across reruns
+{"passed":true,"checks":17,"elapsedMs":7621.401953}
