@@ -292,3 +292,7 @@ E専用7例は全て加護Lv3/特攻Lv3。D06は分類加入+0.04/+0.13・総成
 [x] auto-drive 8件（625経路含む）・result・world-portraits回帰合格。
 [x] プレビューPCで経路/旗/順番/確認と取消/同一経路出発/距離と問題数/通過表示消去/保存失敗/施設続行/到着/320・390・412pxを確認。verification/robot-route-v79.md参照。
 [ ] 本番公開状態は反映後に追記。スマホ実機/実セーブ/長時間はユーザー確認待ち。
+
+【ver.79 本番公開・2026-10-29】
+[x] PR #2をmainへマージ。Vercel production READY/通常URLの79表示、本番隔離データでルートと旗・確認・出発・中断時の全解除を確認。verification/robot-route-v79.md参照。
+[ ] スマホ実機・実セーブ・長時間はユーザー確認待ち。GitHub Pagesは初回確認78で伝播待ち。
