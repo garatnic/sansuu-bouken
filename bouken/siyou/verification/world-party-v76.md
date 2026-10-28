@@ -15,3 +15,6 @@ facility-event-ui/world-portraits/party-restore/party-recommendation-game/party-
 ## 最終確認
 最終ゲームコミット10de07ade4bd26530acff0a8564f175513ffd076、Vercel本番dpl_CzcovviaXp6jScLm8fmEjfuFkmwb READY。公開仮セーブで仲間詳細を開き画像canvas1枚と名前/説明/全スキルを確認し、閉じると開拓0/99・施設0/4の同じマップに戻ることを確認。
 確認画像：world-v76-1793189028615.jpg（隔離仮データのお宝失敗）。変更後スマホ実機は未確認。
+
+## ユーザー受入
+2026-10-28 ユーザー「全部OK」。ver.76確認票を受入済み。追加の詳細画像の縦横比報告はver.77で修正し、別途確認する。

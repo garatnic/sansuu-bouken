@@ -14,7 +14,6 @@ button:disabled,input:disabled,select:disabled{opacity:.55;cursor:default}
 .skill-effect-row strong{flex:none;white-space:nowrap}
 .character-detail-header{position:sticky;top:-20px;z-index:3;background:white;padding-top:10px;padding-bottom:10px}
 .character-detail-portrait{padding-left:0}
-.character-detail-portrait .character-image{max-height:120px;width:120px}
 .dialog-head h2,.dialog-head h3{min-width:0;overflow-wrap:anywhere}
 .dialog-head>button{flex:none}
 .bonus-card>.row{flex-wrap:wrap}

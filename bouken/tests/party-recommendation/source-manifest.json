@@ -1,6 +1,6 @@
 {
-  "commit": "8f51526c928b1cf2a9b64deb4169b65b19d416bc",
-  "version": 76,
+  "commit": "f0648a97e517c6f4184245917ac213c26b6987c6",
+  "version": 77,
   "gitBlobs": {
     "bouken/common/buffs.js": "47bd448294bc53924cd85757aa1f1f77497cb13e",
     "bouken/common/collection.js": "9a52a2e880de0c8e4bf0f48d45966e87ef4436a9",
@@ -17,10 +17,10 @@
     "bouken/data/skills.json": "7ade9fddd739c586f5c7954e6aa80ea66c8eff19",
     "bouken/data/terrains.json": "316bd119f274ac678224e380fe41cee4976772e2",
     "bouken/data/world_facility_counts.json": "a1dfda8921560a21cb28afb14d1a09f5e0859b63",
-    "bouken/world.html": "d8008762fd390b9eb8d75a920a187f487d918baf",
-    "bouken/worldcreate.html": "52ccdc62905282ca8ac552fc51e29d6c71f1261d",
-    "bouken/common/version.js": "5aeca827d069194e8fe55f0e834fb73994c18636"
+    "bouken/world.html": "1d6f68133ba450b7cc3d47a6e24ed1455b801104",
+    "bouken/worldcreate.html": "dccedf4abd3a0404f4ba816a39042f033196f4f8",
+    "bouken/common/version.js": "cc37b756daa2ff247f43ca211e879306fef3d6e8"
   },
   "originalResearchCommit": "bf5a69255f627090c2e6fa2ce089209b88d72a4f",
-  "note": "ver.76: world event failure cross, shared party details, accepted auto party becomes restore baseline; simulation rules unchanged."
+  "note": "ver.77: consolidate square character detail image sizing; remove conflicting height cap. No simulation or save changes."
 }

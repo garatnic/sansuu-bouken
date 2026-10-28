@@ -2,7 +2,7 @@
 .character-detail-dialog::backdrop{background:#0008}
 .character-detail-header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:start}
 .character-detail-portrait{text-align:center;padding-left:65px;min-width:0;font-size:80px}
-.character-detail-portrait .character-image{width:min(160px,100%);height:auto;aspect-ratio:1;image-rendering:pixelated}
+.character-detail-portrait .character-image{width:min(120px,100%);height:auto;max-height:none;aspect-ratio:1;image-rendering:pixelated}
 .character-detail-close{border:0;border-radius:9px;padding:10px 14px;background:#25704d;color:white;font:inherit;cursor:pointer}
 .character-detail-dialog h2{font-size:1.2rem;margin:16px 0}
 .character-detail-dialog h3{font-size:1rem;margin:0 0 8px}
