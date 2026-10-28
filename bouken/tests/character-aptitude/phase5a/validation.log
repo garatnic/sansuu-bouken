@@ -1,0 +1,166 @@
+TAP version 13
+# Subtest: 927 complete unique IDs, registered names and version
+ok 1 - 927 complete unique IDs, registered names and version
+  ---
+  duration_ms: 1.981939
+  type: 'test'
+  ...
+# Subtest: all3708 archived integer scores preserved exactly
+ok 2 - all3708 archived integer scores preserved exactly
+  ---
+  duration_ms: 2.079996
+  type: 'test'
+  ...
+# Subtest: every metric independently checked by Python stdlib oracle
+ok 3 - every metric independently checked by Python stdlib oracle
+  ---
+  duration_ms: 1810.607516
+  type: 'test'
+  ...
+# Subtest: less/equal/greater tie ranks exact, allsame-score metrics equal
+ok 4 - less/equal/greater tie ranks exact, allsame-score metrics equal
+  ---
+  duration_ms: 777.845985
+  type: 'test'
+  ...
+# Subtest: percentile midrank symmetry and top-share interval bounds
+ok 5 - percentile midrank symmetry and top-share interval bounds
+  ---
+  duration_ms: 5.761259
+  type: 'test'
+  ...
+# Subtest: population deviation mean50/std10 and percentile mean50
+ok 6 - population deviation mean50/std10 and percentile mean50
+  ---
+  duration_ms: 4.588716
+  type: 'test'
+  ...
+# Subtest: distribution404 rows, allIDs and names pergroup retained
+ok 7 - distribution404 rows, allIDs and names pergroup retained
+  ---
+  duration_ms: 6.753811
+  type: 'test'
+  ...
+# Subtest: allhistograms and tie size distributions sum927
+ok 8 - allhistograms and tie size distributions sum927
+  ---
+  duration_ms: 0.272399
+  type: 'test'
+  ...
+# Subtest: known large zero tie preserved without forcing percentiles tozero
+ok 9 - known large zero tie preserved without forcing percentiles tozero
+  ---
+  duration_ms: 0.188714
+  type: 'test'
+  ...
+# Subtest: synthetic unequal ties [0,0,10,30] get average ranks
+ok 10 - synthetic unequal ties [0,0,10,30] get average ranks
+  ---
+  duration_ms: 0.535655
+  type: 'test'
+  ...
+# Subtest: sigma0 convention and all-tie rank range
+ok 11 - sigma0 convention and all-tie rank range
+  ---
+  duration_ms: 0.212019
+  type: 'test'
+  ...
+# Subtest: single-person boundary avoids division byzero
+ok 12 - single-person boundary avoids division byzero
+  ---
+  duration_ms: 0.106009
+  type: 'test'
+  ...
+# Subtest: invalidempty/nonfinite population rejects
+ok 13 - invalidempty/nonfinite population rejects
+  ---
+  duration_ms: 0.276595
+  type: 'test'
+  ...
+# Subtest: maximum sets retain allties and ignore display rounding
+ok 14 - maximum sets retain allties and ignore display rounding
+  ---
+  duration_ms: 0.25281
+  type: 'test'
+  ...
+# Subtest: specialtychanges counted as exactsets, no forced tiebreak
+ok 15 - specialtychanges counted as exactsets, no forced tiebreak
+  ---
+  duration_ms: 7.318319
+  type: 'test'
+  ...
+# Subtest: allreview candidates unique and reasons do notmodify anyscore
+ok 16 - allreview candidates unique and reasons do notmodify anyscore
+  ---
+  duration_ms: 19.064252
+  type: 'test'
+  ...
+# Subtest: zeroRawWinner isreported rather than suppressed
+ok 17 - zeroRawWinner isreported rather than suppressed
+  ---
+  duration_ms: 10.376345
+  type: 'test'
+  ...
+# Subtest: Phase4 join exactly50 IDs xfour fields, archived outcomeonly
+ok 18 - Phase4 join exactly50 IDs xfour fields, archived outcomeonly
+  ---
+  duration_ms: 2.136701
+  type: 'test'
+  ...
+# Subtest: Spearman unchanged byboth monotone transforms; affine Pearson unchanged
+ok 19 - Spearman unchanged byboth monotone transforms; affine Pearson unchanged
+  ---
+  duration_ms: 0.505059
+  type: 'test'
+  ...
+# Subtest: strictlymonotone scoregroups and same ties preserved
+ok 20 - strictlymonotone scoregroups and same ties preserved
+  ---
+  duration_ms: 1.404691
+  type: 'test'
+  ...
+# Subtest: inputorder and object order do not change relative outputs
+ok 21 - inputorder and object order do not change relative outputs
+  ---
+  duration_ms: 16.619768
+  type: 'test'
+  ...
+# Subtest: UTF8CSV quotes, commas and newlines roundtrip
+ok 22 - UTF8CSV quotes, commas and newlines roundtrip
+  ---
+  duration_ms: 0.483537
+  type: 'test'
+  ...
+# Subtest: deterministicrecalculation matches allgenerated files byteforbyte
+ok 23 - deterministicrecalculation matches allgenerated files byteforbyte
+  ---
+  duration_ms: 145.252985
+  type: 'test'
+  ...
+# Subtest: Phase3/4 andholdout files remain byteidentical
+ok 24 - Phase3/4 andholdout files remain byteidentical
+  ---
+  duration_ms: 9.14882
+  type: 'test'
+  ...
+# Subtest: no simulator imports, nofitting, authorized repository scope only
+ok 25 - no simulator imports, nofitting, authorized repository scope only
+  ---
+  duration_ms: 6.481421
+  type: 'test'
+  ...
+# Subtest: everyreview rule independently reconstructed for all927, no omissions
+ok 26 - everyreview rule independently reconstructed for all927, no omissions
+  ---
+  duration_ms: 37.523446
+  type: 'test'
+  ...
+1..26
+# tests 26
+# suites 0
+# pass 26
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3040.64218

@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "tests": 26,
+  "pass": 26,
+  "fail": 0,
+  "skipped": 0,
+  "exitCode": 0,
+  "node": "v24.22.1",
+  "population": 927,
+  "additionalSimulations": 0,
+  "independentOracle": "Python stdlib / direct less-equal-greater counts; 40788 metrics and2781 specialty sets",
+  "protectedFileCount": 48,
+  "artifacts": {
+    "relative-scores.csv": "dced941f05817f5a0735721db37ded004089ae060e4eae14bbf0b03dc6655b16",
+    "distribution.csv": "1d6c4b6e0686b731e36e8f29d3fffa92b53e0f96ba45f8fff0068d16ea4f5e69",
+    "specialty-comparison.csv": "74361998240bea74445d95883c0ef0170b5f59c25d7a14e9896ac418872e8aae",
+    "review-candidates.csv": "06dce9547c86d067a09c417a315935b0766a54ae87217ad3500bc735dbf4f9e4",
+    "phase4-comparison.csv": "c7f00965dfe0345abe8ae5cacdd972c7945eed3ba201a6e629d8fbc56c2d9f4b",
+    "analysis.json": "18cd79feea86af159acfd72fb699e04cd6f2f641dbd1246362029020564cb77f",
+    "REPORT.md": "314d6c0d74e40799a21040aaccd9baf09e3c3700a356a5ce1244c38198c58bdf",
+    "source-manifest.json": "e626eba588d34ed732578980f4e053a60250b53140edb56f1ef8e6af8b12c252",
+    "analyze.cjs": "d5cee3273e6be61ca487b2f2278cc8151393d77752cbe0aad13ecca29eded966",
+    "validate.cjs": "bd5a09ad28c27b0c30a410021a9ed6ebba1f8b511820c67f87b5cd119acb8885",
+    "independent-check.py": "c14dd6e3b8851c5cfff713e458281bd2ee37b2affb860eb7e7434d991db5429d"
+  }
+}

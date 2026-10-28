@@ -1,0 +1,6 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),{spawnSync}=require('node:child_process'),{sha}=require('./analyze.cjs');
+const r=spawnSync(process.execPath,['--test','--test-reporter=tap',path.join(__dirname,'validate.cjs')],{encoding:'utf8'}),log=r.stdout+r.stderr;
+fs.writeFileSync(path.join(__dirname,'validation.log'),log);const count=k=>Number(log.match(new RegExp('^# '+k+' (\\d+)','m'))?.[1]||0);
+const result={passed:r.status===0,tests:count('tests'),pass:count('pass'),fail:count('fail'),skipped:count('skipped'),exitCode:r.status,node:process.version,population:927,additionalSimulations:0,independentOracle:'Python stdlib / direct less-equal-greater counts; 40788 metrics and2781 specialty sets',protectedFileCount:Object.keys(require('./source-manifest.json').sha256).length,artifacts:Object.fromEntries(['relative-scores.csv','distribution.csv','specialty-comparison.csv','review-candidates.csv','phase4-comparison.csv','analysis.json','REPORT.md','source-manifest.json','analyze.cjs','validate.cjs','independent-check.py'].map(n=>[n,sha(fs.readFileSync(path.join(__dirname,n)))]))};
+fs.writeFileSync(path.join(__dirname,'verification.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result,null,2));if(!result.passed||!result.tests){console.error(log);process.exit(1);}
