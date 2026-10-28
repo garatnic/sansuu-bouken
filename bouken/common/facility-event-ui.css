@@ -39,3 +39,5 @@
 
 .facility-event .event-candidate .event-picture{width:96px;height:96px;flex-basis:96px}
 @media(max-width:380px){.facility-event .event-candidate .event-picture{width:72px;height:72px;flex-basis:72px}}
+
+.facility-event .fe-failure-cross{position:absolute;inset:0;display:grid;place-items:center;color:#bc202a;font-size:88px;font-weight:900;line-height:1;text-shadow:0 2px white,2px 0 white,-2px 0 white,0 -2px white;pointer-events:none}

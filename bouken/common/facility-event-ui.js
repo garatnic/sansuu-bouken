@@ -26,7 +26,7 @@ window.BoukenFacilityEventUI=(()=>{
    const card=node('section','fe-result '+k);const label=failed?'今回は、ざんねん…':e.first?(companion?'はじめての仲間！':'はじめてのお宝！'):(companion?'また会えたね！':'また見つけた！');
    card.append(node('p','fe-ribbon',index?'さらに、お宝を発見！':label));
    const title=failed?(companion?'ざんねん！\nなかまにならなかった...':'ざんねん！\nお宝を手に入れられなかった...'):e.first?(companion?'やったね！\nはじめての仲間を見つけた！':'やったね！\nはじめてのお宝を見つけた！'):(companion?'また仲間になったよ！':'お宝を見つけた！');
-   card.append(node('h3','fe-heading',title),zone(picture(e.type,e.id,failed),k),node('strong','fe-name',e.name));
+   const artwork=zone(picture(e.type,e.id,failed),k);if(failed){const cross=node('span','fe-failure-cross','×');cross.setAttribute('aria-hidden','true');artwork.append(cross);}card.append(node('h3','fe-heading',title),artwork,node('strong','fe-name',e.name));
    if(!failed&&!e.first){const total=Number((companion?save.characters:save.items)?.[e.id]||0);if(total>0)card.append(node('p','fe-owned','持っている数　'+(total-1)+' → '+total));}
    if(companion&&!failed&&e.first){const c=characters.find(c=>String(c.id)===String(e.id));if(c?.skills?.length){const list=node('div','fe-skills');for(const s of c.skills){const name=skills.find(v=>v.id===s.id)?.name||s.id;list.append(node('div','fe-skill',name+' Lv'+s.level));}card.append(list);}}
    let text=failed?(companion?'声をかけたけど、\nいっしょには 来てくれなかった。':'今回は 手に入らなかった。'):companion?'次の冒険が 楽しみだね！':'コレクションが ふえたよ！';

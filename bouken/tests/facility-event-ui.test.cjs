@@ -8,7 +8,7 @@ for(const type of ['companion','collection'])for(const success of [false,true])f
  UI.result({modal:m,result:{type,id:298,name:'対象',success,first:success&&first,retried},save,characters:[{id:298,skills:[{id:'B01',level:3},{id:'D08',level:1}]}],skills:[{id:'B01',name:'遠見'},{id:'D08',name:'魔物の縁'}],picture:(...args)=>{calls.push(args);return new Element()},message:'全マス開拓！ 完全クリア達成！'});
  assert.equal(JSON.stringify(save),before);assert.equal(calls.length,1);assert.deepEqual(calls[0],[type,298,!success]);
  assert.equal(find(m.parts['#visitActions'],'fe-spark').length,success&&first?3:0);
- const rendered=text(m.parts['#visitActions']);if(!success)assert(rendered.includes(type==='companion'?'なかまにならなかった...':'お宝を手に入れられなかった...'));else if(first)assert(rendered.includes(type==='companion'?'はじめての仲間を見つけた！':'はじめてのお宝を見つけた！'));else assert(rendered.includes(type==='companion'?'3 → 4':'4 → 5'));
+ assert.equal(find(m.parts['#visitActions'],'fe-failure-cross').length,success?0:1);const rendered=text(m.parts['#visitActions']);if(!success)assert(rendered.includes(type==='companion'?'なかまにならなかった...':'お宝を手に入れられなかった...'));else if(first)assert(rendered.includes(type==='companion'?'はじめての仲間を見つけた！':'はじめてのお宝を見つけた！'));else assert(rendered.includes(type==='companion'?'3 → 4':'4 → 5'));
  assert.equal(find(m.parts['#visitActions'],'fe-skill').length,type==='companion'&&success&&first?2:0);assert.equal(rendered.includes('もう一度さそったよ'),retried);assert(rendered.includes('全マス開拓！'));assert(rendered.includes('完全クリア達成！'));
  find(m.parts['#visitActions'],'fe-continue')[0].onclick();assert.equal(m.closed,1);
 }
