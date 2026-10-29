@@ -1,8 +1,8 @@
 // One awaited modal at a time; callers persist acknowledgement before it closes.
 window.BoukenNoticeDialog=Object.freeze({
- show({title,text,buttonText='わかった！',secondaryText='',onAccept=()=>true}){
+ show({title,text,buttonText='わかった！',secondaryText='',fullScreen=false,onAccept=()=>true}){
   return new Promise(resolve=>{
-   const prior=document.activeElement,d=document.createElement('dialog');d.className='growth-notice';d.setAttribute('aria-labelledby','growthNoticeTitle');
+   const prior=document.activeElement,d=document.createElement('dialog');d.className='growth-notice'+(fullScreen?' robot-help':'');d.setAttribute('aria-labelledby','growthNoticeTitle');
    const emblem=document.createElement('div');emblem.className='growth-emblem';emblem.textContent='🎉';emblem.setAttribute('aria-hidden','true');
    const heading=document.createElement('h2');heading.id='growthNoticeTitle';heading.textContent=title;const copy=document.createElement('p');copy.className='growth-copy';copy.textContent=text;
    const error=document.createElement('p');error.className='growth-error';error.setAttribute('role','status');const actions=document.createElement('div');actions.className='growth-actions';
