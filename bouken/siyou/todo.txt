@@ -320,3 +320,9 @@ E専用7例は全て加護Lv3/特攻Lv3。D06は分類加入+0.04/+0.13・総成
 [ ] Phase 3：分析／自動編成／自動運転への機能制限。
 [ ] Phase 4：状態画面・説明画面拡充・全15イベント統合確認。
 [ ] 後日：ロボット・部品・説明画像。
+
+## 2026-10-29 ver.83：編成予想のSource changed修正
+
+ver.82で変更したschema/party/version/world等に対して、予想Workerのsource-manifest.jsonがver.77のまま残り、Source changedで起動できなかった。照合対象をver.83の全実ファイルへ再生成した。複数の不一致が並列検出されるため再読込ごとにファイル名が変わっていた。ロボ未獲得による制限ではない。
+
+forecast-runtime.test.cjsでブラウザWorkerと同じbootstrap（全ハッシュ・version）を実行し、ロボ未獲得の2種類／49種類・ホーム枠未解放で各30問予想が完了、保存不変を確認。party-forecast/robot-growth回帰合格。スマホ実機・ユーザー受入は未確認。
