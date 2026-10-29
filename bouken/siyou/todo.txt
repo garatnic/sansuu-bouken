@@ -357,3 +357,5 @@ ver.87検証：robot-discovery-ui／robot-growth／robot-lifecycle／result／fo
 【2026-10-29 ver.88 一時検証機能】
 [x] ワールド見出し「ぼうけんのせかい」のタップ（Enter/Spaceも可）で全マス開拓・保存。通常の全域開拓報酬／ロボ部品判定へ接続。施設は未訪問のまま、正解数は増やさない。重複タップで報酬を再付与しない。ダイアログ／出題中は実行しない。
 [ ] 最終仕上げ時に必ず削除：world.htmlのTEMP verification shortcutブロック（見出しタップによる全マス開拓とキー操作）を削除する。検証のための一時機能であり完成版には残さない。
+
+ver.88検証：forecast-runtime/result/robot-lifecycle合格。main 6cd5585、Vercel本番 dpl_FZsLeGKfqy8wRhpbp647gu1dYc5B READY・同コミット確認。通常ドメインの隔離ページで見出しタップ→通常仲間報酬→全マス99/99・施設0/3、再読込保持、再タップで報酬なしを確認。実セーブへの操作なし。ユーザー受入待ち。
