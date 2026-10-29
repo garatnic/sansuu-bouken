@@ -9,12 +9,12 @@ window.BoukenAutoDrive=Object.freeze({
    if(horizontal)x+=xs;else y+=ys;out.push(y*width+x);
   }return out;
  },
- create({world,tap,busy,changed,discovered,arrived,blocked,schedule=fn=>setTimeout(fn,100),cancel=clearTimeout}){
-  let route=[],cursor=0,completed=0,active=false,previewing=false,origin=null,waiting=false,timer=null,before=null,generation=0;
+ create({world,tap,busy,changed,discovered,arrived,blocked,schedule=fn=>setTimeout(fn,100),cancel=clearTimeout,maxSteps=()=>Infinity}){
+  let route=[],requestedSteps=0,cursor=0,completed=0,active=false,previewing=false,origin=null,waiting=false,timer=null,before=null,generation=0;
   const exploredFacilities=w=>w.facility.map((f,i)=>!!f&&!!w.explored[i]);
   const remaining=()=>route.slice(completed).filter(i=>!world().explored[i]).length;
-  function update(){changed({active,previewing,remaining:remaining(),steps:route.length,route:route.slice(completed).map((index,k)=>({index,step:completed+k+1,destination:completed+k===route.length-1}))});}
-  function stop(){generation++;if(timer!==null)cancel(timer);timer=null;active=false;previewing=false;origin=null;waiting=false;route=[];cursor=0;completed=0;before=null;discoveries=[];update();}
+  function update(){changed({active,previewing,remaining:remaining(),steps:route.length,truncated:requestedSteps>route.length,route:route.slice(completed).map((index,k)=>({index,step:completed+k+1,destination:completed+k===route.length-1}))});}
+  function stop(){generation++;if(timer!==null)cancel(timer);timer=null;active=false;previewing=false;origin=null;waiting=false;route=[];requestedSteps=0;cursor=0;completed=0;before=null;discoveries=[];update();}
   function queue(){if(active&&timer===null){const token=generation;timer=schedule(()=>{timer=null;if(token===generation)tick();});}}
   function complete(){if(!active||!waiting||before===null)return;waiting=false;completed=cursor;const w=world(),after=exploredFacilities(w),found=[];after.forEach((v,i)=>{if(v&&!before[i])found.push(i);});before=null;update();
    // Defer the prompt until existing reward/event/tutorial dialogs have closed.
@@ -31,8 +31,8 @@ window.BoukenAutoDrive=Object.freeze({
    try{const result=tap(i);if(!active)return;if(result==='moved')complete();else if(result!=='question'){stop();blocked();}}catch(e){stop();blocked(e);}
   }
   return Object.freeze({
-   prepare(target){stop();const w=world();route=window.BoukenAutoDrive.route(w.player.x,w.player.y,target%w.width,Math.floor(target/w.width),w.width,w.height);if(!route.length)return;origin={x:w.player.x,y:w.player.y,width:w.width,height:w.height};previewing=true;update();},
-   depart(){if(!previewing)return false;const w=world();if(w.player.x!==origin.x||w.player.y!==origin.y||w.width!==origin.width||w.height!==origin.height){stop();blocked();return false;}previewing=false;active=true;update();tick();return true;},
+   prepare(target){stop();const w=world();route=window.BoukenAutoDrive.route(w.player.x,w.player.y,target%w.width,Math.floor(target/w.width),w.width,w.height);requestedSteps=route.length;const limit=maxSteps();if(!(limit>0)){route=[];return false;}route=route.slice(0,limit);if(!route.length)return false;origin={x:w.player.x,y:w.player.y,width:w.width,height:w.height};previewing=true;update();return true;},
+   depart(){if(!previewing)return false;const w=world();if(route.length>maxSteps()||w.player.x!==origin.x||w.player.y!==origin.y||w.width!==origin.width||w.height!==origin.height){stop();blocked();return false;}previewing=false;active=true;update();tick();return true;},
    stop,complete,get active(){return active;},get previewing(){return previewing;},get remaining(){return remaining();}
   });
  }

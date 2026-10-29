@@ -37,3 +37,5 @@ main{max-width:560px;padding-top:12px}header{padding-bottom:4px}.title-row{displ
 .header-actions #back,#forecast #closeForecast{background:#25704d;color:#fff;min-height:44px;border-radius:9px;padding:10px 14px;margin:0;flex:none;width:auto;font-weight:650}
 #forecast .forecast-dialog-heading{position:sticky;top:0;z-index:3;display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--paper,#fffdf7);padding:0 0 8px;margin:0 0 8px}
 #forecast .forecast-dialog-heading h2{margin:0;text-align:left;min-width:0;font-size:20px}
+
+.type-grid button[hidden]{display:none!important}

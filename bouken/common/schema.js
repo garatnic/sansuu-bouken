@@ -25,6 +25,8 @@ window.BoukenSchema=Object.freeze({
   if(g.discovery===0&&Object.values(data.characters||{}).filter(n=>Number(n)>0).length>=23)g.discovery=1;
   return g;
  },
+ robotAvailable(data,id){const g=this.growth(data);return g.discovery===3&&(g.features[id]?.stage||0)>=3;},
+ robotAccess(data){const available=id=>this.robotAvailable(data,id),modes=['random','map','explore','companion','treasure','balanced'].filter(available);const driveLevel=available('drive1')?(available('drive2')?(available('drive3')?3:2):1):0;return {analysis:available('analysis'),modes,driveLevel,driveSteps:[0,3,6,Infinity][driveLevel]};},
  robotNext(data){const g=this.growth(data);if(g.discovery!==3)return null;return this.robotFeatures.find(f=>(g.features[f.id]?.stage||0)<4)||null;},
  announceRobotSearch(data){const g=this.growth(data),f=this.robotNext(data);if(!f||g.features[f.id]?.stage||Object.values(data.characters||{}).filter(n=>Number(n)>0).length<f.count)return false;g.features[f.id]={stage:1,afterWorld:g.worldSerial};return true;},
  robotWorld(data,w){const g=this.growth(data);w.robotWorldId=++g.worldSerial;const f=this.robotNext(data);if(f&&g.features[f.id]?.stage===1&&w.width===f.size&&w.height===f.size)w.robotSearch=f.id;},

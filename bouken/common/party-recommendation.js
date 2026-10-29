@@ -6,7 +6,7 @@ window.BoukenRecommendation=Object.freeze({
   return [...ids];
  },
  open({characters,persist,onClose}){
-  const snapshot=JSON.stringify(BoukenSave.load()),dialog=document.createElement('dialog'),frame=document.createElement('iframe');
+  const save=BoukenSave.load();if(!BoukenSchema.robotAccess(save).modes.length)return false;const snapshot=JSON.stringify(save),dialog=document.createElement('dialog'),frame=document.createElement('iframe');
   dialog.className='recommendation-dialog';dialog.setAttribute('aria-label','じどうへんせいロボ🤖');frame.title='じどうへんせいロボ🤖';
   let closed=false;
   const close=()=>{if(closed)return;closed=true;frame.contentWindow?.PartyRecommendationDispose?.();window.removeEventListener('pagehide',close);dialog.close();dialog.remove();delete window.BoukenRecommendationSession;onClose?.();};
@@ -17,6 +17,6 @@ window.BoukenRecommendation=Object.freeze({
   });
   dialog.addEventListener('cancel',event=>{event.preventDefault();close();});
   dialog.addEventListener('close',close);window.addEventListener('pagehide',close,{once:true});
-  dialog.append(frame);document.body.append(dialog);dialog.showModal();frame.src='party-recommendation.html?v=82';
+  dialog.append(frame);document.body.append(dialog);dialog.showModal();frame.src='party-recommendation.html?v=85';
  }
 });

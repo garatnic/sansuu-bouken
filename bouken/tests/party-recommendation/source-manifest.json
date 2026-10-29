@@ -1,6 +1,6 @@
 {
-  "commit": "9ea7dd31dfa1d54b9f22a804cfdd5955b3349593",
-  "version": 84,
+  "commit": "d9b7cc076927a8efc3a1c936b836bbf70d2f56b5",
+  "version": 85,
   "gitBlobs": {
     "bouken/common/buffs.js": "47bd448294bc53924cd85757aa1f1f77497cb13e",
     "bouken/common/collection.js": "9a52a2e880de0c8e4bf0f48d45966e87ef4436a9",
@@ -8,7 +8,7 @@
     "bouken/common/explore.js": "6223e842af37383d101efbf9a479c0bc734f6cd4",
     "bouken/common/party.js": "acab5d379a8c6e6625067801e5b5041aa0dd2047",
     "bouken/common/progress.js": "985fc7edda7622e82ccd85810cfe5b768f5ffb72",
-    "bouken/common/schema.js": "1cef40b463c3df1daa7be0bb804b7c22e22c2cc6",
+    "bouken/common/schema.js": "54b0d4008358791e24ed3ceec91c0fb0da53fb80",
     "bouken/common/worldgen.js": "ad40ea25bca21b560949d17b13690b7c3da98e56",
     "bouken/data/characters.json": "1736be189c4e5d91432972a458ce0335e283bad2",
     "bouken/data/collection_items.json": "776d3a6fe6e6ca3bef3224a18853765605190d13",
@@ -17,10 +17,10 @@
     "bouken/data/skills.json": "7ade9fddd739c586f5c7954e6aa80ea66c8eff19",
     "bouken/data/terrains.json": "316bd119f274ac678224e380fe41cee4976772e2",
     "bouken/data/world_facility_counts.json": "a1dfda8921560a21cb28afb14d1a09f5e0859b63",
-    "bouken/world.html": "5e7f044f4e4544f79bbf9c0cdfd2fa5609779b7c",
-    "bouken/worldcreate.html": "e4fd1ad1f8358fada6e3244cc9790eb4050f5167",
-    "bouken/common/version.js": "511b9f66cbdefb44acfad0c2b1dcf330178b18ba"
+    "bouken/world.html": "caec1846437ba9537d24614e260e7df461bcf813",
+    "bouken/worldcreate.html": "fe529cf3e84085525b12430d451326d2c182b6a2",
+    "bouken/common/version.js": "435044d67ca899249c031683c78c695ca0fcc950"
   },
   "originalResearchCommit": "bf5a69255f627090c2e6fa2ce089209b88d72a4f",
-  "note": "ver.84: runtime sources regenerated. commit is the implementation base; gitBlobs identifies exact file contents."
+  "note": "ver.85: runtime sources regenerated. commit is the implementation base; gitBlobs identifies exact file contents."
 }
