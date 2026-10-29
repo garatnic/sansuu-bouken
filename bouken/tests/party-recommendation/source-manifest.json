@@ -1,14 +1,14 @@
 {
-  "commit": "a355b4aea76047d7525082b5df0a557fcf4e8ce4",
-  "version": 83,
+  "commit": "9ea7dd31dfa1d54b9f22a804cfdd5955b3349593",
+  "version": 84,
   "gitBlobs": {
     "bouken/common/buffs.js": "47bd448294bc53924cd85757aa1f1f77497cb13e",
     "bouken/common/collection.js": "9a52a2e880de0c8e4bf0f48d45966e87ef4436a9",
     "bouken/common/events.js": "7e8b74d541b84d702a9a9f90c1511c77f901812f",
     "bouken/common/explore.js": "6223e842af37383d101efbf9a479c0bc734f6cd4",
     "bouken/common/party.js": "acab5d379a8c6e6625067801e5b5041aa0dd2047",
-    "bouken/common/progress.js": "f8b7063cb631dc14b3bb4aadaed13025c7e82724",
-    "bouken/common/schema.js": "f8b0f1fb613c873fe863c36614ec1aa64eebd9b6",
+    "bouken/common/progress.js": "985fc7edda7622e82ccd85810cfe5b768f5ffb72",
+    "bouken/common/schema.js": "1cef40b463c3df1daa7be0bb804b7c22e22c2cc6",
     "bouken/common/worldgen.js": "ad40ea25bca21b560949d17b13690b7c3da98e56",
     "bouken/data/characters.json": "1736be189c4e5d91432972a458ce0335e283bad2",
     "bouken/data/collection_items.json": "776d3a6fe6e6ca3bef3224a18853765605190d13",
@@ -17,10 +17,10 @@
     "bouken/data/skills.json": "7ade9fddd739c586f5c7954e6aa80ea66c8eff19",
     "bouken/data/terrains.json": "316bd119f274ac678224e380fe41cee4976772e2",
     "bouken/data/world_facility_counts.json": "a1dfda8921560a21cb28afb14d1a09f5e0859b63",
-    "bouken/world.html": "bcbdbfd9b9eddf36d618694ad5caadf117da8f2d",
-    "bouken/worldcreate.html": "2ee57a5091a967ad9d02f7d9bd58d3e49116334c",
-    "bouken/common/version.js": "6917d1d588057656d7db33e76c74a899071bd3f0"
+    "bouken/world.html": "5e7f044f4e4544f79bbf9c0cdfd2fa5609779b7c",
+    "bouken/worldcreate.html": "e4fd1ad1f8358fada6e3244cc9790eb4050f5167",
+    "bouken/common/version.js": "511b9f66cbdefb44acfad0c2b1dcf330178b18ba"
   },
   "originalResearchCommit": "bf5a69255f627090c2e6fa2ce089209b88d72a4f",
-  "note": "ver.83: Phase 1変更後の実行時ソース照合を再生成。commitは修正基準main。gitBlobsを実ファイルと照合する。"
+  "note": "ver.84: runtime sources regenerated. commit is the implementation base; gitBlobs identifies exact file contents."
 }
