@@ -6,7 +6,9 @@ world-select.cssの.world-size-picker legendを、ホームのhome-menu.css/.ima
 
 world-size-picker/departure-navigation/forecast-runtimeの既存回帰テストが成功。CSSの対象値を両画面の実ソースで照合。ブラウザ実行環境にChromiumがないため、見た目・スマホ実機はユーザー確認待ち。
 
-更新後ver.94。コミット/公開結果は確認後に追記。
+更新後ver.94。実装コミット：`1be4222c43baabf18e959e31ca0ec25de9b401ff`。main反映成功。
+
+Vercel production `dpl_H9wS74ZdBPwita4J634umffoAhvf` はREADYで実装コミットと一致。通常ドメインでworldcreate.html/world-select.css/common/version.jsのHTTP 200・登録内容との一致を確認。version.jsは切替直後の古い取得結果を区別するため確認用クエリを付けて再取得し、94を確認した。公開画面の見た目は未確認。この公開記録は後続文書コミットで保存。
 
 - [ ] 見出しがホームの出発ボタンと同じ文字サイズで太字になった。
 - [ ] 濃色・影なしで、スマホ幅でも収まる。
