@@ -1,6 +1,6 @@
 // Current-party forecast uses the existing isolated comparison Worker. No save API here.
 window.BoukenPartyForecast=(()=>{
- const workerURL=new URL('../tests/party-recommendation/integration/worker.js?rev=party72',document.currentScript.src).href;
+ const workerURL=new URL('../tests/party-recommendation/integration/worker.js?rev=robot85',document.currentScript.src).href;
  function create({graph,status,note,makeWorker=()=>new Worker(workerURL)}){
   let worker=null,ready=false,active=null,pending=null,sequence=0,disposed=false;
   const clear=message=>{graph.replaceChildren();graph.hidden=true;status.textContent=message;note.textContent='';};
