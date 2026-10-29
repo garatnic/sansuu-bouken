@@ -373,4 +373,4 @@ ver.88検証：forecast-runtime/result/robot-lifecycle合格。main 6cd5585、Ve
 【2026-10-29 ver.90受入 / ver.91経路引き直し】
 [x] ver.90の確認票はユーザー「全部Ok！」で受入。Pixel 8aの操作感/表示/保存再開等の提示項目が対象。全スキル/長時間の網羅合格には拡大しない。
 [x] ver.91：出発確認中のマップタップで予定経路を置換。出発前の移動/保存なし、現在地は確認解除、運転中ロックと歩数制限は維持。
-[ ] ver.91：ユーザー実機確認。検証/公開：verification/robot-route-retarget-v91-20261029.md。
+[x] ver.91：ユーザー「全部Ok！」で提示確認票を受入（2026-10-29、端末詳細は今回未申告）。検証/公開：verification/robot-route-retarget-v91-20261029.md。
