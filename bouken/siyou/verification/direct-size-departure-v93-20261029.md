@@ -24,7 +24,9 @@ worldcreate.html、common/world-size-picker.js、common/world-select.css、commo
 
 ## コミット・公開
 
-更新後ver.93。実装コミット・Vercel公開確認は実施後に追記する。
+更新後ver.93。実装コミット：`b9087350aa1a26917e122ea23fb9a2c40bb88120`、main反映成功。
+
+Vercel production `dpl_H4CU9xqp5oMmcpJdRyoK7uQhhq22` はREADY、Gitコミットが実装コミットに一致。通常ドメインのversion.js/worldcreate.html/world-select.css/world-size-picker.js/world-preview-worker.js/予想Worker source-manifest.jsonをHTTP 200で取得し、6ファイルともコミット内容と全文一致を確認（?v=93）。公開URL：https://sansuu-bouken.vercel.app/bouken/worldcreate.html 。公開ファイルの確認であり、実ブラウザ操作/実機表示は未確認。この公開結果は後続の文書コミットで保存する。
 
 ## 確認票
 
