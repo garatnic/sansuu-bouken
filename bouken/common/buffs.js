@@ -1,7 +1,27 @@
 // ver.20: 独立抽選→スタック確定→実行。A02を先頭処理、A03は開拓数閾値で発動。
 window.BoukenBuffs=Object.freeze({
  level(w,id){return Math.max(0,Math.min(3,Number((w.partyBuffsSnapshot||[]).find(s=>s.id===id)?.level||0)));},
- initial(w){if(w.initialSupportApplied)return 0;const lv=this.level(w,'A11'),s=w.startIndex,x=s%w.width,y=Math.floor(s/w.width);let offsets=[];if(lv>=1)offsets.push([-1,0],[1,0],[0,-1],[0,1]);if(lv>=2)offsets.push([-1,-1],[1,-1],[-1,1],[1,1]);if(lv>=3)offsets.push([-2,0],[2,0],[0,-2],[0,2]);let count=0;for(const [dx,dy] of offsets){const nx=x+dx,ny=y+dy;if(nx<0||ny<0||nx>=w.width||ny>=w.height)continue;const i=ny*w.width+nx;if(!w.explored[i]){w.explored[i]=true;w.lastInitialOpenedIndex=i;count++;}}w.initialSupportApplied=true;w.exploredCount=w.explored.reduce((n,v,i)=>n+(i!==s&&!!v),0);return count;},
+ // Stage-by-stage construction preserves lower-level regions at every boundary.
+ initial(w){
+  if(w.initialSupportApplied)return 0;
+  const lv=this.level(w,'A11'),s=w.startIndex,x=s%w.width,y=Math.floor(s/w.width);
+  const stages=[ [[-1,0],[1,0],[0,-1],[0,1]], [[-1,-1],[1,-1],[-1,1],[1,1]], [[-2,0],[2,0],[0,-2],[0,2]] ];
+  const region=new Set([s]);let count=0;
+  const add=i=>{region.add(i);if(!w.explored[i]){w.explored[i]=true;w.lastInitialOpenedIndex=i;count++;}};
+  for(let stage=0;stage<lv;stage++){
+   for(const [dx,dy] of stages[stage]){const nx=x+dx,ny=y+dy;if(nx>=0&&ny>=0&&nx<w.width&&ny<w.height)add(ny*w.width+nx);}
+   while(region.size-1<(stage+1)*4){
+    // Only the connected frontier is eligible. Manhattan distance, then index,
+    // gives reproducible ties without additional random state in the save.
+    const candidates=new Set;
+    for(const i of region)for(const j of BoukenExplore.adjacent(w,i))if(!region.has(j))candidates.add(j);
+    const next=[...candidates].sort((a,b)=>this.distance(w,s,a)-this.distance(w,s,b)||a-b)[0];
+    if(next===undefined)break;
+    add(next);
+   }
+  }
+  w.initialSupportApplied=true;w.exploredCount=w.explored.reduce((n,v,i)=>n+(i!==s&&!!v),0);return count;
+ },
  roll(w,index,rng=Math.random){const stack=[],add=(id,chance)=>{if(rng()<chance)stack.push({id,tiles:1});};let lv=this.level(w,'A02');if(lv)add('A02',[0,.02,.035,.05][lv]);lv=this.level(w,'A01');if(lv)add('A01',[0,.05,.10,.20][lv]);const terrain=Number(String(w.terrain[index]).slice(1));if(terrain>=1&&terrain<=7){const id='A'+String(terrain+3).padStart(2,'0');lv=this.level(w,id);if(lv)add(id,[0,.20,.30,.40][lv]);}lv=this.level(w,'A12');const total=w.width*w.height-1,remaining=total-w.exploredCount;if(lv&&remaining/total<=.20)add('A12',[0,.30,.40,.50][lv]);return stack;},
  execute(w,start,stack,rng=Math.random){let cursor=start,opened=0;const indices=[],effects=[];for(const entry of stack){let entryOpened=0;if(entry.id==='A02'){// 発動時の起点に隣接する未開拓マスを全て開く。順序はランダム。
  const candidates=BoukenExplore.adjacent(w,cursor).filter(i=>!w.explored[i]);while(candidates.length){const k=Math.floor(rng()*candidates.length),next=candidates.splice(k,1)[0];w.explored[next]=true;w.exploredCount++;cursor=next;indices.push(next);opened++;entryOpened++;}effects.push({id:entry.id,opened:entryOpened});continue;}

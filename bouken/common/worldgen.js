@@ -134,9 +134,16 @@ window.BoukenWorldGen=Object.freeze({
   let min=Infinity,max=-Infinity;for(const v of values){min=Math.min(min,v);max=Math.max(max,v);}const range=max-min||1;
   return Array.from(values,v=>(v-min)/range);
  },
+ // Enumerate each perimeter cell exactly once, including corners.
+ start(width,height,rng=Math.random){
+  if(width===5&&height===5)return {x:2,y:2};
+  const candidates=[];
+  for(let y=0;y<height;y++)for(let x=0;x<width;x++)if(x===0||x===width-1||y===0||y===height-1)candidates.push({x,y});
+  return candidates[Math.floor(rng()*candidates.length)];
+ },
  generate(width,height,terrains,facilities,counts,partyBuffsSnapshot=[]){
   const setting=counts.find(v=>v.width===width&&v.height===height);if(!setting)throw Error('未対応のワールドサイズ');
-  const size=width*height,start={x:Math.floor(width/2),y:Math.floor(height/2)},startIndex=start.y*width+start.x;
+  const size=width*height,start=this.start(width,height),startIndex=start.y*width+start.x;
   const level=id=>Math.max(0,Math.min(3,Number(partyBuffsSnapshot.find(s=>s.id===id)?.level||0)));
   const ids=terrains.map(t=>t.id),quota=this.allocate(size,this.targets(partyBuffsSnapshot));
   const span=Math.max(width,height),continental=this.field(width,height,span*.75),elevation=this.field(width,height,span*.45),temperature=this.field(width,height,span*.8),moisture=this.field(width,height,span*.5);
