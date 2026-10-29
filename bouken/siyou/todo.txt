@@ -386,4 +386,8 @@ ver.88検証：forecast-runtime/result/robot-lifecycle合格。main 6cd5585、Ve
 [x] 施設数・見本の説明・従来の出発ボタン・長い置換案内を削除し、見出しを「新しいワールドへ出発！」へ変更。
 [x] 通常3サイズとチュートリアル5×5のボタンで出発。途中ワールドははい/いいえで置換確認、いいえ/Escapeは保存なし。
 [x] 二重操作を抑止、保存失敗時の再操作、再開/中央開始/プレビューを維持。関連20テストファイル成功。
-[ ] ver.93のユーザー実機受入。詳細：verification/direct-size-departure-v93-20261029.md。
+[x] ver.93はユーザー「全部Ok！」で提示確認票を受入。詳細：verification/direct-size-departure-v93-20261029.md。
+
+【2026-10-29 ver.94 出発見出し】
+[x] 「新しいワールドへ出発！」をホームの出発ボタンと同じclamp(22px,5.8vw,38px)/太さ800へ変更。濃色と影なしを維持。
+[ ] ver.94のスマホでの見た目のユーザー確認。verification/departure-heading-v94-20261029.md参照。
