@@ -25,3 +25,13 @@
 ## 隔離確認画面
 
 `bouken/tests/perimeter-start-preview.html`。通常localStorageを使わず、実生成器・A11・実world.htmlを使う。30×30右下A11 Lv3を初期値とし、各サイズ・Lv・開始候補を選べる。再読み込みで仮セーブを保持する。
+
+## 公開確認結果
+
+- 実装コミット: fd1161653ce4db834451b55393c783d7d4d66c66（25ファイル）。main更新直前に8faa3ceのままであることを確認し、expected_sha指定で競合防止。
+- Vercel Production: dpl_B9DaK5hWjEP149PudEYG9L7daMsX、READY、対象SHA一致。production alias: https://sansuu-bouken.vercel.app 。
+- 公開common/version.js、worldgen.js、buffs.js、world.html、worldcreate.htmlをHTTP 200で取得し、GitHubへ書いた各ファイルと全文一致。現行version=95。
+- 公開隔離確認画面（390px iframe）: 30×30、startIndex=899、player=(29,29)、A11 Lv3でopened=12を実画面で確認。初期スクロールleft=1189/top=956、プレイヤー矩形がスクロール領域内。
+- 開拓済み(28,29)へ移動し、仮セーブ再読み込み後に同じ現在地を確認。さらに開拓済み(26,29)へ移動、隣接(25,29)で「2+9」の算数出題、11を選び開拓13/899・player=(25,29)へ更新。
+- これはPCの隔離仮セーブの確認。通常ユーザーの保存データは変更していない。スマホ実機・全サイズの実タッチ・公開画面での自動運転完走は未実施（自動運転は自動テストで確認）。
+- git CLIのpushは資格情報なしで失敗したため、GitHub連携のtree/commit/update_refで同一treeを登録。ローカルtreeとGitHub登録treeの一致を確認。
