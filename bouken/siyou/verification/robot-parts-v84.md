@@ -20,3 +20,19 @@ Phase 3の機能制限（カード/じどうボタン非表示・分析/編成/�
 検証：robot-parts.test.cjs（旧世界/別サイズ/新規生成、通常報酬維持、施設未完了で獲得、途中放棄、二重獲得防止、保存失敗再試行、全10部品順序、取り付け後の説明再開、仲間枠優先）。result/abandon-world/robot-growth/home-growth-notice/tutorial/collection/party-recommendation-game/party-forecast 回帰確認。予想Workerの実bootstrapと30問予想も確認。公開実画面は追記、ユーザー受入待ち。
 
 仮データ確認：../../tests/robot-parts-preview.html。通常のlocalStorageは読まず書かない。
+
+## 公開・実画面確認（2026-10-29）
+
+PR #6をmainへマージ：6d2cce19effa5f616914fdd8451699c9998a8c92。main version.js=84。Vercel production dpl_G3sa2W3Cp8oLbN4zb63gsZhZy9Bh READY、対象コミット一致。通常ドメインの仮セーブページで以下をCloud Chromeで確認した。
+
+- 29種類のホームで10×10探索告知を表示し、確認後stage1/afterWorld0を保存。
+- 告知後の10×10・残り1マスに実際の算数「14−3」を正解。通常の新規仲間エメラルドフォート→閉じる→ぶんせきレンズ通知→全マスかいたくリザルトに部品表示。施設訪問0でも取得し、通常の報酬は維持。
+- 次のホームで取り付け通知→全画面レーダーチャート説明。stage3から再読込後も説明を表示し、確認後stage4へ保存。
+- 説明の保存失敗はダイアログを閉じず再試行を案内。保存失敗解除後は同じボタンで保存できる。
+- 先行5機能が完了した180種類の仮データで、次の探索告知は20×20。
+- 390px・320pxのiframeで通知と全画面説明を表示。スマホ実機タッチの代替ではない。
+
+実際のworld.html/home.htmlをsrcdocへ読み込み、保存だけをメモリ内アダプターへ置換。通常のlocalStorageを読まず書かない。
+[確認画面](robot-parts-v84.jpg) / [仮セーブ確認ページ](../../tests/robot-parts-preview.html)
+
+旧ワールド・別サイズ除外、全10機能順序、30×30条件は自動テストで確認した。実画面で全10機能を通したという意味ではない。GitHub Pagesの反映・スマホ実機・ユーザー受入は未確認。
