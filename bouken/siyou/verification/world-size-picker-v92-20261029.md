@@ -105,3 +105,7 @@ Vercel production `dpl_FFJhA54vVU4qParfRTXACKCLSDFt` はREADYで、Gitコミッ�
 - `bouken/siyou/verification/world-size-picker-v92-20261029.md`
 - `bouken/siyou/verification/world-size-picker-v92-tests.json`
 - `bouken/tests/world-size-picker.test.cjs`
+
+## 2026-10-29 ユーザー受入
+
+ユーザー「全部Ok！」によりver.92の提示確認票を受入。以降のサイズボタン即出発等の変更はver.93の別検証とする。

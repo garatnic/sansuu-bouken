@@ -1,14 +1,15 @@
-// Read-only size selector and disposable terrain samples. Never receives or saves a game save.
+// Size/departure buttons and disposable terrain samples. Never receives or saves a game save.
 window.BoukenWorldSizePicker=(()=>{
- const workerURL=new URL('world-preview-worker.js?v=92',document.currentScript.src);
+ const workerURL=new URL('world-preview-worker.js?v=93',document.currentScript.src);
  const colors={T01:'#a3d77d',T02:'#459763',T03:'#a7a9a4',T04:'#e6c979',T05:'#5da4db',T06:'#e8f5f9',T07:'#9a8bba'};
  const later=()=>new Promise(resolve=>{if(typeof requestIdleCallback==='function')requestIdleCallback(resolve,{timeout:500});else setTimeout(resolve,0);});
  const afterPaint=()=>new Promise(resolve=>{if(typeof requestAnimationFrame==='function')requestAnimationFrame(()=>setTimeout(resolve,0));else setTimeout(resolve,0);});
- function create(root){
-  const options=root.querySelector('.size-options'),help=root.querySelector('.size-help');let entries=[],value='',disabled=true,worker=null,generation=0,ready=Promise.resolve(),complete=null;
+ function create(root,{onChoose=()=>{}}={}){
+  const options=root.querySelector('.size-options');let entries=[],value='',disabled=true,worker=null,generation=0,ready=Promise.resolve(),complete=null;
   function cancel(){generation++;worker?.terminate();worker=null;complete?.();complete=null;}
+  function choose(size){if(disabled)return;value=String(size);refresh();return onChoose(value);}
   function refresh(){root.disabled=disabled;for(const e of entries)if(e.button){e.button.disabled=disabled;e.button.setAttribute('aria-pressed',String(value===String(e.size)));}}
-  function fail(e){e.canvas.hidden=true;e.note.hidden=false;e.note.textContent='見本なし';}
+  function fail(e){if(!e.canvas)return;e.canvas.hidden=true;e.note.hidden=false;e.note.textContent='見本なし';}
   function draw(e,terrain){
    if(!Array.isArray(terrain)||terrain.length!==e.size*e.size)throw Error('プレビューのサイズが不正です');
    const ctx=e.canvas.getContext('2d');if(!ctx)throw Error('Canvasを使えません');
@@ -18,15 +19,15 @@ window.BoukenWorldSizePicker=(()=>{
   }
   const api={
    configure(counts,{fixed=false,locked=false}={}){
-    cancel();options.replaceChildren();entries=[];value=String(counts[0]?.width||'');help.hidden=fixed;
+    cancel();options.replaceChildren();entries=[];value=String(counts[0]?.width||'');
     for(const c of counts){
-     if(fixed){const label=document.createElement('p');label.className='fixed-world-size';label.textContent=c.width+'×'+c.height+(locked?'（ぼうけん中）':'（チュートリアル）');options.append(label);continue;}
-     const button=document.createElement('button');button.type='button';button.className='world-size-choice';button.setAttribute('aria-label',c.width+'×'+c.height+'のワールド（施設'+c.facilityCount+'）');
+     if(fixed){const label=document.createElement(locked?'p':'button');label.className='fixed-world-size';label.textContent=c.width+'×'+c.height+(locked?'（ぼうけん中）':'（チュートリアル）');if(!locked){label.type='button';label.onclick=()=>choose(c.width);entries.push({size:c.width,button:label});}options.append(label);continue;}
+     const button=document.createElement('button');button.type='button';button.className='world-size-choice';button.setAttribute('aria-label',c.width+'×'+c.height+'のワールドへ出発');
      const title=document.createElement('strong');title.textContent=c.width+'×'+c.height;
      const stage=document.createElement('span');stage.className='size-preview-stage';const canvas=document.createElement('canvas');canvas.className='size-preview';canvas.hidden=true;canvas.style.width=(c.width/30*100)+'%';canvas.setAttribute('aria-hidden','true');
      const note=document.createElement('span');note.className='size-preview-note';note.textContent='見本を準備中';note.setAttribute('aria-hidden','true');stage.append(canvas,note);
-     const detail=document.createElement('small');detail.textContent='施設 '+c.facilityCount;button.append(title,stage,detail);
-     const e={size:c.width,button,canvas,note};entries.push(e);button.onclick=()=>{if(!disabled){value=String(c.width);refresh();}};options.append(button);
+     button.append(title,stage);
+     const e={size:c.width,button,canvas,note};entries.push(e);button.onclick=()=>choose(c.width);options.append(button);
     }refresh();
    },
    preview({terrains,facilities,counts,buffs}){

@@ -30,3 +30,12 @@ body{max-width:680px;padding:14px;background:#f5f8f4}
 .size-preview-note{font-size:12px;line-height:1.4;color:#53675b;text-align:center}
 .size-help{font-size:12px;line-height:1.6;color:#53675b;margin:8px 0 0}
 .fixed-world-size{grid-column:1/-1;margin:0;padding:12px;border:1px solid #b8c2bb;border-radius:8px;background:#f3f6f0}
+
+.departure-controls button.fixed-world-size{background:#25704d;color:white;min-height:60px}
+.replace-world-dialog{border:0;border-radius:14px;padding:20px;width:min(92vw,420px);max-height:88dvh;overflow:auto;color:#1e3327;box-shadow:0 12px 40px #0005}
+.replace-world-dialog::backdrop{background:#0008}
+.replace-world-dialog h2{font-size:1.2rem;margin:0 0 12px}
+.replace-world-dialog p{line-height:1.7}
+.replace-world-actions{display:flex;gap:10px}
+.replace-world-actions button{flex:1;min-height:50px}
+#replaceWorldNo{background:#66736a}
