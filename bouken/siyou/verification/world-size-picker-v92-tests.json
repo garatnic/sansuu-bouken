@@ -1,0 +1,122 @@
+[
+  {
+    "test": "world-size-picker",
+    "exitCode": 0,
+    "stdout": "✔ normal three equal buttons select independently of samples, actual generator uses normalized party buffs, no save changes (39.495034ms)\n✔ real worker protocol reuses generator, transfers terrain only, and BFCache reopening generates fresh samples (45.813901ms)\n✔ real departure generates a separate world at each selected size, increments once, preserves central start (97.911233ms)\n✔ first two adventures stay fixed 5x5; locked tutorial creates no buttons/previews/departure handler; resume preserves world (16.073803ms)\n✔ preview and master failure leave choices/departure usable; worker errors fall back; cancel confirmation leaves save unchanged (85.891942ms)\n✔ native select removed; responsive three-column grid, constant tap target, no terrain/facility image renderer (0.355386ms)\n✔ real E08 party buffs are capped/normalized and refreshed from the current save on restored pages (241.602449ms)\nℹ tests 7\nℹ suites 0\nℹ pass 7\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 535.264353\n",
+    "stderr": ""
+  },
+  {
+    "test": "departure-navigation",
+    "exitCode": 0,
+    "stdout": "PASS: empty/regular/tutorial departure states, read-only entry, resume preserves world, fresh save recheck, save failure blocks navigation, unified home entry\n",
+    "stderr": ""
+  },
+  {
+    "test": "tutorial",
+    "exitCode": 0,
+    "stdout": "PASS: new/legacy saves, interrupted/completed stories, save failure retry, first-success highlight, leader-only second-departure yes/no without writes, reward story recovery, all-owned wording, final completion\n",
+    "stderr": ""
+  },
+  {
+    "test": "exploration-reward",
+    "exitCode": 0,
+    "stdout": "PASS: fixed/duplicate/unowned/all-owned rewards, exact-once reload, facility separation, legacy no compensation, tutorial guards, generation hooks and syntax\n",
+    "stderr": ""
+  },
+  {
+    "test": "achievements",
+    "exitCode": 0,
+    "stdout": "PASS: all 120 rules, legacy/irreversible awards, initial action aggregation, facility final outcome, resume only on departure screen action, save failure atomicity\n",
+    "stderr": ""
+  },
+  {
+    "test": "robot-parts",
+    "exitCode": 0,
+    "stdout": "PASS: ownership and activation gates; old/wrong/new worlds; all-explored before facilities; normal reward intact; abandon; exact-once and failed save retry; persistent install/help recovery; all 10 ordered parts and 10/20/30 sizes; independent party priority\n",
+    "stderr": ""
+  },
+  {
+    "test": "robot-lifecycle",
+    "exitCode": 0,
+    "stdout": "PASS all 15 events: discovery -> analysis -> party2 -> random -> drive1 -> map -> party3 -> explore -> drive2 -> companion -> party4 -> treasure -> drive3 -> party5 -> balanced\nPASS actual masters/world generation, fixed tutorial rewards, save/reload at each stage, prethreshold home, result-only discovery, old/wrong worlds, real world-page reward/part/result ordering, save rollback/retry, 10 extra companions, 12 complete worlds, no duplicate notices, help resume, full final status and one save key\n",
+    "stderr": ""
+  },
+  {
+    "test": "robot-access",
+    "exitCode": 0,
+    "stdout": "PASS robot access: high ownership cannot unlock, part-owned remains locked, installation unlocks each feature, drive prerequisite/0/3/6/infinity, actual party card/button hiding and no hidden forecast execution, world gating\n",
+    "stderr": ""
+  },
+  {
+    "test": "robot-growth",
+    "exitCode": 0,
+    "stdout": "PASS: 22/23 threshold, duplicates, regeneration/reload/home retention, result-only discovery, abandon/failure retry, monotonic save, all slot boundaries, one event per home and party priority\n",
+    "stderr": ""
+  },
+  {
+    "test": "world-render",
+    "exitCode": 0,
+    "stdout": "✔ all sizes: real facility handlers preserve results, visited markers, B04/B07, saves and DOM; only dirty map tiles draw (1615.947702ms)\n✔ unchanged cells keep DOM/canvas, copied save world stays cached, foreign/missing nodes repair, same-size new world fully resets (49.386528ms)\n✔ partial exploration, revelation, frontier, detected signals, guide and changed terrain/party preserve v89 output (571.339276ms)\n✔ real debug open-all, save reload, event choice/retry/extra item handlers and rollback retain state/DOM (1147.561166ms)\n✔ real robot controller + page route renderer: preview, movement, visited dialog wait, stop/arrival and replacement of route cells (66.961126ms)\n✔ render exceptions do not mark old cell as successfully cached (8.217328ms)\n✔ map taps replace a preview without movement/save/quiz; old overlays vanish; limits, cancel and active lock remain (33.11573ms)\nℹ tests 7\nℹ suites 0\nℹ pass 7\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 3505.573872\n",
+    "stderr": ""
+  },
+  {
+    "test": "auto-drive",
+    "exitCode": 0,
+    "stdout": "✔ all 5×5 endpoint pairs: cardinal, minimal, monotonic, deterministic, within one cell of line (10.945416ms)\n✔ questions wait for completion, skills reduce count, explored cells still move, arrival once (1.720537ms)\n✔ stop cancels queued work and never undoes completed actions (0.303689ms)\n✔ multiple actually explored facilities, wait for dialogs; continue original route (2.93144ms)\n✔ facility stop and stale decisions cannot restart a stopped/new run (0.448685ms)\n✔ known facilities do not prompt; blocked position aborts without warp (0.289138ms)\n✔ preview is side-effect free, confirms exact route, cannot depart twice; remaining route shrinks only on completion (0.411238ms)\n✔ cancel preview or change origin: no movement/exploration and no stale departure (0.429676ms)\n✔ revelation alone never prompts; previously revealed next tower prompts only when actually explored (0.497777ms)\n✔ already revealed facility still prompts on new exploration; already explored transit does not (0.686586ms)\n✔ locked robot does not preview or tap; levels cap total path at 3/6/unlimited without skipping questions (0.599337ms)\nℹ tests 11\nℹ suites 0\nℹ pass 11\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 27.175888\n",
+    "stderr": ""
+  },
+  {
+    "test": "navigation-sense",
+    "exitCode": 0,
+    "stdout": "PASS 30x30 Lv1-3: last unvisited explored facility stays, visit removes, current-position arrows change on movement, same tile, range and reload\n",
+    "stderr": ""
+  },
+  {
+    "test": "abandon-world",
+    "exitCode": 0,
+    "stdout": "✔ remote yellow frontier uses robot from current position; adjacent remains single; explored manual move unchanged (1.638737ms)\n✔ abandon snapshot retains measured records/inventory, no new rewards/clear counters, removes only current world (0.458989ms)\n✔ legacy abandoned results explicitly mark measurements unavailable; existing complete result stays celebratory (0.296049ms)\n✔ real end transaction rolls back on storage failure; success cannot resurrect world through periodic/pagehide persist (1.787927ms)\n✔ abandoned UI thanks player and masks hidden map; complete UI still congratulates (2.590045ms)\nℹ tests 5\nℹ suites 0\nℹ pass 5\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 13.011365\n",
+    "stderr": ""
+  },
+  {
+    "test": "result",
+    "exitCode": 0,
+    "stdout": "PASS: first attempts/streak/operations, timer checkpoints/pause/reload, real encounters/failures/C03/duplicates/reward ordering, complete-only snapshot/exact-once/legacy, save failure rollback and inline syntax\n",
+    "stderr": ""
+  },
+  {
+    "test": "f-buffs",
+    "exitCode": 0,
+    "stdout": "PASS: F01/F02 all levels, shortage, weighted draws, persistence, invalid selections, single award, F03 64 boundaries, D07/C03, old save, actual visit UI handlers, inline syntax/cache\nPASS: first-join order and duplicate/failure preservation\n",
+    "stderr": ""
+  },
+  {
+    "test": "event-images",
+    "exitCode": 0,
+    "stdout": "PASS: all 1407 image coordinates, success/failure and 1000 redraws each with one request, invalid IDs, 4-second timer, early retreat boundaries\n",
+    "stderr": ""
+  },
+  {
+    "test": "forecast-runtime",
+    "exitCode": 0,
+    "stdout": "PASS: real Worker hash bootstrap/current version, robot-unowned 2/49 owned one-slot 30-answer forecasts, no save mutation\n",
+    "stderr": ""
+  },
+  {
+    "test": "party-forecast",
+    "exitCode": 0,
+    "stdout": "PASS single-series radar/no legend, replace not append, raw/clamped values; latest-only forecast queue, stale/mismatched response guards, empty party, comp assumption, no input mutation, errors/retry/disposal; button order and party update wiring.\n",
+    "stderr": ""
+  },
+  {
+    "test": "home-growth-notice",
+    "exitCode": 0,
+    "stdout": "PASS: modal save failure/retry, home party→collection order, persistent acknowledgement, no repeated notices, museum navigation after saved acknowledgement\n",
+    "stderr": ""
+  },
+  {
+    "test": "party-recommendation-game",
+    "exitCode": 0,
+    "stdout": "PASS game host: 22 ownership boundaries/1–5 slots, invalid IDs/duplicates/count, copy isolation, back/Escape/dispose, save failure no close/no loss, latest-state ownership/capacity checks, successful existing-save update/reload, world unchanged, shared images and page wiring.\n",
+    "stderr": ""
+  }
+]
