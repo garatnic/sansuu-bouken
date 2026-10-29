@@ -8,7 +8,7 @@ function snapshot(runtime,raw){
  if(!d||d.schemaVersion!==c.BoukenSchema.version)throw Error('セーブ形式が一致しません');
  function inventory(value,allowed,label){if(!value||typeof value!=='object'||Array.isArray(value))throw Error(label+'の形式が不正です');const out={};for(const [id,n]of Object.entries(value)){if(!Number.isSafeInteger(n)||n<0||!allowed.has(String(id)))throw Error(label+'に不明なIDや個数があります');if(n>0)out[id]=n;}return out;}
  const chars=inventory(d.characters,new Set([...byId.keys()].map(String)),'仲間'),items=inventory(d.items,new Set(data.collection_items.map(x=>String(x.id))),'コレクション');
- const save=c.BoukenSchema.makeInitialSave();save.characters=chars;save.items=items;
+ const save=c.BoukenSchema.makeInitialSave();save.characters=chars;save.items=items;if(d.robotGrowth)save.robotGrowth=L.clone(d.robotGrowth);
  for(const name of ['worldsStarted','completedWorlds']){const n=d[name]??0;if(!Number.isSafeInteger(n)||n<0)throw Error('進行記録が不正です');save[name]=n;}
  const total=d.records?.totalExplored??0;if(!Number.isSafeInteger(total)||total<0)throw Error('開拓記録が不正です');save.records.totalExplored=total;
  if(d.tutorialStory)save.tutorialStory=L.clone(d.tutorialStory);else delete save.tutorialStory;
@@ -17,7 +17,7 @@ function snapshot(runtime,raw){
  if(!Array.isArray(save.claimedCollectionRewards||[])||!Array.isArray(save.collectionLegacyItems||[]))throw Error('ボーナス記録が不正です');
  c.BoukenSchema.normalizeSave(save);c.BoukenCollection.prepare(save);
  const complete=new Set(c.BoukenCollection.completed(save));if(save.claimedCollectionRewards.some(id=>!complete.has(id)))throw Error('未完成の受取済みボーナスがあります');
- const owned=Object.keys(chars).map(Number),slots=c.BoukenParty.capacity(owned.length),party=Array.from(c.BoukenParty.normalize(d.party||[],owned,slots));save.party=[...party];
+ const owned=Object.keys(chars).map(Number),slots=c.BoukenParty.capacity(owned.length,d),party=Array.from(c.BoukenParty.normalize(d.party||[],owned,slots));save.party=[...party];
  return {save:L.clone(save),owned,slots,current:party,eligible:owned.length>0&&save.worldsStarted>=2&&!c.BoukenProgress.tutorialLocked(d),reason:!owned.length?'仲間がいません。サンプル条件でためせます。':(save.worldsStarted<2||c.BoukenProgress.tutorialLocked(d))?'この検証はチュートリアル後の新しい通常ワールドが対象です。':null};
 }
 function validate(runtime,input,party,locked=[]){if(!input.eligible&&input.eligible!==undefined)throw Error(input.reason);if(!Number.isInteger(input.slots)||input.slots<1||input.slots>runtime.c.BoukenParty.capacity(input.owned.length))throw Error('編成枠が不正です');if(new Set(input.owned).size!==input.owned.length||input.owned.some(id=>!runtime.byId.has(id)||!(input.save.characters[id]>0)))throw Error('所有仲間が不正です');if(new Set(locked).size!==locked.length||locked.length>input.slots||locked.some(id=>!input.owned.includes(id)))throw Error('固定条件が不正です');if(party&&(party.length!==input.slots||new Set(party).size!==party.length||party.some(id=>!input.owned.includes(id))||locked.some(id=>!party.includes(id))))throw Error('候補が所有・枠・固定条件を満たしません');}

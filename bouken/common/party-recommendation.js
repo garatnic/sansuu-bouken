@@ -1,7 +1,7 @@
 // Game host: recommendation works on copies; only the existing persist callback writes.
 window.BoukenRecommendation=Object.freeze({
  validate(ids,save,characters){
-  const known=new Set(characters.map(c=>c.id)),owned=characters.filter(c=>Number(save.characters?.[c.id])>0).map(c=>c.id),max=BoukenParty.capacity(owned.length);
+  const known=new Set(characters.map(c=>c.id)),owned=characters.filter(c=>Number(save.characters?.[c.id])>0).map(c=>c.id),max=BoukenParty.capacity(owned.length,save);
   if(!Array.isArray(ids)||ids.length!==max||new Set(ids).size!==ids.length||ids.some(id=>!Number.isSafeInteger(id)||!known.has(id)||!owned.includes(id)))throw Error('仲間や人数枠が変わりました。画面を開き直してください');
   return [...ids];
  },
@@ -17,6 +17,6 @@ window.BoukenRecommendation=Object.freeze({
   });
   dialog.addEventListener('cancel',event=>{event.preventDefault();close();});
   dialog.addEventListener('close',close);window.addEventListener('pagehide',close,{once:true});
-  dialog.append(frame);document.body.append(dialog);dialog.showModal();frame.src='party-recommendation.html?v=77';
+  dialog.append(frame);document.body.append(dialog);dialog.showModal();frame.src='party-recommendation.html?v=82';
  }
 });

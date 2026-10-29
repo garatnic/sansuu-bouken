@@ -9,7 +9,7 @@ window.BoukenResult=Object.freeze({
  },
  finish(save,w){const s=w.adventureStats;if(!s||s.finished||!w.completionRecorded)return false;s.finished=true;save.lastClearResult=this.snapshot(w);w.resultPending=true;return true;},
  // Called on a save copy. No rewards, clear counters or live-world mutations.
- abandon(save,w){const result=this.snapshot(w,'abandoned');save.lastClearResult=result;save.world=null;return result;},
+ abandon(save,w){const result=this.snapshot(w,'abandoned');BoukenSchema.discoverForResult(save,result);save.lastClearResult=result;save.world=null;return result;},
 
  rate(correct,total){return total?Math.round(correct/total*100)+'%':'—';},
  time(ms){const seconds=Math.floor(ms/1000),h=Math.floor(seconds/3600),m=Math.floor(seconds%3600/60),s=seconds%60;return (h?h+'時間':'')+m+'分'+s+'秒';},
