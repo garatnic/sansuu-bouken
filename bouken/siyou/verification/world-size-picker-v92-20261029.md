@@ -63,7 +63,11 @@ Chromium実行ファイルがないためPlaywrightによるブラウザ画面�
 
 ## コミット・公開
 
-更新後ver.92。実装コミットとVercel公開確認は、実施後に追記する。
+更新後ver.92。実装コミット：`027e15750c6f61b4a0050fa590a0b72d7759045d`、main反映成功。
+
+Vercel production `dpl_FFJhA54vVU4qParfRTXACKCLSDFt` はREADYで、Gitコミットが実装コミットに一致し、通常ドメインへのaliasも確認。公開URL：https://sansuu-bouken.vercel.app/bouken/index.html 。
+
+通常ドメインからversion.js / worldcreate.html / world-select.css / world-size-picker.js / world-preview-worker.js / 予想Workerのsource-manifest.jsonをHTTP 200で取得し、6ファイルすべてコミット内容と全文一致を確認（?v=92）。公開HTML・JS・CSSの反映確認であり、公開ブラウザ画面の操作・実機表示は未確認。本公開結果は後続の文書コミットで記録する。
 
 ## ユーザー確認票
 
@@ -75,3 +79,29 @@ Chromium実行ファイルがないためPlaywrightによるブラウザ画面�
 - [ ] 対象のセーブでは最初の2回が5×5固定で、チュートリアル途中の新規出発禁止が保たれる。
 
 **コメント欄（不具合・見た目・操作感）**
+
+## 今回の正確な変更パス
+
+- `bouken/README.md`
+- `bouken/characters.html`
+- `bouken/collection.html`
+- `bouken/common/version.js`
+- `bouken/common/world-select.css`
+- `bouken/home.html`
+- `bouken/index.html`
+- `bouken/party-recommendation.html`
+- `bouken/party.html`
+- `bouken/records.html`
+- `bouken/siyou/todo.txt`
+- `bouken/siyou/ホーム画像ボタン・出発導線仕様.md`
+- `bouken/siyou/変更履歴.md`
+- `bouken/tests/achievements.test.cjs`
+- `bouken/tests/departure-navigation.test.cjs`
+- `bouken/tests/party-recommendation/source-manifest.json`
+- `bouken/world.html`
+- `bouken/worldcreate.html`
+- `bouken/common/world-preview-worker.js`
+- `bouken/common/world-size-picker.js`
+- `bouken/siyou/verification/world-size-picker-v92-20261029.md`
+- `bouken/siyou/verification/world-size-picker-v92-tests.json`
+- `bouken/tests/world-size-picker.test.cjs`
