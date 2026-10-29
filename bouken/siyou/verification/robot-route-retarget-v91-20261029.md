@@ -18,7 +18,9 @@ world-renderの7ケース（新規1ケース）とauto-drive/robot-access/naviga
 
 ## 公開
 
-更新後ver.91。コミットとVercel公開確認は実施後に追記する。
+更新後ver.91。実装コミット：`faa8fe4cc3d17fa6c0f1d4f72c5bc66c9e6f55c1`、main反映成功。
+
+Vercel production `dpl_DHi6qz8z6YVL2AXAifHGH1xQxvkX` はREADYで、Gitコミットが実装コミットに一致。通常ドメインのversion.js / world.html / 予想Workerのsource-manifest.jsonはHTTP 200で、コミットした内容と全文一致を確認（?v=91）。公開URL：https://sansuu-bouken.vercel.app/bouken/index.html 。これは公開ファイル反映の確認で、ブラウザ実操作/実機検証は未実施。本公開記録は後続文書コミットで保存。
 
 ## 実機確認票
 
