@@ -1,0 +1,62 @@
+[
+  {
+    "test": "world-render",
+    "exitCode": 0,
+    "stdout": "✔ all sizes: real facility handlers preserve results, visited markers, B04/B07, saves and DOM; only dirty map tiles draw (1400.125049ms)\n✔ unchanged cells keep DOM/canvas, copied save world stays cached, foreign/missing nodes repair, same-size new world fully resets (45.49382ms)\n✔ partial exploration, revelation, frontier, detected signals, guide and changed terrain/party preserve v89 output (574.506967ms)\n✔ real debug open-all, save reload, event choice/retry/extra item handlers and rollback retain state/DOM (1170.394534ms)\n✔ real robot controller + page route renderer: preview, movement, visited dialog wait, stop/arrival and replacement of route cells (82.08129ms)\n✔ render exceptions do not mark old cell as successfully cached (8.330207ms)\n✔ map taps replace a preview without movement/save/quiz; old overlays vanish; limits, cancel and active lock remain (46.014591ms)\nℹ tests 7\nℹ suites 0\nℹ pass 7\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 3345.134081\n",
+    "stderr": ""
+  },
+  {
+    "test": "auto-drive",
+    "exitCode": 0,
+    "stdout": "✔ all 5×5 endpoint pairs: cardinal, minimal, monotonic, deterministic, within one cell of line (11.177851ms)\n✔ questions wait for completion, skills reduce count, explored cells still move, arrival once (0.773595ms)\n✔ stop cancels queued work and never undoes completed actions (0.17533ms)\n✔ multiple actually explored facilities, wait for dialogs; continue original route (2.142422ms)\n✔ facility stop and stale decisions cannot restart a stopped/new run (0.381015ms)\n✔ known facilities do not prompt; blocked position aborts without warp (0.280175ms)\n✔ preview is side-effect free, confirms exact route, cannot depart twice; remaining route shrinks only on completion (0.342837ms)\n✔ cancel preview or change origin: no movement/exploration and no stale departure (0.187077ms)\n✔ revelation alone never prompts; previously revealed next tower prompts only when actually explored (0.629322ms)\n✔ already revealed facility still prompts on new exploration; already explored transit does not (0.627559ms)\n✔ locked robot does not preview or tap; levels cap total path at 3/6/unlimited without skipping questions (0.512839ms)\nℹ tests 11\nℹ suites 0\nℹ pass 11\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 24.508361\n",
+    "stderr": ""
+  },
+  {
+    "test": "robot-access",
+    "exitCode": 0,
+    "stdout": "PASS robot access: high ownership cannot unlock, part-owned remains locked, installation unlocks each feature, drive prerequisite/0/3/6/infinity, actual party card/button hiding and no hidden forecast execution, world gating\n",
+    "stderr": ""
+  },
+  {
+    "test": "navigation-sense",
+    "exitCode": 0,
+    "stdout": "PASS 30x30 Lv1-3: last unvisited explored facility stays, visit removes, current-position arrows change on movement, same tile, range and reload\n",
+    "stderr": ""
+  },
+  {
+    "test": "abandon-world",
+    "exitCode": 0,
+    "stdout": "✔ remote yellow frontier uses robot from current position; adjacent remains single; explored manual move unchanged (1.484598ms)\n✔ abandon snapshot retains measured records/inventory, no new rewards/clear counters, removes only current world (0.40539ms)\n✔ legacy abandoned results explicitly mark measurements unavailable; existing complete result stays celebratory (0.304501ms)\n✔ real end transaction rolls back on storage failure; success cannot resurrect world through periodic/pagehide persist (1.939461ms)\n✔ abandoned UI thanks player and masks hidden map; complete UI still congratulates (3.16067ms)\nℹ tests 5\nℹ suites 0\nℹ pass 5\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 13.185855\n",
+    "stderr": ""
+  },
+  {
+    "test": "result",
+    "exitCode": 0,
+    "stdout": "PASS: first attempts/streak/operations, timer checkpoints/pause/reload, real encounters/failures/C03/duplicates/reward ordering, complete-only snapshot/exact-once/legacy, save failure rollback and inline syntax\n",
+    "stderr": ""
+  },
+  {
+    "test": "f-buffs",
+    "exitCode": 0,
+    "stdout": "PASS: F01/F02 all levels, shortage, weighted draws, persistence, invalid selections, single award, F03 64 boundaries, D07/C03, old save, actual visit UI handlers, inline syntax/cache\nPASS: first-join order and duplicate/failure preservation\n",
+    "stderr": ""
+  },
+  {
+    "test": "event-images",
+    "exitCode": 0,
+    "stdout": "PASS: all 1407 image coordinates, success/failure and 1000 redraws each with one request, invalid IDs, 4-second timer, early retreat boundaries\n",
+    "stderr": ""
+  },
+  {
+    "test": "forecast-runtime",
+    "exitCode": 0,
+    "stdout": "PASS: real Worker hash bootstrap/current version, robot-unowned 2/49 owned one-slot 30-answer forecasts, no save mutation\n",
+    "stderr": ""
+  },
+  {
+    "test": "party-forecast",
+    "exitCode": 0,
+    "stdout": "PASS single-series radar/no legend, replace not append, raw/clamped values; latest-only forecast queue, stale/mismatched response guards, empty party, comp assumption, no input mutation, errors/retry/disposal; button order and party update wiring.\n",
+    "stderr": ""
+  }
+]

@@ -369,3 +369,8 @@ ver.88検証：forecast-runtime/result/robot-lifecycle合格。main 6cd5585、Ve
 [x] 差分描画6ケース＋既存回帰、計20テストファイル合格。既存f-buffs/event-imagesのfixture不整合も修復。
 [ ] Pixel 8aの操作感・画面・保存再開のユーザー受入。
 公開とコミットの結果：verification/facility-render-optimization-20261029.md。前回の見出し全開拓は維持し、最終削除ToDoも維持。
+
+【2026-10-29 ver.90受入 / ver.91経路引き直し】
+[x] ver.90の確認票はユーザー「全部Ok！」で受入。Pixel 8aの操作感/表示/保存再開等の提示項目が対象。全スキル/長時間の網羅合格には拡大しない。
+[x] ver.91：出発確認中のマップタップで予定経路を置換。出発前の移動/保存なし、現在地は確認解除、運転中ロックと歩数制限は維持。
+[ ] ver.91：ユーザー実機確認。検証/公開：verification/robot-route-retarget-v91-20261029.md。

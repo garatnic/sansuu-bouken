@@ -57,3 +57,18 @@ test('real robot controller + page route renderer: preview, movement, visited di
 test('render exceptions do not mark old cell as successfully cached',async()=>{
  const x=await context();seedWorld(x,10,11);const c=x.c,original=c.BoukenTileImages.draw;c.w.terrain[0]=c.w.terrain[0]==='T01'?'T02':'T01';const old=c.map.children[0];c.BoukenTileImages.draw=()=>{throw Error('draw failed');};assert.throws(()=>c.render(),/draw failed/);assert.equal(c.map.children[0],old);c.BoukenTileImages.draw=original;x.reset();c.render();assert.equal(x.dom.counts.mapTileDraws,1);assert.notEqual(c.map.children[0],old);
 });
+test('map taps replace a preview without movement/save/quiz; old overlays vanish; limits, cancel and active lock remain',async()=>{
+ for(const limit of [3,6,Infinity]){
+  const x=await context();seedWorld(x,10,101);const c=x.c,tasks=[];c.w.player={x:0,y:0};c.w.facility.fill(null);c.render();
+  c.robot=c.BoukenAutoDrive.create({world:()=>c.w,maxSteps:()=>limit,tap:i=>c.tap(i,true),busy:()=>c.visitModal.open,changed:o=>{c.robotDriving=o.active;c.robotRoute=o.route;c.renderRobotRoute();},discovered:async()=>false,arrived(){},blocked:()=>assert.fail('blocked'),schedule:fn=>{tasks.push(fn);return fn;},cancel:fn=>{const i=tasks.indexOf(fn);if(i>=0)tasks.splice(i,1);}});
+  let questions=0;c.ask=()=>questions++;
+  c.robot.prepare(99);const prior=snapshot(x),stored=JSON.stringify(x.memory),oldRoute=c.robotRoute.map(e=>e.index);
+  c.tap(9);assert(c.robot.previewing);assert(!c.robot.active);assert.equal(c.robotRoute.at(-1).index,Math.min(9,limit));assert.equal(c.robotRoute.length,Math.min(9,limit));assert.deepEqual(snapshot(x),prior);assert.equal(JSON.stringify(x.memory),stored);assert.equal(tasks.length,0);assert.equal(questions,0);
+  for(const i of oldRoute)if(!c.robotRoute.some(e=>e.index===i))assert(!c.map.children[i].querySelector('.robot-route-mark'));
+  // Even adjacent unexplored destinations keep the confirmation until explicit departure.
+  c.w.explored[1]=false;const before=snapshot(x);c.tap(1);assert(c.robot.previewing);assert.equal(c.robotRoute.length,1);assert.equal(c.robotRoute[0].index,1);assert.equal(questions,0);assert.deepEqual(snapshot(x),before);
+  // Tapping the current location clears the zero-length preview without moving or saving.
+  c.tap(0);assert(!c.robot.previewing);assert.equal(c.map.querySelectorAll('.robot-route-mark').length,0);assert.equal(JSON.stringify(x.memory),stored);
+  c.w.explored[1]=true;c.robot.prepare(99);c.tap(9);assert(c.robot.depart());assert(c.robot.active);const route=JSON.stringify(c.robotRoute);c.tap(90);assert.equal(JSON.stringify(c.robotRoute),route);c.robot.stop();assert.equal(c.map.querySelectorAll('.robot-route-mark').length,0);
+ }
+});
