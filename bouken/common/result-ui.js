@@ -12,7 +12,16 @@ window.BoukenResultUI=(()=>{
   const memories=card('ぼうけんの思い出');memories.append(el('p','result-caption','出会った順にならんでいるよ。👑 は初めての獲得。'));const grid=el('div','result-memories');for(const e of r.encounters){const tile=el('figure','result-memory'+(e.success?'':' failed')),pic=el('div','result-picture');tile.setAttribute('aria-label',e.name+'：'+(e.success?'獲得':'獲得できなかった')+(e.firstAcquired?'、初獲得':''));const source=e.type==='companion'?BoukenCharacterImages:BoukenItemImages;pic.append(source.picture(e.id));source.init().then(()=>pic.replaceChildren(source.picture(e.id)));tile.append(pic);if(!e.success)tile.append(el('span','result-cross','×'));if(e.firstAcquired&&e.success)tile.append(el('span','result-crown','👑'));tile.append(el('figcaption','',e.name+(e.source==='reward'?'（クリア報酬）':'')));grid.append(tile);}if(!r.encounters.length)memories.append(el('p','',measured?'この冒険では出会いがありませんでした。':'この冒険の出会いは記録されていません。'));memories.append(grid);
   if(r.robotPartReward){const part=card('ロボットの ぶひん');part.append(el('p','',r.robotPartReward.name),el('p','','ホームで ロボットに とりつけよう！'));}
   if(r.robotDiscovery){const found=card('ふしぎなもの');found.append(el('p','','あれ？ ふしぎな ものを みつけた！'),el('p','','ホームに かえって くわしく みてみよう！'));}
-  const close=el('button','result-close',returnLabel);close.type='button';close.onclick=()=>d.close();d.append(close);d.addEventListener('close',()=>d.remove(),{once:true});document.body.append(d);d.showModal();d.scrollTop=0;return d;
+  const close=el('button','result-close',returnLabel);close.type='button';close.onclick=()=>d.close();d.append(close);d.addEventListener('close',()=>d.remove(),{once:true});document.body.append(d);
+  if(r.robotDiscovery){
+   const found=el('dialog','robot-found');found.setAttribute('aria-label','ふしぎなものを発見');
+   const picture=el('div','robot-found-picture','🤖');picture.setAttribute('aria-hidden','true');
+   const next=el('button','result-close','つぎへ');next.type='button';next.onclick=()=>found.close();
+   found.append(el('p','result-kicker','✦ はっけん！ ✦'),picture,el('h1','','あれ？'),el('p','robot-found-copy','ふしぎな ものを みつけた！'),el('p','robot-found-copy','ホームに かえって\nくわしく みてみよう！'),next);
+   found.addEventListener('close',()=>{found.remove();d.showModal();d.scrollTop=0;close.focus();},{once:true});
+   document.body.append(found);found.showModal();next.focus();
+  }else{d.showModal();d.scrollTop=0;}
+  return d;
  }
  return Object.freeze({show});
 })();
