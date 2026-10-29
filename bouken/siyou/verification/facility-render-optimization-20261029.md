@@ -52,11 +52,21 @@ PlaywrightはChromium実行ファイルなしで起動不能。ブラウザの�
 - 予想Worker照合：tests/party-recommendation/source-manifest.json。
 - 追加回帰：tests/world-render.test.cjs、tests/helpers/world-render.cjs、tests/helpers/render-dom.cjs、tests/fixtures/world-render-v89.js。
 - 既存テストfixture修復：tests/f-buffs.test.cjs、tests/event-images.test.cjs。
-- 文書：README.md、siyou/地形・施設画像表示仕様.md、siyou/todo.txt、siyou/変更履歴.md、本報告書、検証JSON。
+- 文書：README.md、siyou/地形・施設画像表示仕様.md、siyou/todo.txt、siyou/変更履歴.md、本報告書、検証JSON、公開結果JSON。
 
 ## コミットと公開
 
-更新後バージョン：90。実装コミットとVercel公開結果は、実装コミット後の確認を終えて本節へ追記する。
+更新後バージョン：90。
+
+- 実装コミット：`9b79dc3f69e6c85ac732c42bbe99567f4bb31c5d`（main反映成功）。
+- Vercel project：sansuu-bouken / `prj_KMJIjQKn3FxrSxfa9Xt7lTiwzgQh`、target=production。
+- deployment：`dpl_9kiPKgHfW7DapKp3YBGPaMXGKq8s`、READY。GitコミットSHAが上記実装コミットに一致し、通常ドメインへのalias割当も確認。
+- 公開URL：https://sansuu-bouken.vercel.app/bouken/index.html
+- 通常ドメインのcommon/version.jsをHTTP 200で取得し `window.BoukenVersion = 90` を確認。
+- 同じ通常ドメインのworld.htmlとtests/party-recommendation/source-manifest.jsonもHTTP 200。3ファイルとも実装コミットに登録した内容と全文一致を確認（?v=90）。
+- 公開結果ログ：[facility-render-release-20261029.json](facility-render-release-20261029.json)。
+- 公開ファイル反映の確認であり、公開ブラウザ操作・実機速度確認の成功を意味しない。ランタイムエラーログ監視は今回未実施。
+- 本節と公開結果ログの保存は後続の文書コミットで行い、実装コミットを改変しない。
 
 ## Pixel 8aのユーザー確認票
 

@@ -1,0 +1,62 @@
+{
+  "implementationCommit": "9b79dc3f69e6c85ac732c42bbe99567f4bb31c5d",
+  "version": 90,
+  "deployment": {
+    "id": "dpl_9kiPKgHfW7DapKp3YBGPaMXGKq8s",
+    "name": "sansuu-bouken",
+    "url": "sansuu-bouken-oj7pmt5kv-garatnic.vercel.app",
+    "type": "LAMBDAS",
+    "state": "READY",
+    "createdAt": 1793270010626,
+    "creator": {
+      "uid": "YxUgoKLlUtIDsPPU6wC7E3Bm",
+      "username": "garatnic-1648"
+    },
+    "project": {
+      "id": "prj_KMJIjQKn3FxrSxfa9Xt7lTiwzgQh",
+      "name": "sansuu-bouken",
+      "framework": null
+    },
+    "meta": {
+      "githubCommitRef": "main",
+      "githubCommitSha": "9b79dc3f69e6c85ac732c42bbe99567f4bb31c5d",
+      "githubCommitMessage": "ver.90: ワールドの変更マスだけを描画し施設訪問時のCanvas再生成を削減",
+      "githubRepo": "sansuu-bouken",
+      "githubOrg": "garatnic"
+    },
+    "alias": [
+      "sansuu-bouken.vercel.app",
+      "sansuu-bouken-garatnic.vercel.app",
+      "sansuu-bouken-git-main-garatnic.vercel.app"
+    ],
+    "target": "production",
+    "regions": [
+      "iad1"
+    ],
+    "buildingAt": 1793270011501,
+    "ready": 1793270016053,
+    "readyState": "READY",
+    "source": "git",
+    "aliasError": null
+  },
+  "publicChecks": [
+    {
+      "path": "bouken/common/version.js",
+      "status": 200,
+      "exactMatch": true,
+      "content": "window.BoukenVersion = 90;\n"
+    },
+    {
+      "path": "bouken/world.html",
+      "status": 200,
+      "exactMatch": true
+    },
+    {
+      "path": "bouken/tests/party-recommendation/source-manifest.json",
+      "status": 200,
+      "exactMatch": true
+    }
+  ],
+  "browserExecuted": false,
+  "browserLimitation": "Chromium executable is absent; no browser/Pixel 8a interaction or performance test was performed."
+}
