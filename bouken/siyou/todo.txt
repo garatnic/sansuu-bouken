@@ -346,4 +346,5 @@ forecast-runtime.test.cjsでブラウザWorkerと同じbootstrap（全ハッシ�
 
 【ver.86 Phase 4】
 [x] ロボ状態・機能説明再閲覧・全15イベント結合検証と保存/報酬回帰。
-[ ] 本番実画面確認・ユーザー受入。verification/robot-state-v86.md。
+[x] 本番READY・状態画面の各状態/説明再閲覧/閉じる・Escape/320px表示を確認。verification/robot-state-v86.md。
+[ ] ver.86：スマホ実機・ユーザー受入。
