@@ -1,8 +1,8 @@
 {
-  "commit": "f62ccc2ae21e3b719dc470ae0e434895c2b9d5de",
-  "version": 88,
+  "commit": "0455d0bcea7258656d4844e1fd036d56ac983d2e",
+  "version": 89,
   "gitBlobs": {
-    "bouken/common/buffs.js": "47bd448294bc53924cd85757aa1f1f77497cb13e",
+    "bouken/common/buffs.js": "de07627d9d1108ef09ff9978afb5ad760f42872b",
     "bouken/common/collection.js": "9a52a2e880de0c8e4bf0f48d45966e87ef4436a9",
     "bouken/common/events.js": "7e8b74d541b84d702a9a9f90c1511c77f901812f",
     "bouken/common/explore.js": "6223e842af37383d101efbf9a479c0bc734f6cd4",
@@ -17,10 +17,10 @@
     "bouken/data/skills.json": "7ade9fddd739c586f5c7954e6aa80ea66c8eff19",
     "bouken/data/terrains.json": "316bd119f274ac678224e380fe41cee4976772e2",
     "bouken/data/world_facility_counts.json": "a1dfda8921560a21cb28afb14d1a09f5e0859b63",
-    "bouken/world.html": "0ef488abd1d15c2ad434a3ecfc0fca1eba80378c",
-    "bouken/worldcreate.html": "dde62577fc53246dfa76a4597fac730c01157d5f",
-    "bouken/common/version.js": "c5014026591ba1ae72cc0726a221a1e191852265"
+    "bouken/world.html": "08be1a9b557e6c84bf1bc166db370690078af943",
+    "bouken/worldcreate.html": "76f15b67597f1c6da3dee5854a862ea8809ccae7",
+    "bouken/common/version.js": "8abe97775c937e4683f0f4e7fe42d09e27142971"
   },
   "originalResearchCommit": "bf5a69255f627090c2e6fa2ce089209b88d72a4f",
-  "note": "ver.88: runtime sources regenerated. commit is the implementation base; gitBlobs identifies exact file contents."
+  "note": "ver.89: runtime sources regenerated. commit is the implementation base; gitBlobs identifies exact file contents."
 }
