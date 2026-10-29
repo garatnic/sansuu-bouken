@@ -341,4 +341,5 @@ forecast-runtime.test.cjsでブラウザWorkerと同じbootstrap（全ハッシ�
 
 【ver.85 Phase 3】
 [x] 強化状態による分析/自動編成の非表示、6モード解放、自動運転0/3/6/無制限。
-[ ] 公開実画面確認とユーザー受入。verification/robot-access-v85.mdへ記録。
+[x] 本番READY・仮セーブ実画面で非表示/取り付け後表示/モード制限・保存/運転0・3・6・無制限の経路を確認。verification/robot-access-v85.md。
+[ ] ver.85：スマホ実機・ユーザー受入。
