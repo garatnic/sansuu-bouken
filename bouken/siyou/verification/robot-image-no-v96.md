@@ -12,3 +12,10 @@
 - 本体HTML/プレビューWorkerの?v=96、予想用manifest.version=96・対象ソースハッシュを更新。
 - 画像・描画・取得演出・画面デザインは未変更。robot_parts.png追加と番号による描画接続はToDo。
 - スマホ実機・ユーザー通常セーブでの再開は未実施。公開反映はコミット後に確認する。
+
+## GitHub・公開反映確認
+
+- 実装コミット: 5bed9534e8451cef550b3d97c0af8295dd6a1e0d。mainへexpected_sha指定で反映し、GitHubのschema.js全文・version.js=96とコミットtreeを確認。
+- Vercel Production: dpl_FnPEwY8zjGE2Kouyp7scMyFH4zLN / READY / GitHub SHA一致。
+- 公開先: https://sansuu-bouken.vercel.app/bouken/ 。common/version.js、common/schema.js、tests/party-recommendation/source-manifest.json、home.htmlをHTTP 200で取得し、更新後ファイルとバイト単位で一致。
+- ブラウザ操作・スマホ実機・ユーザー通常セーブでの確認は未実施。今回は画像管理メタデータ追加のみ。
