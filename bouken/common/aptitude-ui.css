@@ -1,0 +1,7 @@
+.aptitude-track{display:flex;min-width:0;overflow:hidden;background:#e1e6e2;border-radius:3px;height:8px}
+.aptitude-fill{display:block;flex:none;height:100%}
+.aptitude-stacked{margin-top:5px;width:100%}
+.aptitude-detail{margin-top:20px;min-width:0}
+.aptitude-row{display:grid;grid-template-columns:6em minmax(0,1fr) 3ch;align-items:center;gap:8px;margin-top:9px;font-size:13px}
+.aptitude-label{white-space:nowrap}
+.aptitude-value{text-align:right;font-variant-numeric:tabular-nums}

@@ -1,6 +1,6 @@
 {
-  "commit": "27eca5fe8dc65c8e22856cda1069f2e9bc6cea2d",
-  "version": 99,
+  "commit": "91d11629c7dbd64d9326d77f568d4bd747574a17",
+  "version": 101,
   "gitBlobs": {
     "bouken/common/buffs.js": "6af7b907f53d698c211b0e36a2d70d67902a952a",
     "bouken/common/collection.js": "9a52a2e880de0c8e4bf0f48d45966e87ef4436a9",
@@ -17,11 +17,11 @@
     "bouken/data/skills.json": "7ade9fddd739c586f5c7954e6aa80ea66c8eff19",
     "bouken/data/terrains.json": "316bd119f274ac678224e380fe41cee4976772e2",
     "bouken/data/world_facility_counts.json": "a1dfda8921560a21cb28afb14d1a09f5e0859b63",
-    "bouken/world.html": "d38ac82499703c4bc1a8e95a445def7942d8d120",
-    "bouken/worldcreate.html": "9f85a569fa3a2a407c5c679a26e4e7786f4451b2",
-    "bouken/common/version.js": "d83b9f2eb88834a87b12e8be146d62b72aee51cc"
+    "bouken/world.html": "a9a994f01ff07bafe0485cde20ff64c86601c300",
+    "bouken/worldcreate.html": "b552731a68ad0bb23220eb91699fc9592c56aa12",
+    "bouken/common/version.js": "26a45b581944ab6ac275ea14ba2963123a033240"
   },
   "originalResearchCommit": "bf5a69255f627090c2e6fa2ce089209b88d72a4f",
-  "note": "ver.99: robot status button background and corner style; runtime hashes updated.",
+  "note": "ver.101: runtime sources regenerated. commit is the implementation base; gitBlobs identifies exact file contents.",
   "runtimeUpdate": "ver.99: cache references."
 }

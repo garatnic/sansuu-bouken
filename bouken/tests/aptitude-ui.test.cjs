@@ -1,0 +1,13 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert/strict'),path=require('path');
+const root=path.join(__dirname,'..'),read=p=>fs.readFileSync(path.join(root,p),'utf8');
+const chars=JSON.parse(read('data/characters.json')),keys=['development','companions','treasure','exploration','special'];
+assert.equal(chars.length,927);for(const c of chars)for(const key of keys){const v=c.aptitudeScores[key];assert(Number.isInteger(v)&&v>=0&&v<=100,`${c.id}/${key}`);}
+const total=c=>keys.reduce((n,k)=>n+c.aptitudeScores[k],0);assert.equal(Math.max(...chars.map(total)),192);
+const dom=require('./helpers/render-dom.cjs')();dom.document.body=dom.document.createElement('body');const context={window:{},document:dom.document};vm.createContext(context);vm.runInContext(read('common/aptitude-ui.js'),context);vm.runInContext(read('common/character-detail.js'),context);
+const ui=context.window.BoukenAptitudeUI;
+for(const c of chars){const stack=ui.stacked(c),detail=ui.detail(c);assert.equal(stack.children.length,5);assert.equal(detail.children.length,6);keys.forEach((key,i)=>{const fill=stack.children[i],row=detail.children[i+1];assert.equal(parseFloat(fill.style.width),c.aptitudeScores[key]/192*100);assert.equal(row.children[1].children[0].style.width,fill.style.width);assert.equal(row.children[1].children[0].style.backgroundColor,fill.style.backgroundColor);assert.equal(row.children[2].textContent,String(c.aptitudeScores[key]));});}
+const max=chars.find(c=>total(c)===192),half={...chars[0],aptitudeScores:{development:96,companions:0,treasure:0,exploration:0,special:0}};
+assert(Math.abs(ui.stacked(max).children.reduce((n,e)=>n+parseFloat(e.style.width),0)-100)<1e-10);assert.equal(ui.stacked(half).children[0].style.width,'50%');assert.equal(ui.stacked(half).children[1].style.width,'0%');
+const show=context.window.BoukenCharacterDetail.show;show(max,{renderAptitude:ui.detail});const dialog=dom.document.body.children[0];assert.equal(dialog.querySelectorAll('.aptitude-row').length,5);show(chars[0]);assert.equal(dialog.querySelectorAll('.aptitude-row').length,0);assert(dialog.children[4].hidden);show(half,{renderAptitude:ui.detail});assert.equal(dom.document.body.children.length,1);assert.equal(dialog.querySelectorAll('.aptitude-row').length,5);
+const html=read('party.html');assert(html.includes('info.append(BoukenAptitudeUI.stacked(c))'));assert(html.includes('renderAptitude:BoukenAptitudeUI.detail'));assert(html.includes('const PAGE_SIZE=20'));
+console.log('PASS: 927 valid records; maximum 192 (6 characters); 96=50%, zero=0%; order/colors, reusable opt-in details, other callers reset; paged roster maintained');
