@@ -14,10 +14,10 @@ window.BoukenSchema=Object.freeze({
   {id:'drive1',imageNo:3,count:91,size:10,part:'ちいさな はぐるま',label:'じどううんてん Lv.1',help:'もくてきちを えらぶと、3マスまでの みちを あんないするよ。さんすうは じぶんで といてね。'},
   {id:'map',imageNo:4,count:111,size:10,part:'たんけんコンパス',label:'マップたんさくへんせい',help:'マップの たんさくが とくいな なかまを えらんでくれるよ。'},
   {id:'explore',imageNo:5,count:156,size:10,part:'パワードリル',label:'どんどんかいたくへんせい',help:'かいたくが とくいな なかまを えらんでくれるよ。'},
-  {id:'drive2',imageNo:6,count:180,size:20,part:'ダブルエンジン',label:'じどううんてん Lv.2',help:'いちどに 6マスまでの みちを あんないするよ。さんすうは じぶんで といてね。'},
+  {id:'drive2',imageNo:6,count:180,size:10,part:'ダブルエンジン',label:'じどううんてん Lv.2',help:'いちどに 6マスまでの みちを あんないするよ。さんすうは じぶんで といてね。'},
   {id:'companion',imageNo:7,count:204,size:10,part:'なかまアンテナ',label:'なかまあつめへんせい',help:'なかまを あつめるのが とくいな パーティーを えらんでくれるよ。'},
   {id:'treasure',imageNo:8,count:250,size:10,part:'おたからセンサー',label:'おたからあつめへんせい',help:'おたからを あつめるのが とくいな パーティーを えらんでくれるよ。'},
-  {id:'drive3',imageNo:9,count:271,size:30,part:'ロケットエンジン',label:'じどううんてん Lv.3',help:'とおくの もくてきちまで みちを あんないできるよ。さんすうは じぶんで といてね。'},
+  {id:'drive3',imageNo:9,count:271,size:10,part:'ロケットエンジン',label:'じどううんてん Lv.3',help:'とおくの もくてきちまで みちを あんないできるよ。さんすうは じぶんで といてね。'},
   {id:'balanced',imageNo:10,count:316,size:10,part:'スーパーCPU',label:'おまかせへんせい',help:'いろいろな ぼうけんに むいた パーティーを えらんでくれるよ。'}
  ].map(Object.freeze)),
  growth(data){

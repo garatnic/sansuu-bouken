@@ -1,6 +1,6 @@
 {
-  "commit": "3345a12c1f42e622a0e4248bc25f83bb54d2827f",
-  "version": 102,
+  "commit": "bb59e2ff6240bb6b0d29628e789194612eaa6f01",
+  "version": 103,
   "gitBlobs": {
     "bouken/common/buffs.js": "6af7b907f53d698c211b0e36a2d70d67902a952a",
     "bouken/common/collection.js": "9a52a2e880de0c8e4bf0f48d45966e87ef4436a9",
@@ -8,7 +8,7 @@
     "bouken/common/explore.js": "6223e842af37383d101efbf9a479c0bc734f6cd4",
     "bouken/common/party.js": "acab5d379a8c6e6625067801e5b5041aa0dd2047",
     "bouken/common/progress.js": "985fc7edda7622e82ccd85810cfe5b768f5ffb72",
-    "bouken/common/schema.js": "f03a79add4b539b8329fc089dccbc7bb8670effc",
+    "bouken/common/schema.js": "118cf84e92adbd4edc4ccbb84a752fdd6976741e",
     "bouken/common/worldgen.js": "9121fd5576dd91978c72bef2899fd2a439be952c",
     "bouken/data/characters.json": "1736be189c4e5d91432972a458ce0335e283bad2",
     "bouken/data/collection_items.json": "776d3a6fe6e6ca3bef3224a18853765605190d13",
@@ -17,11 +17,11 @@
     "bouken/data/skills.json": "7ade9fddd739c586f5c7954e6aa80ea66c8eff19",
     "bouken/data/terrains.json": "316bd119f274ac678224e380fe41cee4976772e2",
     "bouken/data/world_facility_counts.json": "a1dfda8921560a21cb28afb14d1a09f5e0859b63",
-    "bouken/world.html": "7505178d6d96ffa3c23624047b86e0653f14ea77",
-    "bouken/worldcreate.html": "e4f943425b6a17d741b5669ba4e6e87bd024cb88",
-    "bouken/common/version.js": "b429aa4316bdd2dfc5b89530c5fb80fc0f0a22de"
+    "bouken/world.html": "b742c750ca12d89aa10a1c56ddf1e5b29ba4d9c7",
+    "bouken/worldcreate.html": "25bbf9ed174a4d32e8336a7290981de874c13f6d",
+    "bouken/common/version.js": "c9bbd6afdf70248de321a97c25c50ffe5e049338"
   },
   "originalResearchCommit": "bf5a69255f627090c2e6fa2ce089209b88d72a4f",
-  "note": "ver.102: runtime sources regenerated. commit is the implementation base; gitBlobs identifies exact file contents.",
+  "note": "ver.103: runtime sources regenerated. commit is the implementation base; gitBlobs identifies exact file contents.",
   "runtimeUpdate": "ver.99: cache references."
 }

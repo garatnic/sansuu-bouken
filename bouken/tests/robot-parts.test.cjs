@@ -17,9 +17,16 @@ let calls=[];c.BoukenNoticeDialog={show:async o=>{calls.push(o);await o.onAccept
 await c.BoukenHomeGrowthNotice.show();s=c.BoukenSave.load();assert.equal(s.robotGrowth.features.analysis.stage,4);assert.equal(calls.length,2);assert(calls[1].fullScreen);assert(!s.robotGrowth.features.random);await c.BoukenHomeGrowthNotice.show();s=c.BoukenSave.load();assert.equal(s.robotGrowth.features.random.stage,1);
 // Reload between installation and explanation resumes explanation, not installation.
 delete memory[S.key];s=fresh();S.announceRobotSearch(s);s.world=world(s);s.world.explored.fill(true);S.claimRobotPart(s,s.world);S.installRobotPart(s,'analysis');c.BoukenSave.save(s);calls=[];await c.BoukenHomeGrowthNotice.show();assert.equal(calls.length,1);assert(calls[0].fullScreen);assert.equal(c.BoukenSave.load().robotGrowth.features.analysis.stage,4);
-// Every feature is sequential, including 20/30-size engine upgrades at high ownership.
+// Every feature is sequential, all using 10x10, including both engine upgrades.
 s=fresh(927);for(const feature of S.robotFeatures){assert.equal(S.robotNext(s).id,feature.id);assert(S.announceRobotSearch(s));assert.equal(S.announceRobotSearch(s),false);w=world(s,feature.size===10?20:10);w.explored.fill(true);assert.equal(S.claimRobotPart(s,w),false);w=world(s,feature.size);w.explored.fill(true);assert(S.claimRobotPart(s,w));assert(S.installRobotPart(s,feature.id));assert.equal(S.announceRobotSearch(s),false);assert(S.readRobotHelp(s,feature.id));}assert.equal(S.robotNext(s),null);assert.equal(S.announceRobotSearch(s),false);
+// Both engine searches now require a new 10x10 world, even for existing stage-1 saves.
+for(const id of ['drive2','drive3']){
+ s=fresh();for(const f of S.robotFeatures){if(f.id===id)break;s.robotGrowth.features[f.id]={stage:4};}
+ assert.equal(S.robotNext(s).size,10);assert(S.announceRobotSearch(s));
+ for(const size of [20,30]){w=world(s,size);w.explored.fill(true);w.robotSearch=id;assert.equal(S.claimRobotPart(s,w),false);}
+ s=JSON.parse(JSON.stringify(s));w=world(s,10);w.explored.fill(true);assert(S.claimRobotPart(s,w));assert.equal(s.robotGrowth.features[id].stage,2);assert(S.installRobotPart(s,id));assert(S.readRobotHelp(s,id));
+}
 // Party growth remains independent during search and part-owned stages.
 for(const stage of [1,2]){delete memory[S.key];s=fresh(49);s.robotGrowth.partyCapacity=1;s.robotGrowth.features.analysis={stage,afterWorld:0};c.BoukenSave.save(s);calls=[];await c.BoukenHomeGrowthNotice.show();const saved=c.BoukenSave.load();assert.equal(saved.robotGrowth.partyCapacity,2);assert.equal(saved.robotGrowth.features.analysis.stage,stage);assert.equal(calls.length,1);}
-console.log('PASS: ownership and activation gates; old/wrong/new worlds; all-explored before facilities; normal reward intact; abandon; exact-once and failed save retry; persistent install/help recovery; all 10 ordered parts and 10/20/30 sizes; independent party priority');
+console.log('PASS: ownership and activation gates; old/wrong/new worlds; all-explored before facilities; normal reward intact; abandon; exact-once and failed save retry; persistent install/help recovery; all 10 ordered parts at 10x10; independent party priority');
 })().catch(e=>{console.error(e);process.exitCode=1});
