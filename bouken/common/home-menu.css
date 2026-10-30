@@ -36,3 +36,6 @@ body{display:flex;flex-direction:column;height:100dvh;min-height:540px}
  .home-hero .page-back{padding:8px 10px!important}
  .home-status:not(:empty){flex:none;margin:0 0 8px;min-height:0}
 }
+
+/* Robot status: close-up face, matching the supplied button reference. */
+#robotState.button-robot{flex:none;margin:0;padding:10px 6px;border:2px solid #123642;border-radius:38px;background:#000 url('../assets/sheets/robot2.png') center 38%/100% auto no-repeat;color:#fff;font-size:clamp(19px,5.8vw,38px);font-weight:800;line-height:1.2;white-space:nowrap;letter-spacing:.025em;image-rendering:pixelated}
