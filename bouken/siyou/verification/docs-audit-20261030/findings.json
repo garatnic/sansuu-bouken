@@ -1,0 +1,229 @@
+{
+  "countingRule": "同一原因・同一改定の複数ファイル/記述を1件とする。各指摘は主分類を1つだけ付与。原文維持4リンクは1指摘。",
+  "findings": [
+    {
+      "id": "A-01",
+      "category": "A",
+      "issue": "おすすめ本体が未実装/未統合という現行案内",
+      "evidence": "e6f4065/ver.71、party.html、party-recommendation.html、正式統合記録",
+      "action": "README/ToDoを統合済みにし、研究報告の旧G禁止を履歴として明示",
+      "status": "修正済み"
+    },
+    {
+      "id": "A-02",
+      "category": "A",
+      "issue": "ロボ画像が後日/未実装のまま",
+      "evidence": "0332243/ver.97、common/robot-images.js、assets/sheetsの実寸",
+      "action": "成長仕様・README/ToDoを導入済みに整理、旧仮アイコンは導入時履歴",
+      "status": "修正済み"
+    },
+    {
+      "id": "A-03",
+      "category": "A",
+      "issue": "ロボ次Phase未実装とPhase1〜4実装済みが混在",
+      "evidence": "31673fa、robot-state.js、robot-lifecycle.test.cjs、ver.84/85/86",
+      "action": "成長仕様の先頭に現在地を置き、版ごとの未実装を当時限定にする",
+      "status": "修正済み"
+    },
+    {
+      "id": "A-04",
+      "category": "A",
+      "issue": "5×5のやめる非表示が旧節では未実装",
+      "evidence": "bb5ba267、world.html寸法条件、023b940の受入",
+      "action": "README/ToDoと運転/成長仕様の先頭をver.100実装・受入済みに整理",
+      "status": "修正済み"
+    },
+    {
+      "id": "A-05",
+      "category": "A",
+      "issue": "Phase6が今後の大量測定/予備ゲート待ちに見える",
+      "evidence": "8371962、v2/phase6-audit/README.md・verification.json（17検証、追加冒険0）",
+      "action": "v2/ロードマップの先頭に監査完了・旧計画置換を明示",
+      "status": "修正済み"
+    },
+    {
+      "id": "A-06",
+      "category": "A",
+      "issue": "適性データが未追加と読める記述と現在データが不一致",
+      "evidence": "302356f、d749a19、927体aptitudeScoresとv3/scores.csv全件一致",
+      "action": "研究v2と実データv3追加済み/UI未実装を分ける",
+      "status": "修正済み"
+    },
+    {
+      "id": "B-01",
+      "category": "B",
+      "issue": "ver.71 UI確認待ちが古い案内に残る",
+      "evidence": "正式統合_20261027.mdの「全部ok！」確認票",
+      "action": "統合済み/当該UI受入済み、品質課題・後続UIは別と記載",
+      "status": "修正済み"
+    },
+    {
+      "id": "B-02",
+      "category": "B",
+      "issue": "ver.75/76の確認待ちと後続受入が並存",
+      "evidence": "todo旧全文のver.75/76/77ユーザー受入、024d1d6",
+      "action": "結果/仲間詳細の検証記録へ後日注記、ToDoから解消済みを除外",
+      "status": "修正済み"
+    },
+    {
+      "id": "B-03",
+      "category": "B",
+      "issue": "ver.79/80/85の検証記録に古い受入待ち",
+      "evidence": "todo旧全文、robot-facility-v80.md、robot-abandon-v81.md、ver.85「検証OK」",
+      "action": "限定確認票受入のみを追記。長時間/全モード反復は維持",
+      "status": "修正済み"
+    },
+    {
+      "id": "B-04",
+      "category": "B",
+      "issue": "ver.90/95/96〜99の古い待ちと後続受入が混在",
+      "evidence": "todo旧全文、888df76、3f71353、画像/状態ボタン確認票",
+      "action": "現行ToDoを受入済みに整理、ver.95/96記録と現行ボタン案内へ限定注記",
+      "status": "修正済み"
+    },
+    {
+      "id": "C-01",
+      "category": "C",
+      "issue": "目的地だけ黒1マスの確認省略案が旧未実装予定として残る",
+      "evidence": "bf4271c/1541d34撤回、じどううんてんロボ仕様の撤回節、現行tap",
+      "action": "実装予定から除外、旧記述は当時の履歴と明示",
+      "status": "修正済み"
+    },
+    {
+      "id": "C-02",
+      "category": "C",
+      "issue": "旧人数/モード所持閾値が本体現行と混在",
+      "evidence": "schema.js robotFeatures/robotAccess、party.js、ver.82/85",
+      "action": "本体は人数49/131/228/293＋ホーム、機能は装着状態。旧閾値は研究履歴",
+      "status": "修正済み"
+    },
+    {
+      "id": "C-03",
+      "category": "C",
+      "issue": "ロボ状態ボタンが黒背景/別角丸のまま読める",
+      "evidence": "76579a4/ver.99、home-menu.css、3f71353受入",
+      "action": "現行は白/共通角丸/robot2.pngと先頭明記、ver.98は履歴",
+      "status": "修正済み"
+    },
+    {
+      "id": "C-04",
+      "category": "C",
+      "issue": "サイズ選択→独立出発ボタン/中央開始が現行説明に残る",
+      "evidence": "b908735/ver.93、1be4222/ver.94、fd11616/ver.95、worldcreate/worldgen",
+      "action": "直接出発3ボタン・置換確認・通常外周/5中央を入口/ゲーム仕様に統合",
+      "status": "修正済み"
+    },
+    {
+      "id": "C-05",
+      "category": "C",
+      "issue": "未承認v2提案/v1現行と配点2.0.0確定の優先順が不明",
+      "evidence": "f511bcc、scoring-v2.json、v2確定仕様",
+      "action": "v1/提案を履歴として明示し、v2確定とv3別系統の参照順を整理",
+      "status": "修正済み"
+    },
+    {
+      "id": "D-01",
+      "category": "D",
+      "issue": "B04表は現在地、注意書きは最後の開拓位置と矛盾",
+      "evidence": "6f62614/ver.89、common/buffs.js guide、研究資料の表/注意",
+      "action": "注意書きを旧仕様と明記、現在地と距離6/10/15は維持",
+      "status": "修正済み"
+    },
+    {
+      "id": "D-02",
+      "category": "D",
+      "issue": "入口がver.69時点の状態/更新日と後続追記の寄せ集め",
+      "evidence": "common/version.js=100、各改定コミット、元README/ゲーム仕様",
+      "action": "基準SHAを明示した現行入口/規則に再構成、旧全文を保存",
+      "status": "修正済み"
+    },
+    {
+      "id": "D-03",
+      "category": "D",
+      "issue": "実装構成の責務一覧がロボ/推薦/予想/適性追加前",
+      "evidence": "common/schema/result/robot-state/robot-images/party-recommendation/party-forecast",
+      "action": "現在の責務と保存境界を追記、CSVと現行JSONの正本を分離",
+      "status": "修正済み"
+    },
+    {
+      "id": "E-01",
+      "category": "E",
+      "issue": "[x]を実装・受入両方と定義し旧チェック表が混在",
+      "evidence": "旧todo冒頭/各版追記、限定ユーザー確認記録",
+      "action": "現在の残件を未実装/未決定/未検証/最終整理に分類し、旧全チェック表を履歴へ",
+      "status": "修正済み"
+    },
+    {
+      "id": "E-02",
+      "category": "E",
+      "issue": "推薦E品質未合格とG統合未承認が混同される",
+      "evidence": "正式統合の品質と採用分離、旧研究レポート",
+      "action": "品質課題を残し、G統合済みを撤回しない。旧1,500回比較は再開しない",
+      "status": "修正済み"
+    },
+    {
+      "id": "E-03",
+      "category": "E",
+      "issue": "後続の限定OKをロボ全体/長時間等へ拡大しかねない",
+      "evidence": "todo/変更履歴の版別確認票、各verificationの未実施範囲",
+      "action": "受入の参照表と根拠不足の対象を明示。v81/Phase1/4/v87/88/89/94等は未確定を維持",
+      "status": "修正済み"
+    },
+    {
+      "id": "E-04",
+      "category": "E",
+      "issue": "難易度仕様決定/適性データ追加を実装UIと混同し得る",
+      "evidence": "算数難易度切り替え仕様、math.js/world.html、eb73b82、aptitudeScores未参照UI",
+      "action": "難易度は決定済み未実装、適性UIは相談後実装、既存データは追加済みに区分",
+      "status": "修正済み"
+    },
+    {
+      "id": "E-05",
+      "category": "E",
+      "issue": "v3再生成スクリプト・採用承認範囲の資料が不足",
+      "evidence": "v3ディレクトリはREPORT.md/scores.csvのみ、302356f/d749a19/eb73b82",
+      "action": "データの存在とCSV一致だけ確認。Phase7完了や採点精度承認を推測せず判断待ちに記録",
+      "status": "未修正・判断待ち"
+    },
+    {
+      "id": "F-01",
+      "category": "F",
+      "issue": "原本/旧ToDo/研究/検証の入口が重複し現行案内が不明",
+      "evidence": "元README/旧todo/history/verification/source_csvの参照",
+      "action": "新入口、型別README、監査前5本文保存、全166件一覧を追加",
+      "status": "修正済み"
+    },
+    {
+      "id": "F-02",
+      "category": "F",
+      "issue": "旧docs-v69-check.pyの名称/説明完全一致前提が現在は不適切",
+      "evidence": "CSVごと名称197/説明377差、割当ID/Lv一致、後続名称/説明更新履歴",
+      "action": "履歴用と明示し、原本を更新しない。今回のread-only checkerで差分と不変フィールドを区別",
+      "status": "修正済み"
+    },
+    {
+      "id": "F-03",
+      "category": "F",
+      "issue": "旧アーカイブの相対リンク4件が欠落先を向く",
+      "evidence": "history/20261025整理前/siyou/verification内4参照、現行verificationに原本あり",
+      "action": "history READMEへ現存先の対応表。元の4リンクは意図的に保持",
+      "status": "参照案内修正・旧リンク4件は原文維持"
+    },
+    {
+      "id": "F-04",
+      "category": "F",
+      "issue": "robot-state-v86.jpgが画像としてデコード不能",
+      "evidence": "Git blobサイズ60057/固定SHA、Pillow Image.open失敗。元blob照合済み",
+      "action": "既存証拠は削除/再撮影せず保持。元画像の所在/復旧確認をToDoへ",
+      "status": "未修正・要確認"
+    },
+    {
+      "id": "G-01",
+      "category": "G",
+      "issue": "予想Workerのmanifest99と本体100の3対象不一致",
+      "evidence": "source-manifest.json、world.html/worldcreate.html/version.js、forecast-runtime.test.cjs Source changed",
+      "action": "今回はコード変更禁止のため未修正。ToDo優先課題に再現コマンドと影響範囲を記録",
+      "status": "未修正・本体修正が必要"
+    }
+  ]
+}

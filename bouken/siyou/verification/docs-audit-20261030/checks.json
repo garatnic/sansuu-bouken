@@ -1,0 +1,168 @@
+{
+  "baselineCommit": "023b9404a91bcfbcc7f94095109831a1cbac47f7",
+  "gameVersion": 100,
+  "scope": "documentation only; no new game browser run or historic experiment rerun",
+  "documentChecksPassed": true,
+  "checks": {
+    "inputInventory166": {
+      "passed": true,
+      "detail": null
+    },
+    "allOriginalFilesRetained": {
+      "passed": true,
+      "detail": []
+    },
+    "all518NonDocumentBlobsUnchanged": {
+      "passed": true,
+      "detail": []
+    },
+    "originalArchiveDataAndEvidenceUnchanged": {
+      "passed": true,
+      "detail": {
+        "checked": 72,
+        "mismatches": []
+      }
+    },
+    "fiveOriginalEntryDocumentsPreserved": {
+      "passed": true,
+      "detail": null
+    },
+    "927UniqueCharacterIds": {
+      "passed": true,
+      "detail": null
+    },
+    "v3All4635StoredScoresMatch": {
+      "passed": true,
+      "detail": null
+    },
+    "fiveScoresAreIntegers0To100": {
+      "passed": true,
+      "detail": null
+    },
+    "characters.csvIds": {
+      "passed": true,
+      "detail": null
+    },
+    "927キャラクター割当結果.csvIds": {
+      "passed": true,
+      "detail": null
+    },
+    "927SkillIdsLevelsCostsMatch": {
+      "passed": true,
+      "detail": null
+    },
+    "480CollectionNamesMatch": {
+      "passed": true,
+      "detail": null
+    },
+    "96RewardAssignmentsMatch": {
+      "passed": true,
+      "detail": null
+    },
+    "120AchievementRowsMatch": {
+      "passed": true,
+      "detail": null
+    },
+    "allDocumentationJsonParse": {
+      "passed": true,
+      "detail": 16
+    },
+    "historicZip84MembersCRC": {
+      "passed": true,
+      "detail": null
+    },
+    "noMissingActiveRelativeLinks": {
+      "passed": true,
+      "detail": []
+    },
+    "only4PreservedHistoricBrokenLinks": {
+      "passed": true,
+      "detail": [
+        {
+          "source": "bouken/siyou/history/20261025整理前/siyou/verification/e08-v47-report.md",
+          "target": "e08-v47-comparison.png"
+        },
+        {
+          "source": "bouken/siyou/history/20261025整理前/siyou/verification/terrain-v48-report.md",
+          "target": "terrain-v48-blessings.png"
+        },
+        {
+          "source": "bouken/siyou/history/20261025整理前/siyou/verification/terrain-v48-report.md",
+          "target": "terrain-v48-e08.png"
+        },
+        {
+          "source": "bouken/siyou/history/20261025整理前/siyou/verification/terrain-v48-report.md",
+          "target": "e09-v48-migration.json"
+        }
+      ]
+    },
+    "5x5ConditionAndAcceptedTodo": {
+      "passed": true,
+      "detail": null
+    },
+    "temporaryOpenAllRemovalTodoPreserved": {
+      "passed": true,
+      "detail": null
+    },
+    "withdrawnBypassNotPending": {
+      "passed": true,
+      "detail": null
+    },
+    "phase6CompletePhase7Pending": {
+      "passed": true,
+      "detail": null
+    },
+    "difficultyAndD04StillUnimplemented": {
+      "passed": true,
+      "detail": null
+    },
+    "knownWorkerFailureAccuratelyRecorded": {
+      "passed": true,
+      "detail": null
+    },
+    "28UniqueFindingsWithEvidence": {
+      "passed": true,
+      "detail": null
+    }
+  },
+  "failures": [],
+  "csvDifferences": {
+    "characters.csv": {
+      "rows": 927,
+      "nameDifferences": 197,
+      "descriptionDifferences": 377
+    },
+    "927キャラクター割当結果.csv": {
+      "rows": 927,
+      "nameDifferences": 197,
+      "descriptionDifferences": 377
+    }
+  },
+  "linksChecked": 701,
+  "findingCounts": {
+    "A": 6,
+    "B": 4,
+    "C": 5,
+    "D": 3,
+    "E": 5,
+    "F": 4,
+    "G": 1
+  },
+  "knownUnfixedWorker": {
+    "manifestVersion": 99,
+    "mismatches": [
+      "bouken/world.html",
+      "bouken/worldcreate.html",
+      "bouken/common/version.js"
+    ],
+    "exitCode": 1,
+    "output": "Error: Source changed: bouken/world.html\n    at evalmachine.<anonymous>:7:143\n    at async Promise.all (index 15)\n    at async Object.bootstrap (evalmachine.<anonymous>:5:2)\n    at async /workspace/scratch/d68e5d364e63/sansuu-bouken/bouken/tests/forecast-runtime.test.cjs:7:20"
+  },
+  "notVerified": [
+    "robot-state-v86.jpg visual content (cannot decode)",
+    "all external URLs/live deployment states",
+    "all historic experiment results rerun",
+    "new phone/browser acceptance",
+    "v3 generation source/approval scope"
+  ]
+}

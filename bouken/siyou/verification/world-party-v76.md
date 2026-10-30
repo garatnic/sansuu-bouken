@@ -18,3 +18,7 @@ facility-event-ui/world-portraits/party-restore/party-recommendation-game/party-
 
 ## ユーザー受入
 2026-10-28 ユーザー「全部OK」。ver.76確認票を受入済み。追加の詳細画像の縦横比報告はver.77で修正し、別途確認する。
+
+
+## 2026-10-30 監査時の受入状態の整理
+ver.76確認票はtodo.txtの「全部OK」で受入済み。報告された画像比率は別途ver.77で修正・受入済み。 当時の実行結果・SHA・測定値・未実施項目は原文のまま保持する。現在の全体残件は../todo.txt。

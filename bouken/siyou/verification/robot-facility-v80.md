@@ -15,3 +15,7 @@
 ## 本番公開（2026-10-29）
 PR #3をmainへマージ（1e30aa8e0270fc6c3b8978b325bd01c216a638ab）。Vercel production dpl_8JfeF9SBnF1uGgi5LmsMah1VFgzV READY、コミット一致、sansuu-bouken.vercel.app割当を確認。通常URLのタイトルでバージョン80を実ブラウザ確認。本番auto-drive.jsをHTTP 200で取得し、exploredのみの判定が存在し旧explored||revealed判定がないことを確認。
 GitHub Pagesの初回確認は79で伝播待ち。修正後のユーザー実機・実セーブ・長時間は未確認。
+
+
+## 2026-10-30 監査時の受入状態の整理
+ver.80施設実開拓判定の修正確認票はtodo.txtとrobot-abandon-v81.mdの「全部OK」で受入済み。長時間/全条件は別。 当時の実行結果・SHA・測定値・未実施項目は原文のまま保持する。現在の全体残件は../todo.txt。

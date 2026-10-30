@@ -1,0 +1,3422 @@
+[
+  {
+    "path": "README.md",
+    "sha": "6a26e6e3d0e7321d2726d122bd05dd7200eaff26",
+    "size": 414
+  },
+  {
+    "path": "bouken/README.md",
+    "sha": "43bae210f652bf0578b09874eff94e5f771619f7",
+    "size": 13569
+  },
+  {
+    "path": "bouken/assets/sheets/README.md",
+    "sha": "e249762c80252531fe1fb1f580d80207996f9e9b",
+    "size": 1728
+  },
+  {
+    "path": "bouken/assets/sheets/button_achieveme.jpg",
+    "sha": "d78167bea24efafd35cbfb51915301946207948f",
+    "size": 15514
+  },
+  {
+    "path": "bouken/assets/sheets/button_character.png",
+    "sha": "c311dab7f6d7b94dd578d4412b4b3912b211c165",
+    "size": 273968
+  },
+  {
+    "path": "bouken/assets/sheets/button_museum.png",
+    "sha": "432d6204f19a7154ad7856d1f520f763005d015c",
+    "size": 211948
+  },
+  {
+    "path": "bouken/assets/sheets/button_newworld.png",
+    "sha": "3e8f8f21f33f093434e4ed5be9ae257c4c8043d7",
+    "size": 64114
+  },
+  {
+    "path": "bouken/assets/sheets/button_party.png",
+    "sha": "ab448e7ca7540e099429502a4085a11257ae14a0",
+    "size": 32945
+  },
+  {
+    "path": "bouken/assets/sheets/character_sheet.png",
+    "sha": "a9305347c16ebce0d36cbd80a323e0ce7c7e6ba4",
+    "size": 21802802
+  },
+  {
+    "path": "bouken/assets/sheets/character_sheet.png.part01",
+    "sha": "6a45d8cd1775e9e5737dc4c808fcecf58f0fe5a4",
+    "size": 6000000
+  },
+  {
+    "path": "bouken/assets/sheets/character_sheet.png.part02",
+    "sha": "e469906faf6192d57872e467efa8725eb6b6d858",
+    "size": 6000000
+  },
+  {
+    "path": "bouken/assets/sheets/character_sheet.png.part03",
+    "sha": "ee251dc52fbfe985db7b3ed04ab4f5338803b0c7",
+    "size": 6000000
+  },
+  {
+    "path": "bouken/assets/sheets/character_sheet.png.part04",
+    "sha": "5e2949731ad8c7f75689914f7a4ee8eaee1fd1b8",
+    "size": 3802802
+  },
+  {
+    "path": "bouken/assets/sheets/event_tiles.png",
+    "sha": "f44e3ad425db057513c5777db76fac84ae09fcae",
+    "size": 23358
+  },
+  {
+    "path": "bouken/assets/sheets/field_tiles.png",
+    "sha": "3e8f8f21f33f093434e4ed5be9ae257c4c8043d7",
+    "size": 64114
+  },
+  {
+    "path": "bouken/assets/sheets/home.jpg",
+    "sha": "feca1eaa2c92af65aa7004f37a6152f54bfe7383",
+    "size": 57015
+  },
+  {
+    "path": "bouken/assets/sheets/manifest.json",
+    "sha": "59031ba19143c5d63b85f88cf3b6dbc9a9fce24c",
+    "size": 2133
+  },
+  {
+    "path": "bouken/assets/sheets/museum.png",
+    "sha": "fb43050dcca66df94d173b3d843d80703acca1fc",
+    "size": 16235769
+  },
+  {
+    "path": "bouken/assets/sheets/museum.png.part01",
+    "sha": "0914a065eb3a1978a87790fdfe45f59c9aeef0cb",
+    "size": 6000000
+  },
+  {
+    "path": "bouken/assets/sheets/museum.png.part02",
+    "sha": "c42f6ee86c0aff6e72b39bd0f95a99610a85a94e",
+    "size": 6000000
+  },
+  {
+    "path": "bouken/assets/sheets/museum.png.part03",
+    "sha": "2d71a18b2a0842a6b980b8ea2abbc5021cd5cf8c",
+    "size": 4235769
+  },
+  {
+    "path": "bouken/assets/sheets/myworld.jpg",
+    "sha": "a35d99c49e219b3c0a6a5d62992254bfc38736af",
+    "size": 233479
+  },
+  {
+    "path": "bouken/assets/sheets/restore.py",
+    "sha": "06dc934b7d1c0f450db109e7f6b40c59fb35187c",
+    "size": 703
+  },
+  {
+    "path": "bouken/assets/sheets/robot.png",
+    "sha": "a2224d124ea3f000f09654ecc3899b81c8267f40",
+    "size": 69341
+  },
+  {
+    "path": "bouken/assets/sheets/robot2.png",
+    "sha": "16705d6794c0f25ca7a3e0c75b1340ab617063b0",
+    "size": 150378
+  },
+  {
+    "path": "bouken/assets/sheets/robot_functions.png",
+    "sha": "2a71fab50c0d2cd3b40aa3be7310cba78ebe95a5",
+    "size": 6435376
+  },
+  {
+    "path": "bouken/assets/sheets/robot_parts.png",
+    "sha": "7d9c77859e626c3c588ed1536e6223a5017392dc",
+    "size": 276462
+  },
+  {
+    "path": "bouken/assets/sheets/tutorial01.png",
+    "sha": "a29f3b9089dfccc3c11ab5cc92d5d06336e6382f",
+    "size": 583188
+  },
+  {
+    "path": "bouken/assets/sheets/tutorial02.png",
+    "sha": "c0c4b403967d1692fdff0399cfac3fa2619189e6",
+    "size": 612494
+  },
+  {
+    "path": "bouken/assets/sheets/tutorial03.png",
+    "sha": "784cca5159fa0f5c5c6b8aa6e1a7eb461eaa4637",
+    "size": 588665
+  },
+  {
+    "path": "bouken/assets/sheets/tutorial04.png",
+    "sha": "01adfe4845d12792f6ae2b3a23a47179e9128a44",
+    "size": 546493
+  },
+  {
+    "path": "bouken/assets/sheets/tutorial05.png",
+    "sha": "08296d162d94793a289fa041e1fced63fa965434",
+    "size": 569171
+  },
+  {
+    "path": "bouken/assets/sheets/tutorial06.png",
+    "sha": "833f5d80298ab84c1853c45eac5c123b7175f979",
+    "size": 594989
+  },
+  {
+    "path": "bouken/assets/sheets/tutorial07.png",
+    "sha": "f00d43513b3ca27a52b35ffb6f59d3f1cff88fef",
+    "size": 600841
+  },
+  {
+    "path": "bouken/assets/sheets/worldselect.jpg",
+    "sha": "2c54c52775d778a6a38d1fe08a4f4c22411c8e24",
+    "size": 99748
+  },
+  {
+    "path": "bouken/assets/tutorial/tutorial01.png",
+    "sha": "a29f3b9089dfccc3c11ab5cc92d5d06336e6382f",
+    "size": 583188
+  },
+  {
+    "path": "bouken/assets/tutorial/tutorial02.png",
+    "sha": "c0c4b403967d1692fdff0399cfac3fa2619189e6",
+    "size": 612494
+  },
+  {
+    "path": "bouken/assets/tutorial/tutorial03.png",
+    "sha": "784cca5159fa0f5c5c6b8aa6e1a7eb461eaa4637",
+    "size": 588665
+  },
+  {
+    "path": "bouken/assets/tutorial/tutorial04.png",
+    "sha": "01adfe4845d12792f6ae2b3a23a47179e9128a44",
+    "size": 546493
+  },
+  {
+    "path": "bouken/assets/tutorial/tutorial05.png",
+    "sha": "08296d162d94793a289fa041e1fced63fa965434",
+    "size": 569171
+  },
+  {
+    "path": "bouken/assets/tutorial/tutorial06.png",
+    "sha": "833f5d80298ab84c1853c45eac5c123b7175f979",
+    "size": 594989
+  },
+  {
+    "path": "bouken/assets/tutorial/tutorial07.png",
+    "sha": "f00d43513b3ca27a52b35ffb6f59d3f1cff88fef",
+    "size": 600841
+  },
+  {
+    "path": "bouken/characters.html",
+    "sha": "d4273db1042dfdfc327f9f8b6ca6364f27c6ac7c",
+    "size": 17273
+  },
+  {
+    "path": "bouken/collection.html",
+    "sha": "b0ac21440ea1b90ea15668260bf3d884d4861f4b",
+    "size": 14522
+  },
+  {
+    "path": "bouken/common/achievement-notice.js",
+    "sha": "a61f5a15f040a443c750671a0efdb138eca0020f",
+    "size": 3037
+  },
+  {
+    "path": "bouken/common/achievements.js",
+    "sha": "d8522a8556d8a33c960070c2689285edbcbdf0a2",
+    "size": 3577
+  },
+  {
+    "path": "bouken/common/auto-drive.js",
+    "sha": "d1a4116ff9216dbb40d7ccc19a1ada991aa3568e",
+    "size": 3894
+  },
+  {
+    "path": "bouken/common/buffs.js",
+    "sha": "6af7b907f53d698c211b0e36a2d70d67902a952a",
+    "size": 8980
+  },
+  {
+    "path": "bouken/common/character-detail.css",
+    "sha": "4217aef333eccf517f3f9d6af0408d16c2429751",
+    "size": 1159
+  },
+  {
+    "path": "bouken/common/character-detail.js",
+    "sha": "42612aa3ccf24e6798447bf7e1d4ab821002f5f5",
+    "size": 2339
+  },
+  {
+    "path": "bouken/common/character-images.js",
+    "sha": "3ce55b4c74152ddd23671c1d8356427c0a765df9",
+    "size": 2035
+  },
+  {
+    "path": "bouken/common/collection.js",
+    "sha": "9a52a2e880de0c8e4bf0f48d45966e87ef4436a9",
+    "size": 3232
+  },
+  {
+    "path": "bouken/common/events.js",
+    "sha": "7e8b74d541b84d702a9a9f90c1511c77f901812f",
+    "size": 6626
+  },
+  {
+    "path": "bouken/common/explore.js",
+    "sha": "6223e842af37383d101efbf9a479c0bc734f6cd4",
+    "size": 1248
+  },
+  {
+    "path": "bouken/common/facility-event-ui.css",
+    "sha": "34cbdcb69345a6aa8eb5fb82b9132dd481aa8f3d",
+    "size": 5322
+  },
+  {
+    "path": "bouken/common/facility-event-ui.js",
+    "sha": "cb58a5e6718ddef6703e9fbdd174289a9eda0c5c",
+    "size": 4311
+  },
+  {
+    "path": "bouken/common/home-growth-notice.js",
+    "sha": "de1aed4b07e0aa44e7e2b9c7ed3141647b2bcc18",
+    "size": 3944
+  },
+  {
+    "path": "bouken/common/home-menu.css",
+    "sha": "56438dc85cdaf5039470942a2cefafa41c034534",
+    "size": 4037
+  },
+  {
+    "path": "bouken/common/item-images.js",
+    "sha": "7d1f8af14392b6cbbc3e8546646d4e465a41a016",
+    "size": 1137
+  },
+  {
+    "path": "bouken/common/master.js",
+    "sha": "6b4203d177158a711ecdf4c4a4fb970d24155fec",
+    "size": 612
+  },
+  {
+    "path": "bouken/common/math.js",
+    "sha": "1d774d00950441d7727b1a842d41eb1fdb837928",
+    "size": 4649
+  },
+  {
+    "path": "bouken/common/notice-dialog.css",
+    "sha": "3b0dd95c456ce2d07e766a3d890668fdd0995acb",
+    "size": 2019
+  },
+  {
+    "path": "bouken/common/notice-dialog.js",
+    "sha": "d02fc06331fb4d6b1587f827a6a2fc9bb6f4687a",
+    "size": 2035
+  },
+  {
+    "path": "bouken/common/party-forecast.css",
+    "sha": "03ce1f1bca805966d063d16a6056c97dfd52c707",
+    "size": 2393
+  },
+  {
+    "path": "bouken/common/party-forecast.js",
+    "sha": "69a5750b7d1665fb34d7ad3dc5997c096bfe1a5e",
+    "size": 3057
+  },
+  {
+    "path": "bouken/common/party-recommendation-frame.js",
+    "sha": "d3cb0d1da1294fae0017fb0ada93f1771e7c7b31",
+    "size": 683
+  },
+  {
+    "path": "bouken/common/party-recommendation.js",
+    "sha": "3e2cfb866a6b689a39b7c8b51aa55751b3895bfb",
+    "size": 1931
+  },
+  {
+    "path": "bouken/common/party.js",
+    "sha": "acab5d379a8c6e6625067801e5b5041aa0dd2047",
+    "size": 830
+  },
+  {
+    "path": "bouken/common/progress.js",
+    "sha": "985fc7edda7622e82ccd85810cfe5b768f5ffb72",
+    "size": 3158
+  },
+  {
+    "path": "bouken/common/result-ui.js",
+    "sha": "49a0fbeb24c5d4293eb97c893c686d5893abc418",
+    "size": 6350
+  },
+  {
+    "path": "bouken/common/result.css",
+    "sha": "0238d729718554e47c6fc024db5de2ec46d66750",
+    "size": 3232
+  },
+  {
+    "path": "bouken/common/result.js",
+    "sha": "66d983b60bcadb7e473ad259db27fcdfce0e138d",
+    "size": 2875
+  },
+  {
+    "path": "bouken/common/robot-images.js",
+    "sha": "8ab8a37f6b1bf6a7d07674a90e5024eac490687c",
+    "size": 1184
+  },
+  {
+    "path": "bouken/common/robot-state.css",
+    "sha": "36ce8043aefe099f3c8409b787e17f9158b7b2b7",
+    "size": 3055
+  },
+  {
+    "path": "bouken/common/robot-state.js",
+    "sha": "a449384eb1e97561d302c42c0a4717c647580f99",
+    "size": 4028
+  },
+  {
+    "path": "bouken/common/save.js",
+    "sha": "834602a9ea80c7ba08a5daba0a6020e35e1e95f3",
+    "size": 1980
+  },
+  {
+    "path": "bouken/common/schema.js",
+    "sha": "f03a79add4b539b8329fc089dccbc7bb8670effc",
+    "size": 7138
+  },
+  {
+    "path": "bouken/common/screen-ui.css",
+    "sha": "1d9f752606584c885d33cf53e106da21cc0c4805",
+    "size": 1943
+  },
+  {
+    "path": "bouken/common/skill-ui.js",
+    "sha": "2442052e9b5b3a30aac185bf2cae349d6a5f2b07",
+    "size": 2101
+  },
+  {
+    "path": "bouken/common/tile-images.js",
+    "sha": "9521fb5890f7249214e12e3b8859b3dbdbf61895",
+    "size": 2623
+  },
+  {
+    "path": "bouken/common/tutorial.css",
+    "sha": "134e0c3ea58acdb93207d9cdddf821d774fc96e2",
+    "size": 4505
+  },
+  {
+    "path": "bouken/common/tutorial.js",
+    "sha": "d0a2691dc86b8e35c5e14345a505756379b42eb5",
+    "size": 9853
+  },
+  {
+    "path": "bouken/common/version.js",
+    "sha": "f54c32db47411dc5567b7f39e4264240eeb4fb38",
+    "size": 28
+  },
+  {
+    "path": "bouken/common/world-preview-worker.js",
+    "sha": "565b2550144b598e8593de47f510ab0720b24c6f",
+    "size": 491
+  },
+  {
+    "path": "bouken/common/world-select.css",
+    "sha": "e9c45b967ee493dc01d619c5a142d688db49b999",
+    "size": 3396
+  },
+  {
+    "path": "bouken/common/world-size-picker.js",
+    "sha": "b9888a2818aa50a89105330ad1b4aa737a43f4c7",
+    "size": 4959
+  },
+  {
+    "path": "bouken/common/worldgen.js",
+    "sha": "9121fd5576dd91978c72bef2899fd2a439be952c",
+    "size": 15518
+  },
+  {
+    "path": "bouken/data/achievements.json",
+    "sha": "ea0c36f88081a304ac4242122016cac597d64aa6",
+    "size": 23785
+  },
+  {
+    "path": "bouken/data/character_groups.json",
+    "sha": "e1e575338ca8f8dc8ea21004ad4cb0fcb7612939",
+    "size": 4725
+  },
+  {
+    "path": "bouken/data/characters.json",
+    "sha": "1736be189c4e5d91432972a458ce0335e283bad2",
+    "size": 883463
+  },
+  {
+    "path": "bouken/data/collection_groups.json",
+    "sha": "b8c9dd59eb9de8d837b4e95d12037cbc9cc8553b",
+    "size": 1269
+  },
+  {
+    "path": "bouken/data/collection_items.json",
+    "sha": "776d3a6fe6e6ca3bef3224a18853765605190d13",
+    "size": 57499
+  },
+  {
+    "path": "bouken/data/collection_reward_types.json",
+    "sha": "deb4d413109e2d99c3446d8b408bf954f5a10d14",
+    "size": 429
+  },
+  {
+    "path": "bouken/data/collection_rewards.json",
+    "sha": "e9242c414fbbdaf57dee725a88a7d084ee17c6b8",
+    "size": 8611
+  },
+  {
+    "path": "bouken/data/collection_subgroups.json",
+    "sha": "dcbe2a09a6b8bc508f59b4704e666e761091fb9f",
+    "size": 7230
+  },
+  {
+    "path": "bouken/data/facilities.json",
+    "sha": "3450edcd63fa9fd2d388ade266f60531664fd1a7",
+    "size": 2813
+  },
+  {
+    "path": "bouken/data/manifest.json",
+    "sha": "247dc0a6026772df2b0436361c2025985775c06b",
+    "size": 1054
+  },
+  {
+    "path": "bouken/data/skill_descriptions.json",
+    "sha": "883602b82784a606d487a9f82fc645ba7250e7ac",
+    "size": 9639
+  },
+  {
+    "path": "bouken/data/skill_messages.json",
+    "sha": "d96041328fa00b72aaba3d96f7d7d4ba46a2dd23",
+    "size": 5402
+  },
+  {
+    "path": "bouken/data/skills.json",
+    "sha": "7ade9fddd739c586f5c7954e6aa80ea66c8eff19",
+    "size": 3863
+  },
+  {
+    "path": "bouken/data/terrains.json",
+    "sha": "316bd119f274ac678224e380fe41cee4976772e2",
+    "size": 678
+  },
+  {
+    "path": "bouken/data/world_facility_counts.json",
+    "sha": "a1dfda8921560a21cb28afb14d1a09f5e0859b63",
+    "size": 271
+  },
+  {
+    "path": "bouken/home.html",
+    "sha": "5fd3cf5918763dcef9674e7b95183654ee18e010",
+    "size": 3984
+  },
+  {
+    "path": "bouken/index.html",
+    "sha": "e62b1f5cb89e2510daed745d5e05bf88b1d7ceb6",
+    "size": 5362
+  },
+  {
+    "path": "bouken/mocks/facility-events.html",
+    "sha": "b982a7f4a277b171b2a3d39a8c3589003b44f4e1",
+    "size": 18382
+  },
+  {
+    "path": "bouken/party-recommendation.html",
+    "sha": "1efc8aa082ae71b3a11cac9394a2d0c8d627be3c",
+    "size": 5629
+  },
+  {
+    "path": "bouken/party.html",
+    "sha": "a556be5ed2a0e2775e0de397ca847f14f31e86c4",
+    "size": 18768
+  },
+  {
+    "path": "bouken/records.html",
+    "sha": "77864af6f27af2f07eca10e56dfc333340875c57",
+    "size": 5326
+  },
+  {
+    "path": "bouken/siyou/20261017_決定事項と経緯.txt",
+    "sha": "45db98173d4d99c6230607244a41afe0ed5ed0a1",
+    "size": 30662
+  },
+  {
+    "path": "bouken/siyou/67スキル相互作用調査・おすすめパーティー設計.md",
+    "sha": "2b1737e553be1d3a0688d0ad3cf1cc4fddec3ae2",
+    "size": 26073
+  },
+  {
+    "path": "bouken/siyou/E系地形生成仕様.md",
+    "sha": "2f70ee769f66aec123d682a6f5402b4a1bbd0a9b",
+    "size": 7354
+  },
+  {
+    "path": "bouken/siyou/GitHub運用方針.md",
+    "sha": "4fcb15b5354ce99184cfb3a9287b0e2f1f0c9aa3",
+    "size": 7673
+  },
+  {
+    "path": "bouken/siyou/README.md",
+    "sha": "adfd2442ef493add8732542b0c16c05880238d25",
+    "size": 24530
+  },
+  {
+    "path": "bouken/siyou/buffs.txt",
+    "sha": "7d5fe028e8765ddc7d5f0242cdbf32e36a9ba947",
+    "size": 22089
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/README.md",
+    "sha": "5165a1fd87913040070900667f57cb692b767106",
+    "size": 24747
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/assets/sheets/README.md",
+    "sha": "743499d1b190dd00f7bd999a90185dc460305601",
+    "size": 2437
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/repository/README.md",
+    "sha": "df725f409133ffd1c1c170c2fb2910932c56e999",
+    "size": 50
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/20261017_決定事項と経緯.txt",
+    "sha": "3ff9548c7d6e9c38c696843e68fbb1a21189ea85",
+    "size": 30329
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/E系地形生成仕様.md",
+    "sha": "c81ea6209f1e5971c1af0e6d2a1012835a2700cc",
+    "size": 7033
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/GitHub運用方針.md",
+    "sha": "7c876d19f2f695aa4007076373d64605d0f807b0",
+    "size": 7076
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/buffs.txt",
+    "sha": "051f4b73da952c82a5f95287d120986a2c604834",
+    "size": 30520
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/source_csv/927キャラクター割当結果.csv",
+    "sha": "7d0c9737da09db0abeec5f1ac9a3f46821aa8396",
+    "size": 521610
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/todo.txt",
+    "sha": "015637b4f1f92f9ad2eb8f8387f80e5bd48f55d4",
+    "size": 82284
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/verification/e08-v47-report.md",
+    "sha": "c8abeb703cb5f43b83610cc30c3655fdc047abbd",
+    "size": 5607
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/verification/e09-v48-migration.md",
+    "sha": "32a5c165603a5530d81763b8931a1e0961d0cec8",
+    "size": 7069
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/verification/terrain-v48-report.md",
+    "sha": "352705967f289cbca3d15c4f6c6211480e27651d",
+    "size": 10001
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/キャラクター画像表示仕様.md",
+    "sha": "ffb0bd4e75f487f0333f53fe221abb39b60a259a",
+    "size": 4355
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/キャラクター詳細・スキル強調仕様.md",
+    "sha": "4b8630f7f7ac344bca06bef4a914fce202f17bc6",
+    "size": 5649
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/ゲーム仕様書.txt",
+    "sha": "85430d7a1a5bda9c195d73739e7051881d8140cf",
+    "size": 44409
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/タイトル・称号通知仕様.md",
+    "sha": "f7dea46400faa55c631e6273d187f5e3bfe29ceb",
+    "size": 3563
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/チュートリアル演出仕様.md",
+    "sha": "7a59d85a48f9882e6d4602a29722bea081494156",
+    "size": 7207
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/プロジェクト概要.txt",
+    "sha": "6e6663c387aef3c09b6454818aaa1cd39c711d9c",
+    "size": 21718
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/ホーム成長通知・コンプボーナス受取仕様.md",
+    "sha": "7b14fc1f28cff6997b68d09903bcf3dc95bfe1af",
+    "size": 5149
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/ホーム画像ボタン・出発導線仕様.md",
+    "sha": "3a20c3fe82ccb29aa04299de7e3a98602fbffef8",
+    "size": 4849
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/仲間図鑑仕様.md",
+    "sha": "fc3d466997a7789376d4db7b8975833cee4dadaa",
+    "size": 3472
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/博物館・コレクションボーナス仕様.txt",
+    "sha": "495df5475d640624416751e6bf24860b656aa408",
+    "size": 4626
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/博物館表示・ボーナス実装仕様.md",
+    "sha": "15c48e016df93d95fe2c30328f65e0927dce6390",
+    "size": 3843
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/四則演算問題生成エンジン.md",
+    "sha": "11ae041ffe7d475fe6a7ec8d13f8e04f9436afc0",
+    "size": 23180
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/地形・施設画像表示仕様.md",
+    "sha": "b5c5f5e51d97636aa1c36cff3ee6635449fa919d",
+    "size": 3810
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/実績カウンタ・保存設計.txt",
+    "sha": "61c0dd19269007f10d73d9bea9d4028e404ab734",
+    "size": 4407
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/実績・称号120件仕様.txt",
+    "sha": "cbf27deb9509e7414696d604d24c2c6074b5bb17",
+    "size": 4306
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/実装構成・運用方針.md",
+    "sha": "b44e020e6af4e1c3daec25431700b05560735249",
+    "size": 12911
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/施設イベント・キャラクター抽選仕様.txt",
+    "sha": "a0c359179c626bd8f9985cbbc8aa96a37e875c6b",
+    "size": 12955
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/施設イベント演出モック.md",
+    "sha": "8c41e88e3a95053203d7a4fe8fc1cb8d32c55329",
+    "size": 1508
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/施設イベント演出実装仕様.md",
+    "sha": "45216561f89e95efa124bb31d194a7444f63f7b5",
+    "size": 6307
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/施設イベント画像表示仕様.md",
+    "sha": "a478d26f9fcb3ca3807631ab2ece7bbd57a325a5",
+    "size": 4993
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/旧todo.txt",
+    "sha": "c1646e08af41e1936f7e1d4dd86589e37ed3e7f4",
+    "size": 29895
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/更新内容と未決定事項.txt",
+    "sha": "a57380b240ac3276ebf613b2bf9cba5dc1e2b0aa",
+    "size": 3711
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/画面点検・改善仕様.md",
+    "sha": "4e6dd4958a91796a9a10ca6b94bfd6ee3cd58367",
+    "size": 2126
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/記録・実績実装仕様.md",
+    "sha": "aafe17617b8745d21b669e53d098c2196e376110",
+    "size": 4339
+  },
+  {
+    "path": "bouken/siyou/history/20261025整理前/siyou/開拓カウンタ・閾値発動処理仕様.txt",
+    "sha": "11cf7f6f484f66d1deb298c0aa0cdcb00eb7e253",
+    "size": 6031
+  },
+  {
+    "path": "bouken/siyou/history/README.md",
+    "sha": "06924b7c645cedf8d8bda806f14bf4149b7fc924",
+    "size": 977
+  },
+  {
+    "path": "bouken/siyou/source_csv/927キャラクター割当結果.csv",
+    "sha": "d8efe9d3d579e47990705d5b90fea090e8e6e027",
+    "size": 517318
+  },
+  {
+    "path": "bouken/siyou/source_csv/characters.csv",
+    "sha": "33f0571f01fc5f3a884aed759e291d54c75e64ad",
+    "size": 291560
+  },
+  {
+    "path": "bouken/siyou/source_csv/博物館96小グループ報酬割当.csv",
+    "sha": "0997da2822409a575949c1489bd7c3f114109ec3",
+    "size": 7606
+  },
+  {
+    "path": "bouken/siyou/source_csv/称号120件マスター.csv",
+    "sha": "053e04e5ea4a425bf58c72140168125c58e59372",
+    "size": 8858
+  },
+  {
+    "path": "bouken/siyou/todo.txt",
+    "sha": "c76d21dee5170995d6c3106f9e90c60fdbeab376",
+    "size": 53235
+  },
+  {
+    "path": "bouken/siyou/verification/character-descriptions-v74.json",
+    "sha": "bf9e4a357ded774e271bab3e3bfa1357c3f57a2a",
+    "size": 4591
+  },
+  {
+    "path": "bouken/siyou/verification/character-detail-v77.md",
+    "sha": "6f9ebc24e59ac04acda8a1ec7342cfc6898a8b04",
+    "size": 1465
+  },
+  {
+    "path": "bouken/siyou/verification/characters-audit-20261025.json",
+    "sha": "b1c286a2cecf1ed6b0ce39eb4b6ddbfb6f881128",
+    "size": 42761
+  },
+  {
+    "path": "bouken/siyou/verification/characters-party-audit.cjs",
+    "sha": "ac8a66bf900bacebb6af2d6f79155727bb2356db",
+    "size": 2927
+  },
+  {
+    "path": "bouken/siyou/verification/departure-heading-v94-20261029.md",
+    "sha": "98032de9e578bf3266048885136b4b154a66e4f9",
+    "size": 1490
+  },
+  {
+    "path": "bouken/siyou/verification/detail-v77-1793189387372.jpg",
+    "sha": "c21d1b79085a533b0eb22098180b84042289858d",
+    "size": 60338
+  },
+  {
+    "path": "bouken/siyou/verification/direct-size-departure-v93-20261029.md",
+    "sha": "59cee4a9ccb58dd02e2de6a1d525c3b541e174ff",
+    "size": 3844
+  },
+  {
+    "path": "bouken/siyou/verification/direct-size-departure-v93-tests.json",
+    "sha": "f6d99a153b373404ce9f6f8e1d6e3a78008c1785",
+    "size": 9526
+  },
+  {
+    "path": "bouken/siyou/verification/docs-v69-audit.json",
+    "sha": "b174ca63b8cf7d76c49404d7fcd8b25e6a85798b",
+    "size": 10356
+  },
+  {
+    "path": "bouken/siyou/verification/docs-v69-check.py",
+    "sha": "cf7746a1b4d3bd0ec08eb362823f7647732d3c2f",
+    "size": 3811
+  },
+  {
+    "path": "bouken/siyou/verification/e08-v47-comparison.png",
+    "sha": "b42fb1278f67ce9e7e01edc86146be15ff9b595f",
+    "size": 37464
+  },
+  {
+    "path": "bouken/siyou/verification/e08-v47-report.md",
+    "sha": "119e2517078a46c1e12d2be9fac5fb2ed1483394",
+    "size": 6112
+  },
+  {
+    "path": "bouken/siyou/verification/e08-v47-results.json",
+    "sha": "643dcad23f2c1968253ece4e937ebcb4c031eed0",
+    "size": 167633
+  },
+  {
+    "path": "bouken/siyou/verification/e09-v48-migration.json",
+    "sha": "d305375b22d4e2aaee27fd0ecc3cabe7df9c7cc0",
+    "size": 29348
+  },
+  {
+    "path": "bouken/siyou/verification/e09-v48-migration.md",
+    "sha": "be7b5381460bd656b711b747328869d0f703ea74",
+    "size": 7574
+  },
+  {
+    "path": "bouken/siyou/verification/facility-performance-v89-20261029.md",
+    "sha": "3a7c037e7ec699a77f16ac4c252048ecc4ad5dbb",
+    "size": 18003
+  },
+  {
+    "path": "bouken/siyou/verification/facility-performance-v89-20261029.zip",
+    "sha": "7db2a956844adbc0660baae3b30b74ba96f45191",
+    "size": 596077
+  },
+  {
+    "path": "bouken/siyou/verification/facility-render-optimization-20261029.md",
+    "sha": "593b7b5b0e5fee1e10876855379284c9d2cde76e",
+    "size": 8262
+  },
+  {
+    "path": "bouken/siyou/verification/facility-render-release-20261029.json",
+    "sha": "40e292ad23abbac0d8d9667461617a5666ca3d05",
+    "size": 1765
+  },
+  {
+    "path": "bouken/siyou/verification/facility-render-tests-20261029.json",
+    "sha": "11ff11016d519a1afa507d1cf4a3895e39899524",
+    "size": 8296
+  },
+  {
+    "path": "bouken/siyou/verification/forecast-v83.jpg",
+    "sha": "fdbec17e2e8afa82caa37b5b33a203ee9d2bdb84",
+    "size": 50534
+  },
+  {
+    "path": "bouken/siyou/verification/forecast-v83.md",
+    "sha": "02760149edcaeb3962917a7c86b5f7850d20e39f",
+    "size": 859
+  },
+  {
+    "path": "bouken/siyou/verification/party-current-forecast-v72.md",
+    "sha": "1e28063535f4e5f37fade67296f9667a4b2c277c",
+    "size": 6619
+  },
+  {
+    "path": "bouken/siyou/verification/party-forecast-v72.jpg",
+    "sha": "a726fa0430ba02518a128935dd0acc3ab4b5eba9",
+    "size": 84766
+  },
+  {
+    "path": "bouken/siyou/verification/party-forecast-v72.json",
+    "sha": "6694d2ec17265c33b38f027670ae4690cd90df98",
+    "size": 1766
+  },
+  {
+    "path": "bouken/siyou/verification/party-green-buttons-20261026.md",
+    "sha": "1ccb445978c5b6aeef4592e5568d48cf27bbf1bf",
+    "size": 1332
+  },
+  {
+    "path": "bouken/siyou/verification/party-radar-help-20261026.md",
+    "sha": "3491f207d8f393d22f6343856f216da88d9885b7",
+    "size": 1565
+  },
+  {
+    "path": "bouken/siyou/verification/party-radar-layout-20261026.md",
+    "sha": "cc531e0a24ff5a9550e60a43c6c7b55264653d37",
+    "size": 1949
+  },
+  {
+    "path": "bouken/siyou/verification/party-radar-ui-20261026.md",
+    "sha": "99d75545c9e7e7fd5f25f2bca910760989fc0c85",
+    "size": 3367
+  },
+  {
+    "path": "bouken/siyou/verification/party-search-progress-20261026.md",
+    "sha": "280e631a732e64f2bf4ec8ed51b7a1c9c363cc62",
+    "size": 1867
+  },
+  {
+    "path": "bouken/siyou/verification/party-source-pin-fix-20261025.md",
+    "sha": "209244e3d27c59b1c0d5b7df8e9ec26fa2cbe1f3",
+    "size": 1273
+  },
+  {
+    "path": "bouken/siyou/verification/perimeter-start-v95-20261029.md",
+    "sha": "ac393adffbf0fe78b8c60d7d07de51ba7f463395",
+    "size": 4801
+  },
+  {
+    "path": "bouken/siyou/verification/result-v75-1793187857495.jpg",
+    "sha": "13748a77dee2ad283d5c09963c7e4426b01d5353",
+    "size": 77035
+  },
+  {
+    "path": "bouken/siyou/verification/result-v75.md",
+    "sha": "d82624564b35654b119e2ce55042630c6a6d6c6c",
+    "size": 4418
+  },
+  {
+    "path": "bouken/siyou/verification/robot-abandon-v81.jpg",
+    "sha": "8163e9c3a870669a858802c89c2b5aeb9513966d",
+    "size": 61828
+  },
+  {
+    "path": "bouken/siyou/verification/robot-abandon-v81.md",
+    "sha": "3e0d66e2fd2557821d36816e004245ed1b00932f",
+    "size": 3087
+  },
+  {
+    "path": "bouken/siyou/verification/robot-access-v85.jpg",
+    "sha": "4413c41d1a19641cdf4e11432be7f26fa7448262",
+    "size": 52360
+  },
+  {
+    "path": "bouken/siyou/verification/robot-access-v85.md",
+    "sha": "fbf14c098146c52c38f2a24f5ddba785d1d333a8",
+    "size": 5223
+  },
+  {
+    "path": "bouken/siyou/verification/robot-button-v98.md",
+    "sha": "18448a3b41006b8f7b3c467018871cfad267aaaf",
+    "size": 1509
+  },
+  {
+    "path": "bouken/siyou/verification/robot-button-v99.md",
+    "sha": "e175a147269f106ce85b549720952acced03abc5",
+    "size": 1309
+  },
+  {
+    "path": "bouken/siyou/verification/robot-facility-v80.jpg",
+    "sha": "c0b07ff7a6b7c72120b559b061e0f73d165fc8d5",
+    "size": 62295
+  },
+  {
+    "path": "bouken/siyou/verification/robot-facility-v80.md",
+    "sha": "9b1c4d53e91158e6c6f962c689742fecd4c06a70",
+    "size": 2192
+  },
+  {
+    "path": "bouken/siyou/verification/robot-growth-v82.jpg",
+    "sha": "fd1e73a760f333de4f996aa94cf5561955281594",
+    "size": 75410
+  },
+  {
+    "path": "bouken/siyou/verification/robot-growth-v82.md",
+    "sha": "7d35f4de97e797b12641fefcf763f86026efc6cd",
+    "size": 2193
+  },
+  {
+    "path": "bouken/siyou/verification/robot-image-no-v96.md",
+    "sha": "b1c0fb22d8ad949a0a22739f80036dc2a3cf4b5c",
+    "size": 2544
+  },
+  {
+    "path": "bouken/siyou/verification/robot-images-v97.md",
+    "sha": "e51a5bf46461d906305e5dc04a48d789b0cdfe4b",
+    "size": 2167
+  },
+  {
+    "path": "bouken/siyou/verification/robot-parts-v84.jpg",
+    "sha": "64d3330e83d30175bdb620fce60d16386552cea5",
+    "size": 29220
+  },
+  {
+    "path": "bouken/siyou/verification/robot-parts-v84.md",
+    "sha": "3da1be7ea4c8571c680cfebc1ff87e2a61b59ff7",
+    "size": 4654
+  },
+  {
+    "path": "bouken/siyou/verification/robot-route-retarget-v91-20261029.md",
+    "sha": "75bd1d9ee16535827aae65fe0add404678d0ecb9",
+    "size": 3564
+  },
+  {
+    "path": "bouken/siyou/verification/robot-route-retarget-v91-tests.json",
+    "sha": "7a18c74ec3d40e7edd74cebb5f59c7072789a4df",
+    "size": 5300
+  },
+  {
+    "path": "bouken/siyou/verification/robot-route-v79.jpg",
+    "sha": "f51af5130aa68bc0e32c6997a803ad9619d859e9",
+    "size": 65633
+  },
+  {
+    "path": "bouken/siyou/verification/robot-route-v79.md",
+    "sha": "289c1e305807c38f64dba1eef5f7b6b33da11125",
+    "size": 2656
+  },
+  {
+    "path": "bouken/siyou/verification/robot-state-v86.jpg",
+    "sha": "d0f442b8f077f9383c7a042a8aa75cc517c27e57",
+    "size": 60057
+  },
+  {
+    "path": "bouken/siyou/verification/robot-state-v86.md",
+    "sha": "6cf02a00d1d7a671619b6ae1fb815e19bd59da72",
+    "size": 5570
+  },
+  {
+    "path": "bouken/siyou/verification/robot-v78.jpg",
+    "sha": "c56ec9d1387af0acac40b6747bbaa8d9060ee4d4",
+    "size": 60985
+  },
+  {
+    "path": "bouken/siyou/verification/robot-v78.md",
+    "sha": "5c4e01b6cafbdf09a1d3a6e624b23d17a4ec31ce",
+    "size": 3749
+  },
+  {
+    "path": "bouken/siyou/verification/terrain-v48-blessings.png",
+    "sha": "8bff4ef95b6ba4b98f2cf69ca49437592392511b",
+    "size": 26322
+  },
+  {
+    "path": "bouken/siyou/verification/terrain-v48-e08.png",
+    "sha": "a917e96be589ebb5f25e49de2a595eb3f695a3db",
+    "size": 29481
+  },
+  {
+    "path": "bouken/siyou/verification/terrain-v48-report.md",
+    "sha": "3adfe34d173f2ed6ba00deab01cf20b32560ecca",
+    "size": 10506
+  },
+  {
+    "path": "bouken/siyou/verification/terrain-v48-results.json",
+    "sha": "4e0f0805c01ec01c15028a42564529fa3b82f8c1",
+    "size": 318374
+  },
+  {
+    "path": "bouken/siyou/verification/title-debug-ten-v70.md",
+    "sha": "cc495413f05c4749ea84fe8aca9013115309994a",
+    "size": 1048
+  },
+  {
+    "path": "bouken/siyou/verification/world-end-button-v100.md",
+    "sha": "f17186f2b04ec9e08f063f4dfbd6ddf11c5b3e78",
+    "size": 1632
+  },
+  {
+    "path": "bouken/siyou/verification/world-party-v76.md",
+    "sha": "87ffd6f48e1c23a2cc1f10e7db974ab69acede92",
+    "size": 2213
+  },
+  {
+    "path": "bouken/siyou/verification/world-size-picker-v92-20261029.md",
+    "sha": "8c8be69cbaf34961b960f8ca704dd27695ba3855",
+    "size": 9969
+  },
+  {
+    "path": "bouken/siyou/verification/world-size-picker-v92-tests.json",
+    "sha": "c9e72892e9b1cb003ad1a19cc9e8b060bfd3c3c8",
+    "size": 9390
+  },
+  {
+    "path": "bouken/siyou/verification/world-v76-1793189028615.jpg",
+    "sha": "aac6b656343dca93881ca65f09c86853bd62f482",
+    "size": 60948
+  },
+  {
+    "path": "bouken/siyou/おすすめパーティー正式統合_20261027.md",
+    "sha": "131f12c5509b239d07be7152266ad3dcd9b1a364",
+    "size": 12646
+  },
+  {
+    "path": "bouken/siyou/おすすめパーティー評価エンジン検証.md",
+    "sha": "29bb2c79b551175d3da7ca624533595c0a67e6a2",
+    "size": 38483
+  },
+  {
+    "path": "bouken/siyou/おすすめパーティー評価エンジン第2段階検証.md",
+    "sha": "7d1fe97fc0f4d06e63d143b7386e15c3da149b0e",
+    "size": 61892
+  },
+  {
+    "path": "bouken/siyou/おまかせ編成todo.md",
+    "sha": "5e8db75cf3234481f6e726cc39c59a133728775a",
+    "size": 34742
+  },
+  {
+    "path": "bouken/siyou/おまかせ編成エンジン比較予備測定_20261026.md",
+    "sha": "207c46e986e4a72dc7273be029ff20d9eefb681b",
+    "size": 18497
+  },
+  {
+    "path": "bouken/siyou/おまかせ編成ランダム案原因調査_20261026.md",
+    "sha": "a700b4341ef14d5627a296cf6f5d5c41c91e3eb5",
+    "size": 16864
+  },
+  {
+    "path": "bouken/siyou/おまかせ編成ランダム案専門性検証_20261026.md",
+    "sha": "57347239bb0a950061c3f571987beaf9dff02f42",
+    "size": 15802
+  },
+  {
+    "path": "bouken/siyou/おまかせ編成レーダーUI仕様.md",
+    "sha": "c82629954ce018a39e09ecc321d4fd5cb47f0059",
+    "size": 3959
+  },
+  {
+    "path": "bouken/siyou/おまかせ編成再開記録_20261025.md",
+    "sha": "66bae76c05419644183fceecad05db95d986bbf4",
+    "size": 18009
+  },
+  {
+    "path": "bouken/siyou/おまかせ編成品質追加監査_20261026.md",
+    "sha": "f7b6a0129bce04abb9f238bab1f82984dbc4cade",
+    "size": 11032
+  },
+  {
+    "path": "bouken/siyou/おまかせ編成弱点補強モック接続_20261027.md",
+    "sha": "8ad5cbe36ce0af6efaa21483bf00a50bd2a9886c",
+    "size": 17292
+  },
+  {
+    "path": "bouken/siyou/おまかせ編成独立検証.md",
+    "sha": "68bdc07a2e6aaaeae49e39550b75b9c9814f86dd",
+    "size": 41604
+  },
+  {
+    "path": "bouken/siyou/おまかせ編成軽量方式モック接続_20261026.md",
+    "sha": "f6b2dd697456f19c56394362a7114a4fefd36239",
+    "size": 8195
+  },
+  {
+    "path": "bouken/siyou/じどううんてんロボ仕様.md",
+    "sha": "b1f21f6624ed2d126e6c1cb1d3b5f876f57035b0",
+    "size": 11801
+  },
+  {
+    "path": "bouken/siyou/ぼうけんロボ成長システム仕様.md",
+    "sha": "0b469a56450bb49a994ffdc5917de5d76671b5f3",
+    "size": 28225
+  },
+  {
+    "path": "bouken/siyou/キャラクター画像表示仕様.md",
+    "sha": "3231dbbe6cdc6b1ea1a672a38f8f05acf11ea863",
+    "size": 4745
+  },
+  {
+    "path": "bouken/siyou/キャラクター詳細・スキル強調仕様.md",
+    "sha": "efc30c9e771596a18eae0a50dec70641ae7daf42",
+    "size": 7710
+  },
+  {
+    "path": "bouken/siyou/キャラクター適性スコア理論採点仕様_v1.md",
+    "sha": "42ab411cdb5a4a0194349dbec9c332d65c4f284e",
+    "size": 11215
+  },
+  {
+    "path": "bouken/siyou/キャラクター適性スコア理論採点仕様_v2.md",
+    "sha": "656121436691c69474ddec9b446579f84ace6c34",
+    "size": 3549
+  },
+  {
+    "path": "bouken/siyou/キャラクター適性スコア理論採点仕様_v2_提案.md",
+    "sha": "0b1edfb642fd0fecf36732e2560180a0b410575f",
+    "size": 3313
+  },
+  {
+    "path": "bouken/siyou/キャラクター適性スコア開発ロードマップ.md",
+    "sha": "8e9b3fc32cbf8dba4f1fc1ca0d1d8933ae017ba0",
+    "size": 34415
+  },
+  {
+    "path": "bouken/siyou/ゲーム仕様書.txt",
+    "sha": "1c32a022084901f77b29758c074506652ffdbdbc",
+    "size": 17620
+  },
+  {
+    "path": "bouken/siyou/タイトル・称号通知仕様.md",
+    "sha": "b5105027bf66365bdd1f7a9bfbe4f7f57012193e",
+    "size": 2890
+  },
+  {
+    "path": "bouken/siyou/チュートリアル演出仕様.md",
+    "sha": "cf1e1aa835ff0318fa16bfc32987ac7e3d58ed3d",
+    "size": 8014
+  },
+  {
+    "path": "bouken/siyou/プロジェクト概要.txt",
+    "sha": "325cbc4e3166ebe3ba468be1ec1457759a88cba0",
+    "size": 2043
+  },
+  {
+    "path": "bouken/siyou/ホーム成長通知・コンプボーナス受取仕様.md",
+    "sha": "3f8cc99ef55ae3a88702a889e8e42d3c490a877d",
+    "size": 5343
+  },
+  {
+    "path": "bouken/siyou/ホーム画像ボタン・出発導線仕様.md",
+    "sha": "68bd518596ba249486c841c5f343086bfb24cf76",
+    "size": 7964
+  },
+  {
+    "path": "bouken/siyou/仲間図鑑仕様.md",
+    "sha": "5c175ea9886944e40000c40dc8ed5970c9bf49a4",
+    "size": 3654
+  },
+  {
+    "path": "bouken/siyou/博物館・コレクションボーナス仕様.txt",
+    "sha": "cc23442259d3ea3b9a374a9feabd97472b4f7d65",
+    "size": 4360
+  },
+  {
+    "path": "bouken/siyou/博物館収集品_24大グループ96小グループ完成版.txt",
+    "sha": "dcbcdc0eb532e4aae9d096b0f779d6fbbd826e21",
+    "size": 15458
+  },
+  {
+    "path": "bouken/siyou/博物館表示・ボーナス実装仕様.md",
+    "sha": "957dd5d03c5389e53cca3d909413d4825323a4b3",
+    "size": 4148
+  },
+  {
+    "path": "bouken/siyou/四則演算問題生成エンジン.md",
+    "sha": "07541f86c656571dc24500abe4e3ccdb76fc3d91",
+    "size": 23930
+  },
+  {
+    "path": "bouken/siyou/地形・施設画像表示仕様.md",
+    "sha": "929d7678c48d53f50fa01f0deb82dd136976e6eb",
+    "size": 4718
+  },
+  {
+    "path": "bouken/siyou/変更履歴.md",
+    "sha": "3af46b8106101bd428be87245327b629a15aa476",
+    "size": 115735
+  },
+  {
+    "path": "bouken/siyou/完全クリア・リザルト画面仕様.md",
+    "sha": "501f0114a2c0c40330639f01e35dcfdf7923df38",
+    "size": 24176
+  },
+  {
+    "path": "bouken/siyou/実績カウンタ・保存設計.txt",
+    "sha": "51e451a960c675ef53fe128b12831bd753e56392",
+    "size": 4262
+  },
+  {
+    "path": "bouken/siyou/実績・称号120件仕様.txt",
+    "sha": "06a237a0fe2b75377c84976f535e4e8c0e321689",
+    "size": 3853
+  },
+  {
+    "path": "bouken/siyou/実装構成・運用方針.md",
+    "sha": "f259325f4e5ecf6ad40750979973c09467385e4a",
+    "size": 5848
+  },
+  {
+    "path": "bouken/siyou/施設イベント・キャラクター抽選仕様.txt",
+    "sha": "33f3f67c31829fea87efd484b669b11ec5b826ae",
+    "size": 13573
+  },
+  {
+    "path": "bouken/siyou/施設イベント演出モック.md",
+    "sha": "dbacc3cc24221721a0b18a761837991452f30a89",
+    "size": 1789
+  },
+  {
+    "path": "bouken/siyou/施設イベント演出実装仕様.md",
+    "sha": "2de6ba7fc4b5ea532dc2b6dbc46e55c7193c473c",
+    "size": 6930
+  },
+  {
+    "path": "bouken/siyou/施設イベント画像表示仕様.md",
+    "sha": "6eae17baa64510541ba5ad5343de3c70ff421b8f",
+    "size": 5294
+  },
+  {
+    "path": "bouken/siyou/旧todo.txt",
+    "sha": "d0c75074bd97262edf21b4499e9bcb55f5022443",
+    "size": 30228
+  },
+  {
+    "path": "bouken/siyou/更新内容と未決定事項.txt",
+    "sha": "ced00d7a6ffb01acf6eccb9f9135fdddd5de9857",
+    "size": 4039
+  },
+  {
+    "path": "bouken/siyou/画面点検・改善仕様.md",
+    "sha": "6e2e155d5ace93a3c3bf84757e89d7922e9eb8fb",
+    "size": 2398
+  },
+  {
+    "path": "bouken/siyou/算数難易度切り替え仕様.md",
+    "sha": "2ff72c22f54041d3864d157070374cbcb578e898",
+    "size": 3213
+  },
+  {
+    "path": "bouken/siyou/表示用語統一仕様.md",
+    "sha": "c85a798eae3756ca6d5bdee511ff11315a1fe3a3",
+    "size": 1451
+  },
+  {
+    "path": "bouken/siyou/記録・実績実装仕様.md",
+    "sha": "1eb9b6453cea752cf1efaa2f4fe554ecf7dc0741",
+    "size": 4814
+  },
+  {
+    "path": "bouken/siyou/資料整合監査_20261025.md",
+    "sha": "90968fa6f2ffe2dd3812d414d07062d7ef47660e",
+    "size": 13511
+  },
+  {
+    "path": "bouken/siyou/途中終了・ロボ操作改善_v81.md",
+    "sha": "dfc68688ae95d5485ced798a5e5f371245590cfc",
+    "size": 3556
+  },
+  {
+    "path": "bouken/siyou/開拓カウンタ・閾値発動処理仕様.txt",
+    "sha": "9988a8dd648b3b74ad288719ab3376734fe873af",
+    "size": 4040
+  },
+  {
+    "path": "bouken/start_server.bat",
+    "sha": "f97f973106ba587956f00c0284953e47b7bc3885",
+    "size": 79
+  },
+  {
+    "path": "bouken/tests/a03-threshold.test.cjs",
+    "sha": "ab9fc8ddd0346a2cbbf9cf73869b1474ea2205bc",
+    "size": 2167
+  },
+  {
+    "path": "bouken/tests/abandon-world.test.cjs",
+    "sha": "545a8a05248f0b66ad760b884b10dfd2962c1458",
+    "size": 5506
+  },
+  {
+    "path": "bouken/tests/achievement-notice.test.cjs",
+    "sha": "7490a968428bb7fcf2c573c6e644bcfb7e81231a",
+    "size": 3680
+  },
+  {
+    "path": "bouken/tests/achievements.test.cjs",
+    "sha": "0bfa2a5d8e870109c52460a2d184f8f41b5b3488",
+    "size": 5014
+  },
+  {
+    "path": "bouken/tests/auto-drive-preview.html",
+    "sha": "01a4f0db2dd6f4c7d5117f72c4de43d263e107b1",
+    "size": 4633
+  },
+  {
+    "path": "bouken/tests/auto-drive.test.cjs",
+    "sha": "4f0f495f5659927805a852ffb2b7e4c81920f763",
+    "size": 7413
+  },
+  {
+    "path": "bouken/tests/character-aptitude/README.md",
+    "sha": "4e6e9d06ffe4b89a924cbea465f04ef629146313",
+    "size": 4259
+  },
+  {
+    "path": "bouken/tests/character-aptitude/REPORT.md",
+    "sha": "422fca420ac3f553f4ef017b2fefabf8c2156110",
+    "size": 18719
+  },
+  {
+    "path": "bouken/tests/character-aptitude/analysis.json",
+    "sha": "be490196410ea57d86957b8602c75269f5323afb",
+    "size": 229648
+  },
+  {
+    "path": "bouken/tests/character-aptitude/analyze.cjs",
+    "sha": "4b72bf85df1f21011af7155cbe7ddef352ee6331",
+    "size": 12730
+  },
+  {
+    "path": "bouken/tests/character-aptitude/details.json",
+    "sha": "219f057215f9f132cc0b60732def2e8d6348b684",
+    "size": 1628070
+  },
+  {
+    "path": "bouken/tests/character-aptitude/input-manifest.json",
+    "sha": "09227edba00601e88fe4479587ffd87480b33391",
+    "size": 588
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/ENGINE-DIFFERENCES.md",
+    "sha": "97ec1ab70aedb3e894e1cfe312129d68702bccd9",
+    "size": 5145
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/README.md",
+    "sha": "8295033b2db7dcd9017d3c773cec82de6b12d393",
+    "size": 7121
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/REPORT.md",
+    "sha": "13a64accd3ee173dc6188af5644784748fdb14bf",
+    "size": 21752
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/adventures.csv",
+    "sha": "66f066663c6649ae93cd89dc81d5e6b0f647fc2b",
+    "size": 4137364
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/analysis.json",
+    "sha": "8bcd435ccffda79b8e274bf4d5ede9070268d0ac",
+    "size": 8420
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/analyze.py",
+    "sha": "14a33728f86e8195394a70d4906c291ba5699180",
+    "size": 21935
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/character-statistics.csv",
+    "sha": "5f07b5e378dc746fbe66380b0c5af24607206dcd",
+    "size": 127296
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/character-summary.csv",
+    "sha": "780563584ddd963ef7d1be71db4c623730bcd35e",
+    "size": 41347
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/collector-effects.csv",
+    "sha": "e1ddd2b8230c13fda89ac4da29a4721fadfcaba3",
+    "size": 2711
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/comparison.svg",
+    "sha": "97c49b1b6e4e92e45cc6976fb8987efb58583c8e",
+    "size": 126180
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/config.json",
+    "sha": "78ed923ab7f68075448f1caf9234212eb8b3e381",
+    "size": 27213
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/engine.cjs",
+    "sha": "b386f5355d058b2b366ecabf841787614cd151ad",
+    "size": 8141
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/holdout.csv",
+    "sha": "b26187129235932fd68831fbe5e59647b059bd86",
+    "size": 53399
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/initial-save.json",
+    "sha": "15b31af227874329589ef4642593decd6b46fc46",
+    "size": 14552
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/phase3-regression.log",
+    "sha": "e844ddb3a6cfcdd0380a7d83ef8a4c7d937a026e",
+    "size": 17393
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/pilot-results.json",
+    "sha": "a7dde8ca9467d5a269237adb4f6da2745723cb7a",
+    "size": 39108
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/pilot.cjs",
+    "sha": "571c50a110c58829ed32769cdd19e32c26ec4b5b",
+    "size": 7925
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/plan.cjs",
+    "sha": "f234c05f9fdf6ae3f1376306f77212ace0d9cc27",
+    "size": 8253
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/progress.jsonl",
+    "sha": "5fa1ddd274c403f02355ad394c00bbd8803ec22a",
+    "size": 10016
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/rankings.csv",
+    "sha": "56bb7c8ff3fd8340687fa4d66425ca3f23e33359",
+    "size": 12697
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/requirements.txt",
+    "sha": "471f776f67541bcaadd042782a1c0a438d0009f3",
+    "size": 46
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/run.cjs",
+    "sha": "0e476cc26daadc84884512c6ead6de00085eef3d",
+    "size": 4081
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/runs.jsonl",
+    "sha": "536146b010f4cd324250d327a61ff9ff91ec8697",
+    "size": 1676
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/selection.csv",
+    "sha": "be9093d9a472b283942dd7983bebd534dbab7bc5",
+    "size": 9973
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/selection.json",
+    "sha": "fc35f68dae051c21977ea8c286c0986c8f3544dc",
+    "size": 22759
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/support-adventures.csv",
+    "sha": "7b86768a6bd91f5f7eb1e93a9ded6921603b6206",
+    "size": 2800329
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/support-summary.csv",
+    "sha": "ca717f3c0c83ac8e56122379ce2817346001a1dc",
+    "size": 35465
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/validate.cjs",
+    "sha": "4ca0fce4c7c4ff7edb052faabbea317395184604",
+    "size": 12565
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/validation.log",
+    "sha": "56d98fb4bd60998b7c1da53bb9189815555c6b83",
+    "size": 1244
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase4/verification.json",
+    "sha": "1381245e934aab4cf4c8b643618adf938fdb2d38",
+    "size": 4420
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/README.md",
+    "sha": "f574154e89d32accc9c62b1b8f729471585e169b",
+    "size": 6689
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/REPORT.md",
+    "sha": "499089aecb0403f0f90104aa9a54adf8702fa295",
+    "size": 14430
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/analysis.json",
+    "sha": "acba13d7c9910acc9a5a83a19a30eae7331899a6",
+    "size": 46200
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/character-comparison.csv",
+    "sha": "288b8744b00a7603f9b66ed91017e03a5a359444",
+    "size": 928520
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/compare.cjs",
+    "sha": "6d1513961918df3de95068a7b52b9e5980020709",
+    "size": 32685
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/correlations.csv",
+    "sha": "b468cfe8ded010cd081f9727f9d770c132a1a5b0",
+    "size": 2581
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/extreme-impact.csv",
+    "sha": "eaa21c937b0d6c187497062f7df9aa63fdb6895f",
+    "size": 1465
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/independent-check.py",
+    "sha": "b3628ef78994cb8ff0c158891d3fb5e041f854fd",
+    "size": 2700
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/input-manifest.json",
+    "sha": "1161864c29f2dad0637f9b5334607a7675fa96c3",
+    "size": 14143
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/measurement-comparison.csv",
+    "sha": "5ff2baac02df2ac2aee10d488c218b0b99ea3e5b",
+    "size": 84577
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/proposed-changes.csv",
+    "sha": "3b33bbcdde702f30a2c9542b92779980c299c763",
+    "size": 9369
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/retest-candidates.csv",
+    "sha": "2a8025774954fd76db2bf56027267e78c557a2bf",
+    "size": 36520
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/review-notes.cjs",
+    "sha": "08c26a5bdaf3dd9860344b45b9f01acb9b4291b7",
+    "size": 6947
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/scenario-comparison.csv",
+    "sha": "0dee7db1c1eb4c6279f0a61658083fcea8b30dcf",
+    "size": 1682
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/scenario-definitions.json",
+    "sha": "cde34f541f9555973e03b881527c94188a3248ac",
+    "size": 73243
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/scenario-scores.csv",
+    "sha": "94b4b0ae4cac525126acc98266953f59c127afe0",
+    "size": 2097613
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/scenarios.json",
+    "sha": "70a056b97d99ac2429186dc5394db36405c7195d",
+    "size": 1374
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/skill-concentration.csv",
+    "sha": "e730cc3c223711425634da494e9d8f15372070eb",
+    "size": 94446
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/skill-review.csv",
+    "sha": "c784aabe978afee4d8bd5ad640b6b1419526a170",
+    "size": 171026
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/specialty-changes.csv",
+    "sha": "c0b574597202fe00e482525c9495de54ca27897e",
+    "size": 148783
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/support-impact.csv",
+    "sha": "d2c6ba6bc9da51871634ae3957c8768f8b275367",
+    "size": 2420
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/validate.cjs",
+    "sha": "d296998ba5623fbc380b6d8a77c16ab082495c07",
+    "size": 10788
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/validation.log",
+    "sha": "736d0bacc31f352add20b3a8d4f8b6b52847dfee",
+    "size": 4777
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/verification.json",
+    "sha": "477a44d2bbf17b4a38bbbb7c83bcb23ecd67853e",
+    "size": 2543
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5/verify.cjs",
+    "sha": "04ba84a941efdb1e0b594778127d177fc92c1df7",
+    "size": 1692
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/README.md",
+    "sha": "0ecd91231047e5de3833f1ed4ac47af50d62f90d",
+    "size": 6960
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/REPORT.md",
+    "sha": "87c0fedf59b6cc1d8ea3bff27408b039dfd8b673",
+    "size": 13198
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/analysis.json",
+    "sha": "e511b421fce6a0e9037cc7012cdec4e0fc9645a3",
+    "size": 63551
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/analyze.cjs",
+    "sha": "5e62cf9da6f6327cab2471f9af727f0723d53dc7",
+    "size": 25729
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/distribution.csv",
+    "sha": "f715e320e1ac0944a8e8aa9bbf3ef3270f58699f",
+    "size": 153499
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/independent-check.py",
+    "sha": "e83fc199528479f35d57289f7ef81f29374f9d81",
+    "size": 1896
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/phase4-comparison.csv",
+    "sha": "a8ea774c0385d1ca861a99464d6632db167ab7f5",
+    "size": 42733
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/relative-scores.csv",
+    "sha": "347c89e7d42be2854d98622e67ee8e661710ab37",
+    "size": 721412
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/review-candidates.csv",
+    "sha": "49419dc3945aa28a12059af767e3156ff541e2cf",
+    "size": 507049
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/revised-specialty/README.md",
+    "sha": "434b22ee45a08cc9a72899fe513f8e4bca700a39",
+    "size": 2100
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/revised-specialty/REPORT.md",
+    "sha": "3ec8b180513155e9396669a508a73575da47ddcb",
+    "size": 2344
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/revised-specialty/analysis.json",
+    "sha": "db14e5ea70b51b03a11c93ededc4a88477eea0e6",
+    "size": 16236
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/revised-specialty/calculate.cjs",
+    "sha": "2e17dedc8afce32b320fb1ae9cd7c8f99ff5aee9",
+    "size": 5576
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/revised-specialty/comparison.csv",
+    "sha": "dfd6621a0472079cbfa8740723ee4a8bc7f5875f",
+    "size": 467125
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/revised-specialty/d04-audit.csv",
+    "sha": "e439a3a00b643edff89306c6ed682ed2e0b97cdb",
+    "size": 46279
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/revised-specialty/focus-seven.csv",
+    "sha": "7428790d5786cda033811f83466f0830ecf38d44",
+    "size": 7375
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/revised-specialty/input-manifest.json",
+    "sha": "fef015ec9dcafafb5427eb2a4b88e16ffe11bd08",
+    "size": 12206
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/revised-specialty/rules.cjs",
+    "sha": "da4034f6590905ed0340ddc6e718f28720bd91e3",
+    "size": 619
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/revised-specialty/specialties.csv",
+    "sha": "07db2d9344ee2744bd67ca56a9762b2f540078b6",
+    "size": 823458
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/revised-specialty/verification.json",
+    "sha": "0961d21ac98278276c24337acdd90430b3221dea",
+    "size": 1297
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/revised-specialty/verify.cjs",
+    "sha": "c973e2f56399a5253ecd05d68bcc036396c3779a",
+    "size": 3272
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/source-manifest.json",
+    "sha": "89e52dd7a3a6d7baa6299796affd3ddda5dac564",
+    "size": 5896
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/specialty-comparison.csv",
+    "sha": "76252d02b13650a2cb00ddafc8e8c9377f54ceab",
+    "size": 209610
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/validate.cjs",
+    "sha": "9808b23d089768002e766d2ab405c85262c31f4f",
+    "size": 10842
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/validation.log",
+    "sha": "744bbcabce6458210ba7c7cbf2d59126eb313a7b",
+    "size": 4858
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/verification.json",
+    "sha": "3b986246b12d3ac85b46639beb7300e9f74df762",
+    "size": 1353
+  },
+  {
+    "path": "bouken/tests/character-aptitude/phase5a/verify.cjs",
+    "sha": "1bdabdfc8be802205df650ccd0d7e81619caeb8e",
+    "size": 1326
+  },
+  {
+    "path": "bouken/tests/character-aptitude/review-manifest.json",
+    "sha": "6f0a588afff55918679ff626e2fa40581fd950f1",
+    "size": 420
+  },
+  {
+    "path": "bouken/tests/character-aptitude/scorer.cjs",
+    "sha": "291c8895218cc4bf19d99732f26f90aadc614697",
+    "size": 6355
+  },
+  {
+    "path": "bouken/tests/character-aptitude/scorer.test.cjs",
+    "sha": "40238f1b80686cd9ac959b41585336880e0821d2",
+    "size": 10343
+  },
+  {
+    "path": "bouken/tests/character-aptitude/scores.csv",
+    "sha": "54e734bbd62c4cf6c7ae06a8962e5297a3dc0f74",
+    "size": 76115
+  },
+  {
+    "path": "bouken/tests/character-aptitude/scoring-v1.json",
+    "sha": "5e03013430259453cee5fb1ece7598bb5269bb96",
+    "size": 18840
+  },
+  {
+    "path": "bouken/tests/character-aptitude/test-results.tap",
+    "sha": "27f85604764caa2d9a85ba4b4a393379650cf2d4",
+    "size": 43426
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/PHASE6-PLAN.md",
+    "sha": "327f607000cfbac63a0ee63cefe03b7f6e225cb2",
+    "size": 4430
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/README.md",
+    "sha": "04d7d26325f75948224cc09b71b1351a1e701144",
+    "size": 3978
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/REPORT.md",
+    "sha": "aaebaa496528193c5ed6d4f771ef3a4b38b3b4da",
+    "size": 2719
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/analysis.json",
+    "sha": "1ce075200996f5925e5cd6453f8ad030dfd0eacd",
+    "size": 2424
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/calculate.cjs",
+    "sha": "f79e04401253f21257bb773878ada947f0f2c081",
+    "size": 7861
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/comparison.csv",
+    "sha": "8e41d5f6989a4aac245142409ab40e842a1ce69b",
+    "size": 627270
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/details.json",
+    "sha": "c3668f18eeed1128fd6d10745eaa7efb30744a0d",
+    "size": 3109620
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/distribution.csv",
+    "sha": "76519637cfd7f5b47935155f2bf7f2517a55fb90",
+    "size": 292457
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/e08-impact.csv",
+    "sha": "70bf3cc9e34958481d8a6a84b7041cf9faeeb6ba",
+    "size": 67677
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/excluded-skill-audit.csv",
+    "sha": "213eaa5798a816a7dab40e6f792508503d4a3bf3",
+    "size": 99925
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/independent-check.py",
+    "sha": "c3c3bc8b031e5e4771c828fa5e9eb2ca174963ee",
+    "size": 2612
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/input-manifest.json",
+    "sha": "91e03343b137280df737d4d65072741d2ef57f5f",
+    "size": 18195
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/FOCUSED-ANALYSIS.md",
+    "sha": "5dad6c68066e27af5bd788bff9f0ad218830c4db",
+    "size": 12519
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/PHASE4-REANALYSIS.md",
+    "sha": "59f4bf8e2b9c64d933d721234bbb2c9411c7c4e6",
+    "size": 5948
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/README.md",
+    "sha": "2572ff67ab97fa39361d0bf2452389e026b444c4",
+    "size": 4002
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/REPORT.md",
+    "sha": "400c4bea2e3c81a8995ee5fbf12ab7c4fdfb1cad",
+    "size": 5744
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/SKILL-AUDIT.csv",
+    "sha": "d39f1c90986830649278a7cdde88015a7f9fcbe6",
+    "size": 434902
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/analysis.json",
+    "sha": "219fa3824256ec9b29279cc12a5a605c667f215e",
+    "size": 13510
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/audit.py",
+    "sha": "5ac1b367dfb8aa3780f38236141d2cec62ca912d",
+    "size": 22904
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/b-information.csv",
+    "sha": "eb7fb9d393fc37b168fc41e3f3dd304624fe5aa2",
+    "size": 7546
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/character-v2-measurements.csv",
+    "sha": "1c028f72800e761f8188008812184f9ed093896f",
+    "size": 59974
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/collector-reanalysis.csv",
+    "sha": "33d7cb60c275ed634a51e745354aa434b8959379",
+    "size": 11547
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/correlations.csv",
+    "sha": "cd8e4fdd36b25fcf77e2257237bf6880edd995a2",
+    "size": 295
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/d06-observed.json",
+    "sha": "3b32c05fcb57178e27af21d3f0821c64ee44382b",
+    "size": 1798
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/d06-probabilities.csv",
+    "sha": "0be7f399fe9e499700adb3a6ffa01292e0bef9fd",
+    "size": 17652
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/e-blessing-comparison.csv",
+    "sha": "a3f902063c8593eb2952c7f7bebdcc15b64c2442",
+    "size": 4241
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/effect-notes.json",
+    "sha": "b30eb4748842f5369c9869f807af68aa7292231c",
+    "size": 41002
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/facility-expectations.csv",
+    "sha": "5ba242acce7306b03285ac0b2721604cafbc7c77",
+    "size": 6400
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/facility-pools.csv",
+    "sha": "1705ef3698f6b78645f52fb5e687d9acb718306f",
+    "size": 810
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/input-manifest.json",
+    "sha": "6ef38de9f22d623add0daaa1f0984774f1d5030a",
+    "size": 21783
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/provenance.json",
+    "sha": "1cd46425135680e72547fc06ecb859d26f435618",
+    "size": 372
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/reports.py",
+    "sha": "5a06bdc982e72ce6b884ed160edd0f3362693956",
+    "size": 23797
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/runtime-oracle.cjs",
+    "sha": "de9c443ccb5058b27816d7cb9e74a9b9d37905a1",
+    "size": 2331
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/support-paired.csv",
+    "sha": "de97540b61cbdb3cf48e66124cd1a57a90c02bfa",
+    "size": 19340
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/validation.log",
+    "sha": "354585632659c43022cca3fa8f813ef0d3dd73b0",
+    "size": 1229
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/verification.json",
+    "sha": "ad8f1c3a9d27ac0bc4ca6d137eb0f7f213103b03",
+    "size": 5049
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-audit/verify.py",
+    "sha": "a385fe5d5dbd6391e517c8c0fa5e09ea2587789e",
+    "size": 9311
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-plan.json",
+    "sha": "e512d2e5816fa5552bebb960e958b66ccf492760",
+    "size": 35444
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/phase6-selection.csv",
+    "sha": "4bbd8045040697acc9a8c93754f0d4f83a506097",
+    "size": 11621
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/plan-phase6.cjs",
+    "sha": "d3f84a5e605b2faea97a16a2bb27747308f78342",
+    "size": 4701
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/scorer.cjs",
+    "sha": "1ef05c0cf170ffb2d6e74733de74f067b7a03f04",
+    "size": 4800
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/scores.csv",
+    "sha": "5c229af58459c929063c49bb4055cbfe3a88a9b5",
+    "size": 784453
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/scoring-v2.json",
+    "sha": "2cb013ebf65d5efa3c9a222a6e2d18f3349f964d",
+    "size": 21832
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/specialty-changes.csv",
+    "sha": "2e322d92a849160a7eb351a4526a653ccaefa7ae",
+    "size": 93898
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/validation.log",
+    "sha": "0ddc3ad7a135f7493ef323a5b9f1397fe35a66cd",
+    "size": 2080
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/verification.json",
+    "sha": "25d4a0da3a881fc8741ba9eed7f523e2f20e74d4",
+    "size": 5920
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v2/verify.cjs",
+    "sha": "297596ac8aa03b09ececd35e15081ee07b1b45d4",
+    "size": 6519
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v3/REPORT.md",
+    "sha": "3188e59056e3f48ee97e9f1af18abe1c5c1cbbfc",
+    "size": 1040
+  },
+  {
+    "path": "bouken/tests/character-aptitude/v3/scores.csv",
+    "sha": "9d819164111d4cb58b7aa1f84e4879e155c04985",
+    "size": 211769
+  },
+  {
+    "path": "bouken/tests/character-aptitude/verification.json",
+    "sha": "e5c74065bb8d6a16693ea30857e32b7034a368c9",
+    "size": 689
+  },
+  {
+    "path": "bouken/tests/character-aptitude/verify.cjs",
+    "sha": "9a1f2062dab104a876f4882a3abd706d7a5ad463",
+    "size": 1070
+  },
+  {
+    "path": "bouken/tests/collection-claims.test.cjs",
+    "sha": "9283c0a1388098a97774b16c4c80490985fe0992",
+    "size": 5407
+  },
+  {
+    "path": "bouken/tests/collection.test.cjs",
+    "sha": "22e82cfd6dd5210b13ff90b971b4e28e1e14da31",
+    "size": 5645
+  },
+  {
+    "path": "bouken/tests/departure-navigation.test.cjs",
+    "sha": "6543c52e1f0a673414eb6b0765b74301d2944f8e",
+    "size": 3722
+  },
+  {
+    "path": "bouken/tests/e-buffs.test.cjs",
+    "sha": "795f65db043beae9cf54520c038acbbb76bb4a5b",
+    "size": 3932
+  },
+  {
+    "path": "bouken/tests/e08-shape.test.cjs",
+    "sha": "3e961272cb9231d566349135640799b99eb4a7f5",
+    "size": 5447
+  },
+  {
+    "path": "bouken/tests/e09-migration.test.cjs",
+    "sha": "7ab07fc76c388449af22a46288629725fcf1ef07",
+    "size": 8257
+  },
+  {
+    "path": "bouken/tests/encyclopedia.test.cjs",
+    "sha": "25a40a74490e7675f9395a6341334664aa199bd2",
+    "size": 4333
+  },
+  {
+    "path": "bouken/tests/event-images.test.cjs",
+    "sha": "5b8dea7f9506baf8f5e2d17f5aa3ceca6315ef3f",
+    "size": 5383
+  },
+  {
+    "path": "bouken/tests/exploration-reward.test.cjs",
+    "sha": "676a6c8bdea8e42cf475db8566b447473be2bd09",
+    "size": 3267
+  },
+  {
+    "path": "bouken/tests/f-buffs.test.cjs",
+    "sha": "b42a2f928214651a3a2fc7a13bd4cd3fd82b0326",
+    "size": 9955
+  },
+  {
+    "path": "bouken/tests/facility-event-fixture-save.js",
+    "sha": "6b9f318f7a253d2b790e0e0cb2afc40ef803d38e",
+    "size": 765
+  },
+  {
+    "path": "bouken/tests/facility-event-preview.html",
+    "sha": "12240afa7f04faca0a3ad68f53afe1bf3861f90f",
+    "size": 5069
+  },
+  {
+    "path": "bouken/tests/facility-event-ui.test.cjs",
+    "sha": "b8996b3ca782670f4420d3a48eb5610e5fe5c8f4",
+    "size": 4669
+  },
+  {
+    "path": "bouken/tests/fixtures/world-render-v89.js",
+    "sha": "c79feaa00c3c4ac5551761e6c81f839a3d7dbd8f",
+    "size": 3609
+  },
+  {
+    "path": "bouken/tests/forecast-runtime.test.cjs",
+    "sha": "1e73666124a5ea6e1c69d3ed068a51f16163ad43",
+    "size": 1948
+  },
+  {
+    "path": "bouken/tests/helpers/render-dom.cjs",
+    "sha": "e79d17546e5e8a01eb5d39a2067815f1356060db",
+    "size": 2940
+  },
+  {
+    "path": "bouken/tests/helpers/world-render.cjs",
+    "sha": "6e26df9f477394b1463b96bfa9640954a6f8be89",
+    "size": 6116
+  },
+  {
+    "path": "bouken/tests/home-growth-notice.test.cjs",
+    "sha": "b3f7e279f4e3a5d338186d0ad9b0078eb2c7dda1",
+    "size": 2983
+  },
+  {
+    "path": "bouken/tests/navigation-sense.test.cjs",
+    "sha": "4ffd552e4e685cf030e2d46f489f457d07ca7608",
+    "size": 1480
+  },
+  {
+    "path": "bouken/tests/party-forecast.test.cjs",
+    "sha": "a33f68d3347fb0eee97b33cedd4039a6048c7dd6",
+    "size": 5202
+  },
+  {
+    "path": "bouken/tests/party-recommendation-fixture.js",
+    "sha": "753cf148648fc9598de830c470ef71c244669aa2",
+    "size": 762
+  },
+  {
+    "path": "bouken/tests/party-recommendation-game.test.cjs",
+    "sha": "494dab2036c9df9d3fd8814a67660cd48fcb8d77",
+    "size": 4954
+  },
+  {
+    "path": "bouken/tests/party-recommendation-preview.html",
+    "sha": "93c197091c7f66e9d6ca907a5560eb653b505890",
+    "size": 4004
+  },
+  {
+    "path": "bouken/tests/party-recommendation/README.md",
+    "sha": "2a10bd7461f4bbcd28ee0061df88c30f07a5deec",
+    "size": 4112
+  },
+  {
+    "path": "bouken/tests/party-recommendation/audit-results.json",
+    "sha": "12efd68eb28c997d64404060a2e05a131a9ce7ba",
+    "size": 627597
+  },
+  {
+    "path": "bouken/tests/party-recommendation/audit.cjs",
+    "sha": "c5a92b3241f6dbcec39bae813de1b3733e25c634",
+    "size": 3177
+  },
+  {
+    "path": "bouken/tests/party-recommendation/config.json",
+    "sha": "91fbf17b84dd7d8d6278102e6ca665c54a739d49",
+    "size": 447
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/README.md",
+    "sha": "401ac79cc5c6ea6d1c577dfa604ce01035ef9137",
+    "size": 5449
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/analysis.cjs",
+    "sha": "509ed0fe4819b0c645a78dbf17c15ac435a0a611",
+    "size": 3381
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/batch.cjs",
+    "sha": "6b4a3ead3c5c8e286130952d970b14a22bfbdfc3",
+    "size": 8916
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/instrument.cjs",
+    "sha": "c65b9fdaa1ed8a465582992dacc205b2e9013754",
+    "size": 1464
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/light.cjs",
+    "sha": "5693d5703e2b3bca5a7da64208fdc62da57b2df0",
+    "size": 4089
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/pilot-1500-20261026/10-01-001.json",
+    "sha": "adf28e997d3e79b825d6961f0af2260bee679375",
+    "size": 38649
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/pilot-1500-20261026/100-03-001.json",
+    "sha": "398d8e21319f92409c3ef21e2c4cd79acadc7c0e",
+    "size": 84907
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/pilot-1500-20261026/30-01-001.json",
+    "sha": "05622162af899390d54989015dc2ffc62ab89bff",
+    "size": 59986
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/pilot-1500-20261026/300-02-001.json",
+    "sha": "dd837313c43748713635df446f274a126873e213",
+    "size": 120158
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/pilot-1500-20261026/927-01-001.json",
+    "sha": "f4b8a2ab72a3a2e61e062741a1e6d3791f930f48",
+    "size": 126594
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/pilot-1500-20261026/manifest.json",
+    "sha": "c938ea360aee2cf6c56e6d10394c49df9354ba64",
+    "size": 2357
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/pilot-plan-1500.json",
+    "sha": "b086c612d7ac6ce90445532a887d249f71da7cd7",
+    "size": 341658
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/pilot-summary.json",
+    "sha": "780b292f9dcc3de37e4f15ed0a8cb86f4110e5a1",
+    "size": 311
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/plan-1500.json",
+    "sha": "f8a9d2879bd34b331ee062d22a6c9789bbc6c50a",
+    "size": 341679
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/plan-test.cjs",
+    "sha": "4595893888b67a61bbeb34d67c4cfa7466156992",
+    "size": 1570
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/plan.cjs",
+    "sha": "fb15a3bef4a3f073a866be3fb81fa4fa2d06f441",
+    "size": 1886
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/report.py",
+    "sha": "c0e9d45706be45eefe18cbeb533acd9f4bab38bc",
+    "size": 20483
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/results-20261026/case-01.json",
+    "sha": "e1cf161950a265a342711951ed59d1e96ed98f46",
+    "size": 207029
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/results-20261026/case-02.json",
+    "sha": "30526fc38a36715af218bec32ec7e1ff213fe164",
+    "size": 613289
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/results-20261026/manifest.json",
+    "sha": "1a94825a50eae3a26c010ebe12e5338ad21e4126",
+    "size": 1634
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/results-20261026/status.json",
+    "sha": "74cf200edcc9381ba99eec56620f389368a063c9",
+    "size": 212
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/run.cjs",
+    "sha": "cd7fd332c0326d9317424fe8c660f153b46177fa",
+    "size": 11867
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/switch-pilot-20261026.json",
+    "sha": "edfca2564e9c0e9ac7600bf335a007d803e7731b",
+    "size": 11544
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/switch-pilot.cjs",
+    "sha": "f3112b2905adb06fbc559cde4827d3fc73bd79c0",
+    "size": 1520
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine-comparison/test.cjs",
+    "sha": "7c8675a7f513851faef14ad3ba19dc53f8159407",
+    "size": 2816
+  },
+  {
+    "path": "bouken/tests/party-recommendation/engine.cjs",
+    "sha": "adfbe6a5d4fd8675b59f60b3f2d80f73e06dbcf8",
+    "size": 17857
+  },
+  {
+    "path": "bouken/tests/party-recommendation/extra-checks.cjs",
+    "sha": "3448c6e190fb126e84582fde37b12603b208cb82",
+    "size": 1371
+  },
+  {
+    "path": "bouken/tests/party-recommendation/extra-results.json",
+    "sha": "2af4935dc01cc53ceacc65b2efb670e960225f2b",
+    "size": 2796
+  },
+  {
+    "path": "bouken/tests/party-recommendation/game-browser-v71.json",
+    "sha": "a84266374275f59f9e6b81b7b4828c17642ea189",
+    "size": 3703
+  },
+  {
+    "path": "bouken/tests/party-recommendation/game-v71-complete.jpg",
+    "sha": "90e18a1f9fbf6fe0ac11a470278cf3294b515427",
+    "size": 102949
+  },
+  {
+    "path": "bouken/tests/party-recommendation/initial-findings.json",
+    "sha": "f09867e659676953afad6d471ec8cf8477acc699",
+    "size": 9412
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/README.md",
+    "sha": "cbb245171e46239b8894558ca6beb51c4fc0bea2",
+    "size": 9924
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/api-e3-baseline.cjs",
+    "sha": "a709b1f76f0f304930b07ae47de27a69eabc56a3",
+    "size": 21821
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/api-e3-candidate.cjs",
+    "sha": "f6017f89551e267b319cacaf790e977bfccbb0e9",
+    "size": 23528
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/api.js",
+    "sha": "fab1ab3d793dfd36497c4f8d97cef7cd7dd89817",
+    "size": 21880
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/app.js",
+    "sha": "3cc4f4ec28a02ef38e14b9bdc78d77c18b6dd9dd",
+    "size": 17500
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/balanced-browser-20261027.json",
+    "sha": "874a8a62e4a66102b28ad1b68e8944d18d66cacf",
+    "size": 26340
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/balanced-light-test.cjs",
+    "sha": "bd9f37c07271101ba96ee7dc9fec4533eee0d866",
+    "size": 5376
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/balanced-light.js",
+    "sha": "0e864a97de14801eb1286ac148170a5630c8a1e1",
+    "size": 7595
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/balanced-mock-20261027.jpg",
+    "sha": "fe936ccb8419e5d51473076ba569aac218b2e205",
+    "size": 77165
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/balanced-quality-20261027.json",
+    "sha": "e1dad9b48023b6772b2d54176ae722e831473d55",
+    "size": 128312
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/balanced-quality.cjs",
+    "sha": "754f3f608f32a13291d4c351a94eeb2d95b374d5",
+    "size": 3369
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/def-browser-verification.json",
+    "sha": "3b0f8ca6af410e170eb8487fd9a65a2e076b0840",
+    "size": 2177
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/def-quality-results.json",
+    "sha": "2d0c6876f8dbcfa292746c2f2a4fd49cbc077df5",
+    "size": 433490
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/def-quality-v2-results.json",
+    "sha": "c52f6ae68aa4187706868d626b12fa8027d1ae01",
+    "size": 100071
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/def-quality-v2.cjs",
+    "sha": "c6f082be6a365a1c60e035d566ee5aae043792b2",
+    "size": 5054
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/def-quality.cjs",
+    "sha": "21cbd432a426fd0cf7a0b6beeaf2518194cafd96",
+    "size": 5125
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/def-test.cjs",
+    "sha": "d8078317d0a8486b661a3c4a299334af72630fda",
+    "size": 3312
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/e3-baseline-development.json",
+    "sha": "78303f599c7979287752035f798fc977b7db417d",
+    "size": 68885
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/e3-baseline-holdout.json",
+    "sha": "16c7f42f685f503b1113ee6751610e80f76da14d",
+    "size": 193892
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/e3-improved-development.json",
+    "sha": "936702803f7c271e8b5b39a0897af7e7c919149e",
+    "size": 67720
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/e3-improved-holdout.json",
+    "sha": "c5be60fa7cbe431cae9eff75bb5a8cdd8104d845",
+    "size": 184591
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/e3-summary.json",
+    "sha": "3f9bad00032c81b7ab1f2bf58db9df8db63c3c04",
+    "size": 3396
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/e3-test.cjs",
+    "sha": "7bdcf66fce627143b0b17dbc11711f6a22dda5c7",
+    "size": 1315
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/index.html",
+    "sha": "23df36e2e68f384d8dc3a65e4eed3710d9d93e93",
+    "size": 5528
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/initial-audit-20261025.json",
+    "sha": "3947366ceca9e3eee81bc74026fb3351e617d384",
+    "size": 108205
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/layout-verification.json",
+    "sha": "c2afdabcf5be79a23f75c1df04e7a26077b2287a",
+    "size": 1730
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/light-app-test.cjs",
+    "sha": "632831227c1104fa3cd7d22841379ac735cac27c",
+    "size": 5923
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/light-browser-check.html",
+    "sha": "2b045ed506d42ad4080085f0a15e26657fc6be98",
+    "size": 949
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/light-browser-screenshot.jpg",
+    "sha": "f9c3b36326315129b0740cc4ccb52582df20a535",
+    "size": 76024
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/light-browser-verification.json",
+    "sha": "67b026d8dc2c71224de522f258b5233528b531f4",
+    "size": 19820
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/light-test.cjs",
+    "sha": "7ca00b8849c2fc8d4c55fa7f0f66ddd22eadbcf7",
+    "size": 4065
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/light-verification.json",
+    "sha": "a6cf730007bf0318ca20b8899e50247fce96710b",
+    "size": 748
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/light.js",
+    "sha": "ebca94de4e451a6cfa17fcda0981a1485692c984",
+    "size": 4453
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/outcomes.js",
+    "sha": "ecbb8516e48804183c716ce0970b8df17a9f9ca9",
+    "size": 6806
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/quality-e3.cjs",
+    "sha": "509bae690bf2e8e9ffd0d71c129341050e499b4b",
+    "size": 6034
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/radar-test.cjs",
+    "sha": "5e363d20ec0f0771f68645a5ccca787eb856f96d",
+    "size": 2282
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/radar.js",
+    "sha": "31acb0bf2e4845431607dc8a1cdf9a11deb11abc",
+    "size": 3301
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/read-only.js",
+    "sha": "130f7db9a429ec77aca58c698d3f42b0e7cbbf82",
+    "size": 964
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/render-e3-report.py",
+    "sha": "80b13d4edcee85a27034a4fdf88480007db93629",
+    "size": 10622
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/report.py",
+    "sha": "52ce6ed3a0ce73596c1e3bb11a045b1ceeab943e",
+    "size": 9363
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/responsive.html",
+    "sha": "16e88528b836ba6743352f1a8a85f103b18e5a92",
+    "size": 704
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/results.json",
+    "sha": "2428fc215bfac2b6662147a8c891d3b792108487",
+    "size": 1184979
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/runtime.js",
+    "sha": "b3871bd42204111164017240e933a57bb7c79003",
+    "size": 1600
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/search-progress-test.cjs",
+    "sha": "f2769177fab6207c64a29241c29088976fa66866",
+    "size": 2286
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/search-progress-verification.json",
+    "sha": "e7d7d62d39239dceb644ce31e214033851a4a66f",
+    "size": 1140
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/search-progress.js",
+    "sha": "ce53a8deff4988b59b7c51b6a8ebaabfb3cdaacc",
+    "size": 3342
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/source-audit.json",
+    "sha": "cf1bbb2098386b3dd65ef58d34dc040dad5ebbd5",
+    "size": 2952
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/style.css",
+    "sha": "31f94aecc06ee2f0abb36278b542a121abd9e924",
+    "size": 11043
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/summarize-e3.py",
+    "sha": "d642f2eab4c9a294c16ca92bda03eab19cfdd988",
+    "size": 1527
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/summary.json",
+    "sha": "3329d9b81b2bbc0ad5514a448a36f25b449dbf3d",
+    "size": 17308
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/test.cjs",
+    "sha": "3b80acf3a8885053e893d5a527efd8d85b0d7e84",
+    "size": 6290
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/unlocks-test.cjs",
+    "sha": "13f7eb76ffc8aba6b0cc667a21f0712e02c5a976",
+    "size": 2782
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/unlocks.js",
+    "sha": "7f65194bbf6a1ac418305df840914b76dbf83157",
+    "size": 1065
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/validate.cjs",
+    "sha": "f2b02c0c2fffe3a27371416f85225f47a6b67871",
+    "size": 3643
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/verification.json",
+    "sha": "45dec181dadedb21de056f38be5fd1e80ca03655",
+    "size": 1934
+  },
+  {
+    "path": "bouken/tests/party-recommendation/integration/worker.js",
+    "sha": "9d0d8f1b4ae2d4c6239b380e73eda45f6f5087f4",
+    "size": 2698
+  },
+  {
+    "path": "bouken/tests/party-recommendation/mock/README.md",
+    "sha": "2ba402fcd48182f611c753ac8bee8143354dd68f",
+    "size": 6895
+  },
+  {
+    "path": "bouken/tests/party-recommendation/mock/app.js",
+    "sha": "2b30b230ccceaa41c707c0e44c09b3d2d0dba8be",
+    "size": 8800
+  },
+  {
+    "path": "bouken/tests/party-recommendation/mock/browser-result.jpg",
+    "sha": "730aad11b873b69ceee85be633c4c4e948d10edb",
+    "size": 52985
+  },
+  {
+    "path": "bouken/tests/party-recommendation/mock/guard.js",
+    "sha": "ddb3d977029723e606067b23868fc4b8b8548308",
+    "size": 418
+  },
+  {
+    "path": "bouken/tests/party-recommendation/mock/index.html",
+    "sha": "90cff0cde4e46e7dc023dcded81b31279d0cde4a",
+    "size": 4188
+  },
+  {
+    "path": "bouken/tests/party-recommendation/mock/model.js",
+    "sha": "306ce1afd7f7e6af3aac31d2a871213e8df52924",
+    "size": 4124
+  },
+  {
+    "path": "bouken/tests/party-recommendation/mock/responsive.html",
+    "sha": "11ccd31ae38393c44b077d38c01a04dc508219b3",
+    "size": 866
+  },
+  {
+    "path": "bouken/tests/party-recommendation/mock/samples.json",
+    "sha": "84da69f49b976bfe1aefa68f1c795928b44bdfc7",
+    "size": 25566
+  },
+  {
+    "path": "bouken/tests/party-recommendation/mock/stage-b-browser.jpg",
+    "sha": "5f5945fcf9288ca0bb9f03372ae1ea23b05f3696",
+    "size": 58846
+  },
+  {
+    "path": "bouken/tests/party-recommendation/mock/stage-b-verification.json",
+    "sha": "5711172e7886746a8d50011b671d2f07cb856df3",
+    "size": 659
+  },
+  {
+    "path": "bouken/tests/party-recommendation/mock/style.css",
+    "sha": "6839e1726ad214da1b3a089d61aa97c992af02f6",
+    "size": 7401
+  },
+  {
+    "path": "bouken/tests/party-recommendation/mock/test.cjs",
+    "sha": "8b2cccbc5699e5499d39171b9362c328efa66847",
+    "size": 4854
+  },
+  {
+    "path": "bouken/tests/party-recommendation/mock/unavailable-image.txt",
+    "sha": "ee90cfa032c1518c32a59ae5aabd29122d6202a6",
+    "size": 112
+  },
+  {
+    "path": "bouken/tests/party-recommendation/mock/verification.json",
+    "sha": "50d1b09a65eb145b77c4b9811e38ae428e592d40",
+    "size": 1910
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/README.md",
+    "sha": "47649bc52d9aedbe60e3958ed975e8f000d0cb75",
+    "size": 5147
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/ablate.cjs",
+    "sha": "fa294270be6f5605733f1449558737bbd9a57750",
+    "size": 2124
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/ablation-results.json",
+    "sha": "fe553530cc55469c060ae638d9ffbc46b1393e5b",
+    "size": 1401586
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/browser-additional.json",
+    "sha": "9a8259858fb5125efce541742ee2445cba9dca4d",
+    "size": 145928
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/browser-measurement.json",
+    "sha": "fb5562a627d05e3647ccc69aace3cc0839ab8fd5",
+    "size": 76518
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/browser-result.jpg",
+    "sha": "0404050ef605c1b530c2d51f7eae5c1ba32b8b4a",
+    "size": 93517
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/browser-verification.json",
+    "sha": "9668cd5a9a108752f3d29385e58a932383e281e6",
+    "size": 3184
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/browser.html",
+    "sha": "bf48453fed7d27f1d8490452a216b7f2d21944ae",
+    "size": 3852
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/browser.js",
+    "sha": "d9a4d3e90ffc04af5fdde0576cff54175f2a9092",
+    "size": 4030
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/config.json",
+    "sha": "cf52cadf039d9e1e8a7cfc873c4590a1a5b9f343",
+    "size": 606
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/core.js",
+    "sha": "240878c336d216d5f0d019f48e4832952fd9e7c1",
+    "size": 31797
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/horizon-results.json",
+    "sha": "42c61ee218ce0e7c82cd767ae278fab3e38115e9",
+    "size": 40261
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/long-horizon.cjs",
+    "sha": "2d0bb7c2ccdd38ef57d2ad83ceb833b9f946f3b4",
+    "size": 1540
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/node.cjs",
+    "sha": "aeca2e610fa1308eca50c4ec33d656178868310f",
+    "size": 217
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/policy-check.cjs",
+    "sha": "c587926440fe9233b7b8bd8b91f862b163855f36",
+    "size": 893
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/policy-results.json",
+    "sha": "295e4be0ff1f693b7aee9bbf0b713f3b8c173938",
+    "size": 36479
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/report.py",
+    "sha": "1be15cfe1fef6700c363277ef54d91cf9717edad",
+    "size": 36003
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/responsive.html",
+    "sha": "433bee6f96a56c8fa75646f8959f5be89536e7e0",
+    "size": 923
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/alternate-500-10.json",
+    "sha": "463fb799d9cbc03572c5a256eac45ef3f14a3a07",
+    "size": 174661
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/alternate-500-10.validation.json",
+    "sha": "9bfece25179a15febe9cd7ef7b3922118e469c4a",
+    "size": 100768
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/alternate-500-20.json",
+    "sha": "8bf6910d479252ac5b172310c4f0a808e29e7768",
+    "size": 139812
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/alternate-500-20.validation.json",
+    "sha": "7a1cea36b16b149b12c2e8817d350861a8b9fd58",
+    "size": 75338
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/alternate-500-30.json",
+    "sha": "a0f788d4520dbb35d6bf3f9316ea18dd842ecc0f",
+    "size": 138397
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/alternate-500-30.validation.json",
+    "sha": "2970f00dedc28b51244951d40a28871f6d65dce0",
+    "size": 77491
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/early-140.json",
+    "sha": "f41fe4737c6b6ac6fb0f65ff3ca942c2a0ba375d",
+    "size": 149879
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/early-140.validation.json",
+    "sha": "3ee39932d14cc91d6d3c1f714e1d95886bf4cb9c",
+    "size": 89230
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/late-279-unclaimed.json",
+    "sha": "3b29e76a88790575b157e2bc783655870c2f1325",
+    "size": 164263
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/late-279-unclaimed.validation.json",
+    "sha": "83d835c3831d600bc44a80693db5c06a9db717f6",
+    "size": 95699
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/late-900.json",
+    "sha": "c913f30ccf44c28fb9af0817bb948eb27a8bf834",
+    "size": 195763
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/late-900.validation.json",
+    "sha": "34346ad55f421fae509bb4cc8b881e081bade29e",
+    "size": 88702
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/legacy-100.json",
+    "sha": "d0bf7391d7bc1795438ddd2e2ef331c7c0f60388",
+    "size": 160727
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/legacy-100.validation.json",
+    "sha": "a2ccef0edbaa9bcca919e4dafa1841bf682cfa03",
+    "size": 145243
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/legacy-30.json",
+    "sha": "fd1be1acc60dead1424ac322d2aebd309856a272",
+    "size": 124658
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/legacy-30.validation.json",
+    "sha": "59eb69faa0c482cf574a37d5395d63b2fb18e860",
+    "size": 98834
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/legacy-500.json",
+    "sha": "b6d1275b7c13769f6f10a93aa7db01746dd400e2",
+    "size": 196596
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/legacy-500.validation.json",
+    "sha": "adf747cea09369ea5c68b8ae08203fb238f63f37",
+    "size": 142312
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/legacy-927.json",
+    "sha": "fe3a74bbac2e83f8f1b187b958f1f7d2226d5128",
+    "size": 215146
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/legacy-927.validation.json",
+    "sha": "9108e1feca51c79de391c4c26b29c9a09ea16b3b",
+    "size": 162302
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/ownership-only-500.json",
+    "sha": "9bd358c1cdc8c54a2015b6e807d119ae34054718",
+    "size": 175511
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/ownership-only-500.validation.json",
+    "sha": "32e84997882adffec654e924c1a339d5f746e362",
+    "size": 149668
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/rich-927-unclaimed.json",
+    "sha": "60f3526d19d240de96856aa00933ca8067a1779a",
+    "size": 202112
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/rich-927-unclaimed.validation.json",
+    "sha": "a83a8e9b5c7bfae8956216b121541d004799d278",
+    "size": 103390
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/rich-927.json",
+    "sha": "d13258db36a840d9d1892164df9c31d70eb99c25",
+    "size": 203669
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/results/rich-927.validation.json",
+    "sha": "72666b19a7bf1c018be2ff7108c38bb34285d732",
+    "size": 96172
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/run.cjs",
+    "sha": "9d934c6f8be8037f07978917949d5479101a549f",
+    "size": 2897
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/speed-results.json",
+    "sha": "2488be77b87ff4936edd0b80d26cb62d98a5dc98",
+    "size": 1055
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/speed.cjs",
+    "sha": "deec9451638c298f8ecb4cf394ccb92cb49f08a3",
+    "size": 1207
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/test.cjs",
+    "sha": "3a8424be79112c681c6cc92c93a9fa9ffc4fdf45",
+    "size": 5396
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/validate.cjs",
+    "sha": "dda243c49bac857882785deb8036c140f22ec654",
+    "size": 5346
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/verification.json",
+    "sha": "fd5046cfb434990049aab558b40d6a2ed46d2c79",
+    "size": 2451
+  },
+  {
+    "path": "bouken/tests/party-recommendation/phase2/worker.js",
+    "sha": "d2ca0e1a5829ce32f973e5270a310eb84defcf37",
+    "size": 2849
+  },
+  {
+    "path": "bouken/tests/party-recommendation/results-quick.json",
+    "sha": "803d854c6e7a47c68e4dd9d7f5ce4d133c049de0",
+    "size": 202575
+  },
+  {
+    "path": "bouken/tests/party-recommendation/results.json",
+    "sha": "6b6623b4b87b664051a0e06e9905e473c45257ce",
+    "size": 557145
+  },
+  {
+    "path": "bouken/tests/party-recommendation/run.cjs",
+    "sha": "7c73455d1bd08de20354a7a131f626fce3c6dd9c",
+    "size": 1231
+  },
+  {
+    "path": "bouken/tests/party-recommendation/source-manifest-original-ver69.json",
+    "sha": "9938ffdbab3fbd83d8985d7b91db516b9443b99e",
+    "size": 1495
+  },
+  {
+    "path": "bouken/tests/party-recommendation/source-manifest.json",
+    "sha": "d7d3a2c9bc3754d423de3ad2ca0e18d7f1490c9b",
+    "size": 1709
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random-cause/README.md",
+    "sha": "566ac1357f17a9514f43375eab6d50f534796227",
+    "size": 4965
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random-cause/analyze.py",
+    "sha": "2df278d6181faa8a450db9c372ddd4a675f1b977",
+    "size": 5459
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random-cause/describe.cjs",
+    "sha": "f0c0cdc3c2e48915bf35e810772711ffcc833ec6",
+    "size": 1010
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random-cause/plan.cjs",
+    "sha": "1ce469c36bd5cb815932d6547e465dc89f77b8f2",
+    "size": 3771
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random-cause/report.py",
+    "sha": "8bf66388dae27bdf6aff22df836a9e81093e4f9b",
+    "size": 16014
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random-cause/results-20261026/ability-groups.json",
+    "sha": "6443e0d18b2d123733f6ac57ad3addf73e2b454f",
+    "size": 4594
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random-cause/results-20261026/all-teams.csv",
+    "sha": "ad95bb45a9aafb0c4a95ea3e9e7d7c9a64e46ae5",
+    "size": 12062
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random-cause/results-20261026/analysis.json",
+    "sha": "4ba13bfb095a02f33781ddc0b7ed872345e5ba56",
+    "size": 95283
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random-cause/results-20261026/background-skills.json",
+    "sha": "25321957ebf7a7de2f3eb232a3bfdb22b08082cd",
+    "size": 26038
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random-cause/results-20261026/companion-teams.csv",
+    "sha": "ba6f498dfc8e40ccae8424acb674ef982d3db716",
+    "size": 5819
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random-cause/results-20261026/plan.json",
+    "sha": "8ba70cc49f10d05da9e19f40ab795b285033b1f6",
+    "size": 67038
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random-cause/results-20261026/results.json",
+    "sha": "d85ff452102fe28a152ba999037d48a88f53612f",
+    "size": 522253
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random-cause/results-20261026/treasure-teams.csv",
+    "sha": "a2a6769ba855dc31dfb2beb9be5ba20bbc45194f",
+    "size": 6557
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random-cause/results-20261026/verification.json",
+    "sha": "fa3b3f0dc104eeb8aeb5cbd59c9488a725427673",
+    "size": 981
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random-cause/run.cjs",
+    "sha": "617a8c592e3a1b71a1abd50043020496fb4cf4b4",
+    "size": 2393
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random-cause/test.cjs",
+    "sha": "81f3bc0a14da4f2e00ccae6596addd2de5aca78e",
+    "size": 1992
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random-cause/verify.py",
+    "sha": "8e30cd11ab317014c7889272458a9c07669674d7",
+    "size": 1834
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random/README.md",
+    "sha": "92f460a275861218761e0cc2db9dfb678d7c1363",
+    "size": 4817
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random/diagnose.cjs",
+    "sha": "08bbe1c341e9226ac5e6896390b9cf2a7d14c456",
+    "size": 2195
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random/lib.cjs",
+    "sha": "fb7cab61eabc3dda1e308785870794dc369be7f5",
+    "size": 4043
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random/measure.cjs",
+    "sha": "a88401b25421e0bec9db4762a205aa6ec2c22136",
+    "size": 3120
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random/profile-overhead.cjs",
+    "sha": "ab7c3fc160798ccbbca31a5cd5b438a599e055bb",
+    "size": 1225
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random/report.py",
+    "sha": "92cf7430dc33e32862a92d6ffa5807f3dd5d0caa",
+    "size": 17021
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random/results-20261026/baseline.json",
+    "sha": "3d5d30a0606217f32cd737ea79aa31f02b47e994",
+    "size": 439787
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random/results-20261026/companion-30teams.csv",
+    "sha": "6f58e573ff81926fea451e3a1597b956a273dec9",
+    "size": 3303
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random/results-20261026/diagnostics.json",
+    "sha": "85e3f70b797373c59f4471fca2a920ee68c4a831",
+    "size": 36665
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random/results-20261026/explore-30teams.csv",
+    "sha": "9e8a47df09d947b7eb6a483920e21f7fc9a2d31e",
+    "size": 4075
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random/results-20261026/main.json",
+    "sha": "29efab0ddd8e9b11f4f47747e30f6699ca03828e",
+    "size": 596190
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random/results-20261026/map-30teams.csv",
+    "sha": "6523db2a4a9b4054737267da55cd9dc37c540c11",
+    "size": 3668
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random/results-20261026/overhead-detail.json",
+    "sha": "1e9cea22f835130ed73b2bf4fd8b04b33a8fe35c",
+    "size": 288
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random/results-20261026/plan.json",
+    "sha": "4c4716e6d112e29758d995dfc171e36ec0c79300",
+    "size": 138566
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random/results-20261026/specialists-30teams-per-field.csv",
+    "sha": "f199c5d603226faef7ef73ff82624f215c94a611",
+    "size": 13970
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random/results-20261026/speed.json",
+    "sha": "e9ff2cda685a800823a9290aba193159e4adb379",
+    "size": 9777
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random/results-20261026/treasure-30teams.csv",
+    "sha": "3f76746a9c18639c28ace46a0ea46173ba157719",
+    "size": 3809
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random/results-20261026/verification.json",
+    "sha": "79446993b6e6b8bba6afa85298e173f656b6c1c7",
+    "size": 1505
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random/run.cjs",
+    "sha": "bd6e83913b2cdeb525b3e3a10f79a3782dcb5b7d",
+    "size": 5878
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random/test.cjs",
+    "sha": "68e2d81c405e59bfa5cf912f255c2cec8d911532",
+    "size": 2474
+  },
+  {
+    "path": "bouken/tests/party-recommendation/specialist-random/verify_csv.py",
+    "sha": "d9226824f780311603404da505da56e4737698a0",
+    "size": 1049
+  },
+  {
+    "path": "bouken/tests/party-recommendation/test.cjs",
+    "sha": "f6c5215e288d6851d2ced071b74d0fa0624226e1",
+    "size": 8817
+  },
+  {
+    "path": "bouken/tests/party-recommendation/timing-results.json",
+    "sha": "f1982805287f4da32f19bd925421ea644711f008",
+    "size": 41794
+  },
+  {
+    "path": "bouken/tests/party-recommendation/timing.cjs",
+    "sha": "f6c0f3cf913339667400d2f3fab0f6c92b5167e5",
+    "size": 1343
+  },
+  {
+    "path": "bouken/tests/party-recommendation/update-source-manifest.cjs",
+    "sha": "fbff7f6e5d33f8ddf4a856e6c45e751cb72be989",
+    "size": 1120
+  },
+  {
+    "path": "bouken/tests/party-recommendation/verification.json",
+    "sha": "84e843418506a8bcc33dba45e977f84789a95244",
+    "size": 2163
+  },
+  {
+    "path": "bouken/tests/party-restore.test.cjs",
+    "sha": "9df7bb92570f69ace738f3e3eedb39224af31515",
+    "size": 1265
+  },
+  {
+    "path": "bouken/tests/perimeter-start-preview.html",
+    "sha": "26a0762fa7603ed456a45f010e7b8594dd827e20",
+    "size": 3507
+  },
+  {
+    "path": "bouken/tests/perimeter-start.test.cjs",
+    "sha": "0e21ee73081cf05e44246a0eec3785d958e8e151",
+    "size": 5146
+  },
+  {
+    "path": "bouken/tests/progression-fixture-save.js",
+    "sha": "e2510c856b035ca1f5a7c8fdbb536351ad380fd8",
+    "size": 671
+  },
+  {
+    "path": "bouken/tests/progression-preview.html",
+    "sha": "7b7a68df497dc429f8bce665c02efe062f8267c8",
+    "size": 3609
+  },
+  {
+    "path": "bouken/tests/records-screen.test.cjs",
+    "sha": "0102ae4a3fc5b8fee0bb1acffc8c91fb6ac3a56d",
+    "size": 1710
+  },
+  {
+    "path": "bouken/tests/render-e08-report.py",
+    "sha": "74505e649cd78c2e8238baaf62335eebb7aabcee",
+    "size": 6836
+  },
+  {
+    "path": "bouken/tests/render-terrain-v48-report.py",
+    "sha": "479de2df4ada4b4ab04a2e12b6bc9455d2771753",
+    "size": 11306
+  },
+  {
+    "path": "bouken/tests/result-fixture-save.js",
+    "sha": "1382ca7d218e968127cf8929bd06b808553e9286",
+    "size": 935
+  },
+  {
+    "path": "bouken/tests/result-preview.html",
+    "sha": "7b6c7d53b80140908fa67457d76fda288fba0d3d",
+    "size": 4455
+  },
+  {
+    "path": "bouken/tests/result.test.cjs",
+    "sha": "0959bc866feba7818c66a1304b27dc7fb736fa16",
+    "size": 6954
+  },
+  {
+    "path": "bouken/tests/robot-access-preview.html",
+    "sha": "70cd698adc64693d062991a218075e609e029619",
+    "size": 4543
+  },
+  {
+    "path": "bouken/tests/robot-access.test.cjs",
+    "sha": "cb957fca07986bb8dcb03b130fb3e8dc13fd8a9a",
+    "size": 3453
+  },
+  {
+    "path": "bouken/tests/robot-discovery-ui.test.cjs",
+    "sha": "f783b658d19bb31a9545c350c8ae97d552527ca3",
+    "size": 1770
+  },
+  {
+    "path": "bouken/tests/robot-growth-preview.html",
+    "sha": "3cf3a6ddda44ebad5cf7330dbb56feabecd3067c",
+    "size": 3849
+  },
+  {
+    "path": "bouken/tests/robot-growth.test.cjs",
+    "sha": "9ad9bae691b4e3ac71232f3a2a3c0540ff05b947",
+    "size": 4362
+  },
+  {
+    "path": "bouken/tests/robot-lifecycle.test.cjs",
+    "sha": "65cf7f085b1b8447a12efa3587b8264bac47625b",
+    "size": 8396
+  },
+  {
+    "path": "bouken/tests/robot-parts-preview.html",
+    "sha": "510fa0b6fe5c11f523618f534d744230a4fe92fd",
+    "size": 5005
+  },
+  {
+    "path": "bouken/tests/robot-parts.test.cjs",
+    "sha": "46c7c7455521e6bceb8c0508c8c1cb0334f4962f",
+    "size": 5950
+  },
+  {
+    "path": "bouken/tests/robot-state-preview.html",
+    "sha": "3361b79a88703870b4fcafd385df802269c2b696",
+    "size": 3715
+  },
+  {
+    "path": "bouken/tests/robot-state.test.cjs",
+    "sha": "b08d9ee1b1fe6cbdc7665c168d19180de397d5a7",
+    "size": 3645
+  },
+  {
+    "path": "bouken/tests/robot-worker.test.cjs",
+    "sha": "6b12c4218fe557718c819b2448529bc4dfd7b4cf",
+    "size": 1537
+  },
+  {
+    "path": "bouken/tests/terrain-distribution.test.cjs",
+    "sha": "527389a9ef0491571f27409b6d728bd2c27dfd8e",
+    "size": 2291
+  },
+  {
+    "path": "bouken/tests/terrain-v48.test.cjs",
+    "sha": "8baf50bf31c0d0b71a819cdb79112be2813cac11",
+    "size": 7225
+  },
+  {
+    "path": "bouken/tests/tutorial.test.cjs",
+    "sha": "0981c01077f8682bfdd7c481a66bc2113c58c1a2",
+    "size": 6008
+  },
+  {
+    "path": "bouken/tests/world-end-button.test.cjs",
+    "sha": "85b32ca290a230a05a1145a2072330bc24bb1e7d",
+    "size": 2479
+  },
+  {
+    "path": "bouken/tests/world-portraits.test.cjs",
+    "sha": "e23b420c983fb16e7f782eb857b80b5109083977",
+    "size": 2946
+  },
+  {
+    "path": "bouken/tests/world-render.test.cjs",
+    "sha": "6e9781b98fc218e0ebe1353faff3ee139e977895",
+    "size": 8993
+  },
+  {
+    "path": "bouken/tests/world-size-picker.test.cjs",
+    "sha": "b3cf5b33477632609e71a9abfa73a80df6649bb3",
+    "size": 13136
+  },
+  {
+    "path": "bouken/world.html",
+    "sha": "cda968904bee774175a990f1efdf8af352585cc4",
+    "size": 47093
+  },
+  {
+    "path": "bouken/worldcreate.html",
+    "sha": "8934263c2814220a80a9ca20ebe97348df64c58e",
+    "size": 10105
+  }
+]

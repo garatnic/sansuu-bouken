@@ -19,3 +19,7 @@
 - Vercel Production: dpl_FnPEwY8zjGE2Kouyp7scMyFH4zLN / READY / GitHub SHA一致。
 - 公開先: https://sansuu-bouken.vercel.app/bouken/ 。common/version.js、common/schema.js、tests/party-recommendation/source-manifest.json、home.htmlをHTTP 200で取得し、更新後ファイルとバイト単位で一致。
 - ブラウザ操作・スマホ実機・ユーザー通常セーブでの確認は未実施。今回は画像管理メタデータ追加のみ。
+
+
+## 2026-10-30 監査時の受入状態の整理
+ver.96の提示確認票はtodo.txtの2026-10-30「このチャットで要検証のもの、全部Ok！」で受入済み。画像接続はver.97、ボタンはver.98/99へ後続改定。 当時の実行結果・SHA・測定値・未実施項目は原文のまま保持する。現在の全体残件は../todo.txt。
