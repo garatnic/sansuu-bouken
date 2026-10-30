@@ -9,10 +9,12 @@ window.BoukenHiragana=(()=>{
  function text(value){
   const source=String(value??'');if(!kanji.test(source))return source;
   if(cache.has(source))return cache.get(source);
+  const counters={人:'にん',体:'たい',問:'もん',品:'ひん',個:'こ',回:'かい',種類:'しゅるい',秒:'びょう',時間:'じかん',列:'れつ',行:'ぎょう'};
+  const readable=source.replace(/([0-9０-９]+)(種類|時間|人|体|問|品|個|回|秒|列|行|分)/g,(_,n,unit)=>n+(unit==='分'?(/[013468０１３４６８]$/.test(n)?'ぷん':'ふん'):counters[unit]));
   let output='';
-  for(let i=0;i<source.length;){let node=trie,last=null,end=i;
-   for(let j=i;j<source.length&&node.has(source[j]);j++){node=node.get(source[j]);if(node.reading!==undefined){last=node.reading;end=j+1;}}
-   if(last!==null){output+=last;i=end;}else{output+=source[i++];}
+  for(let i=0;i<readable.length;){let node=trie,last=null,end=i;
+   for(let j=i;j<readable.length&&node.has(readable[j]);j++){node=node.get(readable[j]);if(node.reading!==undefined){last=node.reading;end=j+1;}}
+   if(last!==null){output+=last;i=end;}else{output+=readable[i++];}
   }
   if(cache.size>=4000)cache.clear();cache.set(source,output);return output;
  }
