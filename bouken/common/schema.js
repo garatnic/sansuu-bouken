@@ -6,18 +6,19 @@ window.BoukenSchema=Object.freeze({
   for(const s of buffs){if(s.id==='E08'||s.id==='E09'){if(!placed){const entry={...s,id:'E08',level:merged};if('cost' in entry)entry.cost=merged*2;out.push(entry);placed=true;}}else out.push(s);}return out;
  },
  recordCharacterJoin(data,id){if(!Array.isArray(data.characterJoinOrder))data.characterJoinOrder=Object.keys(data.characters||{}).filter(k=>Number(data.characters[k])>0).map(Number).sort((a,b)=>a-b);if(!data.characterJoinOrder.some(x=>String(x)===String(id)))data.characterJoinOrder.push(Number(id));},
+ // imageNo is a permanent image reference; never renumber or reuse it (independent of array order).
  // Ordered robot features. stage: 1=search announced, 2=part owned, 3=installed, 4=explanation read.
  robotFeatures:Object.freeze([
-  {id:'analysis',count:29,size:10,part:'ぶんせきレンズ',label:'レーダーチャート',help:'パーティーの ちからを グラフで みられるよ。'},
-  {id:'random',count:70,size:10,part:'くるくるルーレット',label:'ランダムへんせい',help:'ロボットが なかまを ランダムに えらんでくれるよ。'},
-  {id:'drive1',count:91,size:10,part:'ちいさな はぐるま',label:'じどううんてん Lv.1',help:'もくてきちを えらぶと、3マスまでの みちを あんないするよ。さんすうは じぶんで といてね。'},
-  {id:'map',count:111,size:10,part:'たんけんコンパス',label:'マップたんさくへんせい',help:'マップの たんさくが とくいな なかまを えらんでくれるよ。'},
-  {id:'explore',count:156,size:10,part:'パワードリル',label:'どんどんかいたくへんせい',help:'かいたくが とくいな なかまを えらんでくれるよ。'},
-  {id:'drive2',count:180,size:20,part:'ダブルエンジン',label:'じどううんてん Lv.2',help:'いちどに 6マスまでの みちを あんないするよ。さんすうは じぶんで といてね。'},
-  {id:'companion',count:204,size:10,part:'なかまアンテナ',label:'なかまあつめへんせい',help:'なかまを あつめるのが とくいな パーティーを えらんでくれるよ。'},
-  {id:'treasure',count:250,size:10,part:'おたからセンサー',label:'おたからあつめへんせい',help:'おたからを あつめるのが とくいな パーティーを えらんでくれるよ。'},
-  {id:'drive3',count:271,size:30,part:'ロケットエンジン',label:'じどううんてん Lv.3',help:'とおくの もくてきちまで みちを あんないできるよ。さんすうは じぶんで といてね。'},
-  {id:'balanced',count:316,size:10,part:'スーパーCPU',label:'おまかせへんせい',help:'いろいろな ぼうけんに むいた パーティーを えらんでくれるよ。'}
+  {id:'analysis',imageNo:1,count:29,size:10,part:'ぶんせきレンズ',label:'レーダーチャート',help:'パーティーの ちからを グラフで みられるよ。'},
+  {id:'random',imageNo:2,count:70,size:10,part:'くるくるルーレット',label:'ランダムへんせい',help:'ロボットが なかまを ランダムに えらんでくれるよ。'},
+  {id:'drive1',imageNo:3,count:91,size:10,part:'ちいさな はぐるま',label:'じどううんてん Lv.1',help:'もくてきちを えらぶと、3マスまでの みちを あんないするよ。さんすうは じぶんで といてね。'},
+  {id:'map',imageNo:4,count:111,size:10,part:'たんけんコンパス',label:'マップたんさくへんせい',help:'マップの たんさくが とくいな なかまを えらんでくれるよ。'},
+  {id:'explore',imageNo:5,count:156,size:10,part:'パワードリル',label:'どんどんかいたくへんせい',help:'かいたくが とくいな なかまを えらんでくれるよ。'},
+  {id:'drive2',imageNo:6,count:180,size:20,part:'ダブルエンジン',label:'じどううんてん Lv.2',help:'いちどに 6マスまでの みちを あんないするよ。さんすうは じぶんで といてね。'},
+  {id:'companion',imageNo:7,count:204,size:10,part:'なかまアンテナ',label:'なかまあつめへんせい',help:'なかまを あつめるのが とくいな パーティーを えらんでくれるよ。'},
+  {id:'treasure',imageNo:8,count:250,size:10,part:'おたからセンサー',label:'おたからあつめへんせい',help:'おたからを あつめるのが とくいな パーティーを えらんでくれるよ。'},
+  {id:'drive3',imageNo:9,count:271,size:30,part:'ロケットエンジン',label:'じどううんてん Lv.3',help:'とおくの もくてきちまで みちを あんないできるよ。さんすうは じぶんで といてね。'},
+  {id:'balanced',imageNo:10,count:316,size:10,part:'スーパーCPU',label:'おまかせへんせい',help:'いろいろな ぼうけんに むいた パーティーを えらんでくれるよ。'}
  ].map(Object.freeze)),
  growth(data){
   if(!data.robotGrowth)data.robotGrowth={discovery:0,partyCapacity:1};

@@ -1,6 +1,6 @@
 {
-  "commit": "8faa3ceef90a75b67902959200cfb0f890b93943",
-  "version": 95,
+  "commit": "888df76cadc50b8aa459e75653d26c8eee4c9b26",
+  "version": 96,
   "gitBlobs": {
     "bouken/common/buffs.js": "6af7b907f53d698c211b0e36a2d70d67902a952a",
     "bouken/common/collection.js": "9a52a2e880de0c8e4bf0f48d45966e87ef4436a9",
@@ -8,7 +8,7 @@
     "bouken/common/explore.js": "6223e842af37383d101efbf9a479c0bc734f6cd4",
     "bouken/common/party.js": "acab5d379a8c6e6625067801e5b5041aa0dd2047",
     "bouken/common/progress.js": "985fc7edda7622e82ccd85810cfe5b768f5ffb72",
-    "bouken/common/schema.js": "54b0d4008358791e24ed3ceec91c0fb0da53fb80",
+    "bouken/common/schema.js": "f03a79add4b539b8329fc089dccbc7bb8670effc",
     "bouken/common/worldgen.js": "9121fd5576dd91978c72bef2899fd2a439be952c",
     "bouken/data/characters.json": "1736be189c4e5d91432972a458ce0335e283bad2",
     "bouken/data/collection_items.json": "776d3a6fe6e6ca3bef3224a18853765605190d13",
@@ -17,11 +17,11 @@
     "bouken/data/skills.json": "7ade9fddd739c586f5c7954e6aa80ea66c8eff19",
     "bouken/data/terrains.json": "316bd119f274ac678224e380fe41cee4976772e2",
     "bouken/data/world_facility_counts.json": "a1dfda8921560a21cb28afb14d1a09f5e0859b63",
-    "bouken/world.html": "e04970907ba57ca55432b60f18f68c6f6d8846c2",
-    "bouken/worldcreate.html": "b7874a5b5c2f5e9700639137fa243028783c4650",
-    "bouken/common/version.js": "004ee824dcd7aaccbbb5d4e8e74dc3f2a4900877"
+    "bouken/world.html": "573298d42f73e3a7669e66f6f909c6f1539f6611",
+    "bouken/worldcreate.html": "9beea50eb5da65eef670dd010a7cebf6db3dae20",
+    "bouken/common/version.js": "7a68c4cc43e45fee7bb2e6a9deb8e7b3cd2ef327"
   },
   "originalResearchCommit": "bf5a69255f627090c2e6fa2ce089209b88d72a4f",
-  "note": "ver.94: runtime sources regenerated. commit is the implementation base; gitBlobs identifies exact file contents.",
-  "runtimeUpdate": "ver.95: reviewed perimeter start/A11 changes and cache references; base commit plus updated blobs."
+  "note": "ver.96: runtime sources regenerated. commit is the implementation base; gitBlobs identifies exact file contents.",
+  "runtimeUpdate": "ver.96: robot imageNo metadata and cache references; base commit plus updated blobs."
 }
