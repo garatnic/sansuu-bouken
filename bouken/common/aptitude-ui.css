@@ -1,6 +1,8 @@
 .aptitude-track{display:flex;min-width:0;overflow:hidden;background:#e1e6e2;border-radius:3px;height:8px}
 .aptitude-fill{display:block;flex:none;height:100%}
-.aptitude-stacked{margin-top:5px;width:100%}
+.char-line{position:relative}
+.char-heading{position:relative;z-index:1}
+.aptitude-stacked{position:absolute;top:13px;right:7px;width:40%;margin:0;flex-direction:row-reverse;pointer-events:none}
 .aptitude-detail{margin-top:20px;min-width:0}
 .aptitude-row{display:grid;grid-template-columns:6em minmax(0,1fr) 3ch;align-items:center;gap:8px;margin-top:9px;font-size:13px}
 .aptitude-label{white-space:nowrap}

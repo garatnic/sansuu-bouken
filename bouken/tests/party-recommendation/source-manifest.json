@@ -1,6 +1,6 @@
 {
-  "commit": "91d11629c7dbd64d9326d77f568d4bd747574a17",
-  "version": 101,
+  "commit": "3345a12c1f42e622a0e4248bc25f83bb54d2827f",
+  "version": 102,
   "gitBlobs": {
     "bouken/common/buffs.js": "6af7b907f53d698c211b0e36a2d70d67902a952a",
     "bouken/common/collection.js": "9a52a2e880de0c8e4bf0f48d45966e87ef4436a9",
@@ -17,11 +17,11 @@
     "bouken/data/skills.json": "7ade9fddd739c586f5c7954e6aa80ea66c8eff19",
     "bouken/data/terrains.json": "316bd119f274ac678224e380fe41cee4976772e2",
     "bouken/data/world_facility_counts.json": "a1dfda8921560a21cb28afb14d1a09f5e0859b63",
-    "bouken/world.html": "a9a994f01ff07bafe0485cde20ff64c86601c300",
-    "bouken/worldcreate.html": "b552731a68ad0bb23220eb91699fc9592c56aa12",
-    "bouken/common/version.js": "26a45b581944ab6ac275ea14ba2963123a033240"
+    "bouken/world.html": "7505178d6d96ffa3c23624047b86e0653f14ea77",
+    "bouken/worldcreate.html": "e4f943425b6a17d741b5669ba4e6e87bd024cb88",
+    "bouken/common/version.js": "b429aa4316bdd2dfc5b89530c5fb80fc0f0a22de"
   },
   "originalResearchCommit": "bf5a69255f627090c2e6fa2ce089209b88d72a4f",
-  "note": "ver.101: runtime sources regenerated. commit is the implementation base; gitBlobs identifies exact file contents.",
+  "note": "ver.102: runtime sources regenerated. commit is the implementation base; gitBlobs identifies exact file contents.",
   "runtimeUpdate": "ver.99: cache references."
 }
