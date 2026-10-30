@@ -9,6 +9,6 @@ window.BoukenRobotImages=(()=>{
  }
  function body(){return sprite('robot.png',0,1,256,256,'ぼうけんロボ','robot-body-art');}
  function part(id){const f=feature(id);return f?sprite('robot_parts.png',f.imageNo-1,10,128,128,f.part,'robot-part-art'):null;}
- function help(id){const f=feature(id);if(id&& !f)return null;return sprite('robot_functions.png',f?f.imageNo:0,11,412,618,f?f.label+'のせつめい':'ぼうけんロボをみつけた！','robot-function-art');}
+ function help(id){const f=feature(id);if(id&& !f)return null;return f?part(id):body(); // Keep clean artwork; explanation text is rendered as hiragana in HTML.}
  return Object.freeze({body,part,help});
 })();

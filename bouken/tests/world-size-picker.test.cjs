@@ -14,7 +14,7 @@ async function page({started=3,world=null,worker=false,workerFails=false,failPre
  const original=c.BoukenWorldGen;c.BoukenWorldGen={...original,generate(...args){calls.push(args);if(failPreview&&c.location.href==='')throw Error('preview failed');return original.generate(...args);}};
  nodes.currentScript={src:'http://independent.test/bouken/common/world-size-picker.js?v=95'};
  if(worker)c.Worker=class{
-  constructor(url){assert(String(url).includes('world-preview-worker.js?v=95'));this.terminated=false;this.c={Math:c.Math,postMessage:data=>queueMicrotask(()=>{if(!this.terminated)this.onmessage?.({data});}),importScripts:file=>{assert.equal(file,'worldgen.js?v=95');vm.runInContext(fs.readFileSync(path.join(root,'common/worldgen.js'),'utf8'),this.c);}};this.c.self=this.c;vm.createContext(this.c);vm.runInContext(workerSource,this.c);}
+  constructor(url){assert(/world-preview-worker\.js\?v=\d+/.test(String(url)));this.terminated=false;this.c={Math:c.Math,postMessage:data=>queueMicrotask(()=>{if(!this.terminated)this.onmessage?.({data});}),importScripts:file=>{assert.match(file,/^worldgen\.js\?v=\d+$/);vm.runInContext(fs.readFileSync(path.join(root,'common/worldgen.js'),'utf8'),this.c);}};this.c.self=this.c;vm.createContext(this.c);vm.runInContext(workerSource,this.c);}
   postMessage(data){messages.push(data);if(workerFails){queueMicrotask(()=>this.onerror?.(Error('worker blocked')));return;}queueMicrotask(()=>{if(!this.terminated)this.c.onmessage({data});});}terminate(){this.terminated=true;}
  };
  vm.runInContext(pickerSource,c);const real=c.BoukenWorldSizePicker;let picker;

@@ -48,3 +48,6 @@
 - [verification/README.md](verification/README.md)：当時の検証結果・画像・JSONを保持。未実施/失敗/ユーザー受入は別々に管理する。
 - [history/README.md](history/README.md)：旧案・過去ToDo・整理前本文。原則削除・改変しない。
 - [全166ファイルの監査一覧](verification/docs-audit-20261030/inventory.md)、[分類別指摘](verification/docs-audit-20261030/findings.json)、[監査結果](資料総合監査_20261030.md)。
+
+## 表記方針（ver.104）
+[ひらがな表示仕様](ひらがな表示仕様.md)：漢字はすべてひらがな、言い換えなし。カタカナ/英数字/記号を維持。元データ・保存値は変えない。

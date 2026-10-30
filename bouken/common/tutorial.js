@@ -56,7 +56,7 @@ window.BoukenTutorial=(()=>{
    d.addEventListener('cancel',e=>e.preventDefault());stage.append(img,fallback,correction,back,next);d.append(stage,error);document.body.append(d);paint();d.showModal();next.focus();
   });
  }
- function story(name,finish,allOwned=false){const content=pages[name].map(p=>[...p]);if(name==='final'&&allOwned)content[1][1]='でも、最後まで地図を完成させると、必ず仲間が見つかります！ みんな見つけたあとは、同じ仲間がもう一度来てくれます。';if(name==='intro'||name==='world')return illustrated(name,[content.flat()],finish,allOwned);return illustrated(name,content,finish,allOwned);}
+ function story(name,finish,allOwned=false){const content=pages[name].map(p=>[...p]);if(name==='final'&&allOwned)content[1][1]='でも、最後まで地図を完成させると、必ず仲間が見つかります！ みんな見つけたあとは、同じ仲間がもう一度来てくれます。';return modal(name==='intro'||name==='world'?[content.flat()]:content,{finish,celebrate:name==='firstClear'||name==='final'});}
  async function home(s){
   if(!isActive(s))return;
   const saveFlag=key=>{const current=BoukenSave.load();current.tutorialStory[key]=true;BoukenSave.save(current);return true;};
