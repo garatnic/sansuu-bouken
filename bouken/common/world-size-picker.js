@@ -1,6 +1,6 @@
 // Size/departure buttons and disposable terrain samples. Never receives or saves a game save.
 window.BoukenWorldSizePicker=(()=>{
- const workerURL=new URL('world-preview-worker.js?v=96',document.currentScript.src);
+ const workerURL=new URL('world-preview-worker.js?v=97',document.currentScript.src);
  const colors={T01:'#a3d77d',T02:'#459763',T03:'#a7a9a4',T04:'#e6c979',T05:'#5da4db',T06:'#e8f5f9',T07:'#9a8bba'};
  const later=()=>new Promise(resolve=>{if(typeof requestIdleCallback==='function')requestIdleCallback(resolve,{timeout:500});else setTimeout(resolve,0);});
  const afterPaint=()=>new Promise(resolve=>{if(typeof requestAnimationFrame==='function')requestAnimationFrame(()=>setTimeout(resolve,0));else setTimeout(resolve,0);});

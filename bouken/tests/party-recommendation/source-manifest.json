@@ -1,6 +1,6 @@
 {
-  "commit": "888df76cadc50b8aa459e75653d26c8eee4c9b26",
-  "version": 96,
+  "commit": "4a52cf09a4f4838a1fd1eb2a2c1e4fd543612f70",
+  "version": 97,
   "gitBlobs": {
     "bouken/common/buffs.js": "6af7b907f53d698c211b0e36a2d70d67902a952a",
     "bouken/common/collection.js": "9a52a2e880de0c8e4bf0f48d45966e87ef4436a9",
@@ -17,11 +17,11 @@
     "bouken/data/skills.json": "7ade9fddd739c586f5c7954e6aa80ea66c8eff19",
     "bouken/data/terrains.json": "316bd119f274ac678224e380fe41cee4976772e2",
     "bouken/data/world_facility_counts.json": "a1dfda8921560a21cb28afb14d1a09f5e0859b63",
-    "bouken/world.html": "573298d42f73e3a7669e66f6f909c6f1539f6611",
-    "bouken/worldcreate.html": "9beea50eb5da65eef670dd010a7cebf6db3dae20",
-    "bouken/common/version.js": "7a68c4cc43e45fee7bb2e6a9deb8e7b3cd2ef327"
+    "bouken/world.html": "cbca0324a326dfab3cea064109848f28722f993e",
+    "bouken/worldcreate.html": "3cc5428cabfb7dafacf58a73aa1a7432b22ea063",
+    "bouken/common/version.js": "f0c0bf6fe3ffd00af7e041c710c4c58900322849"
   },
   "originalResearchCommit": "bf5a69255f627090c2e6fa2ce089209b88d72a4f",
-  "note": "ver.96: runtime sources regenerated. commit is the implementation base; gitBlobs identifies exact file contents.",
-  "runtimeUpdate": "ver.96: robot imageNo metadata and cache references; base commit plus updated blobs."
+  "note": "ver.97: runtime source blobs updated for robot image integration.",
+  "runtimeUpdate": "ver.97: robot image display and cache references."
 }

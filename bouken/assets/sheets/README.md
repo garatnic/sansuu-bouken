@@ -14,3 +14,5 @@
 home.jpg/worldselect.jpgとbutton_*.png/jpgはホーム/出発の画像。tutorial01/02.pngはsheetsと../tutorial/に重複があるが、実際のチュートリアルは../tutorial/tutorial01～07.pngを参照する。過去のmanifestは4原本の記録であり、このフォルダの全UI画像一覧ではない。
 
 画像は同一サイト内の相対URLで読み、個別キャラ取得・時刻乱数によるキャッシュ破棄を行わない。ローダーの共有は1ドキュメント内。別ページのメモリを自動共有する保証はなく、HTTPキャッシュと区別する。表示仕様は../../siyou/README.mdから参照。
+
+ver.97：robot.png=256×256、本体。robot_parts.png=1280×128（128px横10枚、imageNo-1）。robot_functions.png=4532×618（412px横11枚、本体0・機能imageNo）。共通robot-images.jsで表示。
