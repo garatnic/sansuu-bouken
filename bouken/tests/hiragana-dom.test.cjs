@@ -10,6 +10,6 @@ assert.equal(block.textContent,'いぬきぐるみポポ');assert.equal(block.fi
 block.firstChild.textContent='得意なこと';await new Promise(setImmediate);assert.equal(block.textContent,'とくいなこと');block.firstChild.setAttribute('title','遠見');await new Promise(setImmediate);assert.equal(block.firstChild.title,'とおみ');
 const counters=d.createTextNode('927体・10人・480品・30問');d.body.append(counters);await new Promise(setImmediate);assert.equal(counters.textContent,'927たい・10にん・480ひん・30もん');
 const svg=d.createElementNS('http://www.w3.org/2000/svg','svg');svg.innerHTML='<text>開拓</text>';d.body.append(svg);await new Promise(setImmediate);assert.equal(svg.textContent,'かいたく');
-for(const p of fs.readdirSync(root).filter(x=>x.endsWith('.html'))){const html=fs.readFileSync(root+'/'+p,'utf8');assert(html.includes('hiragana-readings.js?v=105'));assert(html.includes('hiragana.js?v=105'));}
+for(const p of fs.readdirSync(root).filter(x=>x.endsWith('.html'))){const html=fs.readFileSync(root+'/'+p,'utf8');assert(html.includes('hiragana-readings.js?v=106'));assert(html.includes('hiragana.js?v=106'));}
 const started=performance.now();for(let i=0;i<900;i++){const el=d.createElement('button');el.setAttribute('aria-label',`${i}列・未発見のマス`);el.textContent='未開拓';block.append(el);}await new Promise(setImmediate);assert(!/[一-龯]/.test(block.textContent));console.log('PASS DOM initial/dynamic text, attributes, SVG, implicit option values, IDs/user input/script/textarea unchanged, 9 pages wired; 900-cell batch '+Math.round(performance.now()-started)+'ms');
 })();
